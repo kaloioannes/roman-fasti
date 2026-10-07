@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FASTI · 罗马共和国执政官纪年</title>
+  <meta name="description" content="从公元前509年到前27年，逐年探索罗马共和国的执政官、重要事件与疆域。中文与拉丁文名录，互动历史地图。">
+  <meta name="theme-color" content="#f8f6f1">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+  <script defer src="assets/d3.min.js"></script><script defer src="assets/topojson.min.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="FASTI 首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马共和国执政官纪年</span></span></a>
+    <div class="header-actions"><button class="text-button" id="sources-button">史料与方法 <span aria-hidden="true">↗</span></button><button class="icon-button" id="theme-button" aria-label="切换明暗主题"></button></div>
+  </header>
+  <main id="home" class="home">
+    <div class="home-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="orbit-dot"></span><span class="art-label art-left">DIXIT SENATVS</span><span class="art-label art-right">POPVLVSQVE ROMANVS</span></div>
+    <section class="home-content">
+      <div class="eyebrow"><span class="tiny-rule"></span> 509 — 27 BC <span class="tiny-rule"></span></div>
+      <div class="hero-word" aria-hidden="true">FASTI</div>
+      <h1>共和国的<span>每一年</span></h1>
+      <p class="home-description">从一座城，到地中海。选择一个年份，翻开罗马的这一页。</p>
+      <form class="year-search" id="home-form" novalidate>
+        <span class="search-era" aria-hidden="true">BC</span><label class="sr-only" for="home-year">公元前年份，27至509</label><input id="home-year" name="year" type="text" inputmode="numeric" autocomplete="off" placeholder="输入公元前年份" maxlength="12" aria-describedby="home-error"><button type="submit" class="search-submit" aria-label="查看这一年">↗</button>
+      </form>
+      <p id="home-error" class="form-error" role="alert"></p>
+      <button id="random-home" class="random-button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1"/><circle cx="16" cy="8" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></svg>掷骰子，偶遇一年</button>
+      <div class="year-suggestions"><span>从这里开始</span><button data-year="509">509 <small>BC</small></button><button data-year="264">264 <small>BC</small></button><button data-year="133">133 <small>BC</small></button><button data-year="44">44 <small>BC</small></button></div>
+    </section>
+    <footer class="home-footer"><span>483 年共和纪年</span><span class="footer-motto">RES PVBLICA ROMANA</span><span>疆域 · 人物 · 事件</span></footer>
+  </main>
+  <main id="detail" class="detail" hidden>
+    <div class="detail-toolbar"><a href="#" class="back-link">← 返回纪年首页</a><form id="detail-form" class="small-search" novalidate><label class="sr-only" for="detail-year">跳转到公元前年份</label><input id="detail-year" type="text" inputmode="numeric" maxlength="12"><span>BC</span><button type="submit" aria-label="跳转年份">↗</button></form><button class="icon-button" id="random-detail" aria-label="随机年份" title="随机年份">⚄</button></div>
+    <p id="detail-error" class="form-error" role="alert"></p>
+    <section class="year-heading"><div><div id="era-label" class="eyebrow"></div><h1><span id="year-number"></span><span class="bc-label">BC</span></h1><p id="year-subtitle"></p></div><div class="year-nav"><button id="previous-year" aria-label="上一年">←<span></span></button><div class="year-nav-rule"></div><button id="next-year" aria-label="下一年"><span></span>→</button></div></section>
+    <div id="year-note" class="year-note" hidden></div>
+    <div class="year-grid">
+      <section class="officials-section"><div class="section-title"><h2>当年执政官</h2><span id="office-count" class="section-caption"></span></div><div id="officials"></div></section>
+      <section class="territory-section"><div class="section-title"><h2>罗马疆域</h2><span class="section-caption">TERRITORIVM</span></div><div class="map-card"><div class="map-topline"><span><i class="territory-key"></i> 罗马控制范围</span><span id="map-year-label"></span></div><div id="map" class="map" role="img" aria-label="罗马历史疆域示意地图"><svg id="map-svg" viewBox="0 0 760 510"><defs><pattern id="sea-grain" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".45" fill="currentColor" opacity=".08"/></pattern></defs><rect width="760" height="510" class="map-ocean"/><rect width="760" height="510" fill="url(#sea-grain)"/><g id="map-content"></g></svg><div class="map-controls"><button id="map-zoom-in" aria-label="放大地图">+</button><button id="map-zoom-out" aria-label="缩小地图">−</button><button id="map-reset" aria-label="重置地图">⌖</button></div></div><div class="map-bottomline"><span><i class="rome-key"></i> 罗马 Roma</span><span>拖动 / 双指缩放</span></div></div><p id="map-caption" class="map-caption"></p></section>
+    </div>
+    <section class="events-section"><div class="section-title events-heading"><div><span class="eyebrow">ANNVS IN MEMORIA</span><h2>当年重要事件</h2></div><label class="spoiler-toggle"><input type="checkbox" id="spoiler-switch"><span class="switch-track"></span><span>防剧透</span></label></div><div id="events"></div></section>
+    <section class="year-sources"><h2>这一年的史料</h2><div id="year-source-links"></div><p id="source-caveat"></p></section>
+    <footer class="detail-footer"><a href="#">FASTI · 返回首页</a><span>从城邦，到共和国的终章。</span><a id="repo-link" href="https://github.com/kaloioannes/roman-republic-fasti" target="_blank" rel="noopener">GitHub ↗</a></footer>
+  </main>
+  <dialog id="sources-dialog"><div class="dialog-heading"><span class="eyebrow">AD FONTES</span><button class="icon-button" id="close-sources" aria-label="关闭史料说明">×</button></div><h2>史料与方法</h2><div id="method-content"><p>正在载入来源说明……</p></div></dialog>
+  <div id="loading" class="loading" role="status" hidden>正在翻开这一年的档案……</div>
+</body>
+</html>
