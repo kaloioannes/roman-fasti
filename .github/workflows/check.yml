@@ -21,3 +21,12 @@ jobs:
           git diff --exit-code -- data/republic.json data/stories.json
       - name: Validate years, maps, stories and copy
         run: npm run validate
+      - name: Validate release assets
+        run: |
+          python scripts/build_site.py
+          node scripts/validate-release.mjs
+      - name: Check rendered release and cached upgrades
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps chromium
+          npm run test:release

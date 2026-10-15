@@ -55,6 +55,17 @@ npm run test:ui
 
 浏览器测试覆盖全部剧本章节、默认防剧透、逐条与整年揭示、设置保存、失败重试，以及四种宽度下的明暗布局。已安装 Chrome 或 Edge 时，可设置 `PLAYWRIGHT_CHANNEL=chrome` 或 `msedge` 使用它们。
 
+发布包预览与缓存升级测试：
+
+```sh
+python scripts/build_site.py
+node scripts/validate-release.mjs
+npm run test:release
+python -m http.server 8000 --directory _site
+```
+
+发布包为 CSS、JavaScript 和三份 JSON 数据生成带内容指纹的文件名，页面始终引用同一批资源。更新样式或数据会自动产生新地址，浏览器保留旧缓存时也能正确加载新版。缓存升级测试使用真实 HTTP 服务，先保存旧资源，再检查新版卡片、章节导航、正文排版及明暗主题；PR 会运行这项浏览器检查。
+
 重建文字数据与地图：
 
 ```sh
@@ -64,7 +75,7 @@ python scripts/build_map.py
 npm run validate
 ```
 
-`data-source/` 保存可编辑的资料，`data/` 保存网页读取的 JSON。修改文字或剧本后运行 `build_data.py`，将源文件与生成文件一起提交。PR 会运行数据校验；合入 `main` 后部署 GitHub Pages。
+`data-source/` 保存可编辑的资料，`data/` 保存网页读取的 JSON。修改文字或剧本后运行 `build_data.py`，将源文件与生成文件一起提交。合入 `main` 后，GitHub Pages 工作流构建并校验 `_site/`，再发布网站。
 
 ## 来源与编辑
 
