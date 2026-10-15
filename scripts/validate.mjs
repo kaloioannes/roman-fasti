@@ -51,3 +51,29 @@ assert.doesNotMatch(JSON.stringify(d),/档案正在整理|此条仅用于本地|
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 for(const match of html.matchAll(/(?:src|href)="((?:assets\/|data\/|style\.css|app\.js)[^"]+)"/g))assert.ok(fs.existsSync(path.join(root,match[1])));
 console.log(`Validated ${483} years, ${appointments} appointments, ${events} events, ${d.stats.biographies} biographies and ${a.features.length} map stages.`);
+
+const stories=read('data/stories.json');
+assert.deepEqual(stories,read('data-source/stories.json'),'Run build_data.py after editing stories');
+assert.equal(stories.length,10);
+assert.equal(new Set(stories.map(s=>s.id)).size,10);
+let chapters=0;
+for(const s of stories){
+ assert.match(s.id,/^[a-z]+(?:-[a-z]+)*$/);
+ for(const key of ['title','subtitle','motif','theme','setup','question'])assert.ok(typeof s[key]==='string'&&s[key].trim(),`${s.id}: missing ${key}`);
+ assert.ok(s.setup.length>=80,`${s.id}: incomplete opening`);
+ assert.ok(s.cast.length>=3&&s.cast.every(p=>p.name&&p.role),`${s.id}: missing cast`);
+ assert.ok(s.chapters.length>=5,`${s.id}: incomplete narrative`);
+ assert.equal(s.chapters[0].year,s.start);
+ let previous=510;
+ for(const c of s.chapters){
+  assert.ok(Number.isInteger(c.year)&&d.years[c.year],`${s.id}: missing year ${c.year}`);
+  assert.ok(c.year<previous,`${s.id}: chapters must advance in BCE order`);previous=c.year;
+  assert.ok(c.title&&c.text.length>=55&&c.reference,`${s.id}: incomplete chapter ${c.year}`);
+  assert.ok(Number.isInteger(c.source)&&s.sources[c.source],`${s.id}: missing citation ${c.year}`);
+  chapters++;
+ }
+ for(const source of s.sources){assert.ok(source.label);assert.equal(new URL(source.url).protocol,'https:');}
+}
+const authoredText=[...Object.values(d.years).flatMap(r=>r.events.map(e=>e.description)),...Object.values(d.people).map(p=>p.bio),...d.method.map(m=>m.html)].join('\n');
+assert.doesNotMatch(authoredText,/不能(?:据此|证明|说明|等同)|不应被|不宜把|不等于其中|不假装|不虚构|不声称|不是.*?可.*?核证/,'Use direct prose and describe specific source differences');
+console.log(`Validated ${stories.length} stories, ${chapters} linked chapters and editorial copy.`);

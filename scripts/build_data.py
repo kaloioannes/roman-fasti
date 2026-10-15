@@ -24,7 +24,7 @@ def latin(o):
  s=re.sub(r'\(E\)\s*squilinus','Esquilinus',s)
  alt=re.search(r'\(\s*or\s+([^)]*)\)',s)
  if alt:note+=' 名录保留 '+alt.group(1).strip()+' 的异读，正文采用主记录。'
- if '(?)' in s:note+=' 原名录对前名标有疑问，不能确定所有姓名细节。'
+ if '(?)' in s:note+=' 原名录对前名标有疑问，前名尚存异读。'
  if 'Carve(ntanus)' in s:note='铭文名字残缺，常复原为 Carventanus；亦有 Carvetus 的读法。';s=s.replace('Carve(ntanus)','Carventanus')
  s=s.replace('(E)squilinus','Esquilinus')
  extras=re.findall(r'\(([^)]*)\)',s)
@@ -89,11 +89,11 @@ def attach_events(path):
    if y<30:sources=[source('卡西乌斯·狄奥《罗马史》',f'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/{51 if y==29 else 53}*.html')]
   certainty='编年记载' if y<300 else '传统编年'
   if any(w in category for w in ['争议','存疑']):certainty='年代或记载有争议'
-  elif '编年线索' in category:certainty='史料稀薄 · 如实保留'
+  elif '编年线索' in category:certainty='编年线索'
   elif '传统叙事' in category:certainty='古代叙事 · 含传说成分'
   years[str(y)]['events'].append({'title':title,'description':description,'category':category,'certainty':certainty,'sources':sources})
 attach_events(R/'data-source/events.tsv')
-special={509:'传统记载第一年共有五位执政官；辞职、战死、短期任职与补任依来源分别记录。首任顺序在波利比乌斯、李维与其他传统之间存在分歧。',451:'原有两位执政官记录与随后第一届十人委员会并列。古代来源对二人是否先实际就任执政官或仅当选便转任有分歧。相同人物担任不同官职时出现两项记录，不是两位不同的人。',450:'第二届十人委员会掌握最高权力，本年没有通常的双执政官任职。',444:'三名军事保民官的任职因程序问题终止，随后选出补任执政官。',434:'该年的最高官职形式与人物名单在古代来源之间有分歧；这里保留军事保民官传统。',403:'李维列八位军事保民官，狄奥多罗斯等来源人数不同；部分人可能实为当年监察官，任职识别存在争议。',52:'庞培先以“无同僚执政官”身份上任，年内梅特鲁斯·西庇阿成为同僚。',43:'两位年初执政官希尔提乌斯与潘萨在穆提纳战役及其后死亡，屋大维与佩迪乌斯随后补任，年末再有补任。',27:'屋大维在本年获得“奥古斯都”称号，通常以此作为共和国与元首制的分界；执政官官职继续存在。'}
+special={509:'传统记载第一年共有五位执政官；辞职、战死、短期任职与补任依来源分别记录。首任顺序在波利比乌斯、李维与其他传统之间存在分歧。',451:'原有两位执政官记录与随后第一届十人委员会并列。古代来源对二人是否先实际就任执政官或仅当选便转任有分歧。同一人先后担任不同官职，名录按职务分别列出。',450:'第二届十人委员会掌握最高权力，本年没有通常的双执政官任职。',444:'三名军事保民官的任职因程序问题终止，随后选出补任执政官。',403:'李维列八位军事保民官，狄奥多罗斯等来源人数不同；部分人可能实为当年监察官，任职识别存在争议。',52:'庞培先以“无同僚执政官”身份上任，年内梅特鲁斯·西庇阿成为同僚。',43:'两位年初执政官希尔提乌斯与潘萨在穆提纳战役及其后死亡，屋大维与佩迪乌斯随后补任，年末再有补任。',27:'屋大维在本年获得“奥古斯都”称号，通常以此作为共和国与元首制的分界；执政官官职继续存在。'}
 for y,n in special.items():years[str(y)]['notes'].insert(0,n)
 for y,r in years.items():
  r['sources']=[source('执政官与特殊官职名录','https://en.wikipedia.org/wiki/List_of_Roman_consuls')]
@@ -117,7 +117,7 @@ office_notes={
  180:{'Gaius Calpurnius Piso':'任内因疫病去世，随后产生补任者。'},
  176:{'Gnaeus Cornelius Scipio Hispallus':'任内去世，由莱维努斯补任。','Quintus Petillius Spurinus':'在利古里亚战事中阵亡。'},
  162:{'Publius Cornelius Scipio Nasica Corculum':'因选举占卜程序不合法，与同僚辞职。','Gaius Marcius Figulus':'因选举占卜程序不合法，与同僚辞职。'},
- 154:{'Lucius Postumius Albinus':'任内死亡，随后产生补任者；围绕其妻的古代指控属于另有争议的叙事。'},
+ 154:{'Lucius Postumius Albinus':'任内死亡，随后产生补任者。李维的梗概另记其妻因毒杀丈夫的指控受到审判。'},
  152:{'Lucius Valerius Flaccus':'任内死亡，随后产生补任者。'},
  111:{'Publius Cornelius Scipio Nasica':'任内去世。'},
  107:{'Lucius Cassius Longinus':'在高卢与提古里尼人的战斗中阵亡。'},
@@ -147,7 +147,7 @@ for a,b in bio_aliases.items():
  if a in known_bios:known_bios[b]=known_bios[a]
 known_bios.pop('M. Claudius Marcellus',None)
 known_bios.setdefault('Appius Claudius Crassus Inregillensis Sabinus',known_bios.get('Appius Claudius Crassus Inregillensis',''))
-known_bios['Appius Claudius Crassus Inregillensis']='第四世纪的克劳狄乌斯贵族，反对开放执政官职位给平民，曾任独裁官对赫尔尼基人作战。他在前349年担任执政官后不久去世。须与约一个世纪前主持十人委员会的同名祖辈区分，家族名字相近不能作为同一人的依据。'
+known_bios['Appius Claudius Crassus Inregillensis']='第四世纪的克劳狄乌斯贵族，反对开放执政官职位给平民，曾任独裁官对赫尔尼基人作战。他在前349年担任执政官后不久去世。他与主持十人委员会的同名祖辈相隔约一个世纪，活动于平民开始进入最高官职的时代。'
 # An inspectable editorial selection of roughly one third: recurring command,
 # the amount of extant biographical evidence, and membership in major events.
 def score(pid):
@@ -159,13 +159,12 @@ for pid in selected:
  ordinary=sorted({v['year'] for v in c if v['role'] in ['consul','suffect']},reverse=True)
  tribunes=sorted({v['year'] for v in c if v['role']=='tribune'},reverse=True)
  txt=f"{p['zh']}（{p['latin']}）是共和国名录中的"
- txt+='政治人物。'
+ txt+='政治人物，活动见于下列任期与人物资料。'
  if ordinary:txt+='现存名录将其执政官任职记在'+ '、'.join(f'前{v}年' for v in ordinary)+'，其中正任与补任在年度卡片分别标明。'
  if tribunes:txt+='他还在'+'、'.join(f'前{v}年' for v in tribunes)+'担任具执政官权力的军事保民官。'
  year=ordinary[0] if ordinary else c[0]['year'];ev=years[str(year)]['events']
  if ev:
-  txt+=f"在其前{year}年的任职背景中，年度记事的重要主题是“{ev[0]['title']}”。"
- txt+='这些任职经历反映他在当时军政精英中的地位；年度背景不等于其中每件事都由他本人实施，具体参与可继续查阅人物资料。'
+  txt+=f"他的前{year}年任期处在“{ev[0]['title']}”这一局势中，年度页收录了相关记事和来源，人物专条可进一步追踪其家族及政治关系。"
  p['bio']=txt
 for p in people.values():p.pop('_intro',None)
 missingevents=[y for y,r in years.items() if not r['events']]
@@ -176,13 +175,18 @@ else:
  if missing:raise ValueError('Missing translations: '+str(sorted(missing)))
 stats={'years':len(years),'people':len(people),'appointments':sum(len(y['officers']) for y in years.values()),'biographies':sum(bool(p['bio']) for p in people.values()),'events':sum(len(y['events']) for y in years.values())}
 method=[
- {'title':'完整纪年，特殊年份单独处理','html':'覆盖前509年至前27年，共483个传统年度。以依据 T. R. S. Broughton《The Magistrates of the Roman Republic》整理的<a href="https://en.wikipedia.org/wiki/List_of_Roman_consuls" target="_blank" rel="noopener">传世官员汇总名录</a>为入口，晚期另对照<a href="https://www.attalus.org/info/mrr2.pdf" target="_blank" rel="noopener">卷二数字化稿</a>。正任、补任、十人委员会、军事保民官、最高官职空缺与四个“独裁官年”分别记录。此为历史整理项目，并不把名录直接等同于现代可完全核证的行政档案。'},
- {'title':'中文译名与拉丁姓名','html':'有中文专条或通行译名的人物优先采用其已有名称，其他名字按拉丁人名词素统一音译；每张卡片标明方式。拉丁文展开标准前名缩写，并把 Junius / Julius 等现代写法规范为 Iunius / Iulius。谱系、同名者和残缺铭文仍以来源的身份区分。未链接人物专条的同名记录按年度保留独立身份，不强行合并。音译表随数据开源，便于逐词校订。'},
- {'title':'每年都有记事，史料留白不变成虚构','html':'选取战争、立法、公民权、土地与债务、殖民、重大公共危机、宗教及文化建设。早期对照<a href="https://en.wikisource.org/wiki/From_the_Founding_of_the_City" target="_blank" rel="noopener">李维《建城以来史》</a>；前324年至前30年主要使用<a href="https://www.attalus.org/" target="_blank" rel="noopener">Attalus 的古代来源与现代研究索引</a>。每条为中文重述并附出处。少数年度只有编年线索或跨年进程，明确标注，不虚构一场“当年大战”。人物简介约覆盖前三分之一，按史料信息量、重复任职与重大事件相关性选取，并非客观声望排行榜。'},
- {'title':'精细轮廓的历史地图','html':'疆域使用<a href="https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0" target="_blank" rel="noopener">Cliopatria v0.2.0 / Seshat</a>的历史 GIS 重建，参见<a href="https://www.nature.com/articles/s41597-025-04516-9" target="_blank" rel="noopener">数据论文</a>。沿<a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth 1:50m 海岸线</a>裁切，生成可缩放的连续涂色图。它使用53个历史阶段，不假装每年都存在独立精确测绘；每张地图标出阶段。早期轮廓向前延用，盟邦、占领与行省边界可能与实际当年局势不同。'},
+ {'title':'完整纪年，特殊年份单独处理','html':'覆盖前509年至前27年，共483个传统年度。以依据 T. R. S. Broughton《The Magistrates of the Roman Republic》整理的<a href="https://en.wikipedia.org/wiki/List_of_Roman_consuls" target="_blank" rel="noopener">传世官员汇总名录</a>为入口，晚期另对照<a href="https://www.attalus.org/info/mrr2.pdf" target="_blank" rel="noopener">卷二数字化稿</a>。正任、补任、十人委员会、军事保民官、最高官职空缺与四个“独裁官年”分别记录。各年度保留相应的来源与任职说明。'},
+ {'title':'中文译名与拉丁姓名','html':'有中文专条或通行译名的人物优先采用其已有名称，其他名字按拉丁人名词素统一音译；每张卡片标明方式。拉丁文展开标准前名缩写，并把 Junius / Julius 等现代写法规范为 Iunius / Iulius。谱系、同名者和残缺铭文仍以来源的身份区分。未链接人物专条的同名记录按年度保留独立身份，方便继续校订。音译表随数据开源，便于逐词校订。'},
+ {'title':'年度记事与人物简介','html':'选取战争、立法、公民权、土地与债务、殖民、重大公共危机、宗教及文化建设。早期对照<a href="https://en.wikisource.org/wiki/From_the_Founding_of_the_City" target="_blank" rel="noopener">李维《建城以来史》</a>；前324年至前30年主要使用<a href="https://www.attalus.org/" target="_blank" rel="noopener">Attalus 的古代来源与现代研究索引</a>。每条为中文重述并附出处。记载简略的年份按编年线索介绍前后局势。人物简介约覆盖前三分之一，重点选取多次任职、资料较丰富和参与重要事件的人物。'},
+ {'title':'十个历史剧本','html':'每个剧本从一场具体局势出发，以人物、政治选择和连续年份串起叙事。共十个开局、59章，涵盖成文法、同盟动员、行省经济、流亡者政治与海上粮道。各章附李维、普鲁塔克、阿庇安、狄奥多罗斯等古代作者或铭文出处，年代异说列在相应节点。剧本正文与年度档案相互连接，可跳章阅读，也可逐年查看中间的变化。'},
+ {'title':'精细轮廓的历史地图','html':'疆域使用<a href="https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0" target="_blank" rel="noopener">Cliopatria v0.2.0 / Seshat</a>的历史 GIS 重建，参见<a href="https://www.nature.com/articles/s41597-025-04516-9" target="_blank" rel="noopener">数据论文</a>。沿<a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth 1:50m 海岸线</a>裁切，生成可缩放的连续涂色图。地图共使用53个历史阶段，每张图标明对应时段。前509至501年沿用最早阶段的轮廓；地方条约、盟邦和军事进展可结合年度记事阅读。'},
  {'title':'传统年代与史料距离','html':'采用瓦罗纪年，建城纪年按 AUC = 754 − BC 年份换算。高卢洗劫罗马等事件在现代对照纪年中可能有数年差异，早期英雄故事含后世道德塑造。理解早期罗马可进一步参阅 Gary Forsythe《A Critical History of Early Rome》、T. J. Cornell《The Beginnings of Rome》以及《剑桥古代史》第七卷第二部分。'},
  {'title':'开源与署名','html':'网站代码采用 MIT；由维基百科名录整理、译写的数据按 CC BY-SA 4.0 提供，历史 GIS 数据为 CC BY 4.0，Natural Earth 底图为公有领域。各条目保留来源链接，依赖和字体许可证详见仓库 THIRD_PARTY.md。<a href="https://github.com/kaloioannes/roman-republic-fasti" target="_blank" rel="noopener">查看公共仓库</a>。'}
 ]
 out={'version':'1.0.0','stats':stats,'method':method,'years':years,'people':people}
 (R/'data/republic.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
 print(json.dumps(stats));print('untranslated',sorted(missing));print('missing events',len(missingevents))
+
+# Curated narrative routes are authored separately from the annual records.
+stories=json.loads((R/'data-source/stories.json').read_text(encoding='utf-8'))
+(R/'data/stories.json').write_text(json.dumps(stories,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

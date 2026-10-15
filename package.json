@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "An annual Chinese / Latin atlas of the Roman Republic, 509–27 BCE.",
-  "scripts": {"validate": "node scripts/validate.mjs"},
+  "scripts": {"validate": "node scripts/validate.mjs", "test:ui": "node scripts/test-ui.cjs"},
   "license": "MIT"
 }
