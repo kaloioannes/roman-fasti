@@ -10,12 +10,14 @@ const base = '/roman-republic-fasti/';
 const mime = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.ttf':'font/ttf','.svg':'image/svg+xml'};
 (async () => {
   const manifest = JSON.parse(await fs.readFile(path.join(site,'asset-manifest.json'),'utf8'));
-  const data = JSON.parse(await fs.readFile(path.join(root,'data/empire.json'),'utf8'));
+  const data = JSON.parse(await fs.readFile(path.join(root,'data/empire/records.json'),'utf8'));
   const requests = new Set(), errors = [];
   const server = http.createServer(async (req,res) => {
     const url = new URL(req.url,'http://localhost'); requests.add(url.pathname);
     if (!url.pathname.startsWith(base)) return res.writeHead(404).end();
-    const file = path.resolve(site,url.pathname.slice(base.length) || 'index.html');
+    let name = url.pathname.slice(base.length) || 'index.html';
+    if(name.endsWith('/'))name+='index.html';
+    const file = path.resolve(site,name);
     if (!file.startsWith(site+path.sep)) return res.writeHead(404).end();
     try { res.setHeader('Content-Type',mime[path.extname(file)] || 'application/octet-stream'); res.end(await fs.readFile(file)); }
     catch { res.writeHead(404).end(); }
@@ -27,7 +29,7 @@ const mime = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/j
     const context = await browser.newContext({viewport:{width:1440,height:1000}});
     const page = await context.newPage(); page.on('pageerror',e=>errors.push(e.message));
     const origin = `http://127.0.0.1:${server.address().port}${base}`;
-    const url = origin+'emperors.html';
+    const url = origin+'empire/';
     await page.goto(url); await page.waitForSelector('.story-card');
     assert.equal(await page.locator('.story-card').count(),6);
     await page.locator('#home-form-year').fill('0'); await page.locator('#home-form').evaluate(f=>f.requestSubmit());
@@ -132,17 +134,17 @@ const mime = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/j
       await page.goto(url+hash); await page.waitForSelector('.empty-state[role=alert]');
       assert.equal(await page.locator('.ruler-card').count(),0);
     }
-    for (const name of ['style.css','imperial.css','imperial-app.js','data/empire.json','data/imperial-territories.json']) {
+    for (const name of ['shared/ui.css','empire/style.css','empire/app.js','data/empire/records.json','data/empire/territories.json']) {
       assert.ok(requests.has(base+manifest[name]),`No fingerprinted request: ${name}`);
       assert.ok(!requests.has(base+name),`Unversioned request: ${name}`);
     }
     // Network errors must leave a usable retry action, for both data and map.
     const failContext = await browser.newContext(); const failure = await failContext.newPage();
     failure.on('pageerror',e=>errors.push(e.message));
-    const empireURL = '**/'+manifest['data/empire.json'];
+    const empireURL = '**/'+manifest['data/empire/records.json'];
     await failure.route(empireURL,route=>route.fulfill({status:503,body:'unavailable'}));
     await failure.goto(url); await failure.waitForSelector('#retry-data'); await failure.unroute(empireURL); await failure.click('#retry-data'); await failure.waitForSelector('.story-card');
-    const mapURL = '**/'+manifest['data/imperial-territories.json'];
+    const mapURL = '**/'+manifest['data/empire/territories.json'];
     await failure.route(mapURL,route=>route.fulfill({status:503,body:'unavailable'}));
     await failure.goto(url+'#year=293'); await failure.waitForSelector('#retry-map');
     assert.ok(await failure.locator('.ruler-card').count()>0);

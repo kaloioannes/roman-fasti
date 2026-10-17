@@ -1,129 +1,109 @@
-# FASTI · 罗马共和国执政官纪年
+# FASTI · 罗马历史纪年
 
-从一座城，到地中海。按年份探索罗马共和国的人物、事件和疆域，也可以选择一个历史剧本，沿着政治困局与人物命运读下去。
+沿着年份，阅读罗马的官员、统治者、人物、事件与疆域。中文叙述与拉丁文姓名并列，人物、年度与史料相互连接。
 
-**[打开网站](https://kaloioannes.github.io/roman-republic-fasti/)**
+**[打开网站](https://kaloioannes.github.io/roman-republic-fasti/)** · [共和国篇](https://kaloioannes.github.io/roman-republic-fasti/republic/) · [古典帝国篇](https://kaloioannes.github.io/roman-republic-fasti/empire/)
 
-新增 **[古典罗马皇帝数据库](https://kaloioannes.github.io/roman-republic-fasti/emperors.html)**：前27年奥古斯都受号至395年狄奥多西去世，共 **422个年度、134位人物的三段式传记、426条记事、162段称号任期**。包括中央共帝、高卢与巴尔米拉等区域政权、有可靠证据的争位者，另设帝号有争议及选录的恺撒辅栏。原共和国篇继续从本页入口使用。
+## 时期与范围
 
-皇帝篇在年度卡片、人物索引与完整档案标明王朝归属，短期政治家族另标“家族”，无法确定者明确说明；时代／制度与王朝分开。可按中文、拉丁文、别名、王朝、时代和身份检索，并按王朝／家族筛选（如 `#people&dynasty=severan`）；分享年度用 `emperors.html#year=260`，前27年用 `#year=-27`，人物如 `#person=augustus`。前1年直接跳到公元1年。每条事件与每位人物附史料链接、卷章或定位说明；同年先后在位与同时共治以任期区分。资料不能精确分年的年份明确标为跨年背景，可单独筛选。人物总数包含辅栏，不能当作正式皇帝人数。
-
-皇帝篇的资料结构、收录取舍及日期争议见 [研究说明](data-source/empire/RESEARCH.md)，完整来源目录在 [sources.json](data-source/empire/sources.json) 及页面“史料与方法”中。
-
-覆盖前509—前27年全部 **483个年度**，收录 **1,201项任职、512条记事、302段人物简介、53个疆域阶段**，另有 **10个剧本、59个叙事章节**。
-
-## 十个历史剧本
-
-每个剧本从一个具体局势出发，介绍关键人物，再用连续年份展开。章节与年度档案共用同一页面：读完剧情，往下就是当年的官员、地图与事件。可以跳到下一章，也可以逐年查看两章之间发生的事。
-
-| 剧本 | 年份 | 叙事主线 |
+| 时期 | 项目分卷范围 | 状态与内容 |
 |---|---|---|
-| 把权力刻在铜上 | 前462—449 | 十人委员会、成文法与临时授权 |
-| 道路通向谁的罗马 | 前312—287 | 阿庇乌斯的工程、名册与公民选票 |
-| 轭下的誓言 | 前321—293 | 考迪乌姆、国家誓约与萨莫奈联盟 |
-| 十二座城拒绝出兵 | 前216—201 | 汉尼拔战争中的殖民地、军役与惩罚 |
-| 胜利者回到城内 | 前190—183 | 西庇阿审判、酒神祭仪与监察权 |
-| 粮仓里的国王 | 前135—101 | 西西里两次奴隶战争 |
-| 为罗马作战的人 | 前125—88 | 弗雷盖莱、同盟者战争与公民权登记 |
-| 罗马可以在别处 | 前80—72 | 塞尔托里乌斯的地方联盟与流亡元老院 |
-| 赢下战役，失去战争 | 前74—66 | 卢库卢斯、亚洲债务与统帅权转移 |
-| 谁让罗马吃饭 | 前43—36 | 塞克斯图斯、粮道与西西里舰队 |
+| 王政时代 | 前753—前509年 | 规划中 |
+| 罗马共和国 | 前509—前27年 | 已开放；483个年度、1,201项任职、512条记事、302段简介、53个疆域阶段；10个剧本、59个章节 |
+| 古典罗马帝国 | 前27—公元395年 | 已开放；422个年度、134位人物、426条记事、162段称号任期、57个疆域阶段 |
+| 双帝国时期 | 公元395—476年 | 规划中 |
+| 拜占庭时期 | 公元476—1453年 | 规划中 |
 
-剧本是史实导读。开局局势与“关注的问题”提供阅读角度，各章附古代来源和具体章节。日期有异说的节点在引用旁说明，跨年过程在正文中交代。
+时期清单维护在 [project.json](project.json)。规划中的时期仅展示路线图，尚无数据库或可点击的空页面。分卷采用包含端点的范围，交界年份可以出现在相邻两篇；这些边界是编辑安排。皇帝篇人物包含共治者、争位者、区域政权、帝号有争议者及选录的恺撒，134不能视为正式皇帝人数。
 
-## 使用
+## 浏览与分享
 
-输入 `44`、`44 BC`、`44 BCE` 或 `公元前44年`，或者随机打开一年。年度页支持前后翻年、人物简介展开、地图拖动与缩放。亮暗主题会保存在浏览器中，手机也可使用。
+共和国篇支持年份检索、逐年前后翻阅、官员简介、地图缩放与十个连续叙事剧本。防剧透默认关闭，可按条或按年揭示，设置会保存在浏览器中。
 
-**防剧透默认关闭。** 页头总开关在首页和年度页均可使用，开启后隐藏年度事件、任内经历、完整生平和未读章节。可以逐条展开事件，或一次展开本年全部事件。开关设置会保存；再次开启时清空已揭示内容。旧版浏览器设置会在升级后重新采用默认关闭。
+古典帝国篇支持年度、完整人物传记、王朝／家族筛选和史料目录。可按中文、拉丁文、别名、王朝、时代和身份检索；同年先后在位与共治按任期区分。跨年背景可单独筛选，前1年直接接公元1年。
 
-分享年份：`#year=44`。分享剧本章节：`#story=sertorian-rome&year=77`。回到首页的剧本区：`#stories`。
+| 内容 | 链接示例 |
+|---|---|
+| 共和国前44年 | `republic/#year=44` |
+| 塞尔托里乌斯剧本章节 | `republic/#story=sertorian-rome&year=77` |
+| 古典帝国前27年 | `empire/#year=-27` |
+| 奥古斯都传记 | `empire/#person=augustus` |
+| 塞维鲁王朝人物 | `empire/#people&dynasty=severan` |
 
-网站为纯静态页面，无需账号、服务器或地图服务密钥，运行资产随仓库提供。
+原有根目录链接 `#year=44`、`#stories`、`#story=…&year=…` 自动进入共和国篇；`emperors.html` 及其年度、人物和筛选链接自动进入古典帝国篇，保留查询参数与完整 hash。
 
-## 本地运行
+## 仓库结构
+
+```text
+project.json                 项目名称与时期清单
+site/                        网页源文件
+  index.html                 全时期入口
+  republic/                  共和国页面与交互
+  empire/                    古典帝国页面与交互、专用样式
+  shared/                    两篇共用的 UI、字体、地理底图与第三方库
+  emperors.html              原帝国入口的兼容跳转
+data-source/
+  republic/                  共和国名录、事件、简介、剧本与原始 GIS
+  empire/                    帝国人物、王朝、任期、事件、史料与原始 GIS
+data/
+  republic/                  records.json、stories.json、territories.json
+  empire/                    records.json、territories.json
+scripts/                     数据生成、发布构建、校验与浏览器回归
+docs/                        架构、扩展约定与研究说明
+_site/                       构建生成的完整发布包，不提交
+```
+
+[架构与新增时期指南](docs/architecture.md) 解释目录职责、年份和人物 ID 约定、旧路径迁移及扩展步骤。运行数据与可编辑史料按时期对应；前端按各篇现有 schema 读取，避免为了统一目录改写历史资料。
+
+## 本地构建与预览
+
+需要 Python 3.10+、Node.js 22+。发布构建仅使用 Python 标准库，无需网络。
 
 ```sh
-python -m http.server 8000
-# 在浏览器打开 http://localhost:8000
 npm run validate
-```
-
-重建皇帝篇数据：`python scripts/build_empire.py`（Python标准库，无需网络）。编辑 `data-source/empire/people.tsv`、`dynasties.json`、`reigns.tsv`、`events.tsv`，再重建 `data/empire.json`。地图重建见研究说明；浏览器测试 `npm run test:imperial` 需先执行 `python scripts/build_site.py`。
-
-页面通过 `fetch` 读取 JSON，本地预览请使用 HTTP 服务。前端无需打包。
-
-可选浏览器回归测试：
-
-```sh
-npm install --no-save playwright
-npx playwright install chromium
-npm run test:ui
-```
-
-浏览器测试覆盖全部剧本章节、默认防剧透、逐条与整年揭示、设置保存、失败重试，以及四种宽度下的明暗布局。已安装 Chrome 或 Edge 时，可设置 `PLAYWRIGHT_CHANNEL=chrome` 或 `msedge` 使用它们。
-
-发布包预览与缓存升级测试：
-
-```sh
-python scripts/build_site.py
-node scripts/validate-release.mjs
-npm run test:release
+npm run build
+npm run validate:release
 python -m http.server 8000 --directory _site
+# 打开 http://localhost:8000
 ```
 
-发布包为两卷的 CSS、JavaScript 和五份 JSON 数据生成带内容指纹的文件名，页面始终引用同一批资源。更新样式或数据会自动产生新地址，浏览器保留旧缓存时也能正确加载新版。缓存升级测试使用真实 HTTP 服务，先保存旧资源，再检查新版卡片、章节导航、正文排版及明暗主题；PR 会运行这项浏览器检查。
+预览使用 `_site/`。页面通过 HTTP 读取 JSON，直接打开本地 HTML 文件无法正常加载资料。前端采用原生 HTML、CSS 和 JavaScript。
 
-重建文字数据与地图：
+### 编辑与重建数据
 
 ```sh
 python -m pip install -r scripts/requirements.txt
-python scripts/build_data.py
-python scripts/build_map.py
+python scripts/build_data.py          # 共和国文字与剧本
+python scripts/build_empire.py        # 古典帝国人物、任期、记事
+python scripts/build_map.py           # 共和国地图
+python scripts/build_imperial_map.py  # 古典帝国地图
 npm run validate
+npm run build
+npm run validate:release
 ```
 
-`data-source/` 保存可编辑的资料，`data/` 保存网页读取的 JSON。修改文字或剧本后运行 `build_data.py`，将源文件与生成文件一起提交。合入 `main` 后，GitHub Pages 工作流构建并校验 `_site/`，再发布网站。
+修改 `data-source/<时期>/` 后，将对应的 `data/<时期>/` 生成文件一起提交。皇帝文字构建只需 Python 标准库；共和国文字构建使用 OpenCC；地图构建使用 Shapely。源资料与底图已随仓库提供，重建无需联网。
 
-## 来源与编辑
+### 浏览器回归
 
-官员名录以依据 T. R. S. Broughton《The Magistrates of the Roman Republic》整理的[汇总名录](https://en.wikipedia.org/wiki/List_of_Roman_consuls)为入口，晚期另对照[卷二数字化稿](https://www.attalus.org/info/mrr2.pdf)。正任、补任、军事保民官、十人委员会、官职空缺和传统独裁官年分别记录，选举无效、辞职与任内死亡列入说明。
+```sh
+npm install --no-save --package-lock=false playwright@1.62.1
+npx playwright install chromium
+npm run build
+npm run test:ui
+npm run test:release
+```
 
-中文名优先采用已有专条译名，其余按公开的拉丁姓名词素表音译。拉丁前名缩写展开，`Junius / Julius` 规范为 `Iunius / Iulius`。残缺姓名注明常见复原或异读。有专条的人物按来源区分身份，其余同名任职按年度分别保存；905个人物条目中因此包含尚待合并的记录。简介重点覆盖多次任职、资料丰富和参与重要事件的人物。
+已安装 Chrome 或 Edge 时，可设置 `PLAYWRIGHT_CHANNEL=chrome` 或 `msedge`。测试涵盖共和国全部剧本章节、防剧透与失败重试、帝国任期边界和人物传记、王朝筛选、地图、明暗主题与手机布局、缓存升级、旧链接跳转，以及 GitHub Pages 子目录部署。`npm run test:routes` 可单独检查入口与兼容链接。
 
-早期事件对照[李维《建城以来史》](https://en.wikisource.org/wiki/From_the_Founding_of_the_City)，前324—30年主要通过 [Attalus](https://www.attalus.org/) 查找古代来源与现代研究，最后三年另引[卡西乌斯·狄奥](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/home.html)。剧本另使用普鲁塔克、阿庇安、狄奥多罗斯与铭文。正文为中文重述，出处随条目保留。
+PR 工作流重建文字数据并校验一致性，运行数据、目录、发布包和浏览器检查。合入 `main` 后，Pages 工作流构建并校验 `_site/`，再发布网站。构建自动发现各篇的 HTML、CSS、JavaScript 和 JSON，对运行资源生成内容指纹并改写相对引用。
 
-文案直接讲述事件、人物行动与具体分歧。记载简略的年份介绍前后局势；年代异说、传奇传统和人物识别问题各在相应条目交代。采用瓦罗纪年，`AUC = 754 − BC`。
+## 史料、编辑与许可证
 
-深入阅读：T. J. Cornell, *The Beginnings of Rome*；Gary Forsythe, *A Critical History of Early Rome*；*The Cambridge Ancient History* VII.2、VIII、IX；Broughton 的官员研究。
+共和国名录以依据 Broughton《The Magistrates of the Roman Republic》整理的汇总名录为入口，事件、简介与剧本附来源；地图来自 Cliopatria，并以 Natural Earth 海岸线裁切。详细的名录身份处理、十个剧本与阅读方法见 [共和国研究说明](docs/republic.md)。
 
-## 地图
+古典帝国篇的收录取舍、年代异说、任期与疆域重建见 [帝国研究说明](data-source/empire/RESEARCH.md)，来源目录见 [sources.json](data-source/empire/sources.json)。
 
-历史疆域使用 [Cliopatria v0.2.0 / Seshat](https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0) 的 GIS 轮廓，沿 Natural Earth 1:50m 海岸线裁切、轻度简化，以 D3 绘制。
+代码使用 [MIT](LICENSE)；文字、剧本与名录数据使用 CC BY-SA 4.0；Cliopatria 地图使用 CC BY 4.0；Natural Earth 为公有领域。完整署名与变更说明见 [DATA_LICENSE.md](DATA_LICENSE.md) 和 [THIRD_PARTY.md](THIRD_PARTY.md)。
 
-地图按53个历史阶段显示，每张图标出所用时段。前509—501年沿用最早的前500—481年轮廓。色块呈现阶段控制区，具体战争、地方条约和盟友关系可结合年度记事阅读。
-
-数据论文：Bennett, J. S., Mutch, E., Tollefson, A. et al. (2025), [*Cliopatria — A geospatial database of world-wide political entities from 3400BCE to 2024CE*](https://doi.org/10.1038/s41597-025-04516-9), *Scientific Data* 12, 247.
-
-## 文件
-
-| 文件 | 内容 |
-|---|---|
-| `index.html` / `style.css` / `app.js` | 页面、主题与交互 |
-| `data/republic.json` | 年度、任职、人物、事件与出处 |
-| `data/stories.json` | 网页读取的剧本 |
-| `data/territories.json` | 历史疆域 GeoJSON |
-| `data-source/stories.json` | 剧本局势、人物、章节与引用 |
-| `data-source/events.tsv` | `年份\|标题\|正文\|类别\|来源代号` |
-| `data-source/biographies.tsv` | 人物中文简传 |
-| `data-source/name-glossary.json` | 拉丁姓名词素译名表 |
-| `data-source/roster.json` / `profiles.json` | 名录及人物专条来源快照 |
-| `scripts/` | 数据生成与校验 |
-
-事件来源代号为李维卷数，或 `A`（Attalus；前29—27年由生成脚本转为狄奥）。名录来源采集于2026-10-07，剧本整理于2026-10-15。欢迎附出处提交译名、官职、年代和地图校订。
-
-## 许可证
-
-代码为 [MIT](LICENSE)；文字、剧本与名录数据为 CC BY-SA 4.0；Cliopatria 地图为 CC BY 4.0；Natural Earth 为公有领域。完整署名见 [THIRD_PARTY.md](THIRD_PARTY.md) 和 [DATA_LICENSE.md](DATA_LICENSE.md)。
-
-**English:** FASTI is a Chinese/Latin annual atlas of the Roman Republic (509–27 BCE), with ten curated historical starts. Follow linked narrative chapters or browse all 483 years, magistrates, biographies and territorial maps. A global spoiler switch is off by default and remembers your choice. Code: MIT; text and story data: CC BY-SA 4.0; Cliopatria geometry: CC BY 4.0.
+**English:** FASTI is a Chinese/Latin collection of annual databases for Roman history. Published volumes cover Republican magistrates (509–27 BCE) and classical Roman emperors (27 BCE–395 CE), with linked biographies, events, sources and territorial maps. The Kingdom, divided Empire and Byzantine periods are planned. The repository slug remains `roman-republic-fasti` to preserve existing GitHub and Pages URLs.

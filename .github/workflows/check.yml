@@ -19,7 +19,7 @@ jobs:
           pip install opencc-python-reimplemented==0.1.7
           python scripts/build_data.py
           python scripts/build_empire.py
-          git diff --exit-code -- data/republic.json data/stories.json data/empire.json
+          git diff --exit-code -- data/republic/records.json data/republic/stories.json data/empire/records.json
       - name: Validate years, maps, stories and copy
         run: npm run validate
       - name: Validate release assets
@@ -30,4 +30,5 @@ jobs:
         run: |
           npm install --no-save --package-lock=false playwright@1.62.1
           npx playwright install --with-deps chromium
+          npm run test:ui
           npm run test:release

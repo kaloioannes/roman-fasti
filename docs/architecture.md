@@ -1,0 +1,66 @@
+# 架构与新增时期指南
+
+## 项目身份
+
+项目展示名为 **FASTI · 罗马历史纪年**，软件包名为 `roman-fasti`。GitHub 仓库地址暂保留 `kaloioannes/roman-republic-fasti`，站点部署仍使用该 Pages 子路径。仓库改名会改变部署地址，需要单独安排 URL 迁移；本次 PR 不依赖仓库设置变更。
+
+GitHub About 可采用：`FASTI · 罗马历史纪年 — Chinese/Latin annual databases of Roman magistrates and emperors, with biographies, sources and historical maps.`
+
+## 目录与依赖方向
+
+```text
+data-source/<period>/ ── 数据构建脚本 ──> data/<period>/
+                                              │
+site/<period>/ + site/shared/ + project.json ───┴──> build_site.py ──> _site/
+```
+
+`data-source/` 是史料编辑入口；`data/` 是已提交的网页数据产物；`site/` 是静态网页源码；`_site/` 是可独立部署的产物。构建不抓取网络资料。`scripts/` 统一放置命令行工具，保留已有脚本名，外部调用无需再迁移一层。
+
+`site/shared/ui.css` 是两篇共同使用的既有视觉组件集，包括主题、导航、地图、卡片与阅读组件。第三方库、字体及公共底图集中于 `site/shared/assets/`。古典帝国独有的布局放在 `site/empire/style.css`；新增时期的专用样式也放在自己的目录中。每篇的 `app.js` 与 `index.html` 同目录，经典脚本中的 fetch 地址按页面 URL 解析。
+
+共和国与帝国有不同的官职、任期与人物模型。目录一致不意味着强制使用同一 schema。数据构建和校验仍分别负责各自的史学语义。
+
+## 时期、年份和身份
+
+- `project.json` 定义稳定的时期 ID、标题、展示范围、历史年份端点和发布状态。`available` 要求完整页面与数据；`planned` 仅为规划说明，不产生空数据库或链接。
+- 清单中的历史年份使用负数表示公元前、正数表示公元后，无公元0年。分卷端点包含在内，因此前509、前27、395和476等交界年份允许重叠；跨时期查询不得简单相加作为唯一年度数。
+- 共和国篇保留原来的正数 BC 键与路由，如 `years[44]`、`#year=44` 表示前44年；帝国篇的 `years[-27]`、`#year=-27` 表示前27年。任何跨时期工具必须显式转换共和国年份，不能直接合并两个 `years` 对象。
+- 人物 ID 只在本篇内唯一；跨时期引用使用 `(periodId, personId)`。对跨前27年或395年的同一人物，未来可增加有来源的身份映射，不能仅按姓名自动合并。
+- 双帝国篇应在单一时期模块中显式记录东西部任期及政权归属；拜占庭篇的476年起点是本项目分卷安排。具体字段和收录标准应在建设该篇时依据史料定义。
+
+## 构建与 URL
+
+`build_site.py` 自动发现 `site/` 下的 HTML、CSS、JavaScript 和 `data/` 下的 JSON，并为 JSON、第一方 CSS/JS 生成 SHA-256 内容指纹。`asset-manifest.json` 的键始终相对于发布根目录。重写时将每条引用解析到资源，再转回相对于当前页面／样式表的路径。新增文件通常无需修改构建文件列表。
+
+HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及字体按共享资源原名复制。全部站内路径采用相对 URL，兼容域名根目录和 `/roman-republic-fasti/`。静态目录 URL 使用结尾的 `/`。
+
+构建前只清理上一次清单拥有的指纹文件；重复构建不会不断累积旧指纹。自定义输出目录必须与源目录分离。构建输出还包含代码与数据许可证和第三方署名。
+
+| 旧路径 | 当前路径 |
+|---|---|
+| `/`（无 hash） | 总入口 |
+| `/#year=44`、`/#stories`、`/#story=…&year=…` | `/republic/`，保留完整 hash 与查询参数 |
+| `/emperors.html#…` | `/empire/#…`，保留完整 hash 与查询参数 |
+| 根目录 `app.js`、`style.css` | `site/republic/app.js`、`site/shared/ui.css` |
+| 根目录帝国页面与脚本 | `site/empire/` |
+| `data-source/` 下的共和国散文件 | `data-source/republic/` |
+| `data/republic.json`、`data/stories.json`、`data/territories.json` | `data/republic/{records,stories,territories}.json` |
+| `data/empire.json`、`data/imperial-territories.json` | `data/empire/{records,territories}.json` |
+| `assets/` | `site/shared/assets/` |
+
+公开页面链接提供兼容跳转。仓库内 JSON 和源码路径按此表迁移；直接读取仓库文件的下游脚本需更新路径。发布数据实际地址应从清单获得。
+
+## 新增一个时期
+
+1. 在 `project.json` 中确认时期 ID 与分卷范围，初期保持 `planned`。
+2. 在 `data-source/<id>/` 建立带来源的编辑资料与研究说明；明确年份、人物身份、官职／帝号、任期精度及争议处理。
+3. 编写离线且可重复的数据构建脚本，输出 `data/<id>/records.json`，地图与其他资料也放在该目录。提交源文件及生成文件。
+4. 建立 `site/<id>/index.html`、`app.js` 及按需的 `style.css`。共用 `../shared/`，读取 `../data/<id>/`，保留返回总入口的 `href="../"`。
+5. 添加对应数据校验，并接入 `npm run validate`、PR 重建一致性检查和浏览器回归。至少测试边界年份、人物直链、失败重试、地图及手机布局。
+6. 完成研究与验证后，将清单状态改为 `available`，同步首页无脚本回退入口、README 的范围与统计。构建器会发现新模块并处理指纹资源。
+
+## 验证责任
+
+`validate.mjs` 与 `validate-empire.mjs` 校验各篇数据、来源、人物引用、地图覆盖与资料约定。`validate-structure.mjs` 检查时期清单和目录职责。`validate-release.mjs` 检查完整资源清单、指纹、HTML/JS/CSS 本地引用及子目录兼容。
+
+`test-ui.cjs` 覆盖共和国交互；`test-release.cjs` 覆盖旧缓存升级；`test-imperial.cjs` 覆盖帝国人物、任期、检索与地图；`test-routes.cjs` 在域名根目录和 Pages 子路径下验证总入口、旧链接、主题共享、无脚本回退和手机布局。

@@ -5,15 +5,15 @@
   <title>FASTI · 罗马共和国执政官纪年</title>
   <meta name="description" content="十个历史剧本，483个年度。沿着人物与年份，走进罗马共和国的政治、战争与疆域。中文与拉丁文名录，互动历史地图。">
   <meta name="theme-color" content="#f8f6f1">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../shared/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../shared/ui.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
-  <script defer src="assets/d3.min.js"></script><script defer src="assets/topojson.min.js"></script><script defer src="app.js"></script>
+  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="app.js"></script>
 </head>
 <body>
   <header class="site-header">
     <a href="#" class="brand" aria-label="FASTI 首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马共和国执政官纪年</span></span></a>
-    <div class="header-actions"><label class="spoiler-toggle global-spoiler"><input type="checkbox" id="spoiler-switch"><span class="switch-track"></span><span id="spoiler-label">防剧透：关</span></label><button class="text-button" id="sources-button">史料与方法 <span aria-hidden="true">↗</span></button><button class="icon-button" id="theme-button" aria-label="切换明暗主题"></button></div>
+    <div class="header-actions"><a href="../" class="text-button edition-link">全部时期</a><label class="spoiler-toggle global-spoiler"><input type="checkbox" id="spoiler-switch"><span class="switch-track"></span><span id="spoiler-label">防剧透：关</span></label><button class="text-button" id="sources-button">史料与方法 <span aria-hidden="true">↗</span></button><button class="icon-button" id="theme-button" aria-label="切换明暗主题"></button></div>
   </header>
   <main id="home" class="home">
     <div class="home-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="orbit-dot"></span><span class="art-label art-left">DIXIT SENATVS</span><span class="art-label art-right">POPVLVSQVE ROMANVS</span></div>
@@ -21,7 +21,7 @@
       <div class="eyebrow"><span class="tiny-rule"></span> 509 — 27 BC <span class="tiny-rule"></span></div>
       <div class="hero-word" aria-hidden="true">FASTI</div>
       <h1>共和国的<span>每一年</span></h1>
-      <p class="home-description">从一座城，到地中海。选一个剧本走进局势，或翻开任意一年。<br><a href="emperors.html" class="edition-jump">续读：古典罗马皇帝数据库 · 前27—395年 ↗</a></p>
+      <p class="home-description">从一座城，到地中海。选一个剧本走进局势，或翻开任意一年。<br><a href="../empire/" class="edition-jump">续读：古典罗马皇帝数据库 · 前27—395年 ↗</a></p>
       <form class="year-search" id="home-form" novalidate>
         <span class="search-era" aria-hidden="true">BC</span><label class="sr-only" for="home-year">公元前年份，27至509</label><input id="home-year" name="year" type="text" inputmode="numeric" autocomplete="off" placeholder="输入公元前年份" maxlength="12" aria-describedby="home-error"><button type="submit" class="search-submit" aria-label="查看这一年">↗</button>
       </form>

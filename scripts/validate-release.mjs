@@ -3,28 +3,44 @@ import {createHash} from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../_site');
-const manifest=JSON.parse(fs.readFileSync(path.join(root,'asset-manifest.json'),'utf8'));
-assert.deepEqual(Object.keys(manifest).sort(),['app.js','data/empire.json','data/imperial-territories.json','data/republic.json','data/stories.json','data/territories.json','imperial-app.js','imperial.css','style.css']);
-for(const [original,versioned] of Object.entries(manifest)){
- const bytes=fs.readFileSync(path.join(root,versioned));
+const repo=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const root=path.join(repo,'_site');
+const read=name=>fs.readFileSync(path.join(root,name),'utf8');
+const manifest=JSON.parse(read('asset-manifest.json'));
+const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
+const expected=['project.json',...walk(path.join(repo,'data')).filter(p=>p.endsWith('.json')).map(p=>path.relative(repo,p).split(path.sep).join('/')),
+ ...walk(path.join(repo,'site')).filter(p=>/\.(css|js)$/.test(p)&&!p.includes(`${path.sep}assets${path.sep}`)).map(p=>path.relative(path.join(repo,'site'),p).split(path.sep).join('/'))];
+assert.deepEqual(Object.keys(manifest).sort(),expected.sort());
+const versioned=new Set(Object.values(manifest));
+for(const [original,name] of Object.entries(manifest)){
+ const bytes=fs.readFileSync(path.join(root,name));
  const hash=createHash('sha256').update(bytes).digest('hex').slice(0,16);
- assert.ok(versioned.includes(`.${hash}.`),`Wrong fingerprint: ${original}`);
+ assert.ok(name.includes(`.${hash}.`),`Wrong fingerprint: ${original}`);
 }
-const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
-const js=fs.readFileSync(path.join(root,manifest['app.js']),'utf8');
-for(const name of ['app.js','style.css'])assert.ok(html.includes(`"${manifest[name]}"`),`Unversioned entry: ${name}`);
-for(const name of ['data/republic.json','data/territories.json','data/stories.json']){
- assert.ok(js.includes(`'${manifest[name]}'`));
- assert.ok(!js.includes(`'${name}'`),`Unversioned data fetch: ${name}`);
+function verifyURL(file,url){
+ if(/^(?:[a-z]+:|\/\/|#)/i.test(url))return;
+ const pathname=url.split(/[?#]/)[0];
+ if(!pathname)return;
+ assert.ok(!pathname.startsWith('/'),`Root-absolute URL breaks Pages subpaths: ${file}: ${url}`);
+ const name=path.posix.normalize(path.posix.join(path.posix.dirname(file),pathname));
+ const target=path.join(root,name,pathname.endsWith('/')?'index.html':'');
+ assert.ok(fs.existsSync(target),`Broken local reference: ${file}: ${url}`);
+ assert.ok(!(name in manifest),`Unversioned asset reference: ${file}: ${url}`);
 }
-const imperialHTML=fs.readFileSync(path.join(root,'emperors.html'),'utf8');
-const imperialJS=fs.readFileSync(path.join(root,manifest['imperial-app.js']),'utf8');
-for(const name of ['style.css','imperial.css','imperial-app.js'])assert.ok(imperialHTML.includes(`"${manifest[name]}"`),`Unversioned imperial entry: ${name}`);
-for(const name of ['data/empire.json','data/imperial-territories.json']){
- assert.ok(imperialJS.includes(`'${manifest[name]}'`),`Missing imperial dataset: ${name}`);
- assert.ok(!imperialJS.includes(`'${name}'`),`Unversioned imperial data: ${name}`);
+for(const file of walk(root)){
+ const name=path.relative(root,file).split(path.sep).join('/');
+ if(name.startsWith('shared/assets/'))continue;
+ if(file.endsWith('.html')){
+   const html=read(name);
+   for(const m of html.matchAll(/(?:src|href)="([^"]+)"/g))verifyURL(name,m[1]);
+ }else if(/\.(js|css)$/.test(file)){
+   for(const m of read(name).matchAll(/["']([^"'\s]+\.(?:json|js|css|ttf|svg))["']/g))verifyURL(name,m[1]);
+ }
 }
-assert.ok(html.includes('href="emperors.html"'));
-assert.ok(imperialHTML.includes('href="index.html"'));
-console.log('Release verified: both volumes use matching CSS, JavaScript and dataset fingerprints.');
+for(const period of JSON.parse(read(manifest['project.json'])).periods.filter(p=>p.status==='available')){
+ const html=read(`${period.id}/index.html`);
+ assert.ok(html.includes('href="../"'),`Missing catalogue link: ${period.id}`);
+ assert.ok(html.includes(path.posix.basename(manifest[`${period.id}/app.js`])));
+}
+assert.ok(versioned.has(manifest['legacy-routes.js']));
+console.log(`Release verified: ${expected.length} fingerprinted assets, all local HTML/JS/CSS references, period navigation and Pages-relative paths.`);

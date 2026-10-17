@@ -3,9 +3,9 @@ from pathlib import Path
 from opencc import OpenCC
 cc=OpenCC('t2s')
 R=Path(__file__).resolve().parent.parent
-roster=json.loads((R/'data-source/roster.json').read_text(encoding='utf-8'))
-profiles=json.loads((R/'data-source/profiles.json').read_text(encoding='utf-8'))
-glossary=json.loads((R/'data-source/name-glossary.json').read_text(encoding='utf-8'))
+roster=json.loads((R/'data-source/republic/roster.json').read_text(encoding='utf-8'))
+profiles=json.loads((R/'data-source/republic/profiles.json').read_text(encoding='utf-8'))
+glossary=json.loads((R/'data-source/republic/name-glossary.json').read_text(encoding='utf-8'))
 glossary.update({'Marius':'马略','Publicius':'普布利基乌斯','Aulius':'奥利乌斯','Opimius':'奥皮米乌斯','Lupus':'卢普斯','Mento':'门托','Coxo':'科克索','Pulcher':'普尔凯尔','Lentulus':'伦图卢斯','Decius':'德基乌斯','Pansa':'潘萨','Imp.':'统帅','Imperator':'统帅','Aventinensis':'阿文提嫩西斯','Tullus':'图卢斯','Mucianus':'穆基亚努斯','Dolabella':'多拉贝拉','Sextilius':'塞克斯提利乌斯','Antonius':'安东尼乌斯','Sophus':'索富斯','Saenius':'赛尼乌斯','E)squilinus':'埃斯奎利努斯'})
 INITIAL={'L.':'Lucius','T.':'Titus','P.':'Publius','C.':'Gaius','Q.':'Quintus','Sp.':'Spurius','M.':'Marcus',"M'.":'Manius','Ser.':'Servius','Ap.':'Appius','A.':'Aulus','Cn.':'Gnaeus','Ti.':'Tiberius','K.':'Caeso','Mam.':'Mamercus','Sex.':'Sextus','D.':'Decimus','N.':'Numerius','Imp.':'Imperator'}
 glossary.update({'Ahala':'阿哈拉','Ahenobarbus':'阿赫诺巴尔布斯','Bibulus':'比布鲁斯','Caepio':'凯皮奥','Carvilius':'卡尔维利乌斯','Celer':'凯勒尔','Cerco':'凯尔科','Curio':'库里奥','Fufius':'富菲乌斯','Hispallus':'希斯帕卢斯','Iuventius':'尤文提乌斯','Laelius':'莱利乌斯','Licinus':'李基努斯','Megellus':'梅盖卢斯','Merula':'梅鲁拉','Nerva':'涅尔瓦','Niger':'尼格尔','Papus':'帕普斯','Spurinus':'斯普里努斯','Tuscus':'图斯库斯','Varus':'瓦鲁斯','Verrucosus':'韦鲁科苏斯'})
@@ -92,7 +92,7 @@ def attach_events(path):
   elif '编年线索' in category:certainty='编年线索'
   elif '传统叙事' in category:certainty='古代叙事 · 含传说成分'
   years[str(y)]['events'].append({'title':title,'description':description,'category':category,'certainty':certainty,'sources':sources})
-attach_events(R/'data-source/events.tsv')
+attach_events(R/'data-source/republic/events.tsv')
 special={509:'传统记载第一年共有五位执政官；辞职、战死、短期任职与补任依来源分别记录。首任顺序在波利比乌斯、李维与其他传统之间存在分歧。',451:'原有两位执政官记录与随后第一届十人委员会并列。古代来源对二人是否先实际就任执政官或仅当选便转任有分歧。同一人先后担任不同官职，名录按职务分别列出。',450:'第二届十人委员会掌握最高权力，本年没有通常的双执政官任职。',444:'三名军事保民官的任职因程序问题终止，随后选出补任执政官。',403:'李维列八位军事保民官，狄奥多罗斯等来源人数不同；部分人可能实为当年监察官，任职识别存在争议。',52:'庞培先以“无同僚执政官”身份上任，年内梅特鲁斯·西庇阿成为同僚。',43:'两位年初执政官希尔提乌斯与潘萨在穆提纳战役及其后死亡，屋大维与佩迪乌斯随后补任，年末再有补任。',27:'屋大维在本年获得“奥古斯都”称号，通常以此作为共和国与元首制的分界；执政官官职继续存在。'}
 for y,n in special.items():years[str(y)]['notes'].insert(0,n)
 for y,r in years.items():
@@ -137,7 +137,7 @@ for y,notes in office_notes.items():
   la=people[o['person']]['latin']
   if la in notes:o['note']=(o['note']+' '+notes[la]).strip()
 known_bios={}
-biofile=R/'data-source/biographies.tsv'
+biofile=R/'data-source/republic/biographies.tsv'
 if biofile.exists():
  for row in biofile.read_text(encoding='utf-8').splitlines():
   if row and not row.startswith('#'):
@@ -184,9 +184,9 @@ method=[
  {'title':'开源与署名','html':'网站代码采用 MIT；由维基百科名录整理、译写的数据按 CC BY-SA 4.0 提供，历史 GIS 数据为 CC BY 4.0，Natural Earth 底图为公有领域。各条目保留来源链接，依赖和字体许可证详见仓库 THIRD_PARTY.md。<a href="https://github.com/kaloioannes/roman-republic-fasti" target="_blank" rel="noopener">查看公共仓库</a>。'}
 ]
 out={'version':'1.0.0','stats':stats,'method':method,'years':years,'people':people}
-(R/'data/republic.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+(R/'data/republic/records.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
 print(json.dumps(stats));print('untranslated',sorted(missing));print('missing events',len(missingevents))
 
 # Curated narrative routes are authored separately from the annual records.
-stories=json.loads((R/'data-source/stories.json').read_text(encoding='utf-8'))
-(R/'data/stories.json').write_text(json.dumps(stories,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+stories=json.loads((R/'data-source/republic/stories.json').read_text(encoding='utf-8'))
+(R/'data/republic/stories.json').write_text(json.dumps(stories,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

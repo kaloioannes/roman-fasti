@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def land_geometry():
-    top = json.loads((ROOT / 'assets/land-50m.json').read_text(encoding='utf-8'))
+    top = json.loads((ROOT / 'site/shared/assets/land-50m.json').read_text(encoding='utf-8'))
     scale, translate = top['transform']['scale'], top['transform']['translate']
     arcs = []
     for arc in top['arcs']:
@@ -93,7 +93,7 @@ def build():
                         'label': label, 'caption': caption}, 'geometry': mapping(geometry)})
     output = {'type': 'FeatureCollection', 'features': features, 'source': source['source'],
               'license': 'CC BY 4.0', 'modifications': 'Roman-world outer footprint: union contemporaneous source polities without reproducing their disputed political dates; clipped to Natural Earth 1:50m; simplified 0.008 degrees; D3 ring orientation. 116 uses source117 outline; 117–126 uses source127 outline to reflect Hadrianic withdrawal. No year zero; original source-stage provenance retained.'}
-    (ROOT / 'data/imperial-territories.json').write_text(json.dumps(output, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    (ROOT / 'data/empire/territories.json').write_text(json.dumps(output, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f'Imperial map: {len(features)} reconstruction stages')
 
 

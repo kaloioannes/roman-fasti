@@ -4,9 +4,9 @@ from shapely.geometry import shape,mapping,box
 from shapely.ops import unary_union
 from shapely.geometry.polygon import orient
 R=Path(__file__).resolve().parent.parent
-data=json.loads((R/'data-source/roman-territories.geojson').read_text())
+data=json.loads((R/'data-source/republic/roman-territories.geojson').read_text())
 # Decode Natural Earth topology to clip reconstructed control areas to detailed land.
-top=json.loads((R/'assets/land-50m.json').read_text())
+top=json.loads((R/'site/shared/assets/land-50m.json').read_text())
 scale=top['transform']['scale'];tr=top['transform']['translate'];arcs=[]
 for arc in top['arcs']:
  x=y=0;pts=[]
@@ -45,5 +45,5 @@ for f in data['features']:
   if start==-509:caption='早期共和国采用前500—481年的重建轮廓，向前延用至前509年；色块展示罗马核心控制区。底图采用 Natural Earth 海岸线。'
   records.append({'type':'Feature','properties':{'from':start,'to':end,'label':period,'view':view,'caption':caption,'sourceFrom':p['FromYear'],'sourceTo':p['ToYear']},'geometry':mapping(g)})
 out={'type':'FeatureCollection','features':records,'source':'https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0','license':'CC BY 4.0','modifications':'Roman features selected; clipped to Natural Earth 1:50m land; simplified at 0.008 degrees; first republican outline extended from 500 to 509 BCE.'}
-(R/'data/territories.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
-print('map stages',len(records),'bytes',(R/'data/territories.json').stat().st_size)
+(R/'data/republic/territories.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+print('map stages',len(records),'bytes',(R/'data/republic/territories.json').stat().st_size)
