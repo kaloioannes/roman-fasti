@@ -18,9 +18,15 @@ def rows(name):
 
 def compile_data():
     sources = json.loads((SOURCE / 'sources.json').read_text(encoding='utf-8'))
+    dynasties = json.loads((SOURCE / 'dynasties.json').read_text(encoding='utf-8'))
+    for key, dynasty in dynasties.items():
+        assert dynasty['label'] and dynasty['note'], key
+        assert dynasty['kind'] in {'dynasty', 'family', 'none'}, key
+        assert (dynasty['sources'] or dynasty['kind'] == 'none') and all(s in sources for s in dynasty['sources']), key
     people = {}
     for p in rows('people.tsv'):
         assert p['id'] not in people, f"Duplicate person ID: {p['id']}"
+        assert p['dynasty'] in dynasties and p['era'], f"Missing dynasty/era: {p['id']}"
         people[p['id']] = {**p, 'bio': p['bio'].split('~'), 'sources': p['sources'].split(','), 'reigns': []}
     for r in rows('reigns.tsv'):
         r = {**r, 'start': int(r['start']), 'end': int(r['end'])}
@@ -47,11 +53,11 @@ def compile_data():
         for e in r['events']:
             assert all(s in sources for s in e['sources']), e
     return {'meta': {'title': '古典罗马皇帝数据库', 'start': -27, 'end': 395, 'yearZero': False,
-                     'researchDate': '2026-10-17', 'license': 'CC BY-SA 4.0', 'schemaVersion': 1},
+                     'researchDate': '2026-10-18', 'license': 'CC BY-SA 4.0', 'schemaVersion': 2},
             'stats': {'years': len(years), 'people': len(people),
                       'events': sum(len(r['events']) for r in years.values()),
                       'reigns': sum(len(p['reigns']) for p in people.values())},
-            'sources': sources, 'people': people, 'years': years,
+            'sources': sources, 'dynasties': dynasties, 'people': people, 'years': years,
             'method': json.loads((SOURCE / 'method.json').read_text(encoding='utf-8'))}
 
 

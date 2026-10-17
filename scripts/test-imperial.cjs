@@ -46,6 +46,14 @@ const mime = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/j
       await page.waitForFunction(y=>document.title.startsWith(y<0?`前${-y}年`:`${y}年`),y);
       const count = data.years[y].rulers.length;
       assert.equal(await page.locator('.ruler-card').count(),count,`Rulers not rendered: ${y}`);
+      const tags = await page.locator('.ruler-card .dynasty-tag').evaluateAll(nodes=>nodes.map(n=>({person:n.closest('.ruler-card').dataset.person,dynasty:n.dataset.dynasty,text:n.textContent,href:n.getAttribute('href')})));
+      assert.equal(tags.length,count,`Missing dynasty labels: ${y}`);
+      for (const tag of tags) {
+        const dynasty = data.people[tag.person].dynasty;
+        assert.equal(tag.dynasty,dynasty);
+        assert.ok(tag.text.includes(data.dynasties[dynasty].label));
+        assert.equal(tag.href,`#people&dynasty=${dynasty}`);
+      }
       assert.equal(await page.locator('.event-row').count(),data.years[y].events.length);
     }
     // Every person has a standalone, directly addressable three-paragraph biography.
@@ -53,11 +61,46 @@ const mime = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/j
       await page.goto(url+`#person=${person.id}`); await page.waitForSelector('.person-body');
       assert.equal(await page.locator('.person-heading h1').textContent(),person.zh);
       assert.equal(await page.locator('.person-body>p').count(),person.bio.length);
+      assert.equal(await page.locator('.person-heading .dynasty-tag').getAttribute('data-dynasty'),person.dynasty);
+      assert.ok((await page.locator('.dynasty-note').textContent()).includes(data.dynasties[person.dynasty].note));
+      if (person.dynastyNote) assert.ok((await page.locator('.dynasty-note').textContent()).includes(person.dynastyNote));
     }
+    // Dynasty links must carry the selected category across navigation and reloads.
+    await page.goto(url+'#year=69'); await page.waitForSelector('.ruler-card');
+    await page.locator('.ruler-card[data-person="vespasian"] .dynasty-tag').click();
+    await page.waitForSelector('#dynasty-filter');
+    assert.equal(await page.locator('#dynasty-filter').inputValue(),'flavian');
+    assert.equal(await page.locator('.person-card').count(),3);
+    await page.reload(); await page.waitForSelector('#dynasty-filter');
+    assert.equal(await page.locator('#dynasty-filter').inputValue(),'flavian');
+    for (const id of Object.keys(data.dynasties)) {
+      await page.selectOption('#dynasty-filter',id);
+      const expected = Object.values(data.people).filter(p=>p.dynasty===id).map(p=>p.id).sort();
+      const actual = await page.locator('.person-card').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href').split('=')[1]).sort());
+      assert.deepEqual(actual,expected,`Wrong dynasty filter: ${id}`);
+      assert.equal(await page.locator('.person-card .dynasty-tag').count(),expected.length);
+    }
+    await page.selectOption('#dynasty-filter','constantinian');
+    await page.selectOption('#kind-filter','rival'); await page.locator('#person-search').fill('尼波');
+    assert.equal(await page.locator('.person-card').count(),1);
+    await page.reload(); await page.waitForSelector('#person-search');
+    assert.equal(await page.locator('.person-card').count(),1);
+    await page.goto(url+'#people&dynasty='+encodeURIComponent('塞维鲁王朝')); await page.waitForSelector('#dynasty-filter');
+    assert.equal(await page.locator('#dynasty-filter').inputValue(),'severan');
+    assert.equal(await page.locator('.person-card').count(),5);
+    await page.goto(url+'#people&dynasty='+encodeURIComponent('三世纪危机')); await page.waitForSelector('#dynasty-filter');
+    assert.equal(await page.locator('#dynasty-filter').inputValue(),'三世纪危机');
+    assert.equal(await page.locator('#dynasty-filter option:checked').textContent(),'时代／政权：三世纪危机');
+    assert.equal(await page.locator('.person-card').count(),Object.values(data.people).filter(p=>p.era==='三世纪危机').length);
+    await page.locator('#person-search').fill('普庇');
+    assert.equal(await page.locator('.person-card').count(),1);
+    await page.reload(); await page.waitForSelector('#person-search');
+    assert.equal(await page.locator('.person-card').count(),1);
     await page.goto(url+'#people'); await page.waitForSelector('#person-search');
     await page.locator('#person-search').fill('Zenobia'); assert.equal(await page.locator('.person-card').count(),1);
     await page.reload(); await page.waitForSelector('#person-search'); assert.equal(await page.locator('#person-search').inputValue(),'Zenobia');
     await page.locator('#person-search').fill('不存在的名字'); assert.equal(await page.locator('.person-card').count(),0);
+    await page.locator('#person-search').fill('塞维鲁王朝'); assert.equal(await page.locator('.person-card').count(),5);
     await page.locator('#person-search').fill(''); await page.selectOption('#kind-filter','caesar');
     assert.equal(await page.locator('.person-card').count(),Object.values(data.people).filter(p=>p.reigns.some(r=>r.kind==='caesar')).length);
     await page.goto(url+'#year=150'); await page.waitForSelector('#dated-only'); await page.check('#dated-only');
@@ -73,14 +116,14 @@ const mime = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/j
       await page.setViewportSize({width,height:1000});
       for (const theme of ['light','dark']) {
         await page.evaluate(t=>document.documentElement.dataset.theme=t,theme);
-        for (const hash of ['','#year=260','#year=293','#people','#person=diocletian']) {
+        for (const hash of ['','#year=260','#year=293','#people','#people&dynasty=maximus','#person=diocletian','#person=licinius-ii']) {
           await page.goto(url+hash); await page.waitForFunction(()=>!document.querySelector('.initial-status'));
           assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow ${width}/${theme}/${hash}`);
         }
       }
     }
     if(output) {
-      for(const [name,hash,width] of [['imperial-home','#',1440],['imperial-260','#year=260',1440],['imperial-mobile','#year=293',390]]) {
+      for(const [name,hash,width] of [['imperial-home','#',1440],['imperial-260','#year=260',1440],['imperial-mobile','#year=293',390],['imperial-dynasty','#people&dynasty=severan',1440],['imperial-family-mobile','#person=licinius-ii',390]]) {
         await page.setViewportSize({width,height:1000}); await page.goto(url+hash); await page.waitForTimeout(150);
         await page.screenshot({path:path.join(output,name+'.png'),fullPage:true});
       }

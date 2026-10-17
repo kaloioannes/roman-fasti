@@ -1,0 +1,230 @@
+{
+  "julio-claudian": {
+    "label": "尤利乌斯—克劳狄王朝",
+    "kind": "dynasty",
+    "note": "从奥古斯都至尼禄；血缘、婚姻与收养共同构成早期皇室的继承关系。",
+    "sources": [
+      "dir-auggie",
+      "dir-tiberius",
+      "dir-claudius",
+      "dir-nero"
+    ]
+  },
+  "flavian": {
+    "label": "弗拉维王朝",
+    "kind": "dynasty",
+    "note": "韦斯帕芗及其两子提图斯、图密善；69年的其他皇帝不因同年在位而归入此王朝。",
+    "sources": [
+      "dir-vespasia",
+      "dir-titus",
+      "dir-domitian"
+    ]
+  },
+  "nerva-antonine": {
+    "label": "涅尔瓦—安敦尼王朝",
+    "kind": "dynasty",
+    "note": "沿用涅尔瓦至康茂德的通行合称，包含收养继承，并不表示所有成员属于同一血缘家族。",
+    "sources": [
+      "dir-nerva",
+      "dir-trajan",
+      "dir-hadrian",
+      "dir-tonypis",
+      "dir-marcaur",
+      "dir-lverus",
+      "dir-commod"
+    ]
+  },
+  "severan": {
+    "label": "塞维鲁王朝",
+    "kind": "dynasty",
+    "note": "塞普蒂米乌斯·塞维鲁家族及叙利亚姻亲支系；217—218年的马克里努斯父子另列家族。",
+    "sources": [
+      "dir-sepsev",
+      "dir-caracala",
+      "dir-geta",
+      "dir-elagabal",
+      "dir-alexsev"
+    ]
+  },
+  "macrinus": {
+    "label": "马克里努斯家族",
+    "kind": "family",
+    "note": "马克里努斯与其子狄亚杜门尼安的短暂父子共治；不属于塞维鲁王朝。",
+    "sources": [
+      "dir-macrinus",
+      "dir-diadumen"
+    ]
+  },
+  "gordian": {
+    "label": "戈尔迪安王朝",
+    "kind": "dynasty",
+    "note": "戈尔迪安一世、其子二世与外孙三世；不包含238年的其他皇帝，家族统治也非连续无间断。",
+    "sources": [
+      "dir-gordo1",
+      "dir-gordo2",
+      "dir-gordo3"
+    ]
+  },
+  "philip": {
+    "label": "腓力家族",
+    "kind": "family",
+    "note": "阿拉伯人腓力及其子腓力二世的父子政权。",
+    "sources": [
+      "dir-philarab"
+    ]
+  },
+  "decius": {
+    "label": "德基乌斯家族",
+    "kind": "family",
+    "note": "德基乌斯及两子赫伦尼乌斯、霍斯提利安；霍斯提利安与加卢斯共治不改变其出身归组。",
+    "sources": [
+      "dir-decius",
+      "dir-hehost"
+    ]
+  },
+  "gallus": {
+    "label": "加卢斯家族",
+    "kind": "family",
+    "note": "特雷博尼安努斯·加卢斯与亲子沃卢西安努斯；不与德基乌斯家族合并。",
+    "sources": [
+      "dir-trebgall"
+    ]
+  },
+  "valerian": {
+    "label": "瓦勒良王朝",
+    "kind": "dynasty",
+    "note": "瓦勒良、其子加里恩努斯及孙辈瓦勒良二世、萨洛尼努斯；恺撒身份仍单独标明。",
+    "sources": [
+      "dir-gallval"
+    ]
+  },
+  "macrianus": {
+    "label": "马克里安家族",
+    "kind": "family",
+    "note": "小马克里安努斯与奎埃图斯兄弟的东方争位政权；不把组织者老马克里安努斯另算作皇帝。",
+    "sources": [
+      "dir-galusurp"
+    ]
+  },
+  "claudius-gothicus": {
+    "label": "克劳狄二世家族",
+    "kind": "family",
+    "note": "克劳狄二世与其弟昆提卢斯；不据君士坦丁时期的祖系宣传将其并入君士坦丁王朝。",
+    "sources": [
+      "dir-claudgot",
+      "dir-quintil"
+    ]
+  },
+  "tetricus": {
+    "label": "泰特里库斯家族",
+    "kind": "family",
+    "note": "高卢政权中的泰特里库斯一世与其子二世；高卢帝国整体是政权名称，并非一个共同血缘王朝。",
+    "sources": [
+      "dir-tetrici",
+      "dir-tetricii"
+    ]
+  },
+  "palmyrene": {
+    "label": "奥登纳图斯家族",
+    "kind": "family",
+    "note": "芝诺比娅与其子瓦巴拉图斯所属的巴尔米拉王室；不因273年安条库斯同在巴尔米拉活动而断定其亲属关系。",
+    "sources": [
+      "palm",
+      "palmnotes"
+    ]
+  },
+  "caran": {
+    "label": "卡鲁斯王朝",
+    "kind": "dynasty",
+    "note": "卡鲁斯与两子卡里努斯、努梅里安；与随后拥立的戴克里先区分。",
+    "sources": [
+      "dir-carus",
+      "dir-carinus",
+      "dir-numerian"
+    ]
+  },
+  "maximian": {
+    "label": "马克西米安家族",
+    "kind": "family",
+    "note": "马克西米安与其子马克森提乌斯；四帝共治是政治制度，不是单一世袭王朝。",
+    "sources": [
+      "dir-maxherc",
+      "dir-maxentiu"
+    ]
+  },
+  "galerius": {
+    "label": "伽列里乌斯家族",
+    "kind": "family",
+    "note": "伽列里乌斯与其外甥马克西米努斯·戴亚；此家族归组不等同四帝共治的职位与收养体系。",
+    "sources": [
+      "dir-galerius",
+      "dir-daia"
+    ]
+  },
+  "constantinian": {
+    "label": "君士坦丁王朝",
+    "kind": "dynasty",
+    "note": "从君士坦提乌斯一世起的皇室及其继承支系，包含君士坦丁的外甥尼波提安努斯；亲属出身不等于其争位获中央承认。",
+    "sources": [
+      "dir-chlorus",
+      "dir-conniei",
+      "dir-conii",
+      "dir-consi",
+      "dir-constaii",
+      "dir-julian",
+      "dir-nepot"
+    ]
+  },
+  "licinius": {
+    "label": "李锡尼家族",
+    "kind": "family",
+    "note": "李锡尼及其子小李锡尼的政治家族；小李锡尼同时有君士坦丁皇室的母系血缘，详见个人说明。",
+    "sources": [
+      "dir-licinius"
+    ]
+  },
+  "magnentius": {
+    "label": "马格嫩提乌斯家族",
+    "kind": "family",
+    "note": "马格嫩提乌斯与近亲德肯提乌斯；后者通常被解释为其兄弟，仍保留具体关系的不确定性。",
+    "sources": [
+      "dir-magnent"
+    ]
+  },
+  "valentinian": {
+    "label": "瓦伦提尼安王朝",
+    "kind": "dynasty",
+    "note": "瓦伦提尼安一世、其弟瓦伦斯及一世的两子格拉提安、瓦伦提尼安二世。",
+    "sources": [
+      "dir-vali",
+      "dir-valens",
+      "dir-gratian",
+      "dir-valenii"
+    ]
+  },
+  "theodosian": {
+    "label": "狄奥多西王朝",
+    "kind": "dynasty",
+    "note": "狄奥多西一世及其两子；与瓦伦提尼安皇室的婚姻联系不使两组自动合并。人物任期可延伸至本卷395年之后。",
+    "sources": [
+      "dir-theo1",
+      "dir-arcadius",
+      "dir-honorius"
+    ]
+  },
+  "maximus": {
+    "label": "马格努斯·马克西穆斯家族",
+    "kind": "family",
+    "note": "马格努斯·马克西穆斯与其子弗拉维乌斯·维克托的争位政权。",
+    "sources": [
+      "dir-madmax",
+      "dir-flavvict"
+    ]
+  },
+  "unaffiliated": {
+    "label": "无明确王朝归属",
+    "kind": "none",
+    "note": "未归入本卷采用的王朝或家族组；可能是独立统治者、争位者，或亲属关系不足以确定归组。不表示没有亲属、继承人或政治盟友。",
+    "sources": []
+  }
+}
