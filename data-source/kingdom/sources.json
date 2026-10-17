@@ -1,0 +1,100 @@
+{
+  "livy": {
+    "label": "李维《建城以来史》卷1、2",
+    "author": "Titus Livius",
+    "kind": "ancient",
+    "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+    "note": "D. Spillan 英译，1853；Project Gutenberg。卷1为王政叙事，2.1—8为共和国初年；写作距所述时代数百年。"
+  },
+  "dion-chron": {
+    "label": "狄奥尼修斯《罗马古事记》1.72—75",
+    "author": "Dionysius of Halicarnassus",
+    "kind": "ancient",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/1D*.html#75",
+    "note": "Earnest Cary 英译，Loeb 1937，LacusCurtius。1.74列出不同建城纪年；1.75列出王位空缺与七王年数。不能据此证明各年为当代记录。"
+  },
+  "dion-rom": {
+    "label": "狄奥尼修斯《罗马古事记》2.30—56",
+    "author": "Dionysius of Halicarnassus",
+    "kind": "ancient",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/2B*.html",
+    "note": "萨宾妇女、塔提乌斯共治与罗慕路斯之死；与普鲁塔克对抢婚时间的说法不同。"
+  },
+  "dion-numa": {
+    "label": "狄奥尼修斯《罗马古事记》2.57—76",
+    "author": "Dionysius of Halicarnassus",
+    "kind": "ancient",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/2C*.html",
+    "note": "空位期、努马的选立与宗教制度；2.59反驳努马师从毕达哥拉斯的年代错误。"
+  },
+  "dion-serv": {
+    "label": "狄奥尼修斯《罗马古事记》4.1—23",
+    "author": "Dionysius of Halicarnassus",
+    "kind": "ancient",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/4A*.html",
+    "note": "塞尔维乌斯身世、继位、人口财产登记与等级编制的另一套叙事。"
+  },
+  "dion-end": {
+    "label": "狄奥尼修斯《罗马古事记》4.64—85",
+    "author": "Dionysius of Halicarnassus",
+    "kind": "ancient",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/4D*.html",
+    "note": "卢克蕾提娅、布鲁图斯与王政终结。与李维的细节及演说并非独立的当代见证。"
+  },
+  "plut-rom": {
+    "label": "普鲁塔克《罗慕路斯传》",
+    "author": "Plutarch",
+    "kind": "ancient",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Romulus*.html",
+    "note": "Bernadotte Perrin 英译，Loeb 1914；14、19、23、27—28保存建城、抢婚、共治与死亡异说。"
+  },
+  "ostia": {
+    "label": "奥斯蒂亚考古公园：古城遗址",
+    "author": "Parco archeologico di Ostia antica",
+    "kind": "archaeology",
+    "url": "https://www.ostiaantica.beniculturali.it/en/archaeological-sites-and-monuments/ostia-antica/",
+    "note": "官方遗址说明：安库斯建城属于传说，现知最早遗存为前4世纪后半叶军营。不能等同于已经证实前7世纪的殖民城。"
+  },
+  "walls": {
+    "label": "罗马城墙虚拟博物馆：塞尔维乌斯城墙",
+    "author": "Roma Capitale",
+    "kind": "archaeology",
+    "url": "https://museovirtualedellemura.romasitounesco.it/en/mura-serviane-english-version/",
+    "note": "现存主要城墙属于前4世纪重建；传统将前6世纪防御工程归给塞尔维乌斯。"
+  },
+  "capitoline": {
+    "label": "卡皮托利欧博物馆：城墙、道路与住宅",
+    "author": "Musei Capitolini",
+    "kind": "archaeology",
+    "url": "https://museicapitolini.org/en/sede/campidoglio_antico/mura_strade_e_case",
+    "note": "区分前6世纪 cappellaccio 凝灰岩墙体遗迹和前4世纪 Grotta Oscura 凝灰岩阶段，不能一概都归于某王某年。"
+  },
+  "omobono": {
+    "label": "圣奥莫博诺考古项目：遗址说明",
+    "author": "The Sant’Omobono Project, University of Michigan",
+    "kind": "archaeology",
+    "url": "https://sites.lsa.umich.edu/omobono/site-description/",
+    "note": "发掘项目将较永久性神庙置于前6世纪第二个四分之一；用于说明城市与宗教建筑发展，不指定给某王某一年。"
+  },
+  "tan": {
+    "label": "James Tan：百人队大会的地理与改革",
+    "author": "James Tan",
+    "kind": "scholarship",
+    "url": "https://www.cambridge.org/core/journals/classical-quarterly/article/geography-and-the-reform-of-the-comitia-centvriata/43C5F7259AC095146B22CDF6086F76F3",
+    "note": "The Classical Quarterly，2023：Geography and the Reform of the Comitia Centuriata。区分古制的塞尔维乌斯归名与前3世纪制度调整；本库不把后世的成熟投票结构无条件当成王政实录。"
+  },
+  "palatine": {
+    "label": "罗马文明博物馆：起源传说与早期居民",
+    "author": "Museo della Civiltà Romana",
+    "kind": "archaeology",
+    "url": "https://museociviltaromana.it/it/percorso/sala-v-vi-leggende-romane-e-civilt%C3%A0-primitiva-le-origini-di-roma",
+    "note": "官方展陈说明：帕拉蒂努斯山至少前9世纪已有居民与茅屋遗迹；前753年的建城纪元不能解释为这个地方首次有人居住。"
+  },
+  "smith": {
+    "label": "Christopher Smith：早期罗马与拉丁姆的考古证据",
+    "author": "Christopher Smith (ed.)",
+    "kind": "scholarship",
+    "url": "https://assets.cambridge.org/97805212/52553/excerpt/9780521252553_excerpt.pdf",
+    "note": "The Cambridge Ancient History: Plates to Volumes VII Part 2 and VIII，新版节选。提醒传统王政年代框架也经过前3世纪以后的学术整理；考古不能直接验证七王年表。"
+  }
+}
