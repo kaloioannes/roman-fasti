@@ -67,3 +67,10 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 `test-ui.cjs` 覆盖共和国交互；`test-release.cjs` 覆盖旧缓存升级；`test-imperial.cjs` 覆盖帝国人物、任期、检索与地图；`test-routes.cjs` 在域名根目录和 Pages 子路径下验证总入口、旧链接、主题共享、无脚本回退和手机布局。
 
 `build_kingdom.py` 重建王政篇；`validate-kingdom.mjs` 校验传统王期、年度连续性、空位与未定年事件分离；`test-kingdom.cjs` 检查年度、人物、下载、失败恢复及相关地点示意。
+
+
+## 拜占庭分卷
+
+`byzantine` 已开放，476—1453年，独立 `greek` 显示字段；`junior` 为共帝，`central` 为本卷继承主线，不能将人物总数解释成主帝人数。`purple` 为附 `note/sources` 的正面证据对象或 `null`（尚未确认）。`years[y].events` 可为空，`eventStatus` 明确资料缺口；禁止以重复跨年背景填充。原始事件保留稳定ID。
+
+`build_byzantine.py` 和 `validate-byzantine.mjs` 负责资料编译和语义检查；`test-byzantine.cjs` 负责根目录/Pages子路径、所有人物、任期边界、希腊文检索、紫室筛选、下载、地图、失败恢复和响应式回归。`build_byzantine_map.py` 沿用海岸裁切工具，独立政权分层，原属性与显式近似均保留。收录及年代冲突以 `data-source/byzantine/RESEARCH.md` 为准。

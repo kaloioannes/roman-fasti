@@ -1,0 +1,752 @@
+{
+  "oman": {
+    "label": "Charles Oman《拜占庭帝国》",
+    "url": "https://www.gutenberg.org/cache/epub/37756/pg37756-images.html",
+    "kind": "公开旧通史 · 1892/1902",
+    "note": "使用V—XXVI章作跨时期核对；旧作的宗教、族群与衰亡论评价不沿用，日期以专门研究互证。"
+  },
+  "met": {
+    "label": "大都会博物馆：拜占庭统治者年表",
+    "url": "https://www.metmuseum.org/toah/hd/byru/hd_byru.htm",
+    "kind": "博物馆年表",
+    "note": "核对主帝顺序；其Alexios II起点1181、Theodore I终点1222等简化与人物研究不完全一致，见研究说明。"
+  },
+  "livius": {
+    "label": "Livius：东罗马皇帝",
+    "url": "https://www.livius.org/articles/misc/list-of-roman-emperors/list-of-byzantine-emperors/",
+    "kind": "历史学者年表",
+    "note": "核对早期姓名、共帝与主帝交接；不是唯一日期依据。"
+  },
+  "alexiad": {
+    "label": "安娜·科穆宁《阿莱克修斯传》",
+    "url": "https://sourcebooks.web.fordham.edu/basis/AnnaComnena-Alexiad00.asp",
+    "kind": "中世纪史料 · Dawes译本1928",
+    "note": "卷I—XV，作者为皇室成员；尤其注意为父亲及家族辩护的立场。"
+  },
+  "dir-zoe": {
+    "label": "DIR：佐伊·紫生",
+    "url": "https://roman-emperors.sites.luc.edu/zoep.htm",
+    "kind": "学者署名研究",
+    "note": "Lynda Garland；佐伊与狄奥多拉、继承和1042年共同执政。"
+  },
+  "dir-manuel": {
+    "label": "DIR：曼努埃尔一世",
+    "url": "https://roman-emperors.sites.luc.edu/mannycom.htm",
+    "kind": "学者署名研究",
+    "note": "Paul Magdalino；科穆宁政治、外交和皇室称号。"
+  },
+  "john-ii-study": {
+    "label": "John II Komnenos (1118–1143)",
+    "url": "https://www.mdpi.com/2673-8392/2/2/46",
+    "kind": "开放学术综述 · 2022",
+    "note": "出生、紫室称号、继承及战争；出版网页可能限制自动访问。"
+  },
+  "manuel-coin": {
+    "label": "大英博物馆：曼努埃尔一世金币",
+    "url": "https://artsandculture.google.com/asset/gold-hyperperon-of-emperor-manuel-i-comnenus/egFdqMEF39idUA",
+    "kind": "博物馆钱币目录",
+    "note": "钱币上的porphyrogenitus称号，与文献互证；不复制照片。"
+  },
+  "bham-constantine": {
+    "label": "伯明翰大学藏品：君士坦丁八世",
+    "url": "https://mimsy.bham.ac.uk/detail.php?f=preferred_name&record=205&s=&t=people&type=browse",
+    "kind": "大学钱币目录",
+    "note": "明确称为porphyrogennetos，生于在位皇帝家庭。"
+  },
+  "purple": {
+    "label": "Porphyrogennetos / 生于紫室",
+    "url": "https://en.wikipedia.org/wiki/Born_in_the_purple",
+    "kind": "研究导航",
+    "note": "狭义紫室、广义在位皇帝子女及继承修辞须区分。无标签只表示未确认，不等于否定。"
+  },
+  "cliopatria": {
+    "label": "Cliopatria v0.2.0 / Seshat",
+    "url": "https://github.com/Seshat-Global-History-Databank/cliopatria/tree/v0.2.0",
+    "kind": "历史GIS · CC BY 4.0",
+    "note": "仅选东罗马、拜占庭、尼西亚、拉丁帝国和特拉比松要素。盟属与联军轮廓不充作本国疆界。"
+  },
+  "wiki-basiliscus": {
+    "label": "巴西利斯库斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Basiliscus",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-zeno": {
+    "label": "芝诺：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-anastasius-i": {
+    "label": "阿纳斯塔修斯一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Anastasius_I_Dicorus",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-justin-i": {
+    "label": "查士丁一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Justin_I",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-justinian-i": {
+    "label": "查士丁尼一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Justinian_I",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-justin-ii": {
+    "label": "查士丁二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Justin_II",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-tiberius-ii": {
+    "label": "提比略二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Tiberius_II_Constantine",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-maurice": {
+    "label": "莫里斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Maurice_(emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-phocas": {
+    "label": "福卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Phocas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-heraclius": {
+    "label": "希拉克略：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Heraclius",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-iii": {
+    "label": "君士坦丁三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_III_(Byzantine_emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-heraklonas": {
+    "label": "希拉克洛纳斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Heraclonas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constans-ii": {
+    "label": "君士坦斯二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constans_II",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-iv": {
+    "label": "君士坦丁四世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_IV",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-justinian-ii": {
+    "label": "查士丁尼二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Justinian_II",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-leontios": {
+    "label": "莱昂提奥斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Leontius",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-tiberius-iii": {
+    "label": "提比略三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Tiberius_III",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-philippikos": {
+    "label": "菲利皮科斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Philippicus",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-anastasios-ii": {
+    "label": "阿纳斯塔修斯二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Anastasios_II",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theodosios-iii": {
+    "label": "狄奥多西三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theodosius_III",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-leo-iii": {
+    "label": "利奥三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Leo_III_the_Isaurian",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-v": {
+    "label": "君士坦丁五世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_V",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-leo-iv": {
+    "label": "利奥四世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Leo_IV_the_Khazar",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-vi": {
+    "label": "君士坦丁六世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_VI",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-irene": {
+    "label": "伊琳娜：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Irene_of_Athens",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-nikephoros-i": {
+    "label": "尼基弗鲁斯一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Nikephoros_I",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-staurakios": {
+    "label": "斯陶拉基奥斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Staurakios",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-i": {
+    "label": "米海尔一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_I_Rangabe",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-leo-v": {
+    "label": "利奥五世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Leo_V_the_Armenian",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-ii": {
+    "label": "米海尔二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_II",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theophilos": {
+    "label": "狄奥菲洛斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theophilos_(emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-iii": {
+    "label": "米海尔三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_III",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-basil-i": {
+    "label": "巴西尔一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Basil_I",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-leo-vi": {
+    "label": "利奥六世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Leo_VI_the_Wise",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-alexander": {
+    "label": "亚历山大：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Alexander_(Byzantine_emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-vii": {
+    "label": "君士坦丁七世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_VII",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-romanos-i": {
+    "label": "罗曼努斯一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Romanos_I_Lekapenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-romanos-ii": {
+    "label": "罗曼努斯二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Romanos_II",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-nikephoros-ii": {
+    "label": "尼基弗鲁斯二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Nikephoros_II_Phokas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-i": {
+    "label": "约翰一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_I_Tzimiskes",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-basil-ii": {
+    "label": "巴西尔二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Basil_II",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-viii": {
+    "label": "君士坦丁八世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_VIII",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-romanos-iii": {
+    "label": "罗曼努斯三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Romanos_III_Argyros",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-iv": {
+    "label": "米海尔四世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_IV_the_Paphlagonian",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-v": {
+    "label": "米海尔五世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_V_Kalaphates",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-zoe": {
+    "label": "佐伊：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Zoe_Porphyrogenita",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theodora": {
+    "label": "狄奥多拉：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theodora_Porphyrogenita",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-ix": {
+    "label": "君士坦丁九世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_IX_Monomachos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-vi": {
+    "label": "米海尔六世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_VI_Bringas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-isaac-i": {
+    "label": "伊萨克一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Isaac_I_Komnenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-x": {
+    "label": "君士坦丁十世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_X_Doukas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-romanos-iv": {
+    "label": "罗曼努斯四世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Romanos_IV_Diogenes",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-vii": {
+    "label": "米海尔七世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_VII_Doukas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-nikephoros-iii": {
+    "label": "尼基弗鲁斯三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Nikephoros_III_Botaneiates",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-alexios-i": {
+    "label": "阿莱克修斯一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-ii": {
+    "label": "约翰二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_II_Komnenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-manuel-i": {
+    "label": "曼努埃尔一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Manuel_I_Komnenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-alexios-ii": {
+    "label": "阿莱克修斯二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Alexios_II_Komnenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-andronikos-i": {
+    "label": "安德洛尼卡一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Andronikos_I_Komnenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-isaac-ii": {
+    "label": "伊萨克二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Isaac_II_Angelos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-alexios-iii": {
+    "label": "阿莱克修斯三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Alexios_III_Angelos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-alexios-iv": {
+    "label": "阿莱克修斯四世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Alexios_IV_Angelos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-alexios-v": {
+    "label": "阿莱克修斯五世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Alexios_V_Doukas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theodore-i": {
+    "label": "狄奥多尔一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theodore_I_Laskaris",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。 本卷采用约1205年称帝、1208年加冕、1221年去世。"
+  },
+  "wiki-john-iii": {
+    "label": "约翰三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_III_Doukas_Vatatzes",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theodore-ii": {
+    "label": "狄奥多尔二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theodore_II_Laskaris",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-iv": {
+    "label": "约翰四世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_IV_Laskaris",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-viii": {
+    "label": "米海尔八世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_VIII_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-andronikos-ii": {
+    "label": "安德洛尼卡二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Andronikos_II_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-andronikos-iii": {
+    "label": "安德洛尼卡三世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Andronikos_III_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-v": {
+    "label": "约翰五世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_V_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-vi": {
+    "label": "约翰六世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_VI_Kantakouzenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-andronikos-iv": {
+    "label": "安德洛尼卡四世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Andronikos_IV_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-vii": {
+    "label": "约翰七世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_VII_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-manuel-ii": {
+    "label": "曼努埃尔二世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Manuel_II_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-viii": {
+    "label": "约翰八世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_VIII_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-xi": {
+    "label": "君士坦丁十一世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_XI_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-marcus": {
+    "label": "马尔库斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Marcus_(son_of_Basiliscus)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theodosios-son-maurice": {
+    "label": "狄奥多西（莫里斯之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theodosius_(son_of_Maurice)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-tiberius-david": {
+    "label": "提比略·大卫：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/David_(son_of_Heraclius)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-heraclius-son-constans": {
+    "label": "希拉克略（君士坦斯之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Heraclius_(son_of_Constans_II)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-tiberius-son-constans": {
+    "label": "提比略（君士坦斯之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Tiberius_(son_of_Constans_II)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-tiberius-son-justinian": {
+    "label": "提比略（查士丁尼之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Tiberius_(son_of_Justinian_II)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-artabasdos": {
+    "label": "阿尔塔瓦兹多斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Artabasdos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-nikephoros-artabasdos": {
+    "label": "尼基弗鲁斯（阿尔塔瓦兹多斯之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Nikephoros_(son_of_Artabasdos)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theophylact": {
+    "label": "狄奥菲拉克托斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theophylact_(son_of_Michael_I)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-symbatios": {
+    "label": "君士坦丁·辛巴提奥斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Symbatios_(son_of_Leo_V)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-theophilos": {
+    "label": "君士坦丁（狄奥菲洛斯之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_(son_of_Theophilos)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-basil": {
+    "label": "君士坦丁（巴西尔之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_(son_of_Basil_I)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-christopher": {
+    "label": "克里斯托弗：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Christopher_Lekapenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-stephen-lekapenos": {
+    "label": "斯蒂芬·勒卡佩诺斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Stephen_Lekapenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-lekapenos": {
+    "label": "君士坦丁·勒卡佩诺斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_Lekapenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-andronikos-doukas": {
+    "label": "安德洛尼卡·杜卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Andronikos_Doukas_(co-emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-konstantios-doukas": {
+    "label": "君士坦提奥斯·杜卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Konstantios_Doukas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-constantine-doukas": {
+    "label": "君士坦丁·杜卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Constantine_Doukas_(co-emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-alexios-john-ii": {
+    "label": "阿莱克修斯（约翰二世之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Alexios_Komnenos_(co-emperor)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-andronikos": {
+    "label": "约翰（安德洛尼卡一世之子）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_Komnenos_(son_of_Andronikos_I)",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-michael-ix": {
+    "label": "米海尔九世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Michael_IX_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-matthew": {
+    "label": "马修·坎塔库泽诺斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Matthew_Kantakouzenos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-andronikos-v": {
+    "label": "安德洛尼卡五世：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Andronikos_V_Palaiologos",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-thomas-slav": {
+    "label": "斯拉夫人托马斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Thomas_the_Slav",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-bardas-skleros": {
+    "label": "巴尔达斯·斯克莱罗斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Bardas_Skleros",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-bardas-phokas": {
+    "label": "巴尔达斯·福卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Bardas_Phokas_the_Younger",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-george-maniakes": {
+    "label": "乔治·马尼亚克斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/George_Maniakes",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-leo-tornikios": {
+    "label": "利奥·托尔尼基奥斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Leo_Tornikios",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-isaac-cyprus": {
+    "label": "伊萨克·科穆宁（塞浦路斯）：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Isaac_Komnenos_of_Cyprus",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-theodore-thessalonica": {
+    "label": "狄奥多尔·科穆宁·杜卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Theodore_Komnenos_Doukas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-manuel-thessalonica": {
+    "label": "曼努埃尔·科穆宁·杜卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Manuel_Komnenos_Doukas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-john-thessalonica": {
+    "label": "约翰·科穆宁·杜卡斯：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/John_Komnenos_Doukas",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "wiki-evdokia": {
+    "label": "欧多基娅·马克伦博利提萨：资料与参考书目",
+    "url": "https://en.wikipedia.org/wiki/Eudokia_Makrembolitissa",
+    "kind": "协作百科 · 研究导航",
+    "note": "核对个人身份、希腊文名及称号阶段；现代研究书目供继续核查，不将百科视为唯一证据。"
+  },
+  "procopius-persian": {
+    "label": "普罗柯比《战争史》I—II",
+    "url": "https://www.gutenberg.org/cache/epub/16764/pg16764-images.html",
+    "kind": "古代史料 · Dewing译本1914",
+    "note": "尼卡暴动I.24、达拉战役I.13—14、安条克II.8—9、瘟疫II.22—23；与编年研究互证。"
+  },
+  "psellos": {
+    "label": "普塞洛斯《编年史》卷VI",
+    "url": "https://sourcebooks.web.fordham.edu/basis/psellus-chrono06.asp",
+    "kind": "中世纪史料 · Sewter译本",
+    "note": "佐伊、狄奥多拉与君士坦丁九世宫廷；作者参与政治，不以人物评语代替事实核查。"
+  },
+  "choniates": {
+    "label": "霍尼亚提斯：1204年首都洗劫",
+    "url": "https://sourcebooks.web.fordham.edu/source/choniates1.asp",
+    "kind": "中世纪史料 · Munro译节1912",
+    "note": "目击者描写教堂财物劫掠和居民受难，宗教修辞和数字仍须审慎阅读。"
+  },
+  "barbaro": {
+    "label": "尼科洛·巴尔巴罗：1453年围城日记节选",
+    "url": "https://media.bloomsbury.com/rep/files/Primary%20Source%204.6%20-%20Barbar%C3%B2.pdf",
+    "kind": "目击史料 · 出版社教学节选",
+    "note": "5月29日城陷及逃离；作者不知道皇帝确切结局，不能把所述传闻作为死亡方式定论。"
+  }
+}

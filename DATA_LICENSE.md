@@ -27,3 +27,12 @@ License: [Creative Commons Attribution 4.0 International](https://creativecommon
 Changes: selected Roman Republic and early Roman Empire features; limited display to 509–27 BCE; clipped polygons to Natural Earth 1:50m land; simplified at 0.008 degrees while preserving topology; reoriented rings for D3 spherical rendering; extended the first 500–481 BCE reconstruction to 509 BCE; added display ranges, view bounds and Chinese captions. Original source year ranges remain in feature properties.
 
 Natural Earth geographic data is in the [public domain](https://www.naturalearthdata.com/about/terms-of-use/). Its present-day coastline provides the detailed land boundaries used to clip the historical polygons.
+
+
+## Byzantine volume — CC BY-SA 4.0 text; CC BY 4.0 GIS
+
+`data-source/byzantine/{people,events,sources,dynasties,method}.json` and `data/byzantine/records.json` contain new Chinese summaries and editorial selections by **FASTI contributors (2026-10-18)**, under CC BY-SA 4.0. Name, identity and chronology research also uses the individually linked Wikipedia articles; attribution: **Wikipedia contributors**, with revision histories available through each article's History link. The source catalogue preserves these URLs. Changes include Chinese paraphrase, normalized Greek names, separate title stages, positive-evidence-only purple-born tags and explicit annual data gaps.
+
+Ancient and medieval texts, DIR essays, modern scholarship, translations, museum descriptions and images retain their respective rights. This repository links to them; it does not bundle their full text or photographs. Source hierarchy, indirect citations and limits are documented in [the Byzantine research notes](data-source/byzantine/RESEARCH.md).
+
+`data-source/byzantine/territories.geojson` selects 139 features from **Cliopatria v0.2.0**, by Seshat Global History Databank, under CC BY 4.0. `data/byzantine/territories.json` retains source attributes, clips time to 476–1453 and geometry to Natural Earth, simplifies by 0.008 degrees, orients rings for D3 and adds four polity colours. Two explicitly approximate neighboring reference layers cover the original Byzantine 1402–1406 gap. Original 1440–1467 source dating is preserved as provenance, not an assertion that Constantinople survived until 1467. Retain this attribution and the original source URL when redistributing the derivative GIS.
