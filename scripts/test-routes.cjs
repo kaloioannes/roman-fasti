@@ -27,7 +27,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    const origin=`http://127.0.0.1:${server.address().port}${base}`;
    await page.goto(origin);
    await page.waitForFunction(()=>document.querySelector('#available-periods')?.textContent.includes('483'));
-   assert.equal(await page.locator('.period-card').count(),2);
+   assert.equal(await page.locator('.period-card').count(),3);
    assert.equal(await page.locator('#planned-periods a').count(),0);
    for(const width of [320,390,768,1440])for(const theme of ['light','dark']){
     await page.setViewportSize({width,height:1000});
@@ -65,10 +65,10 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
   // Static fallback remains usable if JavaScript is disabled or catalogue data fails.
   const noJS=await browser.newContext({javaScriptEnabled:false});
   const fallback=await noJS.newPage();await fallback.goto(`http://127.0.0.1:${server.address().port}/`);
-  assert.equal(await fallback.locator('.period-card').count(),2);
+  assert.equal(await fallback.locator('.period-card').count(),3);
   const failed=await context.newPage();await failed.route('**/project.*.json',route=>route.fulfill({status:503,body:'retry'}));
   await failed.goto(`http://127.0.0.1:${server.address().port}/`);await failed.waitForFunction(()=>document.querySelector('#catalog-status').textContent.length>0);
-  assert.equal(await failed.locator('.period-card').count(),2);
+  assert.equal(await failed.locator('.period-card').count(),3);
   console.log('Routes verified: root + Pages subpath, catalogue, shared theme, all legacy hash/query redirects, static fallback and mobile layouts.');
  }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve))}
 })().catch(error=>{console.error(error);process.exitCode=1});

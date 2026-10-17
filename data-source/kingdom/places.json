@@ -1,0 +1,134 @@
+[
+  {
+    "id": "rome",
+    "zh": "罗马",
+    "latin": "Roma",
+    "lon": 12.49,
+    "lat": 41.89,
+    "note": "现代罗马古城中心附近；不是前753年城界。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "veii",
+    "zh": "维伊",
+    "latin": "Veii",
+    "lon": 12.4,
+    "lat": 42.02,
+    "note": "伊索拉法尔内塞附近的近似位置。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "fidenae",
+    "zh": "费德奈",
+    "latin": "Fidenae",
+    "lon": 12.52,
+    "lat": 41.98,
+    "note": "罗马北方台伯河沿线近似位置。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "cures",
+    "zh": "库雷斯",
+    "latin": "Cures",
+    "lon": 12.68,
+    "lat": 42.16,
+    "note": "萨宾地区近似位置，努马的传统故乡。",
+    "sources": [
+      "dion-numa"
+    ]
+  },
+  {
+    "id": "alba",
+    "zh": "阿尔巴·隆加（区域）",
+    "latin": "Alba Longa",
+    "lon": 12.67,
+    "lat": 41.75,
+    "note": "仅标阿尔巴诺湖周边；城市确切位置有争议。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "ostia",
+    "zh": "奥斯蒂亚",
+    "latin": "Ostia",
+    "lon": 12.29,
+    "lat": 41.76,
+    "note": "已知古城遗址；不把其位置等同于已证实的王政殖民点。",
+    "sources": [
+      "ostia"
+    ]
+  },
+  {
+    "id": "ficana",
+    "zh": "费卡纳",
+    "latin": "Ficana",
+    "lon": 12.36,
+    "lat": 41.79,
+    "note": "台伯河下游近似位置。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "lavinium",
+    "zh": "拉维尼乌姆",
+    "latin": "Lavinium",
+    "lon": 12.48,
+    "lat": 41.66,
+    "note": "普拉蒂卡迪马雷附近近似位置。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "tarquinii",
+    "zh": "塔尔奎尼亚",
+    "latin": "Tarquinii",
+    "lon": 11.76,
+    "lat": 42.25,
+    "note": "伊特鲁里亚城市的近似位置。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "collatia",
+    "zh": "科拉提亚（区域）",
+    "latin": "Collatia",
+    "lon": 12.7,
+    "lat": 41.89,
+    "note": "罗马以东候选区域示意，非精确城址测绘。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "gabii",
+    "zh": "加比",
+    "latin": "Gabii",
+    "lon": 12.72,
+    "lat": 41.89,
+    "note": "罗马以东遗址附近。",
+    "sources": [
+      "livy"
+    ]
+  },
+  {
+    "id": "ardea",
+    "zh": "阿尔代亚",
+    "latin": "Ardea",
+    "lon": 12.54,
+    "lat": 41.61,
+    "note": "拉丁姆南部的近似位置。",
+    "sources": [
+      "livy"
+    ]
+  }
+]

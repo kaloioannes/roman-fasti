@@ -16,7 +16,7 @@ site/<period>/ + site/shared/ + project.json ───┴──> build_site.py �
 
 `data-source/` 是史料编辑入口；`data/` 是已提交的网页数据产物；`site/` 是静态网页源码；`_site/` 是可独立部署的产物。构建不抓取网络资料。`scripts/` 统一放置命令行工具，保留已有脚本名，外部调用无需再迁移一层。
 
-`site/shared/ui.css` 是两篇共同使用的既有视觉组件集，包括主题、导航、地图、卡片与阅读组件。第三方库、字体及公共底图集中于 `site/shared/assets/`。古典帝国独有的布局放在 `site/empire/style.css`；新增时期的专用样式也放在自己的目录中。每篇的 `app.js` 与 `index.html` 同目录，经典脚本中的 fetch 地址按页面 URL 解析。
+`site/shared/ui.css` 是各篇共同使用的既有视觉组件集，包括主题、导航、地图、卡片与阅读组件。第三方库、字体及公共底图集中于 `site/shared/assets/`。古典帝国独有的布局放在 `site/empire/style.css`；新增时期的专用样式也放在自己的目录中。每篇的 `app.js` 与 `index.html` 同目录，经典脚本中的 fetch 地址按页面 URL 解析。
 
 共和国与帝国有不同的官职、任期与人物模型。目录一致不意味着强制使用同一 schema。数据构建和校验仍分别负责各自的史学语义。
 
@@ -26,6 +26,7 @@ site/<period>/ + site/shared/ + project.json ───┴──> build_site.py �
 - 清单中的历史年份使用负数表示公元前、正数表示公元后，无公元0年。分卷端点包含在内，因此前509、前27、395和476等交界年份允许重叠；跨时期查询不得简单相加作为唯一年度数。
 - 共和国篇保留原来的正数 BC 键与路由，如 `years[44]`、`#year=44` 表示前44年；帝国篇的 `years[-27]`、`#year=-27` 表示前27年。任何跨时期工具必须显式转换共和国年份，不能直接合并两个 `years` 对象。
 - 人物 ID 只在本篇内唯一；跨时期引用使用 `(periodId, personId)`。对跨前27年或395年的同一人物，未来可增加有来源的身份映射，不能仅按姓名自动合并。
+- 王政篇使用负数年份；`years[-753]`、`#year=-753` 表示前753年。王期两端为传统交接点，年度桶包含端点，不表示全年在位。`events` 是传统纪年节点；`traditions` 仅为未定年的王期背景，两者不可合并统计。塔提乌斯空值任期不展开，空位另以 `interregnum` 标记。地点示意不提供疆界；完整约定见 `data-source/kingdom/RESEARCH.md`。
 - 双帝国篇应在单一时期模块中显式记录东西部任期及政权归属；拜占庭篇的476年起点是本项目分卷安排。具体字段和收录标准应在建设该篇时依据史料定义。
 
 ## 构建与 URL
@@ -64,3 +65,5 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 `validate.mjs` 与 `validate-empire.mjs` 校验各篇数据、来源、人物引用、地图覆盖与资料约定。`validate-structure.mjs` 检查时期清单和目录职责。`validate-release.mjs` 检查完整资源清单、指纹、HTML/JS/CSS 本地引用及子目录兼容。
 
 `test-ui.cjs` 覆盖共和国交互；`test-release.cjs` 覆盖旧缓存升级；`test-imperial.cjs` 覆盖帝国人物、任期、检索与地图；`test-routes.cjs` 在域名根目录和 Pages 子路径下验证总入口、旧链接、主题共享、无脚本回退和手机布局。
+
+`build_kingdom.py` 重建王政篇；`validate-kingdom.mjs` 校验传统王期、年度连续性、空位与未定年事件分离；`test-kingdom.cjs` 检查年度、人物、下载、失败恢复及相关地点示意。

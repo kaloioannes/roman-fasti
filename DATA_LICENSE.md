@@ -16,6 +16,8 @@ The imperial volume (`data/empire/records.json` and authored TSV/JSON files in `
 
 Linked editions and translations retain the credits provided by their hosts, including the translations at Attalus. Attalus also provides the annual source index. The Chinese prose is written for FASTI. Scholarly books and scanned pages are linked for further reading.
 
+The Kingdom volume (`data/kingdom/records.json` and authored files in `data-source/kingdom/`) contains original Chinese summaries, a traditional chronology and approximate place markers by **FASTI contributors (2026-10-18)**, released under CC BY-SA 4.0. Ancient texts and modern archaeological evidence are linked with passage references and limits described in the [Kingdom research notes](data-source/kingdom/RESEARCH.md). No modern source text, imagery or GIS boundaries are redistributed. Place coordinates are editorial approximations for orientation, not surveyed boundaries or independently verified annual territorial claims. The existing software and shared asset licenses remain as described here and in THIRD_PARTY.md.
+
 ## Historical geometry — CC BY 4.0
 
 `data/republic/territories.json` and `data-source/republic/roman-territories.geojson` derive from **Cliopatria v0.2.0**, Seshat Global History Databank, James S. Bennett and collaborators. See the [versioned release](https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0), [Zenodo project record](https://zenodo.org/records/13363121), and [data paper](https://doi.org/10.1038/s41597-025-04516-9).

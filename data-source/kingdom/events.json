@@ -1,0 +1,727 @@
+[
+  {
+    "id": "foundation",
+    "title": "罗马建城的传统起点",
+    "text": "罗慕路斯与雷穆斯争夺建城地点及王权；雷穆斯死亡，罗慕路斯成为新城之王。前753年是本库采用的通行建城纪元，古代另有多种算法；4月21日是传统纪念日，不能作为考古确定的施工日期。帕拉蒂努斯山至少前9世纪已有居民，建城纪元也不表示此地首次有人居住。",
+    "people": [
+      "romulus"
+    ],
+    "passage": "李维1.6—7；狄奥尼修斯1.74—75；罗马文明博物馆起源展厅",
+    "year": -753,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron",
+      "palatine"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "romulus-end",
+    "title": "罗慕路斯消失；王权交还元老",
+    "text": "检阅时突起暴风雨，罗慕路斯消失；神化与被元老杀害的解释并存。其后元老轮流掌权。本年前716按37年王期定位，不能将具体死亡方式视为已证实史实。",
+    "people": [
+      "romulus"
+    ],
+    "passage": "李维1.16—17；狄奥尼修斯1.75",
+    "year": -716,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "numa-accession",
+    "title": "空位期结束；努马被迎立",
+    "text": "传统在罗慕路斯之后留出一年王位空缺，元老以五日轮替方式代理王权，随后迎立萨宾人努马。前716—前715是同一次空位期的两端，不是两个完整的无王年。",
+    "people": [
+      "numa-pompilius"
+    ],
+    "passage": "李维1.17—18；狄奥尼修斯2.57—60",
+    "year": -715,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-numa"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "tullus-accession",
+    "title": "努马去世；图卢斯继位",
+    "text": "43年王期结束后，王权暂归元老，人民选择图卢斯并获元老认可。前672年由本库采用的传统年数框架定位；另一常见年表作前673年。",
+    "people": [
+      "numa-pompilius",
+      "tullus-hostilius"
+    ],
+    "passage": "李维1.21—22；狄奥尼修斯1.75",
+    "year": -672,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "ancus-accession",
+    "title": "图卢斯王期结束；安库斯继位",
+    "text": "李维以疫病、错误祭仪和雷击叙述图卢斯之死；随后努马的外孙安库斯被迎立。32年王期给出本库的前640年交接点；雷击属于传统解释。",
+    "people": [
+      "tullus-hostilius",
+      "ancus-marcius"
+    ],
+    "passage": "李维1.31—32；狄奥尼修斯1.75",
+    "year": -640,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "priscus-accession",
+    "title": "安库斯去世；老塔克文当选",
+    "text": "安库斯统治24年后去世。塔克文安排其子离城，向人民陈述自己的功绩并取得王位，传统借此表现王权既非封闭于本地人，也非自动由王子继承。",
+    "people": [
+      "ancus-marcius",
+      "tarquinius-priscus"
+    ],
+    "passage": "李维1.34—35；狄奥尼修斯1.75",
+    "year": -616,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "servius-accession",
+    "title": "老塔克文遇刺；塞尔维乌斯掌权",
+    "text": "安库斯之子策划刺杀塔克文；塔娜奎尔隐瞒其死讯，安排塞尔维乌斯代行王事。这是38年王期终点的传统事件，并不意味着两人在本年全年共治。",
+    "people": [
+      "tarquinius-priscus",
+      "servius-tullius"
+    ],
+    "passage": "李维1.40—41；狄奥尼修斯1.75、4.1—5",
+    "year": -578,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron",
+      "dion-serv"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "superbus-accession",
+    "title": "塞尔维乌斯被杀；末王夺位",
+    "text": "塔克文与图利娅合谋推翻塞尔维乌斯。国王在元老院冲突后遇害，图利娅车碾父尸是传统中“邪恶街”得名的故事。44年王期对应本库前534年交接点。",
+    "people": [
+      "servius-tullius",
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.46—49；狄奥尼修斯1.75",
+    "year": -534,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "lucretia",
+    "title": "卢克蕾提娅事件与反王族行动",
+    "text": "传统在阿尔代亚围城背景中讲述塞克斯图斯对卢克蕾提娅的性暴力、她的死亡以及布鲁图斯的动员。它是罗马人解释共和国自由起源的核心叙事，不能将传下来的对话当作现场实录。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.57—59；狄奥尼修斯4.64—76",
+    "year": -509,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-end"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "republic",
+    "title": "王族被逐；共和国的传统开端",
+    "text": "罗马拒绝末王入城，布鲁图斯与科拉提努斯被立为首任执政官。前509年是与共和国篇共用的交界年；朱庇特神庙的奉献属共和国初年叙事，不能倒写为末王已完成奉献。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.60、2.1—8；狄奥尼修斯1.74—75、4.84—85",
+    "year": -509,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-chron",
+      "dion-end"
+    ],
+    "dating": "传统纪年 · 由年数框架定位"
+  },
+  {
+    "id": "asylum",
+    "title": "庇护所与百人元老院",
+    "text": "传统说罗慕路斯以庇护所接纳外来人口，并选百人为元老。它解释了罗马共同体吸纳外人的形象；原文没有提供可核验的公元前年份。",
+    "people": [
+      "romulus"
+    ],
+    "passage": "李维1.8",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "sabine-abduction",
+    "title": "萨宾妇女遭掳",
+    "text": "罗慕路斯借节庆聚会掳走邻邦妇女，引起战争。普鲁塔克14转述建城后第四个月之说，狄奥尼修斯2.30另作第四年；本库保留异说，不把其中一种固定成年度事实。",
+    "people": [
+      "romulus",
+      "titus-tatius"
+    ],
+    "passage": "李维1.9；普鲁塔克《罗慕路斯传》14；狄奥尼修斯2.30",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "plut-rom",
+      "dion-rom"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "spolia",
+    "title": "卡埃尼纳之战与丰厚战利品",
+    "text": "罗慕路斯击杀卡埃尼纳领袖，并将战利品献给朱庇特·费雷特里乌斯；李维把这称为 spolia opima 传统的起点。具体年份未定。",
+    "people": [
+      "romulus"
+    ],
+    "passage": "李维1.10",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "tarpeia",
+    "title": "塔尔佩娅与萨宾军占领城堡",
+    "text": "塔尔佩娅引萨宾军进入堡垒，随后被盾牌压死；其动机与结局在传统中有不同解释。该故事无法提供独立的战役纪年。",
+    "people": [
+      "romulus",
+      "titus-tatius"
+    ],
+    "passage": "李维1.11",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "joint-kings",
+    "title": "妇女止战与两王共治",
+    "text": "萨宾妇女进入两军之间止战，双方合并共同体，两位领袖共享王权。传统同时解释“奎里特人”与库里亚等名称的起源，但不确定合并发生在哪一年。",
+    "people": [
+      "romulus",
+      "titus-tatius"
+    ],
+    "passage": "李维1.12—13；普鲁塔克《罗慕路斯传》19",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "plut-rom"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "tatius-death",
+    "title": "塔提乌斯在拉维尼乌姆遇害",
+    "text": "塔提乌斯袒护侵害使者的亲族，在拉维尼乌姆祭祀时被杀。罗慕路斯未为之开战，此后独掌王权；不将此事硬定为前748年等近代推算值。",
+    "people": [
+      "romulus",
+      "titus-tatius"
+    ],
+    "passage": "李维1.14；普鲁塔克《罗慕路斯传》23",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "plut-rom"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "romulus-wars",
+    "title": "费德奈与维伊战争",
+    "text": "李维叙述费德奈因罗马增长而进攻，继而维伊参战，最终求和。传统中的百年休战不是已获独立证实的国际条约日期。",
+    "people": [
+      "romulus"
+    ],
+    "passage": "李维1.14—15",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "janus",
+    "title": "雅努斯的门户与和平",
+    "text": "努马将雅努斯门户的开闭与战争、和平联系起来，自己统治时关闭门户。整段和平王形象不能用来证明每个年度都没有冲突。",
+    "people": [
+      "numa-pompilius"
+    ],
+    "passage": "李维1.19",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "calendar",
+    "title": "历法与宗教日的整理",
+    "text": "传统归给努马以月亮运行组织十二个月、安排置闰和区分宗教日等措施。此为罗马历法起源叙事，不能误称为确立儒略太阳历。",
+    "people": [
+      "numa-pompilius"
+    ],
+    "passage": "李维1.19",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "priesthoods",
+    "title": "祭司、维斯塔贞女与萨利祭司",
+    "text": "努马被归功于设置或整理神祇祭司、维斯塔贞女、萨利祭司与祭司长的职责。制度的长期演化不应压缩为一个没有依据的“改革年”。",
+    "people": [
+      "numa-pompilius"
+    ],
+    "passage": "李维1.20",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "egeria",
+    "title": "厄革里娅与信义崇拜",
+    "text": "努马被说成与厄革里娅交流，并安排信义女神的祭祀。古代作者也解释神示可能是立法权威的表达；这里保留为宗教政治传统。",
+    "people": [
+      "numa-pompilius"
+    ],
+    "passage": "李维1.19、1.21；狄奥尼修斯2.60—61",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-numa"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "alba-war",
+    "title": "罗马与阿尔巴开战",
+    "text": "边境互相掠夺及使节交涉成为两城战争的起因，阿尔巴领袖克卢伊利乌斯死后由梅提乌斯主持战事。不能据叙述次序推定一个精确战役年。",
+    "people": [
+      "tullus-hostilius"
+    ],
+    "passage": "李维1.22—23",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "horatii",
+    "title": "贺拉提与库里亚提的决斗",
+    "text": "双方以三兄弟决斗决定从属关系；幸存的贺拉提杀死为敌方未婚夫哀悼的妹妹，继而受审获赦。故事同时解释战争、审判与赎罪仪式。",
+    "people": [
+      "tullus-hostilius"
+    ],
+    "passage": "李维1.24—26",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "mettius",
+    "title": "梅提乌斯背盟与被处死",
+    "text": "费德奈与维伊之战中，阿尔巴军观望；图卢斯获胜后将梅提乌斯车裂。背盟与惩罚属于传统叙事，不具独立绝对纪年。",
+    "people": [
+      "tullus-hostilius"
+    ],
+    "passage": "李维1.27—28",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "alba-destruction",
+    "title": "阿尔巴被毁；人口并入罗马",
+    "text": "传统说阿尔巴居民迁入罗马，部分贵族进入元老院，卡埃利乌斯山得到扩充，库里亚·霍斯提利亚建成。这里不将阿尔巴毁城机械标为某一前7世纪年份。",
+    "people": [
+      "tullus-hostilius"
+    ],
+    "passage": "李维1.29—30",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "tullus-sabines",
+    "title": "萨宾战争与灾异",
+    "text": "图卢斯战胜萨宾人后，阿尔巴山降石、疫病及求取神意的故事接踵而来，构成国王从尚武转向宗教的叙述。原文不足以恢复这些事件的逐年分布。",
+    "people": [
+      "tullus-hostilius"
+    ],
+    "passage": "李维1.30—31",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "fetials",
+    "title": "宣战仪式与努马祭规的复兴",
+    "text": "安库斯先命公布努马的祭仪，随后因拉丁冲突而采用郑重的求偿、宣战程序。李维用此说明 fetiales 的仪式传统，而非提供可精确定位的立法日期。",
+    "people": [
+      "ancus-marcius"
+    ],
+    "passage": "李维1.32",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "ancus-latins",
+    "title": "拉丁城镇战争与阿文提努斯移民",
+    "text": "安库斯被说成攻取波利托里乌姆、泰莱纳和费卡纳，迁入人口，并在阿文提努斯安置拉丁人。各地的征服与迁民年代不据此独立确定。",
+    "people": [
+      "ancus-marcius"
+    ],
+    "passage": "李维1.33",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "bridge",
+    "title": "雅尼库鲁姆、木桥与监狱",
+    "text": "传统将雅尼库鲁姆的设防、台伯河木桥 Pons Sublicius 和广场附近的监狱归于安库斯。它把河流交通、防御与城市秩序联系起来，尚不能分配到确切年度。",
+    "people": [
+      "ancus-marcius"
+    ],
+    "passage": "李维1.33",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "ostia-foundation",
+    "title": "奥斯蒂亚与盐场的建城传统",
+    "text": "李维将奥斯蒂亚及河口盐场归于安库斯；考古公园把王政建城说视为传说，现存古城最早遗迹属前4世纪后半叶。相关更早河口活动与后来的殖民城需要分开讨论。",
+    "people": [
+      "ancus-marcius"
+    ],
+    "passage": "李维1.33；奥斯蒂亚考古公园遗址说明",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "ostia"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "lucumo",
+    "title": "卢库莫与塔娜奎尔迁入罗马",
+    "text": "来自塔尔奎尼亚的卢库莫在安库斯统治时入罗马，改称卢基乌斯·塔奎尼乌斯。鹰与帽子的预兆为其后来称王提供神意解释。",
+    "people": [
+      "ancus-marcius",
+      "tarquinius-priscus"
+    ],
+    "passage": "李维1.34",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "senate-expansion",
+    "title": "增补元老与竞技场传统",
+    "text": "老塔克文增补百名元老，并安排竞技比赛及看台位置。这是大竞技场历史的起源传统，不意味着后来石造竞技场已在该时完成。",
+    "people": [
+      "tarquinius-priscus"
+    ],
+    "passage": "李维1.35",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "attus",
+    "title": "阿图斯·纳维乌斯与骑兵编制",
+    "text": "塔克文欲更改骑兵组织，占卜师阿图斯以神迹证明传统约束；国王最终在原有单位名下增加人数。磨石被剃刀切开的故事属于宗教传奇。",
+    "people": [
+      "tarquinius-priscus"
+    ],
+    "passage": "李维1.36",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "priscus-wars",
+    "title": "萨宾战争与科拉提亚归服",
+    "text": "老塔克文战胜萨宾人，科拉提亚通过正式问答投降，拉丁各城的征服也列于其后。这些文书式场景不等于保存下来的当代会议记录。",
+    "people": [
+      "tarquinius-priscus"
+    ],
+    "passage": "李维1.37—38",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "priscus-works",
+    "title": "排水、城防与卡皮托利欧工程",
+    "text": "李维将低地排水、城防以及朱庇特神庙地基准备归于老塔克文；末王期又有后续施工。地下排水系统有长期演化，不用一条精确年份包办全部建设。",
+    "people": [
+      "tarquinius-priscus"
+    ],
+    "passage": "李维1.38、1.55—56",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "servius-origins",
+    "title": "塞尔维乌斯的身世与火光预兆",
+    "text": "幼年头上的火光使塞尔维乌斯被王室看重；李维也讨论其母的俘虏身世，并反对过于简单的奴隶出身说。不同版本展示王权合法性的争议。",
+    "people": [
+      "tarquinius-priscus",
+      "servius-tullius"
+    ],
+    "passage": "李维1.39；狄奥尼修斯4.1—4",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-serv"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "census",
+    "title": "人口财产登记与百人队",
+    "text": "传统将人口财产登记、等级与百人队的编组归于塞尔维乌斯。李维所列财产门槛、兵器和投票秩序包含后世制度的面貌，本库不把它们认作可确证的一次性前6世纪改革。",
+    "people": [
+      "servius-tullius"
+    ],
+    "passage": "李维1.42—43；狄奥尼修斯4.16—21；Tan 2023，WHAT WERE THE REFORMS?",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "dion-serv",
+      "tan"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "lustrum",
+    "title": "阅兵净礼与“八万公民”",
+    "text": "传统说登记后在战神广场行净礼，并报出八万公民。这个数字是文献中的传统人口数，不是已通过考古独立验证的人口统计。",
+    "people": [
+      "servius-tullius"
+    ],
+    "passage": "李维1.44",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "servian-city",
+    "title": "扩大城区、部落与所谓塞尔维乌斯城墙",
+    "text": "李维把城市扩展与城防归于塞尔维乌斯；考古需区分前6世纪遗迹和现存主要属前4世纪的城墙。因而不能把今天看见的全部城墙直接当成此王实物遗产。",
+    "people": [
+      "servius-tullius"
+    ],
+    "passage": "李维1.43—44；罗马城墙虚拟博物馆；卡皮托利欧博物馆",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy",
+      "walls",
+      "capitoline"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "diana",
+    "title": "阿文提努斯的狄安娜神庙",
+    "text": "塞尔维乌斯劝说拉丁人共同在罗马建立狄安娜神庙，传统借此表现罗马的宗教中心地位及对拉丁人的影响。神牛与祭祀优先权的故事不能作为外交日期的证据。",
+    "people": [
+      "servius-tullius"
+    ],
+    "passage": "李维1.45",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "tyranny",
+    "title": "末王的强制统治",
+    "text": "末王被描绘为不经元老和人民合法认可，以卫队、审判与清洗控制罗马。李维的政治道德判断需要与关于王政实际制度的证据区别阅读。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.49",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "latin-league",
+    "title": "拉丁会议与图尔努斯之死",
+    "text": "塔克文通过婚姻、盟约与拉丁会议扩大影响；图尔努斯·赫尔多尼乌斯被构陷后处死，拉丁军与罗马军混编。事件只有任期归属，不附虚构的公元前年份。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.49—52",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "gabii",
+    "title": "波梅提亚战争与加比计谋",
+    "text": "传统把攻取苏埃萨·波梅提亚的战利品与神庙工程联系起来，又说塞克斯图斯诈降加比，按父亲“削去罂粟花头”的暗示清除当地领袖。计谋带有流传广泛的暴君故事模式。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.53—54",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "jupiter",
+    "title": "卡皮托利欧朱庇特神庙工程",
+    "text": "末王推进神庙建设，特尔米努斯拒迁与发现人头被解释为罗马长久强盛的预兆。神庙的正式奉献则置于共和国初年，工程与奉献不合并为一事。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.55—56、2.8",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "forced-labour",
+    "title": "劳役、排水工程与殖民",
+    "text": "李维将大型排水和竞技场工程的劳役、向西尔凯伊和西格尼亚派殖民者归于末王。叙述体现城市工程与社会压力，不足以复原每项工程的起讫年。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.56",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  },
+  {
+    "id": "delphi",
+    "title": "德尔斐神谕与布鲁图斯",
+    "text": "王室因蛇的异兆向德尔斐求问，同行的布鲁图斯以“亲吻母亲大地”解释继承神谕。该故事预示共和国开创者，不应当成确有日程可查的使团档案。",
+    "people": [
+      "tarquinius-superbus"
+    ],
+    "passage": "李维1.56",
+    "year": null,
+    "kind": "tradition",
+    "sources": [
+      "livy"
+    ],
+    "dating": "任期内未定年"
+  }
+]
