@@ -22,16 +22,19 @@ def build(destination):
         target.write_bytes(content)
         manifest[name] = versioned
 
-    for name in ['data/republic.json', 'data/territories.json', 'data/stories.json', 'style.css']:
+    for name in ['data/republic.json', 'data/territories.json', 'data/stories.json',
+                 'data/empire.json', 'data/imperial-territories.json', 'style.css', 'imperial.css']:
         fingerprint(name, (ROOT / name).read_bytes())
-    script = (ROOT / 'app.js').read_text(encoding='utf-8')
-    for original, versioned in manifest.items():
-        script = script.replace(f"'{original}'", f"'{versioned}'")
-    fingerprint('app.js', script.encode('utf-8'))
-    html = (ROOT / 'index.html').read_text(encoding='utf-8')
-    for original in ['style.css', 'app.js']:
-        html = html.replace(f'"{original}"', f'"{manifest[original]}"')
-    (destination / 'index.html').write_text(html, encoding='utf-8')
+    for name in ['app.js', 'imperial-app.js']:
+        script = (ROOT / name).read_text(encoding='utf-8')
+        for original, versioned in manifest.items():
+            script = script.replace(f"'{original}'", f"'{versioned}'")
+        fingerprint(name, script.encode('utf-8'))
+    for name in ['index.html', 'emperors.html']:
+        html = (ROOT / name).read_text(encoding='utf-8')
+        for original, versioned in manifest.items():
+            html = html.replace(f'"{original}"', f'"{versioned}"')
+        (destination / name).write_text(html, encoding='utf-8')
     (destination / 'asset-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     (destination / '.nojekyll').touch()
     return manifest
