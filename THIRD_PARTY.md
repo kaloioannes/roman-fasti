@@ -1,24 +1,24 @@
 # Third-party assets
 
-The imperial volume adds `data-source/empire/imperial-territories.geojson` and `data/imperial-territories.json`, derived from the same Cliopatria v0.2.0 dataset cited below (CC BY 4.0). Source selection, frame-year aggregation, the 116/117–126 approximation and coast clipping are documented in [the imperial research notes](data-source/empire/RESEARCH.md) and `scripts/build_imperial_map.py`. The 60 source features retain original attributes; 57 derived stages show the combined Roman-world footprint rather than using source polity labels as an emperor chronology.
+The imperial volume adds `data-source/empire/imperial-territories.geojson` and `data/empire/territories.json`, derived from the same Cliopatria v0.2.0 dataset cited below (CC BY 4.0). Source selection, frame-year aggregation, the 116/117–126 approximation and coast clipping are documented in [the imperial research notes](data-source/empire/RESEARCH.md) and `scripts/build_imperial_map.py`. The 60 source features retain original attributes; 57 derived stages show the combined Roman-world footprint rather than using source polity labels as an emperor chronology.
 
 Imperial historical references are catalogued in `data-source/empire/sources.json`; modern essays, translations and coin photographs retain their original rights. The website links to them and does not bundle their full text or images.
 
 ## D3 7.9.0 — ISC
 
-`assets/d3.min.js`, Copyright 2010–2023 Mike Bostock. [Project](https://github.com/d3/d3) · [license](https://github.com/d3/d3/blob/v7.9.0/LICENSE).
+`site/shared/assets/d3.min.js`, Copyright 2010–2023 Mike Bostock. [Project](https://github.com/d3/d3) · [license](https://github.com/d3/d3/blob/v7.9.0/LICENSE).
 
 ## TopoJSON Client 3.1.0 — ISC
 
-`assets/topojson.min.js`, Copyright 2012–2019 Mike Bostock. [Project](https://github.com/topojson/topojson-client) · [license](https://github.com/topojson/topojson-client/blob/v3.1.0/LICENSE).
+`site/shared/assets/topojson.min.js`, Copyright 2012–2019 Mike Bostock. [Project](https://github.com/topojson/topojson-client) · [license](https://github.com/topojson/topojson-client/blob/v3.1.0/LICENSE).
 
 ## World Atlas / Natural Earth
 
-`assets/land-50m.json` is the 1:50m land topology from [World Atlas 2.0.2](https://github.com/topojson/world-atlas), Copyright Mike Bostock, distributed under [ISC](https://github.com/topojson/world-atlas/blob/v2.0.2/LICENSE). Its underlying [Natural Earth](https://www.naturalearthdata.com/) cartographic data is public domain.
+`site/shared/assets/land-50m.json` is the 1:50m land topology from [World Atlas 2.0.2](https://github.com/topojson/world-atlas), Copyright Mike Bostock, distributed under [ISC](https://github.com/topojson/world-atlas/blob/v2.0.2/LICENSE). Its underlying [Natural Earth](https://www.naturalearthdata.com/) cartographic data is public domain.
 
 ## Cormorant Garamond — SIL Open Font License 1.1
 
-`assets/roman.ttf` provides the Latin display typography. Copyright 2015 The Cormorant Project Authors. [Project source](https://github.com/google/fonts/tree/main/ofl/cormorantgaramond) · the full font license is included as [`assets/FONT-LICENSE.txt`](assets/FONT-LICENSE.txt).
+`site/shared/assets/roman.ttf` provides the Latin display typography. Copyright 2015 The Cormorant Project Authors. [Project source](https://github.com/google/fonts/tree/main/ofl/cormorantgaramond) · the full font license is included as [`site/shared/assets/FONT-LICENSE.txt`](site/shared/assets/FONT-LICENSE.txt).
 
 Chinese typography uses the device's installed fonts. No proprietary Chinese font is bundled.
 

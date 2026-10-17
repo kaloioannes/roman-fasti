@@ -13,7 +13,7 @@
 | `sources.json` | 来源入口、类别、版本及阅读说明；不是未经阅读的书单数量 |
 | `method.json` | 网页直接展示的范围、取舍、日期选择、局限与许可 |
 | `imperial-territories.geojson` | 从固定版本Cliopatria选取的帝国相关阶段；原始属性和时间段保留 |
-| `../../data/empire.json` | 由 `python scripts/build_empire.py` 离线生成的网页数据 |
+| `../../data/empire/records.json` | 由 `python scripts/build_empire.py` 离线生成的网页数据 |
 
 134位人物包含选录的恺撒及帝号有争议者。**不能把134当作没有争议的皇帝总数。** 所有人都有独立传记；资料很少的争位者说明能确认的行动及证据缺口，不补造出身或施政。年度页面显示的是一年内出现过的阶段，既包含年内先后，也可能包含共治。同一人物的恺撒与奥古斯都阶段可以在晋升年同时出现。
 

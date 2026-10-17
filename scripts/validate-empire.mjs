@@ -6,8 +6,8 @@ import {createRequire} from 'node:module';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
-const data = read('data/empire.json');
-const maps = read('data/imperial-territories.json');
+const data = read('data/empire/records.json');
+const maps = read('data/empire/territories.json');
 const years = [...Array.from({length:27},(_,i)=>i-27),...Array.from({length:395},(_,i)=>i+1)];
 const kinds = new Set(['central','rival','regional','disputed','caesar']);
 assert.equal(data.meta.yearZero,false);
@@ -96,7 +96,7 @@ assert.ok(rulers(274,'caesar').has('tetricus-ii'));
 assert.deepEqual([...rulers(395,'central')],['theodosius-i','arcadius','honorius']);
 assert.equal(data.people['arcadius'].reigns[0].end,408);
 assert.equal(data.people['honorius'].reigns[0].end,423);
-const d3 = createRequire(import.meta.url)('../assets/d3.min.js');
+const d3 = createRequire(import.meta.url)('../site/shared/assets/d3.min.js');
 for (const f of maps.features) {
   assert.ok(f.properties.caption && f.properties.label && f.geometry);
   assert.ok(f.properties.from<=f.properties.to);

@@ -1,8 +1,21 @@
 {
-  "name": "roman-republic-fasti",
+  "name": "roman-fasti",
   "version": "1.0.0",
   "private": true,
-  "description": "Chinese / Latin annual atlases of the Roman Republic and classical Roman emperors, 509 BCE–395 CE.",
-  "scripts": {"validate": "node scripts/validate.mjs && node scripts/validate-empire.mjs", "test:ui": "node scripts/test-ui.cjs", "test:release": "node scripts/test-release.cjs && node scripts/test-imperial.cjs", "test:imperial": "node scripts/test-imperial.cjs"},
-  "license": "MIT"
+  "description": "FASTI · 罗马历史纪年：按时期组织的官员、统治者、人物、事件与历史地图。",
+  "scripts": {
+    "validate": "node scripts/validate.mjs && node scripts/validate-empire.mjs && npm run validate:structure",
+    "test:ui": "node scripts/test-ui.cjs",
+    "test:release": "node scripts/test-release.cjs && node scripts/test-imperial.cjs && npm run test:routes",
+    "test:imperial": "node scripts/test-imperial.cjs",
+    "build": "python scripts/build_site.py",
+    "validate:release": "node scripts/validate-release.mjs",
+    "validate:structure": "node scripts/validate-structure.mjs",
+    "test:routes": "node scripts/test-routes.cjs"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaloioannes/roman-republic-fasti.git"
+  }
 }

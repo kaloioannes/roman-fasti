@@ -63,5 +63,5 @@ def compile_data():
 
 if __name__ == '__main__':
     data = compile_data()
-    (ROOT / 'data' / 'empire.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    (ROOT / 'data' / 'empire' / 'records.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(json.dumps(data['stats'], ensure_ascii=False))

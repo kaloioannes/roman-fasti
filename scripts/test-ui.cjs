@@ -6,6 +6,7 @@ const path=require('node:path');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=path.resolve(__dirname,'..');
 const origin='http://fasti.test';
+const republic=origin+'/republic/';
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.ttf':'font/ttf','.svg':'image/svg+xml'};
 const read=p=>fs.readFile(path.join(root,p),'utf8').then(JSON.parse);
 const errors=[];
@@ -13,7 +14,8 @@ async function context(browser,options={}){
  const c=await browser.newContext({viewport:{width:1440,height:1000},...options});
  await c.route(`${origin}/**`,async route=>{
   const url=new URL(route.request().url());
-  const file=path.resolve(root,'.'+(url.pathname==='/'?'/index.html':decodeURIComponent(url.pathname)));
+  const name=decodeURIComponent(url.pathname);
+  const file=path.resolve(root,name.startsWith('/data/')?'.'+name:'site'+(name.endsWith('/')?name+'index.html':name));
   assert.ok(file.startsWith(root+path.sep));
   try{await route.fulfill({body:await fs.readFile(file),contentType:mime[path.extname(file)]||'application/octet-stream'})}
   catch{await route.fulfill({status:404,body:'File not found'})}
@@ -39,19 +41,19 @@ async function noOverflow(page,label){
 (async()=>{
  const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
  try{
- const stories=await read('data/stories.json'),data=await read('data/republic.json');
+ const stories=await read('data/republic/stories.json'),data=await read('data/republic/records.json');
  const c=await context(browser);
  // Old preferences must not re-enable the previous experience on upgrade.
  await c.addInitScript(()=>{try{localStorage.setItem('fasti-spoiler','true')}catch{}});
  const page=await c.newPage();
- await page.goto(origin);
+ await page.goto(republic);
  await page.waitForSelector('.story-card');
  assert.equal(await page.locator('.story-card').count(),10);
  assert.equal(await page.locator('#spoiler-switch').isChecked(),false);
  await page.locator('#home-year').fill('510');await page.locator('#home-form').evaluate(e=>e.requestSubmit());
  assert.match(await page.locator('#home-error').textContent(),/27.*509/);
  for(const input of ['44 BCE','44 BC','公元前44年']){
-  await page.goto(origin);await page.locator('#home-year').fill(input);await page.locator('#home-form').evaluate(e=>e.requestSubmit());
+  await page.goto(republic);await page.locator('#home-year').fill(input);await page.locator('#home-form').evaluate(e=>e.requestSubmit());
   await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='44');
   assert.equal(new URL(page.url()).hash,'#year=44');
  }
@@ -101,11 +103,11 @@ async function noOverflow(page,label){
  await year(page,80,'sertorian-rome');await page.locator('#previous-year').click();
  await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='81');
  assert.equal(new URL(page.url()).hash,'#year=81');
- await page.goto(`${origin}/#story=sertorian-rome&year=44`);
+ await page.goto(`${republic}#story=sertorian-rome&year=44`);
  await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='44');
  assert.equal(new URL(page.url()).hash,'#year=44');
- await page.goto(`${origin}/#story=unknown&year=44`);assert.equal(await page.locator('#home').isVisible(),true);
- await page.goto(`${origin}/#year=509`);await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='509');
+ await page.goto(`${republic}#story=unknown&year=44`);assert.equal(await page.locator('#home').isVisible(),true);
+ await page.goto(`${republic}#year=509`);await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='509');
  assert.equal(await page.locator('#previous-year').isDisabled(),true);
  await year(page,27);assert.equal(await page.locator('#next-year').isDisabled(),true);
  await page.locator('#sources-button').click();assert.equal(await page.locator('#sources-dialog').isVisible(),true);
@@ -113,7 +115,7 @@ async function noOverflow(page,label){
  for(const width of [320,390,768,1440]){
   await page.setViewportSize({width,height:900});
   for(const dark of [false,true]){
-   await page.goto(`${origin}/#stories`);await page.waitForSelector('.story-card');
+   await page.goto(`${republic}#stories`);await page.waitForSelector('.story-card');
    await page.evaluate(d=>document.documentElement.dataset.theme=d?'dark':'light',dark);
    await noOverflow(page,`home ${width} ${dark}`);
    await year(page,43,'sicilian-sea');await noOverflow(page,`story ${width} ${dark}`);
@@ -127,19 +129,19 @@ async function noOverflow(page,label){
  }
  // Storage restrictions must leave the fresh experience usable.
  const blocked=await context(browser);await blocked.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage blocked')}}));
- const bp=await blocked.newPage();await bp.goto(origin);await bp.waitForSelector('.story-card');
+ const bp=await blocked.newPage();await bp.goto(republic);await bp.waitForSelector('.story-card');
  await year(bp,44);await toggle(bp,true);await toggle(bp,false);await blocked.close();
  // Failed story fetches can recover through the visible retry button.
  const retry=await context(browser);let failStories=true;
- await retry.route('**/data/stories.json',async route=>failStories?route.fulfill({status:503,body:'Try again'}):route.fallback());
- const rp=await retry.newPage();await rp.goto(`${origin}/#story=sertorian-rome&year=80`);await rp.waitForSelector('#retry-stories');
+ await retry.route('**/data/republic/stories.json',async route=>failStories?route.fulfill({status:503,body:'Try again'}):route.fallback());
+ const rp=await retry.newPage();await rp.goto(`${republic}#story=sertorian-rome&year=80`);await rp.waitForSelector('#retry-stories');
  failStories=false;await rp.locator('#retry-stories').click();
  await rp.waitForFunction(()=>document.querySelector('#year-number').textContent==='80');
  await retry.close();
  // Two navigations during the initial annual fetch must finish on the last year.
  const race=await context(browser);
- await race.route('**/data/republic.json',async route=>{await new Promise(resolve=>setTimeout(resolve,150));await route.fallback()});
- const racePage=await race.newPage();await racePage.goto(origin);
+ await race.route('**/data/republic/records.json',async route=>{await new Promise(resolve=>setTimeout(resolve,150));await route.fallback()});
+ const racePage=await race.newPage();await racePage.goto(republic);
  await racePage.evaluate(()=>{location.hash='year=44';setTimeout(()=>location.hash='year=43',10)});
  await racePage.waitForFunction(()=>document.querySelector('#year-number').textContent==='43');
  assert.match(await racePage.title(),/43/);await race.close();

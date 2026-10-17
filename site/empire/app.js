@@ -194,7 +194,7 @@
   async function drawMap(y) {
     const generation = mapGeneration;
     try {
-      mapPromise ||= Promise.all([json('assets/land-50m.json'), json('data/imperial-territories.json')]).then(([topo, maps]) => {
+      mapPromise ||= Promise.all([json('../shared/assets/land-50m.json'), json('../data/empire/territories.json')]).then(([topo, maps]) => {
         if (!window.d3 || !window.topojson) throw new Error('地图绘图库未能载入');
         land = topojson.feature(topo, topo.objects.land); mapData = maps;
       });
@@ -247,7 +247,7 @@
   }
   async function load() {
     try {
-      data = await json('data/empire.json'); fillMethod(); route();
+      data = await json('../data/empire/records.json'); fillMethod(); route();
     } catch {
       main.innerHTML = '<p class="initial-status" role="alert">档案载入失败，请检查网络后重试。<br><button class="bio-link" id="retry-data">重新载入 ↗</button></p>';
       $('#retry-data').onclick = load;
