@@ -20,6 +20,8 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
  try{
   browser=await chromium.launch({headless:true,args:['--no-proxy-server'],...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
   const context=await browser.newContext(),page=await context.newPage(),errors=[];
+  // Hash URL changes precede the app's hashchange render, especially in headless CI.
+  const waitYear=year=>page.waitForFunction(y=>document.querySelector('.year-top h1')?.firstChild?.textContent.trim()===String(-y),year);
   page.on('pageerror',e=>errors.push(e.message));
   page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()}: ${r.url()}`)});
   for(const base of ['/','/roman-republic-fasti/']){
@@ -40,14 +42,16 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    assert.equal(await page.locator('.year-columns [data-person]').count(),1);
    assert.match(await page.locator('.year-columns').innerText(),/共治.*未定/);
    await page.locator('#next-year').click();await page.waitForURL(url+'#year=-752');
+   await waitYear(-752);
    assert.equal(await page.locator('#annual-events .event').count(),0);
    assert.match(await page.locator('#annual-events').innerText(),/无可定年记载/);
    assert.ok(await page.locator('.traditions [data-dating="undated"]').count()>0);
    await page.locator('#year-slider').fill('-700');
    await page.locator('#year-slider').dispatchEvent('change');await page.waitForURL(url+'#year=-700');
+   await waitYear(-700);
    assert.match(await page.locator('.year-columns').innerText(),/努马/);
    for(const [year,count] of [[-716,1],[-715,1],[-672,2],[-640,2],[-616,2],[-578,2],[-534,2],[-509,1]]){
-    await page.goto(url+`#year=${year}`);await page.waitForSelector('#annual-events');
+    await page.goto(url+`#year=${year}`);await waitYear(year);
     assert.equal(await page.locator('.year-columns [data-person]').count(),count,`Rulers ${year}`);
     assert.equal(await page.locator('[data-interregnum]').count(),[-716,-715].includes(year)?1:0);
     assert.equal(await page.locator('.place-map').count(),1);
