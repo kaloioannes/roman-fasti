@@ -18,7 +18,8 @@ jobs:
         run: |
           pip install opencc-python-reimplemented==0.1.7
           python scripts/build_data.py
-          git diff --exit-code -- data/republic.json data/stories.json
+          python scripts/build_empire.py
+          git diff --exit-code -- data/republic.json data/stories.json data/empire.json
       - name: Validate years, maps, stories and copy
         run: npm run validate
       - name: Validate release assets

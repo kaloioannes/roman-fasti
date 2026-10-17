@@ -12,6 +12,8 @@ Changes: structured extraction; expansion and normalization of Latin praenomina;
 
 The ten stories are original Chinese narratives by FASTI contributors (2026-10-15), with references to Livy, Plutarch, Appian, Diodorus, Cicero, Cassius Dio and inscriptions. Each chapter links to its source and identifies the relevant passages.
 
+The imperial volume (`data/empire.json` and authored TSV/JSON files in `data-source/empire/`) consists of new Chinese historical summaries by FASTI contributors (2026-10-17), released under the same CC BY-SA 4.0 license. Its source catalogue distinguishes ancient texts, modern signed studies and numismatic evidence. Linked DIR essays and other modern scholarship retain their authors' copyright; their full text and images are not redistributed here. Ancient translations retain the notices of their hosting editions. The imperial GIS subset and derived map retain Cliopatria's separate CC BY 4.0 attribution; see the imperial research notes and THIRD_PARTY.md.
+
 Linked editions and translations retain the credits provided by their hosts, including the translations at Attalus. Attalus also provides the annual source index. The Chinese prose is written for FASTI. Scholarly books and scanned pages are linked for further reading.
 
 ## Historical geometry — CC BY 4.0
