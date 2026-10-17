@@ -6,7 +6,7 @@
 
 新增 **[古典罗马皇帝数据库](https://kaloioannes.github.io/roman-republic-fasti/emperors.html)**：前27年奥古斯都受号至395年狄奥多西去世，共 **422个年度、134位人物的三段式传记、426条记事、162段称号任期**。包括中央共帝、高卢与巴尔米拉等区域政权、有可靠证据的争位者，另设帝号有争议及选录的恺撒辅栏。原共和国篇继续从本页入口使用。
 
-皇帝篇可按中文、拉丁文、别名、时代和身份检索；分享年度用 `emperors.html#year=260`，前27年用 `#year=-27`，人物如 `#person=augustus`。前1年直接跳到公元1年。每条事件与每位人物附史料链接、卷章或定位说明；同年先后在位与同时共治以任期区分。资料不能精确分年的年份明确标为跨年背景，可单独筛选。人物总数包含辅栏，不能当作正式皇帝人数。
+皇帝篇在年度卡片、人物索引与完整档案标明王朝归属，短期政治家族另标“家族”，无法确定者明确说明；时代／制度与王朝分开。可按中文、拉丁文、别名、王朝、时代和身份检索，并按王朝／家族筛选（如 `#people&dynasty=severan`）；分享年度用 `emperors.html#year=260`，前27年用 `#year=-27`，人物如 `#person=augustus`。前1年直接跳到公元1年。每条事件与每位人物附史料链接、卷章或定位说明；同年先后在位与同时共治以任期区分。资料不能精确分年的年份明确标为跨年背景，可单独筛选。人物总数包含辅栏，不能当作正式皇帝人数。
 
 皇帝篇的资料结构、收录取舍及日期争议见 [研究说明](data-source/empire/RESEARCH.md)，完整来源目录在 [sources.json](data-source/empire/sources.json) 及页面“史料与方法”中。
 
@@ -49,7 +49,7 @@ python -m http.server 8000
 npm run validate
 ```
 
-重建皇帝篇数据：`python scripts/build_empire.py`（Python标准库，无需网络）。编辑 `data-source/empire/people.tsv`、`reigns.tsv`、`events.tsv`，再重建 `data/empire.json`。地图重建见研究说明；浏览器测试 `npm run test:imperial` 需先执行 `python scripts/build_site.py`。
+重建皇帝篇数据：`python scripts/build_empire.py`（Python标准库，无需网络）。编辑 `data-source/empire/people.tsv`、`dynasties.json`、`reigns.tsv`、`events.tsv`，再重建 `data/empire.json`。地图重建见研究说明；浏览器测试 `npm run test:imperial` 需先执行 `python scripts/build_site.py`。
 
 页面通过 `fetch` 读取 JSON，本地预览请使用 HTTP 服务。前端无需打包。
 

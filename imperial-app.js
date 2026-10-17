@@ -19,6 +19,13 @@
   const period = (a, b) => `${when(a)} — ${when(b)}`;
   const era = y => eras.find(e => e.from <= y && y <= e.to);
   const badge = kind => `<span class="role-badge" data-kind="${kind}">${kinds[kind]}</span>`;
+  const dynastyLabel = p => data.dynasties[p.dynasty].label;
+  const dynastyCaption = p => ({dynasty: '王朝', family: '家族', none: '归属'}[data.dynasties[p.dynasty].kind]);
+  const dynastyTag = (p, linked = true) => {
+    const text = `${dynastyCaption(p)}：${dynastyLabel(p)}`;
+    const attrs = `class="dynasty-tag" data-dynasty="${esc(p.dynasty)}"`;
+    return linked ? `<a ${attrs} href="#people&dynasty=${encodeURIComponent(p.dynasty)}">${esc(text)} ↗</a>` : `<span ${attrs}>${esc(text)}</span>`;
+  };
   const yearLink = y => `<a class="year-chip" href="#year=${y}">${when(y)} ↗</a>`;
   const sourceLinks = keys => `<div class="source-links">${[...new Set(keys)].map(key => {
     const s = data.sources[key];
@@ -68,6 +75,7 @@
   function rulerCard(person, reign) {
     return `<article class="ruler-card" data-person="${person.id}" data-kind="${reign.kind}"><div class="ruler-card-top">${badge(reign.kind)}<span class="ruler-dates">${esc(reign.certainty)}</span></div>
       <h4><a href="#person=${person.id}">${esc(person.zh)} ↗</a></h4><div class="ruler-latin">${esc(person.latin)}</div>
+      <div class="dynasty-line">${dynastyTag(person)}</div>
       <p class="ruler-territory">${esc(reign.tenure)}<br>${esc(reign.territory)}</p><p class="ruler-note">${esc(reign.note)}</p>
       <details><summary>展开人物介绍</summary>${person.bio.map(p => `<p>${esc(p)}</p>`).join('')}${sourceLinks(person.sources)}<a class="bio-link" href="#person=${person.id}">完整档案与任期 ↗</a></details></article>`;
   }
@@ -109,9 +117,19 @@
   function renderDirectory() {
     const params = new URLSearchParams(location.hash.slice(1));
     directoryState = {q: params.get('q') || '', kind: params.get('kind') || '', dynasty: params.get('dynasty') || ''};
-    const dynasties = [...new Set(Object.values(data.people).map(p => p.dynasty))];
-    main.innerHTML = `<section class="directory"><div class="empire-toolbar"><a href="#">← 帝国纪年</a></div><div class="eyebrow">PROSOPOGRAPHIA · 人物索引</div><h1>帝位上的许多人</h1><p class="directory-intro">按中文、拉丁文、别名或时代查找。每位人物都有独立传记。索引包含皇帝、帝号有争议者和选录的恺撒，人物总数不是正式皇帝总数。</p>
-      <div class="directory-tools"><label><span class="sr-only">搜索人物</span><input id="person-search" type="search" placeholder="中文、拉丁文或别名，例如 Zenobia" value="${esc(directoryState.q)}"></label><label><span class="sr-only">身份</span><select id="kind-filter"><option value="">全部身份</option>${Object.entries(kinds).map(([k,v]) => `<option value="${k}"${directoryState.kind === k ? ' selected' : ''}>${v}</option>`).join('')}</select></label><label><span class="sr-only">时代或王朝</span><select id="dynasty-filter"><option value="">全部时代与王朝</option>${dynasties.map(d => `<option${directoryState.dynasty === d ? ' selected' : ''}>${esc(d)}</option>`).join('')}</select></label></div>
+    // Preserve shared links from the previous combined era/dynasty filter.
+    if (directoryState.dynasty && !data.dynasties[directoryState.dynasty]) {
+      const previous = directoryState.dynasty;
+      const matching = Object.entries(data.dynasties).find(([,d]) => d.label === previous);
+      if (matching) directoryState.dynasty = matching[0];
+    }
+    const dynasties = Object.entries(data.dynasties);
+    const legacyEra = directoryState.dynasty;
+    if (legacyEra && !data.dynasties[legacyEra] && Object.values(data.people).some(p => p.era === legacyEra)) {
+      dynasties.push([legacyEra, {label: `时代／政权：${legacyEra}`}]);
+    }
+    main.innerHTML = `<section class="directory"><div class="empire-toolbar"><a href="#">← 帝国纪年</a></div><div class="eyebrow">PROSOPOGRAPHIA · 人物索引</div><h1>帝位上的许多人</h1><p class="directory-intro">按中文、拉丁文、别名、王朝或时代查找。每位人物都有独立传记。索引包含皇帝、帝号有争议者和选录的恺撒，人物总数不是正式皇帝总数。</p><p class="person-notice">王朝与短期政治家族分别标明；“三世纪危机”“四帝共治”等时代或制度不作为王朝。同属王朝也不等于同时共治或获得同等承认。</p>
+      <div class="directory-tools"><label><span class="sr-only">搜索人物</span><input id="person-search" type="search" placeholder="姓名、王朝或时代，例如 塞维鲁" value="${esc(directoryState.q)}"></label><label><span class="sr-only">身份</span><select id="kind-filter"><option value="">全部身份</option>${Object.entries(kinds).map(([k,v]) => `<option value="${k}"${directoryState.kind === k ? ' selected' : ''}>${v}</option>`).join('')}</select></label><label><span class="sr-only">王朝或家族</span><select id="dynasty-filter"><option value="">全部王朝与家族</option>${dynasties.map(([id,d]) => `<option value="${esc(id)}"${directoryState.dynasty === id ? ' selected' : ''}>${esc(d.label)}</option>`).join('')}</select></label></div>
       <p class="directory-count" id="directory-count" role="status"></p><div id="directory-results" class="directory-grid"></div></section>`;
     const update = () => {
       directoryState = {q: $('#person-search').value, kind: $('#kind-filter').value, dynasty: $('#dynasty-filter').value};
@@ -127,12 +145,12 @@
   function updateDirectory() {
     const {q,kind,dynasty} = directoryState;
     const query = q.trim().toLocaleLowerCase().normalize('NFKC');
-    const results = Object.values(data.people).filter(p => (!query || `${p.zh} ${p.latin} ${p.aliases} ${p.dynasty}`.toLocaleLowerCase().normalize('NFKC').includes(query)) && (!kind || p.reigns.some(r => r.kind === kind)) && (!dynasty || p.dynasty === dynasty)).sort((a,b) => Math.min(...a.reigns.map(r => r.start))-Math.min(...b.reigns.map(r => r.start)) || a.id.localeCompare(b.id));
+    const results = Object.values(data.people).filter(p => (!query || `${p.zh} ${p.latin} ${p.aliases} ${dynastyLabel(p)} ${p.era}`.toLocaleLowerCase().normalize('NFKC').includes(query)) && (!kind || p.reigns.some(r => r.kind === kind)) && (!dynasty || p.dynasty === dynasty || p.era === dynasty)).sort((a,b) => Math.min(...a.reigns.map(r => r.start))-Math.min(...b.reigns.map(r => r.start)) || a.id.localeCompare(b.id));
     $('#directory-count').textContent = `找到 ${results.length} / ${data.stats.people} 位人物`;
     $('#directory-results').innerHTML = results.length ? results.map(p => {
       const imperial = p.reigns.filter(r => r.kind !== 'caesar'), rs = imperial.length ? imperial : p.reigns;
-      return `<a href="#person=${p.id}" class="person-card"><div>${[...new Set(rs.map(r => r.kind))].map(badge).join(' ')}</div><h2>${esc(p.zh)}</h2><p class="ruler-latin">${esc(p.latin)}</p><p class="person-period">${period(Math.min(...rs.map(r => r.start)),Math.max(...rs.map(r => r.end)))}</p><p class="ruler-note">${esc(p.dynasty)}${rs.length > 1 ? ' · 多段任期，详见档案' : ''}</p></a>`;
-    }).join('') : '<p class="empty-state">没有匹配人物。可缩短关键词，或将身份、时代改为全部。</p>';
+      return `<a href="#person=${p.id}" class="person-card"><div>${[...new Set(rs.map(r => r.kind))].map(badge).join(' ')}</div><h2>${esc(p.zh)}</h2><p class="ruler-latin">${esc(p.latin)}</p><div class="dynasty-line">${dynastyTag(p,false)}</div><p class="person-period">${period(Math.min(...rs.map(r => r.start)),Math.max(...rs.map(r => r.end)))}</p><p class="ruler-note">时代／政权：${esc(p.era)}${rs.length > 1 ? ' · 多段任期，详见档案' : ''}</p></a>`;
+    }).join('') : '<p class="empty-state">没有匹配人物。可缩短关键词，或将身份、王朝与家族改为全部。</p>';
   }
 
   function renderPerson(id) {
@@ -141,7 +159,7 @@
     const rs = [...p.reigns].sort((a,b) => a.start-b.start);
     const links = years.filter(y => rs.some(r => r.start <= y && y <= r.end));
     main.innerHTML = `<article class="person-page"><div class="empire-toolbar"><a href="#people">← 人物索引</a><a href="#">帝国纪年</a>${currentYear ? `<a href="#year=${currentYear}">返回${when(currentYear)}</a>` : ''}</div>
-      <header class="person-heading"><div class="eyebrow">${esc(p.dynasty)} · 人物档案</div><h1>${esc(p.zh)}</h1><p class="ruler-latin">${esc(p.latin)}</p><p class="person-notice">别名／检索词：${esc(p.aliases)}</p></header>
+      <header class="person-heading"><div class="eyebrow">人物档案 · ${esc(p.era)}</div><h1>${esc(p.zh)}</h1><p class="ruler-latin">${esc(p.latin)}</p><div class="dynasty-line">${dynastyTag(p)}</div><p class="dynasty-note">${esc(data.dynasties[p.dynasty].note)}${p.dynastyNote ? ` ${esc(p.dynastyNote)}` : ''}</p>${sourceLinks(data.dynasties[p.dynasty].sources)}<p class="person-notice">别名／检索词：${esc(p.aliases)}</p></header>
       <div class="person-body">${p.bio.map(paragraph => `<p>${esc(paragraph)}</p>`).join('')}</div>
       <h2>称号与任期</h2><p class="person-notice">任期不同阶段分列；约年窗口不代表已证实在窗口中持续在位。完整生涯可超出本卷395年的终点。</p><ul class="reign-list">${rs.map(r => `<li><strong>${esc(r.tenure)}</strong>${badge(r.kind)}<p>${esc(r.territory)} · ${esc(r.certainty)}<br>${esc(r.note)}</p><div class="reign-years">${yearLink(Math.max(-27,r.start))}${r.end !== r.start ? yearLink(Math.min(395,r.end)) : ''}</div></li>`).join('')}</ul>
       <h2>史料与研究</h2><p class="event-reference">定位：${esc(p.reference)}</p>${sourceLinks(p.sources)}<p class="person-notice">古代叙事的偏见、钱币证据及现代日期选择，见“史料与方法”。未确知的生年、死因及施政不以传闻补齐。</p>
@@ -218,7 +236,7 @@
 
   function fillMethod() {
     const m = data.method;
-    const paragraphs = [['范围',m.scope],['收录标准',m.inclusion],['如何读年份与任期',m.chronology],['逐年记事的证据密度',m.annualEvents],['证据与史料立场',m.evidence],['阅读古代作者',m.bias]];
+    const paragraphs = [['范围',m.scope],['收录标准',m.inclusion],['王朝、家族与时代',m.dynasties],['如何读年份与任期',m.chronology],['逐年记事的证据密度',m.annualEvents],['证据与史料立场',m.evidence],['阅读古代作者',m.bias]];
     $('#method-content').innerHTML = `<div class="stats-line"><div><strong>${data.stats.years}</strong><span>年度</span></div><div><strong>${data.stats.people}</strong><span>人物（含辅栏）</span></div><div><strong>${Object.keys(data.sources).length}</strong><span>来源入口</span></div></div>${paragraphs.map(([title,body]) => `<h3>${title}</h3><p>${esc(body)}</p>`).join('')}<h3>重要日期与争议处理</h3><ul>${m.decisions.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>未自动列入的名字</h3><ul>${m.excluded.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>地图与许可</h3><p>${esc(m.maps)}</p><p>${esc(m.license)}</p><p>资料核对日期：${m.updated}。本数据库可持续校订，欢迎携卷章、铭文或钱币证据提交修正。</p><details><summary>展开完整来源目录 · ${Object.keys(data.sources).length}项</summary><ol class="method-source-list">${Object.values(data.sources).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a><br>${esc(s.kind)} · ${esc(s.note)}</li>`).join('')}</ol></details>`;
   }
 
