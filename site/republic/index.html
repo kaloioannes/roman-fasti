@@ -8,12 +8,12 @@
   <link rel="icon" href="../shared/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../shared/ui.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
-  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="../shared/periods.js"></script><script defer src="app.js"></script>
+  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="../shared/periods.js"></script><script defer src="../shared/search-target.js"></script><script defer src="app.js"></script>
 </head>
 <body>
   <header class="site-header">
     <a href="#" class="brand" aria-label="FASTI 首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马共和国执政官纪年</span></span></a>
-    <div class="header-actions"><a href="../" class="text-button edition-link">全部时期</a><label class="spoiler-toggle global-spoiler"><input type="checkbox" id="spoiler-switch"><span class="switch-track"></span><span id="spoiler-label">防剧透：关</span></label><button class="text-button" id="sources-button">史料与方法 <span aria-hidden="true">↗</span></button><button class="icon-button" id="theme-button" aria-label="切换明暗主题"></button></div>
+    <div class="header-actions"><a class="text-button global-search-link" href="../search/">全站搜索</a><a href="../" class="text-button edition-link">全部时期</a><label class="spoiler-toggle global-spoiler"><input type="checkbox" id="spoiler-switch"><span class="switch-track"></span><span id="spoiler-label">防剧透：关</span></label><button class="text-button" id="sources-button">史料与方法 <span aria-hidden="true">↗</span></button><button class="icon-button" id="theme-button" aria-label="切换明暗主题"></button></div>
   </header>
   <div id="archive-error" class="archive-error" role="alert" hidden><p id="archive-error-message"></p><button class="text-button" id="retry-data">重试当前档案 ↗</button></div>
   <main id="home" class="home">

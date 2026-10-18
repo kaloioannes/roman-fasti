@@ -8,13 +8,13 @@
   <link rel="icon" href="../shared/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../shared/ui.css"><link rel="stylesheet" href="../shared/imperial.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
-  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="../shared/periods.js"></script><script defer src="app.js"></script>
+  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="../shared/periods.js"></script><script defer src="../shared/search-target.js"></script><script defer src="app.js"></script>
 </head>
 <body class="imperial">
   <a class="skip-link" href="#content">跳至正文</a>
   <header class="site-header">
     <a href="#" class="brand" aria-label="皇帝数据库首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">古典罗马皇帝数据库</span></span></a>
-    <nav class="header-actions" aria-label="主导航"><a href="../" class="text-button edition-link">全部时期</a><a href="#people" class="text-button">人物索引</a><button class="text-button" id="sources-button">史料与方法</button><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button></nav>
+    <nav class="header-actions" aria-label="主导航"><a class="text-button global-search-link" href="../search/">全站搜索</a><a href="../" class="text-button edition-link">全部时期</a><a href="#people" class="text-button">人物索引</a><button class="text-button" id="sources-button">史料与方法</button><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button></nav>
   </header>
   <main id="content" tabindex="-1"><p class="initial-status" role="status">正在翻开帝国的档案……</p></main>
   <footer class="period-footer" data-period="empire"><a href="../">全部时期</a></footer>

@@ -147,7 +147,7 @@
     else if (params.has('sources')) sourcesPage();
     else if (!location.hash || location.hash === '#' || location.hash === '#content') home();
     else invalid('无法识别的王政篇链接。');
-    window.scrollTo(0,0);
+    window.scrollTo(0,0);FastiSearchTarget.mount();
   }
   function download(name, extension, text, type) {
     const url = URL.createObjectURL(new Blob([text],{type}));

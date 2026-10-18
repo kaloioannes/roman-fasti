@@ -127,3 +127,7 @@ dialog .stats-line{flex-wrap:wrap}.identity-note{font-size:12px;line-height:1.9;
 .map-status p{margin:0 0 16px}.map-status ul{padding-left:20px;margin:0 0 20px}
 .map-status button{white-space:normal;text-align:left;line-height:1.9}
 .map-controls button:disabled{opacity:.45;cursor:default}
+
+.search-target{outline:2px solid var(--accent);outline-offset:6px;scroll-margin:25px}
+.global-search-link{white-space:nowrap}
+@media(max-width:700px){.site-header:has(.global-search-link){height:auto;min-height:82px;flex-wrap:wrap;gap:12px;padding-top:18px;padding-bottom:18px}.site-header:has(.global-search-link) .header-actions{flex-wrap:wrap;gap:12px}}

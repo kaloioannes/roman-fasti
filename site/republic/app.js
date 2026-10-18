@@ -167,7 +167,8 @@ async function route(){
  const version=++routeVersion;
  clearMap();
  $('#archive-error').hidden=true;$('#loading').hidden=false;
- const m=location.hash.match(/^#year=(\d+)$/),sm=location.hash.match(/^#story=([a-z-]+)&year=(\d+)$/);
+ const routeHash=location.hash.replace(/&focus=[^&]*/g,'');
+ const m=routeHash.match(/^#year=(\d+)$/),sm=routeHash.match(/^#story=([a-z-]+)&year=(\d+)$/);
  let y=m?+m[1]:sm?+sm[2]:null;
  activeStory=null;
  if(sm){try{await loadStories();if(version!==routeVersion)return;activeStory=stories.find(s=>s.id===sm[1])||null;if(!activeStory)y=null;else if(y>activeStory.start||y<activeStory.chapters.at(-1).year){activeStory=null;history.replaceState(null,'',`#year=${y}`)}}catch{archiveFailure('剧本载入失败，请检查网络后重试。',version);return}}
@@ -177,7 +178,7 @@ async function route(){
  }
 }
 window.addEventListener('hashchange',route);
-async function showYear(y,version){$('#loading').hidden=false;try{await load();if(version!==routeVersion)return;currentYear=y;const record=data.years[y];if(!record)throw new Error('此年份档案未能载入');$('#home').hidden=true;$('#detail').hidden=false;$('#detail-year').value=y;$('#detail-error').textContent='';$('#year-number').textContent=y;$('#year-slider').value=509-y;$('#year-slider').setAttribute('aria-valuetext',`前${y}年`);$('#slider-label').textContent=`前${y}年`;$('#era-label').textContent=`${era(y)[0]} · RES PVBLICA`;$('#year-subtitle').textContent=`建城纪年 ${754-y} AUC · ${era(y)[1]}`;$('#previous-year span').textContent=y<509?`${y+1} BC`:'起点';$('#next-year span').textContent=y>27?`${y-1} BC`:'终章';$('#previous-year').disabled=y===509;$('#next-year').disabled=y===27;document.title=`前${y}年 · FASTI 罗马共和国纪年`;FastiPeriods.mount('republic',-y);renderYearNote(record);renderStory();renderOfficers(record);renderEvents(record);renderSources(record);loadMap(y,version);window.scrollTo(0,0)}catch{archiveFailure(`文字档案载入失败${recordsResource.error?`（${recordsResource.error}）`:''}，请检查网络后重试。`,version)}finally{if(version===routeVersion)$('#loading').hidden=true}}
+async function showYear(y,version){$('#loading').hidden=false;try{await load();if(version!==routeVersion)return;currentYear=y;const record=data.years[y];if(!record)throw new Error('此年份档案未能载入');$('#home').hidden=true;$('#detail').hidden=false;$('#detail-year').value=y;$('#detail-error').textContent='';$('#year-number').textContent=y;$('#year-slider').value=509-y;$('#year-slider').setAttribute('aria-valuetext',`前${y}年`);$('#slider-label').textContent=`前${y}年`;$('#era-label').textContent=`${era(y)[0]} · RES PVBLICA`;$('#year-subtitle').textContent=`建城纪年 ${754-y} AUC · ${era(y)[1]}`;$('#previous-year span').textContent=y<509?`${y+1} BC`:'起点';$('#next-year span').textContent=y>27?`${y-1} BC`:'终章';$('#previous-year').disabled=y===509;$('#next-year').disabled=y===27;document.title=`前${y}年 · FASTI 罗马共和国纪年`;FastiPeriods.mount('republic',-y);renderYearNote(record);renderStory();renderOfficers(record);renderEvents(record);renderSources(record);loadMap(y,version);window.scrollTo(0,0);FastiSearchTarget.mount()}catch{archiveFailure(`文字档案载入失败${recordsResource.error?`（${recordsResource.error}）`:''}，请检查网络后重试。`,version)}finally{if(version===routeVersion)$('#loading').hidden=true}}
 function personLink(p,label){return p.url?`<a href="${safe(p.url)}" target="_blank" rel="noopener">${safe(p.identified?label:"名录来源")} ↗</a>`:''}
 function biographySources(sources){return sources.map(s=>`<a href="${safe(s.url)}" target="_blank" rel="noopener">${safe(s.label)} ↗</a>`).join('')}
 function renderBiography(p,pid){

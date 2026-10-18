@@ -103,7 +103,7 @@
     generation++;if(!data)return;const raw=location.hash.slice(1),p=new URLSearchParams(raw);
     if(!raw)renderHome();else if(p.has('year')){const s=p.get('year');if(/^\d+$/.test(s)&&data.years[Number(s)])renderYear(Number(s));else invalid('请输入395—476之间的整数年份。');}
     else if(p.has('person'))renderPerson(p.get('person'));else if(p.has('people'))renderDirectory();else if(p.has('sources'))renderSources();else invalid('此地址不在数据库中。');
-    window.scrollTo({top:0,behavior:'instant'});main.focus({preventScroll:true});
+    window.scrollTo({top:0,behavior:'instant'});FastiSearchTarget.mount();main.focus({preventScroll:true});
   }
   async function load(){try{data=await json('../data/divided-empire/records.json');route();}catch{main.innerHTML='<p class="initial-status" role="alert">档案载入失败。<button id="retry-data">重新载入 ↗</button></p>';$('#retry-data').onclick=load;}}
   $('#theme-button').onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;try{localStorage.setItem('fasti-theme',t);}catch{}};

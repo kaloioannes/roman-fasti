@@ -1,0 +1,26 @@
+const assert=require('node:assert/strict');
+const E=require('../site/search/engine.js');
+const index=require('../data/search/index.json'), entries=E.prepare(index);
+for(const [q,expected] of [['前44年',[-44]],['公元前 44 年',[-44]],['44 BC',[-44]],['BCE44',[-44]],['-44',[-44]],['公元1204年',[1204]],['AD 1204',[1204]],['1204 CE',[1204]],['+44',[44]],['４４ ＢＣ',[-44]],['44',[44,-44]]])assert.deepEqual(E.parseYear(q).years,expected,q);
+for(const q of ['0','0 BC','公元0年'])assert.ok(E.parseYear(q).error,q);
+assert.match(E.parseYear('99999999999999999999').error,/数字过大/);
+for(const q of ['芝诺','1204abc','1.5','44年前'])assert.equal(E.parseYear(q),null,q);
+assert.ok(E.parseYear('1204').ambiguous);
+assert.equal(E.parseYear('公元1204年').ambiguous,false);
+assert.equal(E.yearURL('republic',-44),'republic/#year=44');
+assert.equal(E.yearURL('empire',-27),'empire/#year=-27');
+for(const [year,volumes] of [[-509,['kingdom','republic']],[-27,['republic','empire']],[395,['empire','divided-empire']],[476,['divided-empire','byzantine']]])assert.deepEqual(index.periods.filter(p=>p.start<=year&&year<=p.end).map(p=>p.id),volumes);
+for(const [query,id] of [['屋大维','empire:person:augustus'],['屋大维','republic:person:p6faf564142'],['恺撒','republic:person:pe9d1a9956a'],['Julius Caesar','republic:person:pe9d1a9956a'],['Ζηνων','byzantine:person:zeno'],['泽诺','divided-empire:person:zeno'],['把权力刻在铜上','republic:story:written-law'],['给执政官划一道线','republic:chapter:written-law:0']])assert.ok(E.search(entries,query).some(e=>e.id===id),query+': '+id);
+assert.equal(E.search(entries,'奥古斯都')[0].kind,'person');
+assert.deepEqual(E.search(entries,'不存在的词zyx987654'),[]);
+assert.deepEqual(E.search(entries,'...'),[]);
+assert.ok(E.search(entries,'芝诺',{period:'byzantine',kind:'person'}).every(e=>e.period==='byzantine'&&e.kind==='person'));
+assert.ok(E.search(entries,'',{years:[-1]}).some(e=>e.id==='empire:person:augustus'));
+assert.ok(E.search(entries,'',{years:[1]}).some(e=>e.id==='empire:person:augustus'));
+assert.equal(E.normalize('Ζήνων'),E.normalize('Ζηνων'));
+assert.equal(E.normalize('Lucius Junius'),E.normalize('LVCIVS IVNIVS'));
+// Every source name is discoverable, and repeated names keep all local identities.
+for(const e of entries.filter(e=>e.kind==='person'))assert.ok(E.search(entries,e.title).some(r=>r.id===e.id),e.id);
+const same=entries.filter(e=>e.title==='塞克斯图斯·尤利乌斯·凯撒');
+assert.ok(same.length>1);assert.equal(new Set(same.map(e=>e.id)).size,same.length);
+console.log(`Search engine verified: ${entries.length} records, all people, language folding, aliases, filters, epochs and four shared boundaries.`);

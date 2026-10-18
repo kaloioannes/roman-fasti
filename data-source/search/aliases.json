@@ -1,0 +1,51 @@
+{
+  "empire:augustus": [
+    "屋大维",
+    "屋大維",
+    "奥古斯都",
+    "奧古斯都",
+    "Octavius",
+    "Gaius Octavius"
+  ],
+  "divided-empire:zeno": [
+    "芝诺",
+    "芝諾",
+    "泽诺",
+    "澤諾"
+  ],
+  "byzantine:zeno": [
+    "芝诺",
+    "芝諾",
+    "泽诺",
+    "澤諾"
+  ],
+  "empire:diocletian": [
+    "戴克里先",
+    "戴克理先"
+  ],
+  "empire:constantine-i": [
+    "君士坦丁大帝",
+    "君士坦丁一世",
+    "康斯坦丁",
+    "Constantine the Great"
+  ],
+  "byzantine:justinian-i": [
+    "查士丁尼",
+    "查士丁尼一世",
+    "查士丁尼大帝",
+    "Justinian the Great"
+  ],
+  "republic:p6faf564142": [
+    "屋大维",
+    "屋大維",
+    "奧古斯都",
+    "Octavian",
+    "Octavius"
+  ],
+  "republic:pe9d1a9956a": [
+    "恺撒",
+    "凱撒",
+    "尤利乌斯·恺撒",
+    "Julius Caesar"
+  ]
+}
