@@ -1,6 +1,6 @@
 # 共和国篇：使用与研究说明
 
-[项目总览](../README.md) · [打开共和国篇](https://kaloioannes.github.io/roman-republic-fasti/republic/)
+[项目总览](../README.md) · [打开共和国篇](https://kaloioannes.github.io/roman-fasti/republic/)
 
 ## 十个历史剧本
 

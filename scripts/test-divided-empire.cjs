@@ -8,7 +8,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'t
  const manifest=JSON.parse(await fs.readFile(path.join(site,'asset-manifest.json'),'utf8'));
  const errors=[],requests=new Set();
  const server=http.createServer(async(req,res)=>{
-  let name=new URL(req.url,'http://localhost').pathname.replace(/^\/roman-republic-fasti\//,'/');requests.add(new URL(req.url,'http://localhost').pathname);
+  let name=new URL(req.url,'http://localhost').pathname.replace(/^\/roman-fasti\//,'/');requests.add(new URL(req.url,'http://localhost').pathname);
   if(name.endsWith('/'))name+='index.html';const file=path.resolve(site,'.'+name);
   if(!file.startsWith(site+path.sep))return res.writeHead(404).end();
   try{res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');res.end(await fs.readFile(file));}catch{res.writeHead(404).end();}
@@ -19,7 +19,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'t
   const context=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   const origin=`http://127.0.0.1:${server.address().port}`;
-  for(const base of ['/','/roman-republic-fasti/']){
+  for(const base of ['/','/roman-fasti/']){
    const url=origin+base+'divided-empire/';
    await page.goto(url);await page.waitForSelector('.milestone');assert.equal(await page.locator('.milestone').count(),6);
    for(const value of ['394','477','0','-395','abc','4.5']){await page.fill('#year-input',value);await page.locator('#year-form').evaluate(f=>f.requestSubmit());assert.match(await page.locator('#year-error').textContent(),/395.*476/);}
@@ -70,7 +70,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'t
    await page.locator('.period-footer a[href="../byzantine/"]').click();await page.waitForSelector('.hero-word');assert.equal(await page.locator('.hero-word').textContent(),'ῬΩΜΗ');assert.equal(await page.evaluate(()=>document.documentElement.dataset.theme),theme);
    await page.goto(origin+base+'byzantine/#year=476');await page.waitForSelector('.ruler-card');assert.equal(await page.locator('.name-language').count(),0);assert.ok(await page.locator('.ruler-greek[lang]').count()>0);
   }
-  const url=origin+'/roman-republic-fasti/divided-empire/',failure=await context.newPage();failure.on('pageerror',e=>errors.push(e.message));
+  const url=origin+'/roman-fasti/divided-empire/',failure=await context.newPage();failure.on('pageerror',e=>errors.push(e.message));
   const dataURL='**/'+manifest['data/divided-empire/records.json'],placesURL='**/'+manifest['data/divided-empire/territories.json'];
   await failure.route(dataURL,r=>r.fulfill({status:503,body:'unavailable'}));await failure.goto(url);await failure.waitForSelector('#retry-data');await failure.unroute(dataURL);await failure.click('#retry-data');await failure.waitForSelector('.milestone');
   await failure.route(placesURL,r=>r.fulfill({status:503,body:'unavailable'}));await failure.goto(url+'#year=476');await failure.waitForSelector('#retry-map');assert.ok(await failure.locator('.ruler-card').count()>0);await failure.unroute(placesURL);await failure.click('#retry-map');await failure.waitForSelector('#places-svg');await failure.close();
