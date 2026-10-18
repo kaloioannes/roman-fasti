@@ -97,7 +97,7 @@ window.FastiRepublicPeople = (() => {
     document.title='共和国人物索引 · FASTI';
   }
   function dossier(params){
-    const view=host(),requested=params.get('person'),redirect=index.redirects[requested],pid=redirect?.person||requested,p=data.people[pid];
+    const view=host(),requested=params.get('person'),redirect=Object.hasOwn(index.redirects,requested)?index.redirects[requested]:null,pid=redirect?.person||requested,p=Object.hasOwn(data.people,pid)?data.people[pid]:null;
     const list=params.get('list');lastList=/^people(?:&|$)/.test(list||'')?'#'+list:'#people';
     const nav=el('nav',null,'rp-dossier-nav');nav.setAttribute('aria-label','人物档案导航');nav.append(a('← 返回人物索引',lastList),a('共和国纪年首页','#'));view.append(nav);
     if(!p){view.append(el('h1','找不到这份人物档案'),el('p','人物ID不存在或链接不完整。可返回人物索引按姓名查找。'));document.title='找不到人物 · FASTI';return;}

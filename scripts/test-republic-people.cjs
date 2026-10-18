@@ -43,7 +43,9 @@ const read=name=>fs.readFile(path.join(root,name),'utf8').then(JSON.parse);
    await query('<img src=x onerror=alert(1)>');assert.equal(await page.locator('.republic-person-card,.rp-view img').count(),0);assert.match(await page.locator('.rp-empty').textContent(),/没有匹配/);
    await page.getByRole('button',{name:'清除筛选',exact:true}).click();await page.waitForFunction(()=>document.querySelector('#rp-query')?.value==='');
    await query('Julius Caesar');await page.locator('#rp-query').press('Enter');assert.equal(await page.locator(':focus').getAttribute('href'),await page.locator('.republic-person-card h2 a').first().getAttribute('href'));
-   await page.goto(base+'#person=missing');await ready();assert.match(await page.locator('#people-view h1').textContent(),/找不到/);
+   for(const invalid of ['missing','constructor','__proto__']){
+    await page.goto(base+'#person='+invalid);await ready();assert.match(await page.locator('#people-view h1').textContent(),/找不到/);assert.equal(await page.locator('#archive-error').isVisible(),false);
+   }
    // All 905 dossiers through the real router, including 451 BC dual roles.
    if(prefix==='/'){
     const failures=await page.evaluate(async rows=>{

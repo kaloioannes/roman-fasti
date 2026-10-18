@@ -25,6 +25,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    await page.locator('#identity-query').fill('Ζηνων');assert.equal(await page.locator('.identity-grid article').count(),1);
    await page.locator('#identity-query').press('Enter');await ready();assert.match(page.url(),/#q=/);await page.reload();await ready();assert.equal(await page.locator('#identity-query').inputValue(),'Ζηνων');
    await page.locator('#identity-query').fill('屋大维');await page.locator('.identity-grid h2 a').click();await ready();
+   await page.locator('#content[data-global-person="roman-augustus"]').waitFor();
    assert.equal(await page.locator('#content').getAttribute('data-global-person'),'roman-augustus');
    await page.goBack();await ready();assert.equal(await page.locator('#identity-query').inputValue(),'Ζηνων');
    for(const person of Object.values(index.people)){
