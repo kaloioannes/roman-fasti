@@ -30,6 +30,7 @@ syncSpoiler();
 $('#spoiler-switch').addEventListener('change',e=>{
  spoiler=e.target.checked;writePreference('fasti-spoiler-v2',String(spoiler));revealed.clear();syncSpoiler();
  if(data&&currentYear){const r=data.years[currentYear];renderOfficers(r);renderEvents(r);renderYearNote(r);renderStory();}
+ else if(!$('#people-view').hidden)route();
 });
 $('#reveal-year').onclick=()=>{data.years[currentYear].events.forEach((_,i)=>revealed.add(`${currentYear}-${i}`));renderEvents(data.years[currentYear])};
 function guarded(text, label, key, className=''){
@@ -92,6 +93,10 @@ const recordsResource=resource('../data/republic/records.json','文字档案',va
  if(!value?.years||!value.people||!value.stats||!Array.isArray(value.method))throw new Error('文字档案数据不完整');
  return value;
 });
+const peopleResource=resource('../data/republic/people.json','人物索引',value=>{
+ if(!data||!FastiRepublicPeople.valid(value,data))throw new Error('人物索引与文字档案不一致');
+ return value;
+});
 const storiesResource=resource('../data/republic/stories.json','剧本',value=>{
  if(!Array.isArray(value))throw new Error('剧本数据不完整');
  return value;
@@ -105,9 +110,16 @@ const landResource=resource('../shared/assets/land-50m.json','底图',value=>{
  return topojson.feature(value,value.objects.land);
 });
 async function load(){data=await recordsResource.load()}
-function archiveFailure(message,version){
+function archiveFailure(message,version,personRoute=false){
  if(version!==routeVersion)return;
- currentYear=null;$('#home').hidden=false;$('#detail').hidden=true;
+ currentYear=null;$('#home').hidden=personRoute;$('#detail').hidden=true;
+ const view=$('#people-view');view.hidden=!personRoute;
+ if(personRoute){
+  view.replaceChildren();delete view.dataset.person;
+  const heading=document.createElement('h1');heading.textContent='人物档案暂时无法载入';
+  const note=document.createElement('p');note.textContent='请使用上方按钮重试，或从页头返回人物索引、纪年首页。';
+  view.append(heading,note);document.title='人物档案载入失败 · FASTI';
+ }
  $('#archive-error').hidden=false;$('#archive-error-message').textContent=message;
  $('#loading').hidden=true;
 }
@@ -166,7 +178,21 @@ function loadMap(y,version,retry=false){
 async function route(){
  const version=++routeVersion;
  clearMap();
+ $('#people-view').hidden=true;
  $('#archive-error').hidden=true;$('#loading').hidden=false;
+ const params=new URLSearchParams(location.hash.slice(1));
+ $('#loading').textContent=params.has('person')||params.has('people')?'正在查阅人物档案……':'正在翻开这一年的档案……';
+ if(params.has('person')||params.has('people')){
+  currentYear=null;activeStory=null;$('#home').hidden=true;$('#detail').hidden=true;$('#people-view').setAttribute('aria-busy','true');
+  try{
+   await load();if(version!==routeVersion)return;
+   const people=await peopleResource.load();if(version!==routeVersion)return;
+   FastiRepublicPeople.render(params,data,people,{roles,guarded,bindGuards,biographySources});
+  }catch{archiveFailure(`人物档案载入失败（${peopleResource.error||recordsResource.error||'请重试'}），可在原页恢复。`,version,true)}
+  finally{if(version===routeVersion){$('#loading').hidden=true;$('#people-view').setAttribute('aria-busy','false')}}
+  return;
+ }
+ if(storiesResource.status==='idle')renderStoryCards();
  const routeHash=location.hash.replace(/&focus=[^&]*/g,'');
  const m=routeHash.match(/^#year=(\d+)$/),sm=routeHash.match(/^#story=([a-z-]+)&year=(\d+)$/);
  let y=m?+m[1]:sm?+sm[2]:null;
@@ -178,13 +204,14 @@ async function route(){
  }
 }
 window.addEventListener('hashchange',route);
+$('#republic-skip').onclick=e=>{e.preventDefault();const main=document.querySelector('main:not([hidden])');if(main){main.tabIndex=-1;main.focus();main.scrollIntoView({block:'start'});}};
 async function showYear(y,version){$('#loading').hidden=false;try{await load();if(version!==routeVersion)return;currentYear=y;const record=data.years[y];if(!record)throw new Error('此年份档案未能载入');$('#home').hidden=true;$('#detail').hidden=false;$('#detail-year').value=y;$('#detail-error').textContent='';$('#year-number').textContent=y;$('#year-slider').value=509-y;$('#year-slider').setAttribute('aria-valuetext',`前${y}年`);$('#slider-label').textContent=`前${y}年`;$('#era-label').textContent=`${era(y)[0]} · RES PVBLICA`;$('#year-subtitle').textContent=`建城纪年 ${754-y} AUC · ${era(y)[1]}`;$('#previous-year span').textContent=y<509?`${y+1} BC`:'起点';$('#next-year span').textContent=y>27?`${y-1} BC`:'终章';$('#previous-year').disabled=y===509;$('#next-year').disabled=y===27;document.title=`前${y}年 · FASTI 罗马共和国纪年`;FastiPeriods.mount('republic',-y);renderYearNote(record);renderStory();renderOfficers(record);renderEvents(record);renderSources(record);loadMap(y,version);window.scrollTo(0,0);FastiSearchTarget.mount()}catch{archiveFailure(`文字档案载入失败${recordsResource.error?`（${recordsResource.error}）`:''}，请检查网络后重试。`,version)}finally{if(version===routeVersion)$('#loading').hidden=true}}
 function personLink(p,label){return p.url?`<a href="${safe(p.url)}" target="_blank" rel="noopener">${safe(p.identified?label:"名录来源")} ↗</a>`:''}
 function biographySources(sources){return sources.map(s=>`<a href="${safe(s.url)}" target="_blank" rel="noopener">${safe(s.label)} ↗</a>`).join('')}
 function renderBiography(p,pid){
  const biography=p.bioStatus==='authored'?`<details class="bio-details authored-biography"><summary>人物简介 · 编写</summary>${guarded(p.bio,'展开完整生平',`bio-${pid}`,'bio-text')}<div class="bio-sources">${biographySources(p.bioSources)}</div></details>`:'';
  const status=p.bioStatus==='insufficient'?'<p class="identity-note">资料不足：人物身份尚待考订，任职按本条目保留。</p>':'';
- return `${biography}${status}<details class="bio-details office-summary-details"><summary>任职记录摘要 · 自动整理</summary>${guarded(p.officeSummary,'展开已收录任职',`summary-${pid}`,'bio-text')}<div class="bio-sources">${biographySources(p.officeSummarySources)}</div></details><div class="bio-sources">${personLink(p,'人物资料')}<span>${safe(p.nameMethod)}</span></div>`;
+ return `<a class="republic-dossier-link" href="#person=${safe(pid)}">人物档案 · 全部已收录任职 ↗</a>${biography}${status}<details class="bio-details office-summary-details"><summary>任职记录摘要 · 自动整理</summary>${guarded(p.officeSummary,'展开已收录任职',`summary-${pid}`,'bio-text')}<div class="bio-sources">${biographySources(p.officeSummarySources)}</div></details><div class="bio-sources">${personLink(p,'人物资料')}<span>${safe(p.nameMethod)}</span></div>`;
 }
 function renderOfficers(r){const title=r.regime==='tribune'?'当年军事保民官':r.regime==='decemvir'?'当年最高官员':r.regime==='dictator-year'?'传统编年的独裁官':'当年执政官';$('.officials-section h2').textContent=title;$('#office-count').textContent=r.officers.length?`${r.officers.length} 项任职记录`:'最高官职空缺';$('#officials').innerHTML=r.officers.length?r.officers.map(o=>{const p=data.people[o.person];return `<article class="official-card" data-person="${safe(o.person)}" data-bio-status="${safe(p.bioStatus)}"><div class="official-top"><span class="official-role">${safe(roles[o.role])}</span><span class="official-term">${o.term>1?`第 ${o.term} 次任职`:'首次任此官职'}</span></div><h3 class="official-name">${safe(p.zh)}</h3><p class="official-latin" lang="la">${safe(p.latin)}</p>${guarded(o.note,'展开任内经历',`office-${r.year}-${o.person}-${o.role}`,'official-note')}${renderBiography(p,o.person)}</article>`}).join(''):'<div class="vacancy-card"><strong>这一年，没有执政官。</strong><p>传统编年记为最高官职空缺。保民官仍活动，罗马的政治生活并未停止；李维将这段改革僵局记为连续五年，其他年代研究有不同安排。</p></div>';bindGuards();document.querySelectorAll('#officials .official-card').forEach(card=>FastiPeople.mount('republic',card.dataset.person,card))}
 function renderEvents(r){
@@ -214,5 +241,4 @@ async function showMethod(){
 }
 $('#sources-button').onclick=showMethod;$('#close-sources').onclick=()=>$('#sources-dialog').close();$('#sources-dialog').onclick=e=>{if(e.target===$('#sources-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}};
 let resizeToken;window.addEventListener('resize',()=>{clearTimeout(resizeToken);resizeToken=setTimeout(()=>{if(currentYear&&!$('#detail').hidden&&$('.territory-section .map-card').dataset.state==='ready')renderMap(currentYear)},150)});
-renderStoryCards();
 route();

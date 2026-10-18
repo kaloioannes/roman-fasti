@@ -33,10 +33,12 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    await query('Ζηνων');assert.ok(await page.locator('[data-id="byzantine:person:zeno"] mark').count());
    await query('Julius Caesar');assert.ok(await page.locator('[data-id="republic:person:pe9d1a9956a"]').count());
    await page.locator('[data-id="republic:person:pe9d1a9956a"] h3 a').click();
-   await page.waitForSelector('.official-card.search-target');
-   assert.equal(await page.locator('.search-target').getAttribute('data-person'),'pe9d1a9956a');
+   await page.locator('#people-view[data-person="pe9d1a9956a"]').waitFor();
+   assert.equal(await page.locator('.rp-career-list>li').count(),5);
+   await page.reload();await page.locator('#people-view[data-person="pe9d1a9956a"]').waitFor();
+   await page.locator('.rp-career-list h3 a').first().click();await page.waitForSelector('.official-card.search-target');
    assert.equal(await page.locator('.search-target .office-summary-details').getAttribute('open'),'');
-   await page.reload();await page.waitForSelector('.official-card.search-target');
+   await page.goBack();await page.locator('#people-view[data-person="pe9d1a9956a"]').waitFor();
    await page.goBack();await ready();
    await query('1204');assert.match(await page.locator('#year-results').textContent(),/不预设纪元/);
    assert.match(await page.locator('#year-results').textContent(),/公元前1204年/);

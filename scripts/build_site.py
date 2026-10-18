@@ -10,6 +10,7 @@ from html import escape
 from string import Template
 from build_search import write_index
 from build_people import write_people
+from build_republic_people import write_index as write_republic_people
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
@@ -62,6 +63,7 @@ def build(destination):
         destination.is_relative_to(ROOT / name) for name in ['site', 'data', 'data-source', 'scripts', '.git']
     ):
         raise ValueError('Build destination must be separate from repository sources')
+    write_republic_people()
     write_people()
     write_index()
     destination.mkdir(parents=True, exist_ok=True)

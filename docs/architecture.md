@@ -100,3 +100,7 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 `stats.biographies` 仅计编写简介；`officeSummaries` 计有任职摘要的条目，`insufficientBiographies` 计身份待考条目。三者有交叠，不能相加作为总人数。旧版把生成摘要也放在 `bio`，因此下游若需要任职概况，应读取 `officeSummary`。页面旧年度和剧本链接保持不变。
 
 `scripts/republic_biographies.py` 负责显式正文／身份／来源校验及摘要生成，`build_data.py` 调用它；不读取简介排名、专条长度或总人数比例。源正文和 `biography-identities.json` 的增删改必须同步。`validate.mjs` 独立核对源正文与运行数据、人物身份、来源、摘要与全部任职的对应；`test_republic_biographies.py` 检查增长与错误编辑，已纳入PR工作流。
+
+## 共和国人物导航
+
+`republic/#people` 与 `#person=<本卷ID>` 使用现有文字档案加 `data/republic/people.json` 导航投影，后者由 `build_republic_people.py` 从实际年度成员生成，并同步完整候选清单。姓名规范化只用于查找与审阅；不自动合并。`person-aliases.json` 为有来源的人工旧ID迁移预留兼容机制，目前无退休ID。发布构建先重建此投影，再重建跨卷身份和搜索；两者的共和国档案入口改为专页，年度定位URL仍保留。说明与验证见 [共和国人物](republic-people.md)。
