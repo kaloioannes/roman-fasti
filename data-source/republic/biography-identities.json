@@ -1,0 +1,1469 @@
+{
+  "schemaVersion": 1,
+  "sourceNote": "本表显式连接既有中文简介、人物ID与原稿人物专条入口。本次为身份与来源迁移，未重新逐条核读传记或原始文献；这些链接不表示每项论断已经直接核验。",
+  "entries": [
+    {
+      "title": "Lucius Junius Brutus",
+      "person": "pc9e4793678",
+      "wikiTitle": "Lucius Junius Brutus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Junius_Brutus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Valerius Poplicola",
+      "person": "p5ce153309a",
+      "wikiTitle": "Publius Valerius Poplicola",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Valerius_Poplicola"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Tarquinius Collatinus",
+      "person": "pe74d78c4a6",
+      "wikiTitle": "Lucius Tarquinius Collatinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Tarquinius_Collatinus"
+        }
+      ]
+    },
+    {
+      "title": "Titus Lucretius Tricipitinus",
+      "person": "p2e4eea816e",
+      "wikiTitle": "Titus Lucretius Tricipitinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Titus_Lucretius_Tricipitinus"
+        }
+      ]
+    },
+    {
+      "title": "Spurius Lucretius Tricipitinus",
+      "person": "p1797eb7001",
+      "wikiTitle": "Spurius Lucretius Tricipitinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Spurius_Lucretius_Tricipitinus"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Horatius Pulvillus",
+      "person": "p71239a9b46",
+      "wikiTitle": "Marcus Horatius Pulvillus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Horatius_Pulvillus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Cornelius Dolabella (consul 44 BC)",
+      "person": "p70e362971d",
+      "wikiTitle": "Publius Cornelius Dolabella (consul 44 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Cornelius_Dolabella_(consul_44_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Caecilius Metellus Creticus",
+      "person": "pe78a0a7ac8",
+      "wikiTitle": "Quintus Caecilius Metellus Creticus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Caecilius_Metellus_Creticus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Sulpicius Galba Maximus",
+      "person": "p1247887034",
+      "wikiTitle": "Publius Sulpicius Galba Maximus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Sulpicius_Galba_Maximus"
+        }
+      ]
+    },
+    {
+      "title": "Agrippa Menenius Lanatus (consul 503 BC)",
+      "person": "pd5ce92648a",
+      "wikiTitle": "Agrippa Menenius Lanatus (consul 503 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Agrippa_Menenius_Lanatus_(consul_503_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Spurius Cassius Vecellinus",
+      "person": "p257c3fbcf5",
+      "wikiTitle": "Spurius Cassius Vecellinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Spurius_Cassius_Vecellinus"
+        }
+      ]
+    },
+    {
+      "title": "Aulus Postumius Albus Regillensis (consul 496 BC)",
+      "person": "pb0a8a748c0",
+      "wikiTitle": "Aulus Postumius Albus Regillensis (consul 496 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Aulus_Postumius_Albus_Regillensis"
+        }
+      ]
+    },
+    {
+      "title": "Caeso Fabius Vibulanus",
+      "person": "pc5026da274",
+      "wikiTitle": "Caeso Fabius Vibulanus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Caeso_Fabius_Vibulanus"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Fabius Vibulanus (consul 483 BC)",
+      "person": "p6003c55916",
+      "wikiTitle": "Marcus Fabius Vibulanus (consul 483 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Fabius_Vibulanus_(consul_483_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Fabius Vibulanus (consul 467 BC)",
+      "person": "p4e1bd81ffa",
+      "wikiTitle": "Quintus Fabius Vibulanus (consul 467 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Fabius_Vibulanus_(consul_467_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Titus Quinctius Capitolinus Barbatus",
+      "person": "p198a2a21bb",
+      "wikiTitle": "Titus Quinctius Capitolinus Barbatus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Titus_Quinctius_Capitolinus_Barbatus"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Quinctius Cincinnatus",
+      "person": "pd95cc39127",
+      "wikiTitle": "Lucius Quinctius Cincinnatus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Quinctius_Cincinnatus"
+        }
+      ]
+    },
+    {
+      "title": "Appius Claudius Crassus Inregillensis",
+      "person": "p300e1c709d",
+      "wikiTitle": "Appius Claudius Crassus Inregillensis",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Appius_Claudius_Crassus_Inregillensis"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Horatius Turrinus Barbatus",
+      "person": "p81f7b98c61",
+      "wikiTitle": "Marcus Horatius Turrinus Barbatus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Horatius_Turrinus_Barbatus"
+        }
+      ]
+    },
+    {
+      "title": "Mamercus Aemilius Mamercinus",
+      "person": "p9843f9b53e",
+      "wikiTitle": "Mamercus Aemilius Mamercinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Mamercus_Aemilius_Mamercinus"
+        }
+      ]
+    },
+    {
+      "title": "Aulus Cornelius Cossus",
+      "person": "p81c6572858",
+      "wikiTitle": "Aulus Cornelius Cossus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Aulus_Cornelius_Cossus"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Furius Camillus",
+      "person": "p3d34a06014",
+      "wikiTitle": "Marcus Furius Camillus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Furius_Camillus"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Manlius Capitolinus",
+      "person": "p0154641482",
+      "wikiTitle": "Marcus Manlius Capitolinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Manlius_Capitolinus"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Sextius Lateranus",
+      "person": "p277065e3ac",
+      "wikiTitle": "Lucius Sextius Lateranus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Sextius_Sextinus_Lateranus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Licinius Stolo",
+      "person": "p484a394682",
+      "wikiTitle": "Gaius Licinius Stolo",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Licinius_Stolo"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Marcius Rutilus",
+      "person": "pe7ed5cb32f",
+      "wikiTitle": "Gaius Marcius Rutilus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Marcius_Rutilus"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Valerius Corvus",
+      "person": "p5c432b076b",
+      "wikiTitle": "Marcus Valerius Corvus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Valerius_Corvus"
+        }
+      ]
+    },
+    {
+      "title": "Titus Manlius Imperiosus Torquatus",
+      "person": "pc8582a2e00",
+      "wikiTitle": "Titus Manlius Imperiosus Torquatus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Titus_Manlius_Imperiosus_Torquatus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Decius Mus (consul 340 BC)",
+      "person": "pd713fe931e",
+      "wikiTitle": "Publius Decius Mus (consul 340 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Decius_Mus_(consul_340_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Publilius Philo",
+      "person": "pb667d32b45",
+      "wikiTitle": "Quintus Publilius Philo",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Publilius_Philo"
+        }
+      ]
+    },
+    {
+      "title": "Spurius Postumius Albinus Caudinus",
+      "person": "p2b012677b6",
+      "wikiTitle": "Spurius Postumius Albinus Caudinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Spurius_Postumius_Albinus_Caudinus"
+        }
+      ]
+    },
+    {
+      "title": "Titus Veturius Calvinus",
+      "person": "p0380c70971",
+      "wikiTitle": "Titus Veturius Calvinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Titus_Veturius_Calvinus"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Papirius Cursor",
+      "person": "pb209594f35",
+      "wikiTitle": "Lucius Papirius Cursor",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Papirius_Cursor"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Fabius Maximus Rullianus",
+      "person": "p6e08580fa6",
+      "wikiTitle": "Quintus Fabius Maximus Rullianus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Fabius_Maximus_Rullianus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Decius Mus (consul 312 BC)",
+      "person": "pc0fc4f3a57",
+      "wikiTitle": "Publius Decius Mus (consul 312 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Decius_Mus_(consul_312_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Appius Claudius Caecus",
+      "person": "pe0586294af",
+      "wikiTitle": "Appius Claudius Caecus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Appius_Claudius_Caecus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Junius Bubulcus Brutus",
+      "person": "p9869c7d406",
+      "wikiTitle": "Gaius Junius Bubulcus Brutus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Junius_Bubulcus_Brutus"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Postumius Megellus (consul 305 BC)",
+      "person": "p943e92e320",
+      "wikiTitle": "Lucius Postumius Megellus (consul 305 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Postumius_Megellus_(consul_305_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Manius Curius Dentatus",
+      "person": "p574d3b8cea",
+      "wikiTitle": "Manius Curius Dentatus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Manius_Curius_Dentatus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Fabricius Luscinus",
+      "person": "pec2736e4ec",
+      "wikiTitle": "Gaius Fabricius Luscinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Fabricius_Luscinus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Valerius Laevinus",
+      "person": "pcd89a43521",
+      "wikiTitle": "Publius Valerius Laevinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Valerius_Laevinus"
+        }
+      ]
+    },
+    {
+      "title": "Tiberius Coruncanius",
+      "person": "pb2e9762764",
+      "wikiTitle": "Tiberius Coruncanius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Tiberius_Coruncanius"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Papirius Cursor (consul in 293 and 272 BC)",
+      "person": "p1085f618e7",
+      "wikiTitle": "Lucius Papirius Cursor (consul in 293 and 272 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Papirius_Cursor_(consul_293_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Spurius Carvilius Maximus",
+      "person": "pc59f66934a",
+      "wikiTitle": "Spurius Carvilius Maximus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Spurius_Carvilius_Maximus"
+        }
+      ]
+    },
+    {
+      "title": "Appius Claudius Caudex",
+      "person": "p77da534634",
+      "wikiTitle": "Appius Claudius Caudex",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Appius_Claudius_Caudex"
+        }
+      ]
+    },
+    {
+      "title": "Manius Valerius Maximus Messalla",
+      "person": "p632f5d1851",
+      "wikiTitle": "Manius Valerius Maximus Messalla",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Manius_Valerius_Maximus_Messalla"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Duilius",
+      "person": "p95dffee347",
+      "wikiTitle": "Gaius Duilius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Duilius"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Atilius Regulus (consul 267 BC)",
+      "person": "pd6cefa3825",
+      "wikiTitle": "Marcus Atilius Regulus (consul 267 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Atilius_Regulus_(consul_267_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Manlius Vulso Longus",
+      "person": "p09bf6eb717",
+      "wikiTitle": "Lucius Manlius Vulso Longus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Manlius_Vulso_Longus"
+        }
+      ]
+    },
+    {
+      "title": "Aulus Atilius Caiatinus",
+      "person": "p29081d7296",
+      "wikiTitle": "Aulus Atilius Caiatinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Aulus_Atilius_Caiatinus"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Caecilius Metellus (consul 251 BC)",
+      "person": "p28741f61cd",
+      "wikiTitle": "Lucius Caecilius Metellus (consul 251 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Caecilius_Metellus_(consul_251_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Publius Claudius Pulcher (consul 249 BC)",
+      "person": "p6066861171",
+      "wikiTitle": "Publius Claudius Pulcher (consul 249 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Claudius_Pulcher_(consul_249_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Junius Pullus",
+      "person": "p11d8fb4a1c",
+      "wikiTitle": "Lucius Junius Pullus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Junius_Pullus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Lutatius Catulus (consul 242 BC)",
+      "person": "p999842f31e",
+      "wikiTitle": "Gaius Lutatius Catulus (consul 242 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Lutatius_Catulus_(consul_242_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Fabius Maximus Verrucosus",
+      "person": "pac92d0f301",
+      "wikiTitle": "Quintus Fabius Maximus Verrucosus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Fabius_Maximus_Verrucosus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Flaminius (consul 223 BC)",
+      "person": "p38f8b4ae23",
+      "wikiTitle": "Gaius Flaminius (consul 223 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Flaminius_(consul_223_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Claudius Marcellus",
+      "person": "p70b707d0fc",
+      "wikiTitle": "Marcus Claudius Marcellus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Claudius_Marcellus"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Aemilius Paullus (consul 219 BC)",
+      "person": "p2c96e8a4f5",
+      "wikiTitle": "Lucius Aemilius Paullus (consul 219 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Aemilius_Paullus_(consul_219_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Terentius Varro",
+      "person": "p16848235d5",
+      "wikiTitle": "Gaius Terentius Varro",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Terentius_Varro"
+        }
+      ]
+    },
+    {
+      "title": "Publius Cornelius Scipio (consul 218 BC)",
+      "person": "p9b7bf551fd",
+      "wikiTitle": "Publius Cornelius Scipio (consul 218 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Cornelius_Scipio_(consul_218_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Tiberius Sempronius Longus (consul 218 BC)",
+      "person": "pf8c5b77f38",
+      "wikiTitle": "Tiberius Sempronius Longus (consul 218 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Tiberius_Sempronius_Longus_(consul_218_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Tiberius Sempronius Gracchus (consul 215 BC)",
+      "person": "pf8fbe9f6a3",
+      "wikiTitle": "Tiberius Sempronius Gracchus (consul 215 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Tiberius_Sempronius_Gracchus_(consul_215_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Fulvius Flaccus (consul 237 BC)",
+      "person": "pfaa00aaa59",
+      "wikiTitle": "Quintus Fulvius Flaccus (consul 237 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Fulvius_Flaccus_(consul_237_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Livius Salinator",
+      "person": "p5eb8740939",
+      "wikiTitle": "Marcus Livius Salinator",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Livius_Salinator"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Claudius Nero",
+      "person": "pa3e553ddcf",
+      "wikiTitle": "Gaius Claudius Nero",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Claudius_Nero"
+        }
+      ]
+    },
+    {
+      "title": "Scipio Africanus",
+      "person": "p13f1e1ef57",
+      "wikiTitle": "Scipio Africanus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Scipio_Africanus"
+        }
+      ]
+    },
+    {
+      "title": "Titus Quinctius Flamininus",
+      "person": "pb985e31504",
+      "wikiTitle": "Titus Quinctius Flamininus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Titus_Quinctius_Flamininus"
+        }
+      ]
+    },
+    {
+      "title": "Cato the Elder",
+      "person": "pe2941b3bac",
+      "wikiTitle": "Cato the Elder",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Cato_the_Censor"
+        }
+      ]
+    },
+    {
+      "title": "Manius Acilius Glabrio (consul 191 BC)",
+      "person": "pb94264788e",
+      "wikiTitle": "Manius Acilius Glabrio (consul 191 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Manius_Acilius_Glabrio_(consul_191_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Cornelius Scipio Asiaticus",
+      "person": "pff5bb63951",
+      "wikiTitle": "Lucius Cornelius Scipio Asiaticus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Cornelius_Scipio_Asiaticus"
+        }
+      ]
+    },
+    {
+      "title": "Gnaeus Manlius Vulso (consul 189 BC)",
+      "person": "pe5b7d7f7e1",
+      "wikiTitle": "Gnaeus Manlius Vulso (consul 189 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gnaeus_Manlius_Vulso_(consul_189_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Fulvius Nobilior (consul 189 BC)",
+      "person": "p63edc33c2e",
+      "wikiTitle": "Marcus Fulvius Nobilior (consul 189 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Fulvius_Nobilior_(consul_189_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Aemilius Lepidus (consul 187 BC)",
+      "person": "p221313885b",
+      "wikiTitle": "Marcus Aemilius Lepidus (consul 187 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Aemilius_Lepidus_(consul_187_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Spurius Postumius Albinus (consul 186 BC)",
+      "person": "p92a5a3c5ea",
+      "wikiTitle": "Spurius Postumius Albinus (consul 186 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Spurius_Postumius_Albinus_(consul_186_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Tiberius Sempronius Gracchus (consul 177 BC)",
+      "person": "pcb2f46a3a7",
+      "wikiTitle": "Tiberius Sempronius Gracchus (consul 177 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Tiberius_Sempronius_Gracchus_(consul_177_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Popillius Laenas (consul 173 BC)",
+      "person": "p052c2aab22",
+      "wikiTitle": "Marcus Popillius Laenas (consul 173 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Popillius_Laenas_(consul_173_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Popillius Laenas",
+      "person": "p4f60db997e",
+      "wikiTitle": "Gaius Popillius Laenas",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Popillius_Laenas"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Aemilius Paullus Macedonicus",
+      "person": "p87f2c6a5d6",
+      "wikiTitle": "Lucius Aemilius Paullus Macedonicus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Aemilius_Paullus_Macedonicus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Sulpicius Gallus",
+      "person": "p4ae3a47818",
+      "wikiTitle": "Gaius Sulpicius Gallus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Sulpicius_Gallus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Cornelius Scipio Nasica Corculum",
+      "person": "p24fc4cd765",
+      "wikiTitle": "Publius Cornelius Scipio Nasica Corculum",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Cornelius_Scipio_Nasica_Corculum"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Caecilius Metellus Macedonicus",
+      "person": "p0f06555c42",
+      "wikiTitle": "Quintus Caecilius Metellus Macedonicus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Caecilius_Metellus_Macedonicus"
+        }
+      ]
+    },
+    {
+      "title": "Scipio Aemilianus",
+      "person": "p93168b1df2",
+      "wikiTitle": "Scipio Aemilianus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Scipio_Aemilianus"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Mummius Achaicus",
+      "person": "p8f4a810420",
+      "wikiTitle": "Lucius Mummius Achaicus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Mummius_Achaicus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Laelius Sapiens",
+      "person": "p25bcd3f7a0",
+      "wikiTitle": "Gaius Laelius Sapiens",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Laelius_Sapiens"
+        }
+      ]
+    },
+    {
+      "title": "Decimus Junius Brutus Callaicus",
+      "person": "p011cbe5ba3",
+      "wikiTitle": "Decimus Junius Brutus Callaicus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Decimus_Junius_Brutus_Callaicus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Hostilius Mancinus",
+      "person": "p0cb08812d7",
+      "wikiTitle": "Gaius Hostilius Mancinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Hostilius_Mancinus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Rupilius",
+      "person": "peec8fa9f3b",
+      "wikiTitle": "Publius Rupilius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Rupilius"
+        }
+      ]
+    },
+    {
+      "title": "Manius Aquillius (consul 129 BC)",
+      "person": "pa5d92deecc",
+      "wikiTitle": "Manius Aquillius (consul 129 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Manius_Aquillius_(consul_129_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Cassius Longinus Ravilla",
+      "person": "p4958e6d25d",
+      "wikiTitle": "Lucius Cassius Longinus Ravilla",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Cassius_Longinus_Ravilla"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Mucius Scaevola Augur",
+      "person": "pf89443f5af",
+      "wikiTitle": "Quintus Mucius Scaevola Augur",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Mucius_Scaevola_Augur"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Mucius Scaevola Pontifex",
+      "person": "pb2355f2ecc",
+      "wikiTitle": "Quintus Mucius Scaevola Pontifex",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Mucius_Scaevola_Pontifex"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Caecilius Metellus Numidicus",
+      "person": "pda2c095db3",
+      "wikiTitle": "Quintus Caecilius Metellus Numidicus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Caecilius_Metellus_Numidicus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Rutilius Rufus",
+      "person": "pf2a6d0d7c9",
+      "wikiTitle": "Publius Rutilius Rufus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Rutilius_Rufus"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Marius",
+      "person": "pbe947c6166",
+      "wikiTitle": "Gaius Marius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Marius"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Lutatius Catulus (consul 102 BC)",
+      "person": "pf03d46faa2",
+      "wikiTitle": "Quintus Lutatius Catulus (consul 102 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Lutatius_Catulus_(consul_102_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Manius Aquillius (consul 101 BC)",
+      "person": "p3e26d3c649",
+      "wikiTitle": "Manius Aquillius (consul 101 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Manius_Aquillius_(consul_101_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Licinius Crassus",
+      "person": "ped2c672c19",
+      "wikiTitle": "Lucius Licinius Crassus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Licinius_Crassus"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Antonius (orator)",
+      "person": "p150e70e707",
+      "wikiTitle": "Marcus Antonius (orator)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Antonius_(orator)"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Marcius Philippus (consul 91 BC)",
+      "person": "p9220e333e8",
+      "wikiTitle": "Lucius Marcius Philippus (consul 91 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Marcius_Philippus_(consul_91_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Gnaeus Pompeius Strabo",
+      "person": "p3810b3ce4b",
+      "wikiTitle": "Gnaeus Pompeius Strabo",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gnaeus_Pompeius_Strabo"
+        }
+      ]
+    },
+    {
+      "title": "Sulla",
+      "person": "pcd7ee34a94",
+      "wikiTitle": "Sulla",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Sulla"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Cornelius Cinna",
+      "person": "p74abd793b5",
+      "wikiTitle": "Lucius Cornelius Cinna",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Cornelius_Cinna"
+        }
+      ]
+    },
+    {
+      "title": "Gnaeus Papirius Carbo (consul 85 BC)",
+      "person": "p4a599f4b58",
+      "wikiTitle": "Gnaeus Papirius Carbo (consul 85 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gnaeus_Papirius_Carbo_(consul_85_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Caecilius Metellus Pius",
+      "person": "p90fd03a92a",
+      "wikiTitle": "Quintus Caecilius Metellus Pius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Caecilius_Metellus_Pius"
+        }
+      ]
+    },
+    {
+      "title": "Lucullus",
+      "person": "p8fae0fe030",
+      "wikiTitle": "Lucullus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucullus"
+        }
+      ]
+    },
+    {
+      "title": "Pompey",
+      "person": "p44e2e3955e",
+      "wikiTitle": "Pompey",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Pompey"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Licinius Crassus",
+      "person": "p15dfcda5dc",
+      "wikiTitle": "Marcus Licinius Crassus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Licinius_Crassus"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Hortensius",
+      "person": "pae0980189e",
+      "wikiTitle": "Quintus Hortensius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Hortensius"
+        }
+      ]
+    },
+    {
+      "title": "Cicero",
+      "person": "pe72e7aae32",
+      "wikiTitle": "Cicero",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Cicero"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Antonius Hybrida",
+      "person": "p8e7376b53b",
+      "wikiTitle": "Gaius Antonius Hybrida",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Antonius_Hybrida"
+        }
+      ]
+    },
+    {
+      "title": "Julius Caesar",
+      "person": "pe9d1a9956a",
+      "wikiTitle": "Julius Caesar",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Julius_Caesar"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Calpurnius Bibulus",
+      "person": "p1c3fdc1efa",
+      "wikiTitle": "Marcus Calpurnius Bibulus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Calpurnius_Bibulus"
+        }
+      ]
+    },
+    {
+      "title": "Publius Cornelius Lentulus Spinther",
+      "person": "p4dca9fe048",
+      "wikiTitle": "Publius Cornelius Lentulus Spinther",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Cornelius_Lentulus_Spinther"
+        }
+      ]
+    },
+    {
+      "title": "Appius Claudius Pulcher (consul 54 BC)",
+      "person": "p8071ceb411",
+      "wikiTitle": "Appius Claudius Pulcher (consul 54 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Appius_Claudius_Pulcher_(consul_54_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Caecilius Metellus Pius Scipio",
+      "person": "p16b0fac6f4",
+      "wikiTitle": "Quintus Caecilius Metellus Pius Scipio",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Caecilius_Metellus_Pius_Scipio"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Aemilius Paullus (consul 50 BC)",
+      "person": "pe3f06f523d",
+      "wikiTitle": "Lucius Aemilius Paullus (consul 50 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Aemilius_Paullus_(consul_50_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Claudius Marcellus (consul 51 BC)",
+      "person": "p64c428224b",
+      "wikiTitle": "Marcus Claudius Marcellus (consul 51 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Claudius_Marcellus_(consul_51_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Aulus Hirtius",
+      "person": "pe4f8c088f0",
+      "wikiTitle": "Aulus Hirtius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Aulus_Hirtius"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Vibius Pansa Caetronianus",
+      "person": "p761b245b28",
+      "wikiTitle": "Gaius Vibius Pansa Caetronianus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Vibius_Pansa_Caetronianus"
+        }
+      ]
+    },
+    {
+      "title": "Lepidus",
+      "person": "p5e55acb449",
+      "wikiTitle": "Lepidus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Aemilius_Lepidus_(triumvir)"
+        }
+      ]
+    },
+    {
+      "title": "Mark Antony",
+      "person": "p650c0820df",
+      "wikiTitle": "Mark Antony",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Mark_Antony"
+        }
+      ]
+    },
+    {
+      "title": "Augustus",
+      "person": "p6faf564142",
+      "wikiTitle": "Augustus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Augustus"
+        }
+      ]
+    },
+    {
+      "title": "Quintus Pedius (consul)",
+      "person": "p2205203f90",
+      "wikiTitle": "Quintus Pedius (consul)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Quintus_Pedius_(consul)"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Asinius Pollio",
+      "person": "p45c136da8d",
+      "wikiTitle": "Gaius Asinius Pollio",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Asinius_Pollio"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Munatius Plancus",
+      "person": "p53de746fdc",
+      "wikiTitle": "Lucius Munatius Plancus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Munatius_Plancus"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Vipsanius Agrippa",
+      "person": "p622a2ed1a3",
+      "wikiTitle": "Marcus Vipsanius Agrippa",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Vipsanius_Agrippa"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Scribonius Libo (consul 34 BC)",
+      "person": "p3968a6c3dd",
+      "wikiTitle": "Lucius Scribonius Libo (consul 34 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Scribonius_Libo_(consul_34_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Gaius Sosius",
+      "person": "p31fe4dae61",
+      "wikiTitle": "Gaius Sosius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Gaius_Sosius"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Licinius Crassus (consul 30 BC)",
+      "person": "pb01a756aba",
+      "wikiTitle": "Marcus Licinius Crassus (consul 30 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Licinius_Crassus_(consul_30_BC)"
+        }
+      ]
+    },
+    {
+      "title": "Marcus Aemilius Scaurus (consul)",
+      "person": "p1d1752c66e",
+      "wikiTitle": "Marcus Aemilius Scaurus (consul 115 BC)",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Aemilius_Scaurus_(consul)"
+        }
+      ]
+    },
+    {
+      "title": "Publius Ventidius",
+      "person": "pe24739ba51",
+      "wikiTitle": "Publius Ventidius",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Publius_Ventidius"
+        }
+      ]
+    },
+    {
+      "title": "Lucius Valerius Poplicola Potitus",
+      "person": "pb57ebe85db",
+      "wikiTitle": "Lucius Valerius Poplicola Potitus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Lucius_Valerius_Poplicola_Potitus"
+        }
+      ]
+    },
+    {
+      "title": "Appius Claudius Crassus Inregillensis Sabinus",
+      "person": "p39c3848b3f",
+      "wikiTitle": "Appius Claudius Crassus Inregillensis Sabinus",
+      "sources": [
+        {
+          "label": "人物专条（原稿来源入口）",
+          "url": "https://en.wikipedia.org/wiki/Appius_Claudius_Crassus_Inregillensis_Sabinus"
+        }
+      ]
+    }
+  ]
+}

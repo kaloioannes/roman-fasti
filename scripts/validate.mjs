@@ -7,6 +7,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const d=read('data/republic/records.json'),a=read('data/republic/territories.json');
 const require=createRequire(import.meta.url),d3=require('../site/shared/assets/d3.min.js');
+assert.equal(d.schemaVersion,2);
 const roles=new Set(['consul','suffect','tribune','decemvir','dictator']);
 assert.equal(Object.keys(d.years).length,483);
 let appointments=0,events=0;
@@ -26,7 +27,15 @@ for(let y=509;y>=27;y--){
 for(const p of Object.values(d.people)){
  assert.match(p.zh,/[\u3400-\u9fff]/);assert.match(p.latin,/[A-Za-z]/);
  assert.ok(p.nameMethod);assert.equal(new URL(p.url).protocol,'https:');
- if(p.bio){assert.ok(p.identified,`Unidentified biography ${p.latin}`);assert.ok(p.bio.length>=75);}
+ assert.ok(['authored','office-summary','insufficient'].includes(p.bioStatus));
+ assert.equal(p.bioStatus,p.bio?'authored':p.identified?'office-summary':'insufficient');
+ assert.equal(typeof p.officeSummary,'string');assert.ok(p.officeSummary.trim());
+ assert.ok(Array.isArray(p.bioSources)&&Array.isArray(p.officeSummarySources));
+ if(p.bio){assert.ok(p.identified,`Unidentified biography ${p.latin}`);assert.ok(p.bio.trim());assert.ok(p.bioSources.length);}
+ else assert.deepEqual(p.bioSources,[]);
+ for(const source of [...p.bioSources,...p.officeSummarySources]){
+  assert.ok(source.label.trim());const url=new URL(source.url);assert.equal(url.protocol,'https:');assert.ok(url.hostname);
+ }
 }
 for(const f of a.features){
  assert.ok(['Polygon','MultiPolygon'].includes(f.geometry.type));
@@ -59,7 +68,36 @@ assert.equal(d.years[27].officers.length,2);
 assert.equal(d.stats.appointments,appointments);assert.equal(d.stats.events,events);
 assert.equal(d.stats.people,Object.keys(d.people).length);
 assert.equal(d.stats.biographies,Object.values(d.people).filter(p=>p.bio).length);
-assert.equal(d.stats.biographies,Math.ceil(d.stats.people/3));
+assert.equal(d.stats.officeSummaries,Object.keys(d.people).length);
+assert.equal(d.stats.insufficientBiographies,Object.values(d.people).filter(p=>p.bioStatus==='insufficient').length);
+// Check editorial identity and source correspondence, rather than a coverage quota.
+const texts=new Map();
+for(const row of fs.readFileSync(path.join(root,'data-source/republic/biographies.tsv'),'utf8').split(/\r?\n/)){
+ if(!row.trim()||row.startsWith('#'))continue;
+ const separator=row.indexOf('|');assert.ok(separator>0,`Malformed biography row: ${row}`);
+ const title=row.slice(0,separator),text=row.slice(separator+1);
+ assert.ok(text.trim());assert.ok(!texts.has(title),`Duplicate biography: ${title}`);texts.set(title,text);
+}
+const identities=read('data-source/republic/biography-identities.json'),matchedTitles=new Set(),matchedPeople=new Set();
+assert.equal(identities.schemaVersion,1);assert.ok(identities.sourceNote.trim());
+for(const entry of identities.entries){
+ assert.ok(!matchedTitles.has(entry.title)&&!matchedPeople.has(entry.person),'Duplicate biography mapping');
+ const p=d.people[entry.person];assert.ok(p?.identified,`Unknown biography identity: ${entry.person}`);
+ assert.equal(p.wikiTitle,entry.wikiTitle);assert.ok(texts.has(entry.title));
+ assert.equal(p.bioStatus,'authored');assert.equal(p.bio,texts.get(entry.title));assert.deepEqual(p.bioSources,entry.sources);
+ matchedTitles.add(entry.title);matchedPeople.add(entry.person);
+}
+assert.equal(matchedTitles.size,texts.size,'Unmatched authored biography');
+assert.equal(d.stats.biographies,matchedPeople.size,'Unexpected biography removal or addition');
+const roleLabels={consul:'正任执政官',suffect:'补任执政官',tribune:'具执政官权力的军事保民官',decemvir:'十人委员会成员',dictator:'独裁官'};
+const careers=new Map(Object.keys(d.people).map(pid=>[pid,[]]));
+for(const r of Object.values(d.years))for(const o of r.officers)careers.get(o.person).push({...o,year:r.year});
+for(const [pid,p] of Object.entries(d.people)){
+ const appointments=careers.get(pid).sort((a,b)=>b.year-a.year||(a.role<b.role?-1:a.role>b.role?1:0)||a.term-b.term);
+ const expected='本数据库收录的任职：'+appointments.map(o=>`前${o.year}年${roleLabels[o.role]}（名录标注第${o.term}次任职）`).join('；')+'。';
+ assert.equal(p.officeSummary,expected,`Appointment summary drift: ${pid}`);
+ assert.deepEqual(p.officeSummarySources,[{label:'执政官与特殊官职名录',url:'https://en.wikipedia.org/wiki/List_of_Roman_consuls'}]);
+}
 assert.doesNotMatch(JSON.stringify(d),/档案正在整理|此条仅用于本地|未发布|TODO|undefined|NaN/);
 console.log(`Validated ${483} years, ${appointments} appointments, ${events} events, ${d.stats.biographies} biographies and ${a.features.length} map stages.`);
 

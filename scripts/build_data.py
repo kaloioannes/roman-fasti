@@ -1,4 +1,5 @@
-import json,re,math,sys,hashlib
+import json,re,sys,hashlib
+from republic_biographies import load_biographies, attach_biographies
 from pathlib import Path
 from opencc import OpenCC
 cc=OpenCC('t2s')
@@ -68,7 +69,7 @@ for y in range(509,26,-1):
    if title=='Augustus':la='Gaius Iulius Caesar Octavianus (Augustus)'
    if title=='Marcus Vipsanius Agrippa':la='Marcus Vipsanius Agrippa'
    zh=re.sub(r'\s*[（(](?:公元|西元)?前.*[）)]$','',zh)
-   people[pid]={'latin':la,'zh':zh,'nameMethod':method,'url':o['url'] or 'https://en.wikipedia.org/wiki/List_of_Roman_consuls','wikiTitle':title,'bio':'','_intro':p.get('extract',''),'identified':bool(o['url']) and ' gens' not in title}
+   people[pid]={'latin':la,'zh':zh,'nameMethod':method,'url':o['url'] or 'https://en.wikipedia.org/wiki/List_of_Roman_consuls','wikiTitle':title,'bio':'','identified':bool(o['url']) and ' gens' not in title}
   yr['officers'].append({'person':pid,'role':o['role'],'term':term,'note':note})
   careers.setdefault(pid,[]).append({'year':y,'role':o['role'],'term':term})
  for key in ['sourceNotes']:
@@ -136,57 +137,28 @@ for y,notes in office_notes.items():
  for o in years[str(y)]['officers']:
   la=people[o['person']]['latin']
   if la in notes:o['note']=(o['note']+' '+notes[la]).strip()
-known_bios={}
-biofile=R/'data-source/republic/biographies.tsv'
-if biofile.exists():
- for row in biofile.read_text(encoding='utf-8').splitlines():
-  if row and not row.startswith('#'):
-   title,bio=row.split('|',1);known_bios[title]=bio
-bio_aliases={'Marcus Aemilius Scaurus':'Marcus Aemilius Scaurus (consul)','Publius Ventidius Bassus':'Publius Ventidius','Lucius Valerius Potitus (consul 449 BC)':'Lucius Valerius Poplicola Potitus','Quintus Mucius Scaevola Pontifex':'Quintus Mucius Scaevola (pontifex maximus)','Marcus Antonius (orator)':'Marcus Antonius (consul 99 BC)','Lucius Licinius Crassus':'Lucius Licinius Crassus (consul 95 BC)'}
-for a,b in bio_aliases.items():
- if a in known_bios:known_bios[b]=known_bios[a]
-known_bios.pop('M. Claudius Marcellus',None)
-known_bios.setdefault('Appius Claudius Crassus Inregillensis Sabinus',known_bios.get('Appius Claudius Crassus Inregillensis',''))
-known_bios['Appius Claudius Crassus Inregillensis']='第四世纪的克劳狄乌斯贵族，反对开放执政官职位给平民，曾任独裁官对赫尔尼基人作战。他在前349年担任执政官后不久去世。他与主持十人委员会的同名祖辈相隔约一个世纪，活动于平民开始进入最高官职的时代。'
-# An inspectable editorial selection of roughly one third: recurring command,
-# the amount of extant biographical evidence, and membership in major events.
-def score(pid):
- p=people[pid];return (-100000 if not p['identified'] else len(p['_intro'])+len(careers[pid])*220)+(200000 if p['identified'] and p['wikiTitle'] in known_bios else 0)
-selected=sorted(people,key=score,reverse=True)[:math.ceil(len(people)/3)]
-for pid in selected:
- p=people[pid];c=careers[pid];p['bio']=known_bios.get(p['wikiTitle'],'')
- if p['bio']:continue
- ordinary=sorted({v['year'] for v in c if v['role'] in ['consul','suffect']},reverse=True)
- tribunes=sorted({v['year'] for v in c if v['role']=='tribune'},reverse=True)
- txt=f"{p['zh']}（{p['latin']}）是共和国名录中的"
- txt+='政治人物，活动见于下列任期与人物资料。'
- if ordinary:txt+='现存名录将其执政官任职记在'+ '、'.join(f'前{v}年' for v in ordinary)+'，其中正任与补任在年度卡片分别标明。'
- if tribunes:txt+='他还在'+'、'.join(f'前{v}年' for v in tribunes)+'担任具执政官权力的军事保民官。'
- year=ordinary[0] if ordinary else c[0]['year'];ev=years[str(year)]['events']
- if ev:
-  txt+=f"他的前{year}年任期处在“{ev[0]['title']}”这一局势中，年度页收录了相关记事和来源，人物专条可进一步追踪其家族及政治关系。"
- p['bio']=txt
-for p in people.values():p.pop('_intro',None)
+authored=load_biographies(R/'data-source/republic',people)
+attach_biographies(people,careers,authored)
 missingevents=[y for y,r in years.items() if not r['events']]
 if '--preview' in sys.argv:
  for y in missingevents:years[y]['events']=[{'title':'档案正在整理','description':'此条仅用于本地构建预览。','category':'整理中','certainty':'未发布','sources':[]}]
 else:
  if missingevents:raise ValueError('Missing annual events: '+str(missingevents))
  if missing:raise ValueError('Missing translations: '+str(sorted(missing)))
-stats={'years':len(years),'people':len(people),'appointments':sum(len(y['officers']) for y in years.values()),'biographies':sum(bool(p['bio']) for p in people.values()),'events':sum(len(y['events']) for y in years.values())}
+stats={'years':len(years),'people':len(people),'appointments':sum(len(y['officers']) for y in years.values()),'biographies':sum(p['bioStatus']=='authored' for p in people.values()),'officeSummaries':len(people),'insufficientBiographies':sum(p['bioStatus']=='insufficient' for p in people.values()),'events':sum(len(y['events']) for y in years.values())}
 method=[
  {'title':'完整纪年，特殊年份单独处理','html':'覆盖前509年至前27年，共483个传统年度。以依据 T. R. S. Broughton《The Magistrates of the Roman Republic》整理的<a href="https://en.wikipedia.org/wiki/List_of_Roman_consuls" target="_blank" rel="noopener">传世官员汇总名录</a>为入口，晚期另对照<a href="https://www.attalus.org/info/mrr2.pdf" target="_blank" rel="noopener">卷二数字化稿</a>。正任、补任、十人委员会、军事保民官、最高官职空缺与四个“独裁官年”分别记录。各年度保留相应的来源与任职说明。'},
  {'title':'中文译名与拉丁姓名','html':'有中文专条或通行译名的人物优先采用其已有名称，其他名字按拉丁人名词素统一音译；每张卡片标明方式。拉丁文展开标准前名缩写，并把 Junius / Julius 等现代写法规范为 Iunius / Iulius。谱系、同名者和残缺铭文仍以来源的身份区分。未链接人物专条的同名记录按年度保留独立身份，方便继续校订。音译表随数据开源，便于逐词校订。'},
- {'title':'年度记事与人物简介','html':'选取战争、立法、公民权、土地与债务、殖民、重大公共危机、宗教及文化建设。早期对照<a href="https://en.wikisource.org/wiki/From_the_Founding_of_the_City" target="_blank" rel="noopener">李维《建城以来史》</a>；前324年至前30年主要使用<a href="https://www.attalus.org/" target="_blank" rel="noopener">Attalus 的古代来源与现代研究索引</a>。每条为中文重述并附出处。记载简略的年份按编年线索介绍前后局势。人物简介约覆盖前三分之一，重点选取多次任职、资料较丰富和参与重要事件的人物。'},
+ {'title':'年度记事与人物简介','html':'选取战争、立法、公民权、土地与债务、殖民、重大公共危机、宗教及文化建设。早期对照<a href="https://en.wikisource.org/wiki/From_the_Founding_of_the_City" target="_blank" rel="noopener">李维《建城以来史》</a>；前324年至前30年主要使用<a href="https://www.attalus.org/" target="_blank" rel="noopener">Attalus 的古代来源与现代研究索引</a>。每条为中文重述并附出处。记载简略的年份按编年线索介绍前后局势。人物简介按明确身份与来源逐条收录，所有已编写且匹配的简介均保留。任职记录摘要由本数据库的任职生成，单独展示；身份尚待考订的条目标明资料不足。原稿人物专条链接沿用既有资料入口，本次迁移未重新逐条核读正文。'},
  {'title':'十个历史剧本','html':'每个剧本从一场具体局势出发，以人物、政治选择和连续年份串起叙事。共十个开局、59章，涵盖成文法、同盟动员、行省经济、流亡者政治与海上粮道。各章附李维、普鲁塔克、阿庇安、狄奥多罗斯等古代作者或铭文出处，年代异说列在相应节点。剧本正文与年度档案相互连接，可跳章阅读，也可逐年查看中间的变化。'},
  {'title':'精细轮廓的历史地图','html':'疆域使用<a href="https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0" target="_blank" rel="noopener">Cliopatria v0.2.0 / Seshat</a>的历史 GIS 重建，参见<a href="https://www.nature.com/articles/s41597-025-04516-9" target="_blank" rel="noopener">数据论文</a>。沿<a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth 1:50m 海岸线</a>裁切，生成可缩放的连续涂色图。前509—338年的五个阶段使用本项目依史事节点绘制的近似示意，虚线标出边界的不确定性；前337年起使用上述GIS重建。共56个阶段，各图列出时段和来源。地方条约、盟邦和军事进展见年度记事。'},
  {'title':'传统年代与史料距离','html':'采用瓦罗纪年，建城纪年按 AUC = 754 − BC 年份换算。高卢洗劫罗马等事件在现代对照纪年中可能有数年差异，早期英雄故事含后世道德塑造。理解早期罗马可进一步参阅 Gary Forsythe《A Critical History of Early Rome》、T. J. Cornell《The Beginnings of Rome》以及《剑桥古代史》第七卷第二部分。'},
  {'title':'开源与署名','html':'网站代码采用 MIT；由维基百科名录整理、译写的数据按 CC BY-SA 4.0 提供，历史 GIS 数据为 CC BY 4.0，Natural Earth 底图为公有领域。各条目保留来源链接，依赖和字体许可证详见仓库 THIRD_PARTY.md。<a href="https://github.com/kaloioannes/roman-fasti" target="_blank" rel="noopener">查看公共仓库</a>。'}
 ]
-out={'version':'1.0.0','stats':stats,'method':method,'years':years,'people':people}
-(R/'data/republic/records.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+out={'schemaVersion':2,'version':'1.1.0','stats':stats,'method':method,'years':years,'people':people}
+(R/'data/republic/records.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8',newline='\n')
 print(json.dumps(stats));print('untranslated',sorted(missing));print('missing events',len(missingevents))
 
 # Curated narrative routes are authored separately from the annual records.
 stories=json.loads((R/'data-source/republic/stories.json').read_text(encoding='utf-8'))
-(R/'data/republic/stories.json').write_text(json.dumps(stories,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(R/'data/republic/stories.json').write_text(json.dumps(stories,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
