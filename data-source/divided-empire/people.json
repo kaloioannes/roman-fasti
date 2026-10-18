@@ -1,0 +1,1688 @@
+[
+  {
+    "id": "theodosius-i",
+    "zh": "狄奥多西一世",
+    "nativeName": {
+      "text": "Flavius Theodosius",
+      "lang": "la"
+    },
+    "greek": "Θεοδόσιος",
+    "aliases": "Flavius Theodosius Θεοδόσιος",
+    "dynasty": "theodosian",
+    "bio": [
+      "379年取得东部帝位，394年战胜欧根尼乌斯后恢复对全帝国的最高支配。395年1月17日在米兰去世，遗体运往君士坦丁堡。",
+      "两子早已拥有奥古斯都称号，395年的继承延续了多帝共治制度；此后两座宫廷的分立趋于持久，不应理解为当日签署了一份建立两个民族国家的条约。"
+    ],
+    "reigns": [
+      {
+        "side": "both",
+        "kind": "senior",
+        "start": 379,
+        "end": 395,
+        "startDate": {
+          "value": "0379-01-19",
+          "precision": "day",
+          "label": "379年1月19日"
+        },
+        "endDate": {
+          "value": "0395-01-17",
+          "precision": "day",
+          "label": "395年1月17日"
+        },
+        "territory": "全帝国的资深皇帝；395年初在米兰",
+        "note": "仅395年初与本卷重叠；其完整在位史另见古典帝国篇。",
+        "dateSources": [
+          "bury-5A",
+          "marcellinus"
+        ],
+        "recognition": ""
+      }
+    ],
+    "sources": [
+      "bury-5A",
+      "marcellinus"
+    ],
+    "reference": "Bury I.V §1；Marcellinus s.a.395"
+  },
+  {
+    "id": "honorius",
+    "zh": "霍诺里乌斯",
+    "nativeName": {
+      "text": "Flavius Honorius",
+      "lang": "la"
+    },
+    "greek": "Ὁνώριος",
+    "aliases": "Flavius Honorius Ὁνώριος",
+    "dynasty": "theodosian",
+    "bio": [
+      "狄奥多西一世幼子，393年已获奥古斯都称号。父死后在西部执政，早期军政重心由斯提利科掌握，宫廷从米兰迁往更易防守的拉文纳。",
+      "任内经历莱茵防线危机、高卢与不列颠的争位，以及410年罗马遭阿拉里克军队劫掠。君士坦提乌斯的军政重建使意大利宫廷得以延续，但未能全面恢复西部控制。423年去世，无子嗣继承。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 393,
+        "end": 423,
+        "startDate": {
+          "value": "0393-01-23",
+          "precision": "day",
+          "label": "393年1月23日"
+        },
+        "endDate": {
+          "value": "0423-08-15",
+          "precision": "day",
+          "label": "423年8月15日"
+        },
+        "territory": "米兰、拉文纳宫廷及其承认地区",
+        "note": "395年前已是共帝；本卷从395年展开。409年曾承认君士坦丁三世，不能据此抹去双方冲突。",
+        "dateSources": [
+          "dir-honorius",
+          "bury-6"
+        ],
+        "recognition": "东部承认"
+      }
+    ],
+    "sources": [
+      "dir-honorius",
+      "bury-5C",
+      "bury-6"
+    ],
+    "reference": "Bury I.V §§6–7、VI；DIR Honorius"
+  },
+  {
+    "id": "arcadius",
+    "zh": "阿卡狄乌斯",
+    "nativeName": {
+      "text": "Flavius Arcadius",
+      "lang": "la"
+    },
+    "greek": "Ἀρκάδιος",
+    "aliases": "Flavius Arcadius Ἀρκάδιος",
+    "dynasty": "theodosian",
+    "bio": [
+      "狄奥多西一世长子，383年已被立为奥古斯都。395年后驻君士坦丁堡，先后依赖鲁菲努斯、欧特罗皮乌斯及宫廷官僚处理政务。",
+      "盖纳斯危机与金口约翰的罢黜显示军事、宫廷和教会势力间的竞争。皇后欧多克西亚也有重要影响。408年去世，幼子狄奥多西二世继承东部宫廷。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 383,
+        "end": 408,
+        "startDate": {
+          "value": "0383-01-19",
+          "precision": "day",
+          "label": "383年1月19日"
+        },
+        "endDate": {
+          "value": "0408-05-01",
+          "precision": "day",
+          "label": "408年5月1日"
+        },
+        "territory": "君士坦丁堡宫廷及东方行省",
+        "note": "383年取得帝号，395年后独掌东部宫廷；402年起与幼子共治。",
+        "dateSources": [
+          "dir-arcadius",
+          "bury-5A"
+        ],
+        "recognition": "西部承认"
+      }
+    ],
+    "sources": [
+      "dir-arcadius",
+      "bury-5A",
+      "marcellinus",
+      "bury-5B"
+    ],
+    "reference": "Bury I.V §§1–5；DIR Arcadius"
+  },
+  {
+    "id": "theodosius-ii",
+    "zh": "狄奥多西二世",
+    "nativeName": {
+      "text": "Flavius Theodosius",
+      "lang": "la"
+    },
+    "greek": "Θεοδόσιος",
+    "aliases": "Flavius Theodosius Θεοδόσιος",
+    "dynasty": "theodosian",
+    "bio": [
+      "401年生，402年即获奥古斯都称号，408年父死后成为东方主帝。安提米乌斯与普尔刻里娅先后影响幼年宫廷，他的长期统治也由不断变化的官僚与皇室联盟维系。",
+      "其时代修筑君士坦丁堡防御工事，整理《狄奥多西法典》，召开以弗所会议。对波斯战争与匈人的作战、赔款牵动财政；450年因骑马事故去世，马尔基安继位。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "junior",
+        "start": 402,
+        "end": 408,
+        "startDate": {
+          "value": "0402-01-10",
+          "precision": "day",
+          "label": "402年1月10日"
+        },
+        "endDate": {
+          "value": "0408-05-01",
+          "precision": "day",
+          "label": "408年5月1日"
+        },
+        "territory": "君士坦丁堡；阿卡狄乌斯之共帝",
+        "note": "帝号从402年起算，408年才独掌宫廷；不是恺撒阶段。",
+        "dateSources": [
+          "dir-theodosius"
+        ],
+        "recognition": "父帝承认"
+      },
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 408,
+        "end": 450,
+        "startDate": {
+          "value": "0408-05-01",
+          "precision": "day",
+          "label": "408年5月1日"
+        },
+        "endDate": {
+          "value": "0450-07-28",
+          "precision": "day",
+          "label": "450年7月28日"
+        },
+        "territory": "君士坦丁堡宫廷与东部行省",
+        "note": "两个任期在408年交接，同一人会以两个身份出现，人物数按ID去重。",
+        "dateSources": [
+          "dir-theodosius",
+          "bury-7"
+        ],
+        "recognition": "西部承认"
+      }
+    ],
+    "sources": [
+      "dir-theodosius",
+      "bury-7",
+      "socrates-7"
+    ],
+    "reference": "Socrates VII.1、22–24、38；Bury I.VII"
+  },
+  {
+    "id": "constantius-iii",
+    "zh": "君士坦提乌斯三世",
+    "nativeName": {
+      "text": "Flavius Constantius",
+      "lang": "la"
+    },
+    "greek": "Κωνστάντιος",
+    "aliases": "Flavius Constantius Κωνστάντιος",
+    "dynasty": "theodosian",
+    "bio": [
+      "以将领身份击败君士坦丁三世，控制高卢局势，并迫使哥特人重新与意大利宫廷合作。417年与霍诺里乌斯异母妹加拉·普拉西狄娅结婚，瓦伦提尼安三世是他们的儿子。",
+      "421年2月被提升为霍诺里乌斯的共帝，但东部没有接受其帝号。同年9月去世；其先前多年的实权不能全部算成皇帝任期。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "junior",
+        "start": 421,
+        "end": 421,
+        "startDate": {
+          "value": "0421-02-08",
+          "precision": "day",
+          "label": "421年2月8日"
+        },
+        "endDate": {
+          "value": "0421-09-02",
+          "precision": "day",
+          "label": "421年9月2日"
+        },
+        "territory": "拉文纳；与霍诺里乌斯共治",
+        "note": "东部拒绝承认；这是西部奥古斯都，不是普通摄政官。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "东部未承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6"
+    ],
+    "reference": "DIR Constantius III；Bury I.VI §5"
+  },
+  {
+    "id": "johannes",
+    "zh": "约翰尼斯",
+    "nativeName": {
+      "text": "Flavius Ioannes",
+      "lang": "la"
+    },
+    "greek": "Ἰωάννης",
+    "aliases": "Flavius Ioannes Ἰωάννης",
+    "dynasty": "independent",
+    "bio": [
+      "原任宫廷文书官，423年霍诺里乌斯死后在意大利获推举为皇帝。君士坦丁堡拒绝承认，改为支持幼年的瓦伦提尼安与其母普拉西狄娅。",
+      "阿尔达布里乌斯和阿斯帕尔率东部军队进入意大利，425年拉文纳失守，约翰尼斯被俘并处死。埃提乌斯带来的匈人援军未能挽救其帝位。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 423,
+        "end": 425,
+        "startDate": {
+          "value": "0423-11",
+          "precision": "month",
+          "label": "423年11月"
+        },
+        "endDate": {
+          "value": "0425-05",
+          "precision": "month",
+          "label": "425年5月"
+        },
+        "territory": "拉文纳及其实际控制的西部地区",
+        "note": "西部实际执政者，但被东部视为僭位；11月即位与5月败亡仅取月精度。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-7"
+        ],
+        "recognition": "东部拒绝承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-7",
+      "marcellinus"
+    ],
+    "reference": "DIR Johannes；Bury I.VII §3；Marcellinus s.a.423–425"
+  },
+  {
+    "id": "valentinian-iii",
+    "zh": "瓦伦提尼安三世",
+    "nativeName": {
+      "text": "Flavius Placidius Valentinianus",
+      "lang": "la"
+    },
+    "greek": "Οὐαλεντινιανός",
+    "aliases": "Flavius Placidius Valentinianus Οὐαλεντινιανός",
+    "dynasty": "theodosian",
+    "bio": [
+      "君士坦提乌斯三世与加拉·普拉西狄娅之子。东部宫廷于424年立他为恺撒，425年击败约翰尼斯后在罗马使其登上奥古斯都位。幼年由母后摄政，后来埃提乌斯成为最有影响的军事领袖。",
+      "任内汪达尔人夺取迦太基，削弱了西部税收与粮运基础；451年罗马与西哥特联军抵御阿提拉。454年皇帝亲手参与杀害埃提乌斯，次年自己也被前者旧部刺杀。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "caesar",
+        "start": 424,
+        "end": 425,
+        "startDate": {
+          "value": "0424-10-23",
+          "precision": "day",
+          "label": "424年10月23日"
+        },
+        "endDate": {
+          "value": "0425-10-23",
+          "precision": "day",
+          "label": "425年10月23日"
+        },
+        "territory": "东部支持下的西部继承候选人",
+        "note": "恺撒是低于奥古斯都的称号；不计入西部主帝。",
+        "dateSources": [
+          "bury-7",
+          "marcellinus"
+        ],
+        "recognition": "东部支持"
+      },
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 425,
+        "end": 455,
+        "startDate": {
+          "value": "0425-10-23",
+          "precision": "day",
+          "label": "425年10月23日"
+        },
+        "endDate": {
+          "value": "0455-03-16",
+          "precision": "day",
+          "label": "455年3月16日"
+        },
+        "territory": "拉文纳、罗马宫廷；西部残存行省",
+        "note": "425年在罗马获奥古斯都称号；不能沿用Marcellinus所写拉文纳作为加冕地点。",
+        "dateSources": [
+          "bury-8",
+          "marcellinus"
+        ],
+        "recognition": "东部承认"
+      }
+    ],
+    "sources": [
+      "bury-8",
+      "bury-9",
+      "marcellinus"
+    ],
+    "reference": "Bury I.VII §3、VIII §§1–4、IX §§4–5"
+  },
+  {
+    "id": "marcian",
+    "zh": "马尔基安",
+    "nativeName": {
+      "text": "Flavius Marcianus",
+      "lang": "la"
+    },
+    "greek": "Μαρκιανός",
+    "aliases": "Flavius Marcianus Μαρκιανός",
+    "dynasty": "theodosian",
+    "bio": [
+      "军旅出身，与阿斯帕尔的军政集团关系密切。450年狄奥多西二世死后继位，并与普尔刻里娅结婚，使新政权连接狄奥多西皇室。",
+      "停止向阿提拉继续支付旧式贡金，并与普尔刻里娅支持451年迦克墩会议。东方财政与边防有所稳定；457年去世后，继位问题再次取决于军队、元老院与宫廷的协调。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 450,
+        "end": 457,
+        "startDate": {
+          "value": "0450-08-25",
+          "precision": "day",
+          "label": "450年8月25日"
+        },
+        "endDate": {
+          "value": "0457-01-27",
+          "precision": "day",
+          "label": "457年1月27日"
+        },
+        "territory": "君士坦丁堡及东方行省",
+        "note": "通过与普尔刻里娅的婚姻衔接皇室；不是狄奥多西二世之子。",
+        "dateSources": [
+          "bury-7"
+        ],
+        "recognition": "西部稍后承认"
+      }
+    ],
+    "sources": [
+      "bury-7",
+      "marcellinus"
+    ],
+    "reference": "Bury I.VII §6；Marcellinus s.a.450–457"
+  },
+  {
+    "id": "petronius-maximus",
+    "zh": "佩特罗尼乌斯·马克西穆斯",
+    "nativeName": {
+      "text": "Petronius Maximus",
+      "lang": "la"
+    },
+    "greek": "Πετρώνιος Μάξιμος",
+    "aliases": "Petronius Maximus Πετρώνιος Μάξιμος",
+    "dynasty": "anician",
+    "bio": [
+      "出身元老贵族，曾任执政官与高级行政官。瓦伦提尼安三世被刺后，于455年3月取得皇位，并以皇室婚姻试图巩固统治。",
+      "汪达尔舰队迫近时，他未能维持罗马城内秩序，5月逃离宫廷途中被杀。其与刺杀阴谋的关系见于带有敌意的材料，不应将每个细节都当成定论。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 455,
+        "end": 455,
+        "startDate": {
+          "value": "0455-03-17",
+          "precision": "day",
+          "label": "455年3月17日"
+        },
+        "endDate": {
+          "value": "0455-05-31",
+          "precision": "day",
+          "label": "455年5月31日"
+        },
+        "territory": "罗马及意大利宫廷",
+        "note": "短暂在位；东部正式承认没有得到可靠证明。",
+        "dateSources": [
+          "bury-10"
+        ],
+        "recognition": "东部承认未获证实"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "marcellinus"
+    ],
+    "reference": "Bury I.X §2；Marcellinus s.a.455"
+  },
+  {
+    "id": "avitus",
+    "zh": "阿维图斯",
+    "nativeName": {
+      "text": "Eparchius Avitus",
+      "lang": "la"
+    },
+    "greek": "Ἄβιτος",
+    "aliases": "Eparchius Avitus Ἄβιτος",
+    "dynasty": "independent",
+    "bio": [
+      "高卢贵族与外交、军事官员，和西哥特王廷关系密切。455年在高卢取得帝位，随后进入意大利；女婿西多尼乌斯的颂辞是理解其政权的重要材料，也带有家族宣传立场。",
+      "高卢支持未能转化为意大利的稳定基础。456年里西默与马约里安反对他，他在普拉肯提亚败亡并被迫退位，转任主教，随后死亡的具体时间与情形存在差异。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 455,
+        "end": 456,
+        "startDate": {
+          "value": "0455-07-09",
+          "precision": "day",
+          "label": "455年7月9日"
+        },
+        "endDate": {
+          "value": "0456-10-17",
+          "precision": "day",
+          "label": "456年10月17日"
+        },
+        "territory": "高卢起家，后入主罗马；意大利与部分西部行省",
+        "note": "即位通常取7月9日；退位有10月17/18日异说，本卷采用17日。东部承认程度有争论。",
+        "dateSources": [
+          "bury-10",
+          "hydatius"
+        ],
+        "recognition": "东部承认有争议"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "hydatius"
+    ],
+    "reference": "Bury I.X §2；Hydatius Avitus、Placentia条"
+  },
+  {
+    "id": "majorian",
+    "zh": "马约里安",
+    "nativeName": {
+      "text": "Iulius Valerius Maiorianus",
+      "lang": "la"
+    },
+    "greek": "Μαϊοριανός",
+    "aliases": "Iulius Valerius Maiorianus Μαϊοριανός",
+    "dynasty": "independent",
+    "bio": [
+      "埃提乌斯麾下出身的军官，与里西默共同参与阿维图斯的倒台。457年取得帝位后试图恢复高卢、西班牙与地中海的西部权力，同时以法律整顿财政及城市事务。",
+      "准备进攻汪达尔非洲的舰队于460年在西班牙海岸毁损，远征未能成行。461年返回意大利后被里西默废黜并杀死，显示军事重建仍受制于宫廷权力关系。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 457,
+        "end": 461,
+        "startDate": {
+          "value": "0457-04-01",
+          "precision": "day",
+          "label": "457年4月1日"
+        },
+        "endDate": {
+          "value": "0461-08-02",
+          "precision": "day",
+          "label": "461年8月2日"
+        },
+        "territory": "意大利、部分高卢与西班牙的西部宫廷",
+        "note": "4月1日军队拥立与12月28日确认/公布帝号须区分；本卷从拥立起算。8月2日被废，7日遇害。",
+        "dateSources": [
+          "bury-10",
+          "hydatius"
+        ],
+        "recognition": "获利奥一世承认"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "hydatius",
+      "marcellinus"
+    ],
+    "reference": "Bury I.X §2及注70；Hydatius Maiorianus条"
+  },
+  {
+    "id": "libius-severus",
+    "zh": "利比乌斯·塞维鲁斯",
+    "nativeName": {
+      "text": "Libius Severus",
+      "lang": "la"
+    },
+    "greek": "Λίβιος Σεβῆρος",
+    "aliases": "Libius Severus Λίβιος Σεβῆρος",
+    "dynasty": "independent",
+    "bio": [
+      "意大利出身，461年在里西默支持下取得帝位。高卢的埃吉狄乌斯与达尔马提亚的马尔凯利努斯不接受他，东方利奥一世也未承认其帝号。",
+      "政权主要依靠意大利军事集团，汪达尔海上压力持续。465年去世后，西部较长时间没有另立奥古斯都；将死因直接断为里西默下毒，超出了可靠证据。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 461,
+        "end": 465,
+        "startDate": {
+          "value": "0461-11-19",
+          "precision": "day",
+          "label": "461年11月19日"
+        },
+        "endDate": {
+          "value": "0465",
+          "precision": "year",
+          "label": "465年（秋，确日有争议）"
+        },
+        "territory": "意大利宫廷；高卢、达尔马提亚承认分裂",
+        "note": "卒年465；8月15日与11月14日等纪年存在争议，9月25日尚有署其名的法律（也有死后颁行可能），本卷不强设确日。",
+        "dateSources": [
+          "dir-severus",
+          "bury-10"
+        ],
+        "recognition": "东部未承认"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "marcellinus",
+      "dir-severus"
+    ],
+    "reference": "Bury I.X §3；Marcellinus s.a.461、465"
+  },
+  {
+    "id": "anthemius",
+    "zh": "安提米乌斯",
+    "nativeName": {
+      "text": "Procopius Anthemius",
+      "lang": "la"
+    },
+    "greek": "Ἀνθέμιος",
+    "aliases": "Procopius Anthemius Ἀνθέμιος",
+    "dynasty": "leonid",
+    "bio": [
+      "东方军政贵族，娶马尔基安之女欧菲米娅。467年利奥一世派他赴意大利建立获东方支持的西部宫廷，其女与里西默结婚以维系联盟。",
+      "468年东西联合远征汪达尔非洲遭到重大失败，471年在高卢的军事行动也受挫。与里西默的矛盾终于演成罗马围城，472年7月被杀。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 467,
+        "end": 472,
+        "startDate": {
+          "value": "0467-04-12",
+          "precision": "day",
+          "label": "467年4月12日"
+        },
+        "endDate": {
+          "value": "0472-07-11",
+          "precision": "day",
+          "label": "472年7月11日"
+        },
+        "territory": "罗马宫廷及西部承认地区",
+        "note": "与里西默最初通过婚姻合作；472年与奥利布里乌斯的任期有重叠。",
+        "dateSources": [
+          "bury-10",
+          "marcellinus"
+        ],
+        "recognition": "东部承认并派遣"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "marcellinus"
+    ],
+    "reference": "Bury I.X §§3–4；Marcellinus s.a.467、468、472"
+  },
+  {
+    "id": "olybrius",
+    "zh": "奥利布里乌斯",
+    "nativeName": {
+      "text": "Anicius Olybrius",
+      "lang": "la"
+    },
+    "greek": "Ὀλύβριος",
+    "aliases": "Anicius Olybrius Ὀλύβριος",
+    "dynasty": "anician",
+    "bio": [
+      "罗马元老贵族，娶瓦伦提尼安三世之女普拉西狄娅，与汪达尔王廷有姻亲联系。472年罗马围城期间成为里西默一方的皇帝，与安提米乌斯并立。",
+      "安提米乌斯死后，他在意大利短暂执政，里西默也于同年去世。奥利布里乌斯11月病亡；东方是否授权他称帝不能从其出使身份直接推得。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 472,
+        "end": 472,
+        "startDate": {
+          "value": "0472-04",
+          "precision": "month",
+          "label": "472年4月"
+        },
+        "endDate": {
+          "value": "0472-11-02",
+          "precision": "day",
+          "label": "472年11月2日"
+        },
+        "territory": "里西默控制区，后为罗马与意大利宫廷",
+        "note": "即位只取4月精度；7月前与安提米乌斯敌对，非和平共治。",
+        "dateSources": [
+          "bury-10"
+        ],
+        "recognition": "东部未正式承认"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "marcellinus"
+    ],
+    "reference": "Bury I.X §4；Marcellinus s.a.472"
+  },
+  {
+    "id": "glycerius",
+    "zh": "格利凯里乌斯",
+    "nativeName": {
+      "text": "Flavius Glycerius",
+      "lang": "la"
+    },
+    "greek": "Γλυκέριος",
+    "aliases": "Flavius Glycerius Γλυκέριος",
+    "dynasty": "independent",
+    "bio": [
+      "原任宫廷卫队官员，473年在勃艮第将领贡多巴德支持下于拉文纳称帝。东部没有接受这一继承安排，准备另立尤利乌斯·尼波斯。",
+      "474年尼波斯抵达意大利时，他未能组织有效抵抗，被废后被祝圣为萨洛纳主教。后世关于他参与刺杀尼波斯的说法证据薄弱，不作确定事实。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 473,
+        "end": 474,
+        "startDate": {
+          "value": "0473-03",
+          "precision": "month",
+          "label": "473年3月（3日／5日异说）"
+        },
+        "endDate": {
+          "value": "0474-06",
+          "precision": "month",
+          "label": "474年6月"
+        },
+        "territory": "拉文纳与意大利宫廷",
+        "note": "即位有3月3日与5日两说；退位仅取474年6月。尼波斯6月19/24日纪年同样有异。",
+        "dateSources": [
+          "bury-12",
+          "marcellinus",
+          "dir-glycerius"
+        ],
+        "recognition": "东部未承认"
+      }
+    ],
+    "sources": [
+      "bury-12",
+      "marcellinus",
+      "dir-glycerius"
+    ],
+    "reference": "DIR Glycerius；Bury I.XII §4；Marcellinus s.a.473–474"
+  },
+  {
+    "id": "julius-nepos",
+    "zh": "尤利乌斯·尼波斯",
+    "nativeName": {
+      "text": "Iulius Nepos",
+      "lang": "la"
+    },
+    "greek": "Ἰούλιος Νέπως",
+    "aliases": "Iulius Nepos Ἰούλιος Νέπως",
+    "dynasty": "independent",
+    "bio": [
+      "来自达尔马提亚军政集团，与马尔凯利努斯及东方皇室网络相连。474年在东部支持下进入意大利，废黜格利凯里乌斯并取得西部帝位。",
+      "475年奥雷斯特斯叛乱迫使他退往达尔马提亚。此后仍保有西部皇帝名义并获芝诺承认，直到480年遇害。因此476年应理解为意大利西部宫廷的终结，不能写成尼波斯也在当年失去帝号。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 474,
+        "end": 475,
+        "startDate": {
+          "value": "0474-06-24",
+          "precision": "day",
+          "label": "474年6月24日"
+        },
+        "endDate": {
+          "value": "0475-08-28",
+          "precision": "day",
+          "label": "475年8月28日"
+        },
+        "territory": "意大利西部宫廷",
+        "note": "即位取罗马获奥古斯都称号的6月24日；475年8月28日被逐出意大利。",
+        "dateSources": [
+          "bury-12",
+          "dir-zeno",
+          "dir-nepos"
+        ],
+        "recognition": "东部承认"
+      },
+      {
+        "side": "west",
+        "kind": "exile",
+        "start": 475,
+        "end": 480,
+        "startDate": {
+          "value": "0475-08-28",
+          "precision": "day",
+          "label": "475年8月28日"
+        },
+        "endDate": {
+          "value": "0480",
+          "precision": "year",
+          "label": "480年（死日有三种纪年）"
+        },
+        "territory": "达尔马提亚流亡宫廷",
+        "note": "流亡后仍获芝诺承认。本卷展开到476年；卒年480，有4月25日、5月9日、6月22日异说，不取唯一确日。",
+        "dateSources": [
+          "bury-12",
+          "dir-zeno",
+          "dir-nepos"
+        ],
+        "recognition": "芝诺继续承认"
+      }
+    ],
+    "sources": [
+      "bury-12",
+      "dir-zeno",
+      "marcellinus",
+      "dir-nepos"
+    ],
+    "reference": "DIR Julius Nepos；Bury I.XII §4；Marcellinus s.a.480"
+  },
+  {
+    "id": "romulus-augustus",
+    "zh": "罗慕路斯·奥古斯都",
+    "nativeName": {
+      "text": "Romulus Augustus",
+      "lang": "la"
+    },
+    "greek": "Ῥωμύλος Αὔγουστος",
+    "aliases": "Romulus Augustus Ῥωμύλος Αὔγουστος",
+    "dynasty": "independent",
+    "bio": [
+      "将领奥雷斯特斯之子，475年尼波斯被逐后获立为皇帝。实际军事权力由父亲掌握；Augustulus（小奥古斯都）是通行的贬小称呼，正式姓名保留Augustus。",
+      "476年奥多亚克击败并杀死奥雷斯特斯，9月4日废黜罗慕路斯，将其安置于坎帕尼亚。东方仍承认尼波斯；他的退位终结了意大利另设西部皇帝宫廷的实际局面。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "central",
+        "start": 475,
+        "end": 476,
+        "startDate": {
+          "value": "0475-10-31",
+          "precision": "day",
+          "label": "475年10月31日"
+        },
+        "endDate": {
+          "value": "0476-09-04",
+          "precision": "day",
+          "label": "476年9月4日"
+        },
+        "territory": "拉文纳、意大利；奥雷斯特斯控制下的宫廷",
+        "note": "东西承认分裂：意大利实际皇帝，东部认可的西帝仍是尼波斯。",
+        "dateSources": [
+          "dir-romulus",
+          "bury-12"
+        ],
+        "recognition": "东部未承认"
+      }
+    ],
+    "sources": [
+      "dir-romulus",
+      "bury-12",
+      "marcellinus"
+    ],
+    "reference": "DIR Romulus Augustulus；Bury I.XII §4"
+  },
+  {
+    "id": "leo-i",
+    "zh": "利奥一世",
+    "nativeName": {
+      "text": "Flavius Valerius Leo",
+      "lang": "la"
+    },
+    "greek": "Λέων",
+    "aliases": "Flavius Valerius Leo Λέων",
+    "dynasty": "leonid",
+    "bio": [
+      "457年马尔基安死后，阿斯帕尔支持这位军官成为皇帝；其加冕仪式中君士坦丁堡主教的参与，是帝国礼仪发展的重要节点。",
+      "通过伊苏里亚力量与家族婚姻逐渐削弱阿斯帕尔，并在471年将其杀死。对西部皇位有很强影响，但468年的北非远征代价极大。474年1月去世，由外孙利奥二世继承。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 457,
+        "end": 474,
+        "startDate": {
+          "value": "0457-02-07",
+          "precision": "day",
+          "label": "457年2月7日"
+        },
+        "endDate": {
+          "value": "0474-01-18",
+          "precision": "day",
+          "label": "474年1月18日"
+        },
+        "territory": "君士坦丁堡与东方行省",
+        "note": "卒日采用DIR的1月18日；Bury旧纪年2月3日不采用。",
+        "dateSources": [
+          "dir-leo",
+          "bury-10"
+        ],
+        "recognition": "获西部承认"
+      }
+    ],
+    "sources": [
+      "dir-leo",
+      "bury-10",
+      "marcellinus"
+    ],
+    "reference": "Bury I.X §1；DIR Leo I"
+  },
+  {
+    "id": "leo-ii",
+    "zh": "利奥二世",
+    "nativeName": {
+      "text": "Flavius Leo",
+      "lang": "la"
+    },
+    "greek": "Λέων",
+    "aliases": "Flavius Leo Λέων",
+    "dynasty": "leonid",
+    "bio": [
+      "芝诺与阿里阿德涅之子、利奥一世外孙。473年被外祖父提升为奥古斯都，474年1月在利奥一世死后成为资深皇帝。",
+      "474年2月9日使父亲芝诺成为共帝，同年11月去世，年仅数岁。死亡的确日有疑问；本卷将11月作为精度上限，不把传闻中的毒杀作为事实。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "junior",
+        "start": 473,
+        "end": 474,
+        "startDate": {
+          "value": "0473-10",
+          "precision": "month",
+          "label": "473年秋（升奥古斯都日期有异说）"
+        },
+        "endDate": {
+          "value": "0474-01-18",
+          "precision": "day",
+          "label": "474年1月18日"
+        },
+        "territory": "君士坦丁堡；利奥一世的皇位伙伴",
+        "note": "473年秋从恺撒升为奥古斯都；部分年表将473年10月仍称恺撒，故月份不视为确证。",
+        "dateSources": [
+          "bury-10",
+          "dir-zeno"
+        ],
+        "recognition": "外祖父立为共帝"
+      },
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 474,
+        "end": 474,
+        "startDate": {
+          "value": "0474-01-18",
+          "precision": "day",
+          "label": "474年1月18日"
+        },
+        "endDate": {
+          "value": "0474-11",
+          "precision": "month",
+          "label": "474年11月"
+        },
+        "territory": "君士坦丁堡；2月起与父亲芝诺共治",
+        "note": "11月17日有疑号，本卷不强设确日。",
+        "dateSources": [
+          "dir-zeno",
+          "bury-12"
+        ],
+        "recognition": "在位皇帝"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "bury-12",
+      "dir-zeno"
+    ],
+    "reference": "Bury I.X §1、XII §1；DIR Zeno"
+  },
+  {
+    "id": "zeno",
+    "zh": "芝诺",
+    "nativeName": {
+      "text": "Flavius Zeno",
+      "lang": "la"
+    },
+    "greek": "Ζήνων",
+    "aliases": "Flavius Zeno Ζήνων",
+    "dynasty": "leonid",
+    "bio": [
+      "伊苏里亚出身，本名塔拉西科迪萨，通过与利奥一世之女阿里阿德涅结婚进入皇室。474年2月9日由儿子利奥二世立为共帝；同年儿子死后独掌帝位。",
+      "475年被维里娜、巴西利斯库斯等人发动的政变逐出首都，在伊苏里亚维持抵抗。476年借助伊卢斯等人的倒戈复位，继续承认流亡的尼波斯。其统治延续到491年，后续见拜占庭篇。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 474,
+        "end": 475,
+        "startDate": {
+          "value": "0474-02-09",
+          "precision": "day",
+          "label": "474年2月9日"
+        },
+        "endDate": {
+          "value": "0475-01-09",
+          "precision": "day",
+          "label": "475年1月9日"
+        },
+        "territory": "君士坦丁堡；最初与利奥二世共治",
+        "note": "即位采用2月9日，不取1月29日；475年失去首都。",
+        "dateSources": [
+          "dir-zeno",
+          "bury-12"
+        ],
+        "recognition": "利奥二世立为共帝"
+      },
+      {
+        "side": "east",
+        "kind": "exile",
+        "start": 475,
+        "end": 476,
+        "startDate": {
+          "value": "0475-01-09",
+          "precision": "day",
+          "label": "475年1月9日"
+        },
+        "endDate": {
+          "value": "0476-08",
+          "precision": "month",
+          "label": "476年8月"
+        },
+        "territory": "伊苏里亚及支持芝诺的部队",
+        "note": "流亡期间保留帝号并抵抗；与巴西利斯库斯不能理解为协作共治。",
+        "dateSources": [
+          "dir-zeno",
+          "bury-12"
+        ],
+        "recognition": "继续主张原帝位"
+      },
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 476,
+        "end": 491,
+        "startDate": {
+          "value": "0476-08",
+          "precision": "month",
+          "label": "476年8月"
+        },
+        "endDate": {
+          "value": "0491-04-09",
+          "precision": "day",
+          "label": "491年4月9日"
+        },
+        "territory": "复位后的君士坦丁堡宫廷",
+        "note": "476年8月复位，终点保留491年；本卷年度只展开到476年。",
+        "dateSources": [
+          "dir-zeno",
+          "bury-12"
+        ],
+        "recognition": "恢复首都统治"
+      }
+    ],
+    "sources": [
+      "dir-zeno",
+      "bury-12"
+    ],
+    "reference": "DIR Zeno；Bury I.XII §§1、4"
+  },
+  {
+    "id": "basiliscus",
+    "zh": "巴西利斯库斯",
+    "nativeName": {
+      "text": "Flavius Basiliscus",
+      "lang": "la"
+    },
+    "greek": "Βασιλίσκος",
+    "aliases": "Flavius Basiliscus Βασιλίσκος",
+    "dynasty": "leonid",
+    "bio": [
+      "利奥一世皇后维里娜的兄弟，曾统帅468年失败的北非远征。475年政变后取得君士坦丁堡宫廷，并把儿子马尔库斯提升为共帝。",
+      "反迦克墩宗教政策、财政措施和军政失误不断侵蚀支持。476年芝诺复位后，他与家人遭流放并死于囚禁；其在位以实际控制首都为准，与芝诺的流亡主张同时记录。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "central",
+        "start": 475,
+        "end": 476,
+        "startDate": {
+          "value": "0475-01-09",
+          "precision": "day",
+          "label": "475年1月9日"
+        },
+        "endDate": {
+          "value": "0476-08",
+          "precision": "month",
+          "label": "476年8月"
+        },
+        "territory": "君士坦丁堡宫廷；芝诺流亡期间",
+        "note": "政变取得首都，476年8月失位；废黜后死期不伪精确。",
+        "dateSources": [
+          "bury-12",
+          "marcellinus"
+        ],
+        "recognition": "政变建立的实际宫廷"
+      }
+    ],
+    "sources": [
+      "bury-12",
+      "marcellinus"
+    ],
+    "reference": "Bury I.XII §1；Marcellinus s.a.475–476"
+  },
+  {
+    "id": "marcus-east",
+    "zh": "马尔库斯（巴西利斯库斯之子）",
+    "nativeName": {
+      "text": "Marcus",
+      "lang": "la"
+    },
+    "greek": "Μᾶρκος",
+    "aliases": "Marcus Μᾶρκος",
+    "dynasty": "leonid",
+    "bio": [
+      "巴西利斯库斯与泽诺妮丝之子。父亲475年夺得帝位后，先立其为恺撒，再提升为奥古斯都，以建立新的继承安排。",
+      "其年幼共帝身份不意味着独立主政。476年芝诺重返首都时随父母失位，随后与家人一同死于囚禁。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "junior",
+        "start": 475,
+        "end": 476,
+        "startDate": {
+          "value": "0475",
+          "precision": "year",
+          "label": "475年"
+        },
+        "endDate": {
+          "value": "0476-08",
+          "precision": "month",
+          "label": "476年8月"
+        },
+        "territory": "君士坦丁堡；巴西利斯库斯的共帝",
+        "note": "475年的升级月份不确，开始日期只取年精度；同名不列颠争位者另有ID。",
+        "dateSources": [
+          "bury-12",
+          "dir-index"
+        ],
+        "recognition": "父帝立为共帝"
+      }
+    ],
+    "sources": [
+      "bury-12",
+      "dir-index",
+      "marcellinus"
+    ],
+    "reference": "Bury I.XII §1；DIR Imperial Index；Marcellinus s.a.476"
+  },
+  {
+    "id": "marcus-britain",
+    "zh": "马尔库斯（不列颠）",
+    "nativeName": {
+      "text": "Marcus",
+      "lang": "la"
+    },
+    "greek": "",
+    "aliases": "Marcus ",
+    "dynasty": "independent",
+    "bio": [
+      "406年末前后被不列颠驻军拥立。有关其家庭、官职与政治纲领，存世叙事极少。",
+      "士兵不久便将他杀死并改立格拉提安。其短暂地方帝号反映海峡两岸安全危机；不以未知生平补造完整仕历。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 406,
+        "end": 407,
+        "startDate": {
+          "value": "0406",
+          "precision": "year",
+          "label": "约406年末"
+        },
+        "endDate": {
+          "value": "0407",
+          "precision": "year",
+          "label": "约407年初"
+        },
+        "territory": "不列颠驻军控制区",
+        "note": "通常定于406年末—407年初，确日与跨年边界不明。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "意大利宫廷未承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6"
+    ],
+    "reference": "Bury I.VI §2；DIR Marcus"
+  },
+  {
+    "id": "gratian-britain",
+    "zh": "格拉提安（不列颠）",
+    "nativeName": {
+      "text": "Gratianus",
+      "lang": "la"
+    },
+    "greek": "",
+    "aliases": "Gratianus ",
+    "dynasty": "independent",
+    "bio": [
+      "马尔库斯被杀后由不列颠军队拥立，古代材料称其为本地人。其身份不能与四世纪的格拉提安皇帝混同。",
+      "约在位四个月后也被士兵杀死，君士坦丁三世随即接替。缺少可确定的月日，所以任期只给407年。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 407,
+        "end": 407,
+        "startDate": {
+          "value": "0407",
+          "precision": "year",
+          "label": "407年"
+        },
+        "endDate": {
+          "value": "0407",
+          "precision": "year",
+          "label": "407年"
+        },
+        "territory": "不列颠驻军控制区",
+        "note": "在位约四个月；不补造开始与终结月份。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "意大利宫廷未承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6"
+    ],
+    "reference": "Bury I.VI §2；DIR Gratian"
+  },
+  {
+    "id": "constantine-iii",
+    "zh": "君士坦丁三世",
+    "nativeName": {
+      "text": "Flavius Claudius Constantinus",
+      "lang": "la"
+    },
+    "greek": "Κωνσταντῖνος",
+    "aliases": "Flavius Claudius Constantinus Κωνσταντῖνος",
+    "dynasty": "constantinian-claim",
+    "bio": [
+      "407年在不列颠获驻军拥立，随即渡海进入高卢，逐步把权力扩展到西班牙。其子君士坦斯加入皇位继承安排。",
+      "霍诺里乌斯在409年的危机中一度承认其地位，但合作未能稳定。格隆提乌斯另立马克西穆斯后，政权腹背受敌；411年阿尔勒投降，君士坦丁在押往意大利途中被杀。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 407,
+        "end": 411,
+        "startDate": {
+          "value": "0407",
+          "precision": "year",
+          "label": "407年"
+        },
+        "endDate": {
+          "value": "0411",
+          "precision": "year",
+          "label": "411年"
+        },
+        "territory": "不列颠起兵，主要据高卢与部分西班牙",
+        "note": "409年曾获霍诺里乌斯暂时承认，仍放在争位栏，避免与意大利主线混淆。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "409年一度获西部承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6",
+      "hydatius"
+    ],
+    "reference": "DIR Constantine III；Bury I.VI §2"
+  },
+  {
+    "id": "constans-ii",
+    "zh": "君士坦斯二世",
+    "nativeName": {
+      "text": "Constans",
+      "lang": "la"
+    },
+    "greek": "Κώνστας",
+    "aliases": "Constans Κώνστας",
+    "dynasty": "constantinian-claim",
+    "bio": [
+      "君士坦丁三世之子，原为修士，后成为父亲的继承人并参与西班牙军事行动。其名号应与七世纪的君士坦斯二世分开识别。",
+      "约409—410年间由恺撒升为奥古斯都。格隆提乌斯叛乱后形势逆转，411年在维埃纳被杀。称帝年份有差异，因此标为约年。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "junior",
+        "start": 409,
+        "end": 411,
+        "startDate": {
+          "value": "0409",
+          "precision": "year",
+          "label": "约409／410年"
+        },
+        "endDate": {
+          "value": "0411",
+          "precision": "year",
+          "label": "411年"
+        },
+        "territory": "君士坦丁三世控制下的高卢、西班牙",
+        "note": "奥古斯都起年约409/410；年度成员从较早可能年409起展示，确定性不能读作确年。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "父帝阵营承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6"
+    ],
+    "reference": "DIR Constans II；Bury I.VI §2"
+  },
+  {
+    "id": "maximus-hispania",
+    "zh": "马克西穆斯（西班牙）",
+    "nativeName": {
+      "text": "Maximus",
+      "lang": "la"
+    },
+    "greek": "",
+    "aliases": "Maximus ",
+    "dynasty": "independent",
+    "bio": [
+      "409年格隆提乌斯反对君士坦丁三世时，在西班牙拥立马克西穆斯。他的政治位置取决于这一军事阵营，并没有获得意大利宫廷承认。",
+      "411年该集团失败后逃亡，后来在西班牙再次出现帝号活动，通常置于420年前后。422年被押到拉文纳处死；第二次称帝的开始年代不够精确。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 409,
+        "end": 411,
+        "startDate": {
+          "value": "0409",
+          "precision": "year",
+          "label": "409年"
+        },
+        "endDate": {
+          "value": "0411",
+          "precision": "year",
+          "label": "411年"
+        },
+        "territory": "西班牙的格隆提乌斯阵营",
+        "note": "第一次争位；格隆提乌斯败亡后失去军政基础。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "意大利未承认"
+      },
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 420,
+        "end": 422,
+        "startDate": {
+          "value": "0420",
+          "precision": "year",
+          "label": "约420年"
+        },
+        "endDate": {
+          "value": "0422",
+          "precision": "year",
+          "label": "422年"
+        },
+        "territory": "西班牙；第二次帝号活动",
+        "note": "第二次活动约在420年前后，开始只取约年；422年被俘处死。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "意大利未承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6",
+      "marcellinus"
+    ],
+    "reference": "DIR Maximus；Bury I.VI；Marcellinus s.a.422（其同段约维努斯有错置）"
+  },
+  {
+    "id": "priscus-attalus",
+    "zh": "普里斯库斯·阿塔卢斯",
+    "nativeName": {
+      "text": "Priscus Attalus",
+      "lang": "la"
+    },
+    "greek": "Πρίσκος Ἄτταλος",
+    "aliases": "Priscus Attalus Πρίσκος Ἄτταλος",
+    "dynasty": "independent",
+    "bio": [
+      "出身希腊语文化圈的罗马元老，409年在阿拉里克支持下由罗马推为皇帝，与霍诺里乌斯对立。因非洲粮运与政策分歧，410年被阿拉里克废黜。",
+      "414年阿陶尔夫又在高卢拥立他，次年再度失败。其后被霍诺里乌斯俘获，遭肢体刑并流放；两段争位分别记录，不把中间四年连为在位。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 409,
+        "end": 410,
+        "startDate": {
+          "value": "0409",
+          "precision": "year",
+          "label": "409年"
+        },
+        "endDate": {
+          "value": "0410",
+          "precision": "year",
+          "label": "410年"
+        },
+        "territory": "罗马；阿拉里克支持的政权",
+        "note": "409年末拥立，410年夏废黜；具体月日不强行固定。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "意大利主帝反对"
+      },
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 414,
+        "end": 415,
+        "startDate": {
+          "value": "0414",
+          "precision": "year",
+          "label": "414年"
+        },
+        "endDate": {
+          "value": "0415",
+          "precision": "year",
+          "label": "415年"
+        },
+        "territory": "高卢；阿陶尔夫支持的政权",
+        "note": "第二次帝号，随哥特人在高卢的政治行动而起落。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "意大利未承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6"
+    ],
+    "reference": "DIR Priscus Attalus；Bury I.VI §§1、3"
+  },
+  {
+    "id": "jovinus",
+    "zh": "约维努斯",
+    "nativeName": {
+      "text": "Iovinus",
+      "lang": "la"
+    },
+    "greek": "Ἰοβῖνος",
+    "aliases": "Iovinus Ἰοβῖνος",
+    "dynasty": "jovinian",
+    "bio": [
+      "高卢贵族，411年在莱茵地区得到勃艮第人与阿兰人支持而称帝。其势力是君士坦丁三世倒台后高卢权力重组的一部分。",
+      "立弟塞巴斯提安为共帝后，与哥特王阿陶尔夫的关系破裂。413年被击败并处死，首级送往霍诺里乌斯宫廷。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "rival",
+        "start": 411,
+        "end": 413,
+        "startDate": {
+          "value": "0411",
+          "precision": "year",
+          "label": "411年"
+        },
+        "endDate": {
+          "value": "0413",
+          "precision": "year",
+          "label": "413年"
+        },
+        "territory": "高卢、莱茵地区",
+        "note": "413年灭亡；不沿用Marcellinus在412/422条的错置。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "意大利未承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6",
+      "hydatius"
+    ],
+    "reference": "DIR Jovinus；Bury I.VI §3；Hydatius Jovinus条"
+  },
+  {
+    "id": "sebastianus",
+    "zh": "塞巴斯提安",
+    "nativeName": {
+      "text": "Sebastianus",
+      "lang": "la"
+    },
+    "greek": "Σεβαστιανός",
+    "aliases": "Sebastianus Σεβαστιανός",
+    "dynasty": "jovinian",
+    "bio": [
+      "约维努斯之弟，412年被提升为共帝，成为高卢争位政权的皇位伙伴。其人应与后来博尼法提乌斯的同名女婿区分。",
+      "这一安排未征得阿陶尔夫同意，促使哥特人与约维努斯集团决裂。413年被捕处死。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "junior",
+        "start": 412,
+        "end": 413,
+        "startDate": {
+          "value": "0412",
+          "precision": "year",
+          "label": "412年"
+        },
+        "endDate": {
+          "value": "0413",
+          "precision": "year",
+          "label": "413年"
+        },
+        "territory": "高卢；约维努斯阵营",
+        "note": "对立阵营内的共帝，不属于霍诺里乌斯宫廷。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6"
+        ],
+        "recognition": "兄长政权承认"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6"
+    ],
+    "reference": "DIR Sebastianus；Bury I.VI §3"
+  },
+  {
+    "id": "heraclianus",
+    "zh": "赫拉克利安",
+    "nativeName": {
+      "text": "Heraclianus",
+      "lang": "la"
+    },
+    "greek": "Ἡρακλειανός",
+    "aliases": "Heraclianus Ἡρακλειανός",
+    "dynasty": "independent",
+    "bio": [
+      "非洲军政长官，最初支持霍诺里乌斯，曾以控制非洲粮运抵制阿塔卢斯。413年与意大利宫廷决裂，率军渡海进攻意大利。",
+      "行动失败后逃回迦太基并被杀。材料确证叛乱，但他是否正式宣称奥古斯都存在疑问，因此只列“帝号有争议”，不直接充作皇帝。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "disputed",
+        "start": 413,
+        "end": 413,
+        "startDate": {
+          "value": "0413",
+          "precision": "year",
+          "label": "413年"
+        },
+        "endDate": {
+          "value": "0413",
+          "precision": "year",
+          "label": "413年"
+        },
+        "territory": "非洲起兵，进攻意大利失败",
+        "note": "叛乱有据，正式帝号证据不足；古代作者的tyrannus不总等于已加冕皇帝。",
+        "dateSources": [
+          "dir-westemp",
+          "bury-6",
+          "hydatius"
+        ],
+        "recognition": "帝号未能确证"
+      }
+    ],
+    "sources": [
+      "dir-westemp",
+      "bury-6",
+      "hydatius"
+    ],
+    "reference": "DIR Heraclianus；Bury I.VI §3；Hydatius Heraclianus条"
+  },
+  {
+    "id": "palladius",
+    "zh": "帕拉迪乌斯",
+    "nativeName": {
+      "text": "Palladius",
+      "lang": "la"
+    },
+    "greek": "",
+    "aliases": "Palladius ",
+    "dynasty": "anician",
+    "bio": [
+      "佩特罗尼乌斯·马克西穆斯之子，455年被父亲立为恺撒，并与瓦伦提尼安三世之女欧多基娅结合，试图借旧皇室婚姻巩固新政权。",
+      "父亲政权在汪达尔人抵达前迅速崩溃，他的恺撒身份也随之终结。没有证据支持将他提升成独立奥古斯都。"
+    ],
+    "reigns": [
+      {
+        "side": "west",
+        "kind": "caesar",
+        "start": 455,
+        "end": 455,
+        "startDate": {
+          "value": "0455",
+          "precision": "year",
+          "label": "455年"
+        },
+        "endDate": {
+          "value": "0455",
+          "precision": "year",
+          "label": "455年"
+        },
+        "territory": "罗马；马克西穆斯宫廷",
+        "note": "短期恺撒；称号结束只保留年精度，死亡细节不确定。",
+        "dateSources": [
+          "bury-10"
+        ],
+        "recognition": "父帝指定继承人"
+      }
+    ],
+    "sources": [
+      "bury-10"
+    ],
+    "reference": "Bury I.X §2"
+  },
+  {
+    "id": "patricius",
+    "zh": "帕特里基乌斯",
+    "nativeName": {
+      "text": "Iulius Patricius",
+      "lang": "la"
+    },
+    "greek": "Πατρίκιος",
+    "aliases": "Iulius Patricius Πατρίκιος",
+    "dynasty": "independent",
+    "bio": [
+      "阿斯帕尔之子，约469—470年被利奥一世立为恺撒，并与皇帝之女莱昂提娅订婚。其阿里乌派背景在首都引起抗议。",
+      "471年阿斯帕尔家族遭清洗时失去地位。他是否当场死亡，材料互有出入；本卷只把恺撒任期终点记为471年，不把存疑死讯当作定论。"
+    ],
+    "reigns": [
+      {
+        "side": "east",
+        "kind": "caesar",
+        "start": 470,
+        "end": 471,
+        "startDate": {
+          "value": "0470",
+          "precision": "year",
+          "label": "约469／470年"
+        },
+        "endDate": {
+          "value": "0471",
+          "precision": "year",
+          "label": "471年"
+        },
+        "territory": "君士坦丁堡；阿斯帕尔家族的继承安排",
+        "note": "立恺撒有469/470年异说，采用470；从未确证为奥古斯都。",
+        "dateSources": [
+          "bury-10",
+          "dir-leo"
+        ],
+        "recognition": "利奥一世立为恺撒"
+      }
+    ],
+    "sources": [
+      "bury-10",
+      "dir-leo"
+    ],
+    "reference": "Bury I.X §1及注24–31；DIR Leo I"
+  }
+]

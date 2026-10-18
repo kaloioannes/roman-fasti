@@ -27,7 +27,7 @@ site/<period>/ + site/shared/ + project.json ───┴──> build_site.py �
 - 共和国篇保留原来的正数 BC 键与路由，如 `years[44]`、`#year=44` 表示前44年；帝国篇的 `years[-27]`、`#year=-27` 表示前27年。任何跨时期工具必须显式转换共和国年份，不能直接合并两个 `years` 对象。
 - 人物 ID 只在本篇内唯一；跨时期引用使用 `(periodId, personId)`。对跨前27年或395年的同一人物，未来可增加有来源的身份映射，不能仅按姓名自动合并。
 - 王政篇使用负数年份；`years[-753]`、`#year=-753` 表示前753年。王期两端为传统交接点，年度桶包含端点，不表示全年在位。`events` 是传统纪年节点；`traditions` 仅为未定年的王期背景，两者不可合并统计。塔提乌斯空值任期不展开，空位另以 `interregnum` 标记。地点示意不提供疆界；完整约定见 `data-source/kingdom/RESEARCH.md`。
-- 双帝国篇应在单一时期模块中显式记录东西部任期及政权归属；拜占庭篇的476年起点是本项目分卷安排。具体字段和收录标准应在建设该篇时依据史料定义。
+- 双帝国篇 `divided-empire` 已开放：`side=west/east/both`，`kind`区分实际宫廷、共帝、争位、流亡、恺撒和有争议帝号；对方承认另记于 `recognition`。`vacancies`为有出处的宫廷间隔，466年不伪造西帝。`startDate/endDate`分年/月/日精度，可用标签标异说。尼波斯终点480年、芝诺终点491年保留，但年度展开止于476年。395与476年交叠是分卷安排。
 
 ## 构建与 URL
 
@@ -74,3 +74,7 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 `byzantine` 已开放，476—1453年，独立 `greek` 显示字段；`junior` 为共帝，`central` 为本卷继承主线，不能将人物总数解释成主帝人数。`purple` 为附 `note/sources` 的正面证据对象或 `null`（尚未确认）。`years[y].events` 可为空，`eventStatus` 明确资料缺口；禁止以重复跨年背景填充。原始事件保留稳定ID。
 
 `build_byzantine.py` 和 `validate-byzantine.mjs` 负责资料编译和语义检查；`test-byzantine.cjs` 负责根目录/Pages子路径、所有人物、任期边界、希腊文检索、紫室筛选、下载、地图、失败恢复和响应式回归。`build_byzantine_map.py` 沿用海岸裁切工具，独立政权分层，原属性与显式近似均保留。收录及年代冲突以 `data-source/byzantine/RESEARCH.md` 为准。
+
+## 双帝国分卷
+
+`build_divided_empire.py`离线编译文字与据点；`build_divided_empire_map.py`用Shapely处理固定版本Cliopatria东西部图层。年度页用双栏对读，手机纵向排列；历史承认不由GIS推断。`validate-divided-empire.mjs`与`test-divided-empire.cjs`覆盖数据语义、全部82年、33份档案、源定位、下载、独立失败恢复、两种部署路径与手机明暗主题。研究说明和逐年出处矩阵在`data-source/divided-empire/RESEARCH.md`。

@@ -23,4 +23,5 @@ fetch('project.json').then(response => {
       const item = document.createElement('li'); item.textContent = `${period.title} · ${period.range}`; planned.append(item);
     }
   }
+  document.querySelector('.planned-section').hidden = !planned.children.length;
 }).catch(() => { document.querySelector('#catalog-status').textContent = '时期目录暂时无法刷新，可继续使用上方入口。'; });

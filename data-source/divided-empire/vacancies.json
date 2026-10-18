@@ -1,0 +1,199 @@
+[
+  {
+    "id": "vacancy-423",
+    "side": "west",
+    "startDate": {
+      "value": "0423-08-15",
+      "precision": "day",
+      "label": "423年8月15日"
+    },
+    "endDate": {
+      "value": "0423-11",
+      "precision": "month",
+      "label": "423年11月"
+    },
+    "label": "霍诺里乌斯死后至约翰尼斯获立",
+    "note": "意大利未另立奥古斯都；东部皇帝仍在位。约翰尼斯的确日未定。",
+    "sources": [
+      "bury-8"
+    ]
+  },
+  {
+    "id": "vacancy-456",
+    "side": "west",
+    "startDate": {
+      "value": "0456-10-17",
+      "precision": "day",
+      "label": "456年10月17日"
+    },
+    "endDate": {
+      "value": "0457-04-01",
+      "precision": "day",
+      "label": "457年4月1日"
+    },
+    "label": "阿维图斯退位至马约里安获拥立",
+    "note": "西部宫廷空缺；并非全帝国没有皇帝。马约里安的年底确认另见其任期。",
+    "sources": [
+      "bury-10"
+    ]
+  },
+  {
+    "id": "vacancy-465",
+    "side": "west",
+    "startDate": {
+      "value": "0465",
+      "precision": "year",
+      "label": "465年（确月日有争议）"
+    },
+    "endDate": {
+      "value": "0467-04-12",
+      "precision": "day",
+      "label": "467年4月12日"
+    },
+    "label": "塞维鲁斯死后至安提米乌斯即位",
+    "note": "466年全年无另设西部奥古斯都。里西默掌军，利奥一世是帝国仍在位的皇帝。",
+    "sources": [
+      "bury-10",
+      "dir-severus"
+    ]
+  },
+  {
+    "id": "vacancy-472",
+    "side": "west",
+    "startDate": {
+      "value": "0472-11-02",
+      "precision": "day",
+      "label": "472年11月2日"
+    },
+    "endDate": {
+      "value": "0473-03",
+      "precision": "month",
+      "label": "473年3月（3日／5日异说）"
+    },
+    "label": "奥利布里乌斯死后至格利凯里乌斯即位",
+    "note": "意大利军政秩序由贡多巴德等人维持，不能因此给将领增加帝号。",
+    "sources": [
+      "bury-12",
+      "dir-glycerius"
+    ]
+  },
+  {
+    "id": "court-ended-476",
+    "side": "west",
+    "startDate": {
+      "value": "0476-09-04",
+      "precision": "day",
+      "label": "476年9月4日"
+    },
+    "endDate": {
+      "value": "0476-12-31",
+      "precision": "day",
+      "label": "476年12月31日"
+    },
+    "label": "9月4日后不再设置意大利西部皇帝宫廷",
+    "note": "奥多亚克以王与意大利统治者的身份执政；达尔马提亚的尼波斯仍保有获芝诺承认的西帝号。12月31日仅是本卷年度终点。",
+    "sources": [
+      "bury-12",
+      "dir-romulus",
+      "dir-zeno"
+    ]
+  },
+  {
+    "id": "vacancy-455",
+    "side": "west",
+    "startDate": {
+      "value": "0455-05-31",
+      "precision": "day",
+      "label": "455年5月31日"
+    },
+    "endDate": {
+      "value": "0455-07-09",
+      "precision": "day",
+      "label": "455年7月9日"
+    },
+    "label": "马克西穆斯死后至阿维图斯称帝",
+    "note": "本年度仍列前后继任者；此处单独注明中间没有西部宫廷皇帝的阶段。",
+    "sources": [
+      "bury-10"
+    ]
+  },
+  {
+    "id": "vacancy-461",
+    "side": "west",
+    "startDate": {
+      "value": "0461-08-02",
+      "precision": "day",
+      "label": "461年8月2日"
+    },
+    "endDate": {
+      "value": "0461-11-19",
+      "precision": "day",
+      "label": "461年11月19日"
+    },
+    "label": "马约里安被废后至塞维鲁斯获立",
+    "note": "里西默掌军，但本阶段没有另设西部奥古斯都。",
+    "sources": [
+      "bury-10",
+      "dir-severus"
+    ]
+  },
+  {
+    "id": "italy-gap-475",
+    "side": "west",
+    "startDate": {
+      "value": "0475-08-28",
+      "precision": "day",
+      "label": "475年8月28日"
+    },
+    "endDate": {
+      "value": "0475-10-31",
+      "precision": "day",
+      "label": "475年10月31日"
+    },
+    "label": "尼波斯离开意大利至罗慕路斯获立",
+    "note": "仅意大利宫廷暂未立新帝；尼波斯在达尔马提亚仍有西帝号，不是全西部法统消失。",
+    "sources": [
+      "bury-12",
+      "dir-romulus"
+    ]
+  },
+  {
+    "id": "east-gap-450",
+    "side": "east",
+    "startDate": {
+      "value": "0450-07-28",
+      "precision": "day",
+      "label": "450年7月28日"
+    },
+    "endDate": {
+      "value": "0450-08-25",
+      "precision": "day",
+      "label": "450年8月25日"
+    },
+    "label": "狄奥多西二世死后至马尔基安获立",
+    "note": "东部宫廷继承间隔；此时西帝瓦伦提尼安三世仍在位。",
+    "sources": [
+      "bury-7"
+    ]
+  },
+  {
+    "id": "east-gap-457",
+    "side": "east",
+    "startDate": {
+      "value": "0457-01-27",
+      "precision": "day",
+      "label": "457年1月27日"
+    },
+    "endDate": {
+      "value": "0457-02-07",
+      "precision": "day",
+      "label": "457年2月7日"
+    },
+    "label": "马尔基安死后至利奥一世获立",
+    "note": "东部宫廷的短暂继承间隔；主栏两帝为先后在位。",
+    "sources": [
+      "bury-10",
+      "dir-leo"
+    ]
+  }
+]
