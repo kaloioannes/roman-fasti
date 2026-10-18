@@ -74,5 +74,5 @@ assert.ok(data.method.length>=6);
 // Annual/year headings must not disguise undated traditions as attested annual facts.
 const app=fs.readFileSync(path.join(root,'site/kingdom/app.js'),'utf8');
 assert.match(app,/任期内事迹 · 未定年/);
-assert.match(app,/\.\.\/republic\/#year=509/);
+assert.match(app,/FastiPeriods.mount\('kingdom',y\)/);
 console.log('Kingdom verified: 245 years, 7 traditional kings + undated co-king, interregnum, 10 dated nodes, 36 separate traditions, references and place caveats.');
