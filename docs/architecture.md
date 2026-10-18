@@ -84,6 +84,8 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 
 ## 统一分卷导航与兼容层
 
+`site/search/` 提供统一检索及带符号纪年入口，`scripts/build_search.py` 以适配层投影五卷文字和剧本到 `data/search/index.json`，不迁移源 schema。发布构建自动重建并生成指纹；检索只载入这一份文字索引。各卷路由完成后调用 `shared/search-target.js` 处理可选的条目定位提示，共和国仍使用正数BC路由。别名表与覆盖／浏览器回归纳入CI；完整范围和 locator 的稳定性约束见 [全站检索](search.md)。
+
 `project.json` 是分卷顺序、名称和边界的唯一配置。`build_site.py` 用 `catalog-card.html.template` 生成首页五卷入口，并替换各篇的 `period-footer` 标记，生成前一卷／全部时期／后一卷。首页无需运行时请求即可使用。卷面建筑线稿存于 `shared/assets/periods.svg`。
 
 `shared/periods.js` 读取同一份带指纹的清单，为年度页的 `data-period-boundary` 插槽填入边界链接；共和国传入负数历史年份，输出其路由时转回正数 BC 键。内部年度不显示跨卷链接，最早和最晚边界不循环；异步返回时检查年份令牌与插槽连接状态，避免快速换年后出现旧链接。

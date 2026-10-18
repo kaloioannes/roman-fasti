@@ -36,3 +36,12 @@
 @media(max-width:760px){.catalog-cover{grid-template-columns:1fr}.cover-copy{padding:15px 0 35px}.catalog h1{font-size:clamp(32px,6vw,46px)}.cover-art{display:none}.cover-colophon{margin-top:10px;font-size:8px;letter-spacing:.4px}.period-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.period-card,.period-card[data-period=divided-empire],.period-card[data-period=byzantine]{grid-column:span 1}.period-card:last-child{grid-column:1/-1}.catalog-section-heading{display:block}.catalog-section-heading>p{margin-top:14px}.era-ribbon span{font-size:20px}.era-ribbon small{display:block;font-size:8px}.era-ribbon a{font-size:9px}.volume-section{padding-top:36px}.catalog h2{font-size:27px}}
 @media(max-width:520px){.catalog{padding:0 22px}.catalog-cover{padding-top:28px}.catalog h1{font-size:34px;letter-spacing:0}.cover-copy{padding-bottom:28px}.catalog-intro{font-size:11px}.cover-link{margin-top:28px}.cover-colophon{flex-wrap:wrap}.period-grid{grid-template-columns:1fr;gap:20px}.period-card,.period-card:last-child{grid-column:1}.volume-top{margin:21px 24px 0}.volume-art{margin:17px 24px 0;height:155px}.volume-art svg{height:135px}.volume-copy{padding:22px 24px}.period-card h3{font-size:27px}.period-action{margin-inline:24px}.volume-top .eyebrow{font-size:9px}.catalog-afterword{grid-template-columns:1fr;gap:16px;margin-top:30px}.catalog-afterword>a{grid-column:1}.catalog-afterword p{font-size:14px}.catalog-page .site-header{height:90px}.catalog-page .header-actions{gap:12px}.catalog-page .home-footer{padding-inline:22px;letter-spacing:.5px}}
 @media(prefers-reduced-motion:reduce){.period-card{transition:none}.period-card:hover{transform:none}.cover-link:hover span{transform:none}}
+
+.catalog-search{padding:38px 0;border-bottom:1px solid var(--line)}
+.catalog-search h2{font:400 27px/1.7 var(--serif);margin:10px 0 20px}
+.catalog-search form{display:flex;border:1px solid var(--line);background:var(--surface);padding:8px;border-radius:6px;max-width:760px;gap:8px}
+.catalog-search input{min-width:0;flex:1;background:none;border:0;padding:12px;font-size:15px}
+.catalog-search button{flex-shrink:0;background:var(--accent);color:var(--paper);border-radius:4px;padding:12px 20px}
+.catalog-search>p{font-size:12px;line-height:1.9;color:var(--muted);margin-top:12px}
+.catalog-search>p a{color:var(--accent);white-space:nowrap}
+@media(max-width:700px){.catalog-search h2{font-size:23px}.catalog-search form{gap:4px}.catalog-search input{padding:10px 4px;font-size:13px}.catalog-search button{padding:10px;font-size:12px}}

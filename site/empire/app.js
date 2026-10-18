@@ -185,7 +185,7 @@
     } else if (params.has('person')) renderPerson(params.get('person'));
     else if (params.has('people')) renderDirectory();
     else renderInvalid('此地址不在数据库中。年份格式示例：#year=-27 或 #year=395。');
-    window.scrollTo({top:0,behavior:'instant'});
+    window.scrollTo({top:0,behavior:'instant'});FastiSearchTarget.mount();
     main.focus({preventScroll:true});
   }
 
