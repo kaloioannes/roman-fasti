@@ -20,8 +20,10 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
  try{
   browser=await chromium.launch({headless:true,args:['--no-proxy-server'],...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
   const context=await browser.newContext(),page=await context.newPage(),errors=[];
+  await context.route('**/*',route=>new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort());
   // Hash URL changes precede the app's hashchange render, especially in headless CI.
   const waitYear=year=>page.waitForFunction(y=>document.querySelector('.year-top h1')?.firstChild?.textContent.trim()===String(-y),year);
+  const waitMap=()=>page.waitForSelector('.place-map[data-basemap="ready"] .map-land');
   page.on('pageerror',e=>errors.push(e.message));
   page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()}: ${r.url()}`)});
   for(const base of ['/','/roman-republic-fasti/']){
@@ -40,6 +42,12 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    assert.equal(new URL(page.url()).hash,'#year=-753');
    assert.equal(await page.evaluate(()=>document.activeElement.id),'content');
    assert.equal(await page.locator('.year-columns [data-person]').count(),1);
+   await waitMap();
+   const coast=await page.locator('.place-map .map-land').evaluate(e=>({d:e.getAttribute('d'),box:{width:e.getBBox().width,height:e.getBBox().height}}));
+   assert.ok(coast.d.length>100&&!/NaN|Infinity/.test(coast.d),'Coast must have valid projected geometry');
+   assert.ok(coast.box.width>100&&coast.box.width<=600&&coast.box.height>200&&coast.box.height<=361,'Coast must occupy the map viewport');
+   assert.equal(await page.locator('.map-place[data-place="rome"] circle').count(),1);
+   assert.match(await page.locator('#map-description').textContent(),/现代.*不绘制领土边界/);
    assert.match(await page.locator('.year-columns').innerText(),/共治.*未定/);
    await page.locator('#next-year').click();await page.waitForURL(url+'#year=-752');
    await waitYear(-752);
@@ -58,6 +66,13 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
     assert.match(await page.locator('.place-map').textContent(),/不表示疆域/);
    }
    assert.equal(await page.locator('#next-year').isDisabled(),true);
+   // Every annual route must show a real basemap, including interregna and transitions.
+   const records=JSON.parse(await fs.readFile(path.join(root,'data/kingdom/records.json'),'utf8'));
+   for(let year=-753;year<=-509;year++){
+    await page.evaluate(y=>location.hash=`year=${y}`,year);await waitYear(year);await waitMap();
+    const expected=[...new Set(records.years[year].rulers.flatMap(id=>records.people[id].places))].sort();
+    assert.deepEqual(await page.locator('.map-place').evaluateAll(nodes=>nodes.map(n=>n.dataset.place).sort()),expected,`Places ${year}`);
+   }
    await page.locator('a[href="../republic/#year=509"]').click();
    await page.waitForFunction(()=>document.querySelector('#year-number')?.textContent==='509');
    await page.goto(url+'#people');await page.waitForSelector('#person-query');
@@ -86,6 +101,12 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
       await fs.mkdir(process.env.FASTI_OUTPUTS,{recursive:true});
       await page.screenshot({path:path.join(process.env.FASTI_OUTPUTS,`kingdom-${route?'year':'home'}-${width}.png`),fullPage:true});
      }
+     if(route.startsWith('#year=')){
+      await waitMap();
+      const fills=await page.evaluate(()=>['.map-land','.map-ocean'].map(s=>getComputedStyle(document.querySelector('.place-map '+s)).fill));
+      assert.notEqual(fills[0],fills[1],`Land/sea contrast ${width}/${theme}`);
+      if(process.env.FASTI_OUTPUTS&&base==='/'&&[390,1440].includes(width))await page.locator('.place-map').screenshot({path:path.join(process.env.FASTI_OUTPUTS,`kingdom-map-${width}-${theme}.png`),style:'.site-header{visibility:hidden}'});
+     }
     }
    }
    await page.goto(url);await page.waitForSelector('#export-years');
@@ -109,8 +130,26 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
   await failed.goto(url);await failed.waitForSelector('#retry');
   fail=false;await failed.locator('#retry').click();await failed.waitForSelector('[data-event="ancus-accession"]');
   assert.match(await failed.locator('.year-top h1').innerText(),/640/);
+  // A failed basemap must not hide the rulers or places; retry keeps the year.
+  const mapFailure=await context.newPage();let failMap=true;
+  await mapFailure.route('**/land-50m.json',route=>failMap?route.fulfill({status:503,body:'unavailable'}):route.continue());
+  await mapFailure.goto(url);await mapFailure.waitForSelector('.place-map[data-basemap="error"]');
+  assert.ok(await mapFailure.locator('.king-card').count()>0);
+  assert.ok(await mapFailure.locator('.map-place').count()>0);
+  failMap=false;await mapFailure.locator('.map-status button').click();
+  await mapFailure.waitForSelector('.place-map[data-basemap="ready"] .map-land');
+  assert.equal(new URL(mapFailure.url()).hash,'#year=-640');
+  // Navigate away during a slow map request, then return before it completes.
+  const slow=await context.newPage();let releaseMap;
+  const gate=new Promise(resolve=>releaseMap=resolve);
+  await slow.route('**/land-50m.json',async route=>{await gate;await route.continue()});
+  await slow.goto(url,{waitUntil:'domcontentloaded'});await slow.waitForSelector('.place-map');
+  await slow.evaluate(()=>location.hash='people');await slow.waitForSelector('#person-query');
+  await slow.evaluate(()=>location.hash='year=-534');await slow.waitForSelector('.place-map');
+  releaseMap();await slow.waitForSelector('.place-map[data-basemap="ready"] .map-land');
+  assert.match(await slow.locator('.year-top h1').innerText(),/534/);
   const noJS=await browser.newContext({javaScriptEnabled:false});const fallback=await noJS.newPage();
   await fallback.goto(url);assert.ok(await fallback.locator('noscript a').isVisible());
-  console.log('Kingdom browser checks passed: root + Pages, transitions, unknown years, people, sources, place diagram, 245-row CSV/JSON, retry, theme and mobile.');
+  console.log('Kingdom browser checks passed: root + Pages, all 245 annual basemaps, transitions, unknown years, people, sources, CSV/JSON, data/map retry, slow navigation, theme and mobile; no external requests.');
  }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve))}
 })().catch(error=>{console.error(error);process.exitCode=1});
