@@ -3,30 +3,29 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FASTI · 罗马历史纪年</title>
-  <meta name="description" content="罗马历史的年度数据库。探索王政国王、共和国执政官与古典帝国皇帝的任期、人物、事件、史料和历史地图。">
+  <meta name="description" content="从前753年的罗马，到1453年的君士坦丁堡。翻开王政、共和国、古典帝国、双帝国与拜占庭五卷纪年，逐年阅读人物、事件与疆域。">
   <meta name="theme-color" content="#f8f6f1">
   <link rel="icon" href="shared/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="shared/ui.css"><link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shared/ui.css"><link rel="stylesheet" href="catalog.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
-  <script src="legacy-routes.js"></script><script defer src="app.js"></script>
+  <script src="shared/legacy-routes.js"></script><script defer src="catalog.js"></script>
 </head>
-<body>
+<body class="catalog-page">
+  <a class="catalog-skip" href="#volumes">跳至五卷纪年</a>
   <header class="site-header"><a class="brand" href="./" aria-label="FASTI 首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马历史纪年</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button" href="https://github.com/kaloioannes/roman-republic-fasti">GitHub ↗</a><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button></nav></header>
   <main class="catalog">
-    <div class="eyebrow">ANNALES · 年份中的罗马</div>
-    <h1>从一座城，<br>读到一个世界。</h1>
-    <p class="catalog-intro">沿着年份，阅读罗马的官员、统治者、人物、事件与疆域。<br>选择一个时期，翻开它的档案。</p>
-    <h2 id="published-heading">已开放的纪年</h2>
-    <div id="available-periods" class="period-grid" aria-labelledby="published-heading">
-      <a class="period-card" href="kingdom/"><span class="eyebrow">前753—前509年</span><h3>王政时代</h3><p>245个年度，传统七王与共治者、王位空缺、记事与史料。</p><span class="period-action">打开王政篇 ↗</span></a>
-      <a class="period-card" href="republic/"><span class="eyebrow">前509—前27年</span><h3>罗马共和国</h3><p>执政官与其他官职、人物、事件、疆域与十个历史剧本。</p><span class="period-action">打开共和国篇 ↗</span></a>
-      <a class="period-card" href="empire/"><span class="eyebrow">前27—公元395年</span><h3>古典罗马帝国</h3><p>皇帝、共治者、区域政权与争位者的任期、传记及史料。</p><span class="period-action">打开帝国篇 ↗</span></a>
-      <a class="period-card" href="divided-empire/"><span class="eyebrow">公元395—476年</span><h3>双帝国时期</h3><p>82个年度，两座宫廷对读，皇帝、争位者、记事与逐条史料。</p><span class="period-action">打开双帝国篇 ↗</span></a>
-      <a class="period-card" href="byzantine/"><span class="eyebrow">公元476—1453年</span><h3>拜占庭时期</h3><p>皇帝与共治者的希腊文姓名、逐年记事、生于紫室及并立政权地图。</p><span class="period-action">打开拜占庭篇 ↗</span></a>
-    </div>
-    <section hidden class="planned-section" aria-labelledby="planned-heading"><h2 id="planned-heading">后续规划</h2><p>以下时期尚未开放。年份为本项目的分卷边界。</p><ul id="planned-periods"></ul></section>
-    <p id="catalog-status" role="status"></p>
+    <section class="catalog-cover" aria-labelledby="cover-title">
+      <div class="cover-copy"><p class="eyebrow">AB VRBE CONDITA · 自建城以来</p><h1 id="cover-title">一座城的名字，<br>两千年的<span>回声。</span></h1><p class="catalog-intro">从台伯河畔，到博斯普鲁斯海峡。<br>沿着每一年，读罗马的统治者、疆域与命运。</p><a class="cover-link" href="#volumes">翻开五卷纪年 <span aria-hidden="true">↓</span></a></div>
+      <div class="cover-art" aria-hidden="true"><div class="arch arch-outer"></div><div class="arch arch-middle"></div><div class="arch arch-inner"></div><span class="arch-star">✧</span><span class="arch-word">FASTI</span><span class="arch-translation">时间流过，名字留下。</span><div class="arch-route"><span>ROMA</span><i></i><span>CONSTANTINOPOLIS</span></div><span class="arch-date">753 BC — AD 1453</span></div>
+      <div class="cover-colophon"><span>人物 · 事件 · 史料 · 地图</span><span>中文 / LATINA / ΕΛΛΗΝΙΚΑ</span></div>
+    </section>
+    <section class="volume-section" id="volumes" aria-labelledby="published-heading">
+      <div class="catalog-section-heading"><div><p class="eyebrow">CORPVS · 五卷相续</p><h2 id="published-heading">罗马，未完的长卷</h2></div><p>选择一个时代，走进它的某一年。</p></div>
+      <nav class="era-ribbon" aria-label="年代索引"><!-- era-dates --></nav>
+      <div id="available-periods" class="period-grid" aria-labelledby="published-heading"><!-- period-cards --></div>
+    </section>
+    <aside class="catalog-afterword"><span class="eyebrow">LEGERE · 如何开始</span><p>可以从一位熟悉的人物开始，也可以只选一个年份。<br>每一卷，都通向下一段罗马。</p><a href="kingdom/#year=-753">从前753年开始 →</a></aside>
   </main>
-  <footer class="home-footer"><span>FASTI · 罗马历史纪年</span><a href="DATA_LICENSE.md">数据许可与署名 ↗</a></footer>
+  <footer class="home-footer"><span>FASTI · 罗马历史纪年</span><span class="footer-motto">NOMINA MANENT</span><a href="DATA_LICENSE.md">数据许可与署名 ↗</a></footer>
 </body>
 </html>

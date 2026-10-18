@@ -134,7 +134,7 @@ const mime = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/j
       await page.goto(url+hash); await page.waitForSelector('.empty-state[role=alert]');
       assert.equal(await page.locator('.ruler-card').count(),0);
     }
-    for (const name of ['shared/ui.css','empire/style.css','empire/app.js','data/empire/records.json','data/empire/territories.json']) {
+    for (const name of ['shared/ui.css','shared/imperial.css','empire/app.js','data/empire/records.json','data/empire/territories.json']) {
       assert.ok(requests.has(base+manifest[name]),`No fingerprinted request: ${name}`);
       assert.ok(!requests.has(base+name),`Unversioned request: ${name}`);
     }

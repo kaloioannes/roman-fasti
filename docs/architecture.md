@@ -16,13 +16,13 @@ site/<period>/ + site/shared/ + project.json ───┴──> build_site.py �
 
 `data-source/` 是史料编辑入口；`data/` 是已提交的网页数据产物；`site/` 是静态网页源码；`_site/` 是可独立部署的产物。构建不抓取网络资料。`scripts/` 统一放置命令行工具，保留已有脚本名，外部调用无需再迁移一层。
 
-`site/shared/ui.css` 是各篇共同使用的既有视觉组件集，包括主题、导航、地图、卡片与阅读组件。第三方库、字体及公共底图集中于 `site/shared/assets/`。古典帝国独有的布局放在 `site/empire/style.css`；新增时期的专用样式也放在自己的目录中。每篇的 `app.js` 与 `index.html` 同目录，经典脚本中的 fetch 地址按页面 URL 解析。
+`site/shared/ui.css` 是各篇共同使用的既有视觉组件集，包括主题、导航、地图、卡片与阅读组件。第三方库、字体及公共底图集中于 `site/shared/assets/`。古典帝国与拜占庭共用的布局放在 `site/shared/imperial.css`；拜占庭仅在自己的 `style.css` 维护紫色主题、紫室证据和地图分色。其他时期的专用样式放在自己的目录中。每篇的 `app.js` 与 `index.html` 同目录，经典脚本中的 fetch 地址按页面 URL 解析。
 
 共和国与帝国有不同的官职、任期与人物模型。目录一致不意味着强制使用同一 schema。数据构建和校验仍分别负责各自的史学语义。
 
 ## 时期、年份和身份
 
-- `project.json` 定义稳定的时期 ID、标题、展示范围、历史年份端点和发布状态。`available` 要求完整页面与数据；`planned` 仅为规划说明，不产生空数据库或链接。
+- `project.json` 定义稳定的时期 ID、标题、展示范围、历史年份端点和发布状态。`available` 要求完整页面与数据；`planned` 不进入已发布卷卡和阶段导航。
 - 清单中的历史年份使用负数表示公元前、正数表示公元后，无公元0年。分卷端点包含在内，因此前509、前27、395和476等交界年份允许重叠；跨时期查询不得简单相加作为唯一年度数。
 - 共和国篇保留原来的正数 BC 键与路由，如 `years[44]`、`#year=44` 表示前44年；帝国篇的 `years[-27]`、`#year=-27` 表示前27年。任何跨时期工具必须显式转换共和国年份，不能直接合并两个 `years` 对象。
 - 人物 ID 只在本篇内唯一；跨时期引用使用 `(periodId, personId)`。对跨前27年或395年的同一人物，未来可增加有来源的身份映射，不能仅按姓名自动合并。
@@ -58,7 +58,7 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 3. 编写离线且可重复的数据构建脚本，输出 `data/<id>/records.json`，地图与其他资料也放在该目录。提交源文件及生成文件。
 4. 建立 `site/<id>/index.html`、`app.js` 及按需的 `style.css`。共用 `../shared/`，读取 `../data/<id>/`，保留返回总入口的 `href="../"`。
 5. 添加对应数据校验，并接入 `npm run validate`、PR 重建一致性检查和浏览器回归。至少测试边界年份、人物直链、失败重试、地图及手机布局。
-6. 完成研究与验证后，将清单状态改为 `available`，同步首页无脚本回退入口、README 的范围与统计。构建器会发现新模块并处理指纹资源。
+6. 完成研究与验证后，将清单状态改为 `available`，补齐 `latin`、`caption` 等卷面文字并同步 README 的范围与统计；首页卷卡及页脚会从清单自动生成。构建器会发现新模块并处理指纹资源。
 
 ## 验证责任
 
@@ -78,3 +78,11 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 ## 双帝国分卷
 
 `build_divided_empire.py`离线编译文字与据点；`build_divided_empire_map.py`用Shapely处理固定版本Cliopatria东西部图层。年度页用双栏对读，手机纵向排列；历史承认不由GIS推断。`validate-divided-empire.mjs`与`test-divided-empire.cjs`覆盖数据语义、全部82年、33份档案、源定位、下载、独立失败恢复、两种部署路径与手机明暗主题。研究说明和逐年出处矩阵在`data-source/divided-empire/RESEARCH.md`。
+
+## 统一分卷导航与兼容层
+
+`project.json` 是分卷顺序、名称和边界的唯一配置。`build_site.py` 用 `catalog-card.html.template` 生成首页五卷入口，并替换各篇的 `period-footer` 标记，生成前一卷／全部时期／后一卷。首页无需运行时请求即可使用。卷面建筑线稿存于 `shared/assets/periods.svg`。
+
+`shared/periods.js` 读取同一份带指纹的清单，为年度页的 `data-period-boundary` 插槽填入边界链接；共和国传入负数历史年份，输出其路由时转回正数 BC 键。内部年度不显示跨卷链接，最早和最晚边界不循环；异步返回时检查年份令牌与插槽连接状态，避免快速换年后出现旧链接。
+
+`site/catalog.css`、`site/catalog.js` 仅负责总入口。`shared/legacy-routes.js` 和极小的 `emperors.html` 是公开旧书签的兼容层；后者只跳转并保留查询参数与 hash，不再承载任何帝国界面或重复逻辑。三个帝国篇的通用年度阅读说明放入“史料与方法”的折叠项，年度滑杆直接接正文或边界链接。
