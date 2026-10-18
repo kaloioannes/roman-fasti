@@ -1,0 +1,287 @@
+{
+  "leonid": {
+    "label": "利奥皇室",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-basiliscus",
+      "wiki-marcus",
+      "wiki-zeno"
+    ]
+  },
+  "unaffiliated": {
+    "label": "无明确王朝归属",
+    "kind": "none",
+    "note": "未采用固定皇室归组，不表示没有家庭或政治盟友。",
+    "sources": [
+      "wiki-anastasios-ii",
+      "wiki-anastasius-i",
+      "wiki-artabasdos",
+      "wiki-constantine-symbatios",
+      "wiki-george-maniakes",
+      "wiki-leo-tornikios",
+      "wiki-leo-v",
+      "wiki-leontios",
+      "wiki-maurice",
+      "wiki-michael-vi",
+      "wiki-nikephoros-artabasdos",
+      "wiki-philippikos",
+      "wiki-phocas",
+      "wiki-theodosios-iii",
+      "wiki-theodosios-son-maurice",
+      "wiki-thomas-slav",
+      "wiki-tiberius-ii",
+      "wiki-tiberius-iii"
+    ]
+  },
+  "justinian": {
+    "label": "查士丁尼王朝",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-justin-i",
+      "wiki-justin-ii",
+      "wiki-justinian-i"
+    ]
+  },
+  "heraclian": {
+    "label": "希拉克略王朝",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-constans-ii",
+      "wiki-constantine-iii",
+      "wiki-constantine-iv",
+      "wiki-heraclius",
+      "wiki-heraclius-son-constans",
+      "wiki-heraklonas",
+      "wiki-justinian-ii",
+      "wiki-tiberius-david",
+      "wiki-tiberius-son-constans",
+      "wiki-tiberius-son-justinian"
+    ]
+  },
+  "isaurian": {
+    "label": "伊苏里亚王朝",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-constantine-v",
+      "wiki-constantine-vi",
+      "wiki-irene",
+      "wiki-leo-iii",
+      "wiki-leo-iv"
+    ]
+  },
+  "nikephorian": {
+    "label": "尼基弗鲁斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-michael-i",
+      "wiki-nikephoros-i",
+      "wiki-staurakios",
+      "wiki-theophylact"
+    ]
+  },
+  "amorian": {
+    "label": "阿莫里亚王朝",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-constantine-theophilos",
+      "wiki-michael-ii",
+      "wiki-michael-iii",
+      "wiki-theophilos"
+    ]
+  },
+  "macedonian": {
+    "label": "马其顿王朝",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-alexander",
+      "wiki-basil-i",
+      "wiki-basil-ii",
+      "wiki-constantine-basil",
+      "wiki-constantine-vii",
+      "wiki-constantine-viii",
+      "wiki-leo-vi",
+      "wiki-romanos-ii",
+      "wiki-theodora",
+      "wiki-zoe"
+    ]
+  },
+  "lekapenos": {
+    "label": "勒卡佩诺斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-christopher",
+      "wiki-constantine-lekapenos",
+      "wiki-romanos-i",
+      "wiki-stephen-lekapenos"
+    ]
+  },
+  "phokas": {
+    "label": "福卡斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-bardas-phokas",
+      "wiki-nikephoros-ii"
+    ]
+  },
+  "kourkouas": {
+    "label": "库尔库阿斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-john-i"
+    ]
+  },
+  "argyros": {
+    "label": "阿尔吉罗斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-romanos-iii"
+    ]
+  },
+  "paphlagonian": {
+    "label": "帕夫拉戈尼亚家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-michael-iv",
+      "wiki-michael-v"
+    ]
+  },
+  "monomachos": {
+    "label": "莫诺马霍斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-constantine-ix"
+    ]
+  },
+  "komnenos": {
+    "label": "科穆宁家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-alexios-i",
+      "wiki-alexios-ii",
+      "wiki-alexios-john-ii",
+      "wiki-andronikos-i",
+      "wiki-isaac-cyprus",
+      "wiki-isaac-i",
+      "wiki-john-andronikos",
+      "wiki-john-ii",
+      "wiki-manuel-i"
+    ]
+  },
+  "doukas": {
+    "label": "杜卡斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-alexios-v",
+      "wiki-andronikos-doukas",
+      "wiki-constantine-doukas",
+      "wiki-constantine-x",
+      "wiki-evdokia",
+      "wiki-konstantios-doukas",
+      "wiki-michael-vii"
+    ]
+  },
+  "diogenes": {
+    "label": "第欧根尼家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-romanos-iv"
+    ]
+  },
+  "botaneiates": {
+    "label": "博塔尼亚特斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-nikephoros-iii"
+    ]
+  },
+  "angelos": {
+    "label": "安格洛斯王朝",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-alexios-iii",
+      "wiki-alexios-iv",
+      "wiki-isaac-ii"
+    ]
+  },
+  "laskaris": {
+    "label": "拉斯卡里斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-john-iv",
+      "wiki-theodore-i",
+      "wiki-theodore-ii"
+    ]
+  },
+  "vatatzes": {
+    "label": "瓦塔齐斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-john-iii"
+    ]
+  },
+  "palaiologos": {
+    "label": "巴列奥略王朝",
+    "kind": "dynasty",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-andronikos-ii",
+      "wiki-andronikos-iii",
+      "wiki-andronikos-iv",
+      "wiki-andronikos-v",
+      "wiki-constantine-xi",
+      "wiki-john-v",
+      "wiki-john-vii",
+      "wiki-john-viii",
+      "wiki-manuel-ii",
+      "wiki-michael-ix",
+      "wiki-michael-viii"
+    ]
+  },
+  "kantakouzenos": {
+    "label": "坎塔库泽诺斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-john-vi",
+      "wiki-matthew"
+    ]
+  },
+  "skleros": {
+    "label": "斯克莱罗斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-bardas-skleros"
+    ]
+  },
+  "komnenos-doukas": {
+    "label": "科穆宁·杜卡斯家族",
+    "kind": "family",
+    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "sources": [
+      "wiki-john-thessalonica",
+      "wiki-manuel-thessalonica",
+      "wiki-theodore-thessalonica"
+    ]
+  }
+}

@@ -4,15 +4,16 @@
   "private": true,
   "description": "FASTI · 罗马历史纪年：按时期组织的官员、统治者、人物、事件与历史地图。",
   "scripts": {
-    "validate": "node scripts/validate.mjs && node scripts/validate-empire.mjs && node scripts/validate-kingdom.mjs && npm run validate:structure",
+    "validate": "node scripts/validate.mjs && node scripts/validate-empire.mjs && node scripts/validate-kingdom.mjs && node scripts/validate-byzantine.mjs && npm run validate:structure",
     "test:ui": "node scripts/test-ui.cjs",
-    "test:release": "node scripts/test-release.cjs && node scripts/test-imperial.cjs && node scripts/test-kingdom.cjs && npm run test:routes",
+    "test:release": "node scripts/test-release.cjs && node scripts/test-imperial.cjs && node scripts/test-kingdom.cjs && node scripts/test-byzantine.cjs && npm run test:routes",
     "test:kingdom": "node scripts/test-kingdom.cjs",
     "test:imperial": "node scripts/test-imperial.cjs",
     "build": "python scripts/build_site.py",
     "validate:release": "node scripts/validate-release.mjs",
     "validate:structure": "node scripts/validate-structure.mjs",
-    "test:routes": "node scripts/test-routes.cjs"
+    "test:routes": "node scripts/test-routes.cjs",
+    "test:byzantine": "node scripts/test-byzantine.cjs"
   },
   "license": "MIT",
   "repository": {

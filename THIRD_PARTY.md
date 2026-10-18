@@ -31,3 +31,10 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 ## Historical data
 
 See [DATA_LICENSE.md](DATA_LICENSE.md) for Wikipedia contributors, ancient texts, the Attalus index and Cliopatria/Seshat attribution. Website source code has the separate [MIT license](LICENSE).
+
+
+## Byzantine references and maps
+
+The Byzantine volume's 139-feature source subset and 141-layer derivative use the same Cliopatria v0.2.0 CC BY 4.0 source, Natural Earth coastline and D3/TopoJSON libraries described above. Five original polity labels map to four display colours; alliance and Holy Roman Empire features are excluded. Original attributes, two marked 1402–1406 approximations and final-period limitations are documented in [the Byzantine research notes](data-source/byzantine/RESEARCH.md). No new third-party fonts, images or runtime libraries are bundled.
+
+Historical reference URLs, author/edition descriptions and evidence limits are in `data-source/byzantine/sources.json`. The repository redistributes original Chinese summaries, not complete scholarly articles, translated books or museum photographs.

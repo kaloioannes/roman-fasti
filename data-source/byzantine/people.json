@@ -1,0 +1,3848 @@
+[
+  {
+    "id": "basiliscus",
+    "zh": "巴西利斯库斯",
+    "greek": "Βασιλίσκος",
+    "aliases": "Basiliscus",
+    "dynasty": "leonid",
+    "era": "利奥皇室",
+    "dynastyNote": "",
+    "bio": [
+      "利奥一世皇后维里娜的兄弟，曾在468年北非远征中失败。475年趁芝诺离开首都夺取帝位。",
+      "宗教通谕反对迦克墩会议，引起首都教会反弹；军政支持也逐渐流失。",
+      "476年芝诺回到君士坦丁堡后，他与家人被流放并死于囚禁。其统治不属于西部帝位的延续。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-basiliscus"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 475,
+        "end": 476,
+        "kind": "central",
+        "tenure": "475—476年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "利奥一世皇后维里娜的兄弟，曾在468年北非远征中失败。475年趁芝诺离开首都夺取帝位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "zeno",
+    "zh": "芝诺",
+    "greek": "Ζήνων",
+    "aliases": "Zeno (emperor) Zeno Tarasis",
+    "dynasty": "leonid",
+    "era": "利奥皇室",
+    "dynastyNote": "",
+    "bio": [
+      "本名塔拉西斯，出身伊苏里亚，因与利奥一世之女阿里阿德涅结婚进入皇室。474年取得帝号，次年一度被逐。",
+      "476年复位时西部宫廷正走向终结；他继续处理意大利、哥特军队与东方教义分歧，482年颁布《合一诏书》。",
+      "488年支持狄奥多里克进军意大利。491年去世后，皇位由阿里阿德涅选择的阿纳斯塔修斯继承。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-zeno"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 474,
+        "end": 475,
+        "kind": "central",
+        "tenure": "474—475年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "本名塔拉西斯，出身伊苏里亚，因与利奥一世之女阿里阿德涅结婚进入皇室。474年取得帝号，次年一度被逐。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 476,
+        "end": 491,
+        "kind": "central",
+        "tenure": "476—491年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "本名塔拉西斯，出身伊苏里亚，因与利奥一世之女阿里阿德涅结婚进入皇室。474年取得帝号，次年一度被逐。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "anastasius-i",
+    "zh": "阿纳斯塔修斯一世",
+    "greek": "Ἀναστάσιος Αʹ",
+    "aliases": "Anastasius I Dicorus Anastasius",
+    "dynasty": "unaffiliated",
+    "era": "晚期古代与再征服",
+    "dynastyNote": "",
+    "bio": [
+      "原为宫廷侍从，491年经阿里阿德涅与首都政治集团选择登基，并与她成婚。",
+      "整顿税制，498年改革铜币；对波斯战争及维塔利安叛乱说明财政积累并不消除军事和宗教压力。",
+      "518年去世时未留下亲生继承人。其支持的基督论立场与首都迦克墩派的冲突，是评价本朝的重要背景。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-anastasius-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 491,
+        "end": 518,
+        "kind": "central",
+        "tenure": "491—518年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "原为宫廷侍从，491年经阿里阿德涅与首都政治集团选择登基，并与她成婚。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "justin-i",
+    "zh": "查士丁一世",
+    "greek": "Ἰουστῖνος Αʹ",
+    "aliases": "Justin I Iustinus",
+    "dynasty": "justinian",
+    "era": "晚期古代与再征服",
+    "dynastyNote": "",
+    "bio": [
+      "出身巴尔干，长期服役后升任宫廷近卫军长官。阿纳斯塔修斯去世后，518年的继位竞争使他取得皇位。",
+      "恢复与罗马教会共融，并使侄子查士丁尼进入决策核心；526年安条克大地震发生于其晚年。",
+      "527年先立侄子为共帝，同年去世。不能把侄子的整个统治期提前算作他的个人施政。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-justin-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 518,
+        "end": 527,
+        "kind": "central",
+        "tenure": "518—527年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "出身巴尔干，长期服役后升任宫廷近卫军长官。阿纳斯塔修斯去世后，518年的继位竞争使他取得皇位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "justinian-i",
+    "zh": "查士丁尼一世",
+    "greek": "Ἰουστινιανός Αʹ",
+    "aliases": "Justinian I Iustinianus",
+    "dynasty": "justinian",
+    "era": "晚期古代与再征服",
+    "dynastyNote": "",
+    "bio": [
+      "查士丁一世的侄子，527年先为共帝，叔父去世后独掌皇权；狄奥多拉是重要政治伙伴。",
+      "组织法典编纂，镇压尼卡暴动并重建圣索菲亚；贝利撒留与纳尔塞斯的远征使北非和意大利重归帝国。",
+      "长期战争、瘟疫与财政压力伴随领土扩张。565年去世；其法学和建筑遗产不应掩盖战争造成的人口与资源损耗。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-justinian-i",
+      "procopius-persian"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 527,
+        "end": 565,
+        "kind": "central",
+        "tenure": "527—565年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "527年4月获共帝称号，8月查士丁一世去世后独掌皇权。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "justin-ii",
+    "zh": "查士丁二世",
+    "greek": "Ἰουστῖνος Βʹ",
+    "aliases": "Justin II Iustinus",
+    "dynasty": "justinian",
+    "era": "晚期古代与再征服",
+    "dynastyNote": "",
+    "bio": [
+      "查士丁尼的外甥，565年继位，皇后索菲娅在宫廷具有显著影响。",
+      "拒绝继续向波斯支付旧有款项，东方战事重启；意大利同时遭伦巴第人侵入。",
+      "精神健康恶化后，574年提拔提比略为恺撒并交付实际治理。578年去世前提比略获帝号；摄政阶段与正式帝号分开记录。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-justin-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 565,
+        "end": 578,
+        "kind": "central",
+        "tenure": "565—578年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "查士丁尼的外甥，565年继位，皇后索菲娅在宫廷具有显著影响。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "tiberius-ii",
+    "zh": "提比略二世",
+    "greek": "Τιβέριος Βʹ Κωνσταντῖνος",
+    "aliases": "Tiberius II Constantine",
+    "dynasty": "unaffiliated",
+    "era": "晚期古代与再征服",
+    "dynastyNote": "",
+    "bio": [
+      "原为近卫军军官，574年被查士丁二世收养、立为恺撒，承担摄政事务。",
+      "578年升为奥古斯都。其统治继续应付波斯战争和巴尔干防务，慷慨支出也影响国库。",
+      "582年临终选择将领莫里斯为继承者，并以婚姻维系交接。574年开始的实际执政不等于当时已获皇帝称号。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-tiberius-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 578,
+        "end": 582,
+        "kind": "central",
+        "tenure": "578—582年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "原为近卫军军官，574年被查士丁二世收养、立为恺撒，承担摄政事务。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "maurice",
+    "zh": "莫里斯",
+    "greek": "Μαυρίκιος",
+    "aliases": "Maurice (emperor) Mauricius",
+    "dynasty": "unaffiliated",
+    "era": "晚期古代与再征服",
+    "dynastyNote": "",
+    "bio": [
+      "来自卡帕多西亚的军人，在东方战争中崛起，582年继承提比略二世并娶其女。",
+      "591年援助霍斯劳二世复位，换得有利边境安排；随后把更多兵力用于多瑙河战线，并立子狄奥多西为共帝。",
+      "602年军队拒绝在多瑙河以北过冬，引发兵变。莫里斯及诸子遭杀害，长期对波斯战争由此再起。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-maurice"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 582,
+        "end": 602,
+        "kind": "central",
+        "tenure": "582—602年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "来自卡帕多西亚的军人，在东方战争中崛起，582年继承提比略二世并娶其女。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "phocas",
+    "zh": "福卡斯",
+    "greek": "Φωκᾶς",
+    "aliases": "Phocas Focas",
+    "dynasty": "unaffiliated",
+    "era": "晚期古代与再征服",
+    "dynastyNote": "",
+    "bio": [
+      "巴尔干军队兵变把这位低级军官推上皇位，602年莫里斯家族被杀。",
+      "其统治遭遇波斯进攻、首都派系斗争和地方反抗；反对者的记述塑造了极为负面的形象。",
+      "非洲总督家族的叛乱最终成功，610年希拉克略入都，福卡斯被处死。暴君叙事需要与政权更替的立场一并阅读。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-phocas"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 602,
+        "end": 610,
+        "kind": "central",
+        "tenure": "602—610年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "巴尔干军队兵变把这位低级军官推上皇位，602年莫里斯家族被杀。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "heraclius",
+    "zh": "希拉克略",
+    "greek": "Ἡράκλειος",
+    "aliases": "Heraclius Heraclius",
+    "dynasty": "heraclian",
+    "era": "希拉克略皇室",
+    "dynastyNote": "",
+    "bio": [
+      "非洲总督之子，率舰队反对福卡斯，610年在君士坦丁堡即位。",
+      "面对波斯占领叙利亚、埃及和圣地，重组反攻，627年在尼尼微附近获胜；随后战争以波斯撤军告终。",
+      "阿拉伯征服却在其晚年夺走东方大片领土。希腊文皇号的使用不意味着某一天突然废除全部拉丁传统。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-heraclius"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 610,
+        "end": 641,
+        "kind": "central",
+        "tenure": "610—641年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "非洲总督之子，率舰队反对福卡斯，610年在君士坦丁堡即位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "constantine-iii",
+    "zh": "君士坦丁三世",
+    "greek": "Ἡράκλειος Κωνσταντῖνος",
+    "aliases": "Constantine III (Byzantine emperor)",
+    "dynasty": "heraclian",
+    "era": "希拉克略皇室",
+    "dynastyNote": "",
+    "bio": [
+      "希拉克略与第一任妻子欧多基娅之子，613年已被立为共帝。",
+      "641年父亲去世后，与异母弟希拉克洛纳斯共享皇位；宫廷围绕两房子嗣与军队支持产生冲突。",
+      "同年数月后病逝，死因通常解释为疾病。有关继母玛尔提娜下毒的叙事不能当作已获证实的事实。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 641,
+        "end": 641,
+        "kind": "central",
+        "tenure": "641—641年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "希拉克略与第一任妻子欧多基娅之子，613年已被立为共帝。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 613,
+        "end": 641,
+        "kind": "junior",
+        "tenure": "613—641年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "希拉克略与第一任妻子欧多基娅之子，613年已被立为共帝。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "heraklonas",
+    "zh": "希拉克洛纳斯",
+    "greek": "Ἡρακλωνᾶς",
+    "aliases": "Heraclonas",
+    "dynasty": "heraclian",
+    "era": "希拉克略皇室",
+    "dynastyNote": "",
+    "bio": [
+      "希拉克略与玛尔提娜之子，638年获共帝头衔。641年父亲去世后与君士坦丁三世共同继位。",
+      "兄长去世后，他在母亲影响下统治，军队则要求承认侄子君士坦斯的继承权。",
+      "641年宫廷清洗使其被废黜并遭毁容；废位具体月份存在分歧，因此年度展示不伪造精确交接日。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-heraklonas"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 641,
+        "end": 641,
+        "kind": "central",
+        "tenure": "641—641年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "希拉克略与玛尔提娜之子，638年获共帝头衔。641年父亲去世后与君士坦丁三世共同继位。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 638,
+        "end": 641,
+        "kind": "junior",
+        "tenure": "638—641年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "希拉克略与玛尔提娜之子，638年获共帝头衔。641年父亲去世后与君士坦丁三世共同继位。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "constans-ii",
+    "zh": "君士坦斯二世",
+    "greek": "Κώνστας Βʹ",
+    "aliases": "Constans II",
+    "dynasty": "heraclian",
+    "era": "希拉克略皇室",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁三世之子，641年的继位危机使他成为少年皇帝；正式名亦为君士坦丁。",
+      "统治期间继续面对阿拉伯军队、意大利和巴尔干危机，648年以《信仰敕令》试图限制基督论争辩。",
+      "663年到访罗马，后以叙拉古为驻地，668年遇刺。他迁驻西方并未使君士坦丁堡失去帝国政治地位。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constans-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 641,
+        "end": 668,
+        "kind": "central",
+        "tenure": "641—668年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁三世之子，641年的继位危机使他成为少年皇帝；正式名亦为君士坦丁。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "constantine-iv",
+    "zh": "君士坦丁四世",
+    "greek": "Κωνσταντῖνος Δʹ",
+    "aliases": "Constantine IV",
+    "dynasty": "heraclian",
+    "era": "希拉克略皇室",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦斯二世之子，654年取得共帝称号；668年父亲遇刺后成为主帝。",
+      "应对阿拉伯海陆进攻并召开680—681年的大公会议；同一时期帝国承认保加利亚在巴尔干形成的新权力格局。",
+      "681年前后排除两位弟弟的共帝地位，685年去世。传统674—678年连续围城的叙述在现代研究中有争议。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-iv"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 668,
+        "end": 685,
+        "kind": "central",
+        "tenure": "668—685年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦斯二世之子，654年取得共帝称号；668年父亲遇刺后成为主帝。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 654,
+        "end": 668,
+        "kind": "junior",
+        "tenure": "654—668年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "君士坦斯二世之子，654年取得共帝称号；668年父亲遇刺后成为主帝。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "justinian-ii",
+    "zh": "查士丁尼二世",
+    "greek": "Ἰουστινιανός Βʹ",
+    "aliases": "Justinian II",
+    "dynasty": "heraclian",
+    "era": "希拉克略皇室",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁四世之子，685年继位。实施人口迁徙与财政措施，692年召集特鲁洛会议。681年共帝说在研究中并不一致，此处不据此展开确定共帝任期。",
+      "695年被莱昂提奥斯推翻、割鼻并放逐；705年借保加利亚与外部支持复位，惩治政敌。",
+      "第二次统治在711年叛乱中终结，他与幼子提比略遇害。两段任期之间不能连续展开为在位年度。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-justinian-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 685,
+        "end": 695,
+        "kind": "central",
+        "tenure": "685—695年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁四世之子，685年继位。实施人口迁徙与财政措施，692年召集特鲁洛会议。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 705,
+        "end": 711,
+        "kind": "central",
+        "tenure": "705—711年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁四世之子，685年继位。实施人口迁徙与财政措施，692年召集特鲁洛会议。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "leontios",
+    "zh": "莱昂提奥斯",
+    "greek": "Λεόντιος",
+    "aliases": "Leontius",
+    "dynasty": "unaffiliated",
+    "era": "七世纪末的帝位更迭",
+    "dynastyNote": "",
+    "bio": [
+      "伊苏里亚出身的将领，在695年首都政变中推翻查士丁尼二世。",
+      "其短期统治面对北非战局恶化，迦太基最终失守使舰队不满升级。",
+      "698年阿普西马尔夺位，莱昂提奥斯被废并毁容；705年查士丁尼二世复位后被处死，处决纪年亦有706年说。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-leontios"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 695,
+        "end": 698,
+        "kind": "central",
+        "tenure": "695—698年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "伊苏里亚出身的将领，在695年首都政变中推翻查士丁尼二世。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "tiberius-iii",
+    "zh": "提比略三世",
+    "greek": "Τιβέριος Γʹ",
+    "aliases": "Tiberius III",
+    "dynasty": "unaffiliated",
+    "era": "七世纪末的帝位更迭",
+    "dynastyNote": "",
+    "bio": [
+      "本名阿普西马尔，因北非远征失败后的舰队叛乱，在698年夺取帝位。",
+      "采用提比略为皇号，其军队继续在小亚细亚和叙利亚边境与阿拉伯势力交战。",
+      "705年被复位的查士丁尼二世击败，随后遭处决。其统治不应与六世纪的提比略二世混为一人。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-tiberius-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 698,
+        "end": 705,
+        "kind": "central",
+        "tenure": "698—705年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "本名阿普西马尔，因北非远征失败后的舰队叛乱，在698年夺取帝位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "philippikos",
+    "zh": "菲利皮科斯",
+    "greek": "Φιλιππικός Βαρδάνης",
+    "aliases": "Philippicus",
+    "dynasty": "unaffiliated",
+    "era": "七世纪末的帝位更迭",
+    "dynastyNote": "",
+    "bio": [
+      "本名瓦尔丹，出身亚美尼亚背景，依靠克里米亚方向的叛乱在711年夺位。",
+      "恢复一志论相关立场，与既有教会决议发生冲突，同时应付保加利亚和阿拉伯压力。",
+      "713年被军人推翻并弄瞎；他的宗教政策随后被阿纳斯塔修斯二世逆转。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-philippikos"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 711,
+        "end": 713,
+        "kind": "central",
+        "tenure": "711—713年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "本名瓦尔丹，出身亚美尼亚背景，依靠克里米亚方向的叛乱在711年夺位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "anastasios-ii",
+    "zh": "阿纳斯塔修斯二世",
+    "greek": "Ἀναστάσιος Βʹ",
+    "aliases": "Anastasios II",
+    "dynasty": "unaffiliated",
+    "era": "七世纪末的帝位更迭",
+    "dynastyNote": "",
+    "bio": [
+      "原名阿尔特米奥斯，宫廷文官出身，在713年政变后受推举为皇帝。",
+      "整顿军队并准备首都抵御阿拉伯进攻，但舰队和军区叛乱使其失去权位。",
+      "715年退位为僧，后来试图复辟而失败被杀。复辟行动的年代有718、719等表达，本卷不把它延伸为再次有效统治。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-anastasios-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 713,
+        "end": 715,
+        "kind": "central",
+        "tenure": "713—715年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "原名阿尔特米奥斯，宫廷文官出身，在713年政变后受推举为皇帝。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "theodosios-iii",
+    "zh": "狄奥多西三世",
+    "greek": "Θεοδόσιος Γʹ",
+    "aliases": "Theodosius III",
+    "dynasty": "unaffiliated",
+    "era": "七世纪末的帝位更迭",
+    "dynastyNote": "",
+    "bio": [
+      "原为税务官员，被叛军推举并在715年控制君士坦丁堡。",
+      "其权力基础有限，安纳托利亚将领利奥和阿尔塔瓦兹多斯反对这一政权。",
+      "717年退位，转入宗教生活，首都随后在利奥三世领导下迎来大规模围攻。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-theodosios-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 715,
+        "end": 717,
+        "kind": "central",
+        "tenure": "715—717年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "原为税务官员，被叛军推举并在715年控制君士坦丁堡。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "leo-iii",
+    "zh": "利奥三世",
+    "greek": "Λέων Γʹ",
+    "aliases": "Leo III the Isaurian",
+    "dynasty": "isaurian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "军区将领，717年取得首都和帝位；“伊苏里亚人”是通行称呼，不应据此简化其出身问题。",
+      "在717—718年围城中守住君士坦丁堡，后来以法制调整及圣像政策闻名。",
+      "741年去世，儿子君士坦丁继承。圣像破坏政策的起点、动机与具体实施，不能只依赖后世反对者叙事。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-leo-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 717,
+        "end": 741,
+        "kind": "central",
+        "tenure": "717—741年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "军区将领，717年取得首都和帝位；“伊苏里亚人”是通行称呼，不应据此简化其出身问题。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "constantine-v",
+    "zh": "君士坦丁五世",
+    "greek": "Κωνσταντῖνος Εʹ",
+    "aliases": "Constantine V",
+    "dynasty": "isaurian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "利奥三世之子，720年已获共帝称号，741年父亲去世后继位。",
+      "击败阿尔塔瓦兹多斯的夺位，754年召集希耶里亚会议；对保加利亚和阿拉伯边境展开多次行动。",
+      "775年出征途中去世。后世的侮辱性绰号反映圣像争论立场，不能当作中性的品格结论。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-v"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 741,
+        "end": 775,
+        "kind": "central",
+        "tenure": "741—775年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "利奥三世之子，720年已获共帝称号，741年父亲去世后继位。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 720,
+        "end": 741,
+        "kind": "junior",
+        "tenure": "720—741年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "利奥三世之子，720年已获共帝称号，741年父亲去世后继位。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "leo-iv",
+    "zh": "利奥四世",
+    "greek": "Λέων Δʹ ὁ Χάζαρος",
+    "aliases": "Leo IV the Khazar",
+    "dynasty": "isaurian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁五世与可萨公主之子，751年获共帝称号，775年成为主帝。",
+      "统治期间延续对阿拉伯战事，圣像政策较其父复杂，不宜仅以家族立场概括。",
+      "780年去世，幼子君士坦丁六世继位，皇后伊琳娜担任摄政。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-leo-iv"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 775,
+        "end": 780,
+        "kind": "central",
+        "tenure": "775—780年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁五世与可萨公主之子，751年获共帝称号，775年成为主帝。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 751,
+        "end": 775,
+        "kind": "junior",
+        "tenure": "751—775年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "君士坦丁五世与可萨公主之子，751年获共帝称号，775年成为主帝。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "君士坦丁五世专条引研究明确称利奥为紫室建成后首位在其中出生的皇子；不是仅从其父在位推断。",
+      "sources": [
+        "wiki-constantine-v"
+      ]
+    }
+  },
+  {
+    "id": "constantine-vi",
+    "zh": "君士坦丁六世",
+    "greek": "Κωνσταντῖνος Ϛʹ",
+    "aliases": "Constantine VI",
+    "dynasty": "isaurian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "利奥四世与伊琳娜之子，776年成为共帝，780年以幼龄继位。",
+      "成年后与母亲围绕军队、婚姻及皇权反复冲突；伊琳娜参与政治并非始终等于独立主帝。",
+      "797年被母亲一派废黜并弄瞎，死亡时间不明。其失明不应自动换算为确定的同年死亡。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-vi"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 780,
+        "end": 797,
+        "kind": "central",
+        "tenure": "780—797年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "利奥四世与伊琳娜之子，776年成为共帝，780年以幼龄继位。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 776,
+        "end": 780,
+        "kind": "junior",
+        "tenure": "776—780年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "利奥四世与伊琳娜之子，776年成为共帝，780年以幼龄继位。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "irene",
+    "zh": "伊琳娜",
+    "greek": "Εἰρήνη ἡ Ἀθηναία",
+    "aliases": "Irene of Athens",
+    "dynasty": "isaurian",
+    "era": "圣像争论时代",
+    "dynastyNote": "以婚姻进入伊苏里亚皇室；797年起的独立统治不意味着出身该家族。",
+    "bio": [
+      "来自雅典，嫁给利奥四世。780年起摄政，并在787年的尼西亚会议推动恢复圣像敬礼。",
+      "797年废黜儿子后以自己的名义统治；与法兰克宫廷的外交处在罗马皇号竞争的背景下。",
+      "802年被尼基弗鲁斯推翻，流放后去世。她以婚姻进入伊苏里亚皇室，王朝归组不表示血缘继承。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-irene"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 797,
+        "end": 802,
+        "kind": "central",
+        "tenure": "797—802年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "来自雅典，嫁给利奥四世。780年起摄政，并在787年的尼西亚会议推动恢复圣像敬礼。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "nikephoros-i",
+    "zh": "尼基弗鲁斯一世",
+    "greek": "Νικηφόρος Αʹ",
+    "aliases": "Nikephoros I",
+    "dynasty": "nikephorian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "原为财政官员，802年宫廷政变后继承伊琳娜的皇位。",
+      "强化财政征收，组织巴尔干移民与军事行动，并与阿拉伯及保加利亚势力交战。",
+      "811年深入保加利亚后在普利斯卡战役被杀；其子斯陶拉基奥斯重伤继位，政权很快再度更替。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-nikephoros-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 802,
+        "end": 811,
+        "kind": "central",
+        "tenure": "802—811年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "原为财政官员，802年宫廷政变后继承伊琳娜的皇位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "staurakios",
+    "zh": "斯陶拉基奥斯",
+    "greek": "Σταυράκιος",
+    "aliases": "Staurakios",
+    "dynasty": "nikephorian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "尼基弗鲁斯一世之子，803年获共帝称号。",
+      "811年普利斯卡战役中受重伤，父亲阵亡后短暂继位；身体状况与继承安排引发宫廷争议。",
+      "同年退位为僧，由妹夫米海尔一世接掌皇位，不久去世。不能把他仅作为阵亡将领而略去皇帝身份。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-staurakios"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 811,
+        "end": 811,
+        "kind": "central",
+        "tenure": "811—811年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "尼基弗鲁斯一世之子，803年获共帝称号。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 803,
+        "end": 811,
+        "kind": "junior",
+        "tenure": "803—811年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "尼基弗鲁斯一世之子，803年获共帝称号。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-i",
+    "zh": "米海尔一世",
+    "greek": "Μιχαὴλ Αʹ Ῥαγκαβέ",
+    "aliases": "Michael I Rangabe",
+    "dynasty": "nikephorian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "通过妻子普罗科皮娅与尼基弗鲁斯家族相联，811年在斯陶拉基奥斯退位后即位。",
+      "外交上与查理曼处理皇号问题，军事上却受保加利亚可汗克鲁姆压迫。",
+      "813年韦尔西尼基亚战败后让位给利奥五世，退入修道院；其子嗣的共帝称号另列。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 811,
+        "end": 813,
+        "kind": "central",
+        "tenure": "811—813年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "通过妻子普罗科皮娅与尼基弗鲁斯家族相联，811年在斯陶拉基奥斯退位后即位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "leo-v",
+    "zh": "利奥五世",
+    "greek": "Λέων Εʹ ὁ Ἀρμένιος",
+    "aliases": "Leo V the Armenian",
+    "dynasty": "unaffiliated",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "军人出身，813年米海尔一世战败后掌权，被称为“亚美尼亚人”。",
+      "815年恢复反圣像政策，并与保加利亚议和，宫廷内部的军事盟友却逐渐分裂。",
+      "820年圣诞节遭暗杀，米海尔二世继位。他的儿子君士坦丁同时失去共帝地位。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-leo-v"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 813,
+        "end": 820,
+        "kind": "central",
+        "tenure": "813—820年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "军人出身，813年米海尔一世战败后掌权，被称为“亚美尼亚人”。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-ii",
+    "zh": "米海尔二世",
+    "greek": "Μιχαὴλ Βʹ ὁ Ἀμοριεύς",
+    "aliases": "Michael II",
+    "dynasty": "amorian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "来自阿莫里翁的军官，因反对利奥五世被囚，820年政变使其出狱即位。",
+      "经历斯拉夫人托马斯围攻首都，爱琴海和西西里方向也受到阿拉伯扩张压力。",
+      "829年去世，儿子狄奥菲洛斯继承。绰号与后世宗教争论不能取代对其军事处境的解释。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 820,
+        "end": 829,
+        "kind": "central",
+        "tenure": "820—829年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "来自阿莫里翁的军官，因反对利奥五世被囚，820年政变使其出狱即位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "theophilos",
+    "zh": "狄奥菲洛斯",
+    "greek": "Θεόφιλος",
+    "aliases": "Theophilos (emperor)",
+    "dynasty": "amorian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "米海尔二世之子，821年已为共帝，829年独掌皇权。",
+      "在宫廷建设与行政文化上有积极活动，宗教上继续反圣像政策；838年阿莫里翁陷落造成重大冲击。",
+      "842年去世，幼子米海尔三世继位，皇后狄奥多拉主导摄政。恢复圣像发生于下一阶段，而非他本人改变政策。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-theophilos"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 829,
+        "end": 842,
+        "kind": "central",
+        "tenure": "829—842年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "米海尔二世之子，821年已为共帝，829年独掌皇权。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 821,
+        "end": 829,
+        "kind": "junior",
+        "tenure": "821—829年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "米海尔二世之子，821年已为共帝，829年独掌皇权。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-iii",
+    "zh": "米海尔三世",
+    "greek": "Μιχαὴλ Γʹ",
+    "aliases": "Michael III",
+    "dynasty": "amorian",
+    "era": "圣像争论时代",
+    "dynastyNote": "",
+    "bio": [
+      "狄奥菲洛斯之子，842年幼龄继位，早年由母亲狄奥多拉摄政。",
+      "843年恢复圣像；成年后依靠舅父巴尔达斯，任内发生保加利亚受洗及对阿拉伯的军事胜利。",
+      "866年立巴西尔为共帝，次年被其阵营杀害。“酒徒”形象主要经新王朝史家传下，须谨慎使用。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 842,
+        "end": 867,
+        "kind": "central",
+        "tenure": "842—867年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "狄奥菲洛斯之子，842年幼龄继位，早年由母亲狄奥多拉摄政。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "basil-i",
+    "zh": "巴西尔一世",
+    "greek": "Βασίλειος Αʹ ὁ Μακεδών",
+    "aliases": "Basil I",
+    "dynasty": "macedonian",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "从宫廷服务崛起，866年被米海尔三世立为共帝，867年夺取最高权力。",
+      "推动法律整理和建筑事业，在东方与意大利扩大军事影响，建立后来称为马其顿王朝的皇室。",
+      "886年去世，利奥六世继承。利奥的生父问题存在争论，王朝归组采用政治继承而非断言亲子鉴定。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-basil-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 867,
+        "end": 886,
+        "kind": "central",
+        "tenure": "867—886年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "从宫廷服务崛起，866年被米海尔三世立为共帝，867年夺取最高权力。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 866,
+        "end": 867,
+        "kind": "junior",
+        "tenure": "866—867年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "从宫廷服务崛起，866年被米海尔三世立为共帝，867年夺取最高权力。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "leo-vi",
+    "zh": "利奥六世",
+    "greek": "Λέων Ϛʹ ὁ Σοφός",
+    "aliases": "Leo VI the Wise",
+    "dynasty": "macedonian",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "作为巴西尔皇室的继承人，870年获共帝称号，886年成为主帝。",
+      "以学识、法律编纂和宫廷文化著称，军事上面对保加利亚与阿拉伯进攻；四次婚姻引起严重教会争议。",
+      "912年去世，弟弟亚历山大接掌主帝权力，幼子君士坦丁七世仍保留帝号。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-leo-vi"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 886,
+        "end": 912,
+        "kind": "central",
+        "tenure": "886—912年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "作为巴西尔皇室的继承人，870年获共帝称号，886年成为主帝。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 870,
+        "end": 886,
+        "kind": "junior",
+        "tenure": "870—886年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "作为巴西尔皇室的继承人，870年获共帝称号，886年成为主帝。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "alexander",
+    "zh": "亚历山大",
+    "greek": "Ἀλέξανδρος",
+    "aliases": "Alexander (Byzantine emperor)",
+    "dynasty": "macedonian",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "巴西尔一世之子、利奥六世的弟弟，879年起拥有共帝称号。",
+      "912年成为主帝后更换宫廷与教会人事；对保加利亚外交的处理加深紧张。",
+      "913年去世，留下幼年的侄子君士坦丁七世及争夺摄政权的政治集团。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-alexander"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 912,
+        "end": 913,
+        "kind": "central",
+        "tenure": "912—913年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "巴西尔一世之子、利奥六世的弟弟，879年起拥有共帝称号。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 879,
+        "end": 912,
+        "kind": "junior",
+        "tenure": "879—912年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "巴西尔一世之子、利奥六世的弟弟，879年起拥有共帝称号。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "constantine-vii",
+    "zh": "君士坦丁七世",
+    "greek": "Κωνσταντῖνος Ζʹ ὁ Πορφυρογέννητος",
+    "aliases": "Constantine VII",
+    "dynasty": "macedonian",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
+      "913年继承主帝权位但长期受摄政控制，920年罗曼努斯一世成为资深皇帝；945年才排除勒卡佩诺斯兄弟。",
+      "赞助礼仪、历史与治国知识的编纂，959年去世。学术皇帝形象与实际宫廷权力应分开理解。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-vii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 913,
+        "end": 920,
+        "kind": "central",
+        "tenure": "913—920年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 945,
+        "end": 959,
+        "kind": "central",
+        "tenure": "945—959年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 908,
+        "end": 913,
+        "kind": "junior",
+        "tenure": "908—913年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      },
+      {
+        "start": 920,
+        "end": 945,
+        "kind": "junior",
+        "tenure": "920—945年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "905年生于紫室；Porphyrogenitus为明确称号，出生早于父母正式第四次婚姻。",
+      "sources": [
+        "wiki-constantine-vii"
+      ]
+    }
+  },
+  {
+    "id": "romanos-i",
+    "zh": "罗曼努斯一世",
+    "greek": "Ῥωμανὸς Αʹ Λεκαπηνός",
+    "aliases": "Romanos I Lekapenos",
+    "dynasty": "lekapenos",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "海军将领，先以女儿嫁给君士坦丁七世进入摄政核心，920年获帝号并成为资深皇帝。",
+      "通过土地法保护小地产，约翰·库尔库阿斯的东方战事使帝国声势增长。",
+      "944年被自己的儿子斯蒂芬与君士坦丁废黜，流放为僧。勒卡佩诺斯家族与马其顿皇室共治，不应合并成血缘王朝。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-romanos-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 920,
+        "end": 944,
+        "kind": "central",
+        "tenure": "920—944年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "海军将领，先以女儿嫁给君士坦丁七世进入摄政核心，920年获帝号并成为资深皇帝。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "romanos-ii",
+    "zh": "罗曼努斯二世",
+    "greek": "Ῥωμανὸς Βʹ",
+    "aliases": "Romanos II",
+    "dynasty": "macedonian",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁七世之子，945年获共帝称号，959年继位，妻子为狄奥法诺。",
+      "尼基弗鲁斯·福卡斯收复克里特，东方军队继续扩大成果；宫廷政务依靠近臣布林加斯等人。",
+      "963年早逝，留下幼子巴西尔与君士坦丁。关于毒杀的传闻未获确证，不作为死因定论。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-romanos-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 959,
+        "end": 963,
+        "kind": "central",
+        "tenure": "959—963年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁七世之子，945年获共帝称号，959年继位，妻子为狄奥法诺。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 945,
+        "end": 959,
+        "kind": "junior",
+        "tenure": "945—959年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "君士坦丁七世之子，945年获共帝称号，959年继位，妻子为狄奥法诺。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "专条明确使用Porphyrogenitus；父亲当时为共帝。",
+      "sources": [
+        "wiki-romanos-ii"
+      ]
+    }
+  },
+  {
+    "id": "nikephoros-ii",
+    "zh": "尼基弗鲁斯二世",
+    "greek": "Νικηφόρος Βʹ Φωκᾶς",
+    "aliases": "Nikephoros II Phokas",
+    "dynasty": "phokas",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "安纳托利亚军事家族的将领，因收复克里特而声望卓著，963年取得皇位并娶狄奥法诺。",
+      "仍承认罗曼努斯二世诸子的皇帝头衔，任内收复奇里乞亚与塞浦路斯，安条克亦被攻下。",
+      "969年在宫中遭约翰·齐米斯基斯集团杀害。家族标签属于福卡斯，不因与幼帝共治就改姓马其顿。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-nikephoros-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 963,
+        "end": 969,
+        "kind": "central",
+        "tenure": "963—969年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安纳托利亚军事家族的将领，因收复克里特而声望卓著，963年取得皇位并娶狄奥法诺。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-i",
+    "zh": "约翰一世",
+    "greek": "Ἰωάννης Αʹ Τζιμισκής",
+    "aliases": "John I Tzimiskes",
+    "dynasty": "kourkouas",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "齐米斯基斯属于库尔库阿斯家族，也与福卡斯有亲缘；不据共治自动归入马其顿王朝。",
+    "bio": [
+      "军事贵族出身，曾为尼基弗鲁斯二世效力，969年参与宫廷暗杀后登基。",
+      "继续承认巴西尔二世与君士坦丁八世的头衔，971年击败罗斯军队，并在东方展开远征。",
+      "976年去世。其“摄政型主帝”地位仍是皇帝，不能因为幼帝存在就从主表删去。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 969,
+        "end": 976,
+        "kind": "central",
+        "tenure": "969—976年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "军事贵族出身，曾为尼基弗鲁斯二世效力，969年参与宫廷暗杀后登基。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "basil-ii",
+    "zh": "巴西尔二世",
+    "greek": "Βασίλειος Βʹ",
+    "aliases": "Basil II",
+    "dynasty": "macedonian",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "罗曼努斯二世之子，960年获共帝称号，976年主掌朝政时仍面对宫廷和将领竞争。",
+      "平定斯克莱罗斯与福卡斯叛乱，和罗斯结盟，长期战争后在1018年征服保加利亚。",
+      "1025年去世，由弟弟君士坦丁继承。后世“保加利亚人屠夫”称号及大规模弄瞎战俘的数字，需要结合史家修辞阅读。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-basil-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 976,
+        "end": 1025,
+        "kind": "central",
+        "tenure": "976—1025年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "罗曼努斯二世之子，960年获共帝称号，976年主掌朝政时仍面对宫廷和将领竞争。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 960,
+        "end": 976,
+        "kind": "junior",
+        "tenure": "960—976年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "罗曼努斯二世之子，960年获共帝称号，976年主掌朝政时仍面对宫廷和将领竞争。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "专条明确称Basil II Porphyrogenitus；958年出生时其父为共帝，不能只看959年的主帝起点。",
+      "sources": [
+        "wiki-basil-ii"
+      ]
+    }
+  },
+  {
+    "id": "constantine-viii",
+    "zh": "君士坦丁八世",
+    "greek": "Κωνσταντῖνος Ηʹ",
+    "aliases": "Constantine VIII",
+    "dynasty": "macedonian",
+    "era": "马其顿皇室与军事扩张",
+    "dynastyNote": "",
+    "bio": [
+      "罗曼努斯二世之子，962年成为共帝，在兄长巴西尔二世统治下长期保有帝号。",
+      "1025年转为主帝，任期虽短，但其女儿佐伊与狄奥多拉成为马其顿皇室继承的关键。",
+      "1028年临终安排佐伊与罗曼努斯·阿尔吉罗斯成婚。不能只从1025年起统计他的所有皇帝头衔。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-viii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1025,
+        "end": 1028,
+        "kind": "central",
+        "tenure": "1025—1028年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "罗曼努斯二世之子，962年成为共帝，在兄长巴西尔二世统治下长期保有帝号。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 962,
+        "end": 1025,
+        "kind": "junior",
+        "tenure": "962—1025年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "罗曼努斯二世之子，962年成为共帝，在兄长巴西尔二世统治下长期保有帝号。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "大学钱币目录明确称porphyrogennetos，父亲罗曼努斯二世在位时出生。",
+      "sources": [
+        "bham-constantine",
+        "wiki-constantine-viii"
+      ]
+    }
+  },
+  {
+    "id": "romanos-iii",
+    "zh": "罗曼努斯三世",
+    "greek": "Ῥωμανὸς Γʹ Ἀργυρός",
+    "aliases": "Romanos III Argyros",
+    "dynasty": "argyros",
+    "era": "十一世纪宫廷",
+    "dynastyNote": "",
+    "bio": [
+      "首都贵族和官员，经与佐伊成婚，1028年继承君士坦丁八世的帝位。",
+      "尝试以军事和建筑树立威望，但1030年阿扎兹战败暴露东方战事的困难。",
+      "1034年在浴室死亡，佐伊随后与米海尔成婚。死亡涉及谋杀疑云，叙事细节不等同司法证据。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-romanos-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1028,
+        "end": 1034,
+        "kind": "central",
+        "tenure": "1028—1034年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "首都贵族和官员，经与佐伊成婚，1028年继承君士坦丁八世的帝位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-iv",
+    "zh": "米海尔四世",
+    "greek": "Μιχαὴλ Δʹ ὁ Παφλαγών",
+    "aliases": "Michael IV the Paphlagonian",
+    "dynasty": "paphlagonian",
+    "era": "十一世纪宫廷",
+    "dynastyNote": "",
+    "bio": [
+      "来自帕夫拉戈尼亚，依靠宫廷关系与佐伊的婚姻在1034年取得帝位。",
+      "政务多由兄长约翰处理，任内经历西西里远征与保加利亚起义；晚年身体状况恶化。",
+      "1041年镇压巴尔干起义后不久去世，由侄子米海尔五世继承。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-iv"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1034,
+        "end": 1041,
+        "kind": "central",
+        "tenure": "1034—1041年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "来自帕夫拉戈尼亚，依靠宫廷关系与佐伊的婚姻在1034年取得帝位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-v",
+    "zh": "米海尔五世",
+    "greek": "Μιχαὴλ Εʹ Καλαφάτης",
+    "aliases": "Michael V Kalaphates",
+    "dynasty": "paphlagonian",
+    "era": "十一世纪宫廷",
+    "dynastyNote": "",
+    "bio": [
+      "米海尔四世的侄子，经佐伊收养并在1041年取得皇位；“填缝工”绰号与父亲职业有关。",
+      "试图摆脱既有宫廷势力，1042年放逐佐伊却引发首都群众反抗。",
+      "政变失败后被废黜、弄瞎，佐伊与狄奥多拉共同执政。他的统治显示皇室女性的合法性仍有强大政治动员力。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-v"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1041,
+        "end": 1042,
+        "kind": "central",
+        "tenure": "1041—1042年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "米海尔四世的侄子，经佐伊收养并在1041年取得皇位；“填缝工”绰号与父亲职业有关。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "zoe",
+    "zh": "佐伊",
+    "greek": "Ζωὴ ἡ Πορφυρογέννητος",
+    "aliases": "Zoe Porphyrogenita",
+    "dynasty": "macedonian",
+    "era": "十一世纪宫廷",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁八世之女，生于皇室，在马其顿王朝继承安排中具有核心地位。",
+      "先后与罗曼努斯三世、米海尔四世和君士坦丁九世成婚；1042年群众推翻米海尔五世后，她与妹妹短暂共同主政。",
+      "1050年去世。本卷以独立执政阶段列主表，其余作为皇后保有的地位在传记交代，不把所有婚姻期都当作独立统治。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-zoe",
+      "dir-zoe",
+      "psellos"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1042,
+        "end": 1042,
+        "kind": "central",
+        "tenure": "1042—1042年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁八世之女，生于皇室，在马其顿王朝继承安排中具有核心地位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "Porphyrogenita为明确称号；DIR研究与皇室继承资料互证。",
+      "sources": [
+        "dir-zoe",
+        "wiki-zoe"
+      ]
+    }
+  },
+  {
+    "id": "theodora",
+    "zh": "狄奥多拉",
+    "greek": "Θεοδώρα ἡ Πορφυρογέννητος",
+    "aliases": "Theodora Porphyrogenita",
+    "dynasty": "macedonian",
+    "era": "十一世纪宫廷",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁八世之女、佐伊的妹妹，长期在宫廷和修道生活之间受政治安排影响。",
+      "1042年与佐伊共同主政；君士坦丁九世去世后，1055年重新取得最高统治权。",
+      "1056年去世并指定米海尔六世继承，马其顿皇室的直接继承链由此结束。女性不能因后世常用“皇帝”一词而被排除。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-theodora",
+      "dir-zoe",
+      "psellos"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1042,
+        "end": 1042,
+        "kind": "central",
+        "tenure": "1042—1042年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁八世之女、佐伊的妹妹，长期在宫廷和修道生活之间受政治安排影响。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1055,
+        "end": 1056,
+        "kind": "central",
+        "tenure": "1055—1056年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁八世之女、佐伊的妹妹，长期在宫廷和修道生活之间受政治安排影响。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "Porphyrogenita为明确称号，不能与九世纪摄政狄奥多拉混为一人。",
+      "sources": [
+        "dir-zoe",
+        "wiki-theodora"
+      ]
+    }
+  },
+  {
+    "id": "constantine-ix",
+    "zh": "君士坦丁九世",
+    "greek": "Κωνσταντῖνος Θʹ Μονομάχος",
+    "aliases": "Constantine IX Monomachos",
+    "dynasty": "monomachos",
+    "era": "十一世纪宫廷",
+    "dynastyNote": "",
+    "bio": [
+      "贵族出身，因1042年与佐伊成婚成为皇帝，统治期间倚重文官与知识人。",
+      "面对马尼亚克斯、托尔尼基奥斯叛乱以及佩切涅格、塞尔柱压力；1054年教会代表互相绝罚发生于其任内。",
+      "1055年去世，狄奥多拉接掌皇权。1054年不能解释为东西教会所有联系在一日中断。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-ix",
+      "psellos"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1042,
+        "end": 1055,
+        "kind": "central",
+        "tenure": "1042—1055年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "贵族出身，因1042年与佐伊成婚成为皇帝，统治期间倚重文官与知识人。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-vi",
+    "zh": "米海尔六世",
+    "greek": "Μιχαὴλ Ϛʹ Βρίγγας",
+    "aliases": "Michael VI Bringas",
+    "dynasty": "unaffiliated",
+    "era": "十一世纪政权更迭",
+    "dynastyNote": "",
+    "bio": [
+      "文官出身，由狄奥多拉在1056年选为继承者，其绰号与军费行政职务有关。",
+      "对军官的赏赐与人事处理引发不满，1057年以伊萨克·科穆宁为首的将领起兵。",
+      "在军事失败和首都政治压力下退位为僧，科穆宁家族首次登上皇位。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-vi"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1056,
+        "end": 1057,
+        "kind": "central",
+        "tenure": "1056—1057年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "文官出身，由狄奥多拉在1056年选为继承者，其绰号与军费行政职务有关。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "isaac-i",
+    "zh": "伊萨克一世",
+    "greek": "Ἰσαάκιος Αʹ Κομνηνός",
+    "aliases": "Isaac I Komnenos",
+    "dynasty": "komnenos",
+    "era": "十一世纪政权更迭",
+    "dynastyNote": "",
+    "bio": [
+      "军人家族出身，1057年反对米海尔六世的叛乱获胜后登基。",
+      "试图压缩开支并调整财政，也与牧首米海尔·凯鲁拉里奥斯冲突。",
+      "1059年在疾病和政治压力下退位，交权给君士坦丁·杜卡斯，自己进入修道院。其短朝不等于1081年后科穆宁统治已连续开始。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-isaac-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1057,
+        "end": 1059,
+        "kind": "central",
+        "tenure": "1057—1059年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "军人家族出身，1057年反对米海尔六世的叛乱获胜后登基。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "constantine-x",
+    "zh": "君士坦丁十世",
+    "greek": "Κωνσταντῖνος Ιʹ Δούκας",
+    "aliases": "Constantine X Doukas",
+    "dynasty": "doukas",
+    "era": "杜卡斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "杜卡斯贵族，1059年在伊萨克一世退位后继承帝位，妻子为欧多基娅。",
+      "通过诸子的共帝地位安排继承，但东方和巴尔干的军事压力不断增加。",
+      "1067年去世，皇后与诸子形成摄政安排，翌年罗曼努斯四世以婚姻进入统治核心。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-x"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1059,
+        "end": 1067,
+        "kind": "central",
+        "tenure": "1059—1067年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "杜卡斯贵族，1059年在伊萨克一世退位后继承帝位，妻子为欧多基娅。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "romanos-iv",
+    "zh": "罗曼努斯四世",
+    "greek": "Ῥωμανὸς Δʹ Διογένης",
+    "aliases": "Romanos IV Diogenes",
+    "dynasty": "diogenes",
+    "era": "杜卡斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "将领出身，1068年与皇太后欧多基娅结婚成为资深皇帝，并未取消杜卡斯诸子的帝号。",
+      "率军应对塞尔柱扩张，1071年曼齐刻尔特战败被俘，获释后面临首都另立主帝。",
+      "内战失败后遭弄瞎，1072年去世。战败后的内战与地方权力变化共同影响小亚细亚，不能全归结为一日会战。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-romanos-iv"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1068,
+        "end": 1071,
+        "kind": "central",
+        "tenure": "1068—1071年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "将领出身，1068年与皇太后欧多基娅结婚成为资深皇帝，并未取消杜卡斯诸子的帝号。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-vii",
+    "zh": "米海尔七世",
+    "greek": "Μιχαὴλ Ζʹ Δούκας",
+    "aliases": "Michael VII Doukas",
+    "dynasty": "doukas",
+    "era": "杜卡斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
+      "1071年取得主帝权力，面临货币贬值、粮食供应与军事叛乱，东方控制继续削弱。",
+      "1078年退位为僧，尼基弗鲁斯三世入都。其头衔阶段须与实际主政期分别记录。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-vii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1067,
+        "end": 1068,
+        "kind": "central",
+        "tenure": "1067—1068年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1071,
+        "end": 1078,
+        "kind": "central",
+        "tenure": "1071—1078年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1059,
+        "end": 1067,
+        "kind": "junior",
+        "tenure": "1059—1067年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      },
+      {
+        "start": 1068,
+        "end": 1071,
+        "kind": "junior",
+        "tenure": "1068—1071年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "nikephoros-iii",
+    "zh": "尼基弗鲁斯三世",
+    "greek": "Νικηφόρος Γʹ Βοτανειάτης",
+    "aliases": "Nikephoros III Botaneiates",
+    "dynasty": "botaneiates",
+    "era": "杜卡斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "安纳托利亚老将，1078年反对米海尔七世并取得皇位。",
+      "为巩固权力与皇后玛丽亚成婚，同时面对布里恩尼奥斯、巴西拉基奥斯和梅利塞诺斯等军事对手。",
+      "1081年科穆宁兄弟夺取首都后退位入修道院，政局进入长期家族统治阶段。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-nikephoros-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1078,
+        "end": 1081,
+        "kind": "central",
+        "tenure": "1078—1081年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安纳托利亚老将，1078年反对米海尔七世并取得皇位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "alexios-i",
+    "zh": "阿莱克修斯一世",
+    "greek": "Ἀλέξιος Αʹ Κομνηνός",
+    "aliases": "Alexios I Komnenos",
+    "dynasty": "komnenos",
+    "era": "科穆宁时代",
+    "dynastyNote": "",
+    "bio": [
+      "科穆宁军事贵族，1081年夺取首都，依靠家族、杜卡斯联姻和新的宫廷等级重建权力。",
+      "击退诺曼与佩切涅格威胁，1092年改革货币；第一次十字军到来使收复小亚细亚与西方军队关系交织。",
+      "1118年去世，子约翰继承。女儿安娜的《阿莱克修斯传》是核心史料，也带有鲜明家族立场。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-alexios-i",
+      "alexiad"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1081,
+        "end": 1118,
+        "kind": "central",
+        "tenure": "1081—1118年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "科穆宁军事贵族，1081年夺取首都，依靠家族、杜卡斯联姻和新的宫廷等级重建权力。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-ii",
+    "zh": "约翰二世",
+    "greek": "Ἰωάννης Βʹ Κομνηνός",
+    "aliases": "John II Komnenos",
+    "dynasty": "komnenos",
+    "era": "科穆宁时代",
+    "dynastyNote": "",
+    "bio": [
+      "阿莱克修斯一世与伊琳娜·杜卡伊娜之子，生于1087年，1092年起为共帝。",
+      "1118年即位后在巴尔干与小亚细亚持续作战，1137—1138年进军奇里乞亚与安条克，试图扩大宗主权。",
+      "1143年远征中意外受伤后去世，选择幼子曼努埃尔继承。曾被立为共帝的长子阿莱克修斯已先于他死去。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1118,
+        "end": 1143,
+        "kind": "central",
+        "tenure": "1118—1143年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "阿莱克修斯一世与伊琳娜·杜卡伊娜之子，生于1087年，1092年起为共帝。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1092,
+        "end": 1118,
+        "kind": "junior",
+        "tenure": "1092—1118年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "阿莱克修斯一世与伊琳娜·杜卡伊娜之子，生于1087年，1092年起为共帝。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "1087年生于大宫紫室，学术综述与生平资料明确记载。",
+      "sources": [
+        "john-ii-study",
+        "wiki-john-ii"
+      ]
+    }
+  },
+  {
+    "id": "manuel-i",
+    "zh": "曼努埃尔一世",
+    "greek": "Μανουὴλ Αʹ Κομνηνός",
+    "aliases": "Manuel I Komnenos",
+    "dynasty": "komnenos",
+    "era": "科穆宁时代",
+    "dynastyNote": "",
+    "bio": [
+      "约翰二世之子，1143年获父亲指定继位，并在首都完成加冕。",
+      "积极介入匈牙利、意大利和十字军国家事务，兼用外交、婚姻与战争；1169年埃及远征及1176年密列奥凯法隆战役未能实现目标。",
+      "1180年去世后，幼子的继承暴露宫廷分裂。不能把其一生外交简单概括为崇拜拉丁文化。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-manuel-i",
+      "dir-manuel"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1143,
+        "end": 1180,
+        "kind": "central",
+        "tenure": "1143—1180年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "约翰二世之子，1143年获父亲指定继位，并在首都完成加冕。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "金币明确写有porphyrogenitus；与皇室文献称号互证。",
+      "sources": [
+        "manuel-coin",
+        "dir-manuel"
+      ]
+    }
+  },
+  {
+    "id": "alexios-ii",
+    "zh": "阿莱克修斯二世",
+    "greek": "Ἀλέξιος Βʹ Κομνηνός",
+    "aliases": "Alexios II Komnenos",
+    "dynasty": "komnenos",
+    "era": "科穆宁时代",
+    "dynastyNote": "",
+    "bio": [
+      "曼努埃尔一世与安条克的玛丽亚之子，1169年出生，1180年继位时尚未成年。",
+      "母亲摄政遭到首都反对，安德洛尼卡利用不满进入政治核心；1182年发生针对拉丁居民的屠杀。",
+      "1183年被迫承认安德洛尼卡共帝，不久遭杀害。幼帝的名义统治与摄政集团的行为应区别对待。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-alexios-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1180,
+        "end": 1183,
+        "kind": "central",
+        "tenure": "1180—1183年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "曼努埃尔一世与安条克的玛丽亚之子，1169年出生，1180年继位时尚未成年。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1171,
+        "end": 1180,
+        "kind": "junior",
+        "tenure": "1171—1180年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "曼努埃尔一世与安条克的玛丽亚之子，1169年出生，1180年继位时尚未成年。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "DIR研究直接称Alexius Porphyrogenitus，区别于其他同名科穆宁人物。",
+      "sources": [
+        "dir-manuel",
+        "wiki-alexios-ii"
+      ]
+    }
+  },
+  {
+    "id": "andronikos-i",
+    "zh": "安德洛尼卡一世",
+    "greek": "Ἀνδρόνικος Αʹ Κομνηνός",
+    "aliases": "Andronikos I Komnenos",
+    "dynasty": "komnenos",
+    "era": "科穆宁时代",
+    "dynastyNote": "",
+    "bio": [
+      "科穆宁皇族成员，长期流亡后利用幼帝摄政危机掌权，1183年取得帝号。",
+      "宣称整饬贵族滥权，却依靠严酷清洗巩固统治，地方与首都反对逐渐扩大。",
+      "1185年诺曼军攻陷塞萨洛尼基，首都起义立伊萨克二世；安德洛尼卡遭群众杀害。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-andronikos-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1183,
+        "end": 1185,
+        "kind": "central",
+        "tenure": "1183—1185年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "科穆宁皇族成员，长期流亡后利用幼帝摄政危机掌权，1183年取得帝号。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "isaac-ii",
+    "zh": "伊萨克二世",
+    "greek": "Ἰσαάκιος Βʹ Ἄγγελος",
+    "aliases": "Isaac II Angelos",
+    "dynasty": "angelos",
+    "era": "安格洛斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "安格洛斯家族成员，1185年在首都起义中取代安德洛尼卡一世。",
+      "面对保加利亚与瓦拉几人起义、地方反抗及第三次十字军过境，军事财政压力日增。",
+      "1195年被兄长阿莱克修斯三世废黜并弄瞎；1203年借第四次十字军复位，与儿子共治，次年再度失位。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-isaac-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1185,
+        "end": 1195,
+        "kind": "central",
+        "tenure": "1185—1195年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安格洛斯家族成员，1185年在首都起义中取代安德洛尼卡一世。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1203,
+        "end": 1204,
+        "kind": "central",
+        "tenure": "1203—1204年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安格洛斯家族成员，1185年在首都起义中取代安德洛尼卡一世。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "alexios-iii",
+    "zh": "阿莱克修斯三世",
+    "greek": "Ἀλέξιος Γʹ Ἄγγελος",
+    "aliases": "Alexios III Angelos",
+    "dynasty": "angelos",
+    "era": "安格洛斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "伊萨克二世的兄长，1195年政变后继位，亦使用与科穆宁皇室相关的姓号。",
+      "统治期间宫廷、地方和军队之间的联系继续削弱；侄子阿莱克修斯向西方寻求复位援助。",
+      "1203年十字军进攻首都时逃离，后来与尼西亚的狄奥多尔争夺权力，最终被俘并终老修道院。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-alexios-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1195,
+        "end": 1203,
+        "kind": "central",
+        "tenure": "1195—1203年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "伊萨克二世的兄长，1195年政变后继位，亦使用与科穆宁皇室相关的姓号。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "alexios-iv",
+    "zh": "阿莱克修斯四世",
+    "greek": "Ἀλέξιος Δʹ Ἄγγελος",
+    "aliases": "Alexios IV Angelos",
+    "dynasty": "angelos",
+    "era": "安格洛斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "伊萨克二世之子，逃往西方后承诺向十字军提供金钱、兵员与教会联合，以换取复位支持。",
+      "1203年与父亲共同登基，但难以兑现承诺，征款和驻军关系激起首都敌意。",
+      "1204年初被推翻并遭杀害，其失败不能解释为十字军洗劫城市的正当依据。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-alexios-iv"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1203,
+        "end": 1204,
+        "kind": "central",
+        "tenure": "1203—1204年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "伊萨克二世之子，逃往西方后承诺向十字军提供金钱、兵员与教会联合，以换取复位支持。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "alexios-v",
+    "zh": "阿莱克修斯五世",
+    "greek": "Ἀλέξιος Εʹ Δούκας",
+    "aliases": "Alexios V Doukas",
+    "dynasty": "doukas",
+    "era": "安格洛斯时代",
+    "dynastyNote": "",
+    "bio": [
+      "杜卡斯贵族，绰号穆尔祖弗洛斯，1204年首都政变中取代安格洛斯父子。",
+      "试图组织抵抗十字军，但4月城防被突破后逃走，帝国权力中心随之瓦解。",
+      "后来被俘处死。其短期统治与同年出现的拉丁帝国、尼西亚等继承政权应分栏理解。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-alexios-v"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1204,
+        "end": 1204,
+        "kind": "central",
+        "tenure": "1204—1204年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "杜卡斯贵族，绰号穆尔祖弗洛斯，1204年首都政变中取代安格洛斯父子。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "theodore-i",
+    "zh": "狄奥多尔一世",
+    "greek": "Θεόδωρος Αʹ Λάσκαρις",
+    "aliases": "Theodore I Laskaris",
+    "dynasty": "laskaris",
+    "era": "尼西亚继承政权",
+    "dynastyNote": "",
+    "bio": [
+      "阿莱克修斯三世的女婿，1204年首都陷落后在小亚细亚建立抵抗中心。",
+      "约1205年获推举，1208年在尼西亚正式加冕；1211年击败由前皇帝支持的塞尔柱进攻。",
+      "1221年去世，女婿约翰继承。本卷区分1204年的政权起源、1205年的称帝与1208年的加冕，不照抄简表的1204—1222。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-theodore-i"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1205,
+        "end": 1221,
+        "kind": "central",
+        "tenure": "1205—1221年",
+        "territory": "尼西亚及其控制区",
+        "note": "阿莱克修斯三世的女婿，1204年首都陷落后在小亚细亚建立抵抗中心。",
+        "certainty": "约1205年称帝，1208年加冕；1221年末去世"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-iii",
+    "zh": "约翰三世",
+    "greek": "Ἰωάννης Γʹ Δούκας Βατάτζης",
+    "aliases": "John III Doukas Vatatzes",
+    "dynasty": "vatatzes",
+    "era": "尼西亚继承政权",
+    "dynastyNote": "",
+    "bio": [
+      "狄奥多尔一世的女婿，1221年继承尼西亚帝位，继位遭拉斯卡里斯旁支挑战。",
+      "扩张小亚细亚与欧洲领地，1235年与保加利亚联合围攻君士坦丁堡，1246年取得塞萨洛尼基。",
+      "1254年去世，尼西亚已成为恢复首都的主要力量。杜卡斯姓号不代表他属于十一世纪同一个统治家庭。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1221,
+        "end": 1254,
+        "kind": "central",
+        "tenure": "1221—1254年",
+        "territory": "尼西亚及其控制区",
+        "note": "狄奥多尔一世的女婿，1221年继承尼西亚帝位，继位遭拉斯卡里斯旁支挑战。",
+        "certainty": "1221年继位；部分旧简表作1222年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "theodore-ii",
+    "zh": "狄奥多尔二世",
+    "greek": "Θεόδωρος Βʹ Λάσκαρις",
+    "aliases": "Theodore II Laskaris",
+    "dynasty": "laskaris",
+    "era": "尼西亚继承政权",
+    "dynastyNote": "父系瓦塔齐斯，通行皇号沿用外祖家的拉斯卡里斯姓；本卷按使用的皇室姓号归组。",
+    "bio": [
+      "约翰三世之子，沿用外祖家拉斯卡里斯姓号，1254年继承尼西亚帝位。",
+      "重用学识型官员并与贵族发生冲突，在巴尔干与保加利亚交战，也留下神学与哲学著述。",
+      "1258年早逝，幼子约翰四世及摄政安排很快遭到贵族势力挑战。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-theodore-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1254,
+        "end": 1258,
+        "kind": "central",
+        "tenure": "1254—1258年",
+        "territory": "尼西亚及其控制区",
+        "note": "约翰三世之子，沿用外祖家拉斯卡里斯姓号，1254年继承尼西亚帝位。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-iv",
+    "zh": "约翰四世",
+    "greek": "Ἰωάννης Δʹ Λάσκαρις",
+    "aliases": "John IV Laskaris",
+    "dynasty": "laskaris",
+    "era": "尼西亚继承政权",
+    "dynastyNote": "",
+    "bio": [
+      "狄奥多尔二世之子，1258年幼龄继位，父亲安排的摄政穆扎隆不久遭杀。",
+      "米海尔·巴列奥略先取得摄政权，1259年成为共帝，逐步掌握全部实际权力。",
+      "1261年首都收复后，约翰被弄瞎并排除继承。尼西亚的恢复事业不等于拉斯卡里斯幼帝本人保有恢复后帝位。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-iv"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1258,
+        "end": 1261,
+        "kind": "central",
+        "tenure": "1258—1261年",
+        "territory": "尼西亚及其控制区",
+        "note": "狄奥多尔二世之子，1258年幼龄继位，父亲安排的摄政穆扎隆不久遭杀。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "michael-viii",
+    "zh": "米海尔八世",
+    "greek": "Μιχαὴλ Ηʹ Παλαιολόγος",
+    "aliases": "Michael VIII Palaiologos Michael Palaeologus",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "贵族将领，1258年进入尼西亚摄政核心，1259年获共帝称号并在佩拉戈尼亚取得决定性胜利。",
+      "1261年部将收复君士坦丁堡，他排除约翰四世，建立巴列奥略王朝；外交上竭力防止拉丁再征服。",
+      "1274年接受里昂教会联合，激起国内反对。1282年去世，其首都重建与小亚细亚防务取舍长期影响后世。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-michael-viii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1259,
+        "end": 1282,
+        "kind": "central",
+        "tenure": "1259—1282年",
+        "territory": "1259—1261年尼西亚；1261年起君士坦丁堡及帝国控制区",
+        "note": "贵族将领，1258年进入尼西亚摄政核心，1259年获共帝称号并在佩拉戈尼亚取得决定性胜利。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "andronikos-ii",
+    "zh": "安德洛尼卡二世",
+    "greek": "Ἀνδρόνικος Βʹ Παλαιολόγος",
+    "aliases": "Andronikos II Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "米海尔八世之子，1272年已为共帝，1282年继位后放弃里昂联合。",
+      "财政紧缩、军事外包及加泰罗尼亚佣兵冲突与小亚细亚领土损失交织；儿子米海尔九世先于他去世。",
+      "与孙子安德洛尼卡三世的内战在1328年以退位告终。他后来以修士身份生活至1332年。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-andronikos-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1282,
+        "end": 1328,
+        "kind": "central",
+        "tenure": "1282—1328年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "米海尔八世之子，1272年已为共帝，1282年继位后放弃里昂联合。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1272,
+        "end": 1282,
+        "kind": "junior",
+        "tenure": "1272—1282年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "米海尔八世之子，1272年已为共帝，1282年继位后放弃里昂联合。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "andronikos-iii",
+    "zh": "安德洛尼卡三世",
+    "greek": "Ἀνδρόνικος Γʹ Παλαιολόγος",
+    "aliases": "Andronikos III Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "米海尔九世之子，在与祖父的内战中获得年轻贵族支持，1325年加冕为共帝。",
+      "1328年取得首都后倚重约翰·坎塔库泽诺斯，任内重获部分爱琴海和希腊领地，却失去尼西亚等亚洲据点。",
+      "1341年去世，幼子约翰五世继承，摄政权之争再度引发内战。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-andronikos-iii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1328,
+        "end": 1341,
+        "kind": "central",
+        "tenure": "1328—1341年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "米海尔九世之子，在与祖父的内战中获得年轻贵族支持，1325年加冕为共帝。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1325,
+        "end": 1328,
+        "kind": "junior",
+        "tenure": "1325—1328年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "米海尔九世之子，在与祖父的内战中获得年轻贵族支持，1325年加冕为共帝。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-v",
+    "zh": "约翰五世",
+    "greek": "Ἰωάννης Εʹ Παλαιολόγος",
+    "aliases": "John V Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
+      "1347年承认约翰六世为资深皇帝，1354年重掌首都；后又多次被儿子与孙子短暂推翻。",
+      "寻求西方援助并与奥斯曼交涉，1391年去世。其多年皇号不应抹平实际失位期。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-v"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1341,
+        "end": 1347,
+        "kind": "central",
+        "tenure": "1341—1347年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1354,
+        "end": 1376,
+        "kind": "central",
+        "tenure": "1354—1376年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1379,
+        "end": 1390,
+        "kind": "central",
+        "tenure": "1379—1390年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1390,
+        "end": 1391,
+        "kind": "central",
+        "tenure": "1390—1391年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1347,
+        "end": 1354,
+        "kind": "junior",
+        "tenure": "1347—1354年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-vi",
+    "zh": "约翰六世",
+    "greek": "Ἰωάννης Ϛʹ Καντακουζηνός",
+    "aliases": "John VI Kantakouzenos",
+    "dynasty": "kantakouzenos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "安德洛尼卡三世的重臣，1341年自称皇帝，与首都摄政政府展开长期内战。",
+      "1347年取得资深皇帝地位，倚重外部盟友；宗教上支持静修派，任内经历黑死病和贸易冲突。",
+      "1354年退位为僧，后来撰写的历史是重要自辩文本，使用时须与其政治立场互证。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-vi"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1347,
+        "end": 1354,
+        "kind": "central",
+        "tenure": "1347—1354年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安德洛尼卡三世的重臣，1341年自称皇帝，与首都摄政政府展开长期内战。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1341,
+        "end": 1347,
+        "kind": "rival",
+        "tenure": "1341—1347年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "1341年在狄狄莫提科自称皇帝；1347年才与首都政府达成资深皇帝共治安排。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "andronikos-iv",
+    "zh": "安德洛尼卡四世",
+    "greek": "Ἀνδρόνικος Δʹ Παλαιολόγος",
+    "aliases": "Andronikos IV Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "约翰五世长子，幼年即获共帝称号，1373年反对父亲失败后受罚。",
+      "1376年借外部支持取得首都与主帝地位，并立子约翰为共帝，1379年又被父亲与弟弟赶走。",
+      "其后在地区性安排中保留地位，1385年去世。本卷把主帝阶段与恢复后的共帝安排分别列出。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-andronikos-iv"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1376,
+        "end": 1379,
+        "kind": "central",
+        "tenure": "1376—1379年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "约翰五世长子，幼年即获共帝称号，1373年反对父亲失败后受罚。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1352,
+        "end": 1373,
+        "kind": "junior",
+        "tenure": "1352—1373年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "约翰五世长子，幼年即获共帝称号，1373年反对父亲失败后受罚。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      },
+      {
+        "start": 1381,
+        "end": 1385,
+        "kind": "junior",
+        "tenure": "1381—1385年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "约翰五世长子，幼年即获共帝称号，1373年反对父亲失败后受罚。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-vii",
+    "zh": "约翰七世",
+    "greek": "Ἰωάννης Ζʹ Παλαιολόγος",
+    "aliases": "John VII Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "安德洛尼卡四世之子，1377年获共帝称号；1390年短暂推翻祖父约翰五世。",
+      "很快失去首都，后来与叔父曼努埃尔二世和解，1399—1403年在叔父出访期间留守统治。",
+      "1403年后在塞萨洛尼基拥有皇帝地位，1408年去世。代理治理不自动重复计算为另一段取代曼努埃尔的主帝任期。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-vii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1390,
+        "end": 1390,
+        "kind": "central",
+        "tenure": "1390—1390年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "安德洛尼卡四世之子，1377年获共帝称号；1390年短暂推翻祖父约翰五世。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1377,
+        "end": 1379,
+        "kind": "junior",
+        "tenure": "1377—1379年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "安德洛尼卡四世之子，1377年获共帝称号；1390年短暂推翻祖父约翰五世。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      },
+      {
+        "start": 1381,
+        "end": 1390,
+        "kind": "junior",
+        "tenure": "1381—1390年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "安德洛尼卡四世之子，1377年获共帝称号；1390年短暂推翻祖父约翰五世。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      },
+      {
+        "start": 1390,
+        "end": 1408,
+        "kind": "junior",
+        "tenure": "1390—1408年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "1390年失去主帝地位后保留皇号；1399—1403年代理留守，1403—1408年驻塞萨洛尼基，不取代曼努埃尔二世主帝身份。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "manuel-ii",
+    "zh": "曼努埃尔二世",
+    "greek": "Μανουὴλ Βʹ Παλαιολόγος",
+    "aliases": "Manuel II Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "约翰五世之子，1373年获共帝称号，1391年在父亲去世后接掌首都。",
+      "面对奥斯曼围困，1399年赴西欧求援；1402年安卡拉战役后获得喘息，参与收复和防务安排。",
+      "1425年去世。其外交、神学著作与家族分工共同体现末期帝国的有限选择。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-manuel-ii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1391,
+        "end": 1425,
+        "kind": "central",
+        "tenure": "1391—1425年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "约翰五世之子，1373年获共帝称号，1391年在父亲去世后接掌首都。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1373,
+        "end": 1391,
+        "kind": "junior",
+        "tenure": "1373—1391年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "约翰五世之子，1373年获共帝称号，1391年在父亲去世后接掌首都。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "john-viii",
+    "zh": "约翰八世",
+    "greek": "Ἰωάννης Ηʹ Παλαιολόγος",
+    "aliases": "John VIII Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "曼努埃尔二世之子，1421年正式加冕为共帝，1425年继承主帝权力。",
+      "为寻求军事援助亲赴意大利，1439年接受佛罗伦萨教会联合，但国内反对强烈。",
+      "1448年去世；瓦尔纳战败已使西方救援前景恶化，帝位随后由弟弟君士坦丁继承。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-john-viii"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1425,
+        "end": 1448,
+        "kind": "central",
+        "tenure": "1425—1448年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "曼努埃尔二世之子，1421年正式加冕为共帝，1425年继承主帝权力。",
+        "certainty": "公元年；含首尾交接年"
+      },
+      {
+        "start": 1407,
+        "end": 1425,
+        "kind": "junior",
+        "tenure": "约1407—1425年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "采用宣布与加冕分开的口径；早期具体年份不确，1421年开始承担更全面政务。",
+        "certainty": "约1407年宣布共帝，1421年正式加冕"
+      }
+    ],
+    "purple": null
+  },
+  {
+    "id": "constantine-xi",
+    "zh": "君士坦丁十一世",
+    "greek": "Κωνσταντῖνος ΙΑʹ Παλαιολόγος",
+    "aliases": "Constantine XI Palaiologos Constantine Dragases",
+    "dynasty": "palaiologos",
+    "era": "巴列奥略时代",
+    "dynastyNote": "",
+    "bio": [
+      "曼努埃尔二世之子，曾治理摩里亚，兄长去世后于1449年在米斯特拉举行即位仪式。",
+      "在有限财政和军力下修补城防、争取援助，教会联合问题仍影响首都政治。",
+      "1453年5月29日君士坦丁堡被奥斯曼军攻陷，他死于最后抵抗。尸体辨认与临终言辞存在传说，不能当作确证史实。"
+    ],
+    "sources": [
+      "oman",
+      "wiki-constantine-xi",
+      "barbaro"
+    ],
+    "reference": "人物专条；Oman对应统治时期章节，具体任期见称号表",
+    "reigns": [
+      {
+        "start": 1449,
+        "end": 1453,
+        "kind": "central",
+        "tenure": "1449—1453年",
+        "territory": "君士坦丁堡宫廷及其承认地区",
+        "note": "曼努埃尔二世之子，曾治理摩里亚，兄长去世后于1449年在米斯特拉举行即位仪式。",
+        "certainty": "公元年；含首尾交接年"
+      }
+    ],
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "人物专条明确说明皇帝经常被称为Porphyrogennetos，依据Runciman等研究。",
+      "sources": [
+        "wiki-constantine-xi"
+      ]
+    }
+  },
+  {
+    "id": "marcus",
+    "zh": "马尔库斯",
+    "greek": "Μάρκος",
+    "aliases": "Marcus (son of Basiliscus)",
+    "dynasty": "leonid",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "巴西利斯库斯之子，475年由父亲立为共帝。",
+      "476年芝诺复位后与父母一道被流放，死于囚禁；他的幼龄头衔不等于独立施政。"
+    ],
+    "sources": [
+      "wiki-marcus"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 475,
+        "end": 476,
+        "kind": "junior",
+        "tenure": "475—476年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "巴西利斯库斯之子，475年由父亲立为共帝。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "theodosios-son-maurice",
+    "zh": "狄奥多西（莫里斯之子）",
+    "greek": "Θεοδόσιος",
+    "aliases": "Theodosius (son of Maurice)",
+    "dynasty": "unaffiliated",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "莫里斯长子，590年获共帝称号，是父亲继承安排的中心。",
+      "602年政变后被杀。波斯方面借有人自称他幸存推动战争，不能据此认定真实皇子继续在位。"
+    ],
+    "sources": [
+      "wiki-theodosios-son-maurice"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 590,
+        "end": 602,
+        "kind": "junior",
+        "tenure": "590—602年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "莫里斯长子，590年获共帝称号，是父亲继承安排的中心。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "tiberius-david",
+    "zh": "提比略·大卫",
+    "greek": "Τιβέριος Δαυίδ",
+    "aliases": "David (son of Heraclius)",
+    "dynasty": "heraclian",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "希拉克略与玛尔提娜之子，原名大卫。",
+      "641年继位斗争中以提比略名获帝号，随后随希拉克洛纳斯阵营失势而被废；具体月份有争议。"
+    ],
+    "sources": [
+      "wiki-tiberius-david"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 641,
+        "end": 641,
+        "kind": "junior",
+        "tenure": "641—641年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "希拉克略与玛尔提娜之子，原名大卫。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "heraclius-son-constans",
+    "zh": "希拉克略（君士坦斯之子）",
+    "greek": "Ἡράκλειος",
+    "aliases": "Heraclius (son of Constans II)",
+    "dynasty": "heraclian",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦斯二世之子，659年与兄弟提比略获共帝称号。",
+      "在君士坦丁四世主政时仍保有头衔，681年前后两兄弟被取消帝位并遭毁容，不能据此视为独立主帝。"
+    ],
+    "sources": [
+      "wiki-heraclius-son-constans"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 659,
+        "end": 681,
+        "kind": "junior",
+        "tenure": "659—681年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "君士坦斯二世之子，659年与兄弟提比略获共帝称号。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "tiberius-son-constans",
+    "zh": "提比略（君士坦斯之子）",
+    "greek": "Τιβέριος",
+    "aliases": "Tiberius (son of Constans II)",
+    "dynasty": "heraclian",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦斯二世之子，659年被立为共帝，与同名的六世纪皇帝并非一人。",
+      "681年前后与兄弟希拉克略一道遭君士坦丁四世废黜；军队围绕共治安排的反对未能保住其头衔。"
+    ],
+    "sources": [
+      "wiki-tiberius-son-constans"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 659,
+        "end": 681,
+        "kind": "junior",
+        "tenure": "659—681年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "君士坦斯二世之子，659年被立为共帝，与同名的六世纪皇帝并非一人。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "tiberius-son-justinian",
+    "zh": "提比略（查士丁尼之子）",
+    "greek": "Τιβέριος",
+    "aliases": "Tiberius (son of Justinian II)",
+    "dynasty": "heraclian",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "查士丁尼二世复位后的幼子，706年取得共帝头衔。",
+      "711年父亲失位后被杀，其母的可萨背景及儿童身份，并不能使共帝任期等于其个人施政。"
+    ],
+    "sources": [
+      "wiki-tiberius-son-justinian"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 706,
+        "end": 711,
+        "kind": "junior",
+        "tenure": "706—711年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "查士丁尼二世复位后的幼子，706年取得共帝头衔。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "artabasdos",
+    "zh": "阿尔塔瓦兹多斯",
+    "greek": "Ἀρτάβασδος",
+    "aliases": "Artabasdos",
+    "dynasty": "unaffiliated",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "利奥三世的女婿、重要军区将领，741年与君士坦丁五世争位，控制君士坦丁堡。",
+      "他恢复圣像敬礼并立子共治；743年战败后被废黜、弄瞎。部分年表从742年起算，此处保留起事741年的窗口。"
+    ],
+    "sources": [
+      "wiki-artabasdos"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 741,
+        "end": 743,
+        "kind": "rival",
+        "tenure": "741—743年",
+        "territory": "首都以外的竞争政权",
+        "note": "利奥三世的女婿、重要军区将领，741年与君士坦丁五世争位，控制君士坦丁堡。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "nikephoros-artabasdos",
+    "zh": "尼基弗鲁斯（阿尔塔瓦兹多斯之子）",
+    "greek": "Νικηφόρος",
+    "aliases": "Nikephoros (son of Artabasdos)",
+    "dynasty": "unaffiliated",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "阿尔塔瓦兹多斯之子，在父亲控制首都期间取得共帝称号。",
+      "743年家族败于君士坦丁五世后同遭毁容。起号精确年随741或742年的争位纪年有异，年度行表示约年窗口。"
+    ],
+    "sources": [
+      "wiki-nikephoros-artabasdos"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 741,
+        "end": 743,
+        "kind": "rival",
+        "tenure": "741—743年",
+        "territory": "首都以外的竞争政权",
+        "note": "阿尔塔瓦兹多斯之子，在父亲控制首都期间取得共帝称号。",
+        "certainty": "约年窗口；不证明窗口中每天在位"
+      }
+    ]
+  },
+  {
+    "id": "theophylact",
+    "zh": "狄奥菲拉克托斯",
+    "greek": "Θεοφύλακτος",
+    "aliases": "Theophylact (son of Michael I)",
+    "dynasty": "nikephorian",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "米海尔一世与普罗科皮娅的长子，811年父亲即位后被立为共帝。",
+      "813年米海尔退位后，他被解除继承资格并进入修道生活；不能与莫里斯之子狄奥多西混淆。"
+    ],
+    "sources": [
+      "wiki-theophylact"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 811,
+        "end": 813,
+        "kind": "junior",
+        "tenure": "811—813年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "米海尔一世与普罗科皮娅的长子，811年父亲即位后被立为共帝。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "constantine-symbatios",
+    "zh": "君士坦丁·辛巴提奥斯",
+    "greek": "Κωνσταντῖνος Συμβάτιος",
+    "aliases": "Symbatios (son of Leo V)",
+    "dynasty": "unaffiliated",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "利奥五世之子，原名辛巴提奥斯，813年获得共帝称号并改用君士坦丁。",
+      "820年父亲遇刺后失去帝位，其家族成员遭流放和毁伤，结局反映继承竞争的暴力。"
+    ],
+    "sources": [
+      "wiki-constantine-symbatios"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 813,
+        "end": 820,
+        "kind": "junior",
+        "tenure": "813—820年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "利奥五世之子，原名辛巴提奥斯，813年获得共帝称号并改用君士坦丁。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "constantine-theophilos",
+    "zh": "君士坦丁（狄奥菲洛斯之子）",
+    "greek": "Κωνσταντῖνος",
+    "aliases": "Constantine (son of Theophilos)",
+    "dynasty": "amorian",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "狄奥菲洛斯的幼子，其共帝地位见于皇室图像和钱币研究。",
+      "通常采用约834—835年的短期窗口；确切出生、加冕与死亡纪年均不够稳固，不应把约年行当作逐日记录。"
+    ],
+    "sources": [
+      "wiki-constantine-theophilos"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 834,
+        "end": 835,
+        "kind": "junior",
+        "tenure": "834—835年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "狄奥菲洛斯的幼子，其共帝地位见于皇室图像和钱币研究。",
+        "certainty": "约年窗口；不证明窗口中每天在位"
+      }
+    ]
+  },
+  {
+    "id": "constantine-basil",
+    "zh": "君士坦丁（巴西尔之子）",
+    "greek": "Κωνσταντῖνος",
+    "aliases": "Constantine (son of Basil I)",
+    "dynasty": "macedonian",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "巴西尔一世的长子，868年被立为共帝，早于利奥六世的加冕。",
+      "879年先父而死，改变皇室继承顺序。其在钱币上的显著位置不表示已取代父亲为主帝。"
+    ],
+    "sources": [
+      "wiki-constantine-basil"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 868,
+        "end": 879,
+        "kind": "junior",
+        "tenure": "868—879年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "巴西尔一世的长子，868年被立为共帝，早于利奥六世的加冕。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "christopher",
+    "zh": "克里斯托弗",
+    "greek": "Χριστόφορος Λεκαπηνός",
+    "aliases": "Christopher Lekapenos",
+    "dynasty": "lekapenos",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "罗曼努斯一世的长子，921年获共帝称号，在宫廷等级上被置于君士坦丁七世之前。",
+      "女儿玛丽亚与保加利亚彼得成婚，931年其本人先父而死，勒卡佩诺斯继承计划因而改变。"
+    ],
+    "sources": [
+      "wiki-christopher"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 921,
+        "end": 931,
+        "kind": "junior",
+        "tenure": "921—931年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "罗曼努斯一世的长子，921年获共帝称号，在宫廷等级上被置于君士坦丁七世之前。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "stephen-lekapenos",
+    "zh": "斯蒂芬·勒卡佩诺斯",
+    "greek": "Στέφανος Λεκαπηνός",
+    "aliases": "Stephen Lekapenos",
+    "dynasty": "lekapenos",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "罗曼努斯一世之子，924年与弟弟君士坦丁获共帝称号。",
+      "944年参与废黜父亲，945年又被君士坦丁七世排除并流放。政变参与不能简单转换为一年完整独立帝期。"
+    ],
+    "sources": [
+      "wiki-stephen-lekapenos"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 924,
+        "end": 945,
+        "kind": "junior",
+        "tenure": "924—945年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "罗曼努斯一世之子，924年与弟弟君士坦丁获共帝称号。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "constantine-lekapenos",
+    "zh": "君士坦丁·勒卡佩诺斯",
+    "greek": "Κωνσταντῖνος Λεκαπηνός",
+    "aliases": "Constantine Lekapenos",
+    "dynasty": "lekapenos",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "罗曼努斯一世之子，924年取得帝号，不是同朝的君士坦丁七世。",
+      "944年与兄弟斯蒂芬推翻父亲，945年失去帝位；其个人名与正式编号皇帝须通过人物ID区分。"
+    ],
+    "sources": [
+      "wiki-constantine-lekapenos"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 924,
+        "end": 945,
+        "kind": "junior",
+        "tenure": "924—945年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "罗曼努斯一世之子，924年取得帝号，不是同朝的君士坦丁七世。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "andronikos-doukas",
+    "zh": "安德洛尼卡·杜卡斯",
+    "greek": "Ἀνδρόνικος Δούκας",
+    "aliases": "Andronikos Doukas (co-emperor)",
+    "dynasty": "doukas",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁十世之子，1068年在罗曼努斯四世统治下获共帝称号。",
+      "其后生涯和帝号终点不够清楚，采用1070年代、最晚1078年的资料窗口，不断言每一天均有效在位。"
+    ],
+    "sources": [
+      "wiki-andronikos-doukas"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1068,
+        "end": 1078,
+        "kind": "junior",
+        "tenure": "1068—1078年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "1068年加冕；终点仅知1070年代，最晚1078年，不表示持续到年底。",
+        "certainty": "约年窗口；不证明窗口中每天在位"
+      }
+    ]
+  },
+  {
+    "id": "konstantios-doukas",
+    "zh": "君士坦提奥斯·杜卡斯",
+    "greek": "Κωνστάντιος Δούκας",
+    "aliases": "Konstantios Doukas",
+    "dynasty": "doukas",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁十世之子，约1060年获共帝称号，在兄长米海尔七世主政时继续保有地位。",
+      "1078年危机中曾被推向继承位置而未建立稳定主朝，后来死于对诺曼战争；与米海尔之子君士坦丁是两人。"
+    ],
+    "sources": [
+      "wiki-konstantios-doukas"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "安德洛尼卡·杜卡斯专条明确区别弟弟君士坦提奥斯的porphyrogennetos身份。",
+      "sources": [
+        "wiki-andronikos-doukas"
+      ]
+    },
+    "reigns": [
+      {
+        "start": 1060,
+        "end": 1078,
+        "kind": "junior",
+        "tenure": "1060—1078年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "君士坦丁十世之子，约1060年获共帝称号，在兄长米海尔七世主政时继续保有地位。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "constantine-doukas",
+    "zh": "君士坦丁·杜卡斯",
+    "greek": "Κωνσταντῖνος Δούκας",
+    "aliases": "Constantine Doukas (co-emperor)",
+    "dynasty": "doukas",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "米海尔七世之子，出生后即获共帝头衔，1078年家族失位时被排除。",
+      "1081年科穆宁与杜卡斯联姻联盟恢复其地位；约1087年约翰出生后逐渐失去继承优势，1092年约翰正式加冕。"
+    ],
+    "sources": [
+      "wiki-constantine-doukas"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": {
+      "label": "生于紫室",
+      "term": "πορφυρογέννητος",
+      "note": "人物专条Life明确称porphyrogennetos，1074年前后生于米海尔七世在位时。",
+      "sources": [
+        "wiki-constantine-doukas"
+      ]
+    },
+    "reigns": [
+      {
+        "start": 1074,
+        "end": 1078,
+        "kind": "junior",
+        "tenure": "1074—1078年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "米海尔七世之子，出生后即获共帝头衔，1078年家族失位时被排除。",
+        "certainty": "公元年；含首尾年"
+      },
+      {
+        "start": 1081,
+        "end": 1087,
+        "kind": "junior",
+        "tenure": "1081—1087年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "1081年恢复共帝头衔；约1087年失去继承地位，另有延至1092年的分法。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ]
+  },
+  {
+    "id": "alexios-john-ii",
+    "zh": "阿莱克修斯（约翰二世之子）",
+    "greek": "Ἀλέξιος Κομνηνός",
+    "aliases": "Alexios Komnenos (co-emperor)",
+    "dynasty": "komnenos",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "约翰二世长子，1119年获共帝称号，作为储君随父参与军事活动。",
+      "1142年在远征期间病逝，早于父亲及其弟安德洛尼卡；1143年继承转向曼努埃尔。旧书常误记为1122年，采用钱币目录研究的1119年。"
+    ],
+    "sources": [
+      "wiki-alexios-john-ii"
+    ],
+    "reference": "专条Life与注5：Hendy 1999, DOC IV.1, p.244；此书页未直接全文复核",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1119,
+        "end": 1142,
+        "kind": "junior",
+        "tenure": "1119—1142年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "采用1119年加冕；Hendy《Dumbarton Oaks钱币目录》IV.1第244页订正旧说1122年（经专条参考书目核对）。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "john-andronikos",
+    "zh": "约翰（安德洛尼卡一世之子）",
+    "greek": "Ἰωάννης Κομνηνός",
+    "aliases": "John Komnenos (son of Andronikos I)",
+    "dynasty": "komnenos",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "安德洛尼卡一世之子，1183年父亲掌权后被置于共帝位置，尽管不是长子。",
+      "1185年家族败亡后遇害；不能与约翰二世及其共帝儿子阿莱克修斯合并为一条。"
+    ],
+    "sources": [
+      "wiki-john-andronikos"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1183,
+        "end": 1185,
+        "kind": "junior",
+        "tenure": "1183—1185年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "安德洛尼卡一世之子，1183年父亲掌权后被置于共帝位置，尽管不是长子。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "michael-ix",
+    "zh": "米海尔九世",
+    "greek": "Μιχαὴλ Θʹ Παλαιολόγος",
+    "aliases": "Michael IX Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "安德洛尼卡二世之子，1294年正式加冕为共帝，此前已有继承指定。",
+      "多次负责军事行动，与加泰罗尼亚佣兵的冲突造成严重后果；1320年因家庭打击与疾病去世，未独立继位。"
+    ],
+    "sources": [
+      "wiki-michael-ix"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1294,
+        "end": 1320,
+        "kind": "junior",
+        "tenure": "1294—1320年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "安德洛尼卡二世之子，1294年正式加冕为共帝，此前已有继承指定。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "matthew",
+    "zh": "马修·坎塔库泽诺斯",
+    "greek": "Ματθαῖος Καντακουζηνός",
+    "aliases": "Matthew Kantakouzenos",
+    "dynasty": "kantakouzenos",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "约翰六世之子，1353年被父亲宣布为共帝，1354年加冕，以对抗约翰五世一派。",
+      "父亲退位后仍在色雷斯坚持帝号，1357年被迫放弃。1353年宣布与1354年加冕分别说明。"
+    ],
+    "sources": [
+      "wiki-matthew"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1353,
+        "end": 1357,
+        "kind": "rival",
+        "tenure": "1353—1357年",
+        "territory": "首都以外的竞争政权",
+        "note": "约翰六世之子，1353年被父亲宣布为共帝，1354年加冕，以对抗约翰五世一派。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "andronikos-v",
+    "zh": "安德洛尼卡五世",
+    "greek": "Ἀνδρόνικος Εʹ Παλαιολόγος",
+    "aliases": "Andronikos V Palaiologos",
+    "dynasty": "palaiologos",
+    "era": "共帝与继承",
+    "dynastyNote": "",
+    "bio": [
+      "约翰七世之子，在父亲与曼努埃尔二世的和解安排中，约1403年取得共帝地位。",
+      "约1407年幼年去世，始终未独立统治；“五世”是现代编排，不能由编号推断他接续过主帝。"
+    ],
+    "sources": [
+      "wiki-andronikos-v"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1403,
+        "end": 1407,
+        "kind": "junior",
+        "tenure": "1403—1407年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "约1403年被立为共帝、约1407年早逝；也有稍后终点的研究表达。",
+        "certainty": "约年窗口；不证明窗口中每天在位"
+      }
+    ]
+  },
+  {
+    "id": "thomas-slav",
+    "zh": "斯拉夫人托马斯",
+    "greek": "Θωμᾶς ὁ Σλάβος",
+    "aliases": "Thomas the Slav",
+    "dynasty": "unaffiliated",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "军事将领，821年起得到多个地区支持，并以皇帝身份对抗米海尔二世。",
+      "围攻君士坦丁堡失败，823年被俘处死。其族源和自称君士坦丁六世的故事存有争论，绰号不构成确定族属。"
+    ],
+    "sources": [
+      "wiki-thomas-slav"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 821,
+        "end": 823,
+        "kind": "rival",
+        "tenure": "821—823年",
+        "territory": "首都以外的竞争政权",
+        "note": "军事将领，821年起得到多个地区支持，并以皇帝身份对抗米海尔二世。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "bardas-skleros",
+    "zh": "巴尔达斯·斯克莱罗斯",
+    "greek": "Βάρδας Σκληρός",
+    "aliases": "Bardas Skleros",
+    "dynasty": "skleros",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "东方将领，976年反对巴西尔二世政权而称帝，979年被击败后投奔外部势力。",
+      "987年再起，随后被巴尔达斯·福卡斯控制，989年与皇帝和解。两次争位之间不是持续在位。"
+    ],
+    "sources": [
+      "wiki-bardas-skleros"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 976,
+        "end": 979,
+        "kind": "rival",
+        "tenure": "976—979年",
+        "territory": "首都以外的竞争政权",
+        "note": "东方将领，976年反对巴西尔二世政权而称帝，979年被击败后投奔外部势力。",
+        "certainty": "公元年；含首尾年"
+      },
+      {
+        "start": 987,
+        "end": 989,
+        "kind": "rival",
+        "tenure": "987—989年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "987年再度争位，很快受福卡斯控制，989年最终和解；不是稳定领土帝国。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ]
+  },
+  {
+    "id": "bardas-phokas",
+    "zh": "巴尔达斯·福卡斯",
+    "greek": "Βάρδας Φωκᾶς",
+    "aliases": "Bardas Phokas the Younger",
+    "dynasty": "phokas",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "福卡斯军事家族成员，970年曾反对约翰一世失败，后来重新受到任用。",
+      "987年再次称帝反对巴西尔二世，989年在阿比多斯战役中死亡。不能把两次叛乱与中间效忠朝廷的时间连成一段。"
+    ],
+    "sources": [
+      "wiki-bardas-phokas"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 970,
+        "end": 970,
+        "kind": "rival",
+        "tenure": "970—970年",
+        "territory": "首都以外的竞争政权",
+        "note": "福卡斯军事家族成员，970年曾反对约翰一世失败，后来重新受到任用。",
+        "certainty": "公元年；含首尾年"
+      },
+      {
+        "start": 987,
+        "end": 989,
+        "kind": "rival",
+        "tenure": "987—989年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "987年再度自称皇帝，989年在阿比多斯战死。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ]
+  },
+  {
+    "id": "george-maniakes",
+    "zh": "乔治·马尼亚克斯",
+    "greek": "Γεώργιος Μανιάκης",
+    "aliases": "George Maniakes",
+    "dynasty": "unaffiliated",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "以收复埃德萨和西西里远征闻名的将领，因与宫廷冲突在意大利起兵称帝。",
+      "1043年率军进入巴尔干，虽在战场一度占优，却在战斗中死亡，争位随之瓦解。"
+    ],
+    "sources": [
+      "wiki-george-maniakes"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1042,
+        "end": 1043,
+        "kind": "rival",
+        "tenure": "1042—1043年",
+        "territory": "首都以外的竞争政权",
+        "note": "以收复埃德萨和西西里远征闻名的将领，因与宫廷冲突在意大利起兵称帝。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "leo-tornikios",
+    "zh": "利奥·托尔尼基奥斯",
+    "greek": "Λέων Τορνίκιος",
+    "aliases": "Leo Tornikios",
+    "dynasty": "unaffiliated",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "与皇室有亲缘关系的将领，1047年在色雷斯被拥立为皇帝。",
+      "进逼君士坦丁堡未能突破防守，支持逐渐瓦解，被捕后遭弄瞎。控制军队和自称帝号并不表示获得全帝国承认。"
+    ],
+    "sources": [
+      "wiki-leo-tornikios"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1047,
+        "end": 1047,
+        "kind": "rival",
+        "tenure": "1047—1047年",
+        "territory": "首都以外的竞争政权",
+        "note": "与皇室有亲缘关系的将领，1047年在色雷斯被拥立为皇帝。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "isaac-cyprus",
+    "zh": "伊萨克·科穆宁（塞浦路斯）",
+    "greek": "Ἰσαάκιος Κομνηνός",
+    "aliases": "Isaac Komnenos of Cyprus",
+    "dynasty": "komnenos",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "科穆宁家族成员，1184年在塞浦路斯建立独立统治，并采用皇帝称号。",
+      "未获君士坦丁堡承认；1191年狮心王理查在第三次十字军途中征服该岛，结束其统治。"
+    ],
+    "sources": [
+      "wiki-isaac-cyprus"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1184,
+        "end": 1191,
+        "kind": "regional",
+        "tenure": "1184—1191年",
+        "territory": "塞浦路斯，独立于君士坦丁堡",
+        "note": "科穆宁家族成员，1184年在塞浦路斯建立独立统治，并采用皇帝称号。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "theodore-thessalonica",
+    "zh": "狄奥多尔·科穆宁·杜卡斯",
+    "greek": "Θεόδωρος Κομνηνὸς Δούκας",
+    "aliases": "Theodore Komnenos Doukas",
+    "dynasty": "komnenos-doukas",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "伊庇鲁斯统治者，1224年攻取塞萨洛尼基后采用罗马皇帝称号，加冕约在1225—1227年。",
+      "与尼西亚竞争恢复帝国的合法性，1230年克洛科特尼察战败被保加利亚俘虏，未因此成为尼西亚主帝。"
+    ],
+    "sources": [
+      "wiki-theodore-thessalonica"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1224,
+        "end": 1230,
+        "kind": "regional",
+        "tenure": "1224—1230年",
+        "territory": "塞萨洛尼基竞争帝号政权",
+        "note": "伊庇鲁斯统治者，1224年攻取塞萨洛尼基后采用罗马皇帝称号，加冕约在1225—1227年。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "manuel-thessalonica",
+    "zh": "曼努埃尔·科穆宁·杜卡斯",
+    "greek": "Μανουὴλ Κομνηνὸς Δούκας",
+    "aliases": "Manuel Komnenos Doukas",
+    "dynasty": "komnenos-doukas",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "狄奥多尔的兄弟，在1230年克洛科特尼察战败后统治塞萨洛尼基。",
+      "在保加利亚影响下维持帝号及与尼西亚的关系，1237年被回归的兄长推翻，后来在色萨利取得地方地位。"
+    ],
+    "sources": [
+      "wiki-manuel-thessalonica"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1230,
+        "end": 1237,
+        "kind": "regional",
+        "tenure": "1230—1237年",
+        "territory": "塞萨洛尼基竞争帝号政权",
+        "note": "狄奥多尔的兄弟，在1230年克洛科特尼察战败后统治塞萨洛尼基。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "john-thessalonica",
+    "zh": "约翰·科穆宁·杜卡斯",
+    "greek": "Ἰωάννης Κομνηνὸς Δούκας",
+    "aliases": "John Komnenos Doukas",
+    "dynasty": "komnenos-doukas",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "狄奥多尔之子，1237年在父亲支持下成为塞萨洛尼基皇帝，实际政治受父亲影响。",
+      "1242年承认尼西亚皇帝约翰三世，放弃帝号而改用专制公头衔；其地方执政延续到1244年，但不继续算作皇帝任期。"
+    ],
+    "sources": [
+      "wiki-john-thessalonica"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1237,
+        "end": 1242,
+        "kind": "regional",
+        "tenure": "1237—1242年",
+        "territory": "塞萨洛尼基竞争帝号政权",
+        "note": "狄奥多尔之子，1237年在父亲支持下成为塞萨洛尼基皇帝，实际政治受父亲影响。",
+        "certainty": "公元年；含首尾年"
+      }
+    ]
+  },
+  {
+    "id": "evdokia",
+    "zh": "欧多基娅·马克伦博利提萨",
+    "greek": "Εὐδοκία Μακρεμβολίτισσα",
+    "aliases": "Eudokia Makrembolitissa",
+    "dynasty": "doukas",
+    "era": "区域皇帝与争位",
+    "dynastyNote": "",
+    "bio": [
+      "君士坦丁十世的皇后，1067年丈夫去世后为诸子摄政，1068年与罗曼努斯四世成婚。",
+      "1071年曾短暂恢复政治地位，旋即被送入修道院。史家对她是否列独立统治者口径不同，单设有争议身份，避免把所有摄政都自动算主帝。"
+    ],
+    "sources": [
+      "wiki-evdokia"
+    ],
+    "reference": "人物专条的生平、帝号与文献目录",
+    "purple": null,
+    "reigns": [
+      {
+        "start": 1067,
+        "end": 1067,
+        "kind": "disputed",
+        "tenure": "1067—1067年",
+        "territory": "君士坦丁堡宫廷",
+        "note": "君士坦丁十世的皇后，1067年丈夫去世后为诸子摄政，1068年与罗曼努斯四世成婚。",
+        "certainty": "公元年；含首尾年"
+      },
+      {
+        "start": 1071,
+        "end": 1071,
+        "kind": "disputed",
+        "tenure": "1071—1071年",
+        "territory": "东罗马宫廷及承认地区",
+        "note": "1071年秋恢复参与共治约一个月，随后失位；独立统治者地位有争议。",
+        "certainty": "公元年；同年交接不表示全年共治"
+      }
+    ]
+  }
+]
