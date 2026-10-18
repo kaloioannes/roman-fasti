@@ -6,14 +6,15 @@
   <meta name="description" content="十个历史剧本，483个年度。沿着人物与年份，走进罗马共和国的政治、战争与疆域。中文与拉丁文名录，互动历史地图。">
   <meta name="theme-color" content="#f8f6f1">
   <link rel="icon" href="../shared/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../shared/ui.css"><link rel="stylesheet" href="../shared/people.css">
+  <link rel="stylesheet" href="../shared/ui.css"><link rel="stylesheet" href="../shared/people.css"><link rel="stylesheet" href="people.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
-  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="../shared/periods.js"></script><script defer src="../shared/search-target.js"></script><script defer src="../shared/people.js"></script><script defer src="app.js"></script>
+  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="../shared/periods.js"></script><script defer src="../shared/search-target.js"></script><script defer src="../shared/people.js"></script><script defer src="people.js"></script><script defer src="app.js"></script>
 </head>
 <body>
+  <a class="republic-skip" href="#republic-content" id="republic-skip">跳至正文</a>
   <header class="site-header">
     <a href="#" class="brand" aria-label="FASTI 首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马共和国执政官纪年</span></span></a>
-    <div class="header-actions"><a class="text-button global-search-link" href="../search/">全站搜索</a><a href="../" class="text-button edition-link">全部时期</a><label class="spoiler-toggle global-spoiler"><input type="checkbox" id="spoiler-switch"><span class="switch-track"></span><span id="spoiler-label">防剧透：关</span></label><button class="text-button" id="sources-button">史料与方法 <span aria-hidden="true">↗</span></button><button class="icon-button" id="theme-button" aria-label="切换明暗主题"></button></div>
+    <div class="header-actions"><a class="text-button" href="#people">人物索引</a><a class="text-button global-search-link" href="../search/">全站搜索</a><a href="../" class="text-button edition-link">全部时期</a><label class="spoiler-toggle global-spoiler"><input type="checkbox" id="spoiler-switch"><span class="switch-track"></span><span id="spoiler-label">防剧透：关</span></label><button class="text-button" id="sources-button">史料与方法 <span aria-hidden="true">↗</span></button><button class="icon-button" id="theme-button" aria-label="切换明暗主题"></button></div>
   </header>
   <div id="archive-error" class="archive-error" role="alert" hidden><p id="archive-error-message"></p><button class="text-button" id="retry-data">重试当前档案 ↗</button></div>
   <main id="home" class="home">
@@ -49,8 +50,10 @@
     <section class="year-sources"><h2>这一年的史料</h2><div id="year-source-links"></div><p id="source-caveat"></p></section>
     <footer class="detail-footer"><a href="#">FASTI · 返回首页</a><span>从城邦，到共和国的终章。</span><a id="repo-link" href="https://github.com/kaloioannes/roman-fasti" target="_blank" rel="noopener">GitHub ↗</a></footer>
   </main>
+  <main id="people-view" class="rp-view" aria-label="共和国人物" hidden></main>
   <dialog id="sources-dialog"><div class="dialog-heading"><span class="eyebrow">AD FONTES</span><button class="icon-button" id="close-sources" aria-label="关闭史料说明">×</button></div><h2>史料与方法</h2><div id="method-content"><p>正在载入来源说明……</p></div></dialog>
   <div id="loading" class="loading" role="status" hidden>正在翻开这一年的档案……</div>
 <footer class="period-footer" data-period="republic"><a href="../">全部时期</a></footer>
+<noscript><p>人物索引与年度阅读需要JavaScript。可在<a href="https://github.com/kaloioannes/roman-fasti/blob/main/docs/republic-identity-review.md">人物候选清单</a>及<a href="https://github.com/kaloioannes/roman-fasti/blob/main/data/republic/records.json">完整文字数据</a>中阅读现有记录。</p></noscript>
 </body>
 </html>

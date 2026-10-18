@@ -68,7 +68,7 @@ def project_profile(period, person_id, data):
                                  'note': reign.get('note', ''), 'sources': [data['sources'][s] for s in sources],
                                  'record': copy.deepcopy(reign)})
     require(years or period == 'kingdom', f'No recorded years: {period}:{person_id}')
-    url = years[0]['url'] if period == 'republic' else f'{period}/#' + urlencode({'person': person_id})
+    url = f'{period}/#' + urlencode({'person': person_id})
     names = [p.get('latin', ''), p.get('greek', ''), p.get('nativeName', {}).get('text', '')]
     aliases = p.get('aliases', [])
     names.extend(aliases if isinstance(aliases, list) else [aliases])
@@ -148,7 +148,7 @@ def compile_people(source=None, volumes=None, periods=None):
 def write_people():
     target = ROOT / 'data/people/index.json'
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(compile_people(), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    target.write_text(json.dumps(compile_people(), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':

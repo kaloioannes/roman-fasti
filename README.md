@@ -20,9 +20,11 @@
 
 ## 浏览与分享
 
+**[共和国人物索引](https://kaloioannes.github.io/roman-fasti/republic/#people)** 提供全部905个条目的独立生涯页，可检索中文、拉丁文和别名，组合筛选官职、任年、简介状态、同名与多项任职。每页列出全部已收录任职、年度入口、简介及来源；同名者按各自年代与官职区分，身份待考者保留任职记录。全站搜索和跨卷总档案直接进入本卷专页，原年度卡片链接继续可用。见[使用与维护](docs/republic-people.md)、[完整身份候选清单](docs/republic-identity-review.md)。
+
 **[跨卷人物](https://kaloioannes.github.io/roman-fasti/people/)** 连接人工确认的七位跨卷人物：奥古斯都、狄奥多西一世、阿卡狄乌斯、霍诺里乌斯、芝诺、巴西利斯库斯及其子马尔库斯。各卷原档案可双向往返，总档案汇总全部已收录任职、相关年度与身份依据；不同同名者明确分开，日期与身份分歧按原卷保留。共和国年度人物卡与全站搜索也可直接进入。研究范围、维护及验收见 [跨卷身份说明](docs/people.md)。
 
-**[全站搜索](https://kaloioannes.github.io/roman-fasti/search/)** 可在一个入口检索五卷的年份、人物姓名及别名、事件、剧本和章节，支持拉丁文／希腊文无重音输入、分卷及类型筛选、命中摘要与直达定位。裸数字并列说明公元前／公元两种解释，四个交界年提供两卷入口，前1年直接接公元1年。查询地址可分享、刷新和返回；可隐藏内容摘要。共和国人物结果定位到实际任职年度的人物卡。范围、编辑方法及验证见 [检索说明](docs/search.md)。
+**[全站搜索](https://kaloioannes.github.io/roman-fasti/search/)** 可在一个入口检索五卷的年份、人物姓名及别名、事件、剧本和章节，支持拉丁文／希腊文无重音输入、分卷及类型筛选、命中摘要与直达定位。裸数字并列说明公元前／公元两种解释，四个交界年提供两卷入口，前1年直接接公元1年。查询地址可分享、刷新和返回；可隐藏内容摘要。共和国人物结果进入汇集全部已收录任职的本卷专页。范围、编辑方法及验证见 [检索说明](docs/search.md)。
 
 王政篇支持逐年翻阅、年份滑杆、中拉文人物检索、完整传记、出处与方法，以及年度 CSV／完整 JSON 下载。早期罗马没有连续可信的逐年事件档案：每年标明传统王期归属；无可定年记载的年份明确说明，任期内未定年事迹另栏展示。塔提乌斯共治的绝对年未定；地图为关联地点示意，不画伪精确的逐年疆界。
 
@@ -40,6 +42,8 @@
 | 塔提乌斯共治者档案 | `kingdom/#person=titus-tatius` |
 | 王政史料与纪年取舍 | `kingdom/#sources` |
 | 共和国前44年 | `republic/#year=44` |
+| 共和国人物索引 | `republic/#people` |
+| 恺撒的全部已收录任职 | `republic/#person=pe9d1a9956a` |
 | 塞尔托里乌斯剧本章节 | `republic/#story=sertorian-rome&year=77` |
 | 古典帝国前27年 | `empire/#year=-27` |
 | 双帝国分治起点 | `divided-empire/#year=395` |
@@ -114,6 +118,8 @@ python scripts/build_kingdom.py       # 王政传统纪年、人物与未定年�
 python scripts/build_divided_empire.py # 双帝国人物、东西任期与年度记事
 python scripts/build_divided_empire_map.py # 双帝国分阶段GIS（Shapely）
 python scripts/build_byzantine.py     # 拜占庭人物、分级精度任期与完整年度记事
+python scripts/build_republic_people.py # 共和国人物导航与完整身份候选清单
+python scripts/build_people.py        # 人工确认的跨卷身份投影
 python scripts/build_search.py        # 五卷静态检索索引；发布构建也会自动重建
 python scripts/build_byzantine_map.py # 拜占庭与并立政权GIS（Shapely）
 python scripts/build_map.py           # 共和国地图

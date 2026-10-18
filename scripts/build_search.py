@@ -35,8 +35,8 @@ def compile_index():
                          if any(o['person'] == person_id for o in r['officers'])]
                 spans.sort()
                 assert spans, f'Unlinked Republican person: {person_id}'
-                params = dict(year=-spans[0][0], focus=f'person:{person_id}')
-                note = '已收录任职；点击定位年度人物卡'
+                params = dict(person=person_id)
+                note = '共和国人物档案；全部已收录任职，非完整生涯或生卒年'
                 text = person['bio'] or person['officeSummary']
             elif pid == 'kingdom':
                 spans = [[person['start'], person['end']]] if person['start'] is not None else []
@@ -100,7 +100,7 @@ def compile_index():
 def write_index():
     target = ROOT / 'data/search/index.json'
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(compile_index(), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    target.write_text(json.dumps(compile_index(), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':
