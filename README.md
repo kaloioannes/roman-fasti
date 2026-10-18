@@ -2,7 +2,9 @@
 
 沿着年份，阅读罗马的官员、统治者、人物、事件与疆域。中文叙述与拉丁文／希腊文姓名并列，人物、年度与史料相互连接。
 
-**[打开网站](https://kaloioannes.github.io/roman-republic-fasti/)** · [王政篇](https://kaloioannes.github.io/roman-republic-fasti/kingdom/) · [共和国篇](https://kaloioannes.github.io/roman-republic-fasti/republic/) · [古典帝国篇](https://kaloioannes.github.io/roman-republic-fasti/empire/) · [双帝国篇](https://kaloioannes.github.io/roman-republic-fasti/divided-empire/) · [拜占庭篇](https://kaloioannes.github.io/roman-republic-fasti/byzantine/)
+仓库与网站现统一使用 `roman-fasti`，覆盖前753年至1453年的2,206个独立历史年度。
+
+**[打开网站](https://kaloioannes.github.io/roman-fasti/)** · [王政篇](https://kaloioannes.github.io/roman-fasti/kingdom/) · [共和国篇](https://kaloioannes.github.io/roman-fasti/republic/) · [古典帝国篇](https://kaloioannes.github.io/roman-fasti/empire/) · [双帝国篇](https://kaloioannes.github.io/roman-fasti/divided-empire/) · [拜占庭篇](https://kaloioannes.github.io/roman-fasti/byzantine/)
 
 ## 时期与范围
 
@@ -47,7 +49,7 @@
 | 奥古斯都传记 | `empire/#person=augustus` |
 | 塞维鲁王朝人物 | `empire/#people&dynasty=severan` |
 
-原有根目录链接 `#year=44`、`#stories`、`#story=…&year=…` 自动进入共和国篇；`emperors.html` 及其年度、人物和筛选链接自动进入古典帝国篇，保留查询参数与完整 hash。
+原有根目录链接 `#year=44`、`#stories`、`#story=…&year=…` 自动进入共和国篇，保留查询参数与完整 hash。古典帝国的统一入口为 `empire/`，旧的独立 HTML 入口已移除。
 
 每一卷的第一年／最后一年提供相邻卷对应边界年度的链接：王政 ⇄ 共和国 ⇄ 古典帝国 ⇄ 双帝国 ⇄ 拜占庭。全站页脚遵循同一顺序，第一卷和最后一卷不循环跳转。三个帝国篇的年度阅读说明收在“史料与方法”的折叠项中。
 
@@ -65,7 +67,6 @@ site/                        网页源文件
   divided-empire/            东西宫廷同年对照、人物与史料
   byzantine/                 拜占庭年度、希腊文人物与紫室证据
   shared/                    公共 UI、帝国共用布局、阶段衔接、旧路由兼容与资源
-  emperors.html              仅保留旧书签跳转，无独立页面代码
 data-source/
   kingdom/                   王表、记事、史料、方法与近似地点
   republic/                  共和国名录、事件、简介、剧本与原始 GIS
@@ -153,4 +154,4 @@ PR 工作流重建文字数据并校验一致性，运行数据、目录、发�
 
 代码使用 [MIT](LICENSE)；文字、剧本与名录数据使用 CC BY-SA 4.0；Cliopatria 地图使用 CC BY 4.0；Natural Earth 为公有领域。完整署名与变更说明见 [DATA_LICENSE.md](DATA_LICENSE.md) 和 [THIRD_PARTY.md](THIRD_PARTY.md)。
 
-**English:** FASTI is a Chinese, Latin and Greek collection of annual databases for Roman history. Published volumes cover the traditional Roman kings (753–509 BCE), Republican magistrates (509–27 BCE) and classical Roman emperors (27 BCE–395 CE). The Kingdom volume separates traditional dated nodes from undated reign narratives and explicitly identifies years without datable records. It includes biographies, sources and an approximate place diagram. The Byzantine volume (476–1453 CE) adds 978 annual records, 110 biographies, per-person Latin or Greek display names, sourced regnal dates at their attested precision, positively sourced purple-born tags and 978 independent annual entries, with explicit approximate and disputed chronology. It follows the Nicaean succession in exile and distinguishes junior, rival and selected regional emperors. The divided Empire volume (395–476 CE) adds 82 annual comparisons, 33 people, 41 title stages and 120 independently authored events. It separates the two courts, rival recognition, Caesars, vacancies and exiled imperial claims, including Nepos beyond 476. Its independently coloured GIS stages retain source intervals and explicit caveats. The repository slug remains `roman-republic-fasti` to preserve existing GitHub and Pages URLs.
+**English:** FASTI is a Chinese, Latin and Greek collection of annual databases for Roman history. Published volumes cover the traditional Roman kings (753–509 BCE), Republican magistrates (509–27 BCE) and classical Roman emperors (27 BCE–395 CE). The Kingdom volume separates traditional dated nodes from undated reign narratives and explicitly identifies years without datable records. It includes biographies, sources and an approximate place diagram. The Byzantine volume (476–1453 CE) adds 978 annual records, 110 biographies, per-person Latin or Greek display names, sourced regnal dates at their attested precision, positively sourced purple-born tags and 978 independent annual entries, with explicit approximate and disputed chronology. It follows the Nicaean succession in exile and distinguishes junior, rival and selected regional emperors. The divided Empire volume (395–476 CE) adds 82 annual comparisons, 33 people, 41 title stages and 120 independently authored events. It separates the two courts, rival recognition, Caesars, vacancies and exiled imperial claims, including Nepos beyond 476. Its independently coloured GIS stages retain source intervals and explicit caveats. The repository and Pages site use the period-neutral name `roman-fasti`.

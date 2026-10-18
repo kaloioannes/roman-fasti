@@ -8,6 +8,8 @@ const root=path.join(repo,'_site');
 const read=name=>fs.readFileSync(path.join(root,name),'utf8');
 const manifest=JSON.parse(read('asset-manifest.json'));
 const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
+const pages=directory=>walk(directory).filter(p=>p.endsWith('.html')).map(p=>path.relative(directory,p).split(path.sep).join('/')).sort();
+assert.deepEqual(pages(root),pages(path.join(repo,'site')),'Release contains missing or retired HTML entry pages');
 const expected=['project.json',...walk(path.join(repo,'data')).filter(p=>p.endsWith('.json')).map(p=>path.relative(repo,p).split(path.sep).join('/')),
  ...walk(path.join(repo,'site')).filter(p=>/\.(css|js)$/.test(p)&&!p.includes(`${path.sep}assets${path.sep}`)).map(p=>path.relative(path.join(repo,'site'),p).split(path.sep).join('/'))];
 assert.deepEqual(Object.keys(manifest).sort(),expected.sort());

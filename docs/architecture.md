@@ -2,7 +2,7 @@
 
 ## 项目身份
 
-项目展示名为 **FASTI · 罗马历史纪年**，软件包名为 `roman-fasti`。GitHub 仓库地址暂保留 `kaloioannes/roman-republic-fasti`，站点部署仍使用该 Pages 子路径。仓库改名会改变部署地址，需要单独安排 URL 迁移；本次 PR 不依赖仓库设置变更。
+项目展示名为 **FASTI · 罗马历史纪年**，软件包名为 `roman-fasti`。GitHub 仓库与 Pages 子路径统一为 `roman-fasti`。旧仓库链接由 GitHub 重定向；Pages 网站地址使用 `https://kaloioannes.github.io/roman-fasti/`。
 
 GitHub About 可采用：`FASTI · 罗马历史纪年 — Chinese/Latin annual databases of Roman magistrates and emperors, with biographies, sources and historical maps.`
 
@@ -33,15 +33,14 @@ site/<period>/ + site/shared/ + project.json ───┴──> build_site.py �
 
 `build_site.py` 自动发现 `site/` 下的 HTML、CSS、JavaScript 和 `data/` 下的 JSON，并为 JSON、第一方 CSS/JS 生成 SHA-256 内容指纹。`asset-manifest.json` 的键始终相对于发布根目录。重写时将每条引用解析到资源，再转回相对于当前页面／样式表的路径。新增文件通常无需修改构建文件列表。
 
-HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及字体按共享资源原名复制。全部站内路径采用相对 URL，兼容域名根目录和 `/roman-republic-fasti/`。静态目录 URL 使用结尾的 `/`。
+HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及字体按共享资源原名复制。全部站内路径采用相对 URL，兼容域名根目录和 `/roman-fasti/`。静态目录 URL 使用结尾的 `/`。
 
-构建前只清理上一次清单拥有的指纹文件；重复构建不会不断累积旧指纹。自定义输出目录必须与源目录分离。构建输出还包含代码与数据许可证和第三方署名。
+构建前清理上一次清单拥有的指纹文件，以及专用发布目录中已不在源码里的 HTML 页面；重复构建不会累积旧资源或退役入口。自定义输出目录必须与源目录分离。构建输出还包含代码与数据许可证和第三方署名。
 
 | 旧路径 | 当前路径 |
 |---|---|
 | `/`（无 hash） | 总入口 |
 | `/#year=44`、`/#stories`、`/#story=…&year=…` | `/republic/`，保留完整 hash 与查询参数 |
-| `/emperors.html#…` | `/empire/#…`，保留完整 hash 与查询参数 |
 | 根目录 `app.js`、`style.css` | `site/republic/app.js`、`site/shared/ui.css` |
 | 根目录帝国页面与脚本 | `site/empire/` |
 | `data-source/` 下的共和国散文件 | `data-source/republic/` |
@@ -85,4 +84,4 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 
 `shared/periods.js` 读取同一份带指纹的清单，为年度页的 `data-period-boundary` 插槽填入边界链接；共和国传入负数历史年份，输出其路由时转回正数 BC 键。内部年度不显示跨卷链接，最早和最晚边界不循环；异步返回时检查年份令牌与插槽连接状态，避免快速换年后出现旧链接。
 
-`site/catalog.css`、`site/catalog.js` 仅负责总入口。`shared/legacy-routes.js` 和极小的 `emperors.html` 是公开旧书签的兼容层；后者只跳转并保留查询参数与 hash，不再承载任何帝国界面或重复逻辑。三个帝国篇的通用年度阅读说明放入“史料与方法”的折叠项，年度滑杆直接接正文或边界链接。
+`site/catalog.css`、`site/catalog.js` 仅负责总入口。`shared/legacy-routes.js` 兼容原共和国根目录 hash；帝国仅保留 `empire/` 目录入口，废弃的独立 HTML 页面已移除。三个帝国篇的通用年度阅读说明放入“史料与方法”的折叠项，年度滑杆直接接正文或边界链接。

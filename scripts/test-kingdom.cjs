@@ -8,7 +8,7 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.ttf':'font/ttf','.svg':'image/svg+xml'};
 (async()=>{
  const server=http.createServer(async(req,res)=>{
-  let name=new URL(req.url,'http://localhost').pathname.replace(/^\/roman-republic-fasti\//,'/');
+  let name=new URL(req.url,'http://localhost').pathname.replace(/^\/roman-fasti\//,'/');
   if(name.endsWith('/'))name+='index.html';
   const file=path.resolve(site,'.'+name);
   if(!file.startsWith(site+path.sep))return res.writeHead(404).end();
@@ -26,7 +26,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
   const waitMap=()=>page.waitForSelector('.place-map[data-basemap="ready"] .map-land');
   page.on('pageerror',e=>errors.push(e.message));
   page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()}: ${r.url()}`)});
-  for(const base of ['/','/roman-republic-fasti/']){
+  for(const base of ['/','/roman-fasti/']){
    const origin=`http://127.0.0.1:${server.address().port}${base}`;
    const url=origin+'kingdom/';
    await page.goto(origin);await page.locator('a.period-card[href="kingdom/"]').click();
@@ -126,7 +126,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
   // One failed JSON request must be recoverable without losing the requested year.
   const failed=await context.newPage();let fail=true;
   await failed.route('**/records.*.json',route=>fail?route.fulfill({status:503,body:'unavailable'}):route.continue());
-  const url=`http://127.0.0.1:${server.address().port}/roman-republic-fasti/kingdom/#year=-640`;
+  const url=`http://127.0.0.1:${server.address().port}/roman-fasti/kingdom/#year=-640`;
   await failed.goto(url);await failed.waitForSelector('#retry');
   fail=false;await failed.locator('#retry').click();await failed.waitForSelector('[data-event="ancus-accession"]');
   assert.match(await failed.locator('.year-top h1').innerText(),/640/);

@@ -5,7 +5,7 @@ const http=require('node:http');
 const path=require('node:path');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
-const base='/roman-republic-fasti/';
+const base='/roman-fasti/';
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.ttf':'font/ttf','.svg':'image/svg+xml'};
 (async()=>{
  const manifest=JSON.parse(await fs.readFile(path.join(site,'asset-manifest.json'),'utf8'));

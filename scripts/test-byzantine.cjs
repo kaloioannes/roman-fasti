@@ -12,7 +12,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
  const requests=new Set(),errors=[];
  const server=http.createServer(async(req,res)=>{
   const url=new URL(req.url,'http://localhost');requests.add(url.pathname);
-  let name=url.pathname.replace(/^\/roman-republic-fasti\//,'/');if(name.endsWith('/'))name+='index.html';
+  let name=url.pathname.replace(/^\/roman-fasti\//,'/');if(name.endsWith('/'))name+='index.html';
   const file=path.resolve(site,'.'+name);if(!file.startsWith(site+path.sep))return res.writeHead(404).end();
   try{res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');res.end(await fs.readFile(file))}
   catch{res.writeHead(404).end()}
@@ -23,7 +23,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
   const context=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   const serverOrigin=`http://127.0.0.1:${server.address().port}`;
-  for(const base of ['/','/roman-republic-fasti/']){
+  for(const base of ['/','/roman-fasti/']){
    const url=serverOrigin+base+'byzantine/';
    await page.goto(url);await page.waitForSelector('.story-card');
    assert.equal(await page.locator('.story-card').count(),6);
@@ -108,7 +108,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    }
    for(const name of ['byzantine/app.js','byzantine/style.css','data/byzantine/records.json','data/byzantine/territories.json'])assert.ok(requests.has(base+manifest[name]),`Unfingerprinted resource ${name}`);
   }
-  const url=serverOrigin+'/roman-republic-fasti/byzantine/';
+  const url=serverOrigin+'/roman-fasti/byzantine/';
   // Data and map failures recover independently without losing readable annual data.
   const fail=await context.newPage();fail.on('pageerror',e=>errors.push(e.message));
   const dataURL='**/'+manifest['data/byzantine/records.json'];

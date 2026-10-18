@@ -8,7 +8,7 @@ const site=path.resolve(__dirname,'../_site');
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.ttf':'font/ttf','.svg':'image/svg+xml'};
 (async()=>{
  const server=http.createServer(async(req,res)=>{
-  let name=new URL(req.url,'http://localhost').pathname.replace(/^\/roman-republic-fasti\//,'/');
+  let name=new URL(req.url,'http://localhost').pathname.replace(/^\/roman-fasti\//,'/');
   if(name.endsWith('/'))name+='index.html';
   const file=path.resolve(site,'.'+name);
   if(!file.startsWith(site+path.sep))return res.writeHead(404).end();
@@ -23,7 +23,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
   const page=await context.newPage(),errors=[];
   page.on('pageerror',e=>errors.push(e.message));
   page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()}: ${r.url()}`)});
-  for(const base of ['/','/roman-republic-fasti/']){
+  for(const base of ['/','/roman-fasti/']){
    const origin=`http://127.0.0.1:${server.address().port}${base}`;
    await page.goto(origin);
    await page.waitForFunction(()=>document.querySelector('#available-periods')?.textContent.includes('483'));
@@ -45,15 +45,15 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    for(const [old,target] of [
     ['?from=bookmark#year=44','republic/?from=bookmark#year=44'],
     ['index.html#stories','republic/#stories'],
-    ['#story=sertorian-rome&year=77','republic/#story=sertorian-rome&year=77'],
-    ['emperors.html?from=bookmark#year=-27','empire/?from=bookmark#year=-27'],
-    ['emperors.html#person=augustus','empire/#person=augustus'],
-    ['emperors.html#people&dynasty=severan','empire/#people&dynasty=severan']
+    ['#story=sertorian-rome&year=77','republic/#story=sertorian-rome&year=77']
    ]){
     await page.goto(origin+old);await page.waitForURL(origin+target);
     await page.waitForFunction(()=>!document.querySelector('.initial-status'));
     if(target.includes('year=44'))await page.waitForFunction(()=>document.querySelector('#year-number')?.textContent==='44');
-    if(target.includes('person=augustus'))await page.waitForSelector('.person-body');
+   }
+   for(const retired of ['emperor.html','emperors.html']){
+    const response=await context.request.get(origin+retired);
+    assert.equal(response.status(),404,`${retired} must not be published`);
    }
    // Hash changes on the already loaded catalogue are also old-style navigation.
    await page.goto(origin);await page.waitForSelector('.period-card');

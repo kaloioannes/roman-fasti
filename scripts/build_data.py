@@ -181,7 +181,7 @@ method=[
  {'title':'十个历史剧本','html':'每个剧本从一场具体局势出发，以人物、政治选择和连续年份串起叙事。共十个开局、59章，涵盖成文法、同盟动员、行省经济、流亡者政治与海上粮道。各章附李维、普鲁塔克、阿庇安、狄奥多罗斯等古代作者或铭文出处，年代异说列在相应节点。剧本正文与年度档案相互连接，可跳章阅读，也可逐年查看中间的变化。'},
  {'title':'精细轮廓的历史地图','html':'疆域使用<a href="https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0" target="_blank" rel="noopener">Cliopatria v0.2.0 / Seshat</a>的历史 GIS 重建，参见<a href="https://www.nature.com/articles/s41597-025-04516-9" target="_blank" rel="noopener">数据论文</a>。沿<a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth 1:50m 海岸线</a>裁切，生成可缩放的连续涂色图。前509—338年的五个阶段使用本项目依史事节点绘制的近似示意，虚线标出边界的不确定性；前337年起使用上述GIS重建。共56个阶段，各图列出时段和来源。地方条约、盟邦和军事进展见年度记事。'},
  {'title':'传统年代与史料距离','html':'采用瓦罗纪年，建城纪年按 AUC = 754 − BC 年份换算。高卢洗劫罗马等事件在现代对照纪年中可能有数年差异，早期英雄故事含后世道德塑造。理解早期罗马可进一步参阅 Gary Forsythe《A Critical History of Early Rome》、T. J. Cornell《The Beginnings of Rome》以及《剑桥古代史》第七卷第二部分。'},
- {'title':'开源与署名','html':'网站代码采用 MIT；由维基百科名录整理、译写的数据按 CC BY-SA 4.0 提供，历史 GIS 数据为 CC BY 4.0，Natural Earth 底图为公有领域。各条目保留来源链接，依赖和字体许可证详见仓库 THIRD_PARTY.md。<a href="https://github.com/kaloioannes/roman-republic-fasti" target="_blank" rel="noopener">查看公共仓库</a>。'}
+ {'title':'开源与署名','html':'网站代码采用 MIT；由维基百科名录整理、译写的数据按 CC BY-SA 4.0 提供，历史 GIS 数据为 CC BY 4.0，Natural Earth 底图为公有领域。各条目保留来源链接，依赖和字体许可证详见仓库 THIRD_PARTY.md。<a href="https://github.com/kaloioannes/roman-fasti" target="_blank" rel="noopener">查看公共仓库</a>。'}
 ]
 out={'version':'1.0.0','stats':stats,'method':method,'years':years,'people':people}
 (R/'data/republic/records.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')

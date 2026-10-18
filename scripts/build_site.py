@@ -61,6 +61,13 @@ def build(destination):
     ):
         raise ValueError('Build destination must be separate from repository sources')
     destination.mkdir(parents=True, exist_ok=True)
+    pages = sorted(SITE.rglob('*.html'))
+    page_names = {source.relative_to(SITE).as_posix() for source in pages}
+    # The destination is a dedicated publication directory. Retired entry pages
+    # must disappear from incremental builds as well as clean CI builds.
+    for target in destination.rglob('*.html'):
+        if target.relative_to(destination).as_posix() not in page_names and target.resolve().is_relative_to(destination):
+            target.unlink()
     previous = destination / 'asset-manifest.json'
     if previous.exists():
         for name in json.loads(previous.read_text(encoding='utf-8')).values():
@@ -98,7 +105,7 @@ def build(destination):
                 continue
             name = source.relative_to(SITE).as_posix()
             fingerprint(name, rewrite(name, source.read_text(encoding='utf-8')).encode('utf-8'))
-    for source in sorted(SITE.rglob('*.html')):
+    for source in pages:
         name = source.relative_to(SITE).as_posix()
         target = destination / name
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -108,7 +115,7 @@ def build(destination):
         # Research sources stay in the repository; attribution links in the
         # standalone deployment should still resolve to their originals.
         text = re.sub(r'\]\(((?:site/|data-source/)[^)]+)\)',
-                      r'](https://github.com/kaloioannes/roman-republic-fasti/blob/main/\1)', text)
+                      r'](https://github.com/kaloioannes/roman-fasti/blob/main/\1)', text)
         (destination / name).write_text(text, encoding='utf-8')
     (destination / 'asset-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     (destination / '.nojekyll').touch()
