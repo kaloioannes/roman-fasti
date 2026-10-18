@@ -4,7 +4,7 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const when = year => `前${-year}年`;
   const years = Array.from({length:245}, (_, i) => i - 753);
-  let data;
+  let data, landPromise;
   const tenure = p => p.start === null ? '罗慕路斯时期 · 共治起讫未定' : `${when(p.start)}—${when(p.end)} · 传统${p.traditionalYears}年`;
   const links = keys => `<div class="sources">${[...new Set(keys)].map(key => `<a href="${esc(data.sources[key].url)}" target="_blank" rel="noopener">${esc(data.sources[key].label)} ↗</a>`).join('')}</div>`;
   const notice = '<p class="notice">此篇采用传统王表。绝对年与早期王传多不确定；交接年列出先后在位者，不表示全年共治。未定年事迹另列，不当作当年事件。</p>';
@@ -39,16 +39,45 @@
     document.querySelector('#export-years').onclick = exportYears;
     document.querySelector('#export-data').onclick = () => download('roman-kingdom','json',JSON.stringify(data,null,2),'application/json');
   }
+  // Keep the same regional view and projection for the coast and every place.
+  const mapProjection = () => d3.geoMercator().fitExtent([[25,45],[575,380]], {
+    type:'MultiPoint', coordinates:[[11.5,41.5],[12.95,42.4]]
+  }).clipExtent([[1,35],[599,395]]);
+  async function drawBasemap() {
+    const svg = document.querySelector('.place-map');
+    const status = document.querySelector('.map-status');
+    status.textContent = '正在载入地理底图……';
+    try {
+      landPromise ||= fetch('../shared/assets/land-50m.json').then(response => {
+        if (!response.ok) throw new Error('HTTP '+response.status);
+        return response.json();
+      }).then(topology => topojson.feature(topology,topology.objects.land)).catch(error => {
+        landPromise = null;
+        throw error;
+      });
+      const land = await landPromise;
+      // A year change may have replaced the SVG while the request was pending.
+      if (!svg.isConnected) return;
+      const path = d3.geoPath(mapProjection());
+      svg.querySelector('.map-geography').innerHTML = `<path class="map-land" d="${path(land)}"/><text class="sea-label" x="75" y="335">第勒尼安海</text>`;
+      svg.dataset.basemap = 'ready';
+      status.textContent = '';
+    } catch {
+      if (!svg.isConnected) return;
+      svg.dataset.basemap = 'error';
+      status.innerHTML = '地理底图暂时无法载入，地点仍可查阅。<button type="button" class="inline-link">重新载入底图 ↗</button>';
+      status.querySelector('button').onclick = drawBasemap;
+    }
+  }
   function map(rulers) {
     const ids = [...new Set(rulers.flatMap(id => data.people[id].places))];
     const places = ids.map(id => data.places[id]);
-    // Geographic placement only. No polygon, expansion animation or implied borders.
-    const x = lon => 55 + (lon - 11.7) / 1.1 * 490;
-    const y = lat => 45 + (42.3 - lat) / .75 * 340;
+    // Modern physical geography is context, not a reconstruction of royal borders.
+    const projection = mapProjection();
     const width = 600, height = 445;
     const boxes = [];
     const marks = places.map(p => {
-      const px = x(p.lon), py = y(p.lat);
+      const [px,py] = projection([p.lon,p.lat]);
       // Reserve 24 SVG units per character, including on narrow screens.
       const labelWidth = [...p.zh].reduce((sum,c)=>sum+(/[\u2e80-\uffff]/.test(c)?24:14),0);
       const candidates = [-12,30,-46,64,-80,98].flatMap(dy => [true,false].map(left => {
@@ -57,15 +86,16 @@
       }));
       const label=candidates.find(b=>b.l>=15&&b.r<=585&&b.t>=35&&b.b<=395&&boxes.every(a=>b.l>a.r+6||b.r<a.l-6||b.t>a.b+6||b.b<a.t-6)) || candidates[0];
       boxes.push(label);
-      return `<g><title>${esc(p.zh)}：${esc(p.note)}</title><circle cx="${px}" cy="${py}" r="4"/><text x="${label.tx}" y="${label.ty}" text-anchor="${label.left ? 'end' : 'start'}">${esc(p.zh)}</text></g>`;
+      return `<g class="map-place" data-place="${p.id}"><title>${esc(p.zh)}：${esc(p.note)}</title><circle cx="${px}" cy="${py}" r="4"/><text x="${label.tx}" y="${label.ty}" text-anchor="${label.left ? 'end' : 'start'}">${esc(p.zh)}</text></g>`;
     }).join('');
-    return `<svg class="place-map" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="map-title map-description"><title id="map-title">本王期叙事关联地点示意</title><desc id="map-description">按近似经纬度标出地点；不绘制领土边界。文字说明见下方列表。</desc><text class="compass" x="25" y="28">北 ↑</text><text class="map-latin" x="25" y="420">LOCA · 地点关联，不表示疆域</text>${marks}</svg><details><summary>地点与位置说明 · ${places.length}处</summary><ul class="place-list">${places.map(p => `<li>${esc(p.zh)} · ${esc(p.latin)}：${esc(p.note)}${links(p.sources)}</li>`).join('')}</ul></details>`;
+    return `<svg class="place-map" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="map-title map-description"><title id="map-title">本王期叙事关联地点示意</title><desc id="map-description">在现代海陆轮廓上按近似经纬度标出地点；不绘制领土边界。底图不是王政时代海岸线复原，文字说明见下方列表。</desc><rect class="map-ocean" x="1" y="35" width="598" height="360"/><g class="map-geography" aria-hidden="true"></g><text class="compass" x="25" y="28">北 ↑</text><text class="map-latin" x="25" y="420">LOCA · 地点关联，不表示疆域</text>${marks}</svg><p class="map-status citation" role="status"></p><p class="citation">底图：Natural Earth · 现代海岸线，仅作地理参照。<a class="inline-link" href="../THIRD_PARTY.md">数据署名 ↗</a></p><details><summary>地点与位置说明 · ${places.length}处</summary><ul class="place-list">${places.map(p => `<li>${esc(p.zh)} · ${esc(p.latin)}：${esc(p.note)}${links(p.sources)}</li>`).join('')}</ul></details>`;
   }
   function yearPage(y) {
     const record = data.years[y], index = years.indexOf(y);
     document.title = `${when(y)} · 王政纪年 · FASTI`;
     main.innerHTML = `<div class="toolbar"><a href="#">← 王政纪年</a><a href="#people">人物索引 ↗</a><a href="#sources">纪年依据 ↗</a></div>${searchForm(y)}<section class="year-top"><div><div class="eyebrow">REGES · AUC ${record.auc}（依本库建城纪元换算）</div><h1>${-y}<small>BC · 公元前</small></h1></div><div class="year-nav"><button id="previous-year"${index === 0 ? ' disabled' : ''}>← ${index ? when(years[index-1]) : '建城起点'}</button><button id="next-year"${index === 244 ? ' disabled' : ''}>${index < 244 ? when(years[index+1]) : '分卷终点'} →</button></div></section><label for="year-slider" class="sr-only">拖动浏览王政年份</label><input type="range" class="year-range" id="year-slider" min="-753" max="-509" value="${y}" aria-valuetext="${when(y)}"><div class="range-labels"><span>前753年</span><output id="slider-label" for="year-slider">${when(y)}</output><span>前509年</span></div>${notice}<div class="year-columns"><section aria-labelledby="rulers-heading"><h2 id="rulers-heading">当年的 Rex · 传统归属</h2>${record.rulers.map(id => card(data.people[id])).join('')}${record.interregnum ? `<article class="king-card" data-interregnum><span class="tag">INTERREGNUM · 王位空缺</span><h3>元老轮流代理王权</h3><p>前716—前715年标示传统一年空位期的两端；并非连续两个完整无王年。各代理人姓名与完整轮次不可恢复。</p>${links(['livy','dion-numa'])}</article>` : ''}${record.rulers.includes('romulus') ? `<p class="notice">本王期另有<a class="inline-link" href="#person=titus-tatius">塔提乌斯共治</a>传统，起讫年未定，不能据此断言本年正在共治。</p>` : ''}</section><section aria-labelledby="places-heading"><h2 id="places-heading">王期相关地点</h2>${map(record.rulers)}</section></div><section id="annual-events"><h2>本年记事</h2><p class="${record.events.length ? 'citation' : 'empty-state'}" data-record-status="${record.status}">${esc(record.note)}</p>${record.events.map(eventCard).join('')}</section><section class="traditions"><h2>任期内事迹 · 未定年</h2><p class="intro">以下仅说明相关国王统治期的叙事背景，不能用作本年发生事件的证据。</p>${record.traditions.map(eventCard).join('') || '<p class="empty-state">没有另列的任期背景。</p>'}</section>${y === -509 ? '<p class="notice">王政篇在此与共和国篇衔接：<a class="inline-link" href="../republic/#year=509">查看前509年的执政官与共和国记事 ↗</a></p>' : ''}`;
     bindSearch();
+    drawBasemap();
     document.querySelector('#previous-year').onclick = () => {location.hash=`year=${y-1}`;};
     document.querySelector('#next-year').onclick = () => {location.hash=`year=${y+1}`;};
     const slider = document.querySelector('#year-slider');
