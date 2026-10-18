@@ -25,7 +25,7 @@ site/<period>/ + site/shared/ + project.json ───┴──> build_site.py �
 - `project.json` 定义稳定的时期 ID、标题、展示范围、历史年份端点和发布状态。`available` 要求完整页面与数据；`planned` 不进入已发布卷卡和阶段导航。
 - 清单中的历史年份使用负数表示公元前、正数表示公元后，无公元0年。分卷端点包含在内，因此前509、前27、395和476等交界年份允许重叠；跨时期查询不得简单相加作为唯一年度数。
 - 共和国篇保留原来的正数 BC 键与路由，如 `years[44]`、`#year=44` 表示前44年；帝国篇的 `years[-27]`、`#year=-27` 表示前27年。任何跨时期工具必须显式转换共和国年份，不能直接合并两个 `years` 对象。
-- 人物 ID 只在本篇内唯一；跨时期引用使用 `(periodId, personId)`。对跨前27年或395年的同一人物，未来可增加有来源的身份映射，不能仅按姓名自动合并。
+- 人物 ID 只在本篇内唯一；跨时期引用使用 `(periodId, personId)`。独立的 `data-source/people/identities.json` 显式维护有来源的全站身份，投影为 `data/people/index.json`，不改写各卷原档案。`people/` 提供总档案，本卷人物页和搜索提供互链；姓名或本卷ID相同不会自动合并。数据与研究约定见 [跨卷人物](people.md)。
 - 王政篇使用负数年份；`years[-753]`、`#year=-753` 表示前753年。王期两端为传统交接点，年度桶包含端点，不表示全年在位。`events` 是传统纪年节点；`traditions` 仅为未定年的王期背景，两者不可合并统计。塔提乌斯空值任期不展开，空位另以 `interregnum` 标记。地点示意不提供疆界；完整约定见 `data-source/kingdom/RESEARCH.md`。
 - 双帝国篇 `divided-empire` 已开放：`side=west/east/both`，`kind`区分实际宫廷、共帝、争位、流亡、恺撒和有争议帝号；对方承认另记于 `recognition`。`vacancies`为有出处的宫廷间隔，466年不伪造西帝。`startDate/endDate`分年/月/日精度，可用标签标异说。尼波斯终点480年、芝诺终点491年保留，但年度展开止于476年。395与476年交叠是分卷安排。
 

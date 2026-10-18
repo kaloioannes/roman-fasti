@@ -126,6 +126,7 @@
     document.title = `${p.zh} · 王政人物档案 · FASTI`;
     const events = Object.values(data.events).filter(e => e.people.includes(id));
     main.innerHTML = `<div class="toolbar"><a href="#people">← 人物索引</a><a href="#">王政纪年 ↗</a></div><article class="bio"><span class="tag">${esc(p.title)}</span><h1>${esc(p.zh)}</h1><div class="latin">${esc(p.latin)}</div><p class="years">${esc(tenure(p))}</p>${p.bio.map(paragraph => `<p>${esc(paragraph)}</p>`).join('')}<div class="citation">主要篇章：${id === 'titus-tatius' ? '李维1.13—14；普鲁塔克《罗慕路斯传》19、23' : '见下列相关记事的具体卷章及研究说明。'}</div>${links(p.sources)}${p.start === null ? '<p class="notice">本人物的绝对任期未定；没有为其分配伪精确的逐年在位记录。</p>' : `<p class="notice"><a href="#year=${p.start}">${when(p.start)}继位／建城年 ↗</a> · <a href="#year=${p.end}">${when(p.end)}王期终点 ↗</a></p>`}<h2>相关记事与出处</h2>${events.map(e=>eventCard(e.id)).join('')}</article>`;
+    FastiPeople.mount('kingdom',id,main.querySelector('.bio'));
   }
   function sourcesPage() {
     document.title = '王政时代史料与方法 · FASTI';

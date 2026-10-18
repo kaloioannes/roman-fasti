@@ -195,6 +195,7 @@
       <h2>史料与研究</h2><p class="event-reference">定位：${esc(p.reference)}</p>${sourceLinks(p.sources)}<p class="person-notice">古代叙事的偏见、钱币证据及现代日期选择，见“史料与方法”。未确知的生年、死因及施政不以传闻补齐。</p>
       <details><summary class="bio-link">浏览本卷中的全部相关年度 · ${links.length}年</summary><div class="reign-years">${links.map(yearLink).join('')}</div></details></article>`;
     document.title = `${p.zh} · 人物档案 · FASTI`;
+    FastiPeople.mount('byzantine',id,main.querySelector('.person-page'));
   }
 
   function renderInvalid(message) {
