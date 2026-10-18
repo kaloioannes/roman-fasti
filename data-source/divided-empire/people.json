@@ -599,7 +599,7 @@
     },
     "greek": "Ἀνθέμιος",
     "aliases": "Procopius Anthemius Ἀνθέμιος",
-    "dynasty": "leonid",
+    "dynasty": "independent",
     "bio": [
       "东方军政贵族，娶马尔基安之女欧菲米娅。467年利奥一世派他赴意大利建立获东方支持的西部宫廷，其女与里西默结婚以维系联盟。",
       "468年东西联合远征汪达尔非洲遭到重大失败，471年在高卢的军事行动也受挫。与里西默的矛盾终于演成罗马围城，472年7月被杀。"
@@ -633,7 +633,8 @@
       "bury-10",
       "marcellinus"
     ],
-    "reference": "Bury I.X §§3–4；Marcellinus s.a.467、468、472"
+    "reference": "Bury I.X §§3–4；Marcellinus s.a.467、468、472",
+    "dynastyNote": "妻欧菲米娅为马尔基安之女；利奥一世推举其赴西部称帝是政治任命，非利奥皇室血缘或婚姻继承。"
   },
   {
     "id": "olybrius",

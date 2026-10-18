@@ -145,6 +145,8 @@
       const matching = Object.entries(data.dynasties).find(([,d]) => d.label === previous);
       if (matching) directoryState.dynasty = matching[0];
     }
+    const legacyLabels = {'科穆宁家族':'komnenos','杜卡斯家族':'doukas','拉斯卡里斯家族':'laskaris','尼基弗鲁斯家族':'nikephorian','利奥皇室':'leonid','科穆宁·杜卡斯家族':'komnenos-doukas','vatatzes':'laskaris','瓦塔齐斯家族':'laskaris'};
+    directoryState.dynasty = legacyLabels[directoryState.dynasty] || directoryState.dynasty;
     const dynasties = Object.entries(data.dynasties);
     const legacyEra = directoryState.dynasty;
     if (legacyEra && !data.dynasties[legacyEra] && Object.values(data.people).some(p => p.era === legacyEra)) {

@@ -47,6 +47,6 @@
 
 历史疆域使用 [Cliopatria v0.2.0 / Seshat](https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0) 的 GIS 轮廓，沿 Natural Earth 1:50m 海岸线裁切、轻度简化，以 D3 绘制。
 
-地图按53个历史阶段显示，每张图标出所用时段。前509—501年沿用最早的前500—481年轮廓。色块呈现阶段控制区，具体战争、地方条约和盟友关系可结合年度记事阅读。
+地图按56个阶段显示。前509—338年的五段来自独立的编辑示意（`data-source/republic/early-territories.geojson`），替换了上游两个排除罗马城的矩形网格残片。示意以罗马核心、菲德奈、维伊、图斯库卢姆和前338年拉丁和约为节点，使用较近的拉丁姆视野、虚线与逐段来源。节点年份沿用传统编年，边界为区域近似，阶段内逐年变化与飞地细节未定。前337年起保留Cliopatria轮廓。参见[核查记录](historical-corrections.md)。
 
 数据论文：Bennett, J. S., Mutch, E., Tollefson, A. et al. (2025), [*Cliopatria — A geospatial database of world-wide political entities from 3400BCE to 2024CE*](https://doi.org/10.1038/s41597-025-04516-9), *Scientific Data* 12, 247.

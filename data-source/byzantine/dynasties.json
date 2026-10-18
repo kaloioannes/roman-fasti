@@ -1,12 +1,13 @@
 {
   "leonid": {
-    "label": "利奥皇室",
+    "label": "利奥王朝",
     "kind": "dynasty",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "note": "利奥一世皇室及通过维里娜、阿里阿德涅婚姻相连的继承者。巴西利斯库斯是维里娜之弟；阿纳斯塔修斯一世娶阿里阿德涅，归入政治继承线。",
     "sources": [
       "wiki-basiliscus",
       "wiki-marcus",
-      "wiki-zeno"
+      "wiki-zeno",
+      "bury-anastasius"
     ]
   },
   "unaffiliated": {
@@ -37,11 +38,12 @@
   "justinian": {
     "label": "查士丁尼王朝",
     "kind": "dynasty",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "note": "518—602年的通行继承线，包括查士丁一世、查士丁尼一世、查士丁二世，以及收养继承的提比略二世、女婿莫里斯与共帝狄奥多西。",
     "sources": [
       "wiki-justin-i",
       "wiki-justin-ii",
-      "wiki-justinian-i"
+      "wiki-justinian-i",
+      "fordham-rulers"
     ]
   },
   "heraclian": {
@@ -74,14 +76,15 @@
     ]
   },
   "nikephorian": {
-    "label": "尼基弗鲁斯家族",
-    "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "label": "尼基弗鲁斯王朝",
+    "kind": "dynasty",
+    "note": "802—813年尼基弗鲁斯一世、其子斯陶拉基奥斯、女婿米海尔一世及其共帝子。姻亲继承列入王朝；813—820年的利奥五世另列。",
     "sources": [
       "wiki-michael-i",
       "wiki-nikephoros-i",
       "wiki-staurakios",
-      "wiki-theophylact"
+      "wiki-theophylact",
+      "pbe-michael-i"
     ]
   },
   "amorian": {
@@ -115,7 +118,7 @@
   "lekapenos": {
     "label": "勒卡佩诺斯家族",
     "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "note": "罗曼努斯一世及其共帝诸子的统治家族；920—944年与马其顿皇室君士坦丁七世共治，未据此将其血缘并入马其顿家族。部分研究讨论其建朝尝试，本项目保留独立家族标签。",
     "sources": [
       "wiki-christopher",
       "wiki-constantine-lekapenos",
@@ -151,7 +154,7 @@
   "paphlagonian": {
     "label": "帕夫拉戈尼亚家族",
     "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "note": "米海尔四世与其外甥米海尔五世的亲属政权，处于佐伊与狄奥多拉的马其顿皇室继承背景中；保留独立家族标签。",
     "sources": [
       "wiki-michael-iv",
       "wiki-michael-v"
@@ -166,9 +169,9 @@
     ]
   },
   "komnenos": {
-    "label": "科穆宁家族",
-    "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "label": "科穆宁王朝",
+    "kind": "dynasty",
+    "note": "伊萨克一世1057—1059年的首次执政与阿莱克修斯一世1081年起的王朝统治分段理解。塞浦路斯伊萨克列为该皇族的区域争位者；家族归属不赋予其中央主帝身份。",
     "sources": [
       "wiki-alexios-i",
       "wiki-alexios-ii",
@@ -178,13 +181,15 @@
       "wiki-isaac-i",
       "wiki-john-andronikos",
       "wiki-john-ii",
-      "wiki-manuel-i"
+      "wiki-manuel-i",
+      "angold-komnenoi",
+      "neville-komnenos"
     ]
   },
   "doukas": {
-    "label": "杜卡斯家族",
-    "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "label": "杜卡斯王朝",
+    "kind": "dynasty",
+    "note": "君士坦丁十世1059年起的皇室继承线，包含其子、孙及欧多基娅。罗曼努斯四世保留第欧根尼家族归属；1204年的阿莱克修斯五世与此皇室关系未定，另列。",
     "sources": [
       "wiki-alexios-v",
       "wiki-andronikos-doukas",
@@ -192,7 +197,8 @@
       "wiki-constantine-x",
       "wiki-evdokia",
       "wiki-konstantios-doukas",
-      "wiki-michael-vii"
+      "wiki-michael-vii",
+      "neville-komnenos"
     ]
   },
   "diogenes": {
@@ -222,21 +228,17 @@
     ]
   },
   "laskaris": {
-    "label": "拉斯卡里斯家族",
-    "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "label": "拉斯卡里斯王朝",
+    "kind": "dynasty",
+    "note": "尼西亚的拉斯卡里斯—瓦塔齐斯继承线：狄奥多尔一世、女婿约翰三世、其子狄奥多尔二世与孙约翰四世。瓦塔齐斯父姓与拉斯卡里斯母系姓号属于同一王朝。",
     "sources": [
       "wiki-john-iv",
       "wiki-theodore-i",
-      "wiki-theodore-ii"
-    ]
-  },
-  "vatatzes": {
-    "label": "瓦塔齐斯家族",
-    "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
-    "sources": [
-      "wiki-john-iii"
+      "wiki-theodore-ii",
+      "fordham-rulers",
+      "met",
+      "wiki-john-iii",
+      "angelov-hellene"
     ]
   },
   "palaiologos": {
@@ -260,7 +262,7 @@
   "kantakouzenos": {
     "label": "坎塔库泽诺斯家族",
     "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "note": "约翰六世及其子马修的竞争皇室；父子与巴列奥略皇帝交错共治，未形成通行分期中的完整替代王朝。本项目保留家族标签并逐段列明帝号。",
     "sources": [
       "wiki-john-vi",
       "wiki-matthew"
@@ -275,13 +277,23 @@
     ]
   },
   "komnenos-doukas": {
-    "label": "科穆宁·杜卡斯家族",
-    "kind": "family",
-    "note": "按政治继承与通行皇室归组；联姻、收养和其他姓号不自动变成血缘关系。",
+    "label": "科穆宁·杜卡斯王朝",
+    "kind": "dynasty",
+    "note": "伊庇鲁斯—塞萨洛尼基的安格洛斯旁支统治家系，采用科穆宁与杜卡斯姓号；本卷只收入取得竞争帝号的成员。区域王朝不等于尼西亚或君士坦丁堡主线。",
     "sources": [
       "wiki-john-thessalonica",
       "wiki-manuel-thessalonica",
-      "wiki-theodore-thessalonica"
+      "wiki-theodore-thessalonica",
+      "angelov-hellene"
+    ]
+  },
+  "doukas-mourtzouphlos": {
+    "label": "杜卡斯·穆尔祖弗洛斯家族",
+    "kind": "family",
+    "note": "阿莱克修斯五世使用杜卡斯姓号；与十一世纪杜卡斯皇室的确切亲属关系未明，保留家族名而另列归组。",
+    "sources": [
+      "wiki-alexios-v",
+      "angold-komnenoi"
     ]
   }
 }

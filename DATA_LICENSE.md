@@ -24,7 +24,7 @@ The Kingdom volume (`data/kingdom/records.json` and authored files in `data-sour
 
 License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
 
-Changes: selected Roman Republic and early Roman Empire features; limited display to 509–27 BCE; clipped polygons to Natural Earth 1:50m land; simplified at 0.008 degrees while preserving topology; reoriented rings for D3 spherical rendering; extended the first 500–481 BCE reconstruction to 509 BCE; added display ranges, view bounds and Chinese captions. Original source year ranges remain in feature properties.
+Changes: selected Roman Republic and early Roman Empire features; limited display to 509–27 BCE; clipped polygons to Natural Earth 1:50m land; simplified at 0.008 degrees while preserving topology; reoriented rings for D3 spherical rendering; replaced the two faulty 500–338 BCE grid fragments with five independently authored editorial schematic stages covering 509–338 BCE; added display ranges, view bounds and Chinese captions. Original source year ranges remain on the retained Cliopatria features. The new schematic geometry in `data-source/republic/early-territories.geojson` is released under MIT, independently of the original CC BY 4.0 GIS. Historical references support the event anchors, not surveyed border vertices; see [the audit](docs/historical-corrections.md).
 
 Natural Earth geographic data is in the [public domain](https://www.naturalearthdata.com/about/terms-of-use/). Its present-day coastline provides the detailed land boundaries used to clip the historical polygons.
 

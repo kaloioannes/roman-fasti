@@ -92,6 +92,12 @@ assert.deepEqual(of(1453,'central'),['constantine-xi']);
 assert.ok(d.people['basil-ii'].purple&&d.people['constantine-xi'].purple);
 assert.equal(d.people['alexios-john-ii'].purple,null,'Born before his father became emperor, not inferred from Komnenos family');
 assert.equal(d.people['john-i'].dynasty,'kourkouas');
+for(const id of ['komnenos','doukas','laskaris','nikephorian','leonid','justinian','komnenos-doukas']){
+ assert.equal(d.dynasties[id].kind,'dynasty');assert.match(d.dynasties[id].label,/王朝$/);
+}
+for(const [id,key] of Object.entries({'anastasius-i':'leonid','tiberius-ii':'justinian',maurice:'justinian','theodosios-son-maurice':'justinian','john-iii':'laskaris','theodore-ii':'laskaris','alexios-v':'doukas-mourtzouphlos'}))assert.equal(d.people[id].dynasty,key,id);
+assert.equal(d.dynasties['doukas-mourtzouphlos'].kind,'family');
+for(const id of ['lekapenos','phokas','kourkouas','argyros','monomachos','diogenes','botaneiates','skleros'])assert.equal(d.dynasties[id].kind,'family');
 assert.match(d.years[477].events[0].title,/阿尔马图斯/);
 assert.equal(d.people['justinian-i'].nativeName.lang,'la');
 assert.equal(d.people['maurice'].nativeName.lang,'el','Greek-speaking emperor before Heraclius');
