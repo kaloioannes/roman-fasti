@@ -1,0 +1,26 @@
+{
+  "theodosian": {
+    "label": "狄奥多西皇室",
+    "kind": "dynasty"
+  },
+  "leonid": {
+    "label": "利奥皇室及其姻亲",
+    "kind": "family"
+  },
+  "constantinian-claim": {
+    "label": "君士坦丁三世父子",
+    "kind": "family"
+  },
+  "jovinian": {
+    "label": "约维努斯兄弟",
+    "kind": "family"
+  },
+  "anician": {
+    "label": "阿尼基乌斯家族联系",
+    "kind": "family"
+  },
+  "independent": {
+    "label": "独立帝位与军政推举",
+    "kind": "none"
+  }
+}

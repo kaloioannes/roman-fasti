@@ -27,7 +27,7 @@
     return linked ? `<a ${attrs} href="#people&dynasty=${encodeURIComponent(p.dynasty)}">${esc(text)} ↗</a>` : `<span ${attrs}>${esc(text)}</span>`;
   };
   const purpleTag = p => p.purple ? `<span class="purple-tag" title="${esc(p.purple.note)}">生于紫室</span>` : '';
-  const nativeName = p => `<span class="name-language">${p.nativeName.lang === 'la' ? '拉丁文原名' : '希腊文原名'}</span><span lang="${p.nativeName.lang}" class="ruler-greek">${esc(p.nativeName.text)}</span>`;
+  const nativeName = p => `<span lang="${p.nativeName.lang}" class="ruler-greek">${esc(p.nativeName.text)}</span>`;
   const regnalDates = r => `<dl class="regnal-dates"><div><dt>开始</dt><dd>${esc(r.startDate.label)}</dd></div><div><dt>结束</dt><dd>${esc(r.endDate.label)}</dd></div></dl>`;
   const yearLink = y => `<a class="year-chip" href="#year=${y}">${when(y)} ↗</a>`;
   const sourceLinks = keys => `<div class="source-links">${[...new Set(keys)].map(key => {
@@ -61,7 +61,7 @@
     const stats = data.stats;
     main.innerHTML = `<div class="home"><section class="home-content">
       <div class="eyebrow"><span class="tiny-rule"></span>AD 476 — 1453<span class="tiny-rule"></span></div>
-      <div class="hero-word" aria-hidden="true">ΒΑΣΙΛΕΙΑ</div><h1>帝国的<span>每一年</span></h1>
+      <div class="hero-word" aria-hidden="true">ῬΩΜΗ</div><h1>帝国的<span>每一年</span></h1>
       <p class="home-description">从新罗马的宫廷，到最后的城墙。<br>沿着皇帝、共治者与记事，阅读拜占庭的近千年。</p>
       ${searchForm('home-form')}<p id="year-error" class="form-error" role="alert"></p>
       <button class="random-button" id="random-year">⚄ 掷骰子，偶遇一年</button>

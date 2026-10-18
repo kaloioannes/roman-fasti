@@ -1,0 +1,170 @@
+{
+  "bury-5A": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.5A · 阿卡狄乌斯与霍诺里乌斯",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/5A*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-5B": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.V §5 · 金口约翰",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/5B*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-6": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.6 · 霍诺里乌斯时代的入侵与争位",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/6*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-7": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.7 · 狄奥多西二世与马尔基安",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/7*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-8": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.8 · 汪达尔征服与瓦伦提尼安三世",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/8*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-9": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.9 · 阿提拉",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/9*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-10": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.10 · 利奥一世与里西默",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/10*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-12": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.12 · 芝诺与意大利",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/12*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "marcellinus": {
+    "label": "马尔凯利努斯《编年史》",
+    "url": "https://www.thelatinlibrary.com/marcellinus1.html",
+    "kind": "古代编年史 · 拉丁文",
+    "note": "Mommsen《Chronica Minora》II（1894）文本入口；按执政官年定位。存在错年，不机械照抄。"
+  },
+  "hydatius": {
+    "label": "海达提乌斯《编年史》",
+    "url": "https://www.thelatinlibrary.com/hydatiuschronicon.html",
+    "kind": "古代编年史 · 拉丁文",
+    "note": "伊比利亚及西部事件的同时代证人。此在线本的纪年分段和异文不等同现代校订本编号，引用采用事件关键词与公元年。"
+  },
+  "socrates-6": {
+    "label": "苏格拉底《教会史》VI",
+    "url": "https://www.newadvent.org/fathers/26016.htm",
+    "kind": "古代叙事 · 1890年英译",
+    "note": "金口约翰、欧多克西亚与首都政治；宗教评价属于作者立场。"
+  },
+  "socrates-7": {
+    "label": "苏格拉底《教会史》VII",
+    "url": "https://www.newadvent.org/fathers/26017.htm",
+    "kind": "古代叙事 · 1890年英译",
+    "note": "402—439年前后的东方政治、教会与城市生活。逐条给章号，不采信神迹为可验证事实。"
+  },
+  "dir-index": {
+    "label": "DIR · 帝位人物总表",
+    "url": "https://roman-emperors.sites.luc.edu/impindex.htm",
+    "kind": "现代学术百科",
+    "note": "主帝、共帝与争位者索引，姓名及基本年限交叉核查。索引标题不能代替任期精度。"
+  },
+  "dir-honorius": {
+    "label": "DIR · 霍诺里乌斯",
+    "url": "https://roman-emperors.sites.luc.edu/honorius.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-westemp": {
+    "label": "DIR · 西部407—425年帝位人物",
+    "url": "https://roman-emperors.sites.luc.edu/westemp5.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-arcadius": {
+    "label": "DIR · 阿卡狄乌斯",
+    "url": "https://roman-emperors.sites.luc.edu/arcadius.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-theodosius": {
+    "label": "DIR · 狄奥多西二世",
+    "url": "https://roman-emperors.sites.luc.edu/theo2.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-leo": {
+    "label": "DIR · 利奥一世",
+    "url": "https://roman-emperors.sites.luc.edu/leo1.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-zeno": {
+    "label": "DIR · 芝诺",
+    "url": "https://roman-emperors.sites.luc.edu/zeno.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-romulus": {
+    "label": "DIR · 罗慕路斯·奥古斯都",
+    "url": "https://roman-emperors.sites.luc.edu/auggiero.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "natural-earth": {
+    "label": "Natural Earth · 地理底图",
+    "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "kind": "公有领域地理资料",
+    "note": "复用仓库共享land-50m底图，作陆地背景与历史图层海岸裁切；据点坐标为约值，不据此推断本年主权。"
+  },
+  "bury-5C": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.V §§6–7 · 意大利与斯提利科",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/5C*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "bury-11": {
+    "label": "J. B. Bury《晚期罗马帝国史》I.XI · 教会与国家",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/11*.html",
+    "kind": "近代研究 · 1923年公版全文",
+    "note": "已对读正文及原始文献注释。章节小节见各条记录；种族与宗教价值判断不沿用。"
+  },
+  "dir-severus": {
+    "label": "DIR · 利比乌斯·塞维鲁斯",
+    "url": "https://roman-emperors.sites.luc.edu/libius.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-glycerius": {
+    "label": "DIR · 格利凯里乌斯",
+    "url": "https://roman-emperors.sites.luc.edu/glyceriu.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "dir-nepos": {
+    "label": "DIR · 尤利乌斯·尼波斯",
+    "url": "https://roman-emperors.sites.luc.edu/nepos.htm",
+    "kind": "现代署名研究",
+    "note": "De Imperatoribus Romanis，洛约拉大学存档。与公版叙事对读，现代条目只作简要事实核对，不转载全文。"
+  },
+  "cth-1": {
+    "label": "《狄奥多西法典》I · 法律引用与编纂",
+    "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/CTh01.html",
+    "kind": "古代法律 · 拉丁文",
+    "note": "格勒诺布尔大学Roman Law Library文本；1.4.3为426年《引证法》，1.1.5、1.1.6为429、435年编纂安排。"
+  },
+  "cliopatria": {
+    "label": "Cliopatria / Seshat v0.2.0 · 历史疆域阶段",
+    "url": "https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.0",
+    "kind": "历史GIS · CC BY 4.0",
+    "note": "固定提交ad28a691b7c07c1fca89d0e0636d324667d2a258，筛选395—476年东西罗马POLITY要素。保留原年代，源阶段不是逐年调查；476年西部参考退位前。"
+  }
+}
