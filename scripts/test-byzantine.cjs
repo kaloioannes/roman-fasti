@@ -34,10 +34,11 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    }
    await page.locator('#home-form-year').fill('476');await page.locator('#home-form').evaluate(f=>f.requestSubmit());
    await page.waitForSelector('#previous-year');assert.equal(await page.isDisabled('#previous-year'),true);
-   await page.click('#next-year');await page.waitForURL(/year=477$/);await page.waitForSelector('.event-row');
+   await page.click('#next-year');await page.waitForURL(/year=477$/);
+   await page.waitForFunction(()=>document.title.startsWith('477年'));await page.waitForSelector('.event-row');
    assert.equal(await page.locator('.empty-year').count(),0);
    assert.match(await page.locator('.event-row').textContent(),/阿尔马图斯/);
-   await page.goto(url+'#year=1453');await page.waitForSelector('#next-year');assert.equal(await page.isDisabled('#next-year'),true);
+   await page.goto(url+'#year=1453');await page.waitForFunction(()=>document.title.startsWith('1453年'));assert.equal(await page.isDisabled('#next-year'),true);
    await page.locator('#year-slider').fill('0');await page.locator('#year-slider').dispatchEvent('change');await page.waitForURL(/year=476$/);
    const sample=new Set([476,477,527,641,674,705,743,797,920,945,960,1042,1119,1180,1204,1205,1208,1221,1242,1243,1259,1261,1347,1354,1378,1390,1399,1402,1403,1406,1407,1448,1449,1453]);
    for(const p of Object.values(data.people))for(const r of p.reigns){if(data.years[r.start])sample.add(r.start);if(data.years[r.end])sample.add(r.end)}
