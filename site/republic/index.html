@@ -8,7 +8,7 @@
   <link rel="icon" href="../shared/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../shared/ui.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
-  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="app.js"></script>
+  <script defer src="../shared/assets/d3.min.js"></script><script defer src="../shared/assets/topojson.min.js"></script><script defer src="../shared/periods.js"></script><script defer src="app.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -21,7 +21,7 @@
       <div class="eyebrow"><span class="tiny-rule"></span> 509 — 27 BC <span class="tiny-rule"></span></div>
       <div class="hero-word" aria-hidden="true">FASTI</div>
       <h1>共和国的<span>每一年</span></h1>
-      <p class="home-description">从一座城，到地中海。选一个剧本走进局势，或翻开任意一年。<br><a href="../empire/" class="edition-jump">续读：古典罗马皇帝数据库 · 前27—395年 ↗</a></p>
+      <p class="home-description">从一座城，到地中海。选一个剧本走进局势，或翻开任意一年。</p>
       <form class="year-search" id="home-form" novalidate>
         <span class="search-era" aria-hidden="true">BC</span><label class="sr-only" for="home-year">公元前年份，27至509</label><input id="home-year" name="year" type="text" inputmode="numeric" autocomplete="off" placeholder="输入公元前年份" maxlength="12" aria-describedby="home-error"><button type="submit" class="search-submit" aria-label="查看这一年">↗</button>
       </form>
@@ -37,6 +37,7 @@
     <p id="detail-error" class="form-error" role="alert"></p>
     <section class="year-heading"><div><div id="era-label" class="eyebrow"></div><h1><span id="year-number"></span><span class="bc-label">BC</span></h1><p id="year-subtitle"></p></div><div class="year-nav"><button id="previous-year" aria-label="上一年">←<span></span></button><div class="year-nav-rule"></div><button id="next-year" aria-label="下一年"><span></span>→</button></div></section>
     <label class="sr-only" for="year-slider">拖动浏览共和国年份</label><input class="year-range" id="year-slider" type="range" min="0" max="482" step="1" value="0" aria-valuetext="前509年"><div class="range-labels"><span>前509年</span><output for="year-slider" id="slider-label">前509年</output><span>前27年</span></div>
+    <nav class="period-boundary" data-period-boundary aria-label="相邻时期的年度" hidden></nav>
     <section id="story-context" class="story-context" aria-label="当前剧本" hidden></section>
     <div id="year-note" class="year-note" hidden></div>
     <div class="year-grid">
@@ -49,5 +50,6 @@
   </main>
   <dialog id="sources-dialog"><div class="dialog-heading"><span class="eyebrow">AD FONTES</span><button class="icon-button" id="close-sources" aria-label="关闭史料说明">×</button></div><h2>史料与方法</h2><div id="method-content"><p>正在载入来源说明……</p></div></dialog>
   <div id="loading" class="loading" role="status" hidden>正在翻开这一年的档案……</div>
+<footer class="period-footer" data-period="republic"><a href="../">全部时期</a></footer>
 </body>
 </html>

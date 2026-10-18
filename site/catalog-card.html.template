@@ -1,0 +1,6 @@
+<a class="period-card" data-period="$id" href="$id/">
+  <div class="volume-top"><span class="volume-number">$number</span><span class="eyebrow">$range</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+  <div class="volume-art" aria-hidden="true"><svg viewBox="0 0 240 150"><use href="shared/assets/periods.svg#$id"></use></svg><span class="volume-caption">$caption</span></div>
+  <div class="volume-copy"><span class="volume-latin">$latin</span><h3>$title</h3><p>$description</p></div>
+  <span class="period-action">翻开第$number卷 <span aria-hidden="true">→</span></span>
+</a>
