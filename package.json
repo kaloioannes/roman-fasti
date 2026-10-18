@@ -6,7 +6,8 @@
   "scripts": {
     "validate": "node scripts/validate.mjs && node scripts/validate-empire.mjs && node scripts/validate-kingdom.mjs && node scripts/validate-byzantine.mjs && node scripts/validate-divided-empire.mjs && npm run validate:structure",
     "test:biographies": "python scripts/test_republic_biographies.py",
-    "test:ui": "node scripts/test-ui.cjs",
+    "test:ui": "node scripts/test-ui.cjs && node scripts/test-republic-loading.cjs",
+    "test:republic-loading": "node scripts/test-republic-loading.cjs",
     "test:release": "node scripts/test-release.cjs && node scripts/test-imperial.cjs && node scripts/test-kingdom.cjs && node scripts/test-byzantine.cjs && node scripts/test-divided-empire.cjs && npm run test:routes",
     "test:kingdom": "node scripts/test-kingdom.cjs",
     "test:imperial": "node scripts/test-imperial.cjs",

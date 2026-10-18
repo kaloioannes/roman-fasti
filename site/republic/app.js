@@ -3,8 +3,8 @@ const $ = s => document.querySelector(s);
 const safe = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const readPreference = (k, fallback) => {try{return localStorage.getItem(k) ?? fallback}catch{return fallback}};
 const writePreference = (k,v) => {try{localStorage.setItem(k,v)}catch{}};
-let data, atlas, land, currentYear, projection, zoom, mapGroup, loadingPromise;
-let stories, storiesPromise, activeStory=null, routeVersion=0;
+let data, atlas, land, currentYear, projection, zoom, mapGroup;
+let stories, activeStory=null, routeVersion=0;
 let spoiler = readPreference('fasti-spoiler-v2','false') === 'true';
 const revealed = new Set();
 const guardedTexts = new Map();
@@ -44,9 +44,7 @@ function bindGuards(){document.querySelectorAll('[data-reveal]').forEach(b=>b.on
 })}
 function renderYearNote(r){const note=$('#year-note');note.hidden=!r.notes?.length;note.innerHTML=guarded((r.notes||[]).join(' '),'展开本年任职说明',`note-${r.year}`);bindGuards()}
 async function loadStories(){
- if(stories)return stories;
- if(!storiesPromise)storiesPromise=fetch('../data/republic/stories.json').then(r=>{if(!r.ok)throw new Error('剧本载入失败');return r.json()}).then(d=>stories=d).catch(e=>{storiesPromise=null;throw e});
- return storiesPromise;
+ stories=await storiesResource.load();return stories;
 }
 async function renderStoryCards(){try{
  await loadStories();
@@ -65,20 +63,121 @@ function renderStory(){
  panel.innerHTML=`<div class="story-context-heading"><span class="eyebrow">历史剧本 · ${index+1} / ${chapters.length}</span><a class="text-button" href="#year=${currentYear}">离开剧本 ↗</a></div><h2>${safe(s.title)}</h2><p class="story-subtitle">${safe(s.subtitle)}</p><details class="story-setup" ${currentYear===s.start?'open':''}><summary>开局局势与人物</summary><p>${safe(s.setup)}</p><ul class="story-cast">${s.cast.map(p=>`<li><strong>${safe(p.name)}</strong><span>${safe(p.role)}</span></li>`).join('')}</ul><p class="story-question">${safe(s.question)}</p></details><div class="story-reader"><nav class="chapter-nav" aria-label="剧本章节">${chapters.map((c,i)=>{const future=spoiler&&!revealed.has(`chapter-${s.id}-${c.year}`);return `<a href="#story=${s.id}&year=${c.year}" ${i===index?'aria-current="step"':''}><span>${c.year} <small>BC</small></span><span>${future?`第 ${i+1} 章 · 待读`:safe(c.title)}</span></a>`}).join('')}</nav><div class="chapter-pane"><div class="chapter-reading"><span class="eyebrow">${exact?'本章':'上一节点'} · 前${chapter.year}年</span>${concealed?`<button class="event-reveal" id="reveal-chapter">展开本章故事 <span aria-hidden="true">↗</span></button>`:`<h3>${safe(chapter.title)}</h3><p>${safe(chapter.text)}</p><div class="event-citation"><a href="${safe(source.url)}" target="_blank" rel="noopener">${safe(source.label)} ↗</a><span>${safe(chapter.reference)}</span></div>`}</div><div class="story-continue"><span>${exact?'顺着剧本读，也可以逐年翻阅。':`正在阅读两章之间的前${currentYear}年。`}</span>${next?`<a class="chapter-next" href="#story=${s.id}&year=${next.year}">继续到 ${next.year} BC <span aria-hidden="true">→</span></a>`:'<a class="chapter-next" href="#stories">剧终 · 选择另一个开局 →</a>'}</div></div></div>`;
  if(concealed)$('#reveal-chapter').onclick=()=>{revealed.add(chapterKey);renderStory();const heading=$('.chapter-reading h3');heading.tabIndex=-1;heading.focus({preventScroll:true})};
 }
-async function load(){if(data)return;if(!loadingPromise)loadingPromise=Promise.all(['../data/republic/records.json','../data/republic/territories.json','../shared/assets/land-50m.json'].map(async u=>{const r=await fetch(u);if(!r.ok)throw new Error(`无法载入档案（${r.status}）`);return r.json()})).then(([d,a,l])=>{data=d;atlas=a;land=topojson.feature(l,l.objects.land)}).catch(e=>{loadingPromise=null;throw e});await loadingPromise}
+// Cache each successful resource independently. A failed or timed-out request is
+// released for explicit retry; navigation shares requests already in flight.
+function resource(url,label,decode=value=>value){
+ const state={label,status:'idle',value:null,error:null,promise:null};
+ state.load=()=>{
+  if(state.status==='ready')return Promise.resolve(state.value);
+  if(state.promise)return state.promise;
+  state.status='loading';state.error=null;
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),20000);
+  state.promise=(async()=>{
+   try{
+    const response=await fetch(url,{signal:controller.signal});
+    if(!response.ok)throw new Error(`请求失败（${response.status}）`);
+    const value=decode(await response.json());
+    state.value=value;state.status='ready';return value;
+   }catch(error){
+    state.status='error';state.error=controller.signal.aborted?'请求超时':error instanceof SyntaxError?'返回的数据无法解析':error instanceof TypeError?'网络请求失败或数据格式不完整':error.message;
+    throw error;
+   }finally{clearTimeout(timeout);state.promise=null}
+  })();
+  return state.promise;
+ };
+ return state;
+}
+const recordsResource=resource('../data/republic/records.json','文字档案',value=>{
+ if(!value?.years||!value.people||!value.stats||!Array.isArray(value.method))throw new Error('文字档案数据不完整');
+ return value;
+});
+const storiesResource=resource('../data/republic/stories.json','剧本',value=>{
+ if(!Array.isArray(value))throw new Error('剧本数据不完整');
+ return value;
+});
+const atlasResource=resource('../data/republic/territories.json','疆域',value=>{
+ if(!Array.isArray(value?.features)||!value.features.length)throw new Error('疆域数据不完整');
+ return value;
+});
+const landResource=resource('../shared/assets/land-50m.json','底图',value=>{
+ if(!window.topojson)throw new Error('底图组件未载入，请刷新页面');
+ return topojson.feature(value,value.objects.land);
+});
+async function load(){data=await recordsResource.load()}
+function archiveFailure(message,version){
+ if(version!==routeVersion)return;
+ currentYear=null;$('#home').hidden=false;$('#detail').hidden=true;
+ $('#archive-error').hidden=false;$('#archive-error-message').textContent=message;
+ $('#loading').hidden=true;
+}
+$('#retry-data').onclick=()=>route();
+
+function clearMap(){
+ // Stop a zoom animation before removing the previous year's geometry.
+ if(window.d3)d3.select('#map-svg').interrupt().on('.zoom',null);
+ $('#map-content').replaceChildren();$('#map-content').removeAttribute('transform');
+ $('#map-svg').removeAttribute('data-year');
+ $('.territory-section .map-card').dataset.state='idle';
+ $('.territory-section .map-card').setAttribute('aria-busy','false');
+ $('#map-status').hidden=true;
+ $('#map').hidden=true;$('#map-caption').textContent='';$('#map-year-label').textContent='';
+ $('#map').setAttribute('aria-label','罗马历史疆域示意地图');
+ document.querySelectorAll('.territory-section .map-topline,.territory-section .map-bottomline').forEach(el=>el.hidden=true);
+ document.querySelectorAll('.map-controls button').forEach(button=>button.disabled=true);
+}
+function loadMap(y,version,retry=false){
+ clearMap();
+ const isCurrent=()=>version===routeVersion&&currentYear===y&&!$('#detail').hidden;
+ function refresh(){
+  if(!isCurrent())return;
+  const resources=[atlasResource,landResource];
+  const loading=resources.some(item=>item.status==='loading');
+  const ready=resources.every(item=>item.status==='ready');
+  const status=$('#map-status');
+  $('.territory-section .map-card').setAttribute('aria-busy',String(loading));
+  $('.territory-section .map-card').dataset.state=ready?'ready':loading?'loading':'error';
+  if(ready){
+   try{
+    if(!window.d3)throw new Error('地图组件未载入，请刷新页面');
+    atlas=atlasResource.value;land=landResource.value;
+    $('#map').hidden=false;
+    renderMap(y);
+    status.hidden=true;
+    document.querySelectorAll('.territory-section .map-topline,.territory-section .map-bottomline').forEach(el=>el.hidden=false);
+    document.querySelectorAll('.map-controls button').forEach(button=>button.disabled=false);
+   }catch{
+    clearMap();status.hidden=false;
+    $('.territory-section .map-card').dataset.state='error';
+    status.innerHTML='<p>地图暂时无法绘制，请刷新页面后重试。官员、事件、史料与剧本仍可阅读。</p><button class="text-button" id="retry-map">重试绘制地图 ↗</button>';
+    $('#retry-map').onclick=()=>loadMap(currentYear,routeVersion,true);
+   }
+   return;
+  }
+  status.hidden=false;
+  status.innerHTML=`<p>${resources.some(item=>item.status==='error')?'地图暂时无法完整载入。':'正在载入地图……'}官员、事件、史料与剧本仍可阅读。</p><ul>${resources.map(item=>`<li>${item.label}：${item.status==='ready'?'已就绪':item.status==='error'?safe(item.error):'正在载入……'}</li>`).join('')}</ul>${resources.some(item=>item.status==='error')?'<button class="text-button" id="retry-map">重试未载入的地图资源 ↗</button>':''}`;
+  const button=$('#retry-map');if(button)button.onclick=()=>loadMap(currentYear,routeVersion,true);
+ }
+ for(const item of [atlasResource,landResource]){
+  if(item.status==='idle'||item.status==='loading'||(retry&&item.status==='error'))item.load().then(refresh,refresh);
+ }
+ refresh();
+}
 async function route(){
  const version=++routeVersion;
+ clearMap();
+ $('#archive-error').hidden=true;$('#loading').hidden=false;
  const m=location.hash.match(/^#year=(\d+)$/),sm=location.hash.match(/^#story=([a-z-]+)&year=(\d+)$/);
  let y=m?+m[1]:sm?+sm[2]:null;
  activeStory=null;
- if(sm){try{await loadStories();if(version!==routeVersion)return;activeStory=stories.find(s=>s.id===sm[1])||null;if(!activeStory)y=null;else if(y>activeStory.start||y<activeStory.chapters.at(-1).year){activeStory=null;history.replaceState(null,'',`#year=${y}`)}}catch{$('#home-error').textContent='剧本载入失败，请刷新重试。';return}}
+ if(sm){try{await loadStories();if(version!==routeVersion)return;activeStory=stories.find(s=>s.id===sm[1])||null;if(!activeStory)y=null;else if(y>activeStory.start||y<activeStory.chapters.at(-1).year){activeStory=null;history.replaceState(null,'',`#year=${y}`)}}catch{archiveFailure('剧本载入失败，请检查网络后重试。',version);return}}
  if(y&&y>=27&&y<=509){await showYear(y,version)}else{
   $('#home').hidden=false;$('#detail').hidden=true;currentYear=null;$('#loading').hidden=true;document.title='FASTI · 罗马共和国执政官纪年';
   if(location.hash==='#stories')$('#stories').scrollIntoView();else{window.scrollTo(0,0);if(location.hash)history.replaceState(null,'',location.pathname+location.search)}
  }
 }
 window.addEventListener('hashchange',route);
-async function showYear(y,version){$('#loading').hidden=false;try{await load();if(version!==routeVersion)return;currentYear=y;const record=data.years[y];if(!record)throw new Error('此年份档案未能载入');$('#home').hidden=true;$('#detail').hidden=false;$('#detail-year').value=y;$('#detail-error').textContent='';$('#year-number').textContent=y;$('#year-slider').value=509-y;$('#year-slider').setAttribute('aria-valuetext',`前${y}年`);$('#slider-label').textContent=`前${y}年`;$('#era-label').textContent=`${era(y)[0]} · RES PVBLICA`;$('#year-subtitle').textContent=`建城纪年 ${754-y} AUC · ${era(y)[1]}`;$('#previous-year span').textContent=y<509?`${y+1} BC`:'起点';$('#next-year span').textContent=y>27?`${y-1} BC`:'终章';$('#previous-year').disabled=y===509;$('#next-year').disabled=y===27;document.title=`前${y}年 · FASTI 罗马共和国纪年`;FastiPeriods.mount('republic',-y);renderYearNote(record);renderStory();renderOfficers(record);renderEvents(record);renderMap(y);renderSources(record);window.scrollTo(0,0)}catch(e){$('#home-error').textContent='档案载入失败，请刷新重试。';$('#detail-error').textContent='档案载入失败，请刷新重试。';console.error(e)}finally{if(version===routeVersion)$('#loading').hidden=true}}
+async function showYear(y,version){$('#loading').hidden=false;try{await load();if(version!==routeVersion)return;currentYear=y;const record=data.years[y];if(!record)throw new Error('此年份档案未能载入');$('#home').hidden=true;$('#detail').hidden=false;$('#detail-year').value=y;$('#detail-error').textContent='';$('#year-number').textContent=y;$('#year-slider').value=509-y;$('#year-slider').setAttribute('aria-valuetext',`前${y}年`);$('#slider-label').textContent=`前${y}年`;$('#era-label').textContent=`${era(y)[0]} · RES PVBLICA`;$('#year-subtitle').textContent=`建城纪年 ${754-y} AUC · ${era(y)[1]}`;$('#previous-year span').textContent=y<509?`${y+1} BC`:'起点';$('#next-year span').textContent=y>27?`${y-1} BC`:'终章';$('#previous-year').disabled=y===509;$('#next-year').disabled=y===27;document.title=`前${y}年 · FASTI 罗马共和国纪年`;FastiPeriods.mount('republic',-y);renderYearNote(record);renderStory();renderOfficers(record);renderEvents(record);renderSources(record);loadMap(y,version);window.scrollTo(0,0)}catch{archiveFailure(`文字档案载入失败${recordsResource.error?`（${recordsResource.error}）`:''}，请检查网络后重试。`,version)}finally{if(version===routeVersion)$('#loading').hidden=true}}
 function personLink(p,label){return p.url?`<a href="${safe(p.url)}" target="_blank" rel="noopener">${safe(p.identified?label:"名录来源")} ↗</a>`:''}
 function biographySources(sources){return sources.map(s=>`<a href="${safe(s.url)}" target="_blank" rel="noopener">${safe(s.label)} ↗</a>`).join('')}
 function renderBiography(p,pid){
@@ -100,9 +199,19 @@ function renderEvents(r){
 function renderSources(r){$('#year-source-links').innerHTML=(r.sources||[]).map(s=>`<a href="${safe(s.url)}" target="_blank" rel="noopener">${safe(s.label)} ↗</a>`).join('');$('#source-caveat').textContent=r.year>=300?'早期共和国采用瓦罗编年。各条目的异说与传统叙事分别注明，更多来源见「史料与方法」。':'名录分别列出正任与补任。地图标明所用的历史阶段，战役进展与地方关系见年度记事。'}
 function renderMap(y){const target=-y;let feature=atlas.features.find(f=>target>=f.properties.from&&target<=f.properties.to);if(!feature)feature=atlas.features.reduce((a,b)=>Math.abs(target-a.properties.from)<Math.abs(target-b.properties.from)?a:b);const bounds=feature.properties.view||[-12,25,44,53];const box={type:'MultiPoint',coordinates:[[bounds[0],bounds[1]],[bounds[2],bounds[3]]]};projection=d3.geoMercator().fitExtent([[30,24],[730,475]],box);const path=d3.geoPath(projection);const svg=d3.select('#map-svg');const typeScale=Math.min(2.5,760/Math.max(300,$('#map-svg').clientWidth));svg.style('--map-type-scale',typeScale);mapGroup=d3.select('#map-content');mapGroup.selectAll('*').remove();mapGroup.append('path').datum(d3.geoGraticule().step([5,5])()).attr('d',path).attr('class','map-graticule');mapGroup.append('path').datum(land).attr('d',path).attr('class','map-land');mapGroup.append('path').datum(feature).attr('d',path).attr('class',feature.properties.precision==='schematic'?'map-territory approximate':'map-territory');const localCities=y>=338?[['台伯河口',12.26,41.75],...(y<=426?[['菲德奈',12.52,41.98]]:[]),...(y<=396?[['维伊 Veii',12.40,42.02]]:[]),...(y<=381?[['图斯库卢姆',12.71,41.80]]:[]),...(y===338?[['安提乌姆',12.63,41.45]]:[])]:[];const cities=[['罗马 Roma',12.4964,41.9028],...localCities,['迦太基',10.32,36.85],['雅典',23.72,37.98],['亚历山大里亚',29.92,31.2]];for(const [label,lon,lat] of cities){if(lon<bounds[0]||lon>bounds[2]||lat<bounds[1]||lat>bounds[3])continue;const [x,yy]=projection([lon,lat]);mapGroup.append('circle').attr('cx',x).attr('cy',yy).attr('r',(label.startsWith('罗马')?3.5:2.3)*typeScale).attr('class','map-city');mapGroup.append('text').attr('x',x+(x>610?-8:8)*typeScale).attr('y',yy+3*typeScale).attr('text-anchor',x>610?'end':'start').text(label).attr('class','map-city-label')}
 const regions=[...(y>=338?[['LATIVM',12.95,42.15],['MARE TYRRHENVM',12.1,41.5]]:[]),['MARE INTERNVM',17,34],['ITALIA',13.5,43.2],['HISPANIA',-4,40],['GALLIA',3,47],['AFRICA',8,32],['GRAECIA',22,39.7],['ASIA',31,39]];for(const [label,lon,lat] of regions){if(lon<bounds[0]||lon>bounds[2]||lat<bounds[1]||lat>bounds[3])continue;const [x,yy]=projection([lon,lat]);mapGroup.append('text').attr('x',Math.max(30+label.length*4.5*typeScale,Math.min(730-label.length*4.5*typeScale,x))).attr('y',yy).text(label).attr('text-anchor','middle').attr('class','map-region-label')}
-zoom=d3.zoom().scaleExtent([1,9]).extent([[0,0],[760,510]]).translateExtent([[-250,-200],[1010,710]]).on('zoom',e=>mapGroup.attr('transform',e.transform));svg.call(zoom).call(zoom.transform,d3.zoomIdentity);$('#map-zoom-in').onclick=()=>svg.transition().duration(200).call(zoom.scaleBy,1.5);$('#map-zoom-out').onclick=()=>svg.transition().duration(200).call(zoom.scaleBy,1/1.5);$('#map-reset').onclick=()=>svg.transition().duration(200).call(zoom.transform,d3.zoomIdentity);$('#map-year-label').textContent=feature.properties.label;$('#territory-legend').textContent=feature.properties.precision==='schematic'?'罗马核心控制区 · 近似示意':'罗马控制范围';$('#map-caption').textContent=feature.properties.caption;if(feature.properties.sources){const links=document.createElement('span');links.className='source-links';links.innerHTML=feature.properties.sources.map(s=>`<a href="${safe(s.url)}" target="_blank" rel="noopener">${safe(s.label)} ↗</a>`).join(' · ');$('#map-caption').append(links)}$('#map').setAttribute('aria-label',`前${y}年罗马疆域示意。${feature.properties.caption}`)}
+zoom=d3.zoom().scaleExtent([1,9]).extent([[0,0],[760,510]]).translateExtent([[-250,-200],[1010,710]]).on('zoom',e=>mapGroup.attr('transform',e.transform));svg.call(zoom).call(zoom.transform,d3.zoomIdentity);$('#map-zoom-in').onclick=()=>svg.transition().duration(200).call(zoom.scaleBy,1.5);$('#map-zoom-out').onclick=()=>svg.transition().duration(200).call(zoom.scaleBy,1/1.5);$('#map-reset').onclick=()=>svg.transition().duration(200).call(zoom.transform,d3.zoomIdentity);$('#map-year-label').textContent=feature.properties.label;$('#territory-legend').textContent=feature.properties.precision==='schematic'?'罗马核心控制区 · 近似示意':'罗马控制范围';$('#map-caption').textContent=feature.properties.caption;if(feature.properties.sources){const links=document.createElement('span');links.className='source-links';links.innerHTML=feature.properties.sources.map(s=>`<a href="${safe(s.url)}" target="_blank" rel="noopener">${safe(s.label)} ↗</a>`).join(' · ');$('#map-caption').append(links)}$('#map-svg').dataset.year=y;$('#map').setAttribute('aria-label',`前${y}年罗马疆域示意。${feature.properties.caption}`)}
 function renderMethod(){const stats=data.stats;$('#method-content').innerHTML=`<div class="stats-line"><span><strong>483</strong>年度档案</span><span><strong>${stats.appointments}</strong>任职记录</span><span><strong>${stats.people}</strong>人物条目</span><span><strong>${stats.biographies}</strong>编写简介</span><span><strong>${stats.officeSummaries}</strong>任职摘要</span><span><strong>${stats.insufficientBiographies}</strong>身份待考条目</span></div>${data.method.map(m=>`<h3>${safe(m.title)}</h3><p>${m.html}</p>`).join('')}`}
-$('#sources-button').onclick=async()=>{const dialog=$('#sources-dialog');dialog.showModal();try{await load();renderMethod()}catch{$('#method-content').innerHTML='<p>来源说明未能载入，请刷新重试。</p>'}};$('#close-sources').onclick=()=>$('#sources-dialog').close();$('#sources-dialog').onclick=e=>{if(e.target===$('#sources-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}};
-let resizeToken;window.addEventListener('resize',()=>{clearTimeout(resizeToken);resizeToken=setTimeout(()=>{if(currentYear&&atlas)renderMap(currentYear)},150)});
+async function showMethod(){
+ const dialog=$('#sources-dialog');if(!dialog.open)dialog.showModal();
+ $('#method-content').innerHTML='<p role="status">正在载入来源说明……</p>';
+ try{await load();if(dialog.open)renderMethod()}
+ catch{
+  if(!dialog.open)return;
+  $('#method-content').innerHTML='<p role="alert">来源说明未能载入，请检查网络后重试。</p><button class="text-button" id="retry-method">重试来源说明 ↗</button>';
+  $('#retry-method').onclick=showMethod;
+ }
+}
+$('#sources-button').onclick=showMethod;$('#close-sources').onclick=()=>$('#sources-dialog').close();$('#sources-dialog').onclick=e=>{if(e.target===$('#sources-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}};
+let resizeToken;window.addEventListener('resize',()=>{clearTimeout(resizeToken);resizeToken=setTimeout(()=>{if(currentYear&&!$('#detail').hidden&&$('.territory-section .map-card').dataset.state==='ready')renderMap(currentYear)},150)});
 renderStoryCards();
 route();

@@ -119,3 +119,11 @@
 
 /* Republican biography provenance and expandable appointment summaries. */
 dialog .stats-line{flex-wrap:wrap}.identity-note{font-size:12px;line-height:1.9;color:var(--muted);margin:14px 0}.office-summary-details .bio-text{overflow-wrap:anywhere}
+
+/* Republic: keep resource recovery local to the affected reading area. */
+.archive-error{max-width:1184px;margin:24px auto;padding:20px 24px;border:1px solid var(--line);line-height:1.9}
+.archive-error p{margin:0 0 10px}
+.map-status{min-height:220px;padding:28px;font-size:13px;line-height:1.9;color:var(--muted)}
+.map-status p{margin:0 0 16px}.map-status ul{padding-left:20px;margin:0 0 20px}
+.map-status button{white-space:normal;text-align:left;line-height:1.9}
+.map-controls button:disabled{opacity:.45;cursor:default}
