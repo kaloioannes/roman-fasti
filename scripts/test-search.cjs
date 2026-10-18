@@ -57,6 +57,8 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    await query('0');assert.match(await page.locator('#year-results').textContent(),/没有公元0年/);
    await query('<img src=x onerror=alert(1)>');assert.equal(await page.locator('#search-results img').count(),0);
    await query('奥古斯都');await page.locator('#hide-snippets').check();assert.equal(await page.locator('.result-snippet').first().isVisible(),false);await page.reload();await ready();assert.equal(await page.locator('#hide-snippets').isChecked(),true);await page.locator('#hide-snippets').uncheck();
+   await page.evaluate(()=>{localStorage.removeItem('fasti-search-hide-snippets');localStorage.setItem('fasti-spoiler-v2','true');});await page.reload();await ready();assert.equal(await page.locator('#hide-snippets').isChecked(),true);
+   await page.locator('#hide-snippets').uncheck();await page.reload();await ready();assert.equal(await page.locator('#hide-snippets').isChecked(),false);await page.evaluate(()=>localStorage.setItem('fasti-spoiler-v2','false'));
    await query('罗马');assert.ok(await page.locator('.more-results').count());const more=page.locator('.more-results').first(),group=more.locator('..'),before=await group.locator('.search-result').count();await more.click();await ready();assert.ok(await page.locator('.result-group').first().locator('.search-result').count()>before);
    for(const width of [320,390,768,1440])for(const theme of ['light','dark']){
     await page.setViewportSize({width,height:1000});await page.evaluate(t=>document.documentElement.dataset.theme=t,theme);
@@ -95,6 +97,10 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    await page.setViewportSize({width:1440,height:1000});
   }
   assert.deepEqual(errors,[]);
+  const restricted=await context.newPage();restricted.on('pageerror',e=>errors.push(e.message));
+  await restricted.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new Error('storage blocked');}}));
+  await restricted.goto(`http://127.0.0.1:${server.address().port}/search/?q=芝诺`);await restricted.locator('[data-id="byzantine:person:zeno"]').waitFor();
+  await restricted.locator('#hide-snippets').check();assert.equal(await restricted.locator('.result-snippet').first().isVisible(),false);await restricted.locator('#theme-button').click();assert.deepEqual(errors,[]);await restricted.close();
   const noJS=await browser.newContext({javaScriptEnabled:false}),fallback=await noJS.newPage();await fallback.goto(`http://127.0.0.1:${server.address().port}/search/`);assert.equal(await fallback.locator('noscript a').count(),1);
   console.log('Global search verified: both deployment paths, names/aliases/Greek, all result types and volume targets, four boundaries, no year zero, URL history, pagination, snippets, keyboard, 4 widths/2 themes, index-only loading, stale completion and five failure/retry modes.');
  }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}

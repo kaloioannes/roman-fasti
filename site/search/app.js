@@ -141,7 +141,7 @@
   for(const id of ['period-filter','kind-filter'])$('#'+id).onchange=submit;
   $('#clear-search').onclick=()=>{$('#search-input').value='';$('#period-filter').value='';$('#kind-filter').value='';submit();$('#search-input').focus();};
   $('#retry-search').onclick=()=>render(true);
-  let hide=false;try{hide=localStorage.getItem('fasti-search-hide-snippets')==='true'||localStorage.getItem('fasti-spoiler-v2')==='true';}catch{}
+  let hide=false;try{const saved=localStorage.getItem('fasti-search-hide-snippets');hide=saved===null?localStorage.getItem('fasti-spoiler-v2')==='true':saved==='true';}catch{}
   $('#hide-snippets').checked=hide;document.body.classList.toggle('conceal-snippets',hide);
   $('#hide-snippets').onchange=e=>{document.body.classList.toggle('conceal-snippets',e.target.checked);try{localStorage.setItem('fasti-search-hide-snippets',String(e.target.checked));}catch{}};
   $('#theme-button').onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;document.querySelector('meta[name="theme-color"]').content=t==='dark'?'#181d1c':'#f8f6f1';try{localStorage.setItem('fasti-theme',t);}catch{}};
