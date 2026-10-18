@@ -81,7 +81,11 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    await page.click('#map-reset');assert.match(await page.locator('#imperial-map-content').getAttribute('transform'),/scale\(1\)/);
    await page.goto(url+'#year=1402');await page.waitForFunction(()=>document.querySelector('#map-caption')?.textContent.includes('源GIS缺少1402'));
    await page.click('#sources-button');assert.equal(await page.locator('#sources-dialog').isVisible(),true);
-   assert.match(await page.locator('#method-content').textContent(),/希腊文姓名/);await page.keyboard.press('Escape');
+   assert.match(await page.locator('#method-content').textContent(),/原名语言/);await page.keyboard.press('Escape');
+   await page.goto(url+'#year=1013');await page.waitForFunction(()=>document.title.startsWith('1013年'));
+   await page.check('#dated-only');assert.equal(await page.locator('.event-row').isVisible(),false);
+   assert.equal(await page.locator('#no-dated-events').isVisible(),true);
+   await page.uncheck('#dated-only');assert.equal(await page.locator('.event-row').isVisible(),true);
    await page.goto(url);await page.waitForSelector('#download-years');
    const csvPromise=page.waitForEvent('download');await page.click('#download-years');const csv=await csvPromise;
    const csvText=await fs.readFile(await csv.path(),'utf8');assert.equal(csvText.trim().split('\r\n').length,979);assert.ok(csvText.includes('1453'));

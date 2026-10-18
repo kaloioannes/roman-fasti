@@ -262,7 +262,7 @@
 
   function fillMethod() {
     const m = data.method;
-    const paragraphs = [['范围',m.scope],['收录标准',m.inclusion],['王朝、家族与时代',m.dynasties],['如何读年份与任期',m.chronology],['逐年记事的证据密度',m.annualEvents],['希腊文姓名',m.names],['生于紫室的依据',m.purple],['证据与史料立场',m.evidence],['阅读古代作者',m.bias]];
+    const paragraphs = [['范围',m.scope],['收录标准',m.inclusion],['王朝、家族与时代',m.dynasties],['如何读年份与任期',m.chronology],['逐年记事的证据密度',m.annualEvents],['原名语言',m.names],['生于紫室的依据',m.purple],['证据与史料立场',m.evidence],['阅读古代作者',m.bias]];
     $('#method-content').innerHTML = `<div class="stats-line"><div><strong>${data.stats.years}</strong><span>年度</span></div><div><strong>${data.stats.people}</strong><span>人物（含辅栏）</span></div><div><strong>${Object.keys(data.sources).length}</strong><span>来源入口</span></div></div>${paragraphs.map(([title,body]) => `<h3>${title}</h3><p>${esc(body)}</p>`).join('')}<h3>重要日期与争议处理</h3><ul>${m.decisions.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>未自动列入的名字</h3><ul>${m.excluded.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>地图与许可</h3><p>${esc(m.maps)}</p><p>${esc(m.license)}</p><p>资料核对日期：${m.updated}。本数据库可持续校订，欢迎携卷章、铭文或钱币证据提交修正。</p><details><summary>展开完整来源目录 · ${Object.keys(data.sources).length}项</summary><ol class="method-source-list">${Object.values(data.sources).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a><br>${esc(s.kind)} · ${esc(s.note)}</li>`).join('')}</ol></details>`;
   }
 
