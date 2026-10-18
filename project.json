@@ -3,65 +3,10 @@
   "title": "罗马历史纪年",
   "description": "沿着年份，阅读罗马的官员、统治者、人物、事件与疆域。",
   "periods": [
-    {
-      "id": "kingdom",
-      "title": "王政时代",
-      "range": "前753—前509年",
-      "start": -753,
-      "end": -509,
-      "status": "available",
-      "description": "245个年度，传统七王、塔提乌斯共治、王位空缺与附出处的记事；区分传统纪年和未定年事迹。",
-      "latin": "REGNVM ROMANVM",
-      "caption": "台伯河畔，城的诞生",
-      "milestone": "建城"
-    },
-    {
-      "id": "republic",
-      "title": "罗马共和国",
-      "range": "前509—前27年",
-      "start": -509,
-      "end": -27,
-      "status": "available",
-      "description": "483个年度，执政官与其他官职、人物简介、历史地图，以及十个连贯的历史剧本。",
-      "latin": "RES PVBLICA",
-      "caption": "元老院与罗马人民",
-      "milestone": "共和"
-    },
-    {
-      "id": "empire",
-      "title": "古典罗马帝国",
-      "range": "前27—公元395年",
-      "start": -27,
-      "end": 395,
-      "status": "available",
-      "description": "422个年度，皇帝、共治者、区域政权与争位者的任期、传记、王朝及史料。",
-      "latin": "IMPERIVM ROMANVM",
-      "caption": "道路，通向罗马",
-      "milestone": "帝国"
-    },
-    {
-      "id": "divided-empire",
-      "title": "双帝国时期",
-      "range": "公元395—476年",
-      "start": 395,
-      "end": 476,
-      "status": "available",
-      "description": "82个年度，东西宫廷对读、33位帝位人物、120条独立记事、流亡帝号与逐条来源。",
-      "latin": "ORIENS · OCCIDENS",
-      "caption": "两座宫廷，同一个世界",
-      "milestone": "分治"
-    },
-    {
-      "id": "byzantine",
-      "title": "拜占庭时期",
-      "range": "公元476—1453年",
-      "start": 476,
-      "end": 1453,
-      "status": "available",
-      "description": "978个年度，拜占庭皇帝、希腊文姓名、共帝与争位者、历史记事和生于紫室称号依据。",
-      "latin": "ΒΑΣΙΛΕΙΑ ῬΩΜΑΙΩΝ",
-      "caption": "新罗马，千年余晖",
-      "milestone": "东续"
-    }
+    {"id":"kingdom","title":"王政时代","range":"前753—前509年","start":-753,"end":-509,"status":"available","description":"245个年度，传统七王、塔提乌斯共治、王位空缺与附出处的记事；区分传统纪年和未定年事迹。"},
+    {"id":"republic","title":"罗马共和国","range":"前509—前27年","start":-509,"end":-27,"status":"available","description":"483个年度，执政官与其他官职、人物简介、历史地图，以及十个连贯的历史剧本。"},
+    {"id":"empire","title":"古典罗马帝国","range":"前27—公元395年","start":-27,"end":395,"status":"available","description":"422个年度，皇帝、共治者、区域政权与争位者的任期、传记、王朝及史料。"},
+    {"id":"divided-empire","title":"双帝国时期","range":"公元395—476年","start":395,"end":476,"status":"available","description":"82个年度，东西宫廷对读、33位帝位人物、120条独立记事、流亡帝号与逐条来源。"},
+    {"id":"byzantine","title":"拜占庭时期","range":"公元476—1453年","start":476,"end":1453,"status":"available","description":"978个年度，拜占庭皇帝、希腊文姓名、共帝与争位者、历史记事和生于紫室称号依据。"}
   ]
 }

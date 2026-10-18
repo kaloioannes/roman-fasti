@@ -42,5 +42,5 @@ for(const period of JSON.parse(read(manifest['project.json'])).periods.filter(p=
  assert.ok(html.includes('href="../"'),`Missing catalogue link: ${period.id}`);
  assert.ok(html.includes(path.posix.basename(manifest[`${period.id}/app.js`])));
 }
-assert.ok(versioned.has(manifest['shared/legacy-routes.js']));
+assert.ok(versioned.has(manifest['legacy-routes.js']));
 console.log(`Release verified: ${expected.length} fingerprinted assets, all local HTML/JS/CSS references, period navigation and Pages-relative paths.`);

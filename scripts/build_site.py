@@ -6,52 +6,9 @@ from pathlib import Path
 import re
 import shutil
 import sys
-from html import escape
-from string import Template
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
-
-
-def roman(number):
-    result = ''
-    for value, glyph in [(1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'), (100, 'C'),
-                         (90, 'XC'), (50, 'L'), (40, 'XL'), (10, 'X'), (9, 'IX'),
-                         (5, 'V'), (4, 'IV'), (1, 'I')]:
-        count, number = divmod(number, value)
-        result += glyph * count
-    return result
-
-
-def render_page(name, content):
-    """Derive catalogue and adjacent-volume links from the same chronology."""
-    periods = [p for p in json.loads((ROOT / 'project.json').read_text(encoding='utf-8'))['periods']
-               if p['status'] == 'available']
-    if name == 'index.html':
-        template = Template((SITE / 'catalog-card.html.template').read_text(encoding='utf-8'))
-        cards = ''.join(template.substitute({k: escape(str(v)) for k, v in period.items()},
-                       number=roman(i + 1)) for i, period in enumerate(periods))
-        content = content.replace('<!-- period-cards -->', cards)
-        dates = []
-        for period, year, label in ([(p, p['start'], p['milestone']) for p in periods]
-                                    + [(periods[-1], periods[-1]['end'], '终章')]):
-            key = -year if period['id'] == 'republic' else year
-            dates.append(f'<a href="{period["id"]}/#year={key}"><span>{abs(year)} '
-                         f'<small>{"BC" if year < 0 else "AD"}</small></span>{escape(label)}</a>')
-        content = content.replace('<!-- era-dates -->', ''.join(dates))
-    for i, period in enumerate(periods):
-        marker = f'<footer class="period-footer" data-period="{period["id"]}"><a href="../">全部时期</a></footer>'
-        def adjacent(target, direction):
-            if target is None:
-                return '<span aria-hidden="true"></span>'
-            title = escape(target['title'])
-            return f'<a href="../{target["id"]}/">{("← " if direction == "previous" else "")}{title}{(" →" if direction == "next" else "")}</a>'
-        footer = (f'<footer class="period-footer" data-period="{period["id"]}" aria-label="时期导航">'
-                  + adjacent(periods[i-1] if i else None, 'previous')
-                  + '<a href="../">FASTI · 全部时期</a>'
-                  + adjacent(periods[i+1] if i+1 < len(periods) else None, 'next') + '</footer>')
-        content = content.replace(marker, footer)
-    return content
 
 
 def build(destination):
@@ -102,7 +59,7 @@ def build(destination):
         name = source.relative_to(SITE).as_posix()
         target = destination / name
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(rewrite(name, render_page(name, source.read_text(encoding='utf-8'))), encoding='utf-8')
+        target.write_text(rewrite(name, source.read_text(encoding='utf-8')), encoding='utf-8')
     for name in ['LICENSE', 'DATA_LICENSE.md', 'THIRD_PARTY.md']:
         text = (ROOT / name).read_text(encoding='utf-8')
         # Research sources stay in the repository; attribution links in the
