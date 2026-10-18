@@ -22,13 +22,35 @@
         "start": 475,
         "end": 476,
         "kind": "central",
-        "tenure": "475—476年",
+        "tenure": "475年1月9日—476年8月",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "利奥一世皇后维里娜的兄弟，曾在468年北非远征中失败。475年趁芝诺离开首都夺取帝位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0475-01-09",
+          "label": "475年1月9日"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0476-08",
+          "label": "476年8月"
+        },
+        "dateSources": [
+          "wiki-basiliscus"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "latin": "Flavius Basiliscus",
+    "nativeName": {
+      "text": "Flavius Basiliscus",
+      "lang": "la",
+      "note": "早期宫廷的拉丁文名号；保留希腊文形式供对照与检索。",
+      "sources": [
+        "wiki-basiliscus"
+      ]
+    }
   },
   {
     "id": "zeno",
@@ -53,22 +75,57 @@
         "start": 474,
         "end": 475,
         "kind": "central",
-        "tenure": "474—475年",
+        "tenure": "474年1月29日—475年1月9日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "本名塔拉西斯，出身伊苏里亚，因与利奥一世之女阿里阿德涅结婚进入皇室。474年取得帝号，次年一度被逐。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0474-01-29",
+          "label": "474年1月29日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0475-01-09",
+          "label": "475年1月9日"
+        },
+        "dateSources": [
+          "wiki-zeno"
+        ]
       },
       {
         "start": 476,
         "end": 491,
         "kind": "central",
-        "tenure": "476—491年",
+        "tenure": "476年8月—491年4月9日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "本名塔拉西斯，出身伊苏里亚，因与利奥一世之女阿里阿德涅结婚进入皇室。474年取得帝号，次年一度被逐。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "0476-08",
+          "label": "476年8月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0491-04-09",
+          "label": "491年4月9日"
+        },
+        "dateSources": [
+          "wiki-zeno"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "latin": "Flavius Zeno",
+    "nativeName": {
+      "text": "Flavius Zeno",
+      "lang": "la",
+      "note": "伊苏里亚出身，本名Tarasis；此处展示其正式拉丁文帝号，不将伊苏里亚血统等同于拉丁族裔。",
+      "sources": [
+        "wiki-zeno"
+      ]
+    }
   },
   {
     "id": "anastasius-i",
@@ -93,13 +150,34 @@
         "start": 491,
         "end": 518,
         "kind": "central",
-        "tenure": "491—518年",
+        "tenure": "491年4月11日—518年7月9日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "原为宫廷侍从，491年经阿里阿德涅与首都政治集团选择登基，并与她成婚。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0491-04-11",
+          "label": "491年4月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0518-07-09",
+          "label": "518年7月9日"
+        },
+        "dateSources": [
+          "wiki-anastasius-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀναστάσιος Αʹ",
+      "lang": "el",
+      "note": "阿纳斯塔修斯属于早期帝国的希腊语人物，不因登基早于610年就一律改写为拉丁文。",
+      "sources": [
+        "wiki-anastasius-i"
+      ]
+    }
   },
   {
     "id": "justin-i",
@@ -124,13 +202,35 @@
         "start": 518,
         "end": 527,
         "kind": "central",
-        "tenure": "518—527年",
+        "tenure": "518年7月9日—527年8月1日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "出身巴尔干，长期服役后升任宫廷近卫军长官。阿纳斯塔修斯去世后，518年的继位竞争使他取得皇位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0518-07-09",
+          "label": "518年7月9日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0527-08-01",
+          "label": "527年8月1日"
+        },
+        "dateSources": [
+          "wiki-justin-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "latin": "Flavius Iustinus",
+    "nativeName": {
+      "text": "Flavius Iustinus",
+      "lang": "la",
+      "note": "早期宫廷的拉丁文名号；保留希腊文形式供对照与检索。",
+      "sources": [
+        "wiki-justin-i"
+      ]
+    }
   },
   {
     "id": "justinian-i",
@@ -156,13 +256,35 @@
         "start": 527,
         "end": 565,
         "kind": "central",
-        "tenure": "527—565年",
+        "tenure": "527年4月1日—565年11月14日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "527年4月获共帝称号，8月查士丁一世去世后独掌皇权。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "527年4月获共帝称号，8月查士丁一世去世后独掌皇权。 4月1日受封共帝，查士丁一世8月1日死后独掌政权。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0527-04-01",
+          "label": "527年4月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0565-11-14",
+          "label": "565年11月14日"
+        },
+        "dateSources": [
+          "wiki-justinian-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "latin": "Flavius Petrus Sabbatius Iustinianus",
+    "nativeName": {
+      "text": "Flavius Petrus Sabbatius Iustinianus",
+      "lang": "la",
+      "note": "早期宫廷的拉丁文名号；保留希腊文形式供对照与检索。",
+      "sources": [
+        "wiki-justinian-i"
+      ]
+    }
   },
   {
     "id": "justin-ii",
@@ -187,13 +309,35 @@
         "start": 565,
         "end": 578,
         "kind": "central",
-        "tenure": "565—578年",
+        "tenure": "565年11月14日／15日—578年10月4日／5日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "查士丁尼的外甥，565年继位，皇后索菲娅在宫廷具有显著影响。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "查士丁尼的外甥，565年继位，皇后索菲娅在宫廷具有显著影响。 继位日期有14、15日两种记载。 去世日期亦有4、5日之差。",
+        "certainty": "保留日期异说或可考区间，见说明",
+        "startDate": {
+          "value": null,
+          "precision": "range",
+          "label": "565年11月14日／15日"
+        },
+        "endDate": {
+          "value": null,
+          "precision": "range",
+          "label": "578年10月4日／5日"
+        },
+        "dateSources": [
+          "wiki-justin-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "latin": "Flavius Iustinus",
+    "nativeName": {
+      "text": "Flavius Iustinus",
+      "lang": "la",
+      "note": "早期宫廷的拉丁文名号；保留希腊文形式供对照与检索。",
+      "sources": [
+        "wiki-justin-ii"
+      ]
+    }
   },
   {
     "id": "tiberius-ii",
@@ -218,13 +362,35 @@
         "start": 578,
         "end": 582,
         "kind": "central",
-        "tenure": "578—582年",
+        "tenure": "578年9月26日—582年8月14日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "原为近卫军军官，574年被查士丁二世收养、立为恺撒，承担摄政事务。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "原为近卫军军官，574年被查士丁二世收养、立为恺撒，承担摄政事务。 578年9月26日升为奥古斯都；查士丁二世10月5日去世。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0578-09-26",
+          "label": "578年9月26日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0582-08-14",
+          "label": "582年8月14日"
+        },
+        "dateSources": [
+          "wiki-tiberius-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "latin": "Flavius Tiberius Constantinus",
+    "nativeName": {
+      "text": "Flavius Tiberius Constantinus",
+      "lang": "la",
+      "note": "早期宫廷的拉丁文名号；保留希腊文形式供对照与检索。",
+      "sources": [
+        "wiki-tiberius-ii"
+      ]
+    }
   },
   {
     "id": "maurice",
@@ -249,13 +415,34 @@
         "start": 582,
         "end": 602,
         "kind": "central",
-        "tenure": "582—602年",
+        "tenure": "582年8月13日—602年11月27日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "来自卡帕多西亚的军人，在东方战争中崛起，582年继承提比略二世并娶其女。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "来自卡帕多西亚的军人，在东方战争中崛起，582年继承提比略二世并娶其女。 11月23日福卡斯登基，莫里斯于27日被杀；两者日期分别保留。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0582-08-13",
+          "label": "582年8月13日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0602-11-27",
+          "label": "602年11月27日"
+        },
+        "dateSources": [
+          "wiki-maurice"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μαυρίκιος",
+      "lang": "el",
+      "note": "莫里斯出身希腊语环境，虽早于希拉克略，仍展示希腊文；其正式帝号也有拉丁文版本。",
+      "sources": [
+        "wiki-maurice"
+      ]
+    }
   },
   {
     "id": "phocas",
@@ -280,13 +467,35 @@
         "start": 602,
         "end": 610,
         "kind": "central",
-        "tenure": "602—610年",
+        "tenure": "602年11月23日—610年10月5日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "巴尔干军队兵变把这位低级军官推上皇位，602年莫里斯家族被杀。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0602-11-23",
+          "label": "602年11月23日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0610-10-05",
+          "label": "610年10月5日"
+        },
+        "dateSources": [
+          "wiki-phocas"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "latin": "Flavius Phocas",
+    "nativeName": {
+      "text": "Flavius Phocas",
+      "lang": "la",
+      "note": "早期拉丁文帝号形式，亦见罗马福卡斯柱铭文；其具体族源有争议，不据此断言母语。",
+      "sources": [
+        "wiki-phocas"
+      ]
+    }
   },
   {
     "id": "heraclius",
@@ -311,13 +520,34 @@
         "start": 610,
         "end": 641,
         "kind": "central",
-        "tenure": "610—641年",
+        "tenure": "610年10月5日—641年2月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "非洲总督之子，率舰队反对福卡斯，610年在君士坦丁堡即位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0610-10-05",
+          "label": "610年10月5日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0641-02-11",
+          "label": "641年2月11日"
+        },
+        "dateSources": [
+          "wiki-heraclius"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἡράκλειος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-heraclius"
+      ]
+    }
   },
   {
     "id": "constantine-iii",
@@ -342,22 +572,56 @@
         "start": 641,
         "end": 641,
         "kind": "central",
-        "tenure": "641—641年",
+        "tenure": "641年2月11日—641年5月25日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "希拉克略与第一任妻子欧多基娅之子，613年已被立为共帝。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0641-02-11",
+          "label": "641年2月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0641-05-25",
+          "label": "641年5月25日"
+        },
+        "dateSources": [
+          "wiki-constantine-iii"
+        ]
       },
       {
         "start": 613,
         "end": 641,
         "kind": "junior",
-        "tenure": "613—641年",
+        "tenure": "613年1月22日—641年2月11日",
         "territory": "东罗马宫廷及承认地区",
         "note": "希拉克略与第一任妻子欧多基娅之子，613年已被立为共帝。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0613-01-22",
+          "label": "613年1月22日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0641-02-11",
+          "label": "641年2月11日"
+        },
+        "dateSources": [
+          "wiki-constantine-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἡράκλειος Κωνσταντῖνος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-iii"
+      ]
+    }
   },
   {
     "id": "heraklonas",
@@ -382,22 +646,56 @@
         "start": 641,
         "end": 641,
         "kind": "central",
-        "tenure": "641—641年",
+        "tenure": "641年2月11日—641年10月／641年11月",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "希拉克略与玛尔提娜之子，638年获共帝头衔。641年父亲去世后与君士坦丁三世共同继位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "day",
+          "value": "0641-02-11",
+          "label": "641年2月11日"
+        },
+        "endDate": {
+          "precision": "range",
+          "value": null,
+          "label": "641年10月／641年11月"
+        },
+        "dateSources": [
+          "wiki-heraklonas"
+        ]
       },
       {
         "start": 638,
         "end": 641,
         "kind": "junior",
-        "tenure": "638—641年",
+        "tenure": "638年7月4日—641年2月11日",
         "territory": "东罗马宫廷及承认地区",
         "note": "希拉克略与玛尔提娜之子，638年获共帝头衔。641年父亲去世后与君士坦丁三世共同继位。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0638-07-04",
+          "label": "638年7月4日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0641-02-11",
+          "label": "641年2月11日"
+        },
+        "dateSources": [
+          "wiki-heraklonas"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἡρακλωνᾶς",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-heraklonas"
+      ]
+    }
   },
   {
     "id": "constans-ii",
@@ -422,13 +720,34 @@
         "start": 641,
         "end": 668,
         "kind": "central",
-        "tenure": "641—668年",
+        "tenure": "641年9月／641年11月—668年7月15日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁三世之子，641年的继位危机使他成为少年皇帝；正式名亦为君士坦丁。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "range",
+          "value": null,
+          "label": "641年9月／641年11月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0668-07-15",
+          "label": "668年7月15日"
+        },
+        "dateSources": [
+          "wiki-constans-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Κώνστας Βʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constans-ii"
+      ]
+    }
   },
   {
     "id": "constantine-iv",
@@ -453,22 +772,56 @@
         "start": 668,
         "end": 685,
         "kind": "central",
-        "tenure": "668—685年",
+        "tenure": "668年9月—685年7月10日／9月",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "君士坦斯二世之子，654年取得共帝称号；668年父亲遇刺后成为主帝。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "君士坦斯二世之子，654年取得共帝称号；668年父亲遇刺后成为主帝。 现代研究据新材料采用7月10日；传统简表常列9月。",
+        "certainty": "保留日期异说或可考区间，见说明",
+        "startDate": {
+          "precision": "month",
+          "value": "0668-09",
+          "label": "668年9月"
+        },
+        "endDate": {
+          "value": null,
+          "precision": "range",
+          "label": "685年7月10日／9月"
+        },
+        "dateSources": [
+          "wiki-constantine-iv"
+        ]
       },
       {
         "start": 654,
         "end": 668,
         "kind": "junior",
-        "tenure": "654—668年",
+        "tenure": "654年4月13日—668年9月",
         "territory": "东罗马宫廷及承认地区",
         "note": "君士坦斯二世之子，654年取得共帝称号；668年父亲遇刺后成为主帝。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0654-04-13",
+          "label": "654年4月13日"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0668-09",
+          "label": "668年9月"
+        },
+        "dateSources": [
+          "wiki-constantine-iv"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Κωνσταντῖνος Δʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-iv"
+      ]
+    }
   },
   {
     "id": "justinian-ii",
@@ -493,22 +846,56 @@
         "start": 685,
         "end": 695,
         "kind": "central",
-        "tenure": "685—695年",
+        "tenure": "685年7月10日／9月—695年",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "君士坦丁四世之子，685年继位。实施人口迁徙与财政措施，692年召集特鲁洛会议。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "君士坦丁四世之子，685年继位。实施人口迁徙与财政措施，692年召集特鲁洛会议。 继承父亲的日期随君士坦丁四世去世纪年而有7月与9月之差。",
+        "certainty": "保留日期异说或可考区间，见说明",
+        "startDate": {
+          "value": null,
+          "precision": "range",
+          "label": "685年7月10日／9月"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "0695",
+          "label": "695年"
+        },
+        "dateSources": [
+          "wiki-justinian-ii"
+        ]
       },
       {
         "start": 705,
         "end": 711,
         "kind": "central",
-        "tenure": "705—711年",
+        "tenure": "705年—711年11月4日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁四世之子，685年继位。实施人口迁徙与财政措施，692年召集特鲁洛会议。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0705",
+          "label": "705年"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0711-11-04",
+          "label": "711年11月4日"
+        },
+        "dateSources": [
+          "wiki-justinian-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰουστινιανός Βʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-justinian-ii"
+      ]
+    }
   },
   {
     "id": "leontios",
@@ -533,13 +920,34 @@
         "start": 695,
         "end": 698,
         "kind": "central",
-        "tenure": "695—698年",
+        "tenure": "695年—698年",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "伊苏里亚出身的将领，在695年首都政变中推翻查士丁尼二世。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0695",
+          "label": "695年"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "0698",
+          "label": "698年"
+        },
+        "dateSources": [
+          "wiki-leontios"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Λεόντιος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-leontios"
+      ]
+    }
   },
   {
     "id": "tiberius-iii",
@@ -564,13 +972,34 @@
         "start": 698,
         "end": 705,
         "kind": "central",
-        "tenure": "698—705年",
+        "tenure": "698年—705年",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "本名阿普西马尔，因北非远征失败后的舰队叛乱，在698年夺取帝位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0698",
+          "label": "698年"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "0705",
+          "label": "705年"
+        },
+        "dateSources": [
+          "wiki-tiberius-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Τιβέριος Γʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-tiberius-iii"
+      ]
+    }
   },
   {
     "id": "philippikos",
@@ -595,13 +1024,34 @@
         "start": 711,
         "end": 713,
         "kind": "central",
-        "tenure": "711—713年",
+        "tenure": "711年11月4日—713年6月3日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "本名瓦尔丹，出身亚美尼亚背景，依靠克里米亚方向的叛乱在711年夺位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0711-11-04",
+          "label": "711年11月4日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0713-06-03",
+          "label": "713年6月3日"
+        },
+        "dateSources": [
+          "wiki-philippikos"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Φιλιππικός Βαρδάνης",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-philippikos"
+      ]
+    }
   },
   {
     "id": "anastasios-ii",
@@ -626,13 +1076,34 @@
         "start": 713,
         "end": 715,
         "kind": "central",
-        "tenure": "713—715年",
+        "tenure": "713年6月4日—715年",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "原名阿尔特米奥斯，宫廷文官出身，在713年政变后受推举为皇帝。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "day",
+          "value": "0713-06-04",
+          "label": "713年6月4日"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "0715",
+          "label": "715年"
+        },
+        "dateSources": [
+          "wiki-anastasios-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀναστάσιος Βʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-anastasios-ii"
+      ]
+    }
   },
   {
     "id": "theodosios-iii",
@@ -657,13 +1128,34 @@
         "start": 715,
         "end": 717,
         "kind": "central",
-        "tenure": "715—717年",
+        "tenure": "约715年5月—717年3月25日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "原为税务官员，被叛军推举并在715年控制君士坦丁堡。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "circa",
+          "value": "0715-05",
+          "label": "约715年5月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0717-03-25",
+          "label": "717年3月25日"
+        },
+        "dateSources": [
+          "wiki-theodosios-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Θεοδόσιος Γʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-theodosios-iii"
+      ]
+    }
   },
   {
     "id": "leo-iii",
@@ -688,13 +1180,34 @@
         "start": 717,
         "end": 741,
         "kind": "central",
-        "tenure": "717—741年",
+        "tenure": "717年3月25日—741年6月18日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "军区将领，717年取得首都和帝位；“伊苏里亚人”是通行称呼，不应据此简化其出身问题。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0717-03-25",
+          "label": "717年3月25日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0741-06-18",
+          "label": "741年6月18日"
+        },
+        "dateSources": [
+          "wiki-leo-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Λέων Γʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-leo-iii"
+      ]
+    }
   },
   {
     "id": "constantine-v",
@@ -719,22 +1232,56 @@
         "start": 741,
         "end": 775,
         "kind": "central",
-        "tenure": "741—775年",
+        "tenure": "741年6月18日—775年9月14日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "利奥三世之子，720年已获共帝称号，741年父亲去世后继位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0741-06-18",
+          "label": "741年6月18日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0775-09-14",
+          "label": "775年9月14日"
+        },
+        "dateSources": [
+          "wiki-constantine-v"
+        ]
       },
       {
         "start": 720,
         "end": 741,
         "kind": "junior",
-        "tenure": "720—741年",
+        "tenure": "720年3月31日—741年6月18日",
         "territory": "东罗马宫廷及承认地区",
         "note": "利奥三世之子，720年已获共帝称号，741年父亲去世后继位。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0720-03-31",
+          "label": "720年3月31日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0741-06-18",
+          "label": "741年6月18日"
+        },
+        "dateSources": [
+          "wiki-constantine-v"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Κωνσταντῖνος Εʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-v"
+      ]
+    }
   },
   {
     "id": "leo-iv",
@@ -759,19 +1306,45 @@
         "start": 775,
         "end": 780,
         "kind": "central",
-        "tenure": "775—780年",
+        "tenure": "775年9月14日—780年9月8日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁五世与可萨公主之子，751年获共帝称号，775年成为主帝。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0775-09-14",
+          "label": "775年9月14日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0780-09-08",
+          "label": "780年9月8日"
+        },
+        "dateSources": [
+          "wiki-leo-iv"
+        ]
       },
       {
         "start": 751,
         "end": 775,
         "kind": "junior",
-        "tenure": "751—775年",
+        "tenure": "751年6月6日—775年9月14日",
         "territory": "东罗马宫廷及承认地区",
         "note": "君士坦丁五世与可萨公主之子，751年获共帝称号，775年成为主帝。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0751-06-06",
+          "label": "751年6月6日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0775-09-14",
+          "label": "775年9月14日"
+        },
+        "dateSources": [
+          "wiki-leo-iv"
+        ]
       }
     ],
     "purple": {
@@ -780,6 +1353,14 @@
       "note": "君士坦丁五世专条引研究明确称利奥为紫室建成后首位在其中出生的皇子；不是仅从其父在位推断。",
       "sources": [
         "wiki-constantine-v"
+      ]
+    },
+    "nativeName": {
+      "text": "Λέων Δʹ ὁ Χάζαρος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-leo-iv"
       ]
     }
   },
@@ -806,22 +1387,56 @@
         "start": 780,
         "end": 797,
         "kind": "central",
-        "tenure": "780—797年",
+        "tenure": "780年9月8日—797年8月19日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "利奥四世与伊琳娜之子，776年成为共帝，780年以幼龄继位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0780-09-08",
+          "label": "780年9月8日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0797-08-19",
+          "label": "797年8月19日"
+        },
+        "dateSources": [
+          "wiki-constantine-vi"
+        ]
       },
       {
         "start": 776,
         "end": 780,
         "kind": "junior",
-        "tenure": "776—780年",
+        "tenure": "776年4月14日—780年9月8日",
         "territory": "东罗马宫廷及承认地区",
         "note": "利奥四世与伊琳娜之子，776年成为共帝，780年以幼龄继位。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0776-04-14",
+          "label": "776年4月14日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0780-09-08",
+          "label": "780年9月8日"
+        },
+        "dateSources": [
+          "wiki-constantine-vi"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Κωνσταντῖνος Ϛʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-vi"
+      ]
+    }
   },
   {
     "id": "irene",
@@ -846,13 +1461,34 @@
         "start": 797,
         "end": 802,
         "kind": "central",
-        "tenure": "797—802年",
+        "tenure": "797年8月19日—802年10月31日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "来自雅典，嫁给利奥四世。780年起摄政，并在787年的尼西亚会议推动恢复圣像敬礼。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0797-08-19",
+          "label": "797年8月19日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0802-10-31",
+          "label": "802年10月31日"
+        },
+        "dateSources": [
+          "wiki-irene"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Εἰρήνη ἡ Ἀθηναία",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-irene"
+      ]
+    }
   },
   {
     "id": "nikephoros-i",
@@ -877,13 +1513,34 @@
         "start": 802,
         "end": 811,
         "kind": "central",
-        "tenure": "802—811年",
+        "tenure": "802年10月31日—811年7月26日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "原为财政官员，802年宫廷政变后继承伊琳娜的皇位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0802-10-31",
+          "label": "802年10月31日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0811-07-26",
+          "label": "811年7月26日"
+        },
+        "dateSources": [
+          "wiki-nikephoros-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Νικηφόρος Αʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-nikephoros-i"
+      ]
+    }
   },
   {
     "id": "staurakios",
@@ -908,22 +1565,56 @@
         "start": 811,
         "end": 811,
         "kind": "central",
-        "tenure": "811—811年",
+        "tenure": "811年7月26日—811年10月2日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "尼基弗鲁斯一世之子，803年获共帝称号。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0811-07-26",
+          "label": "811年7月26日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0811-10-02",
+          "label": "811年10月2日"
+        },
+        "dateSources": [
+          "wiki-staurakios"
+        ]
       },
       {
         "start": 803,
         "end": 811,
         "kind": "junior",
-        "tenure": "803—811年",
+        "tenure": "803年12月25日—811年7月26日",
         "territory": "东罗马宫廷及承认地区",
         "note": "尼基弗鲁斯一世之子，803年获共帝称号。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0803-12-25",
+          "label": "803年12月25日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0811-07-26",
+          "label": "811年7月26日"
+        },
+        "dateSources": [
+          "wiki-staurakios"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Σταυράκιος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-staurakios"
+      ]
+    }
   },
   {
     "id": "michael-i",
@@ -948,13 +1639,34 @@
         "start": 811,
         "end": 813,
         "kind": "central",
-        "tenure": "811—813年",
+        "tenure": "811年10月2日—813年7月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "通过妻子普罗科皮娅与尼基弗鲁斯家族相联，811年在斯陶拉基奥斯退位后即位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0811-10-02",
+          "label": "811年10月2日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0813-07-11",
+          "label": "813年7月11日"
+        },
+        "dateSources": [
+          "wiki-michael-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Αʹ Ῥαγκαβέ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-i"
+      ]
+    }
   },
   {
     "id": "leo-v",
@@ -979,13 +1691,34 @@
         "start": 813,
         "end": 820,
         "kind": "central",
-        "tenure": "813—820年",
+        "tenure": "813年7月12日—820年12月25日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "军人出身，813年米海尔一世战败后掌权，被称为“亚美尼亚人”。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0813-07-12",
+          "label": "813年7月12日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0820-12-25",
+          "label": "820年12月25日"
+        },
+        "dateSources": [
+          "wiki-leo-v"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Λέων Εʹ ὁ Ἀρμένιος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-leo-v"
+      ]
+    }
   },
   {
     "id": "michael-ii",
@@ -1010,13 +1743,34 @@
         "start": 820,
         "end": 829,
         "kind": "central",
-        "tenure": "820—829年",
+        "tenure": "820年12月25日—829年10月2日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "来自阿莫里翁的军官，因反对利奥五世被囚，820年政变使其出狱即位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0820-12-25",
+          "label": "820年12月25日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0829-10-02",
+          "label": "829年10月2日"
+        },
+        "dateSources": [
+          "wiki-michael-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Βʹ ὁ Ἀμοριεύς",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-ii"
+      ]
+    }
   },
   {
     "id": "theophilos",
@@ -1041,22 +1795,56 @@
         "start": 829,
         "end": 842,
         "kind": "central",
-        "tenure": "829—842年",
+        "tenure": "829年10月2日—842年1月20日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "米海尔二世之子，821年已为共帝，829年独掌皇权。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0829-10-02",
+          "label": "829年10月2日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0842-01-20",
+          "label": "842年1月20日"
+        },
+        "dateSources": [
+          "wiki-theophilos"
+        ]
       },
       {
         "start": 821,
         "end": 829,
         "kind": "junior",
-        "tenure": "821—829年",
+        "tenure": "821年5月12日—829年10月2日",
         "territory": "东罗马宫廷及承认地区",
         "note": "米海尔二世之子，821年已为共帝，829年独掌皇权。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0821-05-12",
+          "label": "821年5月12日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0829-10-02",
+          "label": "829年10月2日"
+        },
+        "dateSources": [
+          "wiki-theophilos"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Θεόφιλος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-theophilos"
+      ]
+    }
   },
   {
     "id": "michael-iii",
@@ -1081,13 +1869,34 @@
         "start": 842,
         "end": 867,
         "kind": "central",
-        "tenure": "842—867年",
+        "tenure": "842年1月20日—867年9月24日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "狄奥菲洛斯之子，842年幼龄继位，早年由母亲狄奥多拉摄政。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0842-01-20",
+          "label": "842年1月20日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0867-09-24",
+          "label": "867年9月24日"
+        },
+        "dateSources": [
+          "wiki-michael-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Γʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-iii"
+      ]
+    }
   },
   {
     "id": "basil-i",
@@ -1112,22 +1921,56 @@
         "start": 867,
         "end": 886,
         "kind": "central",
-        "tenure": "867—886年",
+        "tenure": "867年9月24日—886年8月29日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "从宫廷服务崛起，866年被米海尔三世立为共帝，867年夺取最高权力。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0867-09-24",
+          "label": "867年9月24日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0886-08-29",
+          "label": "886年8月29日"
+        },
+        "dateSources": [
+          "wiki-basil-i"
+        ]
       },
       {
         "start": 866,
         "end": 867,
         "kind": "junior",
-        "tenure": "866—867年",
+        "tenure": "866年5月26日—867年9月24日",
         "territory": "东罗马宫廷及承认地区",
         "note": "从宫廷服务崛起，866年被米海尔三世立为共帝，867年夺取最高权力。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0866-05-26",
+          "label": "866年5月26日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0867-09-24",
+          "label": "867年9月24日"
+        },
+        "dateSources": [
+          "wiki-basil-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Βασίλειος Αʹ ὁ Μακεδών",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-basil-i"
+      ]
+    }
   },
   {
     "id": "leo-vi",
@@ -1152,22 +1995,56 @@
         "start": 886,
         "end": 912,
         "kind": "central",
-        "tenure": "886—912年",
+        "tenure": "886年8月29日—912年5月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "作为巴西尔皇室的继承人，870年获共帝称号，886年成为主帝。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0886-08-29",
+          "label": "886年8月29日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0912-05-11",
+          "label": "912年5月11日"
+        },
+        "dateSources": [
+          "wiki-leo-vi"
+        ]
       },
       {
         "start": 870,
         "end": 886,
         "kind": "junior",
-        "tenure": "870—886年",
+        "tenure": "870年1月6日—886年8月29日",
         "territory": "东罗马宫廷及承认地区",
         "note": "作为巴西尔皇室的继承人，870年获共帝称号，886年成为主帝。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0870-01-06",
+          "label": "870年1月6日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0886-08-29",
+          "label": "886年8月29日"
+        },
+        "dateSources": [
+          "wiki-leo-vi"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Λέων Ϛʹ ὁ Σοφός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-leo-vi"
+      ]
+    }
   },
   {
     "id": "alexander",
@@ -1192,22 +2069,56 @@
         "start": 912,
         "end": 913,
         "kind": "central",
-        "tenure": "912—913年",
+        "tenure": "912年5月11日—913年6月6日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "巴西尔一世之子、利奥六世的弟弟，879年起拥有共帝称号。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0912-05-11",
+          "label": "912年5月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0913-06-06",
+          "label": "913年6月6日"
+        },
+        "dateSources": [
+          "wiki-alexander"
+        ]
       },
       {
         "start": 879,
         "end": 912,
         "kind": "junior",
-        "tenure": "879—912年",
+        "tenure": "约879年9月—912年5月11日",
         "territory": "东罗马宫廷及承认地区",
         "note": "巴西尔一世之子、利奥六世的弟弟，879年起拥有共帝称号。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "circa",
+          "value": "0879-09",
+          "label": "约879年9月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0912-05-11",
+          "label": "912年5月11日"
+        },
+        "dateSources": [
+          "wiki-alexander"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀλέξανδρος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-alexander"
+      ]
+    }
   },
   {
     "id": "constantine-vii",
@@ -1232,43 +2143,103 @@
         "start": 913,
         "end": 920,
         "kind": "central",
-        "tenure": "913—920年",
+        "tenure": "913年6月6日—920年12月17日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0913-06-06",
+          "label": "913年6月6日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0920-12-17",
+          "label": "920年12月17日"
+        },
+        "dateSources": [
+          "wiki-constantine-vii"
+        ]
       },
       {
         "start": 945,
         "end": 959,
         "kind": "central",
-        "tenure": "945—959年",
+        "tenure": "945年1月27日—959年11月9日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0945-01-27",
+          "label": "945年1月27日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0959-11-09",
+          "label": "959年11月9日"
+        },
+        "dateSources": [
+          "wiki-constantine-vii"
+        ]
       },
       {
         "start": 908,
         "end": 913,
         "kind": "junior",
-        "tenure": "908—913年",
+        "tenure": "908年5月15日—913年6月6日",
         "territory": "东罗马宫廷及承认地区",
         "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0908-05-15",
+          "label": "908年5月15日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0913-06-06",
+          "label": "913年6月6日"
+        },
+        "dateSources": [
+          "wiki-constantine-vii"
+        ]
       },
       {
         "start": 920,
         "end": 945,
         "kind": "junior",
-        "tenure": "920—945年",
+        "tenure": "920年12月17日—945年1月27日",
         "territory": "东罗马宫廷及承认地区",
         "note": "利奥六世之子，905年出生、908年获共帝称号。“生于紫室”成为其合法性叙事的重要组成。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0920-12-17",
+          "label": "920年12月17日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0945-01-27",
+          "label": "945年1月27日"
+        },
+        "dateSources": [
+          "wiki-constantine-vii"
+        ]
       }
     ],
     "purple": {
       "label": "生于紫室",
       "term": "πορφυρογέννητος",
       "note": "905年生于紫室；Porphyrogenitus为明确称号，出生早于父母正式第四次婚姻。",
+      "sources": [
+        "wiki-constantine-vii"
+      ]
+    },
+    "nativeName": {
+      "text": "Κωνσταντῖνος Ζʹ ὁ Πορφυρογέννητος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
       "sources": [
         "wiki-constantine-vii"
       ]
@@ -1297,13 +2268,34 @@
         "start": 920,
         "end": 944,
         "kind": "central",
-        "tenure": "920—944年",
+        "tenure": "920年12月17日—944年12月20日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "海军将领，先以女儿嫁给君士坦丁七世进入摄政核心，920年获帝号并成为资深皇帝。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0920-12-17",
+          "label": "920年12月17日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0944-12-20",
+          "label": "944年12月20日"
+        },
+        "dateSources": [
+          "wiki-romanos-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ῥωμανὸς Αʹ Λεκαπηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-romanos-i"
+      ]
+    }
   },
   {
     "id": "romanos-ii",
@@ -1328,25 +2320,59 @@
         "start": 959,
         "end": 963,
         "kind": "central",
-        "tenure": "959—963年",
+        "tenure": "959年11月9日—963年3月15日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁七世之子，945年获共帝称号，959年继位，妻子为狄奥法诺。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0959-11-09",
+          "label": "959年11月9日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0963-03-15",
+          "label": "963年3月15日"
+        },
+        "dateSources": [
+          "wiki-romanos-ii"
+        ]
       },
       {
         "start": 945,
         "end": 959,
         "kind": "junior",
-        "tenure": "945—959年",
+        "tenure": "945年4月6日—959年11月9日",
         "territory": "东罗马宫廷及承认地区",
         "note": "君士坦丁七世之子，945年获共帝称号，959年继位，妻子为狄奥法诺。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0945-04-06",
+          "label": "945年4月6日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0959-11-09",
+          "label": "959年11月9日"
+        },
+        "dateSources": [
+          "wiki-romanos-ii"
+        ]
       }
     ],
     "purple": {
       "label": "生于紫室",
       "term": "πορφυρογέννητος",
       "note": "专条明确使用Porphyrogenitus；父亲当时为共帝。",
+      "sources": [
+        "wiki-romanos-ii"
+      ]
+    },
+    "nativeName": {
+      "text": "Ῥωμανὸς Βʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
       "sources": [
         "wiki-romanos-ii"
       ]
@@ -1375,13 +2401,34 @@
         "start": 963,
         "end": 969,
         "kind": "central",
-        "tenure": "963—969年",
+        "tenure": "963年8月16日—969年12月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安纳托利亚军事家族的将领，因收复克里特而声望卓著，963年取得皇位并娶狄奥法诺。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0963-08-16",
+          "label": "963年8月16日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0969-12-11",
+          "label": "969年12月11日"
+        },
+        "dateSources": [
+          "wiki-nikephoros-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Νικηφόρος Βʹ Φωκᾶς",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-nikephoros-ii"
+      ]
+    }
   },
   {
     "id": "john-i",
@@ -1406,13 +2453,34 @@
         "start": 969,
         "end": 976,
         "kind": "central",
-        "tenure": "969—976年",
+        "tenure": "969年12月11日—976年1月10日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "军事贵族出身，曾为尼基弗鲁斯二世效力，969年参与宫廷暗杀后登基。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0969-12-11",
+          "label": "969年12月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0976-01-10",
+          "label": "976年1月10日"
+        },
+        "dateSources": [
+          "wiki-john-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰωάννης Αʹ Τζιμισκής",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-i"
+      ]
+    }
   },
   {
     "id": "basil-ii",
@@ -1437,25 +2505,59 @@
         "start": 976,
         "end": 1025,
         "kind": "central",
-        "tenure": "976—1025年",
+        "tenure": "976年1月10日—1025年12月15日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "罗曼努斯二世之子，960年获共帝称号，976年主掌朝政时仍面对宫廷和将领竞争。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0976-01-10",
+          "label": "976年1月10日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1025-12-15",
+          "label": "1025年12月15日"
+        },
+        "dateSources": [
+          "wiki-basil-ii"
+        ]
       },
       {
         "start": 960,
         "end": 976,
         "kind": "junior",
-        "tenure": "960—976年",
+        "tenure": "960年4月22日—976年1月10日",
         "territory": "东罗马宫廷及承认地区",
         "note": "罗曼努斯二世之子，960年获共帝称号，976年主掌朝政时仍面对宫廷和将领竞争。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0960-04-22",
+          "label": "960年4月22日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0976-01-10",
+          "label": "976年1月10日"
+        },
+        "dateSources": [
+          "wiki-basil-ii"
+        ]
       }
     ],
     "purple": {
       "label": "生于紫室",
       "term": "πορφυρογέννητος",
       "note": "专条明确称Basil II Porphyrogenitus；958年出生时其父为共帝，不能只看959年的主帝起点。",
+      "sources": [
+        "wiki-basil-ii"
+      ]
+    },
+    "nativeName": {
+      "text": "Βασίλειος Βʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
       "sources": [
         "wiki-basil-ii"
       ]
@@ -1484,19 +2586,45 @@
         "start": 1025,
         "end": 1028,
         "kind": "central",
-        "tenure": "1025—1028年",
+        "tenure": "1025年12月15日—1028年11月11日／12日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "罗曼努斯二世之子，962年成为共帝，在兄长巴西尔二世统治下长期保有帝号。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "罗曼努斯二世之子，962年成为共帝，在兄长巴西尔二世统治下长期保有帝号。 去世日有11、12日之差，继任者的即位与加冕亦须区分。",
+        "certainty": "保留日期异说或可考区间，见说明",
+        "startDate": {
+          "precision": "day",
+          "value": "1025-12-15",
+          "label": "1025年12月15日"
+        },
+        "endDate": {
+          "value": null,
+          "precision": "range",
+          "label": "1028年11月11日／12日"
+        },
+        "dateSources": [
+          "wiki-constantine-viii"
+        ]
       },
       {
         "start": 962,
         "end": 1025,
         "kind": "junior",
-        "tenure": "962—1025年",
+        "tenure": "962年3月30日—1025年12月15日",
         "territory": "东罗马宫廷及承认地区",
         "note": "罗曼努斯二世之子，962年成为共帝，在兄长巴西尔二世统治下长期保有帝号。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0962-03-30",
+          "label": "962年3月30日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1025-12-15",
+          "label": "1025年12月15日"
+        },
+        "dateSources": [
+          "wiki-constantine-viii"
+        ]
       }
     ],
     "purple": {
@@ -1505,6 +2633,14 @@
       "note": "大学钱币目录明确称porphyrogennetos，父亲罗曼努斯二世在位时出生。",
       "sources": [
         "bham-constantine",
+        "wiki-constantine-viii"
+      ]
+    },
+    "nativeName": {
+      "text": "Κωνσταντῖνος Ηʹ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
         "wiki-constantine-viii"
       ]
     }
@@ -1532,13 +2668,34 @@
         "start": 1028,
         "end": 1034,
         "kind": "central",
-        "tenure": "1028—1034年",
+        "tenure": "1028年11月12日—1034年4月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "首都贵族和官员，经与佐伊成婚，1028年继承君士坦丁八世的帝位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1028-11-12",
+          "label": "1028年11月12日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1034-04-11",
+          "label": "1034年4月11日"
+        },
+        "dateSources": [
+          "wiki-romanos-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ῥωμανὸς Γʹ Ἀργυρός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-romanos-iii"
+      ]
+    }
   },
   {
     "id": "michael-iv",
@@ -1563,13 +2720,34 @@
         "start": 1034,
         "end": 1041,
         "kind": "central",
-        "tenure": "1034—1041年",
+        "tenure": "1034年4月11日—1041年12月10日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "来自帕夫拉戈尼亚，依靠宫廷关系与佐伊的婚姻在1034年取得帝位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1034-04-11",
+          "label": "1034年4月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1041-12-10",
+          "label": "1041年12月10日"
+        },
+        "dateSources": [
+          "wiki-michael-iv"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Δʹ ὁ Παφλαγών",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-iv"
+      ]
+    }
   },
   {
     "id": "michael-v",
@@ -1594,13 +2772,34 @@
         "start": 1041,
         "end": 1042,
         "kind": "central",
-        "tenure": "1041—1042年",
+        "tenure": "1041年12月13日—1042年4月21日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "米海尔四世的侄子，经佐伊收养并在1041年取得皇位；“填缝工”绰号与父亲职业有关。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1041-12-13",
+          "label": "1041年12月13日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1042-04-21",
+          "label": "1042年4月21日"
+        },
+        "dateSources": [
+          "wiki-michael-v"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Εʹ Καλαφάτης",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-v"
+      ]
+    }
   },
   {
     "id": "zoe",
@@ -1627,10 +2826,23 @@
         "start": 1042,
         "end": 1042,
         "kind": "central",
-        "tenure": "1042—1042年",
+        "tenure": "1042年4月21日—1042年6月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁八世之女，生于皇室，在马其顿王朝继承安排中具有核心地位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1042-04-21",
+          "label": "1042年4月21日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1042-06-11",
+          "label": "1042年6月11日"
+        },
+        "dateSources": [
+          "wiki-zoe"
+        ]
       }
     ],
     "purple": {
@@ -1639,6 +2851,14 @@
       "note": "Porphyrogenita为明确称号；DIR研究与皇室继承资料互证。",
       "sources": [
         "dir-zoe",
+        "wiki-zoe"
+      ]
+    },
+    "nativeName": {
+      "text": "Ζωὴ ἡ Πορφυρογέννητος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
         "wiki-zoe"
       ]
     }
@@ -1668,19 +2888,45 @@
         "start": 1042,
         "end": 1042,
         "kind": "central",
-        "tenure": "1042—1042年",
+        "tenure": "1042年4月21日—1042年6月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁八世之女、佐伊的妹妹，长期在宫廷和修道生活之间受政治安排影响。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1042-04-21",
+          "label": "1042年4月21日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1042-06-11",
+          "label": "1042年6月11日"
+        },
+        "dateSources": [
+          "wiki-theodora"
+        ]
       },
       {
         "start": 1055,
         "end": 1056,
         "kind": "central",
-        "tenure": "1055—1056年",
+        "tenure": "1055年1月11日—1056年8月31日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁八世之女、佐伊的妹妹，长期在宫廷和修道生活之间受政治安排影响。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1055-01-11",
+          "label": "1055年1月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1056-08-31",
+          "label": "1056年8月31日"
+        },
+        "dateSources": [
+          "wiki-theodora"
+        ]
       }
     ],
     "purple": {
@@ -1689,6 +2935,14 @@
       "note": "Porphyrogenita为明确称号，不能与九世纪摄政狄奥多拉混为一人。",
       "sources": [
         "dir-zoe",
+        "wiki-theodora"
+      ]
+    },
+    "nativeName": {
+      "text": "Θεοδώρα ἡ Πορφυρογέννητος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
         "wiki-theodora"
       ]
     }
@@ -1717,13 +2971,34 @@
         "start": 1042,
         "end": 1055,
         "kind": "central",
-        "tenure": "1042—1055年",
+        "tenure": "1042年6月11日—1055年1月11日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "贵族出身，因1042年与佐伊成婚成为皇帝，统治期间倚重文官与知识人。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1042-06-11",
+          "label": "1042年6月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1055-01-11",
+          "label": "1055年1月11日"
+        },
+        "dateSources": [
+          "wiki-constantine-ix"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Κωνσταντῖνος Θʹ Μονομάχος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-ix"
+      ]
+    }
   },
   {
     "id": "michael-vi",
@@ -1748,13 +3023,34 @@
         "start": 1056,
         "end": 1057,
         "kind": "central",
-        "tenure": "1056—1057年",
+        "tenure": "1056年8月31日—1057年8月30日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "文官出身，由狄奥多拉在1056年选为继承者，其绰号与军费行政职务有关。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1056-08-31",
+          "label": "1056年8月31日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1057-08-30",
+          "label": "1057年8月30日"
+        },
+        "dateSources": [
+          "wiki-michael-vi"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Ϛʹ Βρίγγας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-vi"
+      ]
+    }
   },
   {
     "id": "isaac-i",
@@ -1779,13 +3075,34 @@
         "start": 1057,
         "end": 1059,
         "kind": "central",
-        "tenure": "1057—1059年",
+        "tenure": "1057年9月1日—1059年11月22日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "军人家族出身，1057年反对米海尔六世的叛乱获胜后登基。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "军人家族出身，1057年反对米海尔六世的叛乱获胜后登基。 6月8日起兵称帝；本段首都统治从9月1日加冕列起。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1057-09-01",
+          "label": "1057年9月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1059-11-22",
+          "label": "1059年11月22日"
+        },
+        "dateSources": [
+          "wiki-isaac-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰσαάκιος Αʹ Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-isaac-i"
+      ]
+    }
   },
   {
     "id": "constantine-x",
@@ -1810,13 +3127,34 @@
         "start": 1059,
         "end": 1067,
         "kind": "central",
-        "tenure": "1059—1067年",
+        "tenure": "1059年11月23日—1067年5月23日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "杜卡斯贵族，1059年在伊萨克一世退位后继承帝位，妻子为欧多基娅。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1059-11-23",
+          "label": "1059年11月23日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1067-05-23",
+          "label": "1067年5月23日"
+        },
+        "dateSources": [
+          "wiki-constantine-x"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Κωνσταντῖνος Ιʹ Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-x"
+      ]
+    }
   },
   {
     "id": "romanos-iv",
@@ -1841,13 +3179,34 @@
         "start": 1068,
         "end": 1071,
         "kind": "central",
-        "tenure": "1068—1071年",
+        "tenure": "1068年1月1日—1071年10月1日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "将领出身，1068年与皇太后欧多基娅结婚成为资深皇帝，并未取消杜卡斯诸子的帝号。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1068-01-01",
+          "label": "1068年1月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1071-10-01",
+          "label": "1071年10月1日"
+        },
+        "dateSources": [
+          "wiki-romanos-iv"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ῥωμανὸς Δʹ Διογένης",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-romanos-iv"
+      ]
+    }
   },
   {
     "id": "michael-vii",
@@ -1872,40 +3231,100 @@
         "start": 1067,
         "end": 1068,
         "kind": "central",
-        "tenure": "1067—1068年",
+        "tenure": "1067年5月23日—1068年1月1日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1067-05-23",
+          "label": "1067年5月23日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1068-01-01",
+          "label": "1068年1月1日"
+        },
+        "dateSources": [
+          "wiki-michael-vii"
+        ]
       },
       {
         "start": 1071,
         "end": 1078,
         "kind": "central",
-        "tenure": "1071—1078年",
+        "tenure": "1071年10月1日—1078年3月24日／1078年3月31日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "day",
+          "value": "1071-10-01",
+          "label": "1071年10月1日"
+        },
+        "endDate": {
+          "precision": "range",
+          "value": null,
+          "label": "1078年3月24日／1078年3月31日"
+        },
+        "dateSources": [
+          "wiki-michael-vii"
+        ]
       },
       {
         "start": 1059,
         "end": 1067,
         "kind": "junior",
-        "tenure": "1059—1067年",
+        "tenure": "约1059年／约1060年—1067年5月23日",
         "territory": "东罗马宫廷及承认地区",
         "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "range",
+          "value": null,
+          "label": "约1059年／约1060年"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1067-05-23",
+          "label": "1067年5月23日"
+        },
+        "dateSources": [
+          "wiki-michael-vii"
+        ]
       },
       {
         "start": 1068,
         "end": 1071,
         "kind": "junior",
-        "tenure": "1068—1071年",
+        "tenure": "1068年1月1日—1071年10月1日",
         "territory": "东罗马宫廷及承认地区",
         "note": "君士坦丁十世之子，幼年获共帝称号；1067年父死后处于母亲摄政之下，随后居于罗曼努斯四世之下。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1068-01-01",
+          "label": "1068年1月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1071-10-01",
+          "label": "1071年10月1日"
+        },
+        "dateSources": [
+          "wiki-michael-vii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Ζʹ Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-vii"
+      ]
+    }
   },
   {
     "id": "nikephoros-iii",
@@ -1930,13 +3349,34 @@
         "start": 1078,
         "end": 1081,
         "kind": "central",
-        "tenure": "1078—1081年",
+        "tenure": "1078年1月7日—1081年4月1日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "安纳托利亚老将，1078年反对米海尔七世并取得皇位。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "安纳托利亚老将，1078年反对米海尔七世并取得皇位。 起点为1月7日起兵称帝；4月3日于首都加冕。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1078-01-07",
+          "label": "1078年1月7日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1081-04-01",
+          "label": "1081年4月1日"
+        },
+        "dateSources": [
+          "wiki-nikephoros-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Νικηφόρος Γʹ Βοτανειάτης",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-nikephoros-iii"
+      ]
+    }
   },
   {
     "id": "alexios-i",
@@ -1962,13 +3402,34 @@
         "start": 1081,
         "end": 1118,
         "kind": "central",
-        "tenure": "1081—1118年",
+        "tenure": "1081年4月1日—1118年8月15日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "科穆宁军事贵族，1081年夺取首都，依靠家族、杜卡斯联姻和新的宫廷等级重建权力。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1081-04-01",
+          "label": "1081年4月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1118-08-15",
+          "label": "1118年8月15日"
+        },
+        "dateSources": [
+          "wiki-alexios-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀλέξιος Αʹ Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-alexios-i"
+      ]
+    }
   },
   {
     "id": "john-ii",
@@ -1993,19 +3454,45 @@
         "start": 1118,
         "end": 1143,
         "kind": "central",
-        "tenure": "1118—1143年",
+        "tenure": "1118年8月15日—1143年4月8日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "阿莱克修斯一世与伊琳娜·杜卡伊娜之子，生于1087年，1092年起为共帝。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1118-08-15",
+          "label": "1118年8月15日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1143-04-08",
+          "label": "1143年4月8日"
+        },
+        "dateSources": [
+          "wiki-john-ii"
+        ]
       },
       {
         "start": 1092,
         "end": 1118,
         "kind": "junior",
-        "tenure": "1092—1118年",
+        "tenure": "1092年9月1日—11月初—1118年8月15日",
         "territory": "东罗马宫廷及承认地区",
-        "note": "阿莱克修斯一世与伊琳娜·杜卡伊娜之子，生于1087年，1092年起为共帝。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "note": "阿莱克修斯一世与伊琳娜·杜卡伊娜之子，生于1087年，1092年起为共帝。 共帝受冠仅能定位在9月1日至11月初之间，不把区间开端当作精确加冕日。",
+        "certainty": "保留日期异说或可考区间，见说明",
+        "startDate": {
+          "value": null,
+          "precision": "range",
+          "label": "1092年9月1日—11月初"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1118-08-15",
+          "label": "1118年8月15日"
+        },
+        "dateSources": [
+          "wiki-john-ii"
+        ]
       }
     ],
     "purple": {
@@ -2014,6 +3501,14 @@
       "note": "1087年生于大宫紫室，学术综述与生平资料明确记载。",
       "sources": [
         "john-ii-study",
+        "wiki-john-ii"
+      ]
+    },
+    "nativeName": {
+      "text": "Ἰωάννης Βʹ Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
         "wiki-john-ii"
       ]
     }
@@ -2042,10 +3537,23 @@
         "start": 1143,
         "end": 1180,
         "kind": "central",
-        "tenure": "1143—1180年",
+        "tenure": "1143年4月8日—1180年9月24日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "约翰二世之子，1143年获父亲指定继位，并在首都完成加冕。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1143-04-08",
+          "label": "1143年4月8日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1180-09-24",
+          "label": "1180年9月24日"
+        },
+        "dateSources": [
+          "wiki-manuel-i"
+        ]
       }
     ],
     "purple": {
@@ -2055,6 +3563,14 @@
       "sources": [
         "manuel-coin",
         "dir-manuel"
+      ]
+    },
+    "nativeName": {
+      "text": "Μανουὴλ Αʹ Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-manuel-i"
       ]
     }
   },
@@ -2081,19 +3597,45 @@
         "start": 1180,
         "end": 1183,
         "kind": "central",
-        "tenure": "1180—1183年",
+        "tenure": "1180年9月24日—1183年9月",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "曼努埃尔一世与安条克的玛丽亚之子，1169年出生，1180年继位时尚未成年。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1180-09-24",
+          "label": "1180年9月24日"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "1183-09",
+          "label": "1183年9月"
+        },
+        "dateSources": [
+          "wiki-alexios-ii"
+        ]
       },
       {
         "start": 1171,
         "end": 1180,
         "kind": "junior",
-        "tenure": "1171—1180年",
+        "tenure": "1171年—1180年9月24日",
         "territory": "东罗马宫廷及承认地区",
         "note": "曼努埃尔一世与安条克的玛丽亚之子，1169年出生，1180年继位时尚未成年。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "1171",
+          "label": "1171年"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1180-09-24",
+          "label": "1180年9月24日"
+        },
+        "dateSources": [
+          "wiki-alexios-ii"
+        ]
       }
     ],
     "purple": {
@@ -2102,6 +3644,14 @@
       "note": "DIR研究直接称Alexius Porphyrogenitus，区别于其他同名科穆宁人物。",
       "sources": [
         "dir-manuel",
+        "wiki-alexios-ii"
+      ]
+    },
+    "nativeName": {
+      "text": "Ἀλέξιος Βʹ Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
         "wiki-alexios-ii"
       ]
     }
@@ -2129,13 +3679,34 @@
         "start": 1183,
         "end": 1185,
         "kind": "central",
-        "tenure": "1183—1185年",
+        "tenure": "1183年9月—1185年9月12日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "科穆宁皇族成员，长期流亡后利用幼帝摄政危机掌权，1183年取得帝号。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "1183-09",
+          "label": "1183年9月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1185-09-12",
+          "label": "1185年9月12日"
+        },
+        "dateSources": [
+          "wiki-andronikos-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀνδρόνικος Αʹ Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-andronikos-i"
+      ]
+    }
   },
   {
     "id": "isaac-ii",
@@ -2160,22 +3731,56 @@
         "start": 1185,
         "end": 1195,
         "kind": "central",
-        "tenure": "1185—1195年",
+        "tenure": "1185年9月12日—1195年4月8日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安格洛斯家族成员，1185年在首都起义中取代安德洛尼卡一世。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1185-09-12",
+          "label": "1185年9月12日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1195-04-08",
+          "label": "1195年4月8日"
+        },
+        "dateSources": [
+          "wiki-isaac-ii"
+        ]
       },
       {
         "start": 1203,
         "end": 1204,
         "kind": "central",
-        "tenure": "1203—1204年",
+        "tenure": "1203年7月19日—1204年1月27日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安格洛斯家族成员，1185年在首都起义中取代安德洛尼卡一世。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1203-07-19",
+          "label": "1203年7月19日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1204-01-27",
+          "label": "1204年1月27日"
+        },
+        "dateSources": [
+          "wiki-isaac-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰσαάκιος Βʹ Ἄγγελος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-isaac-ii"
+      ]
+    }
   },
   {
     "id": "alexios-iii",
@@ -2200,13 +3805,34 @@
         "start": 1195,
         "end": 1203,
         "kind": "central",
-        "tenure": "1195—1203年",
+        "tenure": "1195年4月8日—1203年7月17日／18日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "伊萨克二世的兄长，1195年政变后继位，亦使用与科穆宁皇室相关的姓号。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "伊萨克二世的兄长，1195年政变后继位，亦使用与科穆宁皇室相关的姓号。 逃离首都在17日夜至18日之间，资料分日不同。",
+        "certainty": "保留日期异说或可考区间，见说明",
+        "startDate": {
+          "precision": "day",
+          "value": "1195-04-08",
+          "label": "1195年4月8日"
+        },
+        "endDate": {
+          "value": null,
+          "precision": "range",
+          "label": "1203年7月17日／18日"
+        },
+        "dateSources": [
+          "wiki-alexios-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀλέξιος Γʹ Ἄγγελος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-alexios-iii"
+      ]
+    }
   },
   {
     "id": "alexios-iv",
@@ -2231,13 +3857,34 @@
         "start": 1203,
         "end": 1204,
         "kind": "central",
-        "tenure": "1203—1204年",
+        "tenure": "1203年7月19日—1204年1月27日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "伊萨克二世之子，逃往西方后承诺向十字军提供金钱、兵员与教会联合，以换取复位支持。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1203-07-19",
+          "label": "1203年7月19日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1204-01-27",
+          "label": "1204年1月27日"
+        },
+        "dateSources": [
+          "wiki-alexios-iv"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀλέξιος Δʹ Ἄγγελος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-alexios-iv"
+      ]
+    }
   },
   {
     "id": "alexios-v",
@@ -2262,13 +3909,34 @@
         "start": 1204,
         "end": 1204,
         "kind": "central",
-        "tenure": "1204—1204年",
+        "tenure": "1204年1月27日—1204年4月12日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "杜卡斯贵族，绰号穆尔祖弗洛斯，1204年首都政变中取代安格洛斯父子。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1204-01-27",
+          "label": "1204年1月27日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1204-04-12",
+          "label": "1204年4月12日"
+        },
+        "dateSources": [
+          "wiki-alexios-v"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀλέξιος Εʹ Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-alexios-v"
+      ]
+    }
   },
   {
     "id": "theodore-i",
@@ -2293,13 +3961,34 @@
         "start": 1205,
         "end": 1221,
         "kind": "central",
-        "tenure": "1205—1221年",
+        "tenure": "1205年5月—1221年11月",
         "territory": "尼西亚及其控制区",
-        "note": "阿莱克修斯三世的女婿，1204年首都陷落后在小亚细亚建立抵抗中心。",
-        "certainty": "约1205年称帝，1208年加冕；1221年末去世"
+        "note": "阿莱克修斯三世的女婿，1204年首都陷落后在小亚细亚建立抵抗中心。 1205年称帝；正式加冕为1208年4月6日。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "1205-05",
+          "label": "1205年5月"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "1221-11",
+          "label": "1221年11月"
+        },
+        "dateSources": [
+          "wiki-theodore-i"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Θεόδωρος Αʹ Λάσκαρις",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-theodore-i"
+      ]
+    }
   },
   {
     "id": "john-iii",
@@ -2324,13 +4013,34 @@
         "start": 1221,
         "end": 1254,
         "kind": "central",
-        "tenure": "1221—1254年",
+        "tenure": "1221年12月—1254年11月3日",
         "territory": "尼西亚及其控制区",
         "note": "狄奥多尔一世的女婿，1221年继承尼西亚帝位，继位遭拉斯卡里斯旁支挑战。",
-        "certainty": "1221年继位；部分旧简表作1222年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "1221-12",
+          "label": "1221年12月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1254-11-03",
+          "label": "1254年11月3日"
+        },
+        "dateSources": [
+          "wiki-john-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰωάννης Γʹ Δούκας Βατάτζης",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-iii"
+      ]
+    }
   },
   {
     "id": "theodore-ii",
@@ -2355,13 +4065,34 @@
         "start": 1254,
         "end": 1258,
         "kind": "central",
-        "tenure": "1254—1258年",
+        "tenure": "1254年11月4日—1258年8月16日",
         "territory": "尼西亚及其控制区",
         "note": "约翰三世之子，沿用外祖家拉斯卡里斯姓号，1254年继承尼西亚帝位。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1254-11-04",
+          "label": "1254年11月4日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1258-08-16",
+          "label": "1258年8月16日"
+        },
+        "dateSources": [
+          "wiki-theodore-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Θεόδωρος Βʹ Λάσκαρις",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-theodore-ii"
+      ]
+    }
   },
   {
     "id": "john-iv",
@@ -2386,13 +4117,34 @@
         "start": 1258,
         "end": 1261,
         "kind": "central",
-        "tenure": "1258—1261年",
+        "tenure": "1258年8月16日—1261年12月25日",
         "territory": "尼西亚及其控制区",
         "note": "狄奥多尔二世之子，1258年幼龄继位，父亲安排的摄政穆扎隆不久遭杀。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1258-08-16",
+          "label": "1258年8月16日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1261-12-25",
+          "label": "1261年12月25日"
+        },
+        "dateSources": [
+          "wiki-john-iv"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰωάννης Δʹ Λάσκαρις",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-iv"
+      ]
+    }
   },
   {
     "id": "michael-viii",
@@ -2417,13 +4169,34 @@
         "start": 1259,
         "end": 1282,
         "kind": "central",
-        "tenure": "1259—1282年",
+        "tenure": "1259年1月1日—1282年12月11日",
         "territory": "1259—1261年尼西亚；1261年起君士坦丁堡及帝国控制区",
         "note": "贵族将领，1258年进入尼西亚摄政核心，1259年获共帝称号并在佩拉戈尼亚取得决定性胜利。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1259-01-01",
+          "label": "1259年1月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1282-12-11",
+          "label": "1282年12月11日"
+        },
+        "dateSources": [
+          "wiki-michael-viii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μιχαὴλ Ηʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-viii"
+      ]
+    }
   },
   {
     "id": "andronikos-ii",
@@ -2448,22 +4221,56 @@
         "start": 1282,
         "end": 1328,
         "kind": "central",
-        "tenure": "1282—1328年",
+        "tenure": "1282年12月11日—1328年5月24日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "米海尔八世之子，1272年已为共帝，1282年继位后放弃里昂联合。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1282-12-11",
+          "label": "1282年12月11日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1328-05-24",
+          "label": "1328年5月24日"
+        },
+        "dateSources": [
+          "wiki-andronikos-ii"
+        ]
       },
       {
         "start": 1272,
         "end": 1282,
         "kind": "junior",
-        "tenure": "1272—1282年",
+        "tenure": "1272年11月8日—1282年12月11日",
         "territory": "东罗马宫廷及承认地区",
         "note": "米海尔八世之子，1272年已为共帝，1282年继位后放弃里昂联合。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1272-11-08",
+          "label": "1272年11月8日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1282-12-11",
+          "label": "1282年12月11日"
+        },
+        "dateSources": [
+          "wiki-andronikos-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀνδρόνικος Βʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-andronikos-ii"
+      ]
+    }
   },
   {
     "id": "andronikos-iii",
@@ -2488,22 +4295,56 @@
         "start": 1328,
         "end": 1341,
         "kind": "central",
-        "tenure": "1328—1341年",
+        "tenure": "1328年5月24日—1341年6月15日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "米海尔九世之子，在与祖父的内战中获得年轻贵族支持，1325年加冕为共帝。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1328-05-24",
+          "label": "1328年5月24日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1341-06-15",
+          "label": "1341年6月15日"
+        },
+        "dateSources": [
+          "wiki-andronikos-iii"
+        ]
       },
       {
         "start": 1325,
         "end": 1328,
         "kind": "junior",
-        "tenure": "1325—1328年",
+        "tenure": "1325年2月2日—1328年5月24日",
         "territory": "东罗马宫廷及承认地区",
         "note": "米海尔九世之子，在与祖父的内战中获得年轻贵族支持，1325年加冕为共帝。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1325-02-02",
+          "label": "1325年2月2日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1328-05-24",
+          "label": "1328年5月24日"
+        },
+        "dateSources": [
+          "wiki-andronikos-iii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀνδρόνικος Γʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-andronikos-iii"
+      ]
+    }
   },
   {
     "id": "john-v",
@@ -2528,49 +4369,122 @@
         "start": 1341,
         "end": 1347,
         "kind": "central",
-        "tenure": "1341—1347年",
+        "tenure": "1341年6月15日—1347年2月8日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1341-06-15",
+          "label": "1341年6月15日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1347-02-08",
+          "label": "1347年2月8日"
+        },
+        "dateSources": [
+          "wiki-john-v"
+        ]
       },
       {
         "start": 1354,
         "end": 1376,
         "kind": "central",
-        "tenure": "1354—1376年",
+        "tenure": "1354年12月10日—1376年8月12日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1354-12-10",
+          "label": "1354年12月10日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1376-08-12",
+          "label": "1376年8月12日"
+        },
+        "dateSources": [
+          "wiki-john-v"
+        ]
       },
       {
         "start": 1379,
         "end": 1390,
         "kind": "central",
-        "tenure": "1379—1390年",
+        "tenure": "1379年7月1日—1390年4月14日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1379-07-01",
+          "label": "1379年7月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1390-04-14",
+          "label": "1390年4月14日"
+        },
+        "dateSources": [
+          "wiki-john-v"
+        ]
       },
       {
         "start": 1390,
         "end": 1391,
         "kind": "central",
-        "tenure": "1390—1391年",
+        "tenure": "1390年9月17日—1391年2月16日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1390-09-17",
+          "label": "1390年9月17日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1391-02-16",
+          "label": "1391年2月16日"
+        },
+        "dateSources": [
+          "wiki-john-v"
+        ]
       },
       {
         "start": 1347,
         "end": 1354,
         "kind": "junior",
-        "tenure": "1347—1354年",
+        "tenure": "1347年2月8日—1354年12月10日",
         "territory": "东罗马宫廷及承认地区",
         "note": "安德洛尼卡三世之子，1341年幼龄继位，其母安娜与坎塔库泽诺斯的冲突使国家陷入内战。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1347-02-08",
+          "label": "1347年2月8日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1354-12-10",
+          "label": "1354年12月10日"
+        },
+        "dateSources": [
+          "wiki-john-v"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰωάννης Εʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-v"
+      ]
+    }
   },
   {
     "id": "john-vi",
@@ -2595,22 +4509,56 @@
         "start": 1347,
         "end": 1354,
         "kind": "central",
-        "tenure": "1347—1354年",
+        "tenure": "1347年2月8日—1354年12月10日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安德洛尼卡三世的重臣，1341年自称皇帝，与首都摄政政府展开长期内战。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1347-02-08",
+          "label": "1347年2月8日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1354-12-10",
+          "label": "1354年12月10日"
+        },
+        "dateSources": [
+          "wiki-john-vi"
+        ]
       },
       {
         "start": 1341,
         "end": 1347,
         "kind": "rival",
-        "tenure": "1341—1347年",
+        "tenure": "1341年10月26日—1347年2月8日",
         "territory": "东罗马宫廷及承认地区",
         "note": "1341年在狄狄莫提科自称皇帝；1347年才与首都政府达成资深皇帝共治安排。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1341-10-26",
+          "label": "1341年10月26日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1347-02-08",
+          "label": "1347年2月8日"
+        },
+        "dateSources": [
+          "wiki-john-vi"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰωάννης Ϛʹ Καντακουζηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-vi"
+      ]
+    }
   },
   {
     "id": "andronikos-iv",
@@ -2635,31 +4583,78 @@
         "start": 1376,
         "end": 1379,
         "kind": "central",
-        "tenure": "1376—1379年",
+        "tenure": "1376年8月12日—1379年7月1日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "约翰五世长子，幼年即获共帝称号，1373年反对父亲失败后受罚。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1376-08-12",
+          "label": "1376年8月12日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1379-07-01",
+          "label": "1379年7月1日"
+        },
+        "dateSources": [
+          "wiki-andronikos-iv"
+        ]
       },
       {
         "start": 1352,
         "end": 1373,
         "kind": "junior",
-        "tenure": "1352—1373年",
+        "tenure": "1352年—1373年5月",
         "territory": "东罗马宫廷及承认地区",
         "note": "约翰五世长子，幼年即获共帝称号，1373年反对父亲失败后受罚。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "1352",
+          "label": "1352年"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "1373-05",
+          "label": "1373年5月"
+        },
+        "dateSources": [
+          "wiki-andronikos-iv"
+        ]
       },
       {
         "start": 1381,
         "end": 1385,
         "kind": "junior",
-        "tenure": "1381—1385年",
+        "tenure": "1381年5月—1385年6月",
         "territory": "东罗马宫廷及承认地区",
         "note": "约翰五世长子，幼年即获共帝称号，1373年反对父亲失败后受罚。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "1381-05",
+          "label": "1381年5月"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "1385-06",
+          "label": "1385年6月"
+        },
+        "dateSources": [
+          "wiki-andronikos-iv"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἀνδρόνικος Δʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-andronikos-iv"
+      ]
+    }
   },
   {
     "id": "john-vii",
@@ -2684,40 +4679,100 @@
         "start": 1390,
         "end": 1390,
         "kind": "central",
-        "tenure": "1390—1390年",
+        "tenure": "1390年4月14日—1390年9月17日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "安德洛尼卡四世之子，1377年获共帝称号；1390年短暂推翻祖父约翰五世。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1390-04-14",
+          "label": "1390年4月14日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1390-09-17",
+          "label": "1390年9月17日"
+        },
+        "dateSources": [
+          "wiki-john-vii"
+        ]
       },
       {
         "start": 1377,
         "end": 1379,
         "kind": "junior",
-        "tenure": "1377—1379年",
+        "tenure": "1377年10月18日—1379年7月1日",
         "territory": "东罗马宫廷及承认地区",
         "note": "安德洛尼卡四世之子，1377年获共帝称号；1390年短暂推翻祖父约翰五世。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1377-10-18",
+          "label": "1377年10月18日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1379-07-01",
+          "label": "1379年7月1日"
+        },
+        "dateSources": [
+          "wiki-john-vii"
+        ]
       },
       {
         "start": 1381,
         "end": 1390,
         "kind": "junior",
-        "tenure": "1381—1390年",
+        "tenure": "1381年5月—1390年4月14日",
         "territory": "东罗马宫廷及承认地区",
         "note": "安德洛尼卡四世之子，1377年获共帝称号；1390年短暂推翻祖父约翰五世。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "1381-05",
+          "label": "1381年5月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1390-04-14",
+          "label": "1390年4月14日"
+        },
+        "dateSources": [
+          "wiki-john-vii"
+        ]
       },
       {
         "start": 1390,
         "end": 1408,
         "kind": "junior",
-        "tenure": "1390—1408年",
+        "tenure": "1390年9月17日—1408年9月22日",
         "territory": "东罗马宫廷及承认地区",
         "note": "1390年失去主帝地位后保留皇号；1399—1403年代理留守，1403—1408年驻塞萨洛尼基，不取代曼努埃尔二世主帝身份。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1390-09-17",
+          "label": "1390年9月17日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1408-09-22",
+          "label": "1408年9月22日"
+        },
+        "dateSources": [
+          "wiki-john-vii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰωάννης Ζʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-vii"
+      ]
+    }
   },
   {
     "id": "manuel-ii",
@@ -2742,22 +4797,56 @@
         "start": 1391,
         "end": 1425,
         "kind": "central",
-        "tenure": "1391—1425年",
+        "tenure": "1391年2月16日—1425年7月21日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "约翰五世之子，1373年获共帝称号，1391年在父亲去世后接掌首都。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1391-02-16",
+          "label": "1391年2月16日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1425-07-21",
+          "label": "1425年7月21日"
+        },
+        "dateSources": [
+          "wiki-manuel-ii"
+        ]
       },
       {
         "start": 1373,
         "end": 1391,
         "kind": "junior",
-        "tenure": "1373—1391年",
+        "tenure": "1373年9月25日—1391年2月16日",
         "territory": "东罗马宫廷及承认地区",
         "note": "约翰五世之子，1373年获共帝称号，1391年在父亲去世后接掌首都。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1373-09-25",
+          "label": "1373年9月25日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1391-02-16",
+          "label": "1391年2月16日"
+        },
+        "dateSources": [
+          "wiki-manuel-ii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Μανουὴλ Βʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-manuel-ii"
+      ]
+    }
   },
   {
     "id": "john-viii",
@@ -2782,22 +4871,56 @@
         "start": 1425,
         "end": 1448,
         "kind": "central",
-        "tenure": "1425—1448年",
+        "tenure": "1425年7月21日—1448年10月31日",
         "territory": "君士坦丁堡宫廷及其承认地区",
         "note": "曼努埃尔二世之子，1421年正式加冕为共帝，1425年继承主帝权力。",
-        "certainty": "公元年；含首尾交接年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1425-07-21",
+          "label": "1425年7月21日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1448-10-31",
+          "label": "1448年10月31日"
+        },
+        "dateSources": [
+          "wiki-john-viii"
+        ]
       },
       {
         "start": 1407,
         "end": 1425,
         "kind": "junior",
-        "tenure": "约1407—1425年",
+        "tenure": "约1407年／约1416年—1425年7月21日",
         "territory": "东罗马宫廷及承认地区",
-        "note": "采用宣布与加冕分开的口径；早期具体年份不确，1421年开始承担更全面政务。",
-        "certainty": "约1407年宣布共帝，1421年正式加冕"
+        "note": "采用宣布与加冕分开的口径；早期具体年份不确，1421年开始承担更全面政务。 共帝起点约1407年或约1416年有异说；确定加冕日为1421年1月19日。",
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "range",
+          "value": null,
+          "label": "约1407年／约1416年"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1425-07-21",
+          "label": "1425年7月21日"
+        },
+        "dateSources": [
+          "wiki-john-viii"
+        ]
       }
     ],
-    "purple": null
+    "purple": null,
+    "nativeName": {
+      "text": "Ἰωάννης Ηʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-viii"
+      ]
+    }
   },
   {
     "id": "constantine-xi",
@@ -2823,16 +4946,37 @@
         "start": 1449,
         "end": 1453,
         "kind": "central",
-        "tenure": "1449—1453年",
+        "tenure": "1449年1月6日—1453年5月29日",
         "territory": "君士坦丁堡宫廷及其承认地区",
-        "note": "曼努埃尔二世之子，曾治理摩里亚，兄长去世后于1449年在米斯特拉举行即位仪式。",
-        "certainty": "公元年；含首尾交接年"
+        "note": "曼努埃尔二世之子，曾治理摩里亚，兄长去世后于1449年在米斯特拉举行即位仪式。 1449年1月6日在米斯特拉加冕，3月抵达君士坦丁堡。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1449-01-06",
+          "label": "1449年1月6日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1453-05-29",
+          "label": "1453年5月29日"
+        },
+        "dateSources": [
+          "wiki-constantine-xi"
+        ]
       }
     ],
     "purple": {
       "label": "生于紫室",
       "term": "πορφυρογέννητος",
       "note": "人物专条明确说明皇帝经常被称为Porphyrogennetos，依据Runciman等研究。",
+      "sources": [
+        "wiki-constantine-xi"
+      ]
+    },
+    "nativeName": {
+      "text": "Κωνσταντῖνος ΙΑʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
       "sources": [
         "wiki-constantine-xi"
       ]
@@ -2860,12 +5004,34 @@
         "start": 475,
         "end": 476,
         "kind": "junior",
-        "tenure": "475—476年",
+        "tenure": "475年—476年8月",
         "territory": "君士坦丁堡宫廷",
         "note": "巴西利斯库斯之子，475年由父亲立为共帝。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0475",
+          "label": "475年"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0476-08",
+          "label": "476年8月"
+        },
+        "dateSources": [
+          "wiki-marcus"
+        ]
       }
-    ]
+    ],
+    "latin": "Marcus",
+    "nativeName": {
+      "text": "Marcus",
+      "lang": "la",
+      "note": "早期宫廷的拉丁文名号；保留希腊文形式供对照与检索。",
+      "sources": [
+        "wiki-marcus"
+      ]
+    }
   },
   {
     "id": "theodosios-son-maurice",
@@ -2889,12 +5055,33 @@
         "start": 590,
         "end": 602,
         "kind": "junior",
-        "tenure": "590—602年",
+        "tenure": "590年3月26日—602年11月27日",
         "territory": "君士坦丁堡宫廷",
         "note": "莫里斯长子，590年获共帝称号，是父亲继承安排的中心。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0590-03-26",
+          "label": "590年3月26日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0602-11-27",
+          "label": "602年11月27日"
+        },
+        "dateSources": [
+          "wiki-theodosios-son-maurice"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Θεοδόσιος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-theodosios-son-maurice"
+      ]
+    }
   },
   {
     "id": "tiberius-david",
@@ -2918,12 +5105,33 @@
         "start": 641,
         "end": 641,
         "kind": "junior",
-        "tenure": "641—641年",
+        "tenure": "641年9月／641年10月—641年11月",
         "territory": "君士坦丁堡宫廷",
         "note": "希拉克略与玛尔提娜之子，原名大卫。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "range",
+          "value": null,
+          "label": "641年9月／641年10月"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0641-11",
+          "label": "641年11月"
+        },
+        "dateSources": [
+          "wiki-tiberius-david"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Τιβέριος Δαυίδ",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-tiberius-david"
+      ]
+    }
   },
   {
     "id": "heraclius-son-constans",
@@ -2947,12 +5155,33 @@
         "start": 659,
         "end": 681,
         "kind": "junior",
-        "tenure": "659—681年",
+        "tenure": "659年6月2日—681年9月16日／681年12月21日",
         "territory": "君士坦丁堡宫廷",
         "note": "君士坦斯二世之子，659年与兄弟提比略获共帝称号。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "day",
+          "value": "0659-06-02",
+          "label": "659年6月2日"
+        },
+        "endDate": {
+          "precision": "range",
+          "value": null,
+          "label": "681年9月16日／681年12月21日"
+        },
+        "dateSources": [
+          "wiki-heraclius-son-constans"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἡράκλειος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-heraclius-son-constans"
+      ]
+    }
   },
   {
     "id": "tiberius-son-constans",
@@ -2976,12 +5205,33 @@
         "start": 659,
         "end": 681,
         "kind": "junior",
-        "tenure": "659—681年",
+        "tenure": "659年6月2日—681年9月16日／681年12月21日",
         "territory": "君士坦丁堡宫廷",
         "note": "君士坦斯二世之子，659年被立为共帝，与同名的六世纪皇帝并非一人。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "day",
+          "value": "0659-06-02",
+          "label": "659年6月2日"
+        },
+        "endDate": {
+          "precision": "range",
+          "value": null,
+          "label": "681年9月16日／681年12月21日"
+        },
+        "dateSources": [
+          "wiki-tiberius-son-constans"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Τιβέριος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-tiberius-son-constans"
+      ]
+    }
   },
   {
     "id": "tiberius-son-justinian",
@@ -3005,12 +5255,33 @@
         "start": 706,
         "end": 711,
         "kind": "junior",
-        "tenure": "706—711年",
+        "tenure": "706年—711年12月",
         "territory": "君士坦丁堡宫廷",
         "note": "查士丁尼二世复位后的幼子，706年取得共帝头衔。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0706",
+          "label": "706年"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0711-12",
+          "label": "711年12月"
+        },
+        "dateSources": [
+          "wiki-tiberius-son-justinian"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Τιβέριος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-tiberius-son-justinian"
+      ]
+    }
   },
   {
     "id": "artabasdos",
@@ -3034,12 +5305,33 @@
         "start": 741,
         "end": 743,
         "kind": "rival",
-        "tenure": "741—743年",
+        "tenure": "741年6月—743年11月2日",
         "territory": "首都以外的竞争政权",
         "note": "利奥三世的女婿、重要军区将领，741年与君士坦丁五世争位，控制君士坦丁堡。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "0741-06",
+          "label": "741年6月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0743-11-02",
+          "label": "743年11月2日"
+        },
+        "dateSources": [
+          "wiki-artabasdos"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἀρτάβασδος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-artabasdos"
+      ]
+    }
   },
   {
     "id": "nikephoros-artabasdos",
@@ -3063,12 +5355,33 @@
         "start": 741,
         "end": 743,
         "kind": "rival",
-        "tenure": "741—743年",
+        "tenure": "741年／742年—743年11月2日",
         "territory": "首都以外的竞争政权",
         "note": "阿尔塔瓦兹多斯之子，在父亲控制首都期间取得共帝称号。",
-        "certainty": "约年窗口；不证明窗口中每天在位"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "range",
+          "value": null,
+          "label": "741年／742年"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0743-11-02",
+          "label": "743年11月2日"
+        },
+        "dateSources": [
+          "wiki-nikephoros-artabasdos"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Νικηφόρος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-nikephoros-artabasdos"
+      ]
+    }
   },
   {
     "id": "theophylact",
@@ -3092,12 +5405,33 @@
         "start": 811,
         "end": 813,
         "kind": "junior",
-        "tenure": "811—813年",
+        "tenure": "811年12月25日—813年7月11日",
         "territory": "君士坦丁堡宫廷",
         "note": "米海尔一世与普罗科皮娅的长子，811年父亲即位后被立为共帝。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0811-12-25",
+          "label": "811年12月25日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0813-07-11",
+          "label": "813年7月11日"
+        },
+        "dateSources": [
+          "wiki-theophylact"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Θεοφύλακτος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-theophylact"
+      ]
+    }
   },
   {
     "id": "constantine-symbatios",
@@ -3121,12 +5455,33 @@
         "start": 813,
         "end": 820,
         "kind": "junior",
-        "tenure": "813—820年",
+        "tenure": "813年12月25日／814年4月16日—820年12月25日",
         "territory": "君士坦丁堡宫廷",
-        "note": "利奥五世之子，原名辛巴提奥斯，813年获得共帝称号并改用君士坦丁。",
-        "certainty": "公元年；含首尾年"
+        "note": "利奥五世之子，原名辛巴提奥斯，813年获得共帝称号并改用君士坦丁。 受冠节日的解释有圣诞813年与复活节814年之争，不强择一日。",
+        "certainty": "纪年异说；圣诞节813年或复活节814年",
+        "startDate": {
+          "value": null,
+          "precision": "range",
+          "label": "813年12月25日／814年4月16日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0820-12-25",
+          "label": "820年12月25日"
+        },
+        "dateSources": [
+          "wiki-constantine-symbatios"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Κωνσταντῖνος Συμβάτιος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-symbatios"
+      ]
+    }
   },
   {
     "id": "constantine-theophilos",
@@ -3150,12 +5505,33 @@
         "start": 834,
         "end": 835,
         "kind": "junior",
-        "tenure": "834—835年",
+        "tenure": "约834年—约835年",
         "territory": "君士坦丁堡宫廷",
         "note": "狄奥菲洛斯的幼子，其共帝地位见于皇室图像和钱币研究。",
-        "certainty": "约年窗口；不证明窗口中每天在位"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "circa",
+          "value": "0834",
+          "label": "约834年"
+        },
+        "endDate": {
+          "precision": "circa",
+          "value": "0835",
+          "label": "约835年"
+        },
+        "dateSources": [
+          "wiki-constantine-theophilos"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Κωνσταντῖνος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-theophilos"
+      ]
+    }
   },
   {
     "id": "constantine-basil",
@@ -3179,12 +5555,33 @@
         "start": 868,
         "end": 879,
         "kind": "junior",
-        "tenure": "868—879年",
+        "tenure": "约868年1月—879年9月3日",
         "territory": "君士坦丁堡宫廷",
         "note": "巴西尔一世的长子，868年被立为共帝，早于利奥六世的加冕。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "circa",
+          "value": "0868-01",
+          "label": "约868年1月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0879-09-03",
+          "label": "879年9月3日"
+        },
+        "dateSources": [
+          "wiki-constantine-basil"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Κωνσταντῖνος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-basil"
+      ]
+    }
   },
   {
     "id": "christopher",
@@ -3208,12 +5605,33 @@
         "start": 921,
         "end": 931,
         "kind": "junior",
-        "tenure": "921—931年",
+        "tenure": "921年5月20日—931年8月",
         "territory": "君士坦丁堡宫廷",
         "note": "罗曼努斯一世的长子，921年获共帝称号，在宫廷等级上被置于君士坦丁七世之前。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0921-05-20",
+          "label": "921年5月20日"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0931-08",
+          "label": "931年8月"
+        },
+        "dateSources": [
+          "wiki-christopher"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Χριστόφορος Λεκαπηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-christopher"
+      ]
+    }
   },
   {
     "id": "stephen-lekapenos",
@@ -3237,12 +5655,33 @@
         "start": 924,
         "end": 945,
         "kind": "junior",
-        "tenure": "924—945年",
+        "tenure": "924年12月25日—945年1月27日",
         "territory": "君士坦丁堡宫廷",
         "note": "罗曼努斯一世之子，924年与弟弟君士坦丁获共帝称号。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0924-12-25",
+          "label": "924年12月25日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0945-01-27",
+          "label": "945年1月27日"
+        },
+        "dateSources": [
+          "wiki-stephen-lekapenos"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Στέφανος Λεκαπηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-stephen-lekapenos"
+      ]
+    }
   },
   {
     "id": "constantine-lekapenos",
@@ -3266,12 +5705,33 @@
         "start": 924,
         "end": 945,
         "kind": "junior",
-        "tenure": "924—945年",
+        "tenure": "924年12月25日—945年1月27日",
         "territory": "君士坦丁堡宫廷",
         "note": "罗曼努斯一世之子，924年取得帝号，不是同朝的君士坦丁七世。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0924-12-25",
+          "label": "924年12月25日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0945-01-27",
+          "label": "945年1月27日"
+        },
+        "dateSources": [
+          "wiki-constantine-lekapenos"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Κωνσταντῖνος Λεκαπηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-lekapenos"
+      ]
+    }
   },
   {
     "id": "andronikos-doukas",
@@ -3295,12 +5755,33 @@
         "start": 1068,
         "end": 1078,
         "kind": "junior",
-        "tenure": "1068—1078年",
+        "tenure": "1068年—约1078年",
         "territory": "君士坦丁堡宫廷",
         "note": "1068年加冕；终点仅知1070年代，最晚1078年，不表示持续到年底。",
-        "certainty": "约年窗口；不证明窗口中每天在位"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "year",
+          "value": "1068",
+          "label": "1068年"
+        },
+        "endDate": {
+          "precision": "circa",
+          "value": "1078",
+          "label": "约1078年"
+        },
+        "dateSources": [
+          "wiki-andronikos-doukas"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἀνδρόνικος Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-andronikos-doukas"
+      ]
+    }
   },
   {
     "id": "konstantios-doukas",
@@ -3331,12 +5812,33 @@
         "start": 1060,
         "end": 1078,
         "kind": "junior",
-        "tenure": "1060—1078年",
+        "tenure": "1060年—1078年",
         "territory": "君士坦丁堡宫廷",
         "note": "君士坦丁十世之子，约1060年获共帝称号，在兄长米海尔七世主政时继续保有地位。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "1060",
+          "label": "1060年"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "1078",
+          "label": "1078年"
+        },
+        "dateSources": [
+          "wiki-konstantios-doukas"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Κωνστάντιος Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-konstantios-doukas"
+      ]
+    }
   },
   {
     "id": "constantine-doukas",
@@ -3367,21 +5869,55 @@
         "start": 1074,
         "end": 1078,
         "kind": "junior",
-        "tenure": "1074—1078年",
+        "tenure": "约1074年—1078年",
         "territory": "君士坦丁堡宫廷",
         "note": "米海尔七世之子，出生后即获共帝头衔，1078年家族失位时被排除。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "circa",
+          "value": "1074",
+          "label": "约1074年"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "1078",
+          "label": "1078年"
+        },
+        "dateSources": [
+          "wiki-constantine-doukas"
+        ]
       },
       {
         "start": 1081,
         "end": 1087,
         "kind": "junior",
-        "tenure": "1081—1087年",
+        "tenure": "1081年4月—约1087年",
         "territory": "东罗马宫廷及承认地区",
         "note": "1081年恢复共帝头衔；约1087年失去继承地位，另有延至1092年的分法。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "month",
+          "value": "1081-04",
+          "label": "1081年4月"
+        },
+        "endDate": {
+          "precision": "circa",
+          "value": "1087",
+          "label": "约1087年"
+        },
+        "dateSources": [
+          "wiki-constantine-doukas"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Κωνσταντῖνος Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-constantine-doukas"
+      ]
+    }
   },
   {
     "id": "alexios-john-ii",
@@ -3405,12 +5941,33 @@
         "start": 1119,
         "end": 1142,
         "kind": "junior",
-        "tenure": "1119—1142年",
+        "tenure": "1119年7月—10月—1142年8月2日",
         "territory": "君士坦丁堡宫廷",
-        "note": "采用1119年加冕；Hendy《Dumbarton Oaks钱币目录》IV.1第244页订正旧说1122年（经专条参考书目核对）。",
-        "certainty": "公元年；含首尾年"
+        "note": "采用1119年加冕；Hendy《Dumbarton Oaks钱币目录》IV.1第244页订正旧说1122年（经专条参考书目核对）。 Hendy的钱币研究将受冠定位在7月至10月之间。",
+        "certainty": "保留日期异说或可考区间，见说明",
+        "startDate": {
+          "value": null,
+          "precision": "range",
+          "label": "1119年7月—10月"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1142-08-02",
+          "label": "1142年8月2日"
+        },
+        "dateSources": [
+          "wiki-alexios-john-ii"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἀλέξιος Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-alexios-john-ii"
+      ]
+    }
   },
   {
     "id": "john-andronikos",
@@ -3434,12 +5991,33 @@
         "start": 1183,
         "end": 1185,
         "kind": "junior",
-        "tenure": "1183—1185年",
+        "tenure": "1183年11月—1185年9月",
         "territory": "君士坦丁堡宫廷",
         "note": "安德洛尼卡一世之子，1183年父亲掌权后被置于共帝位置，尽管不是长子。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "1183-11",
+          "label": "1183年11月"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "1185-09",
+          "label": "1185年9月"
+        },
+        "dateSources": [
+          "wiki-john-andronikos"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἰωάννης Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-andronikos"
+      ]
+    }
   },
   {
     "id": "michael-ix",
@@ -3463,12 +6041,34 @@
         "start": 1294,
         "end": 1320,
         "kind": "junior",
-        "tenure": "1294—1320年",
+        "tenure": "1294年5月21日—1320年10月12日",
         "territory": "君士坦丁堡宫廷",
-        "note": "安德洛尼卡二世之子，1294年正式加冕为共帝，此前已有继承指定。",
-        "certainty": "公元年；含首尾年"
+        "note": "安德洛尼卡二世之子，1294年正式加冕为共帝，此前已有继承指定。 采用Failler 2002的1294年5月21日订正，旧表亦有1295年说。",
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1294-05-21",
+          "label": "1294年5月21日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1320-10-12",
+          "label": "1320年10月12日"
+        },
+        "dateSources": [
+          "wiki-michael-ix",
+          "michael-ix-coronation"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Μιχαὴλ Θʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-michael-ix"
+      ]
+    }
   },
   {
     "id": "matthew",
@@ -3492,12 +6092,33 @@
         "start": 1353,
         "end": 1357,
         "kind": "rival",
-        "tenure": "1353—1357年",
+        "tenure": "1353年4月—1357年12月",
         "territory": "首都以外的竞争政权",
         "note": "约翰六世之子，1353年被父亲宣布为共帝，1354年加冕，以对抗约翰五世一派。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "month",
+          "value": "1353-04",
+          "label": "1353年4月"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "1357-12",
+          "label": "1357年12月"
+        },
+        "dateSources": [
+          "wiki-matthew"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ματθαῖος Καντακουζηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-matthew"
+      ]
+    }
   },
   {
     "id": "andronikos-v",
@@ -3521,12 +6142,33 @@
         "start": 1403,
         "end": 1407,
         "kind": "junior",
-        "tenure": "1403—1407年",
+        "tenure": "1403年—约1407年",
         "territory": "君士坦丁堡宫廷",
         "note": "约1403年被立为共帝、约1407年早逝；也有稍后终点的研究表达。",
-        "certainty": "约年窗口；不证明窗口中每天在位"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "year",
+          "value": "1403",
+          "label": "1403年"
+        },
+        "endDate": {
+          "precision": "circa",
+          "value": "1407",
+          "label": "约1407年"
+        },
+        "dateSources": [
+          "wiki-andronikos-v"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἀνδρόνικος Εʹ Παλαιολόγος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-andronikos-v"
+      ]
+    }
   },
   {
     "id": "thomas-slav",
@@ -3550,12 +6192,33 @@
         "start": 821,
         "end": 823,
         "kind": "rival",
-        "tenure": "821—823年",
+        "tenure": "821年—823年10月",
         "territory": "首都以外的竞争政权",
         "note": "军事将领，821年起得到多个地区支持，并以皇帝身份对抗米海尔二世。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0821",
+          "label": "821年"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0823-10",
+          "label": "823年10月"
+        },
+        "dateSources": [
+          "wiki-thomas-slav"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Θωμᾶς ὁ Σλάβος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-thomas-slav"
+      ]
+    }
   },
   {
     "id": "bardas-skleros",
@@ -3579,21 +6242,55 @@
         "start": 976,
         "end": 979,
         "kind": "rival",
-        "tenure": "976—979年",
+        "tenure": "976年—979年3月24日",
         "territory": "首都以外的竞争政权",
         "note": "东方将领，976年反对巴西尔二世政权而称帝，979年被击败后投奔外部势力。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0976",
+          "label": "976年"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0979-03-24",
+          "label": "979年3月24日"
+        },
+        "dateSources": [
+          "wiki-bardas-skleros"
+        ]
       },
       {
         "start": 987,
         "end": 989,
         "kind": "rival",
-        "tenure": "987—989年",
+        "tenure": "987年—989年10月",
         "territory": "东罗马宫廷及承认地区",
         "note": "987年再度争位，很快受福卡斯控制，989年最终和解；不是稳定领土帝国。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0987",
+          "label": "987年"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "0989-10",
+          "label": "989年10月"
+        },
+        "dateSources": [
+          "wiki-bardas-skleros"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Βάρδας Σκληρός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-bardas-skleros"
+      ]
+    }
   },
   {
     "id": "bardas-phokas",
@@ -3617,21 +6314,55 @@
         "start": 970,
         "end": 970,
         "kind": "rival",
-        "tenure": "970—970年",
+        "tenure": "970年—970年",
         "territory": "首都以外的竞争政权",
         "note": "福卡斯军事家族成员，970年曾反对约翰一世失败，后来重新受到任用。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "0970",
+          "label": "970年"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "0970",
+          "label": "970年"
+        },
+        "dateSources": [
+          "wiki-bardas-phokas"
+        ]
       },
       {
         "start": 987,
         "end": 989,
         "kind": "rival",
-        "tenure": "987—989年",
+        "tenure": "987年8月15日—989年4月13日",
         "territory": "东罗马宫廷及承认地区",
         "note": "987年再度自称皇帝，989年在阿比多斯战死。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "0987-08-15",
+          "label": "987年8月15日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "0989-04-13",
+          "label": "989年4月13日"
+        },
+        "dateSources": [
+          "wiki-bardas-phokas"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Βάρδας Φωκᾶς",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-bardas-phokas"
+      ]
+    }
   },
   {
     "id": "george-maniakes",
@@ -3655,12 +6386,33 @@
         "start": 1042,
         "end": 1043,
         "kind": "rival",
-        "tenure": "1042—1043年",
+        "tenure": "1042年—1043年",
         "territory": "首都以外的竞争政权",
         "note": "以收复埃德萨和西西里远征闻名的将领，因与宫廷冲突在意大利起兵称帝。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "1042",
+          "label": "1042年"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "1043",
+          "label": "1043年"
+        },
+        "dateSources": [
+          "wiki-george-maniakes"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Γεώργιος Μανιάκης",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-george-maniakes"
+      ]
+    }
   },
   {
     "id": "leo-tornikios",
@@ -3684,12 +6436,33 @@
         "start": 1047,
         "end": 1047,
         "kind": "rival",
-        "tenure": "1047—1047年",
+        "tenure": "1047年9月14日—1047年12月25日",
         "territory": "首都以外的竞争政权",
         "note": "与皇室有亲缘关系的将领，1047年在色雷斯被拥立为皇帝。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1047-09-14",
+          "label": "1047年9月14日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1047-12-25",
+          "label": "1047年12月25日"
+        },
+        "dateSources": [
+          "wiki-leo-tornikios"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Λέων Τορνίκιος",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-leo-tornikios"
+      ]
+    }
   },
   {
     "id": "isaac-cyprus",
@@ -3713,12 +6486,33 @@
         "start": 1184,
         "end": 1191,
         "kind": "regional",
-        "tenure": "1184—1191年",
+        "tenure": "1184年／1185年—1191年5月",
         "territory": "塞浦路斯，独立于君士坦丁堡",
         "note": "科穆宁家族成员，1184年在塞浦路斯建立独立统治，并采用皇帝称号。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "range",
+          "value": null,
+          "label": "1184年／1185年"
+        },
+        "endDate": {
+          "precision": "month",
+          "value": "1191-05",
+          "label": "1191年5月"
+        },
+        "dateSources": [
+          "wiki-isaac-cyprus"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἰσαάκιος Κομνηνός",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-isaac-cyprus"
+      ]
+    }
   },
   {
     "id": "theodore-thessalonica",
@@ -3742,12 +6536,33 @@
         "start": 1224,
         "end": 1230,
         "kind": "regional",
-        "tenure": "1224—1230年",
+        "tenure": "1224年／1227年—1230年3月9日",
         "territory": "塞萨洛尼基竞争帝号政权",
         "note": "伊庇鲁斯统治者，1224年攻取塞萨洛尼基后采用罗马皇帝称号，加冕约在1225—1227年。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；含约年或异说，见日期标记",
+        "startDate": {
+          "precision": "range",
+          "value": null,
+          "label": "1224年／1227年"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1230-03-09",
+          "label": "1230年3月9日"
+        },
+        "dateSources": [
+          "wiki-theodore-thessalonica"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Θεόδωρος Κομνηνὸς Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-theodore-thessalonica"
+      ]
+    }
   },
   {
     "id": "manuel-thessalonica",
@@ -3771,12 +6586,33 @@
         "start": 1230,
         "end": 1237,
         "kind": "regional",
-        "tenure": "1230—1237年",
+        "tenure": "1230年3月—1237年",
         "territory": "塞萨洛尼基竞争帝号政权",
         "note": "狄奥多尔的兄弟，在1230年克洛科特尼察战败后统治塞萨洛尼基。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "month",
+          "value": "1230-03",
+          "label": "1230年3月"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "1237",
+          "label": "1237年"
+        },
+        "dateSources": [
+          "wiki-manuel-thessalonica"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Μανουὴλ Κομνηνὸς Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-manuel-thessalonica"
+      ]
+    }
   },
   {
     "id": "john-thessalonica",
@@ -3800,12 +6636,33 @@
         "start": 1237,
         "end": 1242,
         "kind": "regional",
-        "tenure": "1237—1242年",
+        "tenure": "1237年—1242年",
         "territory": "塞萨洛尼基竞争帝号政权",
         "note": "狄奥多尔之子，1237年在父亲支持下成为塞萨洛尼基皇帝，实际政治受父亲影响。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；仅列年份者月日未详",
+        "startDate": {
+          "precision": "year",
+          "value": "1237",
+          "label": "1237年"
+        },
+        "endDate": {
+          "precision": "year",
+          "value": "1242",
+          "label": "1242年"
+        },
+        "dateSources": [
+          "wiki-john-thessalonica"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Ἰωάννης Κομνηνὸς Δούκας",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-john-thessalonica"
+      ]
+    }
   },
   {
     "id": "evdokia",
@@ -3829,20 +6686,54 @@
         "start": 1067,
         "end": 1067,
         "kind": "disputed",
-        "tenure": "1067—1067年",
+        "tenure": "1067年5月23日—1067年12月31日",
         "territory": "君士坦丁堡宫廷",
         "note": "君士坦丁十世的皇后，1067年丈夫去世后为诸子摄政，1068年与罗曼努斯四世成婚。",
-        "certainty": "公元年；含首尾年"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1067-05-23",
+          "label": "1067年5月23日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1067-12-31",
+          "label": "1067年12月31日"
+        },
+        "dateSources": [
+          "wiki-evdokia"
+        ]
       },
       {
         "start": 1071,
         "end": 1071,
         "kind": "disputed",
-        "tenure": "1071—1071年",
+        "tenure": "1071年10月1日—1071年11月1日",
         "territory": "东罗马宫廷及承认地区",
         "note": "1071年秋恢复参与共治约一个月，随后失位；独立统治者地位有争议。",
-        "certainty": "公元年；同年交接不表示全年共治"
+        "certainty": "史料可考精度；月日依人物专条纪年",
+        "startDate": {
+          "precision": "day",
+          "value": "1071-10-01",
+          "label": "1071年10月1日"
+        },
+        "endDate": {
+          "precision": "day",
+          "value": "1071-11-01",
+          "label": "1071年11月1日"
+        },
+        "dateSources": [
+          "wiki-evdokia"
+        ]
       }
-    ]
+    ],
+    "nativeName": {
+      "text": "Εὐδοκία Μακρεμβολίτισσα",
+      "lang": "el",
+      "note": "希腊文姓名的规范化展示形式；序号为现代辨识用法，不作为当时完整签名。",
+      "sources": [
+        "wiki-evdokia"
+      ]
+    }
   }
 ]

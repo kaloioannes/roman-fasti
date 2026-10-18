@@ -27,6 +27,8 @@
     return linked ? `<a ${attrs} href="#people&dynasty=${encodeURIComponent(p.dynasty)}">${esc(text)} ↗</a>` : `<span ${attrs}>${esc(text)}</span>`;
   };
   const purpleTag = p => p.purple ? `<span class="purple-tag" title="${esc(p.purple.note)}">生于紫室</span>` : '';
+  const nativeName = p => `<span class="name-language">${p.nativeName.lang === 'la' ? '拉丁文原名' : '希腊文原名'}</span><span lang="${p.nativeName.lang}" class="ruler-greek">${esc(p.nativeName.text)}</span>`;
+  const regnalDates = r => `<dl class="regnal-dates"><div><dt>开始</dt><dd>${esc(r.startDate.label)}</dd></div><div><dt>结束</dt><dd>${esc(r.endDate.label)}</dd></div></dl>`;
   const yearLink = y => `<a class="year-chip" href="#year=${y}">${when(y)} ↗</a>`;
   const sourceLinks = keys => `<div class="source-links">${[...new Set(keys)].map(key => {
     const s = data.sources[key];
@@ -89,9 +91,9 @@
   }
   function rulerCard(person, reign) {
     return `<article class="ruler-card" data-person="${person.id}" data-kind="${reign.kind}"><div class="ruler-card-top">${badge(reign.kind)}<span class="ruler-dates">${esc(reign.certainty)}</span></div>
-      <h4><a href="#person=${person.id}">${esc(person.zh)} ↗</a> ${purpleTag(person)}</h4><div lang="el" class="ruler-greek">${esc(person.greek)}</div>
+      <h4><a href="#person=${person.id}">${esc(person.zh)} ↗</a> ${purpleTag(person)}</h4>${nativeName(person)}
       <div class="dynasty-line">${dynastyTag(person)}</div>
-      <p class="ruler-territory">${esc(reign.tenure)}<br>${esc(reign.territory)}</p><p class="ruler-note">${esc(reign.note)}</p>
+      ${regnalDates(reign)}<p class="ruler-territory">${esc(reign.territory)}</p>${sourceLinks(reign.dateSources)}<p class="ruler-note">${esc(reign.note)}</p>
       <details><summary>展开人物介绍</summary>${person.bio.map(p => `<p>${esc(p)}</p>`).join('')}${sourceLinks(person.sources)}<a class="bio-link" href="#person=${person.id}">完整档案与任期 ↗</a></details></article>`;
   }
 
@@ -118,8 +120,8 @@
       <p class="year-note">以下记录的是本年内的在位或称号阶段。换帝年的先后、同时共治及不确定日期，请看各人的任期说明；人物完整传记会涉及其后生涯。</p>
       <div class="year-grid"><section class="officials-section" aria-label="当年统治者"><div class="section-title"><h2>当年皇帝与帝位人物</h2><span class="section-caption">ΒΑΣΙΛΕΙΣ</span></div>${['central','junior','rival','regional','disputed'].map(group).join('')}</section>
       <section class="territory-section"><div class="section-title"><h2>帝国与政治据点</h2><span class="section-caption">ΤΟΠΟΙ</span></div><div class="map-card" id="imperial-map"><p class="map-failure" role="status">正在载入地图……</p></div><p class="map-caveat" id="map-caption"></p></section></div>
-      <section class="events-section"><div class="section-title"><div><span class="eyebrow">ANNVS IN MEMORIA</span><h2>这一年的记事</h2></div></div><label class="event-filter"><input id="dated-only" type="checkbox">仅看无纪年争议的年度事件（隐藏约年与传统纪年）</label><div id="annual-events">${!record.events.length ? gapNotice(y) : ''}${record.events.map((event, i) => `<article class="event-row" data-background="${/约年|传统纪年/.test(event.certainty)}"><div class="event-number">${String(i+1).padStart(2,'0')}</div><div class="event-body"><div class="event-meta">${esc(event.certainty)}</div><h3>${esc(event.title)}</h3><p>${esc(event.description)}</p><div class="event-reference">定位：${esc(event.reference)}</div>${sourceLinks(event.sources)}</div></article>`).join('')}</div><p id="no-dated-events" class="empty-state" hidden>本年尚未收录符合当前筛选的独立记事；这不是该年无事发生的断言。</p></section>
-      <section class="year-sources"><h2>阅读提示</h2><p>具体卷章见每条记事。没有年度条目表示本项目资料尚未覆盖，不表示该年无事发生。争位成功与否不决定是否收录。查看顶部“史料与方法”了解证据标准、日期选择及未收录人物。</p></section></div>`;
+      <section class="events-section"><div class="section-title"><div><span class="eyebrow">ANNVS IN MEMORIA</span><h2>这一年的记事</h2></div></div><label class="event-filter"><input id="dated-only" type="checkbox">仅看纪年明确的年度事件（隐藏约年、传统纪年与异说）</label><div id="annual-events">${!record.events.length ? gapNotice(y) : ''}${record.events.map((event, i) => `<article class="event-row" data-background="${/约年|传统纪年|纪年异说|最迟纪年|拜占庭年换算|文内纪年/.test(event.certainty)}"><div class="event-number">${String(i+1).padStart(2,'0')}</div><div class="event-body"><div class="event-meta">${esc(event.certainty)}</div><h3>${esc(event.title)}</h3><p>${esc(event.description)}</p><div class="event-reference">定位：${esc(event.reference)}</div>${sourceLinks(event.sources)}</div></article>`).join('')}</div><p id="no-dated-events" class="empty-state" hidden>本年的记事含约年或纪年差异；取消筛选可查看条目及依据。</p></section>
+      <section class="year-sources"><h2>阅读提示</h2><p>具体卷章见每条记事。每年均有独立记事；约年、纪年异说及跨年事件的具体阶段另作标注。争位成功与否不决定是否收录。查看顶部“史料与方法”了解证据标准、日期选择及未收录人物。</p></section></div>`;
     bindYearForm('jump-form'); $('#random-year').onclick = randomYear;
     $('#previous-year').onclick = () => { if (index) location.hash = `year=${years[index-1]}`; };
     $('#next-year').onclick = () => { if (index < years.length-1) location.hash = `year=${years[index+1]}`; };
@@ -148,7 +150,7 @@
     if (legacyEra && !data.dynasties[legacyEra] && Object.values(data.people).some(p => p.era === legacyEra)) {
       dynasties.push([legacyEra, {label: `时代／政权：${legacyEra}`}]);
     }
-    main.innerHTML = `<section class="directory"><div class="empire-toolbar"><a href="#">← 拜占庭纪年</a></div><div class="eyebrow">PROSOPOGRAPHIA · 人物索引</div><h1>帝位上的许多人</h1><p class="directory-intro">按中文、希腊文、别名、王朝或时代查找。每位人物都有独立传记。索引包含皇帝、帝号有争议者、共帝及选录的区域皇帝，人物总数不是正式主帝总数。</p><p class="person-notice">王朝与短期政治家族分别标明；尼西亚与拉丁帝国是不同政权。共帝不自动拥有与主帝同等的实权。生于紫室标签采用逐人确认，未标记不代表否定。</p>
+    main.innerHTML = `<section class="directory"><div class="empire-toolbar"><a href="#">← 拜占庭纪年</a></div><div class="eyebrow">PROSOPOGRAPHIA · 人物索引</div><h1>帝位上的许多人</h1><p class="directory-intro">按中文、拉丁文、希腊文、别名、王朝或时代查找。每位人物都有独立传记。索引包含皇帝、帝号有争议者、共帝及选录的区域皇帝，人物总数不是正式主帝总数。</p><p class="person-notice">王朝与短期政治家族分别标明；尼西亚与拉丁帝国是不同政权。共帝不自动拥有与主帝同等的实权。生于紫室标签采用逐人确认，未标记不代表否定。</p>
       <div class="directory-tools"><label><span class="sr-only">搜索人物</span><input id="person-search" type="search" placeholder="姓名、王朝或时代，例如 君士坦丁" value="${esc(directoryState.q)}"></label><label><span class="sr-only">身份</span><select id="kind-filter"><option value="">全部身份</option>${Object.entries(kinds).map(([k,v]) => `<option value="${k}"${directoryState.kind === k ? ' selected' : ''}>${v}</option>`).join('')}</select></label><label><span class="sr-only">王朝或家族</span><select id="dynasty-filter"><option value="">全部王朝与家族</option>${dynasties.map(([id,d]) => `<option value="${esc(id)}"${directoryState.dynasty === id ? ' selected' : ''}>${esc(d.label)}</option>`).join('')}</select></label></div>
       <label class="event-filter"><input id="purple-only" type="checkbox">仅看已确认的生于紫室人物</label><p class="directory-count" id="directory-count" role="status"></p><div id="directory-results" class="directory-grid"></div></section>`;
     const update = () => {
@@ -169,11 +171,11 @@
     const {q,kind,dynasty} = directoryState;
     const normalize = value => value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
     const query = normalize(q.trim());
-    const results = Object.values(data.people).filter(p => (!$('#purple-only').checked || p.purple) && (!query || `${p.zh} ${p.greek} ${p.aliases} ${dynastyLabel(p)} ${p.era}`.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').includes(query)) && (!kind || p.reigns.some(r => r.kind === kind)) && (!dynasty || p.dynasty === dynasty || p.era === dynasty)).sort((a,b) => Math.min(...a.reigns.map(r => r.start))-Math.min(...b.reigns.map(r => r.start)) || a.id.localeCompare(b.id));
+    const results = Object.values(data.people).filter(p => (!$('#purple-only').checked || p.purple) && (!query || `${p.zh} ${p.nativeName.text} ${p.greek} ${p.aliases} ${dynastyLabel(p)} ${p.era}`.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').includes(query)) && (!kind || p.reigns.some(r => r.kind === kind)) && (!dynasty || p.dynasty === dynasty || p.era === dynasty)).sort((a,b) => Math.min(...a.reigns.map(r => r.start))-Math.min(...b.reigns.map(r => r.start)) || a.id.localeCompare(b.id));
     $('#directory-count').textContent = `找到 ${results.length} / ${data.stats.people} 位人物`;
     $('#directory-results').innerHTML = results.length ? results.map(p => {
       const rs = p.reigns;
-      return `<a href="#person=${p.id}" class="person-card"><div>${[...new Set(rs.map(r => r.kind))].map(badge).join(' ')}</div><h2>${esc(p.zh)} ${purpleTag(p)}</h2><p lang="el" class="ruler-greek">${esc(p.greek)}</p><div class="dynasty-line">${dynastyTag(p,false)}</div><p class="person-period">${period(Math.min(...rs.map(r => r.start)),Math.max(...rs.map(r => r.end)))}</p><p class="ruler-note">时代／政权：${esc(p.era)}${rs.length > 1 ? ' · 多段任期，详见档案' : ''}</p></a>`;
+      return `<a href="#person=${p.id}" class="person-card"><div>${[...new Set(rs.map(r => r.kind))].map(badge).join(' ')}</div><h2>${esc(p.zh)} ${purpleTag(p)}</h2>${nativeName(p)}<div class="dynasty-line">${dynastyTag(p,false)}</div><p class="person-period">${period(Math.min(...rs.map(r => r.start)),Math.max(...rs.map(r => r.end)))}</p><p class="ruler-note">时代／政权：${esc(p.era)}${rs.length > 1 ? ' · 多段任期，详见档案' : ''}</p></a>`;
     }).join('') : '<p class="empty-state">没有匹配人物。可缩短关键词，或将身份、王朝与家族改为全部。</p>';
   }
 
@@ -183,10 +185,10 @@
     const rs = [...p.reigns].sort((a,b) => a.start-b.start);
     const links = years.filter(y => rs.some(r => r.start <= y && y <= r.end));
     main.innerHTML = `<article class="person-page"><div class="empire-toolbar"><a href="#people">← 人物索引</a><a href="#">拜占庭纪年</a>${currentYear ? `<a href="#year=${currentYear}">返回${when(currentYear)}</a>` : ''}</div>
-      <header class="person-heading"><div class="eyebrow">人物档案 · ${esc(p.era)}</div><h1>${esc(p.zh)} ${purpleTag(p)}</h1><p lang="el" class="ruler-greek">${esc(p.greek)}</p><div class="dynasty-line">${dynastyTag(p)}</div><p class="dynasty-note">${esc(data.dynasties[p.dynasty].note)}${p.dynastyNote ? ` ${esc(p.dynastyNote)}` : ''}</p>${sourceLinks(data.dynasties[p.dynasty].sources)}<p class="person-notice">别名／检索词：${esc(p.aliases)}</p></header>
+      <header class="person-heading"><div class="eyebrow">人物档案 · ${esc(p.era)}</div><h1>${esc(p.zh)} ${purpleTag(p)}</h1>${nativeName(p)}<div class="dynasty-line">${dynastyTag(p)}</div><p class="dynasty-note">${esc(data.dynasties[p.dynasty].note)}${p.dynastyNote ? ` ${esc(p.dynastyNote)}` : ''}</p>${sourceLinks(data.dynasties[p.dynasty].sources)}<p class="person-notice">别名／检索词：${esc(p.aliases)}</p></header>
       ${p.purple ? `<section class="purple-evidence"><h2>生于紫室 · 称号依据</h2><p>${esc(p.purple.note)}</p>${sourceLinks(p.purple.sources)}</section>` : '<p class="person-notice">紫室身份：本项目尚未确认。未加标签不表示否定。</p>'}
       <div class="person-body">${p.bio.map(paragraph => `<p>${esc(paragraph)}</p>`).join('')}</div>
-      <h2>称号与任期</h2><p class="person-notice">任期不同阶段分列；约年窗口不代表已证实在窗口中持续在位。完整生涯可超出本卷1453年的终点。</p><ul class="reign-list">${rs.map(r => `<li><strong>${esc(r.tenure)}</strong>${badge(r.kind)}<p>${esc(r.territory)} · ${esc(r.certainty)}<br>${esc(r.note)}</p><div class="reign-years">${yearLink(Math.max(476,r.start))}${r.end !== r.start ? yearLink(Math.min(1453,r.end)) : ''}</div></li>`).join('')}</ul>
+      <p class="person-notice">${esc(p.nativeName.note)}</p>${sourceLinks(p.nativeName.sources)}<h2>称号与任期</h2><p class="person-notice">任期不同阶段分列；约年窗口不代表已证实在窗口中持续在位。完整生涯可超出本卷1453年的终点。</p><ul class="reign-list">${rs.map(r => `<li><strong>${esc(r.tenure)}</strong>${badge(r.kind)}${regnalDates(r)}${sourceLinks(r.dateSources)}<p>${esc(r.territory)} · ${esc(r.certainty)}<br>${esc(r.note)}</p><div class="reign-years">${yearLink(Math.max(476,r.start))}${r.end !== r.start ? yearLink(Math.min(1453,r.end)) : ''}</div></li>`).join('')}</ul>
       <h2>史料与研究</h2><p class="event-reference">定位：${esc(p.reference)}</p>${sourceLinks(p.sources)}<p class="person-notice">古代叙事的偏见、钱币证据及现代日期选择，见“史料与方法”。未确知的生年、死因及施政不以传闻补齐。</p>
       <details><summary class="bio-link">浏览本卷中的全部相关年度 · ${links.length}年</summary><div class="reign-years">${links.map(yearLink).join('')}</div></details></article>`;
     document.title = `${p.zh} · 人物档案 · FASTI`;
@@ -260,7 +262,7 @@
 
   function fillMethod() {
     const m = data.method;
-    const paragraphs = [['范围',m.scope],['收录标准',m.inclusion],['王朝、家族与时代',m.dynasties],['如何读年份与任期',m.chronology],['逐年记事的证据密度',m.annualEvents],['希腊文姓名',m.names],['生于紫室的依据',m.purple],['证据与史料立场',m.evidence],['阅读古代作者',m.bias]];
+    const paragraphs = [['范围',m.scope],['收录标准',m.inclusion],['王朝、家族与时代',m.dynasties],['如何读年份与任期',m.chronology],['逐年记事的证据密度',m.annualEvents],['原名语言',m.names],['生于紫室的依据',m.purple],['证据与史料立场',m.evidence],['阅读古代作者',m.bias]];
     $('#method-content').innerHTML = `<div class="stats-line"><div><strong>${data.stats.years}</strong><span>年度</span></div><div><strong>${data.stats.people}</strong><span>人物（含辅栏）</span></div><div><strong>${Object.keys(data.sources).length}</strong><span>来源入口</span></div></div>${paragraphs.map(([title,body]) => `<h3>${title}</h3><p>${esc(body)}</p>`).join('')}<h3>重要日期与争议处理</h3><ul>${m.decisions.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>未自动列入的名字</h3><ul>${m.excluded.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>地图与许可</h3><p>${esc(m.maps)}</p><p>${esc(m.license)}</p><p>资料核对日期：${m.updated}。本数据库可持续校订，欢迎携卷章、铭文或钱币证据提交修正。</p><details><summary>展开完整来源目录 · ${Object.keys(data.sources).length}项</summary><ol class="method-source-list">${Object.values(data.sources).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a><br>${esc(s.kind)} · ${esc(s.note)}</li>`).join('')}</ol></details>`;
   }
 

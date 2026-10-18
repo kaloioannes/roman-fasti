@@ -1,7 +1,6 @@
 """Offline, deterministic compilation of the Byzantine volume (historical CE years).
 
-Empty event arrays are deliberate editorial gaps. Reigns use inclusive annual
-membership, not a claim that an uncertain title was held on every day of a year.
+Reigns use inclusive annual membership, with separately sourced precise dates.
 """
 import json
 from pathlib import Path
@@ -20,6 +19,7 @@ def compile_data():
     years = {str(y): {'year': y, 'rulers': [], 'events': []} for y in range(476, 1454)}
     for p in read('people.json'):
         assert p['id'] not in people, f"Duplicate person: {p['id']}"
+        assert p['nativeName']['text'] and p['nativeName']['lang'] in {'la', 'el'}, p['id']
         assert p['greek'] and p['dynasty'] in dynasties and len(p['bio']) >= 2, p['id']
         assert p['sources'] and all(s in sources for s in p['sources']), p['id']
         if p['purple']:
@@ -29,6 +29,7 @@ def compile_data():
         for i, r in enumerate(p['reigns']):
             assert isinstance(r['start'], int) and r['start'] <= r['end'], p['id']
             assert r['kind'] in {'central', 'junior', 'rival', 'regional', 'disputed'}, p['id']
+            assert r['startDate']['label'] and r['endDate']['label'] and r['dateSources'], p['id']
             for y in range(max(476, r['start']), min(1453, r['end']) + 1):
                 years[str(y)]['rulers'].append({'person': p['id'], 'reign': i})
     ids = set()
@@ -39,10 +40,11 @@ def compile_data():
     for y, record in years.items():
         assert any(people[o['person']]['reigns'][o['reign']]['kind'] == 'central'
                    for o in record['rulers']), f'No main-line emperor in {y}'
-        record['eventStatus'] = 'documented' if record['events'] else 'no-authored-dated-entry'
+        assert record['events'], f'No authored annual event in {y}'
+        record['eventStatus'] = 'documented'
     return {
         'meta': {'title': '拜占庭皇帝数据库', 'start': 476, 'end': 1453,
-                 'yearZero': False, 'nameLanguage': 'el', 'schemaVersion': 1,
+                 'yearZero': False, 'nameLanguage': 'per-person', 'schemaVersion': 2,
                  'researchDate': '2026-10-18', 'license': 'CC BY-SA 4.0'},
         'stats': {'years': len(years), 'people': len(people), 'events': len(ids),
                   'yearsWithEvents': sum(bool(y['events']) for y in years.values()),

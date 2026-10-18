@@ -16,3 +16,5 @@
 .legend-byzantine{color:var(--accent)}.legend-nicaea{color:#467773}.legend-latin{color:#8c6025}.legend-trebizond{color:#506f98}
 [data-theme=dark] .legend-nicaea{color:#94c7bf}[data-theme=dark] .legend-latin{color:#e6b56d}[data-theme=dark] .legend-trebizond{color:#9cbee9}
 @media(max-width:380px){.imperial .hero-word{font-size:37px;letter-spacing:.05em}.empire-stats{gap:18px}.imperial .year-heading h1{font-size:68px}.imperial .year-heading h1 small{font-size:15px;margin-left:6px}.year-nav{flex-wrap:wrap}.person-heading h1{overflow-wrap:anywhere}}
+
+.name-language{display:block;font-size:10px;color:var(--muted);margin-top:8px}.regnal-dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0;font-size:12px;line-height:1.8}.regnal-dates dt{color:var(--muted);font-size:10px}.regnal-dates dd{margin:0;overflow-wrap:anywhere}.person-card .ruler-greek{display:block}.person-heading>.ruler-greek{display:block}
