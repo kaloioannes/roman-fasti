@@ -12,7 +12,7 @@
 | 罗马共和国 | 前509—前27年 | 已开放；483个年度、1,201项任职、512条记事、302段简介、53个疆域阶段；10个剧本、59个章节 |
 | 古典罗马帝国 | 前27—公元395年 | 已开放；422个年度、134位人物、426条记事、162段称号任期、57个疆域阶段 |
 | 双帝国时期 | 公元395—476年 | 规划中 |
-| 拜占庭时期 | 公元476—1453年 | 已开放；978个年度、110位人物、309条独立记事、154段称号任期；13项已确认紫室称号 |
+| 拜占庭时期 | 公元476—1453年 | 已开放；978个年度、110位人物、978条独立记事、154段称号任期；13项已确认紫室称号 |
 
 时期清单维护在 [project.json](project.json)。规划中的时期仅展示路线图，尚无数据库或可点击的空页面。分卷采用包含端点的范围，交界年份可以出现在相邻两篇；这些边界是编辑安排。皇帝篇人物包含共治者、争位者、区域政权、帝号有争议者及选录的恺撒，134不能视为正式皇帝人数。
 
@@ -24,7 +24,7 @@
 
 古典帝国篇支持年度、完整人物传记、王朝／家族筛选和史料目录。可按中文、拉丁文、别名、王朝、时代和身份检索；同年先后在位与共治按任期区分。跨年背景可单独筛选，前1年直接接公元1年。
 
-拜占庭篇沿用古典帝国篇的年度、人物与家族索引，采用紫色明暗主题和希腊文原名，支持忽略重音检索、早期拉丁别名、生于紫室标签及依据、正面标签筛选、978行年度CSV与完整JSON下载。主线包括君士坦丁堡、尼西亚及恢复后的帝国，共帝、争位者、区域皇帝分栏；双帝国篇仍未建设。309条记事覆盖309年，其余669年明确为本项目尚未收录可定位事件，不把人物背景重复当作年度大事。地图分色展示尼西亚、拉丁帝国及特拉比松，近似图层保留说明。
+拜占庭篇沿用古典帝国篇的年度、人物与家族索引，采用紫色明暗主题，按人物展示拉丁文或希腊文原名，支持双语姓名及忽略重音检索、按可考精度显示任期月日、生于紫室标签及依据、正面标签筛选、978行年度CSV与完整JSON下载。主线包括君士坦丁堡、尼西亚及恢复后的帝国，共帝、争位者、区域皇帝分栏；双帝国篇仍未建设。978年每年均有独立记事和来源；约年、纪年异说、跨年行动及手稿题记分别说明，不把人物背景重复当作年度大事。地图分色展示尼西亚、拉丁帝国及特拉比松，近似图层保留说明。
 
 | 内容 | 链接示例 |
 |---|---|
@@ -92,7 +92,7 @@ python -m pip install -r scripts/requirements.txt
 python scripts/build_data.py          # 共和国文字与剧本
 python scripts/build_empire.py        # 古典帝国人物、任期、记事
 python scripts/build_kingdom.py       # 王政传统纪年、人物与未定年事迹
-python scripts/build_byzantine.py     # 拜占庭人物、任期、记事与资料空缺状态
+python scripts/build_byzantine.py     # 拜占庭人物、分级精度任期与完整年度记事
 python scripts/build_byzantine_map.py # 拜占庭与并立政权GIS（Shapely）
 python scripts/build_map.py           # 共和国地图
 python scripts/build_imperial_map.py  # 古典帝国地图
@@ -129,8 +129,8 @@ PR 工作流重建文字数据并校验一致性，运行数据、目录、发�
 
 古典帝国篇的收录取舍、年代异说、任期与疆域重建见 [帝国研究说明](data-source/empire/RESEARCH.md)，来源目录见 [sources.json](data-source/empire/sources.json)。
 
-拜占庭篇的继承线、共帝口径、希腊文原名、13项紫室依据、669个年度资料空缺及GIS近似见 [拜占庭研究说明](data-source/byzantine/RESEARCH.md)，完整来源见 [sources.json](data-source/byzantine/sources.json)。主要对读博物馆年表、DIR署名研究、普罗柯比、普塞洛斯、安娜、霍尼亚提斯及1453年目击材料；不宣称完成全部原始文献校勘。
+拜占庭篇的继承线、共帝口径、逐人姓名语言、分级日期精度、13项紫室依据、978个年度记事及GIS近似见 [拜占庭研究说明](data-source/byzantine/RESEARCH.md)，完整来源见 [sources.json](data-source/byzantine/sources.json)。主要对读博物馆年表、DIR署名研究、普罗柯比、普塞洛斯、安娜、霍尼亚提斯及1453年目击材料；不宣称完成全部原始文献校勘。
 
 代码使用 [MIT](LICENSE)；文字、剧本与名录数据使用 CC BY-SA 4.0；Cliopatria 地图使用 CC BY 4.0；Natural Earth 为公有领域。完整署名与变更说明见 [DATA_LICENSE.md](DATA_LICENSE.md) 和 [THIRD_PARTY.md](THIRD_PARTY.md)。
 
-**English:** FASTI is a Chinese, Latin and Greek collection of annual databases for Roman history. Published volumes cover the traditional Roman kings (753–509 BCE), Republican magistrates (509–27 BCE) and classical Roman emperors (27 BCE–395 CE). The Kingdom volume separates traditional dated nodes from undated reign narratives and explicitly identifies years without datable records. It includes biographies, sources and an approximate place diagram. The Byzantine volume (476–1453 CE) adds 978 annual records, 110 biographies, Greek display names, positively sourced purple-born tags, 309 dated entries and separately identified annual editorial gaps. It follows the Nicaean succession in exile and distinguishes junior, rival and selected regional emperors. The divided Empire remains planned. The repository slug remains `roman-republic-fasti` to preserve existing GitHub and Pages URLs.
+**English:** FASTI is a Chinese, Latin and Greek collection of annual databases for Roman history. Published volumes cover the traditional Roman kings (753–509 BCE), Republican magistrates (509–27 BCE) and classical Roman emperors (27 BCE–395 CE). The Kingdom volume separates traditional dated nodes from undated reign narratives and explicitly identifies years without datable records. It includes biographies, sources and an approximate place diagram. The Byzantine volume (476–1453 CE) adds 978 annual records, 110 biographies, per-person Latin or Greek display names, sourced regnal dates at their attested precision, positively sourced purple-born tags and 978 independent annual entries, with explicit approximate and disputed chronology. It follows the Nicaean succession in exile and distinguishes junior, rival and selected regional emperors. The divided Empire remains planned. The repository slug remains `roman-republic-fasti` to preserve existing GitHub and Pages URLs.

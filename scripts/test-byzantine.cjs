@@ -34,9 +34,9 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    }
    await page.locator('#home-form-year').fill('476');await page.locator('#home-form').evaluate(f=>f.requestSubmit());
    await page.waitForSelector('#previous-year');assert.equal(await page.isDisabled('#previous-year'),true);
-   await page.click('#next-year');await page.waitForURL(/year=477$/);await page.waitForSelector('.empty-year');
-   assert.equal(await page.locator('.event-row').count(),0);
-   assert.ok(await page.locator('.empty-year .year-chip').count()>0);
+   await page.click('#next-year');await page.waitForURL(/year=477$/);await page.waitForSelector('.event-row');
+   assert.equal(await page.locator('.empty-year').count(),0);
+   assert.match(await page.locator('.event-row').textContent(),/阿尔马图斯/);
    await page.goto(url+'#year=1453');await page.waitForSelector('#next-year');assert.equal(await page.isDisabled('#next-year'),true);
    await page.locator('#year-slider').fill('0');await page.locator('#year-slider').dispatchEvent('change');await page.waitForURL(/year=476$/);
    const sample=new Set([476,477,527,641,674,705,743,797,920,945,960,1042,1119,1180,1204,1205,1208,1221,1242,1243,1259,1261,1347,1354,1378,1390,1399,1402,1403,1406,1407,1448,1449,1453]);
@@ -47,12 +47,17 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
     const expected=data.years[y].rulers.map(o=>`${o.person}:${data.people[o.person].reigns[o.reign].kind}`).sort();
     assert.deepEqual(actual,expected,`Wrong rendered membership ${y}`);
     assert.equal(await page.locator('.event-row').count(),data.years[y].events.length,`Wrong events ${y}`);
-    assert.equal(await page.locator('.ruler-greek[lang="el"]').count(),expected.length);
+    assert.equal(await page.locator('.ruler-greek[lang]').count(),expected.length);
+    assert.equal(await page.locator('.regnal-dates').count(),expected.length);
+    for(const o of data.years[y].rulers){const p=data.people[o.person];assert.ok(await page.locator(`[data-person="${p.id}"] .ruler-greek[lang="${p.nativeName.lang}"]`).count());}
     assert.equal(await page.locator('.ruler-card .purple-tag').count(),data.years[y].rulers.filter(o=>data.people[o.person].purple).length);
    }
    // Every person can be linked directly and renders the authored paragraphs.
    for(const p of Object.values(data.people)){
-    await page.goto(url+'#person='+p.id);await page.waitForFunction(id=>document.querySelector('.person-page .ruler-greek')?.textContent===id,p.greek);
+    await page.goto(url+'#person='+p.id);await page.waitForFunction(id=>document.querySelector('.person-page .ruler-greek')?.textContent===id,p.nativeName.text);
+    assert.equal(await page.locator('.person-heading .ruler-greek').getAttribute('lang'),p.nativeName.lang);
+    assert.equal(await page.locator('.regnal-dates').count(),p.reigns.length);
+    for(const r of p.reigns){assert.ok((await page.locator('.reign-list').textContent()).includes(r.startDate.label));assert.ok((await page.locator('.reign-list').textContent()).includes(r.endDate.label));}
     assert.equal(await page.locator('.person-body>p').count(),p.bio.length,p.id);
     assert.equal(await page.locator('.person-heading .purple-tag').count(),p.purple?1:0);
     assert.equal(await page.locator('.purple-evidence').count(),p.purple?1:0);
@@ -112,6 +117,6 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    }
   }
   assert.deepEqual(errors,[]);await context.close();
-  console.log(`Byzantine browser checks passed: both deployment bases, all ${data.stats.people} biographies, title boundaries, Greek/Latin search, all families, purple evidence/filter, annual gaps, downloads, maps, retries, four widths and both themes.`);
+  console.log(`Byzantine browser checks passed: both deployment bases, all ${data.stats.people} biographies, title boundaries, Greek/Latin search, all families, purple evidence/filter, complete annual entries, precise regnal dates, downloads, maps, retries, four widths and both themes.`);
  }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve))}
 })().catch(e=>{console.error(e);process.exitCode=1});
