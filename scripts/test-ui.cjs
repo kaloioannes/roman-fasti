@@ -15,7 +15,7 @@ async function context(browser,options={}){
  await c.route(`${origin}/**`,async route=>{
   const url=new URL(route.request().url());
   const name=decodeURIComponent(url.pathname);
-  const file=path.resolve(root,name.startsWith('/data/')?'.'+name:'site'+(name.endsWith('/')?name+'index.html':name));
+  const file=path.resolve(root,(name.startsWith('/data/')||name==='/project.json')?'.'+name:'site'+(name.endsWith('/')?name+'index.html':name));
   assert.ok(file.startsWith(root+path.sep));
   try{await route.fulfill({body:await fs.readFile(file),contentType:mime[path.extname(file)]||'application/octet-stream'})}
   catch{await route.fulfill({status:404,body:'File not found'})}
@@ -137,9 +137,11 @@ async function noOverflow(page,label){
   assert.ok((await page.locator('.map-territory').getAttribute('d')).length>80);
   if(y>=338)assert.ok(await page.locator('#map-caption a').count());
  }
- await page.locator('#map-zoom-in').click();await page.waitForTimeout(250);
+ await page.locator('#map-zoom-in').click();
+ await page.waitForFunction(()=>document.querySelector('#map-content')?.getAttribute('transform')?.endsWith('scale(1.5)'));
  assert.notEqual(await page.locator('#map-content').getAttribute('transform'),'translate(0,0) scale(1)');
- await page.locator('#map-reset').click();await page.waitForTimeout(250);
+ await page.locator('#map-reset').click();
+ await page.waitForFunction(()=>document.querySelector('#map-content')?.getAttribute('transform')==='translate(0,0) scale(1)');
  assert.equal(await page.locator('#map-content').getAttribute('transform'),'translate(0,0) scale(1)');
  await page.locator('#sources-button').click();assert.equal(await page.locator('#sources-dialog').isVisible(),true);
  await page.keyboard.press('Escape');assert.equal(await page.locator('#sources-dialog').isVisible(),false);
