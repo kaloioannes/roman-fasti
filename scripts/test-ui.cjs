@@ -110,6 +110,37 @@ async function noOverflow(page,label){
  await page.goto(`${republic}#year=509`);await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='509');
  assert.equal(await page.locator('#previous-year').isDisabled(),true);
  await year(page,27);assert.equal(await page.locator('#next-year').isDisabled(),true);
+ // The republican slider advances in historical order, previews without navigation,
+ // commits through the existing story-aware router, and synchronises on reload.
+ await year(page,509);assert.equal(await page.locator('#year-slider').inputValue(),'0');
+ await page.locator('#year-slider').evaluate(el=>{el.value='5';el.dispatchEvent(new Event('input',{bubbles:true}))});
+ assert.equal(await page.locator('#slider-label').textContent(),'前504年');
+ assert.equal(new URL(page.url()).hash,'#year=509');
+ await page.locator('#year-slider').dispatchEvent('change');
+ await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='504');
+ await page.reload();await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='504');
+ assert.equal(await page.locator('#year-slider').inputValue(),'5');
+ await page.locator('#year-slider').focus();await page.keyboard.press('ArrowRight');
+ await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='503');
+ await page.keyboard.press('End');await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='27');
+ assert.equal(await page.locator('#year-slider').inputValue(),'482');
+ await year(page,80,'sertorian-rome');
+ await page.locator('#year-slider').evaluate(el=>{el.value='430';el.dispatchEvent(new Event('input'));el.dispatchEvent(new Event('change'))});
+ await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='79');
+ assert.equal(new URL(page.url()).hash,'#story=sertorian-rome&year=79');
+ await page.locator('#year-slider').evaluate(el=>{el.value='465';el.dispatchEvent(new Event('change'))});
+ await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='44');
+ assert.equal(new URL(page.url()).hash,'#year=44');
+ for(const y of [509,504,480,427,426,397,396,382,381,339,338,337]){
+  await year(page,y);
+  assert.equal(await page.locator('.map-territory.approximate').count(),y>=338?1:0);
+  assert.ok((await page.locator('.map-territory').getAttribute('d')).length>80);
+  if(y>=338)assert.ok(await page.locator('#map-caption a').count());
+ }
+ await page.locator('#map-zoom-in').click();await page.waitForTimeout(250);
+ assert.notEqual(await page.locator('#map-content').getAttribute('transform'),'translate(0,0) scale(1)');
+ await page.locator('#map-reset').click();await page.waitForTimeout(250);
+ assert.equal(await page.locator('#map-content').getAttribute('transform'),'translate(0,0) scale(1)');
  await page.locator('#sources-button').click();assert.equal(await page.locator('#sources-dialog').isVisible(),true);
  await page.keyboard.press('Escape');assert.equal(await page.locator('#sources-dialog').isVisible(),false);
  for(const width of [320,390,768,1440]){

@@ -75,6 +75,11 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
     await page.selectOption('#dynasty-filter',id);
     assert.equal(await page.locator('.person-card').count(),Object.values(data.people).filter(p=>p.dynasty===id).length,id);
    }
+   for(const alias of ['vatatzes','瓦塔齐斯家族']){
+    await page.goto(url+'#people&dynasty='+encodeURIComponent(alias));await page.waitForSelector('#dynasty-filter');
+    assert.equal(await page.locator('#dynasty-filter').inputValue(),'laskaris');
+    assert.equal(await page.locator('.person-card').count(),4);
+   }
    await page.goto(url+'#year=1208');await page.waitForSelector('#empire-map-svg');
    assert.ok(await page.locator('.polity-nicaea').count()>0);assert.ok(await page.locator('.polity-latin').count()>0);assert.ok(await page.locator('.polity-trebizond').count()>0);
    await page.click('#map-zoom-in');assert.match(await page.locator('#imperial-map-content').getAttribute('transform'),/scale\(1\.4\)/);

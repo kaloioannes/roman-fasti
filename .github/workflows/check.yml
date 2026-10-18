@@ -17,13 +17,14 @@ jobs:
       - name: Rebuild text and stories
         run: |
           pip install opencc-python-reimplemented==0.1.7 shapely==2.1.2
+          python scripts/build_map.py
           python scripts/build_data.py
           python scripts/build_empire.py
           python scripts/build_kingdom.py
           python scripts/build_byzantine.py
           python scripts/build_divided_empire.py
           python scripts/build_divided_empire_map.py
-          git diff --exit-code -- data/republic/records.json data/republic/stories.json data/empire/records.json data/kingdom/records.json data/byzantine/records.json data/divided-empire/records.json data/divided-empire/places.json data/divided-empire/territories.json
+          git diff --exit-code -- data/republic/records.json data/republic/stories.json data/republic/territories.json data/empire/records.json data/kingdom/records.json data/byzantine/records.json data/divided-empire/records.json data/divided-empire/places.json data/divided-empire/territories.json
       - name: Validate years, maps, stories and copy
         run: npm run validate
       - name: Validate release assets

@@ -3942,5 +3942,41 @@
     "url": "https://www.biblicalcyclopedia.com/N/nymphoeum-council-of.html",
     "kind": "公有领域教会史百科",
     "note": "1234年4月会议，格列高利九世使节与尼西亚牧首；圣灵发出和圣餐饼争论。"
+  },
+  "angold-komnenoi": {
+    "label": "Michael Angold：科穆宁帝国（1118—1204）",
+    "url": "https://www.cambridge.org/core/books/abs/cambridge-history-of-the-byzantine-empire-c5001492/empire-of-the-komnenoi-11181204/69F8F83504B4C0578452EE1F1291437D",
+    "kind": "现代学术研究 · Cambridge History of the Byzantine Empire, ch.17",
+    "note": "科穆宁与安格洛斯的政治继承及家族联系；与具体人物任期对读。"
+  },
+  "neville-komnenos": {
+    "label": "Leonora Neville：十二世纪政治与科穆宁家族",
+    "url": "https://www.cambridge.org/core/books/heroes-and-romans-in-twelfthcentury-byzantium/twelfthcentury-politics-and-the-house-of-komnenos/6D624C37DC01C6646DBE6BD287D31684",
+    "kind": "现代学术研究 · 2012",
+    "note": "说明1081年以后的科穆宁统治与联姻网络；house与dynasty描述层次不同。"
+  },
+  "fordham-rulers": {
+    "label": "Fordham Internet History Sourcebooks：罗马帝国统治者",
+    "url": "https://sourcebooks.web.fordham.edu/byzantium/texts/byzemps.asp",
+    "kind": "大学托管教学年表",
+    "note": "用于王朝分期的对照，尤其查士丁尼与拉斯卡里斯继承线；简表有错漏，精确任期仍以人物来源为准。"
+  },
+  "pbe-michael-i": {
+    "label": "PBE：Michael 7（米海尔一世）",
+    "url": "https://pbe.kcl.ac.uk/data/D54/F73.htm",
+    "kind": "学术人物志 · Prosopography of the Byzantine Empire",
+    "note": "尼基弗鲁斯一世的女婿、斯陶拉基奥斯的姻兄弟；尼基弗鲁斯统治家族的姻亲继承。"
+  },
+  "bury-anastasius": {
+    "label": "J. B. Bury：阿纳斯塔修斯即位",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/13A*.html",
+    "kind": "近代研究 · 1923",
+    "note": "XIII §1，491年选择与阿里阿德涅婚姻；用于利奥皇室政治继承联系。"
+  },
+  "angelov-hellene": {
+    "label": "Dimiter Angelov：The Byzantine Hellene (2019)",
+    "url": "https://assets.cambridge.org/97811084/80710/frontmatter/9781108480710_frontmatter.pdf",
+    "kind": "现代学术专著 · 公开卷首、人物表与统治者表",
+    "note": "拉斯卡里斯及伊庇鲁斯科穆宁·杜卡斯统治家系的核对入口；使用公开卷首，不宣称取得全文。"
   }
 }

@@ -19,7 +19,7 @@
   const native = p => `<span class="native-name" lang="${p.nativeName.lang}">${esc(p.nativeName.text)}</span>`;
   const dates = r => `${esc(r.startDate.label)} — ${esc(r.endDate.label)}`;
   const badge = r => `<span class="role-badge" data-kind="${r.kind}">${kinds[r.kind]}</span>`;
-  const family = p => `${data.dynasties[p.dynasty].kind==='dynasty'?'王朝':'归属'}：${esc(data.dynasties[p.dynasty].label)}`;
+  const family = p => `${({dynasty:'王朝',family:'家族',none:'归属'}[data.dynasties[p.dynasty].kind])}：${esc(data.dynasties[p.dynasty].label)}`;
   const yearLink = y => `<a class="year-chip" href="#year=${y}">${y}年 ↗</a>`;
   const form = (y='') => `<form id="year-form" class="year-form" novalidate><label for="year-input">公元 <span lang="la">AD</span></label><input id="year-input" name="year" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="395—476" value="${y}" aria-describedby="year-error"><button type="submit" aria-label="查看这一年">翻开这一年 ↗</button></form><p id="year-error" class="form-error" role="alert"></p>`;
   function bindForm() {
@@ -75,7 +75,7 @@
   }
   function renderPerson(id){
     const p=data.people[id];if(!p){invalid('找不到此人物。');return;}document.title=`${p.zh} · 双帝国人物档案 · FASTI`;
-    main.innerHTML=`<article class="person-page"><a class="back-link" href="#people">← 人物索引</a><header class="person-heading"><p class="eyebrow">IMPERIVM · 人物档案</p><h1>${esc(p.zh)}</h1>${native(p)}${p.greek?`<p class="greek-name" lang="el">${esc(p.greek)}</p>`:''}<a class="family-tag" href="#people&dynasty=${p.dynasty}">${family(p)}</a></header><div class="person-body">${p.bio.map(t=>`<p>${esc(t)}</p>`).join('')}</div><h2>称号与任期</h2><div class="reign-list">${p.reigns.map(r=>`<section class="reign-entry" data-side="${r.side}"><div>${badge(r)}<span class="recognition">${sides[r.side]} · ${esc(r.recognition)}</span></div><h3>${dates(r)}</h3><p>${esc(r.territory)}</p><p>${esc(r.note)}</p>${sourceLinks(r.dateSources)}<div class="reign-years">${years.filter(y=>r.start<=y&&y<=r.end).map(yearLink).join('')}</div></section>`).join('')}</div><section class="person-sources"><h2>出处与阅读</h2><p class="reference">${esc(p.reference)}</p>${sourceLinks(p.sources)}</section></article>`;
+    main.innerHTML=`<article class="person-page"><a class="back-link" href="#people">← 人物索引</a><header class="person-heading"><p class="eyebrow">IMPERIVM · 人物档案</p><h1>${esc(p.zh)}</h1>${native(p)}${p.greek?`<p class="greek-name" lang="el">${esc(p.greek)}</p>`:''}<a class="family-tag" href="#people&dynasty=${p.dynasty}">${family(p)}</a><p class="ruler-note">${esc(data.dynasties[p.dynasty].note)} ${esc(p.dynastyNote || '')}</p>${sourceLinks(data.dynasties[p.dynasty].sources)}</header><div class="person-body">${p.bio.map(t=>`<p>${esc(t)}</p>`).join('')}</div><h2>称号与任期</h2><div class="reign-list">${p.reigns.map(r=>`<section class="reign-entry" data-side="${r.side}"><div>${badge(r)}<span class="recognition">${sides[r.side]} · ${esc(r.recognition)}</span></div><h3>${dates(r)}</h3><p>${esc(r.territory)}</p><p>${esc(r.note)}</p>${sourceLinks(r.dateSources)}<div class="reign-years">${years.filter(y=>r.start<=y&&y<=r.end).map(yearLink).join('')}</div></section>`).join('')}</div><section class="person-sources"><h2>出处与阅读</h2><p class="reference">${esc(p.reference)}</p>${sourceLinks(p.sources)}</section></article>`;
   }
   function renderSources(){
     document.title='史料与方法 · 双帝国纪年 · FASTI';const m=data.method;

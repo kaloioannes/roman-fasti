@@ -34,6 +34,19 @@ for(const f of a.features){
  const points=f.geometry.coordinates.flat(f.geometry.type==='Polygon'?1:2);
  for(const [x,y] of points){assert.ok(Number.isFinite(x)&&Number.isFinite(y)&&Math.abs(x)<=180&&Math.abs(y)<=90);}
 }
+// All early stages must contain Rome, and retain the known conquest boundaries.
+const territory=y=>a.features.find(f=>-y>=f.properties.from&&-y<=f.properties.to);
+for(let y=509;y>=338;y--){
+ const f=territory(y);assert.equal(f.properties.precision,'schematic');
+ assert.ok(f.properties.sources.length&&f.properties.caption.includes('近似示意'));
+ assert.ok(d3.geoContains(f,[12.4964,41.9028]),`Rome outside its territory: ${y}`);
+}
+assert.ok(!d3.geoContains(territory(397),[12.40,42.02]),'Veii before conquest');
+assert.ok(d3.geoContains(territory(396),[12.40,42.02]),'Veii after conquest');
+assert.ok(!d3.geoContains(territory(382),[12.71,41.80]),'Tusculum before citizenship');
+assert.ok(d3.geoContains(territory(381),[12.71,41.80]),'Tusculum after citizenship');
+for(const p of [[12.80,41.96],[12.90,41.84]])assert.ok(!d3.geoContains(territory(338),p),'Tibur and Praeneste remain allies');
+assert.equal(territory(337).properties.precision,undefined,'Retain later upstream stages');
 assert.equal(d.years[509].officers.length,5);
 assert.equal(d.years[451].officers.filter(o=>o.role==='decemvir').length,10);
 assert.equal(d.years[450].officers.filter(o=>o.role==='consul').length,0);

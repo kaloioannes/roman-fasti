@@ -66,3 +66,6 @@ assert.notDeepEqual(maps.features.filter(f=>f.properties.from<=395&&f.properties
 for(const s of Object.values(d.sources)){assert.ok(s.label&&s.kind&&s.note);assert.match(s.url,/^https:\/\//);}
 const byz=fs.readFileSync(path.join(root,'site/byzantine/app.js'),'utf8');assert.ok(byz.includes('ῬΩΜΗ'));assert.ok(!byz.includes('name-language'));
 console.log(`Divided Empire verified: ${d.stats.years} years, ${people.length} people, ${events.length} distinct events, ${d.stats.reigns} title stages; both courts, sources, date precision and historical boundary fixtures.`);
+
+for(const dynasty of Object.values(d.dynasties)){assert.ok(dynasty.note);refs(dynasty.sources)}
+assert.equal(d.dynasties.leonid.kind,'dynasty');assert.equal(d.people.anthemius.dynasty,'independent');

@@ -1,0 +1,628 @@
+{
+  "type": "FeatureCollection",
+  "license": "MIT (editorial schematic geometry)",
+  "method": "Independent editorial regional sketches anchored to Rome, the Tiber mouth, Fidenae, Veii, Tusculum and the Latin settlement. Not digitised scholarly boundary surveys; individual town territories and detached holdings are unresolved. Replaces two upstream grid remnants that exclude Rome. Annual use is a stage reference, not an assertion of unchanged control.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "from": -509,
+        "to": -427,
+        "label": "前509—427年",
+        "view": [
+          11.9,
+          41.3,
+          13.15,
+          42.4
+        ],
+        "precision": "schematic",
+        "caption": "罗马—台伯河口及阿尔班地区的核心领地。虚线色面为本项目依史事节点绘制的近似示意；节点按传统编年，边线与阶段内逐年变化未定，盟邦另见年度记事。底图为现代海岸。",
+        "sources": [
+          {
+            "label": "T. J. Cornell, Rome and Latium to 390 B.C., CAH VII.2, ch.6",
+            "url": "https://doi.org/10.1017/CHOL9780521234467.007"
+          }
+        ],
+        "license": "MIT",
+        "provenance": "Independent FASTI editorial schematic; historical references support event anchors, not boundary vertices."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.21,
+              41.73
+            ],
+            [
+              12.29,
+              41.69
+            ],
+            [
+              12.37,
+              41.73
+            ],
+            [
+              12.49,
+              41.7
+            ],
+            [
+              12.6,
+              41.69
+            ],
+            [
+              12.7,
+              41.73
+            ],
+            [
+              12.67,
+              41.8
+            ],
+            [
+              12.67,
+              41.89
+            ],
+            [
+              12.59,
+              41.95
+            ],
+            [
+              12.48,
+              41.95
+            ],
+            [
+              12.4,
+              41.91
+            ],
+            [
+              12.29,
+              41.84
+            ],
+            [
+              12.21,
+              41.73
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": -426,
+        "to": -397,
+        "label": "前426—397年",
+        "view": [
+          11.9,
+          41.3,
+          13.15,
+          42.4
+        ],
+        "precision": "schematic",
+        "caption": "传统前426年攻取菲德奈后的核心领地。虚线色面为本项目依史事节点绘制的近似示意；节点按传统编年，边线与阶段内逐年变化未定，盟邦另见年度记事。底图为现代海岸。",
+        "sources": [
+          {
+            "label": "T. J. Cornell, Rome and Latium to 390 B.C., CAH VII.2, ch.6",
+            "url": "https://doi.org/10.1017/CHOL9780521234467.007"
+          },
+          {
+            "label": "李维《罗马史》4.34",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0026:book=4:chapter=34"
+          }
+        ],
+        "license": "MIT",
+        "provenance": "Independent FASTI editorial schematic; historical references support event anchors, not boundary vertices."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.29,
+              41.84
+            ],
+            [
+              12.21,
+              41.73
+            ],
+            [
+              12.29,
+              41.69
+            ],
+            [
+              12.37,
+              41.73
+            ],
+            [
+              12.49,
+              41.7
+            ],
+            [
+              12.6,
+              41.69
+            ],
+            [
+              12.7,
+              41.73
+            ],
+            [
+              12.67,
+              41.8
+            ],
+            [
+              12.67,
+              41.89
+            ],
+            [
+              12.65,
+              41.99
+            ],
+            [
+              12.56,
+              42.04
+            ],
+            [
+              12.48,
+              42.01
+            ],
+            [
+              12.4,
+              41.91
+            ],
+            [
+              12.29,
+              41.84
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": -396,
+        "to": -382,
+        "label": "前396—382年",
+        "view": [
+          11.9,
+          41.3,
+          13.15,
+          42.4
+        ],
+        "precision": "schematic",
+        "caption": "传统前396年攻取维伊后的核心领地。虚线色面为本项目依史事节点绘制的近似示意；节点按传统编年，边线与阶段内逐年变化未定，盟邦另见年度记事。底图为现代海岸。",
+        "sources": [
+          {
+            "label": "T. J. Cornell, Rome and Latium to 390 B.C., CAH VII.2, ch.6",
+            "url": "https://doi.org/10.1017/CHOL9780521234467.007"
+          },
+          {
+            "label": "李维《罗马史》5.21",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0026:book=5:chapter=21"
+          }
+        ],
+        "license": "MIT",
+        "provenance": "Independent FASTI editorial schematic; historical references support event anchors, not boundary vertices."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.29,
+              41.84
+            ],
+            [
+              12.21,
+              41.73
+            ],
+            [
+              12.29,
+              41.69
+            ],
+            [
+              12.37,
+              41.73
+            ],
+            [
+              12.49,
+              41.7
+            ],
+            [
+              12.6,
+              41.69
+            ],
+            [
+              12.7,
+              41.73
+            ],
+            [
+              12.67,
+              41.8
+            ],
+            [
+              12.67,
+              41.89
+            ],
+            [
+              12.65,
+              41.99
+            ],
+            [
+              12.56989010989011,
+              42.034505494505495
+            ],
+            [
+              12.58,
+              42.08
+            ],
+            [
+              12.48,
+              42.18
+            ],
+            [
+              12.31,
+              42.2
+            ],
+            [
+              12.18,
+              42.13
+            ],
+            [
+              12.16,
+              41.99
+            ],
+            [
+              12.27,
+              41.84
+            ],
+            [
+              12.2963768115942,
+              41.84405797101449
+            ],
+            [
+              12.29,
+              41.84
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": -381,
+        "to": -339,
+        "label": "前381—339年",
+        "view": [
+          11.9,
+          41.3,
+          13.15,
+          42.4
+        ],
+        "precision": "schematic",
+        "caption": "传统前381年图斯库卢姆获公民权后的核心领地。虚线色面为本项目依史事节点绘制的近似示意；节点按传统编年，边线与阶段内逐年变化未定，盟邦另见年度记事。底图为现代海岸。",
+        "sources": [
+          {
+            "label": "T. J. Cornell, The recovery of Rome, CAH VII.2, ch.7",
+            "url": "https://www.cambridge.org/core/books/abs/cambridge-ancient-history/recovery-of-rome/CD690959E80C08B3F1DF162DCDD10CFB"
+          },
+          {
+            "label": "李维《罗马史》6.26",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0026:book=6:chapter=26"
+          }
+        ],
+        "license": "MIT",
+        "provenance": "Independent FASTI editorial schematic; historical references support event anchors, not boundary vertices."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.77,
+              41.77
+            ],
+            [
+              12.75,
+              41.84
+            ],
+            [
+              12.67,
+              41.86
+            ],
+            [
+              12.67,
+              41.89
+            ],
+            [
+              12.65,
+              41.99
+            ],
+            [
+              12.56989010989011,
+              42.034505494505495
+            ],
+            [
+              12.58,
+              42.08
+            ],
+            [
+              12.48,
+              42.18
+            ],
+            [
+              12.31,
+              42.2
+            ],
+            [
+              12.18,
+              42.13
+            ],
+            [
+              12.16,
+              41.99
+            ],
+            [
+              12.27,
+              41.84
+            ],
+            [
+              12.2963768115942,
+              41.84405797101449
+            ],
+            [
+              12.29,
+              41.84
+            ],
+            [
+              12.21,
+              41.73
+            ],
+            [
+              12.29,
+              41.69
+            ],
+            [
+              12.37,
+              41.73
+            ],
+            [
+              12.49,
+              41.7
+            ],
+            [
+              12.6,
+              41.69
+            ],
+            [
+              12.650000000000013,
+              41.71
+            ],
+            [
+              12.73,
+              41.72
+            ],
+            [
+              12.77,
+              41.77
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": -338,
+        "to": -338,
+        "label": "前338年",
+        "view": [
+          11.9,
+          41.3,
+          13.15,
+          42.4
+        ],
+        "precision": "schematic",
+        "caption": "前338年拉丁战争后公民共同体及殖民地的区域示意。虚线色面为本项目依史事节点绘制的近似示意；节点按传统编年，边线与阶段内逐年变化未定，盟邦另见年度记事。底图为现代海岸。",
+        "sources": [
+          {
+            "label": "T. J. Cornell, The recovery of Rome, CAH VII.2, ch.7",
+            "url": "https://www.cambridge.org/core/books/abs/cambridge-ancient-history/recovery-of-rome/CD690959E80C08B3F1DF162DCDD10CFB"
+          },
+          {
+            "label": "李维《罗马史》8.14",
+            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0026:book=8:chapter=14"
+          }
+        ],
+        "license": "MIT",
+        "provenance": "Independent FASTI editorial schematic; historical references support event anchors, not boundary vertices."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.733999999999993,
+                41.844
+              ],
+              [
+                12.71,
+                41.86
+              ],
+              [
+                12.686842105263159,
+                41.85578947368421
+              ],
+              [
+                12.67,
+                41.86
+              ],
+              [
+                12.67,
+                41.89
+              ],
+              [
+                12.65,
+                41.99
+              ],
+              [
+                12.56989010989011,
+                42.034505494505495
+              ],
+              [
+                12.58,
+                42.08
+              ],
+              [
+                12.48,
+                42.18
+              ],
+              [
+                12.31,
+                42.2
+              ],
+              [
+                12.18,
+                42.13
+              ],
+              [
+                12.16,
+                41.99
+              ],
+              [
+                12.27,
+                41.84
+              ],
+              [
+                12.2963768115942,
+                41.84405797101449
+              ],
+              [
+                12.29,
+                41.84
+              ],
+              [
+                12.21,
+                41.73
+              ],
+              [
+                12.29,
+                41.69
+              ],
+              [
+                12.37,
+                41.73
+              ],
+              [
+                12.471052631578948,
+                41.70473684210526
+              ],
+              [
+                12.45,
+                41.65
+              ],
+              [
+                12.51,
+                41.57
+              ],
+              [
+                12.58,
+                41.44
+              ],
+              [
+                12.68,
+                41.43
+              ],
+              [
+                12.72,
+                41.54
+              ],
+              [
+                12.8,
+                41.62
+              ],
+              [
+                12.84,
+                41.72
+              ],
+              [
+                12.8,
+                41.8
+              ],
+              [
+                12.752352941176472,
+                41.83176470588235
+              ],
+              [
+                12.75,
+                41.84
+              ],
+              [
+                12.733999999999993,
+                41.844
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                12.87,
+                41.85
+              ],
+              [
+                12.86,
+                41.89
+              ],
+              [
+                12.82,
+                41.89
+              ],
+              [
+                12.79,
+                41.85
+              ],
+              [
+                12.83,
+                41.82
+              ],
+              [
+                12.87,
+                41.85
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                12.77,
+                42.01
+              ],
+              [
+                12.75,
+                42.07
+              ],
+              [
+                12.69,
+                42.07
+              ],
+              [
+                12.66,
+                42.01
+              ],
+              [
+                12.72,
+                41.99
+              ],
+              [
+                12.77,
+                42.01
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

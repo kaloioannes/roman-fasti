@@ -1,26 +1,72 @@
 {
   "theodosian": {
-    "label": "狄奥多西皇室",
-    "kind": "dynasty"
+    "label": "狄奥多西王朝",
+    "kind": "dynasty",
+    "note": "狄奥多西皇室及其婚姻、继承联系；马尔基安通过普尔喀丽娅进入此继承线。",
+    "sources": [
+      "bury-7"
+    ]
   },
   "leonid": {
-    "label": "利奥皇室及其姻亲",
-    "kind": "family"
+    "label": "利奥王朝",
+    "kind": "dynasty",
+    "note": "利奥一世、利奥二世、芝诺与维里娜之弟巴西利斯库斯及其子；尼波斯通过维里娜的侄女与皇室相连。安提米乌斯的岳父是马尔基安，不能因获利奥任命就归入利奥王朝。",
+    "sources": [
+      "bury-10",
+      "bury-12",
+      "dir-index",
+      "dir-leo",
+      "dir-zeno",
+      "marcellinus"
+    ]
   },
   "constantinian-claim": {
     "label": "君士坦丁三世父子",
-    "kind": "family"
+    "kind": "family",
+    "note": "此项记录人物的亲属或政治归属，具体关系与争议见个人传记。",
+    "sources": [
+      "bury-6",
+      "dir-westemp",
+      "hydatius"
+    ]
   },
   "jovinian": {
     "label": "约维努斯兄弟",
-    "kind": "family"
+    "kind": "family",
+    "note": "此项记录人物的亲属或政治归属，具体关系与争议见个人传记。",
+    "sources": [
+      "bury-6",
+      "dir-westemp",
+      "hydatius"
+    ]
   },
   "anician": {
     "label": "阿尼基乌斯家族联系",
-    "kind": "family"
+    "kind": "family",
+    "note": "此项记录人物的亲属或政治归属，具体关系与争议见个人传记。",
+    "sources": [
+      "bury-10",
+      "marcellinus"
+    ]
   },
   "independent": {
     "label": "独立帝位与军政推举",
-    "kind": "none"
+    "kind": "none",
+    "note": "此项记录人物的亲属或政治归属，具体关系与争议见个人传记。",
+    "sources": [
+      "bury-10",
+      "bury-12",
+      "bury-6",
+      "bury-7",
+      "dir-glycerius",
+      "dir-leo",
+      "dir-nepos",
+      "dir-romulus",
+      "dir-severus",
+      "dir-westemp",
+      "dir-zeno",
+      "hydatius",
+      "marcellinus"
+    ]
   }
 }
