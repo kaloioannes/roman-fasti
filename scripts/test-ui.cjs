@@ -15,7 +15,7 @@ async function context(browser,options={}){
  await c.route(`${origin}/**`,async route=>{
   const url=new URL(route.request().url());
   const name=decodeURIComponent(url.pathname);
-  const file=path.resolve(root,(name.startsWith('/data/')||name==='/project.json')?'.'+name:'site'+(name.endsWith('/')?name+'index.html':name));
+  const file=path.resolve(root,name.startsWith('/data/')?'.'+name:'site'+(name.endsWith('/')?name+'index.html':name));
   assert.ok(file.startsWith(root+path.sep));
   try{await route.fulfill({body:await fs.readFile(file),contentType:mime[path.extname(file)]||'application/octet-stream'})}
   catch{await route.fulfill({status:404,body:'File not found'})}

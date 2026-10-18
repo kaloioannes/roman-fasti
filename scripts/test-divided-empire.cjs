@@ -67,7 +67,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'t
    for(const key of ['divided-empire/app.js','divided-empire/style.css','data/divided-empire/records.json','data/divided-empire/places.json','data/divided-empire/territories.json'])assert.ok(requests.has(base+manifest[key]),key+' must use fingerprint');
    // Shared theme, and the transition to the next volume, remain normal links.
    await page.goto(url+'#year=476');await page.waitForSelector('.courts-grid');await page.click('#theme-button');const theme=await page.evaluate(()=>document.documentElement.dataset.theme);
-   await page.locator('.period-footer a[href="../byzantine/"]').click();await page.waitForSelector('.hero-word');assert.equal(await page.locator('.hero-word').textContent(),'ῬΩΜΗ');assert.equal(await page.evaluate(()=>document.documentElement.dataset.theme),theme);
+   await page.locator('.volume-footer a[href="../byzantine/"]').click();await page.waitForSelector('.hero-word');assert.equal(await page.locator('.hero-word').textContent(),'ῬΩΜΗ');assert.equal(await page.evaluate(()=>document.documentElement.dataset.theme),theme);
    await page.goto(origin+base+'byzantine/#year=476');await page.waitForSelector('.ruler-card');assert.equal(await page.locator('.name-language').count(),0);assert.ok(await page.locator('.ruler-greek[lang]').count()>0);
   }
   const url=origin+'/roman-republic-fasti/divided-empire/',failure=await context.newPage();failure.on('pageerror',e=>errors.push(e.message));

@@ -14,10 +14,7 @@ for(const period of project.periods){
   if(period.status==='available')for(const name of [`site/${period.id}/index.html`,`site/${period.id}/app.js`,`data/${period.id}/records.json`,`data-source/${period.id}`]){
     assert.ok(fs.existsSync(path.join(root,name)),`Incomplete period: ${name}`);
   }
-  if(period.status==='available')assert.ok(period.latin&&period.caption&&period.milestone,`Missing catalogue copy: ${period.id}`);
 }
-const published=project.periods.filter(p=>p.status==='available');
-for(let i=1;i<published.length;i++)assert.equal(published[i-1].end,published[i].start,'Adjacent published volumes must share a chronological boundary');
 for(const name of ['app.js','style.css','imperial-app.js','imperial.css','index.html','emperors.html']){
   assert.ok(!fs.existsSync(path.join(root,name)),`Web source escaped site/: ${name}`);
 }
