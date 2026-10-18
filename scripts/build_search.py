@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from urllib.parse import urlencode
+from build_people import compile_people
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -17,6 +18,7 @@ def year_key(period, year):
 def compile_index():
     periods = [p for p in read('project.json')['periods'] if p['status'] == 'available']
     aliases = read('data-source/search/aliases.json')
+    identities = compile_people()
     entries, used_aliases = [], set()
     for period in periods:
         pid = period['id']
@@ -54,7 +56,13 @@ def compile_index():
             if key in aliases:
                 names.extend(aliases[key])
                 used_aliases.add(key)
+            identity = identities['people'].get(identities['lookup'].get(key))
+            if identity:
+                names.extend(identity['aliases'])
             add('person', person_id, person['zh'], names, text[:240], spans, params, note)
+            if identity:
+                entries[-1]['globalPerson'] = identity['id']
+                entries[-1]['globalURL'] = identity['url']
         if pid == 'kingdom':
             for eid, event in data['events'].items():
                 y = event['year']

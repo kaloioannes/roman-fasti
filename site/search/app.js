@@ -125,7 +125,11 @@
           const meta=el('p',null,'result-meta');meta.append(el('span',index.periods.find(p=>p.id===entry.period).title),el('span',dateLabel(entry)));article.append(meta);
           const h=el('h3'),a=el('a');a.href='../'+entry.url;a.append(marked(entry.title,effectiveQuery));h.append(a);article.append(h);
           if(entry.names.length){const names=el('p',null,'result-names');names.append(marked(entry.names.join(' · '),effectiveQuery,150));article.append(names);}
-          const snippet=el('p',null,'result-snippet');snippet.append(marked(entry.text,effectiveQuery,170));article.append(snippet,el('p',entry.note,'result-note'));section.append(article);
+          const snippet=el('p',null,'result-snippet');snippet.append(marked(entry.text,effectiveQuery,170));article.append(snippet,el('p',entry.note,'result-note'));
+          if(entry.kind==='person' && /^people\/#person=[a-z0-9-]+$/.test(entry.globalURL||'')){
+            const identity=el('a','本人的跨卷总档案 ↗','identity-search-link');identity.href='../'+entry.globalURL;article.append(identity);
+          }
+          section.append(article);
         });
         if(rows.length>count){const more=el('button',`再显示${Math.min(24,rows.length-count)}条${label}（余${rows.length-count}条）`,'more-results');more.onclick=()=>{limits.set(kind,count+24);render().then(()=>{const group=$(`[data-kind="${kind}"]`);const next=group?.querySelectorAll('.search-result h3 a')[count];next?.focus();});};section.append(more);}
         $('#search-results').append(section);

@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "method": "跨卷身份由编辑显式确认；姓名、译名、拉丁文或本卷ID相同均不会自动合并。仅汇总已收录任职与实际年度成员；年度不是生卒年，任期重叠不重复计时，不把任内全部事件归作本人行动。",
+  "evidence": {
+    "rg1": {
+      "label": "奥古斯都《功业录》1，Loeb英译 / LacusCurtius",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/1*.html#1",
+      "locator": "第1章",
+      "claim": "作者回述前43年首次执政官与三头身份，连接其共和国时期的政治生涯。",
+      "kind": "古代文献译本",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "rg34": {
+      "label": "奥古斯都《功业录》34，Loeb英译 / LacusCurtius",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6*.html#34",
+      "locator": "第34章",
+      "claim": "同一作者把第六、第七次执政官任期与获Augustus尊号相连；这是自我表述，不单凭其政治宣传评价政体。",
+      "kind": "古代文献译本",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "dir-theodosius": {
+      "label": "David Woods，DIR Theodosius I",
+      "url": "https://roman-emperors.sites.luc.edu/theo1.htm",
+      "locator": "Origin and Early Career；Family and Succession",
+      "claim": "379年取得帝位者即395年1月17日去世的狄奥多西一世；两卷边界并未产生另一个人。",
+      "kind": "署名研究",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "dir-arcadius": {
+      "label": "Geoffrey S. Nathan，DIR Arcadius",
+      "url": "https://roman-emperors.sites.luc.edu/arcadius.htm",
+      "locator": "Introduction and Early Life",
+      "claim": "383年获奥古斯都称号、395年后主持东方宫廷的阿卡狄乌斯是同一人。",
+      "kind": "署名研究",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "dir-honorius": {
+      "label": "Ralph W. Mathisen，DIR Honorius",
+      "url": "https://roman-emperors.sites.luc.edu/honorius.htm",
+      "locator": "Honorius’ Early Life",
+      "claim": "393年获帝号、395年继掌西部、423年去世者是同一霍诺里乌斯。",
+      "kind": "署名研究",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "dir-zeno": {
+      "label": "Hugh Elton，DIR Zeno",
+      "url": "https://roman-emperors.sites.luc.edu/zeno.htm",
+      "locator": "474年继位、475年出逃与476年8月复位的叙事段落",
+      "claim": "双帝国卷的在位、流亡与复位芝诺，即拜占庭卷延续至491年的芝诺；日期分歧不构成身份差异。",
+      "kind": "署名研究",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "dir-basiliscus": {
+      "label": "Hugh Elton，DIR Flavius Basiliscus",
+      "url": "https://roman-emperors.sites.luc.edu/basilis.htm",
+      "locator": "468年远征、475年政变及476年芝诺复位段落",
+      "claim": "维里娜之兄、475—476年占据东方宫廷的巴西利斯库斯为两卷共同人物。",
+      "kind": "署名研究",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "dir-distinct": {
+      "label": "DIR Imperial Index：西部与东部名录",
+      "url": "https://roman-emperors.sites.luc.edu/impindex.htm",
+      "locator": "The Western Empire：407—411、409/10—411；The Eastern Empire：641、641—668；406—407年Marcus与475—476年Marcus",
+      "claim": "西部五世纪与东部七世纪的君士坦丁三世、君士坦斯二世是不同人物；本项仅用于消歧，不采用此简表的其他日期。 另将406—407年不列颠的Marcus与475—476年东方共帝Marcus分列。",
+      "kind": "研究项目索引",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "dir-marcus": {
+      "label": "Hugh Elton，DIR Marcus Caesar",
+      "url": "https://roman-emperors.sites.luc.edu/marcus.htm",
+      "locator": "Marcus Caesar (AD 475–476)，生平段落",
+      "claim": "巴西利斯库斯与泽诺妮丝之子马尔库斯于475年获恺撒及奥古斯都称号，476年随父母失位；对应两卷不同本卷ID的同一共帝。",
+      "kind": "署名研究",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "corpus-divided-empire": {
+      "label": "双帝国篇现有人物源档案（PR18合入版本）",
+      "url": "https://github.com/kaloioannes/roman-fasti/blob/4c33dc7/data-source/divided-empire/people.json",
+      "locator": "各项明确列出的本卷人物ID及reigns、bio字段",
+      "claim": "本次直接对读仓库现有身份、年代与家属说明，用于排除同名条目；未借此声称重新核读档案所引的全部原始文献。",
+      "kind": "项目既有档案",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    },
+    "corpus-byzantine": {
+      "label": "拜占庭篇现有人物源档案（PR18合入版本）",
+      "url": "https://github.com/kaloioannes/roman-fasti/blob/4c33dc7/data-source/byzantine/people.json",
+      "locator": "各项明确列出的本卷人物ID及reigns、bio字段",
+      "claim": "本次直接对读仓库现有身份、年代与家属说明，用于排除同名条目；未借此声称重新核读档案所引的全部原始文献。",
+      "kind": "项目既有档案",
+      "consultation": "direct",
+      "checked": "2026-10-19"
+    }
+  },
+  "people": [
+    {
+      "id": "roman-augustus",
+      "zh": "奥古斯都",
+      "aliases": [
+        "屋大维",
+        "Octavian",
+        "Octavianus",
+        "Augustus"
+      ],
+      "editorNote": "共和国执政官与前27年后的元首为同一人。本页只汇总各卷已收录任职，不能当作其一生全部官职。",
+      "profiles": [
+        {
+          "period": "republic",
+          "person": "p6faf564142",
+          "identityCheck": {
+            "zh": "奥古斯都",
+            "latin": "Gaius Iulius Caesar Octavianus (Augustus)",
+            "wikiTitle": "Augustus"
+          },
+          "evidence": [
+            "rg1",
+            "rg34"
+          ],
+          "editorNote": "逐项核对既有专条身份Augustus、拉丁名及七次已收录执政官任职；不与其他Octavius条目合并。"
+        },
+        {
+          "period": "empire",
+          "person": "augustus",
+          "identityCheck": {
+            "zh": "奥古斯都",
+            "latin": "Imperator Caesar Divi Filius Augustus"
+          },
+          "evidence": [
+            "rg1",
+            "rg34"
+          ],
+          "editorNote": "帝国卷从前27年受号开始，保留此前共和国官职入口。"
+        }
+      ]
+    },
+    {
+      "id": "roman-theodosius-i",
+      "zh": "狄奥多西一世",
+      "aliases": [
+        "Theodosius I",
+        "Flavius Theodosius"
+      ],
+      "editorNote": "395年是编辑分卷边界；两卷所录379—395年称号互相重叠，保留其日期精度与身份说明，不累加为两次任职。",
+      "profiles": [
+        {
+          "period": "empire",
+          "person": "theodosius-i",
+          "identityCheck": {
+            "zh": "狄奥多西一世",
+            "latin": "Flavius Theodosius Augustus"
+          },
+          "evidence": [
+            "dir-theodosius"
+          ],
+          "editorNote": "379—395年的古典帝国档案。"
+        },
+        {
+          "period": "divided-empire",
+          "person": "theodosius-i",
+          "identityCheck": {
+            "zh": "狄奥多西一世",
+            "greek": "Θεοδόσιος"
+          },
+          "evidence": [
+            "dir-theodosius"
+          ],
+          "editorNote": "395年初共同资深皇帝档案；完整任期保留379年的起点。"
+        }
+      ]
+    },
+    {
+      "id": "roman-arcadius",
+      "zh": "阿卡狄乌斯",
+      "aliases": [
+        "Arcadius",
+        "Ἀρκάδιος"
+      ],
+      "editorNote": "383年的共帝与395年后东方宫廷皇帝为同一人；395年并非首次取得帝号。两卷任期重叠保留，不累计时长。",
+      "profiles": [
+        {
+          "period": "empire",
+          "person": "arcadius",
+          "identityCheck": {
+            "zh": "阿卡狄乌斯",
+            "latin": "Flavius Arcadius Augustus"
+          },
+          "evidence": [
+            "dir-arcadius"
+          ],
+          "editorNote": "本卷年度展开383—395年，人物任期保留到408年。"
+        },
+        {
+          "period": "divided-empire",
+          "person": "arcadius",
+          "identityCheck": {
+            "zh": "阿卡狄乌斯",
+            "greek": "Ἀρκάδιος"
+          },
+          "evidence": [
+            "dir-arcadius"
+          ],
+          "editorNote": "本卷年度从395年开始，保留383年受号和408年终点。"
+        }
+      ]
+    },
+    {
+      "id": "roman-honorius",
+      "zh": "霍诺里乌斯",
+      "aliases": [
+        "Honorius",
+        "Ὁνώριος"
+      ],
+      "editorNote": "393年获帝号与395年继掌西部属于同一生涯；各卷任期按原记录展示，不将分卷交界当作另一次即位。",
+      "profiles": [
+        {
+          "period": "empire",
+          "person": "honorius",
+          "identityCheck": {
+            "zh": "霍诺里乌斯",
+            "latin": "Flavius Honorius Augustus"
+          },
+          "evidence": [
+            "dir-honorius"
+          ],
+          "editorNote": "393—395年年度与完整任期的档案。"
+        },
+        {
+          "period": "divided-empire",
+          "person": "honorius",
+          "identityCheck": {
+            "zh": "霍诺里乌斯",
+            "greek": "Ὁνώριος"
+          },
+          "evidence": [
+            "dir-honorius"
+          ],
+          "editorNote": "395—423年西部宫廷年度；保留393年获号起点。"
+        }
+      ]
+    },
+    {
+      "id": "roman-zeno",
+      "zh": "芝诺",
+      "aliases": [
+        "泽诺",
+        "澤諾",
+        "Zeno",
+        "Ζήνων",
+        "Tarasis"
+      ],
+      "editorNote": "同一位伊苏里亚出身的芝诺。两卷对474年即位日分别记2月9日和1月29日；本次不裁定该日期分歧，保留原卷标签与来源供对读。双帝国卷另有475—476年流亡称号，不能视作连续控制首都，也不能把复位另建人物。",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "zeno",
+          "identityCheck": {
+            "zh": "芝诺",
+            "greek": "Ζήνων"
+          },
+          "evidence": [
+            "dir-zeno"
+          ],
+          "editorNote": "保留474—475年在位、475—476年流亡与476—491年复位三段。"
+        },
+        {
+          "period": "byzantine",
+          "person": "zeno",
+          "identityCheck": {
+            "zh": "芝诺",
+            "latin": "Flavius Zeno",
+            "greek": "Ζήνων"
+          },
+          "evidence": [
+            "dir-zeno"
+          ],
+          "editorNote": "年度从476年展开；人物档案保留前次在位与复位两段，继续至491年。"
+        }
+      ]
+    },
+    {
+      "id": "roman-basiliscus",
+      "zh": "巴西利斯库斯",
+      "aliases": [
+        "Basiliscus",
+        "Βασιλίσκος"
+      ],
+      "editorNote": "475—476年占据君士坦丁堡宫廷者为同一人；不与其他同名者或芝诺的流亡称号合并。",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "basiliscus",
+          "identityCheck": {
+            "zh": "巴西利斯库斯",
+            "greek": "Βασιλίσκος"
+          },
+          "evidence": [
+            "dir-basiliscus"
+          ],
+          "editorNote": "475—476年的实际东方宫廷；芝诺同期流亡另列。"
+        },
+        {
+          "period": "byzantine",
+          "person": "basiliscus",
+          "identityCheck": {
+            "zh": "巴西利斯库斯",
+            "latin": "Flavius Basiliscus",
+            "greek": "Βασιλίσκος"
+          },
+          "evidence": [
+            "dir-basiliscus"
+          ],
+          "editorNote": "本卷476年交接中的同一巴西利斯库斯；保留475年起点。"
+        }
+      ]
+    },
+    {
+      "id": "roman-marcus-basiliscus",
+      "zh": "马尔库斯（巴西利斯库斯之子）",
+      "aliases": [
+        "马尔库斯",
+        "Marcus",
+        "Marcus son of Basiliscus",
+        "Μάρκος",
+        "Μᾶρκος"
+      ],
+      "editorNote": "两卷本卷ID分别为marcus-east与marcus，仍指同一共帝；与406—407年的不列颠争位者马尔库斯分开。仅汇总已有奥古斯都阶段，不从传记补造缺少日期的恺撒任期。",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "marcus-east",
+          "identityCheck": {
+            "zh": "马尔库斯（巴西利斯库斯之子）",
+            "greek": "Μᾶρκος"
+          },
+          "evidence": [
+            "dir-marcus"
+          ],
+          "editorNote": "按父母、475年受号与476年失位身份核对；保留本卷ID及原有日期精度。"
+        },
+        {
+          "period": "byzantine",
+          "person": "marcus",
+          "identityCheck": {
+            "zh": "马尔库斯",
+            "latin": "Marcus",
+            "greek": "Μάρκος"
+          },
+          "evidence": [
+            "dir-marcus"
+          ],
+          "editorNote": "按父母、475年受号与476年失位身份核对；保留本卷ID及原有日期精度。"
+        }
+      ]
+    }
+  ],
+  "distinct": [
+    {
+      "label": "君士坦丁三世",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "constantine-iii"
+        },
+        {
+          "period": "byzantine",
+          "person": "constantine-iii"
+        }
+      ],
+      "evidence": [
+        "dir-distinct"
+      ],
+      "editorNote": "两卷中的君士坦丁三世同名且本卷ID相同，但分别属于五世纪西部争位阵营与七世纪东部皇室，必须保持独立身份。"
+    },
+    {
+      "label": "君士坦斯二世",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "constans-ii"
+        },
+        {
+          "period": "byzantine",
+          "person": "constans-ii"
+        }
+      ],
+      "evidence": [
+        "dir-distinct"
+      ],
+      "editorNote": "两卷中的君士坦斯二世同名且本卷ID相同，但分别属于五世纪西部争位阵营与七世纪东部皇室，必须保持独立身份。"
+    },
+    {
+      "label": "马尔库斯：不列颠与东方共帝",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "marcus-britain"
+        },
+        {
+          "period": "byzantine",
+          "person": "marcus"
+        }
+      ],
+      "editorNote": "406—407年不列颠争位者，与475—476年巴西利斯库斯之子共帝相隔数十年，姓名相同不代表同一人。",
+      "evidence": [
+        "dir-distinct",
+        "dir-marcus"
+      ]
+    },
+    {
+      "label": "狄奥多西一世与莫里斯之子",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "theodosius-i"
+        },
+        {
+          "period": "byzantine",
+          "person": "theodosios-son-maurice"
+        }
+      ],
+      "editorNote": "379—395年的狄奥多西一世，与590—602年的莫里斯之子狄奥多西共帝并非同一人；相同希腊文名字不能作为合并依据。",
+      "evidence": [
+        "corpus-divided-empire",
+        "corpus-byzantine"
+      ]
+    },
+    {
+      "label": "狄奥多西二世与莫里斯之子",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "theodosius-ii"
+        },
+        {
+          "period": "byzantine",
+          "person": "theodosios-son-maurice"
+        }
+      ],
+      "editorNote": "402—450年的狄奥多西二世，与590—602年的莫里斯之子狄奥多西共帝并非同一人。",
+      "evidence": [
+        "corpus-divided-empire",
+        "corpus-byzantine"
+      ]
+    },
+    {
+      "label": "君士坦丁三世与狄奥菲洛斯之子",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "constantine-iii"
+        },
+        {
+          "period": "byzantine",
+          "person": "constantine-theophilos"
+        }
+      ],
+      "editorNote": "407—411年的西部争位者，与九世纪狄奥菲洛斯之子共帝不是同一人；共有希腊文名Κωνσταντῖνος仍须区分年代、父母与身份。",
+      "evidence": [
+        "corpus-divided-empire",
+        "corpus-byzantine"
+      ]
+    },
+    {
+      "label": "君士坦丁三世与巴西尔一世之子",
+      "profiles": [
+        {
+          "period": "divided-empire",
+          "person": "constantine-iii"
+        },
+        {
+          "period": "byzantine",
+          "person": "constantine-basil"
+        }
+      ],
+      "editorNote": "407—411年的西部争位者，与九世纪巴西尔一世之子共帝不是同一人；共有希腊文名不建立跨卷身份。",
+      "evidence": [
+        "corpus-divided-empire",
+        "corpus-byzantine"
+      ]
+    }
+  ]
+}
