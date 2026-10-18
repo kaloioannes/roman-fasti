@@ -85,3 +85,12 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 `shared/periods.js` 读取同一份带指纹的清单，为年度页的 `data-period-boundary` 插槽填入边界链接；共和国传入负数历史年份，输出其路由时转回正数 BC 键。内部年度不显示跨卷链接，最早和最晚边界不循环；异步返回时检查年份令牌与插槽连接状态，避免快速换年后出现旧链接。
 
 `site/catalog.css`、`site/catalog.js` 仅负责总入口。`shared/legacy-routes.js` 兼容原共和国根目录 hash；帝国仅保留 `empire/` 目录入口，废弃的独立 HTML 页面已移除。三个帝国篇的通用年度阅读说明放入“史料与方法”的折叠项，年度滑杆直接接正文或边界链接。
+
+
+## 共和国简介数据（schemaVersion 2）
+
+共和国运行数据保留现有人物ID、年度和任职结构，新增 `schemaVersion: 2`。`people[id].bio` 只存编写的简介，`bioSources` 为其来源；`bioStatus` 为 `authored`、`office-summary` 或 `insufficient`。每个条目都有从已收录任职生成的 `officeSummary` 和 `officeSummarySources`，包括身份待考条目。`identified=false` 表示当前资料尚未把此条目识别到独立人物专条，并不表示此人不存在，也不授权合并同名条目。
+
+`stats.biographies` 仅计编写简介；`officeSummaries` 计有任职摘要的条目，`insufficientBiographies` 计身份待考条目。三者有交叠，不能相加作为总人数。旧版把生成摘要也放在 `bio`，因此下游若需要任职概况，应读取 `officeSummary`。页面旧年度和剧本链接保持不变。
+
+`scripts/republic_biographies.py` 负责显式正文／身份／来源校验及摘要生成，`build_data.py` 调用它；不读取简介排名、专条长度或总人数比例。源正文和 `biography-identities.json` 的增删改必须同步。`validate.mjs` 独立核对源正文与运行数据、人物身份、来源、摘要与全部任职的对应；`test_republic_biographies.py` 检查增长与错误编辑，已纳入PR工作流。

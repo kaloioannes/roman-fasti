@@ -57,6 +57,25 @@ async function noOverflow(page,label){
   await page.waitForFunction(()=>document.querySelector('#year-number').textContent==='44');
   assert.equal(new URL(page.url()).hash,'#year=44');
  }
+ // Authored prose, generated office summaries and insufficient identities remain distinct.
+ const examples=['authored','office-summary','insufficient'].map(status=>Object.entries(data.people).find(([,p])=>p.bioStatus===status));
+ examples.push(Object.entries(data.people).find(([,p])=>p.wikiTitle==='Marcus Aemilius Scaurus (consul 115 BC)'));
+ for(const [pid,p] of examples){
+  const record=Object.values(data.years).find(r=>r.officers.some(o=>o.person===pid));
+  await year(page,record.year);
+  const card=page.locator(`[data-person="${pid}"]`).first();
+  assert.equal(await card.getAttribute('data-bio-status'),p.bioStatus);
+  assert.equal(await card.locator('.authored-biography').count(),p.bio?1:0);
+  if(p.bio){
+   await card.locator('.authored-biography summary').click();
+   assert.equal(await card.locator('.authored-biography .bio-text').textContent(),p.bio);
+   assert.deepEqual(await card.locator('.authored-biography a').evaluateAll(links=>links.map(a=>a.href)),p.bioSources.map(s=>s.url));
+  }
+  await card.locator('.office-summary-details summary').focus();await page.keyboard.press('Enter');
+  assert.equal(await card.locator('.office-summary-details .bio-text').textContent(),p.officeSummary);
+  assert.equal(await card.locator('.identity-note').count(),p.bioStatus==='insufficient'?1:0);
+ }
+ await year(page,44);
  assert.ok(await page.locator('.event-body').count()>0);
  await toggle(page,true);
  assert.equal(await page.locator('.event-body').count(),0);
@@ -143,7 +162,7 @@ async function noOverflow(page,label){
  await page.locator('#map-reset').click();
  await page.waitForFunction(()=>document.querySelector('#map-content')?.getAttribute('transform')==='translate(0,0) scale(1)');
  assert.equal(await page.locator('#map-content').getAttribute('transform'),'translate(0,0) scale(1)');
- await page.locator('#sources-button').click();assert.equal(await page.locator('#sources-dialog').isVisible(),true);
+ await page.locator('#sources-button').click();assert.equal(await page.locator('#sources-dialog').isVisible(),true);assert.match(await page.locator('#method-content').textContent(),new RegExp(`${data.stats.biographies}编写简介`));
  await page.keyboard.press('Escape');assert.equal(await page.locator('#sources-dialog').isVisible(),false);
  for(const width of [320,390,768,1440]){
   await page.setViewportSize({width,height:900});
@@ -151,12 +170,16 @@ async function noOverflow(page,label){
    await page.goto(`${republic}#stories`);await page.waitForSelector('.story-card');
    await page.evaluate(d=>document.documentElement.dataset.theme=d?'dark':'light',dark);
    await noOverflow(page,`home ${width} ${dark}`);
-   await year(page,43,'sicilian-sea');await noOverflow(page,`story ${width} ${dark}`);
+   await year(page,43,'sicilian-sea');
+   await page.locator('.bio-details').evaluateAll(items=>items.forEach(item=>item.open=true));
+   await noOverflow(page,`story and biographies ${width} ${dark}`);
+   await page.locator('#sources-button').click();await noOverflow(page,`biography statistics ${width} ${dark}`);await page.keyboard.press('Escape');
    const header=await page.locator('.site-header').boundingBox();
    assert.ok(header.height<180,`Header too tall at ${width}`);
    if(process.env.FASTI_SCREENSHOTS&&[390,1440].includes(width)&&dark){
     await fs.mkdir(process.env.FASTI_SCREENSHOTS,{recursive:true});
     await page.screenshot({path:path.join(process.env.FASTI_SCREENSHOTS,`story-${width}-dark.png`),fullPage:true});
+    await page.locator('.official-card').first().screenshot({path:path.join(process.env.FASTI_SCREENSHOTS,`biography-${width}-dark.png`)});
    }
   }
  }
