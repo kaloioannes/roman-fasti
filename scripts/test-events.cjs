@@ -15,7 +15,7 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
   browser=await chromium.launch({headless:true,args:['--no-proxy-server'],...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
   const context=await browser.newContext({acceptDownloads:true}),page=await context.newPage(),errors=[];
   context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));page.on('pageerror',e=>errors.push(e.message));
-  const ready=()=>page.waitForFunction(()=>document.querySelector('#content')?.getAttribute('aria-busy')==='false');
+  const ready=()=>page.waitForFunction(()=>{const m=document.querySelector('#content');return m?.getAttribute('aria-busy')==='false'&&m.dataset.renderedHash===location.hash;});
   for(const prefix of ['/','/roman-fasti/']){
    const origin=`http://127.0.0.1:${server.address().port}${prefix}`,base=origin+'events/';
    const goto=async hash=>{await page.goto(base+'#'+hash);await ready();};

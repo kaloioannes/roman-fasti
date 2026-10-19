@@ -108,7 +108,7 @@
   async function route(){const current=++version;main.setAttribute('aria-busy','true');main.replaceChildren(el('p','正在查阅事件档案……','event-status'));
     try{await load();if(current!==version)return;main.replaceChildren();const p=new URLSearchParams(location.hash.slice(1));if(p.has('event')){const old=p.get('event'),alias=index.aliases[old];if(alias){history.replaceState(null,'',hash({event:alias.target}));detail(alias.target);main.prepend(el('p','此旧ID已迁移：'+alias.reason,'event-note'));}else detail(old);}else directory(p);main.focus({preventScroll:true});window.scrollTo(0,0);}
     catch{if(current===version){main.replaceChildren(el('h1','事件档案暂时无法载入'),el('p','网络、超时或资料格式异常。请重试；各卷原档案仍可独立阅读。'));const b=el('button','重新载入事件档案');b.id='retry-events';b.onclick=route;main.append(b);}}
-    finally{if(current===version)main.setAttribute('aria-busy','false');}
+    finally{if(current===version){main.dataset.renderedHash=location.hash;main.setAttribute('aria-busy','false');}}
   }
   document.querySelector('#theme-button').onclick=()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('fasti-theme',theme);}catch{}};
   addEventListener('hashchange',route);route();
