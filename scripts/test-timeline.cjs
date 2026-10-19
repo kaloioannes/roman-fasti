@@ -16,9 +16,9 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
   browser=await chromium.launch({headless:true,args:['--no-proxy-server'],...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
   const context=await browser.newContext({viewport:{width:1440,height:1100}}),page=await context.newPage(),errors=[];
   context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));page.on('pageerror',e=>errors.push(e.message));
-  const ready=async(p=page)=>{await p.waitForFunction(()=>document.querySelector('#content')?.getAttribute('aria-busy')==='false');};
+  const ready=async(p=page)=>{await p.waitForFunction(()=>{const main=document.querySelector('#content');return main?.getAttribute('aria-busy')==='false'&&main.dataset.renderedHash===location.hash;});};
   const go=async(url,p=page)=>{await p.goto(url);await ready(p);};
-  const hash=async(params,p=page)=>{const value=new URLSearchParams(params).toString();await p.evaluate(h=>location.hash=h,value);await p.waitForFunction(h=>location.hash.slice(1)===h&&document.querySelector('#content')?.getAttribute('aria-busy')==='false',value);};
+  const hash=async(params,p=page)=>{const value=new URLSearchParams(params).toString();await p.evaluate(h=>location.hash=h,value);await ready(p);};
   for(const prefix of ['/','/roman-fasti/']){
    const origin=`http://127.0.0.1:${server.address().port}${prefix}`,base=origin+'timeline/';
    await page.goto(origin);await page.getByRole('link',{name:'任期时间轴 →',exact:true}).click();await ready();

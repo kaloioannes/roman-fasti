@@ -180,7 +180,7 @@
     main.append(details);
   }
   async function render(){
-    const token=++revision,s=state();main.setAttribute('aria-busy','true');
+    const token=++revision,s=state(),renderedHash=location.hash;main.setAttribute('aria-busy','true');
     try{await load();if(token!==revision)return;main.replaceChildren();
       const rawParams=new URLSearchParams(location.hash.slice(1));
       if(s.person&&!rawParams.has('from')&&!rawParams.has('to')&&index.people[s.person]){
@@ -211,7 +211,7 @@
       yearLinks(s);
       const method=el('details',null,'tl-method');method.append(el('summary','如何阅读精度、身份与史料边界'),el('p',index.method),el('p','一条对应原卷一项任职或称号阶段。复位、头衔晋升与多次任职分别保留；同一人物在相邻分卷可能各有档案，不自动去重或拼接。图中只显示所选范围，裁切标记不代表在此即位／退位。缺少条形不证明没有统治者；空缺只展示原卷明确记载的条目。'),a('完整维护与研究说明 ↗','https://github.com/kaloioannes/roman-fasti/blob/main/docs/timeline.md'),el('p','资料版本 '+index.version+' · 文字与数据 CC BY-SA 4.0 · FASTI contributors','tl-note'));main.append(method);
     }catch{if(token!==revision)return;main.replaceChildren(el('h1','任期资料暂时无法载入'),el('p','请求失败、超时或资料结构不完整。各卷原档案仍可阅读。'),button('重试时间轴',render),a('返回全部时期','../'));}
-    finally{if(token===revision){main.setAttribute('aria-busy','false');if(location.hash){const target=document.querySelector('#timeline-detail')||main;target.focus({preventScroll:true});if(target!==main)target.scrollIntoView({block:'start'});}}}
+    finally{if(token===revision){main.dataset.renderedHash=renderedHash;main.setAttribute('aria-busy','false');if(location.hash){const target=document.querySelector('#timeline-detail')||main;target.focus({preventScroll:true});if(target!==main)target.scrollIntoView({block:'start'});}}}
   }
   document.querySelector('#theme-button').onclick=()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('fasti-theme',theme);}catch{}};
   addEventListener('hashchange',render);render();
