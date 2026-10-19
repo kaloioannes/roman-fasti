@@ -7,6 +7,7 @@ import re
 from pathlib import Path
 from urllib.parse import urlencode, urlsplit
 from event_links import apply_links
+from event_evidence import apply_evidence
 
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = {'event': '独立事件', 'annual-summary': '年度摘要', 'background': '跨年背景', 'tradition': '传统叙事'}
@@ -98,6 +99,10 @@ def compile_events():
             require(r['period'] in volumes and r['person'] in volumes[r['period']]['people'], f'Broken event person: {id}')
         require(all(p in places for p in e['places']), f'Broken event place: {id}')
     apply_links(entries, places, volumes, read, require, check_reference)
+    for id, event in entries.items():
+        require(event['references'], f'Unsourced event: {id}')
+        for ref in event['references']: check_reference(ref)
+    source_kinds, access = apply_evidence(entries, read, require, volumes)
     for id, e in entries.items():
         require(bool(re.fullmatch(r'[a-z][a-z0-9-]*:[a-z0-9-]+', id)), f'Invalid event ID: {id}')
         require(e['period'] in volumes and e['recordKind'] in KINDS and e['title'] and e['text'], f'Invalid event: {id}')
@@ -153,16 +158,18 @@ def compile_events():
     digest = hashlib.sha256(json.dumps([entries, places, aliases], ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()[:12]
     return dict(schemaVersion=1, version='events-v1-'+digest, license='CC BY-SA 4.0', periods=periods, kinds=KINDS, topics=TOPICS,
                 certainties=CERTAINTIES, entries=entries, places=places, aliases=aliases,
-                byYear=by_year, byPerson=by_person, byPlace=by_place, byGlobalPerson=by_global_person)
+                byYear=by_year, byPerson=by_person, byPlace=by_place, byGlobalPerson=by_global_person,
+                sourceKinds=source_kinds, access=access)
 
 
 def navigation(index):
     # Small optional link projection for original annual/person pages. Full text
     # remains independently readable when this projection fails.
-    selected = {k:e for k,e in index['entries'].items() if e['people'] or e['places'] or (e['recordKind'] == 'event' and (not e['origins'] or e['date']['extent'] == 'window'))}
+    selected = {k:e for k,e in index['entries'].items() if e['evidence'] or e['people'] or e['places'] or (e['recordKind'] == 'event' and (not e['origins'] or e['date']['extent'] == 'window'))}
     def edge(row):
         return {k:v for k,v in row.items() if k not in {'references', 'evidence'}}
-    return dict(schemaVersion=1, entries={k:dict(title=e['title'],url=e['url'],recordKind=e['recordKind'],
+    return dict(schemaVersion=1, entries={k:dict(title=e['title'],url=e['url'],recordKind=e['recordKind'],hasEvidence=bool(e['evidence']),
+                    evidenceUrl=e['url']+'&'+urlencode({'evidence':'claim:'+e['evidence']['claims'][0]['id']}) if e['evidence'] else None,
                     people=[edge(r) for r in e['people']],placeRelations=[edge(r) for r in e['placeRelations']]) for k,e in selected.items()},
                 byYear={k:[id for id in v if id in selected] for k,v in index['byYear'].items() if any(id in selected for id in v)},
                 byPerson={k:[id for id in v if id in selected] for k,v in index['byPerson'].items() if any(id in selected for id in v)},

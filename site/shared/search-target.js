@@ -20,6 +20,7 @@ window.FastiSearchTarget = (() => {
         const r=await fetch('../data/events/navigation.json',{signal:controller.signal});if(!r.ok)throw Error();const v=await r.json();
         const edge=p=>p&&typeof p.label==='string'&&roles[p.role]&&typeof p.basis==='string';
         if(v.schemaVersion!==1||!v.entries||!v.byYear||!v.byPerson||!v.byGlobalPerson||Object.values(v.entries).some(e=>typeof e.title!=='string'||!/^events\/#event=/.test(e.url)
+          ||(e.hasEvidence&&(!/^events\/#event=/.test(e.evidenceUrl)||!e.evidenceUrl.includes('&evidence=claim%3A')))
           ||!Array.isArray(e.people)||e.people.some(p=>!edge(p)||!periods.includes(p.period)||!new RegExp('^'+p.period+'/#[p]erson=').test(p.url))
           ||!Array.isArray(e.placeRelations)||e.placeRelations.some(p=>!edge(p)||!/^places\/#place=[a-z0-9-]+$/.test(p.url)))
           ||[v.byYear,v.byPerson,v.byGlobalPerson].some(map=>Object.values(map).some(ids=>!Array.isArray(ids)||ids.some(id=>!v.entries[id]))))throw Error();
@@ -30,13 +31,14 @@ window.FastiSearchTarget = (() => {
   function inlineLinks(period,parent){
     parent.querySelectorAll('.event-row[data-event-id],.event[data-event]').forEach(row=>{
       if(row.querySelector('.event-inline-links')||row.querySelector('.event-reveal'))return;
-      const e=navigation.entries[period+':'+(row.dataset.eventId||row.dataset.event)];if(!e||(!e.people.length&&!e.placeRelations.length))return;
-      const box=el('div');box.className='event-inline-links';box.setAttribute('aria-label','此条记事的人物与地点');
+      const e=navigation.entries[period+':'+(row.dataset.eventId||row.dataset.event)];if(!e||(!e.hasEvidence&&!e.people.length&&!e.placeRelations.length))return;
+      const box=el('div');box.className='event-inline-links';box.setAttribute('aria-label','此条记事的关联与证据');
       for(const [label,edges] of [['人物',e.people],['地点',e.placeRelations]]){
         if(!edges.length)continue;const line=el('p',label+'：');
         edges.forEach(p=>{line.append(link(p.label,p.url),el('small',' · '+(label==='地点'&&p.role==='subject'?'事件对象地点':roles[p.role])+'；'));});box.append(line);
       }
-      box.append(link('查看逐项关系依据 ↗',e.url));row.append(box);
+      if(e.people.length||e.placeRelations.length)box.append(link('查看逐项关系依据 ↗',e.url));row.append(box);
+      if(e.hasEvidence)box.append(link('论断证据与查阅范围 ↗',e.evidenceUrl));
     });
   }
   function localLinks(period) {

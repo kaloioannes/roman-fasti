@@ -111,6 +111,10 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 
 `events/` 独立加载文字投影，提供筛选、档案、引用与单条导出。原卷的稳定事件链接不需请求全站投影；小型 `navigation.json` 提供已编订事件与原年度／人物的可选互链，失败可独立恢复。原卷的纪年筛选使用枚举元数据而非中文正则。发布构建先重建事件，再重建搜索；新数据、资源指纹、旧序号定位和浏览器回归均进入CI。
 
+## 论断级史料证据
+
+`data-source/evidence/{sources,dossiers}.json`保存来源目录、逐条论断、实际核读范围与异说依据，`event_evidence.py`叠加到统一事件投影。原五卷schema不迁移，旧引用及查阅记录保留；`navigation.json`仅补证据入口标记。网页组件`events/evidence.js`负责分类来源、稳定卡片定位、间接路径和并读；完整约定见[证据说明](evidence.md)。
+
 ## 官职与帝号时间轴
 
 `build_timeline.py` 将五卷已收录任职、帝号阶段与明确空缺投影为 `data/timeline/index.json`，`data-source/timeline/editorial.json` 只维护专题入口及有源文本依据的实权提示。`timeline/` 支持分轨图形、手机等价列表、范围与筛选、缩放、详情和分享；原卷年度与人物入口均为直接链接，不依赖此投影加载成功。发布日期指纹、全量保留／精度校验和根路径／Pages浏览器回归纳入现有流程。不修改源schema，不自动合并跨卷人物或推断宫廷及实权；详见[时间轴说明](timeline.md)。
