@@ -1,0 +1,41 @@
+'use strict';
+// Shared, independently cached event text for the event and place archives.
+window.FastiEventData=(()=>{
+  let index,pending;const E=window.FastiSearch;
+  const point=p=>p?E.when(p.year)+(p.month?`${p.month}月`:'')+(p.day?`${p.day}日`:''):'未定年';
+  function dates(d){
+    if(d.extent==='undated')return '绝对年代未定';
+    const range=JSON.stringify(d.start)===JSON.stringify(d.end)?point(d.start):point(d.start)+' — '+point(d.end);
+    return range+({'point':'','span':' · 持续过程','window':' · 日期窗口','context':' · 年度归置（非确定发生日）'}[d.extent]||'');
+  }
+  function valid(v){
+    const text=s=>typeof s==='string'&&s.length>0,year=y=>Number.isSafeInteger(y)&&y!==0;
+    const ref=r=>r&&text(r.label)&&/^https:\/\//.test(r.url)&&text(r.locator)&&text(r.claim)&&['direct','indirect','inherited'].includes(r.consultation);
+    const evidence=(p,id)=>p.evidence?.entry===id&&text(p.evidence.note)
+      &&/^data-source\/events\/(?:links|metadata|events)\.json$/.test(p.evidence.source)
+      &&(p.evidence.kind==='event-text'?text(p.evidence.quote):p.evidence.kind==='inherited-editorial'&&p.evidence.quote===null)
+      &&Array.isArray(p.references)&&p.references.length>0&&p.references.every(ref);
+    const kinds=['event','annual-summary','background','tradition'];
+    return v?.schemaVersion===1&&text(v.version)&&Array.isArray(v.periods)&&v.periods.length===5&&v.kinds&&v.topics&&v.certainties&&v.entries&&v.places&&v.aliases&&v.byYear&&v.byPerson&&v.byPlace
+      &&Object.entries(v.entries).length>0&&Object.entries(v.entries).every(([id,e])=>e?.id===id&&text(e.title)&&text(e.text)&&kinds.includes(e.recordKind)&&v.periods.some(p=>p.id===e.period)&&/^events\/#event=/.test(e.url)
+      &&e.date&&text(e.date.note)&&['point','span','window','context','undated'].includes(e.date.extent)&&v.certainties[e.date.certainty]&&Array.isArray(e.date.qualifiers)
+      &&(e.date.extent==='undated'?e.date.start===null&&e.date.end===null:year(e.date.start?.year)&&year(e.date.end?.year))
+      &&Array.isArray(e.topics)&&e.topics.every(t=>v.topics[t])&&Array.isArray(e.people)&&e.people.every(p=>text(p.label)&&text(p.role)&&text(p.basis)&&/^(kingdom|republic|empire|divided-empire|byzantine)\/#person=/.test(p.url))
+      &&Array.isArray(e.places)&&e.places.every(p=>v.places[p])&&Array.isArray(e.relations)&&e.relations.every(r=>v.entries[r.event]&&['part-of','expands'].includes(r.type))
+      &&Array.isArray(e.years)&&e.years.every(r=>year(r.year)&&/^(kingdom|republic|empire|divided-empire|byzantine)\/#year=/.test(r.url))
+      &&Array.isArray(e.origins)&&e.origins.every(o=>/^(kingdom|republic|empire|divided-empire|byzantine)\/#(?:year|person)=/.test(o.url))
+      &&Array.isArray(e.spans)&&e.spans.every(s=>Array.isArray(s)&&s.length===2&&s.every(year)&&s[0]<=s[1])
+      &&Array.isArray(e.references)&&e.references.length&&e.references.every(ref))
+      &&v.byGlobalPerson&&Object.entries(v.places).every(([id,p])=>p.id===id&&/^[a-z][a-z0-9-]*$/.test(id)&&text(p.label)&&Array.isArray(p.aliases)&&p.aliases.every(text)&&text(p.note)&&Array.isArray(p.references)&&p.references.length&&p.references.every(ref))
+      &&Object.values(v.entries).every(e=>Array.isArray(e.placeRelations)&&e.placeRelations.length===e.places.length&&e.placeRelations.every(p=>e.places.includes(p.place)&&v.places[p.place]&&['setting','subject','mentioned'].includes(p.role)&&text(p.basis)&&p.url==='places/#place='+p.place&&evidence(p,e.id))&&e.people.every(p=>['participant','subject','mentioned'].includes(p.role)&&evidence(p,e.id)&&(!p.globalUrl||/^people\/#person=[a-z0-9-]+$/.test(p.globalUrl))))
+      &&[v.byYear,v.byPerson,v.byPlace,v.byGlobalPerson].every(map=>Object.values(map).every(ids=>Array.isArray(ids)&&ids.every(id=>v.entries[id])))
+      &&Object.values(v.aliases).every(a=>v.entries[a.target]);
+  }
+  async function load(){
+    if(index)return index;
+    if(!pending)pending=(async()=>{const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);
+      try {const r=await fetch('../data/events/index.json',{signal:controller.signal});if(!r.ok)throw Error();const v=await r.json();if(!valid(v))throw Error();index=v;return v;}finally{clearTimeout(timer);pending=null;}
+    })();return pending;
+  }
+  return {load,dates,valid};
+})();

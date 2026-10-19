@@ -32,6 +32,7 @@
       el('h2','全部已收录任职与称号'),el('p','按原卷逐条保留；同一任期可能在两卷重复收录，不能相加计算时长。仅有年度精度时不补月日，起讫窗口和异说沿用原卷。'),P.appointments(index,p),P.years(index,p),el('h2','跨卷身份依据'));
     p.profiles.forEach(profile=>{const box=el('section',null,'identity-basis');box.append(el('h3',P.profileLabel(index,profile)),el('p',profile.editorNote));main.append(box);});
     main.append(P.evidence(index,p.profiles.flatMap(p=>p.evidence)),el('p',index.method,'identity-fineprint'));
+    window.FastiSearchTarget?.globalPerson(id,main);
     const distinct=index.distinct.filter(d=>d.profiles.some(r=>p.profiles.some(profile=>profile.period===r.period&&profile.person===r.person)));
     if(distinct.length)main.append(el('h2','同名人物辨识'));
     distinct.forEach(d=>{const box=el('section',null,'identity-distinct');box.append(el('p',d.editorNote));d.profiles.forEach(r=>box.append(P.link(P.profileLabel(index,r)+' · '+r.zh+' ↗',r.url)));box.append(P.evidence(index,d.evidence));main.append(box);});

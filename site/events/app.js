@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const main=document.querySelector('#content'), E=window.FastiSearch;
-  let index,pending,version=0;
+  let index,version=0;
   let hide=false;try{hide=localStorage.getItem('fasti-search-hide-snippets')==='true'||localStorage.getItem('fasti-spoiler-v2')==='true';}catch{}
   const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n;};
   const link=(text,url)=>{const a=el('a',text);a.href='../'+url;return a;};
@@ -14,27 +14,6 @@
     return range+({'point':'','span':' · 持续过程','window':' · 日期窗口','context':' · 年度归置（非确定发生日）'}[d.extent]||'');
   }
   function tags(e){const box=el('div',null,'event-tags');[index.kinds[e.recordKind],period(e.period),index.certainties[e.date.certainty],...e.topics.map(t=>index.topics[t])].forEach(t=>box.append(el('span',t,'event-tag')));return box;}
-  function valid(v){
-    const text=s=>typeof s==='string'&&s.length>0,year=y=>Number.isSafeInteger(y)&&y!==0;
-    const kinds=['event','annual-summary','background','tradition'];
-    return v?.schemaVersion===1&&text(v.version)&&Array.isArray(v.periods)&&v.periods.length===5&&v.kinds&&v.topics&&v.certainties&&v.entries&&v.places&&v.aliases&&v.byYear&&v.byPerson&&v.byPlace
-      &&Object.entries(v.entries).length>0&&Object.entries(v.entries).every(([id,e])=>e?.id===id&&text(e.title)&&text(e.text)&&kinds.includes(e.recordKind)&&v.periods.some(p=>p.id===e.period)&&/^events\/#event=/.test(e.url)
-      &&e.date&&text(e.date.note)&&['point','span','window','context','undated'].includes(e.date.extent)&&v.certainties[e.date.certainty]&&Array.isArray(e.date.qualifiers)
-      &&(e.date.extent==='undated'?e.date.start===null&&e.date.end===null:year(e.date.start?.year)&&year(e.date.end?.year))
-      &&Array.isArray(e.topics)&&e.topics.every(t=>v.topics[t])&&Array.isArray(e.people)&&e.people.every(p=>text(p.label)&&text(p.role)&&text(p.basis)&&/^(kingdom|republic|empire|divided-empire|byzantine)\/#person=/.test(p.url))
-      &&Array.isArray(e.places)&&e.places.every(p=>v.places[p])&&Array.isArray(e.relations)&&e.relations.every(r=>v.entries[r.event]&&['part-of','expands'].includes(r.type))
-      &&Array.isArray(e.years)&&e.years.every(r=>year(r.year)&&/^(kingdom|republic|empire|divided-empire|byzantine)\/#year=/.test(r.url))
-      &&Array.isArray(e.origins)&&e.origins.every(o=>/^(kingdom|republic|empire|divided-empire|byzantine)\/#(?:year|person)=/.test(o.url))
-      &&Array.isArray(e.spans)&&e.spans.every(s=>Array.isArray(s)&&s.length===2&&s.every(year)&&s[0]<=s[1])
-      &&Array.isArray(e.references)&&e.references.length&&e.references.every(r=>text(r.label)&&/^https:\/\//.test(r.url)&&text(r.locator)&&text(r.claim)&&['direct','indirect','inherited'].includes(r.consultation)))
-      &&Object.values(v.aliases).every(a=>v.entries[a.target]);
-  }
-  async function load(){
-    if(index)return index;
-    if(!pending)pending=(async()=>{const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);
-      try {const r=await fetch('../data/events/index.json',{signal:controller.signal});if(!r.ok)throw Error();const v=await r.json();if(!valid(v))throw Error();index=v;return v;}finally{clearTimeout(timer);pending=null;}
-    })();return pending;
-  }
   function citations(refs){
     const list=el('ol',null,'event-citations');
     refs.forEach(r=>{const item=el('li'),a=el('a',r.label+' ↗');a.href=r.url;a.target='_blank';a.rel='noopener';
@@ -72,7 +51,7 @@
     const pageCount=Math.max(1,Math.ceil(rows.length/36)),page=Math.min(pageCount,Math.max(1,Number(params.get('page'))||1));
     const status=el('p',unknown.length||invalid?'筛选条件无法识别，请清空后重选。':badYears?'年份范围无效：请使用前753年至1453年之间的非零整数，起年不得晚于止年。':parsed?.error||`找到 ${rows.length} / ${Object.keys(index.entries).length} 个独立对象 · 第 ${page} / ${pageCount} 页${rows.length?'':'。可尝试其他名称或放宽筛选。'}`,'event-status');status.id='event-status';status.setAttribute('role','status');main.append(status);
     if(parsed?.ambiguous)main.append(el('p','裸数字同时查找公元与公元前；结果日期分别标明纪元。','event-note'));
-    if(params.get('place')&&index.places[params.get('place')]){const p=index.places[params.get('place')];main.append(el('h2',p.label),el('p',p.note,'event-note'),citations(p.references));}
+    if(params.get('place')&&index.places[params.get('place')]){const p=index.places[params.get('place')];main.append(el('h2',p.label),link('地点档案与相关年度 ↗','places/'+hash({place:p.id})),el('p',p.note,'event-note'),citations(p.references));}
     const privacy=el('label'),check=el('input');check.type='checkbox';check.id='event-hide';check.checked=hide;privacy.append(check,' 隐藏内容摘要');main.append(privacy);
     const grid=el('div',null,'event-results');rows.slice((page-1)*36,page*36).forEach(e=>grid.append(card(e)));main.append(grid);
     check.onchange=()=>{hide=check.checked;try{localStorage.setItem('fasti-search-hide-snippets',String(hide));}catch{}grid.replaceChildren(...rows.slice((page-1)*36,page*36).map(card));};
@@ -90,14 +69,15 @@
     if(hide){const b=el('button','展开事件正文');b.onclick=()=>{text.textContent=e.text;text.className='event-text';b.remove();};article.append(b);}
     const objectSection=(title)=>{const s=el('section');s.append(el('h2',title));article.append(s);return s;};
     const relates=objectSection('关联对象');const ul=el('ul',null,'event-relations');
-    e.people.forEach(p=>{const li=el('li');li.append(link(p.label+' ↗',p.url),el('p',({'participant':'直接参与','subject':'事件主体','mentioned':'原文关联，未判定直接参与'}[p.role])+' · 依据：'+p.basis,'event-note'));ul.append(li);});
-    e.places.forEach(p=>{const li=el('li');li.append(link(index.places[p].label+' · 反查相关记事 ↗','events/'+hash({place:p})));ul.append(li);});
+    const edgeEvidence=(li,p)=>{const d=el('details');d.append(el('summary','关系依据与沿用出处'));if(p.evidence.quote)d.append(el('blockquote',p.evidence.quote));const source=el('a','编订资料：'+p.evidence.entry+' ↗');source.href='https://github.com/kaloioannes/roman-fasti/blob/main/'+p.evidence.source;source.target='_blank';source.rel='noopener';d.append(el('p',p.evidence.note,'event-note'),source,citations(p.references));li.append(d);};
+    e.people.forEach(p=>{const li=el('li');li.dataset.person=p.period+':'+p.person;li.append(link(p.label+' ↗',p.url),el('p',({'participant':'直接参与','subject':'事件主体','mentioned':'仅被提及，未判定直接参与'}[p.role])+' · 依据：'+p.basis,'event-note'));if(p.globalUrl)li.append(link('本人的跨卷总档案 ↗',p.globalUrl));edgeEvidence(li,p);ul.append(li);});
+    e.placeRelations.forEach(p=>{const li=el('li');li.dataset.place=p.place;li.append(link(p.label+' · 地点档案与相关年度 ↗',p.url),el('p',({'setting':'发生／行动地点','subject':'事件对象地点','mentioned':'仅被提及'}[p.role])+' · '+p.basis,'event-note'));edgeEvidence(li,p);ul.append(li);});
     const relationships=[...e.relations.map(r=>({id:r.event,label:r.type==='part-of'?'所属过程':'原年度摘要'})),...Object.values(index.entries).flatMap(other=>other.relations.filter(r=>r.event===id).map(r=>({id:other.id,label:r.type==='part-of'?'子事件':'由此细分'})))];
     [...new Map(relationships.map(r=>[r.id,r])).values()].forEach(r=>{const li=el('li');li.append(link(r.label+'：'+index.entries[r.id].title+' ↗',index.entries[r.id].url));ul.append(li);});
     relates.append(ul);if(!ul.children.length)relates.append(el('p','尚未编订明确的人物、地点或事件关联；不会从在位期间或正文提名自动推断。','event-note'));
     const origins=objectSection('年度入口与原卷记录'),years=el('ul',null,'event-year-links');e.origins.forEach(o=>{const li=el('li');li.append(link('原卷原条：'+period(o.period)+' ↗',o.url));years.append(li);});
     e.years.forEach(y=>{const li=el('li');li.append(link(E.when(y.year)+' · '+period(y.period)+' ↗',y.url));years.append(li);});origins.append(years);if(!years.children.length)origins.append(el('p','绝对年代未定；仅保留原卷人物／传统叙事入口。'));
-    const sources=objectSection('出处与查阅状态');sources.append(citations(e.references));
+    const sources=objectSection('出处与查阅状态');sources.id='event-sources';sources.append(citations(e.references));
     const cite=objectSection('引用此对象'),canonical=new URL('../'+e.url,location.href).href,now=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
     const citation=`${e.title}（${index.kinds[e.recordKind]}），FASTI · 罗马历史纪年，稳定ID ${e.id}，资料版本 ${index.version}，${canonical}，访问日期 ${now}。数据许可：${index.license}；原始文献及译本版权归各权利人。`;
     const area=el('textarea',null,'event-citation-text');area.id='event-citation';area.readOnly=true;area.value=citation;area.setAttribute('aria-label','可复制的规范引用');cite.append(area);
@@ -106,7 +86,7 @@
     const download=el('button','下载此对象 JSON');download.onclick=()=>{const blob=new Blob([JSON.stringify({version:index.version,license:index.license,event:e,places:Object.fromEntries(e.places.map(p=>[p,index.places[p]]))},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=e.id.replace(':','-')+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};actions.append(download);cite.append(actions,notice);
   }
   async function route(){const current=++version;main.setAttribute('aria-busy','true');main.replaceChildren(el('p','正在查阅事件档案……','event-status'));
-    try{await load();if(current!==version)return;main.replaceChildren();const p=new URLSearchParams(location.hash.slice(1));if(p.has('event')){const old=p.get('event'),alias=index.aliases[old];if(alias){history.replaceState(null,'',hash({event:alias.target}));detail(alias.target);main.prepend(el('p','此旧ID已迁移：'+alias.reason,'event-note'));}else detail(old);}else directory(p);main.focus({preventScroll:true});window.scrollTo(0,0);}
+    try{index=await window.FastiEventData.load();if(current!==version)return;main.replaceChildren();const p=new URLSearchParams(location.hash.slice(1));if(p.has('event')){const old=p.get('event'),alias=index.aliases[old];if(alias){history.replaceState(null,'',hash({event:alias.target}));detail(alias.target);main.prepend(el('p','此旧ID已迁移：'+alias.reason,'event-note'));}else detail(old);}else directory(p);main.focus({preventScroll:true});window.scrollTo(0,0);}
     catch{if(current===version){main.replaceChildren(el('h1','事件档案暂时无法载入'),el('p','网络、超时或资料格式异常。请重试；各卷原档案仍可独立阅读。'));const b=el('button','重新载入事件档案');b.id='retry-events';b.onclick=route;main.append(b);}}
     finally{if(current===version){main.dataset.renderedHash=location.hash;main.setAttribute('aria-busy','false');}}
   }

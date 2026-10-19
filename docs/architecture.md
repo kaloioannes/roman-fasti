@@ -114,3 +114,8 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 ## 官职与帝号时间轴
 
 `build_timeline.py` 将五卷已收录任职、帝号阶段与明确空缺投影为 `data/timeline/index.json`，`data-source/timeline/editorial.json` 只维护专题入口及有源文本依据的实权提示。`timeline/` 支持分轨图形、手机等价列表、范围与筛选、缩放、详情和分享；原卷年度与人物入口均为直接链接，不依赖此投影加载成功。发布日期指纹、全量保留／精度校验和根路径／Pages浏览器回归纳入现有流程。不修改源schema，不自动合并跨卷人物或推断宫廷及实权；详见[时间轴说明](timeline.md)。
+
+
+## 人物、事件与地点互链
+
+`data-source/events/links.json`维护逐项文本依据、角色和引用，`event_links.py`在统一事件构建中严格校验；原卷数据不迁移。`places/`与`events/`共用`shared/event-data.js`加载完整事件文字，原卷及跨卷人物页通过小型可选导航反查关系。地点搜索、反向年度、跨卷聚合及失败恢复均使用显式ID，不从正文提名或任期建立关系。完整约定见[互链说明](event-links.md)。

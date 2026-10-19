@@ -1,0 +1,2528 @@
+{
+  "kingdom:foundation": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "romulus",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.6—7；狄奥尼修斯1.74—75；罗马文明博物馆起源展厅",
+        "quote": "罗慕路斯与雷穆斯争夺建城地点及王权；雷穆斯死亡，罗慕路斯成为新城之王。前753年是本库采用的通行建城纪元，古代另有多种算法；4月21日是传统纪念日，不能作为考古确定的施工日期。帕拉蒂努斯山至少前9世纪已有居民，建城纪元也不表示此地首次有人居住。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "subject",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "罗马建城",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "kingdom:republic": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "tarquinius-superbus",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.60、2.1—8；狄奥尼修斯1.74—75、4.84—85",
+        "quote": "罗马拒绝末王入城，布鲁图斯与科拉提努斯被立为首任执政官。前509年是与共和国篇共用的交界年；朱庇特神庙的奉献属共和国初年叙事，不能倒写为末王已完成奉献。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "罗马拒绝末王入城",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "kingdom:romulus-wars": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "romulus",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.14—15",
+        "quote": "李维叙述费德奈因罗马增长而进攻，继而维伊参战，最终求和。传统中的百年休战不是已获独立证实的国际条约日期。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "veii",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "维伊参战",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "kingdom:tatius-death": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "romulus",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.14；普鲁塔克《罗慕路斯传》23",
+        "quote": "塔提乌斯袒护侵害使者的亲族，在拉维尼乌姆祭祀时被杀。罗慕路斯未为之开战，此后独掌王权；不将此事硬定为前748年等近代推算值。",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "kingdom",
+        "person": "titus-tatius",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.14；普鲁塔克《罗慕路斯传》23",
+        "quote": "塔提乌斯袒护侵害使者的亲族，在拉维尼乌姆祭祀时被杀。罗慕路斯未为之开战，此后独掌王权；不将此事硬定为前748年等近代推算值。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "lavinium",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在拉维尼乌姆祭祀时被杀",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "kingdom:alba-destruction": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "tullus-hostilius",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.29—30",
+        "quote": "传统说阿尔巴居民迁入罗马，部分贵族进入元老院，卡埃利乌斯山得到扩充，库里亚·霍斯提利亚建成。这里不将阿尔巴毁城机械标为某一前7世纪年份。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "alba-longa",
+        "role": "subject",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "阿尔巴被毁",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "kingdom:ostia-foundation": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "ancus-marcius",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.33；奥斯蒂亚考古公园遗址说明",
+        "quote": "李维将奥斯蒂亚及河口盐场归于安库斯；考古公园把王政建城说视为传说，现存古城最早遗迹属前4世纪后半叶。相关更早河口活动与后来的殖民城需要分开讨论。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "ostia",
+        "role": "subject",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "奥斯蒂亚及河口盐场",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "kingdom:diana": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "servius-tullius",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.45",
+        "quote": "塞尔维乌斯劝说拉丁人共同在罗马建立狄安娜神庙，传统借此表现罗马的宗教中心地位及对拉丁人的影响。神牛与祭祀优先权的故事不能作为外交日期的证据。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在罗马建立狄安娜神庙",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "kingdom:tyranny": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "kingdom",
+        "person": "tarquinius-superbus",
+        "role": "mentioned",
+        "basis": "沿用PR06及原卷显式人物关联：李维1.49",
+        "quote": "末王被描绘为不经元老和人民合法认可，以卫队、审判与清洗控制罗马。李维的政治道德判断需要与关于王政实际制度的证据区别阅读。",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "控制罗马",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc509-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pc9e4793678",
+        "role": "subject",
+        "basis": "原卷记载布鲁图斯阵亡，作为事件对象；不是其完成年度摘要内所有行动的证据。",
+        "quote": "布鲁图斯阵亡",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "所引奉献行为位于罗马城内卡庇托山；不将摘要中的阿尔西亚森林战斗也归于罗马城内。",
+        "quote": "卡庇托山的朱庇特神庙也在这一年奉献",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc396-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p3d34a06014",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "卡米卢斯以独裁官身份指挥",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "veii",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "维爱在长期围困",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc390-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p3d34a06014",
+        "role": "participant",
+        "basis": "原卷保存卡米卢斯救城的传统叙事；按叙事关联，不将其改写成已有独立确证的行动。",
+        "quote": "卡米卢斯救城",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "高卢洗劫罗马",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc390-2": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p3d34a06014",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "卡米卢斯以宗教、祖先与城市身份反对",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "veii",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "迁往已经征服的维爱",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc312-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe0586294af",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿庇乌斯·克劳狄乌斯推动",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc312-2": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe0586294af",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿庇乌斯·克劳狄乌斯命名",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc202-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p13f1e1ef57",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "西庇阿与马西尼萨在扎马击败汉尼拔",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "zama",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在扎马击败",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc133-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p93168b1df2",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "西庇阿迫使努曼提亚投降",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc107-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pbe947c6166",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "努米底亚指挥权交给马略",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc88-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pcd7ee34a94",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "苏拉遂率军进入罗马",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "pbe947c6166",
+        "role": "subject",
+        "basis": "指挥权转交马略是记事所述对象，不据此说他本人率领苏拉军队进入罗马。",
+        "quote": "指挥权转交马略",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "进入罗马",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc63-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe72e7aae32",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "西塞罗揭露喀提林阴谋",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "pe9d1a9956a",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "恺撒当选最高祭司",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "p44e2e3955e",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "庞培攻入耶路撒冷",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc63-2": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe9d1a9956a",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "恺撒提出其他处置",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "pe72e7aae32",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "使西塞罗获救国声望",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc49-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe9d1a9956a",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "恺撒越过卢比孔河",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "p44e2e3955e",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "庞培与执政官撤往希腊",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rubicon",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "越过卢比孔河",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc49-2": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe9d1a9956a",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "恺撒在伊莱尔达迫降庞培部将",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc44-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe9d1a9956a",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "恺撒获得终身独裁官称号",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "p650c0820df",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "安东尼的葬礼演说",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "p6faf564142",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "继承人屋大维进入政治",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc44-2": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p6faf564142",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "恺撒的遗嘱收养屋大维",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "pe9d1a9956a",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "恺撒的遗嘱收养屋大维",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc43-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p6faf564142",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "屋大维转而与安东尼",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "p650c0820df",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "屋大维转而与安东尼",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc43-2": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "pe72e7aae32",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "西塞罗以《腓力辞》攻击安东尼",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "p650c0820df",
+        "role": "subject",
+        "basis": "安东尼是《腓力辞》攻击的对象；本条不据此断言其本人执行了摘要后段的杀害行为。",
+        "quote": "西塞罗以《腓力辞》攻击安东尼",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc31-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p6faf564142",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "屋大维在亚克兴与其对峙",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "republic",
+        "person": "p650c0820df",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "安东尼与克娄巴特拉撤往埃及",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "actium",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "亚克兴与其对峙",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "republic:rep-bc27-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p6faf564142",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "屋大维宣布将权力交还",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "republic:rep-bc27-2": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "republic",
+        "person": "p6faf564142",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "奥古斯都则保留需要大量驻军的关键地区",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "empire:emp-bc27-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "augustus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "屋大维宣称把非常权力交还",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "empire:emp-ad14-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "augustus",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "奥古斯都在诺拉去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "tiberius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "提比略接掌政权",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "nola",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在诺拉去世",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad64-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "nero",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "尼禄组织救济并推行重建",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "罗马大火",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad69-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "galba",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "加尔巴被奥托夺位",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "otho",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "奥托又败于维特里乌斯军",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "vitellius",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "维特里乌斯被杀",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "vespasian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "东方军队拥立维斯帕先",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "地点依据原记事标题及行动语境编订；卡庇托尔为罗马城内地点，米兰为原标题所用协议名称，不能据名称断言全部后续行动发生于此。",
+        "quote": "卡庇托尔遭焚毁",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad79-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "titus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "提图斯继位后不久",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "vespasian",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "维斯帕先去世",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "pompeii",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "摧毁庞贝",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad98-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "nerva",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "涅尔瓦去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "trajan",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "图拉真在北方军区接掌帝位",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "empire:emp-ad117-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "trajan",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "图拉真去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "hadrian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "哈德良接掌帝位",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "empire:emp-ad212-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "caracalla",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "卡拉卡拉向帝国绝大多数自由居民授予罗马公民权",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "empire:emp-ad238-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "gordian-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "戈尔迪安一世与二世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "gordian-ii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "戈尔迪安一世与二世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "pupienus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "普皮埃努斯与巴尔比努斯",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "balbinus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "普皮埃努斯与巴尔比努斯",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "maximinus-thrax",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "马克西米努斯围攻阿奎莱亚时被杀",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "gordian-iii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "戈尔迪安三世最终在位",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "empire:emp-ad284-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "numerian",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "努梅里安已死",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "diocletian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "戴克里先在尼科米底亚附近获拥立",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "carinus",
+        "role": "mentioned",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "卡里努斯仍在西方统治",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "nicomedia",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "尼科米底亚附近",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad293-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "constantius-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦提乌斯与伽列里乌斯受封恺撒",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "galerius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦提乌斯与伽列里乌斯受封恺撒",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "maximian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "辅佐马克西米安和戴克里先",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "diocletian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "辅佐马克西米安和戴克里先",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "empire:emp-ad306-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "constantius-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦提乌斯死于约克",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "constantine-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "军队拥立君士坦丁",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "galerius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "伽列里乌斯只承认其为恺撒",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "maxentius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "罗马则拥立马克森提乌斯",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "maximian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "马克西米安复出",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "york",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "死于约克",
+        "references": [
+          0
+        ]
+      },
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "罗马则拥立",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad312-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "constantine-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦丁攻入意大利",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "maxentius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "击败马克森提乌斯",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "milvian-bridge",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "米尔维安桥之战",
+        "references": [
+          0
+        ]
+      },
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "罗马附近",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad313-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "constantine-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦丁、李锡尼会晤",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "licinius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "李锡尼击败戴亚",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "maximinus-daia",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "李锡尼击败戴亚",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "milan",
+        "role": "mentioned",
+        "basis": "地点依据原记事标题及行动语境编订；卡庇托尔为罗马城内地点，米兰为原标题所用协议名称，不能据名称断言全部后续行动发生于此。",
+        "quote": "米兰协议",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad324-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "constantine-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦丁在阿德里安堡",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "licinius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "李锡尼任命的共帝",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "martinian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "马提尼安也失败",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "adrianople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在阿德里安堡",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad378-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "valens",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "瓦伦斯未等格拉提安主力到达即交战",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "gratian",
+        "role": "mentioned",
+        "basis": "原文明确未等其主力到达；这里只作被提及人物，不将其标为此役直接参战者。",
+        "quote": "未等格拉提安主力到达",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "adrianople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "阿德里安堡惨败",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad395-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "empire",
+        "person": "theodosius-i",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "狄奥多西在米兰去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "arcadius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿尔卡狄乌斯管理东方",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "empire",
+        "person": "honorius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "霍诺里乌斯管理西方",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "milan",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在米兰去世",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad325-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "nicaea",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "尼西亚会议",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad330-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "君士坦丁堡奉献",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-395-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "theodosius-i",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "狄奥多西一世在米兰去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "arcadius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿卡狄乌斯与霍诺里乌斯分别掌握",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "honorius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿卡狄乌斯与霍诺里乌斯分别掌握",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "milan",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在米兰去世",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-402-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "honorius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "霍诺里乌斯的宫廷",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "ravenna",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "转向拉文纳",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-402-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "theodosius-ii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "狄奥多西二世于1月获帝号",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "arcadius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "与父亲阿卡狄乌斯共治",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "divided-empire:divided-408-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "arcadius",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿卡狄乌斯去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "theodosius-ii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "狄奥多西二世成为东方主帝",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "divided-empire:divided-425-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "johannes",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "约翰尼斯被俘处死",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "valentinian-iii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "瓦伦提尼安在罗马取得奥古斯都称号",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "ravenna",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "攻取拉文纳",
+        "references": [
+          0
+        ]
+      },
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在罗马取得",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-451-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "marcian",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "马尔基安与普尔刻里娅支持会议",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "chalcedon",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "迦克墩会议",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-455-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "valentinian-iii",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "瓦伦提尼安三世3月遇刺",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "petronius-maximus",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "马克西穆斯5月被杀",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "avitus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿维图斯7月在高卢称帝",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "劫掠罗马",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-474-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "leo-i",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "利奥一世1月去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "leo-ii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "利奥二世继承资深帝位",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "zeno",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "提升父亲芝诺为共帝",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "divided-empire:divided-474-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "julius-nepos",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "尼波斯进入意大利",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "glycerius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "格利凯里乌斯被在波尔图",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "divided-empire:divided-475-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "zeno",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "芝诺与阿里阿德涅前往伊苏里亚",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "basiliscus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "巴西利斯库斯另建宫廷",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "divided-empire:divided-475-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "julius-nepos",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "尼波斯8月逃往达尔马提亚",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "romulus-augustus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "立罗慕路斯·奥古斯都",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "dalmatia",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "逃往达尔马提亚",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-476-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "zeno",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "支持芝诺",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "basiliscus",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "巴西利斯库斯、皇后与儿子遭流放",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "重返君士坦丁堡",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-476-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "divided-empire",
+        "person": "romulus-augustus",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "罗慕路斯被废",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "zeno",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "芝诺仍承认",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "divided-empire",
+        "person": "julius-nepos",
+        "role": "subject",
+        "basis": "尼波斯是芝诺继续承认的西部帝号持有者，不据此说他参与废黜意大利宫廷皇帝。",
+        "quote": "达尔马提亚的尼波斯",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "dalmatia",
+        "role": "mentioned",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "达尔马提亚的尼波斯",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-395-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "君士坦丁堡城外",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-408-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "抵达罗马",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-410-01": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "rome",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "进入罗马并劫掠",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "divided-empire:divided-425-02": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "君士坦丁堡设立",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-476-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "zeno",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "芝诺在同年恢复首都",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "byzantine:byz-610-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "heraclius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "希拉克略率舰队到达君士坦丁堡",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "phocas",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "福卡斯被推翻",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "到达君士坦丁堡",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-622-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "heraclius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "希拉克略展开反攻",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "byzantine:byz-626-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "heraclius",
+        "role": "mentioned",
+        "basis": "原文明确说本人仍在外线作战；不能把他列为首都守城的直接参与者。",
+        "quote": "希拉克略本人仍在外线作战",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷的首都语境指君士坦丁堡；只关联首都所述行动，不把同条摘要中的其他战场或外线活动移至城内。",
+        "quote": "首都守军和海军",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-641-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "heraclius",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "希拉克略去世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "constantine-iii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦丁三世",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "heraklonas",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "希拉克洛纳斯",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "constans-ii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦斯二世先后或同时取得皇权",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "byzantine:byz-717-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "leo-iii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "利奥三世接掌首都",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷的首都语境指君士坦丁堡；只关联首都所述行动，不把同条摘要中的其他战场或外线活动移至城内。",
+        "quote": "利奥三世接掌首都",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-800-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "irene",
+        "role": "mentioned",
+        "basis": "原卷提及伊琳娜政府面对西方皇号的背景；不将她列为查理曼加冕的直接参与者。",
+        "quote": "伊琳娜政府",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "mentioned",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "与君士坦丁堡竞争",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-945-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "constantine-vii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦丁七世推翻",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "stephen-lekapenos",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "斯蒂芬与君士坦丁·勒卡佩诺斯",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "constantine-lekapenos",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "斯蒂芬与君士坦丁·勒卡佩诺斯",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "romanos-ii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "立子罗曼努斯为共帝",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "byzantine:byz-1042-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "michael-v",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "米海尔五世放逐佐伊",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "zoe",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "姐妹共同执政数周",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "theodora",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "姐妹共同执政数周",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "constantine-ix",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "君士坦丁九世成为主帝",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": []
+  },
+  "byzantine:byz-1071-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "romanos-iv",
+        "role": "subject",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "罗曼努斯在曼齐刻尔特战败被俘",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "manzikert",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在曼齐刻尔特战败被俘",
+        "references": [
+          0
+        ]
+      },
+      {
+        "place": "bari",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "诺曼人取得巴里",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-1081-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "alexios-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿莱克修斯即位",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷的首都语境指君士坦丁堡；只关联首都所述行动，不把同条摘要中的其他战场或外线活动移至城内。",
+        "quote": "兄弟进入首都",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-1204-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "alexios-v",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "阿莱克修斯五世取代",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "君士坦丁堡被洗劫",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-1208-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "theodore-i",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "狄奥多尔接受正式加冕",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "nicaea",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "尼西亚建立新的",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-1261-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "michael-viii",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "米海尔入都",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "john-iv",
+        "role": "subject",
+        "basis": "原卷记载约翰四世遭弄瞎；只关联这一处境，不把他列为夺回首都的行动者。",
+        "quote": "约翰四世遭弄瞎",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "夺回君士坦丁堡",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-1347-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "john-vi",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "约翰六世为资深皇帝",
+        "references": [
+          0
+        ]
+      },
+      {
+        "period": "byzantine",
+        "person": "john-v",
+        "role": "participant",
+        "basis": "原卷记事明确载此人物的行动／处境；只关联本段所述事项，不扩展为摘要内全部行动。",
+        "quote": "约翰五世为共帝",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "黑死病进入君士坦丁堡",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-1453-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "constantine-xi",
+        "role": "subject",
+        "basis": "原卷明确记载最后战斗中死亡；作为事件对象，不增补其个人战斗细节。",
+        "quote": "君士坦丁十一世死于最后战斗",
+        "references": [
+          0
+        ]
+      }
+    ],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "君士坦丁堡陷落",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-532-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷的首都语境指君士坦丁堡；只关联首都所述行动，不把同条摘要中的其他战场或外线活动移至城内。",
+        "quote": "首都尼卡暴动",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-537-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "constantinople",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在君士坦丁堡举行",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-541-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "pelusium",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "埃及佩卢西乌姆一带",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-1014-1": {
+    "note": "依据本卷已收录记事及沿用引用人工编订；本PR核对仓库文本与身份，不声称重新直接核读外部文献。年度摘要中的多项行动仍保留原类型。",
+    "people": [],
+    "places": [
+      {
+        "place": "kleidion",
+        "role": "setting",
+        "basis": "原卷记事在该地点叙述行动；只关联所引片段，不表示整条摘要均发生于此。",
+        "quote": "在克雷迪昂击败",
+        "references": [
+          0
+        ]
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import urlencode, urlsplit
+from event_links import apply_links
 
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = {'event': '独立事件', 'annual-summary': '年度摘要', 'background': '跨年背景', 'tradition': '传统叙事'}
@@ -93,6 +94,11 @@ def compile_events():
         entries[event['id']] = copy.deepcopy(event)
     require(len(entries) == len(seen) + len(additions), 'Duplicate authored event IDs')
     for id, e in entries.items():
+        for r in e['people']:
+            require(r['period'] in volumes and r['person'] in volumes[r['period']]['people'], f'Broken event person: {id}')
+        require(all(p in places for p in e['places']), f'Broken event place: {id}')
+    apply_links(entries, places, volumes, read, require, check_reference)
+    for id, e in entries.items():
         require(bool(re.fullmatch(r'[a-z][a-z0-9-]*:[a-z0-9-]+', id)), f'Invalid event ID: {id}')
         require(e['period'] in volumes and e['recordKind'] in KINDS and e['title'] and e['text'], f'Invalid event: {id}')
         check_date(e['date'])
@@ -122,7 +128,8 @@ def compile_events():
         for r in entries[id]['relations']: visit(r['event'], stack | {id})
     for id in entries: visit(id, set())
     for key, p in places.items():
-        require(key == p['id'] and p['label'] and isinstance(p['aliases'], list) and p['note'] and p['references'], f'Invalid place: {key}')
+        require(bool(re.fullmatch(r'[a-z][a-z0-9-]*', key)) and key == p['id'] and p['label'] and isinstance(p['aliases'], list)
+                and all(isinstance(a, str) and a.strip() for a in p['aliases']) and p['note'] and p['references'], f'Invalid place: {key}')
         for ref in p['references']: check_reference(ref)
     for old, alias in aliases.items():
         require(bool(re.fullmatch(r'[a-z][a-z0-9-]*:[a-z0-9-]+', old)) and old not in entries and alias['target'] in entries and old != alias['target'] and alias['reason'] and alias['references'], f'Invalid event alias: {old}')
@@ -132,19 +139,34 @@ def compile_events():
         for r in e['years']: by_year.setdefault(f'{r["period"]}:{r["year"]}', []).append(key)
         for r in e['people']: by_person.setdefault(f'{r["period"]}:{r["person"]}', []).append(key)
         for p in e['places']: by_place[p].append(key)
+    identities = read('data/people/index.json')
+    by_global_person = {}
+    for key, person in identities['people'].items():
+        ids = {id for p in person['profiles'] for id in by_person.get(p['period']+':'+p['person'], [])}
+        by_global_person[key] = [id for id in entries if id in ids]
+    for e in entries.values():
+        for p in e['people']:
+            identity = identities['lookup'].get(p['period']+':'+p['person'])
+            if identity:
+                p['globalId'] = identity
+                p['globalUrl'] = identities['people'][identity]['url']
     digest = hashlib.sha256(json.dumps([entries, places, aliases], ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()[:12]
     return dict(schemaVersion=1, version='events-v1-'+digest, license='CC BY-SA 4.0', periods=periods, kinds=KINDS, topics=TOPICS,
                 certainties=CERTAINTIES, entries=entries, places=places, aliases=aliases,
-                byYear=by_year, byPerson=by_person, byPlace=by_place)
+                byYear=by_year, byPerson=by_person, byPlace=by_place, byGlobalPerson=by_global_person)
 
 
 def navigation(index):
     # Small optional link projection for original annual/person pages. Full text
     # remains independently readable when this projection fails.
-    selected = {k:e for k,e in index['entries'].items() if e['recordKind'] == 'event' and (not e['origins'] or e['date']['extent'] == 'window')}
-    return dict(schemaVersion=1, entries={k:{f:e[f] for f in ('title','url','recordKind')} for k,e in selected.items()},
+    selected = {k:e for k,e in index['entries'].items() if e['people'] or e['places'] or (e['recordKind'] == 'event' and (not e['origins'] or e['date']['extent'] == 'window'))}
+    def edge(row):
+        return {k:v for k,v in row.items() if k not in {'references', 'evidence'}}
+    return dict(schemaVersion=1, entries={k:dict(title=e['title'],url=e['url'],recordKind=e['recordKind'],
+                    people=[edge(r) for r in e['people']],placeRelations=[edge(r) for r in e['placeRelations']]) for k,e in selected.items()},
                 byYear={k:[id for id in v if id in selected] for k,v in index['byYear'].items() if any(id in selected for id in v)},
-                byPerson={k:[id for id in v if id in selected] for k,v in index['byPerson'].items() if any(id in selected for id in v)})
+                byPerson={k:[id for id in v if id in selected] for k,v in index['byPerson'].items() if any(id in selected for id in v)},
+                byGlobalPerson=index['byGlobalPerson'])
 
 
 def write_events():

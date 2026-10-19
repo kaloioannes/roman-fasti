@@ -72,6 +72,17 @@ def compile_index():
         entries.append(dict(id=f'{event["period"]}:event:{eid.split(":",1)[1]}', period=event['period'], kind='event',
                             title=event['title'], names=names, text=event['text'], spans=event['spans'], url=event['url'],
                             note=event_index['kinds'][event['recordKind']]+' · '+event['date']['note']))
+    for place_id, place in event_index['places'].items():
+        related = [event_index['entries'][id] for id in event_index['byPlace'][place_id]]
+        for period in periods:
+            rows = [e for e in related if e['period'] == period['id']]
+            if not rows:
+                continue
+            entries.append(dict(id=f'{period["id"]}:place:{place_id}',period=period['id'],kind='place',
+                                title=place['label'],names=place['aliases'],text=place['note'],
+                                spans=[list(s) for s in sorted({tuple(s) for e in rows for s in e['spans']})],
+                                url='places/#'+urlencode(dict(place=place_id)),
+                                note=f'{period["title"]} · {len(rows)}条明确关联记事；同一地点跨卷共用档案'))
     for story in read('data/republic/stories.json'):
         spans = [[-story['start'], -story['chapters'][-1]['year']]]
         add_story = dict(story=story['id'], year=story['start'])

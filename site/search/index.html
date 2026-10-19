@@ -12,14 +12,14 @@
 </head>
 <body class="search-page">
   <a class="search-skip" href="#search-input">跳至搜索</a>
-  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马历史纪年</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button" href="../">全部时期</a><a class="text-button" href="../people/">跨卷人物</a><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button><a class="text-button" href="../events/">事件档案</a></nav></header>
+  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马历史纪年</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button" href="../">全部时期</a><a class="text-button" href="../people/">跨卷人物</a><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button><a class="text-button" href="../events/">事件档案</a><a class="text-button" href="../places/">地点档案</a></nav></header>
   <main class="search-main">
     <div class="search-heading"><p class="eyebrow">INVESTIGARE · 五卷通检</p><h1>从一个名字，<br>走进罗马的某一年。</h1><p>年份、人物、事件、剧本与章节，在这里相遇。</p></div>
     <form id="search-form" role="search" action="./" method="get">
       <label for="search-input">搜索五卷资料</label>
       <div class="global-input"><input id="search-input" name="q" type="search" maxlength="160" placeholder="奥古斯都、芝诺、1204、前44年…" aria-describedby="search-help" autocomplete="off"><button type="submit">搜索 <span aria-hidden="true">↗</span></button></div>
       <p id="search-help">支持中文、拉丁文、希腊文（可不输入重音）。多个词用空格分隔；年份可写“前44年”“44 BCE”“公元1204年”。</p>
-      <div class="search-filters"><label for="period-filter">分卷<select id="period-filter" name="period"><option value="">全部五卷</option></select></label><label for="kind-filter">类型<select id="kind-filter" name="kind"><option value="">全部类型</option><option value="year">年度</option><option value="person">人物</option><option value="event">事件</option><option value="story">剧本</option><option value="chapter">章节</option></select></label><button type="button" id="clear-search">清空条件</button></div>
+      <div class="search-filters"><label for="period-filter">分卷<select id="period-filter" name="period"><option value="">全部五卷</option></select></label><label for="kind-filter">类型<select id="kind-filter" name="kind"><option value="">全部类型</option><option value="year">年度</option><option value="person">人物</option><option value="event">事件</option><option value="place">地点</option><option value="story">剧本</option><option value="chapter">章节</option></select></label><button type="button" id="clear-search">清空条件</button></div>
     </form>
     <nav class="search-examples" aria-label="搜索示例"><span>从这里开始</span><a href="?q=奥古斯都">奥古斯都</a><a href="?q=芝诺">芝诺</a><a href="?q=1204">1204</a><a href="?q=前44年">前44年</a><a href="?q=成文法">成文法</a></nav>
     <p id="search-status" role="status" aria-live="polite" aria-atomic="true">输入名字或年份，搜索五卷已收录的资料。</p>

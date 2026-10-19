@@ -34,6 +34,7 @@
 .event-actions{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
 .event-citation-text{width:100%;min-height:110px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:12px;line-height:1.8;font:inherit;font-size:13px;resize:vertical}
 .event-main :focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.event-main:focus{outline:none}
 .event-disclosure{line-height:1.9;padding:16px;background:var(--surface);border-left:3px solid var(--accent);margin:24px 0}
 .event-hidden{padding:20px;color:var(--muted);border:1px dashed var(--line)}
 @media(max-width:650px){.event-main{padding:24px 18px 50px}.event-results{grid-template-columns:1fr}.event-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.event-tools{padding:16px}.event-main h1{font-size:30px}.event-card{padding:18px}.event-detail>.event-text{font-size:17px}.event-citations{padding-left:18px}}
