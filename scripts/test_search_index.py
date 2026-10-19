@@ -42,6 +42,12 @@ class SearchIndexTests(unittest.TestCase):
                 self.assertLessEqual(a, b)
                 self.assertNotIn(0, [a, b])
             url = urlsplit(e['url'])
+            if e['kind'] == 'place':
+                self.assertEqual(url.path, 'places/')
+                key = parse_qs(url.fragment)['place'][0]
+                self.assertEqual(self.events['places'][key]['label'], e['title'])
+                self.assertTrue(any(self.events['entries'][id]['period'] == pid for id in self.events['byPlace'][key]))
+                continue
             if e['kind'] == 'event':
                 self.assertEqual(url.path, 'events/')
                 key = parse_qs(url.fragment)['event'][0]

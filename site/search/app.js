@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const $ = s => document.querySelector(s), E = window.FastiSearch;
-  const labels = {person:'人物',event:'事件',story:'剧本',chapter:'章节'};
+  const labels = {person:'人物',event:'事件',story:'剧本',chapter:'章节',place:'地点'};
   let index, entries, pending, version=0;
   const limits = new Map();
   function el(tag, text, className) {
@@ -45,7 +45,7 @@
           || !value.periods.every(p=>p&&typeof p.id==='string'&&typeof p.title==='string'&&Number.isInteger(p.start)&&Number.isInteger(p.end))
           || !value.entries.every(e=>e&&typeof e.id==='string'&&typeof e.title==='string'&&typeof e.text==='string'
             && typeof e.note==='string'&&Object.hasOwn(labels,e.kind)&&value.periods.some(p=>p.id===e.period)
-            && typeof e.url==='string'&&(e.kind==='event'?e.url.startsWith('events/#event='):e.url.startsWith(e.period+'/#'))&&Array.isArray(e.names)&&e.names.every(n=>typeof n==='string')
+            && typeof e.url==='string'&&(e.kind==='event'?e.url.startsWith('events/#event='):e.kind==='place'?e.url.startsWith('places/#place='):e.url.startsWith(e.period+'/#'))&&Array.isArray(e.names)&&e.names.every(n=>typeof n==='string')
             && Array.isArray(e.spans)&&e.spans.every(s=>Array.isArray(s)&&s.length===2&&s.every(Number.isInteger))))throw new Error('invalid search index');
         const prepared=E.prepare(value);
         index=value;entries=prepared;

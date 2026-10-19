@@ -6,7 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate.mjs && node scripts/validate-empire.mjs && node scripts/validate-kingdom.mjs && node scripts/validate-byzantine.mjs && node scripts/validate-divided-empire.mjs && npm run validate:structure && npm run test:search && npm run test:people && npm run test:republic-people && npm run test:events && npm run test:timeline",
     "test:biographies": "python scripts/test_republic_biographies.py",
-    "test:ui": "node scripts/test-ui.cjs && node scripts/test-republic-loading.cjs && node scripts/test-search.cjs && npm run test:people-ui && npm run test:republic-people-ui && npm run test:events-ui && npm run test:timeline-ui",
+    "test:ui": "node scripts/test-ui.cjs && node scripts/test-republic-loading.cjs && node scripts/test-search.cjs && npm run test:people-ui && npm run test:republic-people-ui && npm run test:events-ui && npm run test:timeline-ui && npm run test:links-ui",
     "test:republic-loading": "node scripts/test-republic-loading.cjs",
     "test:release": "node scripts/test-release.cjs && node scripts/test-imperial.cjs && node scripts/test-kingdom.cjs && node scripts/test-byzantine.cjs && node scripts/test-divided-empire.cjs && npm run test:routes",
     "test:kingdom": "node scripts/test-kingdom.cjs",
@@ -23,10 +23,11 @@
     "test:people-ui": "node scripts/test-people.cjs",
     "test:republic-people": "python scripts/test_republic_people.py",
     "test:republic-people-ui": "node scripts/test-republic-people.cjs",
-    "test:events": "python scripts/test_events.py",
+    "test:events": "python scripts/test_events.py && python scripts/test_event_links.py",
     "test:events-ui": "node scripts/test-events.cjs",
     "test:timeline": "python scripts/test_timeline.py && node scripts/test-timeline-engine.cjs",
-    "test:timeline-ui": "node scripts/test-timeline.cjs"
+    "test:timeline-ui": "node scripts/test-timeline.cjs",
+    "test:links-ui": "node scripts/test-event-links.cjs"
   },
   "license": "MIT",
   "repository": {

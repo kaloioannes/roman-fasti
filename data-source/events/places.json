@@ -99,5 +99,562 @@
         "checked": "2026-10-19"
       }
     ]
+  },
+  "rome": {
+    "id": "rome",
+    "label": "罗马",
+    "aliases": [
+      "Roma",
+      "Rome"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "李维《建城以来史》卷1、2",
+        "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+        "locator": "李维1.6—7；狄奥尼修斯1.74—75；罗马文明博物馆起源展厅",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "狄奥尼修斯《罗马古事记》1.72—75",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/1D*.html#75",
+        "locator": "李维1.6—7；狄奥尼修斯1.74—75；罗马文明博物馆起源展厅",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "罗马文明博物馆：起源传说与早期居民",
+        "url": "https://museociviltaromana.it/it/percorso/sala-v-vi-leggende-romane-e-civilt%C3%A0-primitiva-le-origini-di-roma",
+        "locator": "李维1.6—7；狄奥尼修斯1.74—75；罗马文明博物馆起源展厅",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "veii": {
+    "id": "veii",
+    "label": "维伊",
+    "aliases": [
+      "Veii",
+      "维爱"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "李维《建城以来史》卷1、2",
+        "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+        "locator": "李维1.14—15",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "lavinium": {
+    "id": "lavinium",
+    "label": "拉维尼乌姆",
+    "aliases": [
+      "Lavinium"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "李维《建城以来史》卷1、2",
+        "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+        "locator": "李维1.14；普鲁塔克《罗慕路斯传》23",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "普鲁塔克《罗慕路斯传》",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Romulus*.html",
+        "locator": "李维1.14；普鲁塔克《罗慕路斯传》23",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "alba-longa": {
+    "id": "alba-longa",
+    "label": "阿尔巴·隆加",
+    "aliases": [
+      "Alba Longa",
+      "阿尔巴"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "李维《建城以来史》卷1、2",
+        "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+        "locator": "李维1.29—30",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "ostia": {
+    "id": "ostia",
+    "label": "奥斯蒂亚",
+    "aliases": [
+      "Ostia"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "李维《建城以来史》卷1、2",
+        "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+        "locator": "李维1.33；奥斯蒂亚考古公园遗址说明",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "奥斯蒂亚考古公园：古城遗址",
+        "url": "https://www.ostiaantica.beniculturali.it/en/archaeological-sites-and-monuments/ostia-antica/",
+        "locator": "李维1.33；奥斯蒂亚考古公园遗址说明",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "zama": {
+    "id": "zama",
+    "label": "扎马",
+    "aliases": [
+      "Zama"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "Attalus 年度史料索引",
+        "url": "https://www.attalus.org/bc3/year202.html",
+        "locator": "Attalus 年度史料索引",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "rubicon": {
+    "id": "rubicon",
+    "label": "卢比孔河",
+    "aliases": [
+      "Rubicon",
+      "卢比孔"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "Attalus 年度史料索引",
+        "url": "https://www.attalus.org/bc1/year49.html",
+        "locator": "Attalus 年度史料索引",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "actium": {
+    "id": "actium",
+    "label": "亚克兴",
+    "aliases": [
+      "Actium"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "Attalus 年度史料索引",
+        "url": "https://www.attalus.org/bc1/year31.html",
+        "locator": "Attalus 年度史料索引",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "nola": {
+    "id": "nola",
+    "label": "诺拉",
+    "aliases": [
+      "Nola"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "塔西佗《编年史》卷1",
+        "url": "https://classics.mit.edu/Tacitus/annals.1.i.html",
+        "locator": "《编年史》1.5—49；狄奥56.29—47",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "卡西乌斯·狄奥《罗马史》卷56",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/56*.html",
+        "locator": "《编年史》1.5—49；狄奥56.29—47",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "pompeii": {
+    "id": "pompeii",
+    "label": "庞贝",
+    "aliases": [
+      "Pompeii"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "苏埃托尼乌斯《十二凯撒传》Vespasian传",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Vespasian*.html",
+        "locator": "《维斯帕先》24；《提图斯》8；狄奥66.21—24",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "苏埃托尼乌斯《十二凯撒传》Titus传",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Titus*.html",
+        "locator": "《维斯帕先》24；《提图斯》8；狄奥66.21—24",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "卡西乌斯·狄奥《罗马史》卷66",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/66*.html",
+        "locator": "《维斯帕先》24；《提图斯》8；狄奥66.21—24",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "nicomedia": {
+    "id": "nicomedia",
+    "label": "尼科米底亚",
+    "aliases": [
+      "Nicomedia"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "DIR：Numerianus",
+        "url": "https://roman-emperors.sites.luc.edu/numerian.htm",
+        "locator": "DIR《Numerian》《Diocletian》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR：Diocletian",
+        "url": "https://roman-emperors.sites.luc.edu/dioclet.htm",
+        "locator": "DIR《Numerian》《Diocletian》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "york": {
+    "id": "york",
+    "label": "约克",
+    "aliases": [
+      "Eboracum",
+      "York"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "拉克坦提乌斯《迫害者之死》",
+        "url": "https://www.newadvent.org/fathers/0705.htm",
+        "locator": "《迫害者之死》24—26；DIR《Constantine》《Maxentius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR · Constantine I",
+        "url": "https://roman-emperors.sites.luc.edu/conniei.htm",
+        "locator": "《迫害者之死》24—26；DIR《Constantine》《Maxentius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR：Maxentius",
+        "url": "https://roman-emperors.sites.luc.edu/maxentiu.htm",
+        "locator": "《迫害者之死》24—26；DIR《Constantine》《Maxentius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "milvian-bridge": {
+    "id": "milvian-bridge",
+    "label": "米尔维安桥",
+    "aliases": [
+      "Pons Milvius",
+      "Milvian Bridge"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "拉克坦提乌斯《迫害者之死》",
+        "url": "https://www.newadvent.org/fathers/0705.htm",
+        "locator": "《迫害者之死》44；DIR《Constantine》《Maxentius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR · Constantine I",
+        "url": "https://roman-emperors.sites.luc.edu/conniei.htm",
+        "locator": "《迫害者之死》44；DIR《Constantine》《Maxentius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR：Maxentius",
+        "url": "https://roman-emperors.sites.luc.edu/maxentiu.htm",
+        "locator": "《迫害者之死》44；DIR《Constantine》《Maxentius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "milan": {
+    "id": "milan",
+    "label": "米兰",
+    "aliases": [
+      "Mediolanum",
+      "Milan"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "拉克坦提乌斯《迫害者之死》",
+        "url": "https://www.newadvent.org/fathers/0705.htm",
+        "locator": "《迫害者之死》45—49；DIR《Licinius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR：Licinius",
+        "url": "https://roman-emperors.sites.luc.edu/licinius.htm",
+        "locator": "《迫害者之死》45—49；DIR《Licinius》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "adrianople": {
+    "id": "adrianople",
+    "label": "阿德里安堡",
+    "aliases": [
+      "Hadrianopolis",
+      "Adrianople"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "佐西穆斯《新史》卷2",
+        "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+        "locator": "佐西穆斯2.22—28；DIR《Licinius》《Martinian》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR：Licinius",
+        "url": "https://roman-emperors.sites.luc.edu/licinius.htm",
+        "locator": "佐西穆斯2.22—28；DIR《Licinius》《Martinian》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR：Martinianus",
+        "url": "https://roman-emperors.sites.luc.edu/martinia.htm",
+        "locator": "佐西穆斯2.22—28；DIR《Licinius》《Martinian》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "nicaea": {
+    "id": "nicaea",
+    "label": "尼西亚",
+    "aliases": [
+      "Nicaea",
+      "Nikaia"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "苏格拉底《教会史》",
+        "url": "https://www.newadvent.org/fathers/2601.htm",
+        "locator": "《教会史》1.8—10；DIR《Constantine》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR · Constantine I",
+        "url": "https://roman-emperors.sites.luc.edu/conniei.htm",
+        "locator": "《教会史》1.8—10；DIR《Constantine》",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "ravenna": {
+    "id": "ravenna",
+    "label": "拉文纳",
+    "aliases": [
+      "Ravenna"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "J. B. Bury《晚期罗马帝国史》I.V §§6–7 · 意大利与斯提利科",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/5C*.html",
+        "locator": "Bury I.V，Pollentia及Ravenna段",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "chalcedon": {
+    "id": "chalcedon",
+    "label": "迦克墩",
+    "aliases": [
+      "Chalcedon",
+      "Chalkedon"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "J. B. Bury《晚期罗马帝国史》I.7 · 狄奥多西二世与马尔基安",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/7*.html",
+        "locator": "Bury I.VII；Marcellinus s.a.451",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "马尔凯利努斯《编年史》",
+        "url": "https://www.thelatinlibrary.com/marcellinus1.html",
+        "locator": "Bury I.VII；Marcellinus s.a.451",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "dalmatia": {
+    "id": "dalmatia",
+    "label": "达尔马提亚",
+    "aliases": [
+      "Dalmatia"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "J. B. Bury《晚期罗马帝国史》I.12 · 芝诺与意大利",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/12*.html",
+        "locator": "Bury I.XII §4；DIR Romulus Augustulus",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "DIR · 罗慕路斯·奥古斯都",
+        "url": "https://roman-emperors.sites.luc.edu/auggiero.htm",
+        "locator": "Bury I.XII §4；DIR Romulus Augustulus",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "pelusium": {
+    "id": "pelusium",
+    "label": "佩卢西乌姆",
+    "aliases": [
+      "Pelusium"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "Charles Oman《拜占庭帝国》",
+        "url": "https://www.gutenberg.org/cache/epub/37756/pg37756-images.html",
+        "locator": "Oman，第VI—VIII章；justinian-i人物资料对应事件段；普罗柯比《战争史》II.22（传播起点）",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "查士丁尼一世：资料与参考书目",
+        "url": "https://en.wikipedia.org/wiki/Justinian_I",
+        "locator": "Oman，第VI—VIII章；justinian-i人物资料对应事件段；普罗柯比《战争史》II.22（传播起点）",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "普罗柯比《战争史》I—II",
+        "url": "https://www.gutenberg.org/cache/epub/16764/pg16764-images.html",
+        "locator": "Oman，第VI—VIII章；justinian-i人物资料对应事件段；普罗柯比《战争史》II.22（传播起点）",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
+  },
+  "kleidion": {
+    "id": "kleidion",
+    "label": "克莱迪昂",
+    "aliases": [
+      "Kleidion",
+      "克雷迪昂"
+    ],
+    "note": "本卷记事所指的历史地点／区域；以原文语境区别同名，未提供精确坐标或逐年控制权。",
+    "references": [
+      {
+        "label": "Charles Oman《拜占庭帝国》",
+        "url": "https://www.gutenberg.org/cache/epub/37756/pg37756-images.html",
+        "locator": "Oman，第XVIII章；basil-ii人物资料对应事件段",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      },
+      {
+        "label": "巴西尔二世：资料与参考书目",
+        "url": "https://en.wikipedia.org/wiki/Basil_II",
+        "locator": "Oman，第XVIII章；basil-ii人物资料对应事件段",
+        "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ]
   }
 }
