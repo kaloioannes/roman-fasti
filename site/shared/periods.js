@@ -13,6 +13,13 @@ window.FastiPeriods = (() => {
   function mount(id, year) {
     const slot = document.querySelector('[data-period-boundary]');
     if (!slot) return;
+    let timeline=slot.nextElementSibling;
+    if(!timeline?.classList.contains('timeline-year-link')) {
+      timeline=document.createElement('a');timeline.className='timeline-year-link';
+      slot.after(timeline);
+    }
+    timeline.href='../timeline/#'+new URLSearchParams({period:id,from:year,to:year});
+    timeline.textContent='对读本年任期：先后、共治与争位 ↗';
     slot.replaceChildren();
     slot.hidden = true;
     // The Republic reuses its DOM between years; discard stale completions.
