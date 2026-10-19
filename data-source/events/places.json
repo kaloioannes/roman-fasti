@@ -1,0 +1,103 @@
+{
+  "manzikert": {
+    "id": "manzikert",
+    "label": "曼齐刻尔特",
+    "aliases": [
+      "Manzikert",
+      "Malazgirt"
+    ],
+    "note": "战役地点名称；不提供未经核验的战场精确坐标。",
+    "references": [
+      {
+        "label": "普塞洛斯《编年史》卷VII，Sewter英译",
+        "url": "https://sourcebooks.web.fordham.edu/basis/psellus-chrono07.asp",
+        "locator": "Romanus IV §18—26；译者注265、268",
+        "claim": "罗曼努斯亲征、战败被俘及释放；8月26日来自译者注265。作者并非此战目击者，且参与杜卡斯宫廷政治。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "bari": {
+    "id": "bari",
+    "label": "巴里",
+    "aliases": [
+      "Bari"
+    ],
+    "note": "城市名称；本项不据此建立逐年控制权。",
+    "references": [
+      {
+        "label": "阿普利亚的威廉《罗贝尔·吉斯卡尔事迹》，G. A. Loud英译",
+        "url": "https://ahc.leeds.ac.uk/download/downloads/id/965/the-deeds-of-robert-guiscard-by-william-of-apulia.pdf",
+        "locator": "卷III；PDF印页32—33（文件第32—33页）；第三年围城、粮援受阻至城市交付",
+        "claim": "巴里在围城与饥饿压力下交付罗贝尔。作者偏向诺曼统治者；本项不据其颂扬断言居民普遍拥护。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "constantinople": {
+    "id": "constantinople",
+    "label": "君士坦丁堡",
+    "aliases": [
+      "Constantinople",
+      "Konstantinoupolis"
+    ],
+    "note": "历史城市名称；此处仅作为事件关联对象。",
+    "references": [
+      {
+        "label": "维尔阿杜安《征服君士坦丁堡》，Marzials英译1908",
+        "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+        "locator": "FIRST STARTING OF THE PILGRIMS…；FLIGHT OF MOURZUPHLES…；BALDWIN…ELECTED EMPEROR（保留原书13、64、67—69页）",
+        "claim": "1202年集结、1204年4月12日入城及5月16日加冕；亲历者为远征参与者，带有为行动辩护的立场。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      },
+      {
+        "label": "霍尼亚提斯：1204年洗劫，Munro英译节选1912",
+        "url": "https://sourcebooks.web.fordham.edu/source/choniates1.asp",
+        "locator": "译文正文；原书选译15—16页，圣索菲亚劫掠及城市居民受难段",
+        "claim": "首都遭劫、教堂财物被夺与居民受难。采用目击叙述，不沿用网页导言的全部历史概括。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "venice": {
+    "id": "venice",
+    "label": "威尼斯",
+    "aliases": [
+      "Venice"
+    ],
+    "note": "1202年远征集结地。",
+    "references": [
+      {
+        "label": "维尔阿杜安《征服君士坦丁堡》，Marzials英译1908",
+        "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+        "locator": "FIRST STARTING OF THE PILGRIMS…；FLIGHT OF MOURZUPHLES…；BALDWIN…ELECTED EMPEROR（保留原书13、64、67—69页）",
+        "claim": "1202年集结、1204年4月12日入城及5月16日加冕；亲历者为远征参与者，带有为行动辩护的立场。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ]
+  },
+  "zara": {
+    "id": "zara",
+    "label": "扎拉",
+    "aliases": [
+      "Zara",
+      "Zadar"
+    ],
+    "note": "1202年远征所攻城市；沿用译文地名。",
+    "references": [
+      {
+        "label": "维尔阿杜安《征服君士坦丁堡》，Marzials英译1908",
+        "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+        "locator": "FIRST STARTING OF THE PILGRIMS…；FLIGHT OF MOURZUPHLES…；BALDWIN…ELECTED EMPEROR（保留原书13、64、67—69页）",
+        "claim": "1202年集结、1204年4月12日入城及5月16日加冕；亲历者为远征参与者，带有为行动辩护的立场。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ]
+  }
+}

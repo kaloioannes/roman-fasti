@@ -1,5 +1,6 @@
 """Compile the divided Empire offline. Authored sources are the only input."""
 import json
+from event_ids import attach_event_metadata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,6 +26,7 @@ def compile_data():
     assert len({e['id'] for e in events}) == len(events), 'Duplicate event IDs'
     for event in events:
         years[str(event['year'])]['events'].append(event)
+    attach_event_metadata(years, 'divided-empire')
     vacancies = read('vacancies.json')
     for vacancy in vacancies:
         for year in range(int(vacancy['startDate']['value'][:4]),

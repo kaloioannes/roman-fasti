@@ -61,9 +61,10 @@ class BiographyGrowthTest(unittest.TestCase):
         # Exercise the actual build entry point with the edited sources, too.
         project = self.directory / 'project'
         shutil.copytree(ROOT / 'data-source/republic', project / 'data-source/republic')
+        shutil.copytree(ROOT / 'data-source/events', project / 'data-source/events')
         (project / 'scripts').mkdir()
         (project / 'data/republic').mkdir(parents=True)
-        for name in ['build_data.py', 'republic_biographies.py']:
+        for name in ['build_data.py', 'republic_biographies.py', 'event_ids.py']:
             shutil.copyfile(ROOT / 'scripts' / name, project / 'scripts' / name)
         for name in ['biographies.tsv', 'biography-identities.json']:
             shutil.copyfile(self.directory / name, project / 'data-source/republic' / name)

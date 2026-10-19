@@ -1,4 +1,5 @@
 import json,re,sys,hashlib
+from event_ids import attach_event_metadata
 from republic_biographies import load_biographies, attach_biographies
 from pathlib import Path
 from opencc import OpenCC
@@ -83,7 +84,7 @@ def attach_events(path):
  if not path.exists():return
  for row in path.read_text(encoding='utf-8').splitlines():
   if not row or row.startswith('#'):continue
-  y,title,description,category,ref=row.split('|',4);y=int(y)
+  eid,y,title,description,category,ref=row.split('|',5);y=int(y)
   if ref.isdigit():sources=[source('李维《建城以来史》第'+ref+'卷','https://en.wikisource.org/wiki/From_the_Founding_of_the_City/Book_'+ref)]
   else:
    sources=[source('Attalus 年度史料索引',f'https://www.attalus.org/bc{(y-1)//100+1}/year{y}.html')]
@@ -92,8 +93,9 @@ def attach_events(path):
   if any(w in category for w in ['争议','存疑']):certainty='年代或记载有争议'
   elif '编年线索' in category:certainty='编年线索'
   elif '传统叙事' in category:certainty='古代叙事 · 含传说成分'
-  years[str(y)]['events'].append({'title':title,'description':description,'category':category,'certainty':certainty,'sources':sources})
+  years[str(y)]['events'].append({'id':eid,'title':title,'description':description,'category':category,'certainty':certainty,'sources':sources})
 attach_events(R/'data-source/republic/events.tsv')
+attach_event_metadata(years,'republic')
 special={509:'传统记载第一年共有五位执政官；辞职、战死、短期任职与补任依来源分别记录。首任顺序在波利比乌斯、李维与其他传统之间存在分歧。',451:'原有两位执政官记录与随后第一届十人委员会并列。古代来源对二人是否先实际就任执政官或仅当选便转任有分歧。同一人先后担任不同官职，名录按职务分别列出。',450:'第二届十人委员会掌握最高权力，本年没有通常的双执政官任职。',444:'三名军事保民官的任职因程序问题终止，随后选出补任执政官。',403:'李维列八位军事保民官，狄奥多罗斯等来源人数不同；部分人可能实为当年监察官，任职识别存在争议。',52:'庞培先以“无同僚执政官”身份上任，年内梅特鲁斯·西庇阿成为同僚。',43:'两位年初执政官希尔提乌斯与潘萨在穆提纳战役及其后死亡，屋大维与佩迪乌斯随后补任，年末再有补任。',27:'屋大维在本年获得“奥古斯都”称号，通常以此作为共和国与元首制的分界；执政官官职继续存在。'}
 for y,n in special.items():years[str(y)]['notes'].insert(0,n)
 for y,r in years.items():

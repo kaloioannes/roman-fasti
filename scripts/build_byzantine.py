@@ -3,6 +3,7 @@
 Reigns use inclusive annual membership, with separately sourced precise dates.
 """
 import json
+from event_ids import attach_event_metadata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,6 +38,7 @@ def compile_data():
         assert e['id'] not in ids and e['sources'] and all(s in sources for s in e['sources']), e
         ids.add(e['id'])
         years[str(e['year'])]['events'].append(e)
+    attach_event_metadata(years, 'byzantine')
     for y, record in years.items():
         assert any(people[o['person']]['reigns'][o['reign']]['kind'] == 'central'
                    for o in record['rulers']), f'No main-line emperor in {y}'

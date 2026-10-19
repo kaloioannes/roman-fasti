@@ -49,8 +49,8 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    }
    await query('前1年');await page.getByRole('link',{name:'下一年 · 公元1年',exact:true}).click();await ready();assert.match(await page.locator('#year-results').textContent(),/公元1年/);
    await page.getByRole('link',{name:'上一年 · 公元前1年',exact:true}).click();await ready();
-   await query('前44年');await page.locator('[data-id="republic:event:44:0"] h3 a').click();await page.waitForSelector('.event-row.search-target');assert.match(await page.locator('.search-target').textContent(),/恺撒遇刺/);await page.goBack();await ready();
-   for(const [q,selector] of [['罗马建城的传统起点','.event.search-target'],['奥古斯都与新的权力安排','.event-row.search-target'],['两座宫廷承接狄奥多西的遗产','.event-row.search-target'],['西部宫廷的终结','.event-row.search-target']]){
+   await query('前44年');await page.locator('[data-id="republic:event:rep-bc44-1"] h3 a').click();await page.waitForSelector('.event-detail');assert.match(await page.locator('.event-detail h1').textContent(),/恺撒遇刺/);await page.goBack();await ready();
+   for(const [q,selector] of [['罗马建城的传统起点','.event-detail'],['奥古斯都与新的权力安排','.event-detail'],['两座宫廷承接狄奥多西的遗产','.event-detail'],['西部宫廷的终结','.event-detail']]){
     await query(q);await page.locator('.result-group[data-kind=event] h3 a').first().click();await page.waitForSelector(selector);assert.match(await page.locator(selector).first().textContent(),new RegExp(q));await page.goBack();await ready();
    }
    await query('给执政官划一道线');await page.locator('.result-group[data-kind=chapter] h3 a').click();await page.waitForSelector('.chapter-reading.search-target');assert.match(await page.locator('.search-target').textContent(),/给执政官划一道线/);await page.goBack();await ready();

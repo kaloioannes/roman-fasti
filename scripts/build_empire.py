@@ -5,6 +5,7 @@ Ranges are inclusive calendar years, NOT a claim of simultaneous rule all year.
 """
 import csv
 import json
+from event_ids import attach_event_metadata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,6 +44,7 @@ def compile_data():
         y = e.pop('year')
         e['sources'] = e['sources'].split(',')
         years[y]['events'].append(e)
+    attach_event_metadata(years, 'empire')
     for r in years.values():
         assert r['events'], f"Missing authored annual event: {r['year']}"
         assert any(people[o['person']]['reigns'][o['reign']]['kind'] == 'central' for o in r['rulers']), r['year']
