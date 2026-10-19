@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from urllib.parse import urlencode
 from build_people import compile_people
+from build_events import compile_events
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -63,22 +64,14 @@ def compile_index():
             if identity:
                 entries[-1]['globalPerson'] = identity['id']
                 entries[-1]['globalURL'] = identity['url']
-        if pid == 'kingdom':
-            for eid, event in data['events'].items():
-                y = event['year']
-                params = dict(year=y) if y is not None else dict(person=event['people'][0])
-                params['focus'] = f'event:{eid}'
-                add('event', eid, event['title'], [], event['text'], [[y, y]] if y is not None else [],
-                    params, event['dating'])
-        else:
-            for raw, record in data['years'].items():
-                y = -int(raw) if pid == 'republic' else int(raw)
-                for i, event in enumerate(record['events']):
-                    # Positional locators for legacy schemas are navigation hints,
-                    # never new scholarly/stable event IDs (future PR06 owns those).
-                    eid = event.get('id', f'{raw}:{i}')
-                    add('event', eid, event['title'], [], event['description'], [[y, y]],
-                        dict(year=year_key(pid, y), focus=f'event:{i}'), event.get('certainty', ''))
+    event_index = compile_events()
+    for eid, event in event_index['entries'].items():
+        names = [event_index['places'][p]['label'] for p in event['places']]
+        names.extend(n for p in event['places'] for n in event_index['places'][p]['aliases'])
+        names.extend(p['label'] for p in event['people'])
+        entries.append(dict(id=f'{event["period"]}:event:{eid.split(":",1)[1]}', period=event['period'], kind='event',
+                            title=event['title'], names=names, text=event['text'], spans=event['spans'], url=event['url'],
+                            note=event_index['kinds'][event['recordKind']]+' · '+event['date']['note']))
     for story in read('data/republic/stories.json'):
         spans = [[-story['start'], -story['chapters'][-1]['year']]]
         add_story = dict(story=story['id'], year=story['start'])

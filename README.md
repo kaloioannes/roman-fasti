@@ -20,6 +20,8 @@
 
 ## 浏览与分享
 
+**[事件档案](https://kaloioannes.github.io/roman-fasti/events/)** 为五卷全部2,082条原记事及六个新编对象提供稳定ID、独立链接和引用入口。支持日期范围、纪年、资料类型、主题、明确人物与地点筛选；区分年度摘要、跨年背景、传统叙事和独立事件。1071年的两处事件分别建档，1204年的攻城／洗劫／加冕可各自引用，跨年远征与题记保持单一对象。原年度和旧定位继续可用；每条引用标明直接查阅或沿用旧引用。完整模型、证据范围与维护见[事件说明](docs/events.md)。
+
 **[共和国人物索引](https://kaloioannes.github.io/roman-fasti/republic/#people)** 提供全部905个条目的独立生涯页，可检索中文、拉丁文和别名，组合筛选官职、任年、简介状态、同名与多项任职。每页列出全部已收录任职、年度入口、简介及来源；同名者按各自年代与官职区分，身份待考者保留任职记录。全站搜索和跨卷总档案直接进入本卷专页，原年度卡片链接继续可用。见[使用与维护](docs/republic-people.md)、[完整身份候选清单](docs/republic-identity-review.md)。
 
 **[跨卷人物](https://kaloioannes.github.io/roman-fasti/people/)** 连接人工确认的七位跨卷人物：奥古斯都、狄奥多西一世、阿卡狄乌斯、霍诺里乌斯、芝诺、巴西利斯库斯及其子马尔库斯。各卷原档案可双向往返，总档案汇总全部已收录任职、相关年度与身份依据；不同同名者明确分开，日期与身份分歧按原卷保留。共和国年度人物卡与全站搜索也可直接进入。研究范围、维护及验收见 [跨卷身份说明](docs/people.md)。
@@ -120,6 +122,7 @@ python scripts/build_divided_empire_map.py # 双帝国分阶段GIS（Shapely）
 python scripts/build_byzantine.py     # 拜占庭人物、分级精度任期与完整年度记事
 python scripts/build_republic_people.py # 共和国人物导航与完整身份候选清单
 python scripts/build_people.py        # 人工确认的跨卷身份投影
+python scripts/build_events.py        # 五卷事件、日期与对象关联投影
 python scripts/build_search.py        # 五卷静态检索索引；发布构建也会自动重建
 python scripts/build_byzantine_map.py # 拜占庭与并立政权GIS（Shapely）
 python scripts/build_map.py           # 共和国地图

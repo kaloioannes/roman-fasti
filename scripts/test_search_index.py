@@ -6,12 +6,14 @@ from unittest.mock import patch
 from urllib.parse import parse_qs, urlsplit
 
 import build_search as build
+from build_events import compile_events
 
 
 class SearchIndexTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.index = build.read('data/search/index.json')
+        cls.events = compile_events()
 
     def test_committed_index_matches_sources(self):
         self.assertEqual(self.index, build.compile_index())
@@ -24,7 +26,7 @@ class SearchIndexTests(unittest.TestCase):
             projected = [e for e in self.index['entries'] if e['period'] == pid]
             people = [e for e in projected if e['kind'] == 'person']
             self.assertEqual({e['id'].split(':', 2)[2] for e in people}, set(data['people']))
-            count = len(data['events']) if pid == 'kingdom' else sum(len(r['events']) for r in data['years'].values())
+            count = sum(e['period'] == pid for e in self.events['entries'].values())
             self.assertEqual(sum(e['kind'] == 'event' for e in projected), count)
         stories = build.read('data/republic/stories.json')
         counts = Counter(e['kind'] for e in self.index['entries'])
@@ -40,6 +42,11 @@ class SearchIndexTests(unittest.TestCase):
                 self.assertLessEqual(a, b)
                 self.assertNotIn(0, [a, b])
             url = urlsplit(e['url'])
+            if e['kind'] == 'event':
+                self.assertEqual(url.path, 'events/')
+                key = parse_qs(url.fragment)['event'][0]
+                self.assertEqual(self.events['entries'][key]['title'], e['title'])
+                continue
             self.assertEqual(url.path, f'{pid}/')
             p = {k: v[0] for k, v in parse_qs(url.fragment).items()}
             if 'person' in p:

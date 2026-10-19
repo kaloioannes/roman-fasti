@@ -1,0 +1,346 @@
+[
+  {
+    "id": "byzantine:manzikert-1071",
+    "period": "byzantine",
+    "title": "曼齐刻尔特战役与罗曼努斯被俘",
+    "text": "罗曼努斯四世在曼齐刻尔特战败，被塞尔柱军俘获，随后获释。此事件与同年巴里失守分别建档。",
+    "recordKind": "event",
+    "date": {
+      "start": {
+        "year": 1071,
+        "precision": "day",
+        "month": 8,
+        "day": 26
+      },
+      "end": {
+        "year": 1071,
+        "precision": "day",
+        "month": 8,
+        "day": 26
+      },
+      "extent": "point",
+      "certainty": "certain",
+      "qualifiers": [],
+      "basis": "attested",
+      "note": "8月26日采用Sewter译者注265；这是译注纪年，不冒充普塞洛斯正文给出的确日。"
+    },
+    "topics": [
+      "war"
+    ],
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "romanos-iv",
+        "role": "participant",
+        "basis": "普塞洛斯卷VII，Romanus IV §18—26"
+      }
+    ],
+    "places": [
+      "manzikert"
+    ],
+    "references": [
+      {
+        "label": "普塞洛斯《编年史》卷VII，Sewter英译",
+        "url": "https://sourcebooks.web.fordham.edu/basis/psellus-chrono07.asp",
+        "locator": "Romanus IV §18—26；译者注265、268",
+        "claim": "罗曼努斯亲征、战败被俘及释放；8月26日来自译者注265。作者并非此战目击者，且参与杜卡斯宫廷政治。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ],
+    "relations": [
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1071-1"
+      }
+    ],
+    "origins": []
+  },
+  {
+    "id": "byzantine:bari-1071",
+    "period": "byzantine",
+    "title": "巴里失守",
+    "text": "诺曼军围城后，巴里向罗贝尔·吉斯卡尔交付。这里保留年度精度，不从该译文补出交城确日。",
+    "recordKind": "event",
+    "date": {
+      "start": {
+        "year": 1071,
+        "precision": "year"
+      },
+      "end": {
+        "year": 1071,
+        "precision": "year"
+      },
+      "extent": "point",
+      "certainty": "certain",
+      "qualifiers": [],
+      "basis": "attested",
+      "note": "1071年沿用原卷年度归置；威廉卷III支持交城经过，未据此增补月日。"
+    },
+    "topics": [
+      "war"
+    ],
+    "people": [],
+    "places": [
+      "bari"
+    ],
+    "references": [
+      {
+        "label": "阿普利亚的威廉《罗贝尔·吉斯卡尔事迹》，G. A. Loud英译",
+        "url": "https://ahc.leeds.ac.uk/download/downloads/id/965/the-deeds-of-robert-guiscard-by-william-of-apulia.pdf",
+        "locator": "卷III；PDF印页32—33（文件第32—33页）；第三年围城、粮援受阻至城市交付",
+        "claim": "巴里在围城与饥饿压力下交付罗贝尔。作者偏向诺曼统治者；本项不据其颂扬断言居民普遍拥护。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      },
+      {
+        "label": "原卷1071年记事",
+        "url": "https://github.com/kaloioannes/roman-fasti/blob/d394da3bec61b9d40e89b6e88dd857cbf641ca4e/data-source/byzantine/events.json",
+        "locator": "byz-1071-1",
+        "claim": "巴里失守的1071年度归置。",
+        "consultation": "inherited",
+        "checked": null
+      }
+    ],
+    "relations": [
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1071-1"
+      }
+    ],
+    "origins": []
+  },
+  {
+    "id": "byzantine:fourth-crusade-1202-1204",
+    "period": "byzantine",
+    "title": "第四次十字军：集结、转向与首都陷落",
+    "text": "1202年远征军在威尼斯集结，后经扎拉，转向君士坦丁堡；1204年攻入首都。此对象记录这一跨年行动阶段；子事件仍各有独立身份。",
+    "recordKind": "event",
+    "date": {
+      "start": {
+        "year": 1202,
+        "precision": "year"
+      },
+      "end": {
+        "year": 1204,
+        "precision": "year"
+      },
+      "extent": "span",
+      "certainty": "certain",
+      "qualifiers": [
+        "multi-year"
+      ],
+      "basis": "attested",
+      "note": "范围指1202—1204年的远征行动阶段，不把此前倡议、筹备或此后拉丁政权统治纳入同一持续战争。仅有年份的端点不补月日。"
+    },
+    "topics": [
+      "war",
+      "diplomacy"
+    ],
+    "people": [],
+    "places": [
+      "venice",
+      "zara",
+      "constantinople"
+    ],
+    "references": [
+      {
+        "label": "维尔阿杜安《征服君士坦丁堡》，Marzials英译1908",
+        "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+        "locator": "FIRST STARTING OF THE PILGRIMS…；FLIGHT OF MOURZUPHLES…；BALDWIN…ELECTED EMPEROR（保留原书13、64、67—69页）",
+        "claim": "1202年集结、1204年4月12日入城及5月16日加冕；亲历者为远征参与者，带有为行动辩护的立场。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ],
+    "relations": [
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1202-1"
+      },
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1203-1"
+      },
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1204-1"
+      }
+    ],
+    "origins": []
+  },
+  {
+    "id": "byzantine:constantinople-capture-1204",
+    "period": "byzantine",
+    "title": "十字军攻入君士坦丁堡",
+    "text": "1204年4月12日，十字军攻入君士坦丁堡。这里将突破城防与随后洗劫分别建档。",
+    "recordKind": "event",
+    "date": {
+      "start": {
+        "year": 1204,
+        "precision": "day",
+        "month": 4,
+        "day": 12
+      },
+      "end": {
+        "year": 1204,
+        "precision": "day",
+        "month": 4,
+        "day": 12
+      },
+      "extent": "point",
+      "certainty": "certain",
+      "qualifiers": [],
+      "basis": "attested",
+      "note": "沿用文献纪年；日级日期采用原译本，不转换为公历。"
+    },
+    "topics": [
+      "war"
+    ],
+    "people": [
+      {
+        "period": "byzantine",
+        "person": "alexios-v",
+        "role": "participant",
+        "basis": "维尔阿杜安 FLIGHT OF MOURZUPHLES…：皇帝在入城后逃离"
+      }
+    ],
+    "places": [
+      "constantinople"
+    ],
+    "references": [
+      {
+        "label": "维尔阿杜安《征服君士坦丁堡》，Marzials英译1908",
+        "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+        "locator": "FIRST STARTING OF THE PILGRIMS…；FLIGHT OF MOURZUPHLES…；BALDWIN…ELECTED EMPEROR（保留原书13、64、67—69页）",
+        "claim": "1202年集结、1204年4月12日入城及5月16日加冕；亲历者为远征参与者，带有为行动辩护的立场。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ],
+    "relations": [
+      {
+        "type": "part-of",
+        "event": "byzantine:fourth-crusade-1202-1204"
+      },
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1204-1"
+      }
+    ],
+    "origins": []
+  },
+  {
+    "id": "byzantine:constantinople-sack-1204",
+    "period": "byzantine",
+    "title": "君士坦丁堡遭到洗劫",
+    "text": "攻城之后，城市居民与宗教场所遭到劫掠。霍尼亚提斯的叙述在此与攻城日期区分；不为全部受难过程补造统一起讫日。",
+    "recordKind": "event",
+    "date": {
+      "start": {
+        "year": 1204,
+        "precision": "month",
+        "month": 4
+      },
+      "end": {
+        "year": 1204,
+        "precision": "month",
+        "month": 4
+      },
+      "extent": "window",
+      "certainty": "certain",
+      "qualifiers": [],
+      "basis": "attested",
+      "note": "1204年4月的洗劫过程；确日起讫未在本项确定。"
+    },
+    "topics": [
+      "war",
+      "religion",
+      "crisis"
+    ],
+    "people": [],
+    "places": [
+      "constantinople"
+    ],
+    "references": [
+      {
+        "label": "霍尼亚提斯：1204年洗劫，Munro英译节选1912",
+        "url": "https://sourcebooks.web.fordham.edu/source/choniates1.asp",
+        "locator": "译文正文；原书选译15—16页，圣索菲亚劫掠及城市居民受难段",
+        "claim": "首都遭劫、教堂财物被夺与居民受难。采用目击叙述，不沿用网页导言的全部历史概括。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      },
+      {
+        "label": "维尔阿杜安《征服君士坦丁堡》，Marzials英译1908",
+        "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+        "locator": "FIRST STARTING OF THE PILGRIMS…；FLIGHT OF MOURZUPHLES…；BALDWIN…ELECTED EMPEROR（保留原书13、64、67—69页）",
+        "claim": "1202年集结、1204年4月12日入城及5月16日加冕；亲历者为远征参与者，带有为行动辩护的立场。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ],
+    "relations": [
+      {
+        "type": "part-of",
+        "event": "byzantine:fourth-crusade-1202-1204"
+      },
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1204-1"
+      }
+    ],
+    "origins": []
+  },
+  {
+    "id": "byzantine:latin-coronation-1204",
+    "period": "byzantine",
+    "title": "鲍德温在圣索菲亚加冕",
+    "text": "鲍德温当选后，于1204年5月16日加冕。此项区分拉丁皇帝的加冕与4月攻城，不把他加入本卷尼西亚继承主线人物名录。",
+    "recordKind": "event",
+    "date": {
+      "start": {
+        "year": 1204,
+        "precision": "day",
+        "month": 5,
+        "day": 16
+      },
+      "end": {
+        "year": 1204,
+        "precision": "day",
+        "month": 5,
+        "day": 16
+      },
+      "extent": "point",
+      "certainty": "certain",
+      "qualifiers": [],
+      "basis": "attested",
+      "note": "沿用文献纪年；日级日期采用原译本，不转换为公历。"
+    },
+    "topics": [
+      "politics",
+      "religion"
+    ],
+    "people": [],
+    "places": [
+      "constantinople"
+    ],
+    "references": [
+      {
+        "label": "维尔阿杜安《征服君士坦丁堡》，Marzials英译1908",
+        "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+        "locator": "FIRST STARTING OF THE PILGRIMS…；FLIGHT OF MOURZUPHLES…；BALDWIN…ELECTED EMPEROR（保留原书13、64、67—69页）",
+        "claim": "1202年集结、1204年4月12日入城及5月16日加冕；亲历者为远征参与者，带有为行动辩护的立场。",
+        "consultation": "direct",
+        "checked": "2026-10-19"
+      }
+    ],
+    "relations": [
+      {
+        "type": "expands",
+        "event": "byzantine:byz-1204-1"
+      }
+    ],
+    "origins": []
+  }
+]

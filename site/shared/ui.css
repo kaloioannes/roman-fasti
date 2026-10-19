@@ -131,3 +131,11 @@ dialog .stats-line{flex-wrap:wrap}.identity-note{font-size:12px;line-height:1.9;
 .search-target{outline:2px solid var(--accent);outline-offset:6px;scroll-margin:25px}
 .global-search-link{white-space:nowrap}
 @media(max-width:700px){.site-header:has(.global-search-link){height:auto;min-height:82px;flex-wrap:wrap;gap:12px;padding-top:18px;padding-bottom:18px}.site-header:has(.global-search-link) .header-actions{flex-wrap:wrap;gap:12px}}
+/* Stable object links are readable within all five original volume themes. */
+.event-archive-link{display:block;width:fit-content;max-width:100%;margin:16px 0;font-size:13px;color:var(--accent);text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.event-row>.event-archive-link{grid-column:2}
+.event-related-links{margin:32px 0;padding:24px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.event-related-links:empty{display:none}
+.event-related-links h2{font-size:19px;margin:0 0 16px}
+.event-related-links a{display:block;margin:10px 0;color:var(--accent);overflow-wrap:anywhere}
+.event-related-links button{margin:8px;color:var(--accent);text-decoration:underline}
