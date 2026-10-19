@@ -10,6 +10,7 @@ from html import escape
 from string import Template
 from build_search import write_index
 from build_events import write_events
+from build_timeline import write_timeline
 from build_people import write_people
 from build_republic_people import write_index as write_republic_people
 
@@ -67,6 +68,7 @@ def build(destination):
     write_republic_people()
     write_people()
     write_events()
+    write_timeline()
     write_index()
     destination.mkdir(parents=True, exist_ok=True)
     pages = sorted(SITE.rglob('*.html'))

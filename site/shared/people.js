@@ -94,6 +94,9 @@ window.FastiPeople = (() => {
   }
   async function mount(period,personId,host) {
     if(!host)return;
+    const timeline=el('p',null,'timeline-profile-link');
+    timeline.append(link('查看此人的任期时间轴 ↗','timeline/#'+new URLSearchParams({period,person:period+':'+personId})));
+    host.append(timeline);
     const slot=el('section',null,'identity-links');slot.setAttribute('aria-label','跨卷人物关联');
     slot.append(el('p','正在查阅跨卷身份…','identity-status'));host.append(slot);
     async function render(){

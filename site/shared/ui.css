@@ -139,3 +139,5 @@ dialog .stats-line{flex-wrap:wrap}.identity-note{font-size:12px;line-height:1.9;
 .event-related-links h2{font-size:19px;margin:0 0 16px}
 .event-related-links a{display:block;margin:10px 0;color:var(--accent);overflow-wrap:anywhere}
 .event-related-links button{margin:8px;color:var(--accent);text-decoration:underline}
+.timeline-year-link,.timeline-profile-link{display:block;font-size:12px;line-height:1.9;color:var(--accent);margin:14px 0;overflow-wrap:anywhere}
+.timeline-profile-link a{color:var(--accent)}
