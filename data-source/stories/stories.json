@@ -1,0 +1,1447 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-21",
+  "method": "连续剧本围绕历史问题展开；章节点用于导航，不把王期事迹或跨年过程伪装成精确年度事件。每章单列支持论断和查阅范围，人物链接是编辑确认的阅读对象，不自动建立参与关系。共和国原版通过适配保留原文、来源及旧链接。阅读进度仅存本机，可手动标记与重置；防剧透为可选阅读辅助，不是匿名化史料。",
+  "sources": {
+    "livy": {
+      "label": "李维《建城以来史》卷一",
+      "author": "Titus Livius",
+      "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+      "edition": "D. Spillan英译，1853；Project Gutenberg电子转录",
+      "scope": "序言；1.6—21、27—35、39—49、57—60。",
+      "limitations": "晚于所述时代数百年；建城、王期、制度归名属于传统，演说和预兆不作实录。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "lactantius": {
+      "label": "拉克坦提乌斯《迫害者之死》",
+      "author": "Lactantius",
+      "url": "https://www.newadvent.org/fathers/0705.htm",
+      "edition": "William Fletcher英译，ANF第7卷，1886；New Advent电子版",
+      "scope": "7、18—20、24—30、43—48：共治、退位、拥立与内战。",
+      "limitations": "作者亲君士坦丁且强烈敌视迫害者；宫廷对话、道德评价和神助解释须与政治事件区分。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "diocletian": {
+      "label": "DIR：Diocletian",
+      "author": "Ralph W. Mathisen",
+      "url": "https://www.roman-emperors.sites.luc.edu/dioclet.htm",
+      "edition": "De Imperatoribus Romanis署名研究，1997更新版",
+      "scope": "Administrative and Military Reforms；Resignation and Death中的共治与305年交接。",
+      "limitations": "只采用指定段落的共治框架；不沿用该文对经济完全崩溃等概括，不据此重定原卷卒日。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "constantine": {
+      "label": "DIR：Constantine I",
+      "author": "Hans A. Pohlsander",
+      "url": "https://www.roman-emperors.sites.luc.edu/conniei.htm",
+      "edition": "De Imperatoribus Romanis署名研究",
+      "scope": "Rise to Power；Conversion；Conflict with Licinius：306、312、313及324年。",
+      "limitations": "现代研究所引古代文献属间接路径；异象叙述不当作独立证实。本文不裁断君士坦丁内心动机。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "procopius": {
+      "label": "普罗柯比《战争史》I—II",
+      "author": "Procopius",
+      "url": "https://www.gutenberg.org/files/16764/16764-h/16764-h.htm",
+      "edition": "H. B. Dewing英译，Loeb，1914；Project Gutenberg",
+      "scope": "I.22—24：和平、财政与尼卡；II.5—11、22—23：东方战争和瘟疫。",
+      "limitations": "同时代作者有强烈叙事立场；演说是文学文本，死亡数字和全世界灾难措辞不转作统计。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "justinian": {
+      "label": "DIR：Justinian",
+      "author": "James Allan Evans",
+      "url": "https://www.roman-emperors.sites.luc.edu/justinia.htm",
+      "edition": "De Imperatoribus Romanis署名研究",
+      "scope": "Introduction；The Early Years及法律、非洲和意大利战争相关段落。",
+      "limitations": "用于勾连法律与战争的次序；所引未取得的法典、阿加提阿斯和现代专著不冒充直接核读。瘟疫规模及经济因果不量化。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "socrates": {
+      "label": "苏格拉底《教会史》VII",
+      "author": "Socrates Scholasticus",
+      "url": "https://www.newadvent.org/fathers/26017.htm",
+      "edition": "A. C. Zenos英译，NPNF第二辑第2卷，1890",
+      "scope": "VII.1、22—24、42：狄奥多西宫廷、普尔喀丽娅、约翰尼斯及西部继承。",
+      "limitations": "教会史作者以虔敬和神助组织解释；胜利、教义评价与可辨识的行动分开。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "honorius": {
+      "label": "DIR：Honorius",
+      "author": "Ralph W. Mathisen",
+      "url": "https://www.roman-emperors.sites.luc.edu/honorius.htm",
+      "edition": "De Imperatoribus Romanis署名研究",
+      "scope": "395年继承、斯提利科、408年清洗和410年罗马陷落段落",
+      "limitations": "现代研究的古代引文属间接引述；不将宫廷胜负化约为族群天性或皇帝能力分数。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "theodosius": {
+      "label": "DIR：Theodosius II",
+      "author": "Geoffrey S. Nathan",
+      "url": "https://www.roman-emperors.sites.luc.edu/theo2.htm",
+      "edition": "De Imperatoribus Romanis署名研究",
+      "scope": "Early Years；Relations with the West；狄奥多西法典相关段落",
+      "limitations": "现代研究的古代引文属间接引述；不将宫廷胜负化约为族群天性或皇帝能力分数。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "valentinian": {
+      "label": "DIR：Valentinian III",
+      "author": "Ralph W. Mathisen",
+      "url": "https://www.roman-emperors.sites.luc.edu/valenIII.htm",
+      "edition": "De Imperatoribus Romanis署名研究",
+      "scope": "普拉西狄娅、埃提乌斯、非洲丧失与454—455年段落",
+      "limitations": "现代研究的古代引文属间接引述；不将宫廷胜负化约为族群天性或皇帝能力分数。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "leo": {
+      "label": "DIR：Leo I",
+      "author": "Hugh Elton",
+      "url": "https://www.roman-emperors.sites.luc.edu/leo1.htm",
+      "edition": "De Imperatoribus Romanis署名研究",
+      "scope": "阿斯帕尔、468年远征与471年清洗相关段落",
+      "limitations": "现代研究的古代引文属间接引述；不将宫廷胜负化约为族群天性或皇帝能力分数。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "marcellinus": {
+      "label": "马尔凯利努斯《编年史》",
+      "author": "Marcellinus Comes",
+      "url": "https://www.thelatinlibrary.com/marcellinus1.html",
+      "edition": "Mommsen拉丁文电子转录",
+      "scope": "s.a. 476：奥雷斯特斯、奥多亚克及罗慕路斯；与原卷476年证据卡并读。",
+      "limitations": "首都中心的编年立场；将476叙为西部帝国终结是作者分期，不抹除尼波斯至480年的帝号。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "anna3": {
+      "label": "安娜《阿莱克修斯传》III",
+      "author": "Anna Komnene",
+      "url": "https://sourcebooks.fordham.edu/basis/AnnaComnena-Alexiad03.asp",
+      "edition": "Elizabeth A. S. Dawes英译，1928；Fordham",
+      "scope": "III.1—8：即位后的宫廷安排、亲属荣衔、安娜·达拉塞娜授权。",
+      "limitations": "为父亲和家族辩护的后出叙事；转录的授权不是亲验金玺诏书原件。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "anna8": {
+      "label": "安娜《阿莱克修斯传》VIII",
+      "author": "Anna Komnene",
+      "url": "https://sourcebooks.fordham.edu/basis/AnnaComnena-Alexiad08.asp",
+      "edition": "Dawes英译，1928；Fordham",
+      "scope": "VIII.3—6：库曼联盟与莱武尼翁之战。",
+      "limitations": "作者夸饰敌军数量与胜利规模；不把人数转作人口或损失统计。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "anna11": {
+      "label": "安娜《阿莱克修斯传》XI",
+      "author": "Anna Komnene",
+      "url": "https://sourcebooks.fordham.edu/basis/AnnaComnena-Alexiad11.asp",
+      "edition": "Dawes英译，1928；Fordham",
+      "scope": "XI.1—3：尼西亚归还；XI.5—8：安条克、誓约和援军分歧。",
+      "limitations": "帝国宫廷视角，不替代十字军各方见证；不能把安娜的动机解释当作各方共同承认的事实。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "anna13": {
+      "label": "安娜《阿莱克修斯传》XIII",
+      "author": "Anna Komnene",
+      "url": "https://sourcebooks.fordham.edu/basis/AnnaComnena-Alexiad13.asp",
+      "edition": "Dawes英译，1928；Fordham",
+      "scope": "XIII.9—12：博希蒙德与德沃尔安排。",
+      "limitations": "协议文本经安娜转录；承诺不等于安条克已全面实际移交。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "psellus": {
+      "label": "普塞洛斯《编年史》罗曼努斯四世段",
+      "author": "Michael Psellos",
+      "url": "https://sourcebooks.fordham.edu/basis/psellus-chronographia.asp",
+      "edition": "E. R. A. Sewter英译，1953；Fordham入口",
+      "scope": "Book VII，Romanus IV与Michael VII相关节选；本次沿用原卷研究路径。",
+      "limitations": "本次未重新直接核读此译本；不得据本来源扩写战场细节。",
+      "kind": "primary",
+      "access": "inherited",
+      "checked": "2026-10-21"
+    },
+    "gibbon": {
+      "label": "吉本《罗马帝国衰亡史》卷六",
+      "author": "Edward Gibbon",
+      "url": "https://www.gutenberg.org/cache/epub/895/pg895-images.html",
+      "edition": "H. H. Milman注本公版电子转录；原作18世纪",
+      "scope": "LXI—LXII：1204后竞争政权、尼西亚、1259—1261；LIX开头关于阿莱克修斯的回顾。",
+      "limitations": "旧通史的民族、性别及文明衰败评判不采用。所引阿克罗波利特、帕奇梅雷斯、格里高拉斯仅为间接路径，未冒充本次核读原著。",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    },
+    "villehardouin": {
+      "label": "维尔阿杜安《征服君士坦丁堡》",
+      "author": "Geoffrey of Villehardouin",
+      "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+      "edition": "Frank T. Marzials英译，1908；Fordham电子转录",
+      "scope": "Second Capture；Pillage；Election of Baldwin；Battle of Adrianople各段。",
+      "limitations": "参与者、谈判者对远征领导层有辩护立场，不以他的辩解代替受害者经验。",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-21"
+    }
+  },
+  "stories": [
+    {
+      "id": "kings-and-citizens",
+      "period": "kingdom",
+      "title": "一座城，谁来作主",
+      "subtitle": "从建城传统到王政终结",
+      "theme": "建城 · 身份 · 王权",
+      "question": "罗马人如何借七王的故事，解释共同体、制度与反王政的起源？",
+      "setup": "七王不是连续保存下来的当代档案。李维面对的是久远传统：一个向外吸收居民、向内分配权力的城市，为什么最终以废王来解释自由？沿着传统的节点读，既看故事如何推进，也看作者为何这样安排。",
+      "caution": "全篇为后世建城与王政传统的导读。年份是既有王表的阅读锚点；王期内事迹不因此获得确年，不把神迹或文学演说当作目击记录。",
+      "cast": [
+        {
+          "label": "罗慕路斯",
+          "role": "建城与吸纳外来者的传统"
+        },
+        {
+          "label": "努马",
+          "role": "祭祀与共同秩序"
+        },
+        {
+          "label": "塞尔维乌斯",
+          "role": "财产登记与公民分类"
+        },
+        {
+          "label": "末王塔克文",
+          "role": "暴政形象与反王政结局"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "founding",
+          "year": -753,
+          "title": "城墙先划出谁的边界",
+          "paragraphs": [
+            "罗慕路斯与雷穆斯的冲突，把建城写成一次关于权威的争执。李维保存了兄弟相争的不同讲法，而不是提供一份前753年的施工日志。故事首先让读者看到：共同生活之前，谁有权规定城的界限？",
+            "随后出现的庇护所与元老，把新共同体写成同时需要人口和秩序的政治安排。开放吸纳并没有取消等级；公民从哪里来，与谁能代表他们，是一起被提出的问题。"
+          ],
+          "question": "接纳新居民与划定统治边界，为什么会同时出现在起源叙事中？",
+          "people": [
+            "kingdom:romulus"
+          ],
+          "dateLabel": "前753年",
+          "dateKind": "traditional",
+          "references": [
+            {
+              "source": "livy",
+              "locator": "1.6—8",
+              "supports": "建城争执、庇护所与元老传统"
+            }
+          ]
+        },
+        {
+          "id": "shared-city",
+          "year": -753,
+          "title": "敌人怎样成为同城的人",
+          "paragraphs": [
+            "抢婚传统把暴力纳入建城叙事，也让萨宾妇女成为停止战争的行动者。李维让她们站在父亲与丈夫之间，促成两方共享城市和统治。她们的处境不能被简化成一幅无冲突的民族融合图。",
+            "塔提乌斯的共治，说明罗马的自我解释不只是一人征服一切；它也需要解释不同居民如何变成同一个政治体。这里仍用建城年作入口，共治的绝对起止年并未确定。"
+          ],
+          "question": "共同体的扩大，靠征服、协商还是两者交织？",
+          "people": [
+            "kingdom:romulus",
+            "kingdom:titus-tatius"
+          ],
+          "dateLabel": "建城后传统；绝对年未定（前753年为阅读入口）",
+          "dateKind": "reading-anchor",
+          "references": [
+            {
+              "source": "livy",
+              "locator": "1.9—14",
+              "supports": "萨宾战争、妇女调停与共治传统"
+            }
+          ]
+        },
+        {
+          "id": "ritual-order",
+          "year": -715,
+          "title": "王位空缺以后，谁能使人服从",
+          "paragraphs": [
+            "罗慕路斯退出舞台后，元老轮流掌权的空位传统，让“谁来选王”成为问题。努马经选立和宗教认可进入故事；他的权威被写成能使尚武居民在和平中接受约束。",
+            "历法、祭司与仪式，是李维用来解释共同秩序的线索。这些制度不能一概视作某一年一次创设完成。故事由武力转向礼仪，但决定秩序的人及解释秩序的权力仍在中心。"
+          ],
+          "question": "当没有新的战争时，什么使共同体持续运转？",
+          "people": [
+            "kingdom:numa-pompilius"
+          ],
+          "dateLabel": "传统前715年继位；制度事迹未定年",
+          "dateKind": "traditional",
+          "references": [
+            {
+              "source": "livy",
+              "locator": "1.17—21",
+              "supports": "空位、努马选立及宗教制度归名"
+            }
+          ]
+        },
+        {
+          "id": "absorbing-neighbours",
+          "year": -672,
+          "title": "扩张把邻人带进城内",
+          "paragraphs": [
+            "图卢斯时代的阿尔巴故事把竞争推向残酷结局：城市被毁，居民迁入罗马，部分贵族进入元老院。李维同时写下失去家园的悲痛，所谓吸纳不是没有代价的欢迎仪式。",
+            "从共同起源到共同政治身份，并没有一条自动通道。罗马的扩大改变了城内居民与精英的构成；这也为后来外来人物进入王位的叙事，准备了一个不断重组的共同体。"
+          ],
+          "question": "扩大公民共同体与摧毁别人的城市，可以怎样同时存在？",
+          "people": [
+            "kingdom:tullus-hostilius",
+            "kingdom:tarquinius-priscus"
+          ],
+          "dateLabel": "图卢斯王期传统；前672年为入口",
+          "dateKind": "reading-anchor",
+          "references": [
+            {
+              "source": "livy",
+              "locator": "1.27—30；1.34—35",
+              "supports": "阿尔巴迁入、精英吸纳及老塔克文入罗马传统"
+            }
+          ]
+        },
+        {
+          "id": "counting-citizens",
+          "year": -578,
+          "title": "把公民变成可以计算的等级",
+          "paragraphs": [
+            "塞尔维乌斯的身世和继位叙事，继续追问王权来自血统、宫廷支持还是公民承认。财产登记与军事分类则把另一个问题摆上台面：出钱、服役与发言，是否应该由同一种等级来分配？",
+            "李维把后来可见的制度追溯给一位国王。阅读这套解释能帮助理解罗马人的制度记忆，却不能据此认定成熟的百人队投票结构在前六世纪某日完整诞生。"
+          ],
+          "question": "按财富分担军役，是否也意味着按财富分配政治声音？",
+          "people": [
+            "kingdom:servius-tullius"
+          ],
+          "dateLabel": "塞尔维乌斯王期传统；前578年为入口",
+          "dateKind": "reading-anchor",
+          "references": [
+            {
+              "source": "livy",
+              "locator": "1.39—48",
+              "supports": "继位、财产等级和塞尔维乌斯死亡传统"
+            }
+          ]
+        },
+        {
+          "id": "ending-kingship",
+          "year": -509,
+          "title": "废掉国王，就解决权力问题了吗",
+          "paragraphs": [
+            "末王在李维笔下绕过元老、依赖暴力，并把公共工程写成居民的负担。卢克蕾提娅遭受性暴力的故事，使家庭内部的侵害转为反王政动员；她不是只用来装点继承关系的名字。",
+            "布鲁图斯的行动把结局推向废王与年度执政官。叙事给出了“自由”的起点，却没有保证权力从此平等。进入共和国后，谁能任职、谁受保护、谁承担征兵，仍将继续争论；王政故事的结束正是下一卷问题的开端。"
+          ],
+          "question": "改变最高职务的名称和任期之后，还需要哪些约束？",
+          "people": [
+            "kingdom:tarquinius-superbus"
+          ],
+          "dateLabel": "前509年",
+          "dateKind": "traditional",
+          "references": [
+            {
+              "source": "livy",
+              "locator": "1.49、56—60；2.1",
+              "supports": "末王形象、卢克蕾提娅及共和国起点传统"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Romulus",
+        "Numa",
+        "Servius Tullius",
+        "Tarquinius"
+      ]
+    },
+    {
+      "id": "tetrarchy-to-civil-war",
+      "period": "empire",
+      "title": "四个人的帝国，一个人的胜利",
+      "subtitle": "四帝共治为何没能安排好下一次交接",
+      "theme": "继承 · 军队 · 共治",
+      "question": "把继承写进共治秩序，为何仍不能阻止内战？",
+      "setup": "三世纪危机之后，皇帝需要同时面对多条战线。戴克里先的办法，是把皇帝的在场分散到多个宫廷，再用等级与继任安排把他们拴在一起。真正的考验不是四个人能否合作，而是他们离场以后，谁能让军队接受名单。",
+      "caution": "头衔、承认与事实控制分开。年份只作叙事节点，具体任期沿用原档案；不把共治等同四个现代民族国家，也不把胜利解释成改革一开始就注定失败。",
+      "cast": [
+        {
+          "label": "戴克里先",
+          "role": "共治与交接的组织者"
+        },
+        {
+          "label": "伽列里乌斯",
+          "role": "新共治秩序的资深人物"
+        },
+        {
+          "label": "君士坦丁一世",
+          "role": "军队拥立与家族主张"
+        },
+        {
+          "label": "李锡尼",
+          "role": "盟友与最后的竞争者"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "four-courts",
+          "year": 293,
+          "title": "多一个皇帝，能少一场内战吗",
+          "paragraphs": [
+            "两位奥古斯都之外再设两位恺撒，使远方战线能够由具皇权者处理。亲属、婚姻和神圣化的共同形象，试图把多个指挥中心解释成同一统治秩序，而不是允许任意将领自立。",
+            "这套安排把继承问题提前了：恺撒有望升为奥古斯都。它依赖现任者互相认可、军队接受等级，也需要皇帝之子接受自己未必在下一份名单上。"
+          ],
+          "question": "接班安排依靠的是制度位置，还是安排者的权威？",
+          "people": [
+            "empire:diocletian",
+            "empire:galerius",
+            "empire:constantius-i",
+            "empire:maximian"
+          ],
+          "dateLabel": "公元293年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "diocletian",
+              "locator": "Administrative and Military Reforms，共治两段",
+              "supports": "293年两级共治框架"
+            },
+            {
+              "source": "lactantius",
+              "locator": "7",
+              "supports": "多个统治中心的批判性叙述"
+            }
+          ]
+        },
+        {
+          "id": "abdication",
+          "year": 305,
+          "title": "第一次交接，看起来成功了",
+          "paragraphs": [
+            "戴克里先与马克西米安退位，两名原恺撒升任，两名新恺撒补位。皇帝可以主动退出，职位也能按等级递进，这一刻并没有立即出现全面内战。",
+            "但君士坦丁和马克森提乌斯没有成为新恺撒。拉克坦提乌斯把遴选过程写成充满私心的宫廷对话；这些对白不是会议记录，却提示了一条实际裂缝：既有皇族与指定继任者的利益并不相同。"
+          ],
+          "question": "一次平稳交接，是否足以证明下一次也会被接受？",
+          "people": [
+            "empire:diocletian",
+            "empire:galerius",
+            "empire:severus-ii",
+            "empire:maximinus-daia"
+          ],
+          "dateLabel": "公元305年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "lactantius",
+              "locator": "18—20",
+              "supports": "305年交接、新恺撒及皇子被排除"
+            },
+            {
+              "source": "diocletian",
+              "locator": "Resignation and Death，退位段",
+              "supports": "305年退位次序"
+            }
+          ]
+        },
+        {
+          "id": "soldiers-and-sons",
+          "year": 306,
+          "title": "军队给出了另一份名单",
+          "paragraphs": [
+            "君士坦提乌斯死后，军队拥立其子君士坦丁。伽列里乌斯给予的地位与军队最初喊出的称号不同，承认成为讨价还价的工具。罗马的马克森提乌斯也借本地支持起事，皇子血统重新进入竞争。",
+            "名单由上层指定，兵员与城市却掌握在各人手中。两种权威来源发生冲突，四帝共治并没有一套能自动强制所有人服从的裁决机制。"
+          ],
+          "question": "谁有资格给别人帝号：资深皇帝、军队还是首都？",
+          "people": [
+            "empire:constantine-i",
+            "empire:maxentius",
+            "empire:galerius"
+          ],
+          "dateLabel": "公元306年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "lactantius",
+              "locator": "24—27",
+              "supports": "君士坦丁、马克森提乌斯的拥立与承认"
+            },
+            {
+              "source": "constantine",
+              "locator": "Rise to Power",
+              "supports": "306年军队拥立与竞争"
+            }
+          ]
+        },
+        {
+          "id": "conference",
+          "year": 308,
+          "title": "重新排座次，无法重新分配忠诚",
+          "paragraphs": [
+            "卡农图姆会面试图恢复秩序，李锡尼获得奥古斯都号。可是一次会议可以改写称号，却不能轻易把君士坦丁、马克森提乌斯各自拥有的军队与据点交给另一人。",
+            "从这里继续读，关键不再是总共有几位自称皇帝，而是谁的地位被谁认可、谁又能在自己的地盘发号施令。原任期时间轴可以帮助区分这些层次。"
+          ],
+          "question": "当新名单与既有军政实力不一致，协议能怎样执行？",
+          "people": [
+            "empire:licinius",
+            "empire:galerius",
+            "empire:constantine-i"
+          ],
+          "dateLabel": "公元308年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "lactantius",
+              "locator": "29—30",
+              "supports": "会面、李锡尼与称号安排"
+            }
+          ]
+        },
+        {
+          "id": "milvian-bridge",
+          "year": 312,
+          "title": "胜利消除了一个对手",
+          "paragraphs": [
+            "君士坦丁进入意大利，马克森提乌斯在米尔维安桥一役败亡，西方的竞争格局发生决定性变化。战场胜利解决了谁控制罗马，却没有自动恢复戴克里先设计的递补秩序。",
+            "基督教作者把胜利与神助相连，后来关于异象的版本也不一致。故事可以讨论胜利如何被解释，不能据不同版本拼出一个已经独立证实的超自然现场。"
+          ],
+          "question": "军事胜利的政治结果，与胜利者赋予它的宗教意义有什么区别？",
+          "people": [
+            "empire:constantine-i",
+            "empire:maxentius"
+          ],
+          "dateLabel": "公元312年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "lactantius",
+              "locator": "44",
+              "supports": "桥战及梦兆的作者叙述"
+            },
+            {
+              "source": "constantine",
+              "locator": "Rise to Power；Conversion",
+              "supports": "桥战与异象版本的区别"
+            }
+          ]
+        },
+        {
+          "id": "milan-alliance",
+          "year": 313,
+          "title": "婚姻、宗教政策与暂时的合作",
+          "paragraphs": [
+            "君士坦丁与李锡尼以婚姻和合作巩固关系；李锡尼击败马克西米努斯后，两大权力中心相对而立。通常称作“米兰敕令”的政策，应区分会面形成的安排与后来发布的文本。",
+            "合作能够容纳共同对手，却没有消除彼此的军队、宫廷和未来继承计划。多帝秩序并非在305年突然消失，而是在新联盟中不断被重新解释。"
+          ],
+          "question": "共同的宗教政策，能否保证两座宫廷长期合作？",
+          "people": [
+            "empire:constantine-i",
+            "empire:licinius",
+            "empire:maximinus-daia"
+          ],
+          "dateLabel": "公元313年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "lactantius",
+              "locator": "45—48",
+              "supports": "李锡尼战争及宗教宽容文书"
+            },
+            {
+              "source": "constantine",
+              "locator": "Conversion；Conflict with Licinius",
+              "supports": "313年安排与随后矛盾"
+            }
+          ]
+        },
+        {
+          "id": "sole-rule",
+          "year": 324,
+          "title": "最后一场战争，留下原来的难题",
+          "paragraphs": [
+            "324年的战争使李锡尼失去权力，君士坦丁成为唯一的最高统治者。军队、联盟和皇族安排共同推动了结果；它不能被写成一种抽象的“一统愿望”自动战胜全部制度。",
+            "回望293年，四帝共治确实帮助多个战区同时行动，也示范过一次主动退位。它未能稳定约束后来者如何产生。独掌皇权结束了这一轮竞争，却把接班问题重新交还给一个胜利者及其家族。"
+          ],
+          "question": "集中到一个宫廷的权力，是否就更容易传给下一代？",
+          "people": [
+            "empire:constantine-i",
+            "empire:licinius"
+          ],
+          "dateLabel": "公元324年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "constantine",
+              "locator": "Conflict with Licinius，324年战争段",
+              "supports": "324年胜负与唯一统治"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Tetrarchy",
+        "Diocletian",
+        "Constantine",
+        "Licinius"
+      ]
+    },
+    {
+      "id": "two-courts",
+      "period": "divided-empire",
+      "title": "两座宫廷，一张罗马的地图",
+      "subtitle": "395—476年的协作、争夺与军事权力",
+      "theme": "宫廷 · 财政 · 军队",
+      "question": "为什么同属罗马的两座宫廷，会面对如此不同的政治结局？",
+      "setup": "395年不是一道让全部联系中断的国界。两个宫廷分享皇室语言与帝国主张，也争夺将领、承认和资源。跟随继承危机与远征，能看到合作何时可能，以及军队、税源与皇位如何互相制约。",
+      "caution": "这里讨论行动和资源，不以“东强西弱”替代每一阶段的具体解释。军人族源不是忠诚或政治结果的自动原因，476年也不等于所有罗马制度同时消失。",
+      "cast": [
+        {
+          "label": "霍诺里乌斯",
+          "role": "西部宫廷与继承危机"
+        },
+        {
+          "label": "狄奥多西二世",
+          "role": "东方宫廷与西部干预"
+        },
+        {
+          "label": "普拉西狄娅",
+          "role": "皇室政治与幼帝"
+        },
+        {
+          "label": "埃提乌斯、里西默",
+          "role": "拥有具体军政基础的强人"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "inheritance",
+          "year": 395,
+          "title": "兄弟分掌宫廷，并未分掉帝国观念",
+          "paragraphs": [
+            "狄奥多西一世死后，阿卡狄乌斯与霍诺里乌斯分别居于东西宫廷。原有共帝身份与身边官员的权力，让继承不是一张简单的遗产分割书。",
+            "斯提利科声称的监护范围与东方宫廷的利益相冲突。两边都能使用“整个罗马”的语言，却未必接受同一个人指挥军队；共同帝国身份由此也能成为干预对方的理由。"
+          ],
+          "question": "同属一个帝国，是否意味着双方承认同一位实际决策者？",
+          "people": [
+            "divided-empire:arcadius",
+            "divided-empire:honorius",
+            "power:stilicho"
+          ],
+          "dateLabel": "公元395年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "honorius",
+              "locator": "395年继承与斯提利科相关段落",
+              "supports": "兄弟宫廷与监护争执"
+            }
+          ]
+        },
+        {
+          "id": "purge",
+          "year": 408,
+          "title": "去掉强人，军队并没有随之安定",
+          "paragraphs": [
+            "斯提利科被清洗后，西部失去了一个重要协调中心。宫廷为了摆脱将领而行动，却不能仅靠处决就解决军队安置、阿拉里克的要求及意大利防务。",
+            "410年罗马被洗劫，不是西部宫廷在当年立即终结。它让我们看到象征中心与实际驻跸中心已经不同，也让“谁能同对手谈判、谁能提供粮饷”比空泛的帝国威望更加尖锐。"
+          ],
+          "question": "消除一个有威胁的将领，怎样可能同时削弱宫廷的行动能力？",
+          "people": [
+            "divided-empire:honorius",
+            "power:stilicho"
+          ],
+          "dateLabel": "408—410年的危机（408年为入口）",
+          "dateKind": "range",
+          "references": [
+            {
+              "source": "honorius",
+              "locator": "408年清洗、阿拉里克与410年段落",
+              "supports": "清洗与危机的政治背景"
+            }
+          ]
+        },
+        {
+          "id": "restoring-dynasty",
+          "year": 425,
+          "title": "东方用军队选择西方的皇帝",
+          "paragraphs": [
+            "霍诺里乌斯去世后的争位，把承认问题变成军事干预。东方宫廷支持瓦伦提尼安三世，约翰尼斯失败；普拉西狄娅与幼帝返回西部，王朝联系重新成为统治资源。",
+            "这次成功说明，两宫廷并非各走各路。东方可以通过皇族、远征和任命影响西方；然而被扶立的宫廷仍需要在本地组织将领与税源，外来的胜利不能代替日常统治。"
+          ],
+          "question": "被另一个宫廷承认和扶立，与在本地稳定统治之间还有多远？",
+          "people": [
+            "divided-empire:theodosius-ii",
+            "divided-empire:valentinian-iii",
+            "divided-empire:johannes",
+            "power:galla-placidia"
+          ],
+          "dateLabel": "公元425年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "socrates",
+              "locator": "VII.23—24",
+              "supports": "约翰尼斯败亡与西部继承"
+            },
+            {
+              "source": "valentinian",
+              "locator": "即位、普拉西狄娅与早年统治段落",
+              "supports": "幼帝与皇室政治"
+            }
+          ]
+        },
+        {
+          "id": "law-and-africa",
+          "year": 439,
+          "title": "共享法律，无法共享全部财政后果",
+          "paragraphs": [
+            "狄奥多西法典让共同帝国秩序获得一种可见的法律表达，东西关系仍有合作空间。与此同时，迦太基落入汪达尔之手，西部面临的是具体税源与海上通道的变化。",
+            "两件事放在一起，比单线的“分裂史”更能说明局面：法令可以确认共同体，战争却会改变维持军队的资源条件。非洲损失不是解释此后每次失败的万能答案，却是难以忽视的约束。"
+          ],
+          "question": "共同法律能够维持到什么程度，才会被财政和军事差异拉开？",
+          "people": [
+            "divided-empire:theodosius-ii",
+            "divided-empire:valentinian-iii"
+          ],
+          "dateLabel": "438—439年的两个节点（439年为入口）",
+          "dateKind": "range",
+          "references": [
+            {
+              "source": "theodosius",
+              "locator": "法典编订及与西部关系段落",
+              "supports": "法典与两宫廷合作"
+            },
+            {
+              "source": "valentinian",
+              "locator": "非洲丧失段落",
+              "supports": "439年迦太基及资源背景"
+            }
+          ]
+        },
+        {
+          "id": "emperor-and-general",
+          "year": 454,
+          "title": "皇帝杀死将军之后",
+          "paragraphs": [
+            "瓦伦提尼安三世杀死埃提乌斯，接着自己在455年被杀。宫廷试图解除一个长期掌军者的威胁，却没有因此建立稳定的指挥和继承关系。",
+            "个人冲突之所以产生广泛后果，是因为军队、官职和支持网络并不能与掌握它们的人轻易分离。这里需要解释行动链，而不是给“软弱皇帝”或“强人”贴上能预言一切的性格标签。"
+          ],
+          "question": "权力过度依赖个人网络时，移除一个人会留下什么？",
+          "people": [
+            "divided-empire:valentinian-iii",
+            "power:aetius"
+          ],
+          "dateLabel": "454—455年（454年为入口）",
+          "dateKind": "range",
+          "references": [
+            {
+              "source": "valentinian",
+              "locator": "454—455年埃提乌斯与瓦伦提尼安之死段落",
+              "supports": "清洗与继承危机"
+            }
+          ]
+        },
+        {
+          "id": "shared-expedition",
+          "year": 468,
+          "title": "两边投入一次战争，仍可能一起失算",
+          "paragraphs": [
+            "东方利奥与西方安提米乌斯合作对付汪达尔，468年远征失败。合作的存在本身提醒我们：两宫廷仍会为共同目标动员资源；失败也会同时改变参与者的政治处境。",
+            "不能把后来不同的结局倒推成东方从来不关心西方。真正的问题是，一次大规模失败之后，谁还保有财政与政治回旋空间，谁又必须在更窄的选择中处理将领和皇位。"
+          ],
+          "question": "共同承担风险，为何可能产生不对称的后果？",
+          "people": [
+            "divided-empire:leo-i",
+            "divided-empire:anthemius",
+            "divided-empire:basiliscus"
+          ],
+          "dateLabel": "公元468年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "leo",
+              "locator": "468年非洲远征段落",
+              "supports": "联合远征及失败"
+            }
+          ]
+        },
+        {
+          "id": "military-networks",
+          "year": 471,
+          "title": "两座宫廷，各自处理自己的强人",
+          "paragraphs": [
+            "利奥清除阿斯帕尔，与西方里西默持续支配皇位安排，构成可以比较的两种局面。这里的差别需要从具体宫廷联盟和武力来源解释，不能仅凭将领的家世或族源判断。",
+            "同样叫“皇帝与强人”，并不意味着权力配置相同。年度档案和人物专题能让读者分别看见头衔、行动与限制，避免把没有帝号者也塞进皇帝继承线。"
+          ],
+          "question": "同一种职务标签，能否解释不同宫廷的实际权力？",
+          "people": [
+            "divided-empire:leo-i",
+            "power:aspar",
+            "power:ricimer"
+          ],
+          "dateLabel": "公元471年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "leo",
+              "locator": "阿斯帕尔及471年清洗段落",
+              "supports": "利奥与阿斯帕尔的关系变化"
+            }
+          ]
+        },
+        {
+          "id": "what-ended",
+          "year": 476,
+          "title": "哪一种终结，发生在476年",
+          "paragraphs": [
+            "罗慕路斯被废，意大利不再另立一个同样的西部宫廷；芝诺刚经历东方的争位与复位，尼波斯仍在达尔马提亚保有西帝号。几条时间线必须一起看，才不会把分卷终点当作所有称号的共同终点。",
+            "因此，395—476年的故事不是东西两块地图自动越走越远。它是一连串承认、清洗、资源变动与失败合作；476年给其中一种宫廷结构划下界点，却让罗马统治与合法性的问题以新的形式继续存在。"
+          ],
+          "question": "说“西罗马灭亡”时，具体指皇位、宫廷、领土还是制度？",
+          "people": [
+            "divided-empire:romulus-augustus",
+            "divided-empire:julius-nepos",
+            "divided-empire:zeno"
+          ],
+          "dateLabel": "公元476年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "marcellinus",
+              "locator": "s.a. 476，Orestes、Odoacer、Augustulus段",
+              "supports": "罗慕路斯被废与作者的分期"
+            },
+            {
+              "source": "socrates",
+              "locator": "VII.1；本章结论为跨章综合解释",
+              "supports": "共同帝国框架的对照；不据此证明476年细节"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Honorius",
+        "Theodosius",
+        "Stilicho",
+        "Ricimer"
+      ]
+    },
+    {
+      "id": "justinian-project",
+      "period": "byzantine",
+      "title": "重建罗马，需要付出什么",
+      "subtitle": "查士丁尼的法律、战争与财政选择",
+      "theme": "法律 · 战争 · 财政",
+      "question": "法律的统一、疆域的恢复与臣民的负担，能否同时推进？",
+      "setup": "查士丁尼继承了一个仍有军队、税制和法律传统的帝国。他的多项事业不是互不相干的成就清单：整理法律需要可执行的统治，远征需要粮饷，首都政治又会决定谁能继续提出这些计划。",
+      "caution": "不计算未经证实的财政总额或瘟疫死亡率；不把西征、瘟疫或宗教政策单独当作此后全部变化的唯一原因。皇后、将领的行动另有档案，不等同共帝称号。",
+      "cast": [
+        {
+          "label": "查士丁尼一世",
+          "role": "立法与远征的决策中心"
+        },
+        {
+          "label": "狄奥多拉",
+          "role": "宫廷与危机中的政治行动"
+        },
+        {
+          "label": "贝利撒留",
+          "role": "跨战区的军事指挥"
+        },
+        {
+          "label": "纳尔塞斯",
+          "role": "意大利战争后期指挥"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "inheriting-rule",
+          "year": 527,
+          "title": "接过帝位，也接过多条战线",
+          "paragraphs": [
+            "查士丁尼从共帝转为独掌宫廷，新的计划需要依靠既有行政与军事组织。西方征服并不是他即位时已经完成的一张待涂色地图；东方的波斯战争同样要求资源。",
+            "由此开始读法律与战争，能看到它们共享一个前提：宫廷必须让命令穿过官员、将领和地方社会。纸面权威与执行能力之间的距离，将贯穿整个故事。"
+          ],
+          "question": "皇帝发布一项计划之前，哪些条件必须已经存在？",
+          "people": [
+            "byzantine:justinian-i",
+            "power:theodora-justinian"
+          ],
+          "dateLabel": "公元527年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "justinian",
+              "locator": "Background，527年继承段；Introduction",
+              "supports": "即位及法律、战争事业概况"
+            }
+          ]
+        },
+        {
+          "id": "law-books",
+          "year": 529,
+          "title": "统一法律，先要决定什么算有效",
+          "paragraphs": [
+            "法典整理试图让散布的皇帝敕令变得可用。此后《学说汇纂》与《法学阶梯》等编纂把法学传统组织成新的权威文本；529不是全部编纂一次完成的年份。",
+            "这不仅是保存过去，也是皇帝决定哪些文本可以指导现在。把它与财政、行政并读，才能理解法律统一为何需要实际的官员、审判和征收体系；有了书，并不等于每处社会关系立即按同一种方式运转。"
+          ],
+          "question": "把旧法律编成新权威，是恢复传统，还是重新选择传统？",
+          "people": [
+            "byzantine:justinian-i"
+          ],
+          "dateLabel": "529—534年编纂过程（529年为入口）",
+          "dateKind": "range",
+          "references": [
+            {
+              "source": "justinian",
+              "locator": "Introduction，Codex、Institutes、Digest段；法律相关段落",
+              "supports": "法律编纂的多阶段性质"
+            }
+          ]
+        },
+        {
+          "id": "nika",
+          "year": 532,
+          "title": "首都危机让计划险些中止",
+          "paragraphs": [
+            "尼卡动乱使竞赛派别、对官员的不满与帝位竞争汇合。宫廷最终动用武力镇压，查士丁尼的统治得以延续；不能把这场危机仅仅写成体育观众闹事。",
+            "普罗柯比为狄奥多拉写下著名演说。它展示作者如何塑造关键时刻，却不能当成逐字录音。危机之后的重建与远征，仍需由刚经历流血的统治体系筹措。"
+          ],
+          "question": "一场保住皇位的胜利，是否也能恢复被破坏的政治信任？",
+          "people": [
+            "byzantine:justinian-i",
+            "power:theodora-justinian",
+            "power:belisarius"
+          ],
+          "dateLabel": "公元532年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "procopius",
+              "locator": "I.24",
+              "supports": "尼卡动乱、宫廷讨论和镇压；演说属作者文本"
+            }
+          ]
+        },
+        {
+          "id": "african-victory",
+          "year": 534,
+          "title": "战役结束之后，征服才开始变成统治",
+          "paragraphs": [
+            "贝利撒留的非洲远征击败汪达尔王国，为恢复帝国统治打开了机会。然而战场胜利与稳定统治不是同一件事：新行政、驻军和地方抵抗仍需处理。",
+            "非洲的成功使进一步行动看起来可行。接下来意大利的战争会暴露这个推论的限度：相似的皇帝目标，遇到不同的地方政治和军事条件，不会复制同样的成本与速度。"
+          ],
+          "question": "为何不能用一场迅速胜利，预测下一场战争的代价？",
+          "people": [
+            "byzantine:justinian-i",
+            "power:belisarius"
+          ],
+          "dateLabel": "533—534年远征（534年为入口）",
+          "dateKind": "range",
+          "references": [
+            {
+              "source": "justinian",
+              "locator": "非洲远征及其后统治相关段落",
+              "supports": "非洲征服及统治问题"
+            }
+          ]
+        },
+        {
+          "id": "italy-and-east",
+          "year": 540,
+          "title": "一处胜利，另一条战线重新打开",
+          "paragraphs": [
+            "意大利战争一度使帝国取得拉文纳；与此同时，霍斯劳的东方攻势及安条克遭劫，说明一个战区的进展不能取消另一个战区的要求。",
+            "将领可以调动，粮饷、城防和地方支持却不能无限分身。帝国恢复的边界越广，维持它的协调任务也越多；这是一种需要具体说明的资源约束，不是仅凭疆域面积就能算出的财政结论。"
+          ],
+          "question": "“收复一座城”与“能够长期守住多条边境”之间缺了哪些环节？",
+          "people": [
+            "byzantine:justinian-i",
+            "power:belisarius"
+          ],
+          "dateLabel": "公元540年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "procopius",
+              "locator": "II.5—11",
+              "supports": "540年东方攻势与安条克"
+            },
+            {
+              "source": "justinian",
+              "locator": "意大利战争相关段落",
+              "supports": "拉文纳及跨战区背景"
+            }
+          ]
+        },
+        {
+          "id": "plague",
+          "year": 542,
+          "title": "当人手本身变成稀缺资源",
+          "paragraphs": [
+            "瘟疫抵达首都，普罗柯比描述了患病、埋葬与日常生活受到的冲击。他的目击叙述可以呈现危机经验，不能直接转成精确的全帝国死亡比例。",
+            "疾病与正在进行的战争、征收和建设相遇，使原有选择变得更难。这里没有足够证据把每一项后续政策都归因于瘟疫；可以确定的是，继续维持事业的人不再面对同一个社会环境。"
+          ],
+          "question": "怎样讨论灾害的政治影响，同时避免编造可量化的确定结论？",
+          "people": [
+            "byzantine:justinian-i"
+          ],
+          "dateLabel": "公元542年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "procopius",
+              "locator": "II.22—23",
+              "supports": "首都瘟疫及社会生活冲击"
+            }
+          ]
+        },
+        {
+          "id": "aftermath",
+          "year": 565,
+          "title": "留下的成果，不是一张没有成本的清单",
+          "paragraphs": [
+            "查士丁尼去世时，法律编纂与建筑、重新取得的地区和长期战争的负担同时存在。意大利后期战争还涉及纳尔塞斯等人的行动，不能把所有结果都写成一个皇帝亲手完成。",
+            "故事的答案因此需要分开看：法学传统的后世生命、占领地区的维持、地方社会承受的战争与征收。它们可能有不同的时间尺度；“恢复罗马”既是政治主张，也是需要不断重新支付成本的实践。"
+          ],
+          "question": "评价一项帝国事业，应采用哪一种时间尺度、哪一群人的经验？",
+          "people": [
+            "byzantine:justinian-i",
+            "power:narses"
+          ],
+          "dateLabel": "公元565年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "justinian",
+              "locator": "Introduction；战争结局相关段落",
+              "supports": "统治终点、法律遗产与战争影响的综合"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Justinian",
+        "Theodora",
+        "Belisarius",
+        "Ιουστινιανος"
+      ]
+    },
+    {
+      "id": "komnenian-recovery",
+      "period": "byzantine",
+      "title": "败局之后，帝国怎样重建",
+      "subtitle": "从曼齐刻尔特到阿莱克修斯的多线选择",
+      "theme": "内战 · 联盟 · 重建",
+      "question": "战败之后，重建依靠的是一场复仇战，还是一连串政治安排？",
+      "setup": "1071常被当作转折点，但一句“战败失地”无法解释随后的内战、首都危机和恢复。把视线从战场移向宫廷、巴尔干与西方来客，才能理解阿莱克修斯所面对的多线选择。",
+      "caution": "不从1071一役直接推导全部安纳托利亚变化；前两章保守使用原卷记事和既有出处，未重新核读的普塞洛斯明确标为沿用。安娜的家族立场贯穿后半段。",
+      "cast": [
+        {
+          "label": "罗曼努斯四世",
+          "role": "战败后的皇位争夺"
+        },
+        {
+          "label": "米海尔七世",
+          "role": "首都新政权"
+        },
+        {
+          "label": "阿莱克修斯一世",
+          "role": "危机中的联盟组织者"
+        },
+        {
+          "label": "安娜·达拉塞娜",
+          "role": "宫廷管理与亲属网络"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "manzikert",
+          "year": 1071,
+          "title": "被俘皇帝回来了，皇位却换了人",
+          "paragraphs": [
+            "曼齐刻尔特的军事失败，随后与首都的政权更替纠缠。罗曼努斯回归并没有恢复原来的政治局面；继续理解帝国变化，需要追踪内战及其动员，而不是把一张后来地图塞回战役当天。",
+            "本章沿用既有档案的保守事实骨架，不补造战场对白或精确兵力。下一步的问题是：如果宫廷内部不能形成稳定权威，谁又有能力执行对外和议及重建防务？"
+          ],
+          "question": "战败与政权更替，是同一个事件，还是互相影响的两个过程？",
+          "people": [
+            "byzantine:romanos-iv",
+            "byzantine:michael-vii"
+          ],
+          "dateLabel": "公元1071年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "psellus",
+              "locator": "Book VII，Romanus IV／Michael VII；沿用原卷定位",
+              "supports": "原卷关于战败后继承的骨架；本次未重核译文"
+            }
+          ]
+        },
+        {
+          "id": "changing-throne",
+          "year": 1081,
+          "title": "夺取首都，只是重建的起点",
+          "paragraphs": [
+            "阿莱克修斯取得帝位，面前并非一套等待英雄启动的完整机器。支持他的亲属与杜卡斯家族必须安置，旧皇室的安全、称号与婚姻安排也牵动新政权的稳定。",
+            "安娜细述这些关系并为家族辩护。沿着她的叙事阅读，可以看到亲属不是传记边角料，而是组织政治支持的一种方式；同时也要辨认她有意淡化或解释的冲突。"
+          ],
+          "question": "用家族网络稳定皇位，会解决哪些问题，又产生哪些依赖？",
+          "people": [
+            "byzantine:alexios-i",
+            "byzantine:nikephoros-iii",
+            "power:anna-dalassene"
+          ],
+          "dateLabel": "公元1081年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "anna3",
+              "locator": "III.1—4",
+              "supports": "即位后皇室与杜卡斯安排"
+            }
+          ]
+        },
+        {
+          "id": "delegating-government",
+          "year": 1081,
+          "title": "皇帝出征，谁让首都继续运转",
+          "paragraphs": [
+            "安娜记载阿莱克修斯把广泛行政事务委托母亲安娜·达拉塞娜，使自己能够处理外部军事危机。这里的关键是具体授权和日常管理，不是把母亲自动列为共帝。",
+            "亲属关系提供信任，文书与官员让信任转为可执行的命令。仍不能从这一份授权推定她此后每一年都有完全相同的权力；阅读专题人物档案，可以继续区分观察窗口与正式任期。"
+          ],
+          "question": "在不改变皇帝名录的情况下，如何呈现实际决策者？",
+          "people": [
+            "byzantine:alexios-i",
+            "power:anna-dalassene"
+          ],
+          "dateLabel": "公元1081年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "anna3",
+              "locator": "III.6—8，授权与宫廷管理段",
+              "supports": "母亲的行政委托与军事分工"
+            }
+          ]
+        },
+        {
+          "id": "levounion",
+          "year": 1091,
+          "title": "重建先从眼前的生存开始",
+          "paragraphs": [
+            "佩切涅格压力使首都周边形势紧张，阿莱克修斯争取库曼合作，并在莱武尼翁取得胜利。帝国的生存并不只取决于向东夺回土地，还取决于巴尔干与海峡附近是否能稳住。",
+            "安娜以极强烈的胜利语言叙述此役；我们不把夸饰人数当成统计。可以追踪的因果是，外交与战场结合，改变了帝国同时承受的威胁组合，从而扩大下一步选择的空间。"
+          ],
+          "question": "一场区域性的胜利，怎样改变整个政权的选择范围？",
+          "people": [
+            "byzantine:alexios-i"
+          ],
+          "dateLabel": "公元1091年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "anna8",
+              "locator": "VIII.3—6",
+              "supports": "库曼合作与莱武尼翁战役"
+            }
+          ]
+        },
+        {
+          "id": "nicaea",
+          "year": 1097,
+          "title": "来帮助的人，也有自己的目的",
+          "paragraphs": [
+            "十字军进入帝国空间，阿莱克修斯需要把军事机会转为领土与政治承认。尼西亚归回帝国显示合作的可能，也显露各方对战利品、誓约和控制权的不同期待。",
+            "同一场行动，在宫廷看来可能是恢复旧地，在远征者看来则是自己的牺牲与成果。联盟能够推进战争，却不会自动使双方对目标、义务和主权具有同一种理解。"
+          ],
+          "question": "一个联盟需要共同的敌人，还是还需要共同解释胜利的方式？",
+          "people": [
+            "byzantine:alexios-i"
+          ],
+          "dateLabel": "公元1097年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "anna11",
+              "locator": "XI.1—3",
+              "supports": "尼西亚及帝国与十字军安排"
+            }
+          ]
+        },
+        {
+          "id": "antioch",
+          "year": 1098,
+          "title": "当合作变成谁先失约的争论",
+          "paragraphs": [
+            "安条克问题使誓约、援军与占领权的冲突尖锐化。安娜从父亲一方解释决策，把对方的行为置于自己的合法性框架中；这不是可以直接代表所有参与者的中性会议记录。",
+            "对帝国而言，局部收复与维持同盟并不总是同步。重建因此不是连续向上的胜利曲线，还包括无法执行的要求、被不同阵营重新解释的承诺和长期未解的控制权。"
+          ],
+          "question": "为什么双方都能用同一份承诺，指责对方不守约？",
+          "people": [
+            "byzantine:alexios-i"
+          ],
+          "dateLabel": "公元1098年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "anna11",
+              "locator": "XI.5—8",
+              "supports": "安条克、援军与誓约的宫廷解释"
+            }
+          ]
+        },
+        {
+          "id": "devol",
+          "year": 1108,
+          "title": "条约给出了要求，现实仍需另谈",
+          "paragraphs": [
+            "德沃尔安排试图用臣属义务和领地条款约束博希蒙德，把军事竞争转为可书写的政治秩序。但条约所规定的权利，不等于每一处地方势力都已经服从。",
+            "从1071走到这里，重建的线索是宫廷联盟、行政委托、巴尔干安全及对外协商的组合。阿莱克修斯没有简单恢复战前世界；他使一个改变了的帝国能够继续行动，而恢复本身仍有边界。"
+          ],
+          "question": "条约的成功，应按写下了什么，还是按后来执行了多少来衡量？",
+          "people": [
+            "byzantine:alexios-i"
+          ],
+          "dateLabel": "公元1108年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "anna13",
+              "locator": "XIII.9—12",
+              "supports": "德沃尔条款及其政治要求"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Alexios",
+        "Komnenos",
+        "Manzikert",
+        "Αλεξιος"
+      ]
+    },
+    {
+      "id": "exile-and-return",
+      "period": "byzantine",
+      "title": "没有首都，还能成为帝国吗",
+      "subtitle": "1204—1261年的流亡、竞争与复国",
+      "theme": "流亡 · 合法性 · 复国",
+      "question": "失去君士坦丁堡以后，谁能把皇帝的主张变成恢复首都的能力？",
+      "setup": "1204年的征服摧毁了原有政治中心，却没有留下一个公认的唯一继承者。尼西亚与其他政权竞争，拉丁统治者也有自己的帝国安排；重建需要的不只是记得旧都，更是税源、军队、承认与机会。",
+      "caution": "本剧本后半使用吉本公版通史的指定段落对照原卷；其中引用的阿克罗波利特等未直接核读。旧通史的民族优劣、人物道德化和“必然复兴”判断不采用；加冕与称帝不同，日期异说沿原档案。",
+      "cast": [
+        {
+          "label": "狄奥多尔一世",
+          "role": "尼西亚政治与教会中心的形成"
+        },
+        {
+          "label": "约翰三世",
+          "role": "跨海峡推进与地方资源"
+        },
+        {
+          "label": "狄奥多尔二世、约翰四世",
+          "role": "继承脆弱性"
+        },
+        {
+          "label": "米海尔八世",
+          "role": "共帝、复都与王朝更替"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "city-lost",
+          "year": 1204,
+          "title": "征服者分配了一座城，流亡者失去一个中心",
+          "paragraphs": [
+            "君士坦丁堡遭征服与洗劫，拉丁帝位和分配安排试图把战争成果转成新的秩序。维尔阿杜安是参与者，也为远征领导层辩护；不能只从他的正当化语言理解城内居民的灾难。",
+            "对流亡者而言，问题立即变得具体：哪里能继续组织政府、筹措军队与安置政治和教会精英？“仍然是罗马”的主张，需要在失去旧首都以后重新找到可以运作的基础。"
+          ],
+          "question": "一种政治共同体失去首都后，最先必须保存什么？",
+          "people": [
+            "byzantine:alexios-v",
+            "byzantine:theodore-i"
+          ],
+          "dateLabel": "公元1204年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "villehardouin",
+              "locator": "Second Capture；Pillage；Election of Baldwin",
+              "supports": "征服、洗劫与拉丁帝位安排"
+            }
+          ]
+        },
+        {
+          "id": "naming-emperor",
+          "year": 1208,
+          "title": "称帝和加冕，并非同一个起点",
+          "paragraphs": [
+            "狄奥多尔在小亚细亚建立政治基础，尼西亚的皇帝与牧首安排使流亡秩序获得可以延续的制度形式。1204的逃亡、随后政治起步与1208加冕，不应压成一个毫无争议的即位日。",
+            "尼西亚并不是因为被后人选作主线，就从一开始拥有排他的合法性。其他继承政权同样争取资源和承认；本剧本跟随尼西亚，是为了追踪最终返回君士坦丁堡的一条路径。"
+          ],
+          "question": "后来成功的一方，是否从一开始就拥有唯一合法的继承权？",
+          "people": [
+            "byzantine:theodore-i"
+          ],
+          "dateLabel": "1204—1208年的建政与加冕（1208年为入口）",
+          "dateKind": "range",
+          "references": [
+            {
+              "source": "gibbon",
+              "locator": "LXI，尼西亚兴起；LXII Part I开头",
+              "supports": "狄奥多尔建立流亡政治中心；原卷保留起点口径差异"
+            }
+          ]
+        },
+        {
+          "id": "survival",
+          "year": 1211,
+          "title": "先活下来，才谈得上回去",
+          "paragraphs": [
+            "尼西亚必须应对小亚细亚的对手和来自海峡方向的压力。狄奥多尔的军事成功，并不立刻等于可以攻下旧都；它首先保障流亡政权还有继续动员的空间。",
+            "因此复国史不能倒着写：知道1261年的结局，不代表1211年的参与者知道自己必将成功。一次生存危机解除后，仍要面对多个战区与竞争者，政治中心能否延续仍有条件。"
+          ],
+          "question": "如何在知道结局时，仍然保留当事人面对的不确定性？",
+          "people": [
+            "byzantine:theodore-i"
+          ],
+          "dateLabel": "公元1211年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "gibbon",
+              "locator": "LXI，Theodore Lascaris与小亚细亚战争段",
+              "supports": "尼西亚生存与军事竞争；经旧通史间接路径"
+            }
+          ]
+        },
+        {
+          "id": "resources",
+          "year": 1224,
+          "title": "让流亡政权拥有自己的资源",
+          "paragraphs": [
+            "约翰三世时期的推进，需要地方生产、财政和舰队，而不是只靠复国口号。小亚细亚的基地让尼西亚能够在对手之间等待、协商和选择出击的时机。",
+            "吉本的叙述把他的内政塑成贤君典范；这里采用资源与军事行动相联系的问题意识，不把宫廷逸事变成可验证的宏观统计。重建能力的积累，发生在地图尚未恢复完整之前。"
+          ],
+          "question": "为什么一个失去首都的政权，仍可能比占有首都者更能持续动员？",
+          "people": [
+            "byzantine:john-iii"
+          ],
+          "dateLabel": "公元1224年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "gibbon",
+              "locator": "LXI，John Vataces段；LXII Part I，农业、财政与军队段",
+              "supports": "约翰三世的资源基础和跨海峡推进"
+            }
+          ]
+        },
+        {
+          "id": "thessalonica",
+          "year": 1246,
+          "title": "竞争者收缩，目标才变得更近",
+          "paragraphs": [
+            "尼西亚取得塞萨洛尼基，使欧洲方向的政治格局改变。复国不是单一的尼西亚对拉丁帝国之战；它也包含多个继承政权之间的竞争，以及地区支持者不断调整立场。",
+            "每次扩张都让旧都更容易接近，也增加需要管理的地区与利益。所谓继承主线，是从这些复杂关系中走出的一条路径，不能把其他政权从故事里提前删去。"
+          ],
+          "question": "对首都的包围，靠战场推进还是靠竞争格局改变？",
+          "people": [
+            "byzantine:john-iii"
+          ],
+          "dateLabel": "公元1246年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "gibbon",
+              "locator": "LXI，塞萨洛尼基归入尼西亚段",
+              "supports": "1246年前后欧洲方向的推进"
+            }
+          ]
+        },
+        {
+          "id": "succession",
+          "year": 1259,
+          "title": "离旧都越近，内部继承越危险",
+          "paragraphs": [
+            "狄奥多尔二世去世后，幼帝约翰四世的地位与宫廷精英的行动纠缠。米海尔上升为共帝，军事胜利扩大了新权力中心的空间，却没有保证幼帝的安全。",
+            "流亡政权把皇统延续当作合法性资源，争夺这个资源的人也可能改变皇统。外部恢复与内部承诺之间的张力，会在进入旧都之后更加尖锐。"
+          ],
+          "question": "一个以延续旧统为目标的政权，为什么会在复国前夕更换掌权者？",
+          "people": [
+            "byzantine:theodore-ii",
+            "byzantine:john-iv",
+            "byzantine:michael-viii"
+          ],
+          "dateLabel": "公元1259年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "gibbon",
+              "locator": "LXII Part I，Theodore、Muzalon、Michael段及佩拉戈尼亚战争",
+              "supports": "幼帝继承、米海尔上升与1259年格局"
+            }
+          ]
+        },
+        {
+          "id": "return",
+          "year": 1261,
+          "title": "重新进入首都，并不是回到从前",
+          "paragraphs": [
+            "斯特拉特戈普洛斯的部队夺取君士坦丁堡，米海尔随后进入旧都；军事夺城与皇帝入城是不同节点。同年约翰四世遭致盲，复国的庆典与继承承诺的破裂同时属于结局。",
+            "首都回归让帝国政治获得新的中心，却没有复原1204以前的全部资源和关系。故事的答案因而是双重的：没有首都也能组织一个帝国；重新拥有首都，仍必须面对地方、财政与合法性留下的问题。"
+          ],
+          "question": "复国成功之后，哪些原本用来动员支持的承诺反而变得危险？",
+          "people": [
+            "byzantine:michael-viii",
+            "byzantine:john-iv"
+          ],
+          "dateLabel": "公元1261年",
+          "dateKind": "year",
+          "references": [
+            {
+              "source": "gibbon",
+              "locator": "LXI末；LXII Part I，夺城、米海尔入城、约翰四世段",
+              "supports": "1261年恢复与内部继承后果；古代作者经通史间接引用"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Nicaea",
+        "Theodore Laskaris",
+        "John Vatatzes",
+        "Michael Palaiologos"
+      ]
+    }
+  ]
+}

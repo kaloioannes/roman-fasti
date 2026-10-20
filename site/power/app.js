@@ -47,6 +47,7 @@
     const v=index.people[id],back={...p};delete back.person;delete back.action;delete back.section;const a=el('a','← 权力人物目录');a.href=hash(back);main.append(a);
     if(!v){document.title='人物地址有误 · FASTI';main.append(el('h1','找不到这份权力档案'),el('p','此稳定ID尚未收录。请返回目录或使用全站搜索。'));return;}
     main.dataset.person=id;document.title=v.label+' · 实际权力与摄政 · FASTI';main.append(el('p',v.periods.map(period).join(' · '),'eyebrow'),el('h1',v.label),el('p',v.native,'power-native'),el('p',v.aliases.join(' · '),'power-note'));
+    window.FastiStories?.mount('person','power:'+id,main);
     const intro=el('div',null,'power-reading');intro.append(el('p',v.summary,'power-intro'),el('p',v.caution),evidence(v.references,'身份、概述与研究范围'));main.append(intro);
     if(v.identity.kind==='new')main.append(el('p','独立补充人物；本专题收录不授予帝号，不进入皇帝名录。','power-note'));
     else main.append(el('p','沿用已确认的人物身份；下面的角色与行动补充原档案，原帝号／官职任期保持原卷口径。','power-note'));

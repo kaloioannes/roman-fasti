@@ -94,6 +94,7 @@ window.FastiPeople = (() => {
   }
   async function mount(period,personId,host) {
     if(!host)return;
+    window.FastiStories?.mount('person',period+':'+personId,host);
     window.FastiDynasties?.mount([{period,person:personId}],host);
     window.FastiPower?.mount('person',period+':'+personId,host);
     const timeline=el('p',null,'timeline-profile-link');

@@ -6,13 +6,13 @@
   <meta name="description" content="一个入口检索罗马历史五卷中的年份、人物、事件和历史剧本。支持中文、拉丁文与希腊文姓名。">
   <meta name="theme-color" content="#f8f6f1">
   <link rel="icon" href="../shared/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../shared/ui.css"><link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../shared/ui.css"><link rel="stylesheet" href="../shared/story-links.css"><link rel="stylesheet" href="style.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
-  <script defer src="engine.js"></script><script defer src="app.js"></script>
+  <script defer src="engine.js"></script><script defer src="../shared/story-data.js"></script><script defer src="app.js"></script>
 </head>
 <body class="search-page">
   <a class="search-skip" href="#search-input">跳至搜索</a>
-  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马历史纪年</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button" href="../power/">实际权力</a><a class="text-button" href="../dynasties/">王朝专题</a><a class="text-button" href="../">全部时期</a><a class="text-button" href="../people/">跨卷人物</a><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button><a class="text-button" href="../events/">事件档案</a><a class="text-button" href="../places/">地点档案</a><a class="text-button" href="../glossary/">制度词典</a></nav></header>
+  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马历史纪年</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button" href="../power/">实际权力</a><a class="text-button" href="../dynasties/">王朝专题</a><a class="text-button" href="../">全部时期</a><a class="text-button" href="../people/">跨卷人物</a><a class="text-button" href="../stories/">连续剧本</a><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button><a class="text-button" href="../events/">事件档案</a><a class="text-button" href="../places/">地点档案</a><a class="text-button" href="../glossary/">制度词典</a></nav></header>
   <main class="search-main">
     <div class="search-heading"><p class="eyebrow">INVESTIGARE · 五卷通检</p><h1>从一个名字，<br>走进罗马的某一年。</h1><p>年份、人物、事件、剧本与章节，在这里相遇。</p></div>
     <form id="search-form" role="search" action="./" method="get">

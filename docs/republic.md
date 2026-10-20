@@ -65,3 +65,6 @@
 地图按56个阶段显示。前509—338年的五段来自独立的编辑示意（`data-source/republic/early-territories.geojson`），替换了上游两个排除罗马城的矩形网格残片。示意以罗马核心、菲德奈、维伊、图斯库卢姆和前338年拉丁和约为节点，使用较近的拉丁姆视野、虚线与逐段来源。节点年份沿用传统编年，边界为区域近似，阶段内逐年变化与飞地细节未定。前337年起保留Cliopatria轮廓。参见[核查记录](historical-corrections.md)。
 
 数据论文：Bennett, J. S., Mutch, E., Tollefson, A. et al. (2025), [*Cliopatria — A geospatial database of world-wide political entities from 3400BCE to 2024CE*](https://doi.org/10.1038/s41597-025-04516-9), *Scientific Data* 12, 247.
+
+
+PR13起，原共和国阅读页与[统一剧本目录](stories.md)共用本机进度。打开章节保存上次位置，可手动标记／取消已读；进入页面不自动算作读完。防剧透开启时已标记读过的章题与正文可回看，未读仍可逐章揭示。旧剧本及年度URL保持原样。

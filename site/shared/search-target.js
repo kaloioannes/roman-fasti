@@ -92,7 +92,11 @@ window.FastiSearchTarget = (() => {
   function mount() {
     const hash=location.hash, focus=new URLSearchParams(hash.slice(1)).get('focus');
     const period=location.pathname.split('/').find(p=>periods.includes(p));
-    if(period){localLinks(period);related(period,hash);}
+    if(period){localLinks(period);related(period,hash);
+      const p=new URLSearchParams(hash.slice(1)),y=Number(p.get('year'));
+      if(p.has('year')&&y){const host=period==='republic'?document.querySelector('#detail'):document.querySelector('#content');
+        if(host){host.querySelectorAll('.narrative-links').forEach(n=>n.remove());window.FastiStories?.mount('year',period+':'+(period==='republic'?-y:y),host);}}
+    }
     if(!focus)return;
     requestAnimationFrame(()=>{
       if(location.hash!==hash)return;
