@@ -26,6 +26,11 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
    const expected=Object.values(index.entries).filter(e=>e.category==='title'&&e.senses.some(s=>s.periods.includes('byzantine')&&s.range[0]<=1081&&s.range[1]>=1081));assert.equal(await page.locator('.glossary-card').count(),expected.length);
    await page.goto(base+'glossary/#year=0');await ready();assert.match(await page.locator('.glossary-status').textContent(),/需要修正/);
    await page.goto(base+'glossary/#q=unfindable987');await ready();assert.match(await page.locator('.glossary-grid').textContent(),/没有匹配/);
+   await page.goto(base+'search/?q=Kaisar&kind=term');await page.locator('[data-kind="term"] h3 a').first().waitFor();
+   assert.equal(await page.locator('#kind-filter').inputValue(),'term');
+   assert.ok(await page.locator('[data-kind="term"] h3 a[href="../glossary/#term=caesar"]').count());
+   assert.equal(await page.locator('.result-group:not([data-kind="term"])').count(),0);
+   await page.locator('[data-kind="term"] h3 a').first().click();await ready();assert.equal(await page.locator('#content').getAttribute('data-term-id'),'caesar');
    await page.goto(base+'glossary/#term=unknown');await ready();assert.match(await page.locator('h1').textContent(),/找不到/);
    await page.goto(base+'glossary/#term=caesar&sense=court');await ready();assert.equal(await page.evaluate(()=>document.activeElement.id),'sense-court');
    await page.locator('.glossary-related a[href*="co-emperor"]').click();await ready();await page.goBack();await ready();assert.equal(await page.evaluate(()=>document.activeElement.id),'sense-court');
@@ -50,15 +55,16 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
    await page.goto(base+'republic/#year=43');await page.locator('.glossary-example-terms a[href*="consul-suffectus"]').waitFor();await page.locator('.glossary-example-terms a[href*="consul-suffectus"]').click();await ready();
    await page.locator('.glossary-examples a[href*="person=p6faf564142"]').click();await page.locator('.glossary-example-terms a[href*="consul-suffectus"]').waitFor();
    // Declining inline help leaves original text intact and persists across routes.
-   const text=await page.locator('main:visible').textContent();await page.getByRole('button',{name:'正文术语释义：开',exact:true}).click();assert.equal(await page.locator('.glossary-term').count(),0);assert.equal(await page.locator('main:visible').textContent(),text);
+   const original=page.locator('.rp-career-list'),text=await original.textContent();await page.getByRole('button',{name:'正文术语释义：开',exact:true}).click();assert.equal(await page.locator('.glossary-term').count(),0);assert.equal(await original.textContent(),text);
    await page.reload();await page.getByRole('button',{name:'正文术语释义：关',exact:true}).waitFor();await page.getByRole('button',{name:'正文术语释义：关',exact:true}).click();await page.locator('.glossary-term').first().waitFor();
    await page.goto(base+'republic/#year=44');await page.locator('#spoiler-switch').check();assert.equal(await page.locator('.event-reveal .glossary-term,.event-row.is-hidden .glossary-term').count(),0);await page.locator('#spoiler-switch').uncheck();
    // Full and optional data failures can recover without reloading original records.
-   for(const compact of [false,true])for(const failure of ['http','json','schema','timeout']){
+   for(const compact of [false,true])for(const failure of ['http','json','schema','members','timeout']){
     const p=await context.newPage();let broken=true,count=0,records=0;if(failure==='timeout')await p.clock.install();
     p.on('request',r=>{if(/data\/republic\/records\./.test(r.url()))records++;});
     await p.route(compact?'**/data/glossary/inline.*.json':'**/data/glossary/index.*.json',async r=>{count++;if(!broken)return r.continue();if(failure==='timeout')return;
-      return r.fulfill({status:failure==='http'?503:200,contentType:'application/json',body:failure==='schema'?'{"schemaVersion":999}':'{'});});
+      const invalid=structuredClone(compact?small:index);invalid.entries.caesar.id='wrong';
+      return r.fulfill({status:failure==='http'?503:200,contentType:'application/json',body:failure==='schema'?'{"schemaVersion":999}':failure==='members'?JSON.stringify(invalid):'{'});});
     await p.goto(base+(compact?'republic/#year=43':'glossary/#term=caesar'));if(compact)await p.locator('.official-card').first().waitFor();
     if(failure==='timeout')await p.clock.fastForward(21000);
     const retry=compact?p.getByRole('button',{name:'重试术语释义',exact:true}):p.locator('#retry-glossary');await retry.waitFor();const before=records;broken=false;await retry.click();
