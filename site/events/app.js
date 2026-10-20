@@ -13,39 +13,41 @@
     const range=JSON.stringify(d.start)===JSON.stringify(d.end)?point(d.start):point(d.start)+' — '+point(d.end);
     return range+({'point':'','span':' · 持续过程','window':' · 日期窗口','context':' · 年度归置（非确定发生日）'}[d.extent]||'');
   }
-  function tags(e){const box=el('div',null,'event-tags');[index.kinds[e.recordKind],period(e.period),index.certainties[e.date.certainty],...e.topics.map(t=>index.topics[t])].forEach(t=>box.append(el('span',t,'event-tag')));return box;}
-  function citations(refs){
-    const list=el('ol',null,'event-citations');
-    refs.forEach(r=>{const item=el('li'),a=el('a',r.label+' ↗');a.href=r.url;a.target='_blank';a.rel='noopener';
-      item.append(a,el('p','定位：'+r.locator),el('p','支持：'+r.claim),el('p',r.consultation==='inherited'?'沿用原卷引用 · 本次未重新核读':`${r.consultation==='direct'?'本次直接查阅':'间接引述'} · ${r.checked}`,'event-note'));list.append(item);
-    });return list;
-  }
+  function tags(e){const box=el('div',null,'event-tags');[index.kinds[e.recordKind],period(e.period),index.certainties[e.date.certainty],...e.topics.map(t=>index.topics[t]),...(e.evidence?['已编订论断证据',...(e.evidence.disputes.length?['异说并读']:[])]:[])].forEach(t=>box.append(el('span',t,'event-tag')));return box;}
+  const citations=(refs,event)=>window.FastiEvidence.citations(refs,index,event);
   function card(e){const article=el('article',null,'event-card');article.dataset.eventId=e.id;const h=el('h2');h.append(link(e.title+' ↗',e.url));article.append(tags(e),el('div',dates(e.date),'event-date'),h);if(!hide)article.append(el('p',e.text.slice(0,150)));return article;}
   function directory(params){
     document.title='事件档案 · FASTI 罗马历史纪年';
     main.append(el('p','RES GESTAE · 有身份的记事','eyebrow'),el('h1','事件可以跨年，引用始终如一。'),el('p','统一检索五卷的独立事件、年度摘要、跨年背景与传统叙事。一个跨年对象只计一次；年度归置不能证明其中每项行动都发生在那一年。','event-intro'));
     const examples=el('nav',null,'event-examples');examples.setAttribute('aria-label','事件阅读示例');
     [['1071年的两处事件',{q:'1071',kind:'event'}],['1204年与跨年远征',{q:'1204',kind:'event'}],['跨年抄本题记',{q:'1013',topic:'culture'}]].forEach(([label,p])=>{const a=el('a',label);a.href=hash(p);examples.append(a);});main.append(examples);
+    [['五卷重点证据卡',{evidence:'curated'}],['异说并读',{evidence:'disputed'}],['674—678围城模型',{event:'byzantine:byz-674-1',evidence:'dispute:siege-model'}]].forEach(([label,p])=>{const a=el('a',label);a.href=hash(p);examples.append(a);});
     const form=el('form',null,'event-tools');form.id='event-form';const query=el('div',null,'event-query'),ql=el('label','检索事件、地点或人物'),input=el('input');input.type='search';input.name='q';input.id='event-query';input.maxLength=160;input.value=params.get('q')||'';input.placeholder='曼齐刻尔特、巴里、1204、前44年…';ql.append(input);query.append(ql);const submit=el('button','查阅事件');submit.type='submit';query.append(submit);form.append(query);
     const filters=el('div',null,'event-filters');
     const controls={};
     function select(key,label,options){const l=el('label',label),s=el('select');s.name=key;s.id='event-'+key;Object.entries({'':'全部',...options}).forEach(([value,text])=>{const o=el('option',text);o.value=value;s.append(o);});s.value=params.get(key)||'';controls[key]=s;l.append(s);filters.append(l);}
     select('period','分卷',Object.fromEntries(index.periods.map(p=>[p.id,p.title])));select('kind','资料类型',index.kinds);select('certainty','纪年',index.certainties);select('topic','主题',index.topics);
+    select('evidence','证据编订',{'curated':'已有论断证据卡','disputed':'已有异说并读','uncompiled':'尚未编订证据卡'});
+    select('reading','新增证据阅读范围',{'text':'直接读正文／节选','abstract':'仅直接读摘要','indirect':'存在间接引述'});
+    select('source','引用资料类别',index.sourceKinds);
     for(const [key,label] of [['from','起年（负数为公元前）'],['to','止年（无0年）']]){const l=el('label',label),n=el('input');n.name=key;n.id='event-'+key;n.type='number';n.min=-753;n.max=1453;n.value=params.get(key)||'';controls[key]=n;l.append(n);filters.append(l);}
     select('place','关联地点',Object.fromEntries(Object.values(index.places).map(p=>[p.id,p.label])));
     select('person','已编订的人物关联',Object.fromEntries([...new Map(Object.values(index.entries).flatMap(e=>e.people.map(p=>[p.period+':'+p.person,period(p.period)+' · '+p.label])))]));
     form.append(filters,el('p','年份筛选取日期范围的交集；窗口表示可能年代，不表示持续行动。相同对象关联多个年度仍只显示一次。','event-note'));
     const reset=el('a','清空全部条件');reset.href='#';form.append(reset);main.append(form);
-    const unknown=[...params.keys()].filter(k=>!['q','period','kind','certainty','topic','from','to','place','person','page'].includes(k));
+    const unknown=[...params.keys()].filter(k=>!['q','period','kind','certainty','topic','from','to','place','person','page','evidence','reading','source'].includes(k));
     const invalid=Object.entries(controls).some(([k,n])=>params.has(k)&&params.get(k)!==''&&n.value!==params.get(k))||(params.has('page')&&!/^[1-9]\d*$/.test(params.get('page')));
     const from=params.get('from')?Number(params.get('from')):null,to=params.get('to')?Number(params.get('to')):null;
     const badYears=[from,to].some(y=>y!==null&&(!Number.isInteger(y)||!y||y<-753||y>1453))||(from!==null&&to!==null&&from>to);
     const parsed=E.parseYear(input.value),terms=input.value.trim().split(/\s+/).map(E.normalize).filter(Boolean);
     let rows=Object.values(index.entries).filter(e=>{
+      if(params.get('evidence')==='curated'&&!e.evidence||params.get('evidence')==='disputed'&&!e.evidence?.disputes.length||params.get('evidence')==='uncompiled'&&e.evidence)return false;
+      if(params.get('source')&&!e.references.some(r=>r.sourceKind===params.get('source')))return false;
+      if(params.get('reading')&&!e.references.some(r=>params.get('reading')==='text'?r.consultation==='direct'&&['text','excerpt'].includes(r.access):r.access===params.get('reading')))return false;
       if(params.get('period')&&e.period!==params.get('period')||params.get('kind')&&e.recordKind!==params.get('kind')||params.get('certainty')&&e.date.certainty!==params.get('certainty')&&!e.date.qualifiers.includes(params.get('certainty'))||params.get('topic')&&!e.topics.includes(params.get('topic'))||params.get('place')&&!e.places.includes(params.get('place'))||params.get('person')&&!e.people.some(p=>p.period+':'+p.person===params.get('person')))return false;
       if((from!==null||to!==null)&&!e.spans.some(([a,b])=>a<=(to??1453)&&b>=(from??-753)))return false;
       if(parsed)return parsed.years.some(y=>e.spans.some(([a,b])=>a<=y&&y<=b));
-      const text=E.normalize([e.id,e.title,e.text,...e.people.map(p=>p.label),...e.places.flatMap(p=>[index.places[p].label,...index.places[p].aliases])].join(' '));return terms.every(t=>text.includes(t));
+      const text=E.normalize([e.id,e.title,e.text,...e.people.map(p=>p.label),...e.places.flatMap(p=>[index.places[p].label,...index.places[p].aliases]),...e.references.flatMap(r=>[r.label,r.author||'',r.locator,r.claim]),...(e.evidence?.claims.map(c=>c.text)||[]),...(e.evidence?.disputes.flatMap(d=>[d.question,d.rationale,...d.positions.map(p=>p.statement)])||[])].join(' '));return terms.every(t=>text.includes(t));
     }).sort((a,b)=>(a.spans[0]?.[0]??Infinity)-(b.spans[0]?.[0]??Infinity)||a.id.localeCompare(b.id));
     if(unknown.length||invalid||badYears||parsed?.error)rows=[];
     const pageCount=Math.max(1,Math.ceil(rows.length/36)),page=Math.min(pageCount,Math.max(1,Number(params.get('page'))||1));
@@ -77,7 +79,10 @@
     relates.append(ul);if(!ul.children.length)relates.append(el('p','尚未编订明确的人物、地点或事件关联；不会从在位期间或正文提名自动推断。','event-note'));
     const origins=objectSection('年度入口与原卷记录'),years=el('ul',null,'event-year-links');e.origins.forEach(o=>{const li=el('li');li.append(link('原卷原条：'+period(o.period)+' ↗',o.url));years.append(li);});
     e.years.forEach(y=>{const li=el('li');li.append(link(E.when(y.year)+' · '+period(y.period)+' ↗',y.url));years.append(li);});origins.append(years);if(!years.children.length)origins.append(el('p','绝对年代未定；仅保留原卷人物／传统叙事入口。'));
-    const sources=objectSection('出处与查阅状态');sources.id='event-sources';sources.append(citations(e.references));
+    article.append(window.FastiEvidence.render(e,hide));
+    const sources=objectSection('出处与查阅状态');sources.id='event-sources';
+    sources.append(el('p','直接查阅表示实际阅读所标示的电子正文、译文、节选或摘要；不等于核读原手稿。材料类别与查阅状态分别说明，链接数量不代表独立性或可信度分数。','event-note'));
+    if(hide){const d=el('details');d.append(el('summary','展开来源与阅读记录'),citations(e.references,e));sources.append(d);}else sources.append(citations(e.references,e));
     const cite=objectSection('引用此对象'),canonical=new URL('../'+e.url,location.href).href,now=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
     const citation=`${e.title}（${index.kinds[e.recordKind]}），FASTI · 罗马历史纪年，稳定ID ${e.id}，资料版本 ${index.version}，${canonical}，访问日期 ${now}。数据许可：${index.license}；原始文献及译本版权归各权利人。`;
     const area=el('textarea',null,'event-citation-text');area.id='event-citation';area.readOnly=true;area.value=citation;area.setAttribute('aria-label','可复制的规范引用');cite.append(area);
@@ -86,7 +91,8 @@
     const download=el('button','下载此对象 JSON');download.onclick=()=>{const blob=new Blob([JSON.stringify({version:index.version,license:index.license,event:e,places:Object.fromEntries(e.places.map(p=>[p,index.places[p]]))},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=e.id.replace(':','-')+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};actions.append(download);cite.append(actions,notice);
   }
   async function route(){const current=++version;main.setAttribute('aria-busy','true');main.replaceChildren(el('p','正在查阅事件档案……','event-status'));
-    try{index=await window.FastiEventData.load();if(current!==version)return;main.replaceChildren();const p=new URLSearchParams(location.hash.slice(1));if(p.has('event')){const old=p.get('event'),alias=index.aliases[old];if(alias){history.replaceState(null,'',hash({event:alias.target}));detail(alias.target);main.prepend(el('p','此旧ID已迁移：'+alias.reason,'event-note'));}else detail(old);}else directory(p);main.focus({preventScroll:true});window.scrollTo(0,0);}
+    try{index=await window.FastiEventData.load();if(current!==version)return;main.replaceChildren();const p=new URLSearchParams(location.hash.slice(1));if(p.has('event')){const old=p.get('event'),alias=index.aliases[old];if(alias){p.set('event',alias.target);history.replaceState(null,'',hash(p));detail(alias.target);main.prepend(el('p','此旧ID已迁移：'+alias.reason,'event-note'));}else detail(old);}else directory(p);main.focus({preventScroll:true});window.scrollTo(0,0);
+      if(p.has('event')&&p.has('evidence')&&!window.FastiEvidence.focus(p.get('evidence')))main.prepend(el('p','此证据卡定位尚未收录；已显示事件档案，可继续查阅。','event-note'));}
     catch{if(current===version){main.replaceChildren(el('h1','事件档案暂时无法载入'),el('p','网络、超时或资料格式异常。请重试；各卷原档案仍可独立阅读。'));const b=el('button','重新载入事件档案');b.id='retry-events';b.onclick=route;main.append(b);}}
     finally{if(current===version){main.dataset.renderedHash=location.hash;main.setAttribute('aria-busy','false');}}
   }

@@ -16,6 +16,18 @@ window.FastiEventData=(()=>{
       &&(p.evidence.kind==='event-text'?text(p.evidence.quote):p.evidence.kind==='inherited-editorial'&&p.evidence.quote===null)
       &&Array.isArray(p.references)&&p.references.length>0&&p.references.every(ref);
     const kinds=['event','annual-summary','background','tradition'];
+    const dossier=e=>{
+      if(!Array.isArray(e.references)||!e.references.length||!e.references.every(r=>r&&text(r.id)&&text(r.scope)&&v.sourceKinds?.[r.sourceKind]&&v.access?.[r.access])||new Set(e.references.map(r=>r.id)).size!==e.references.length)return false;
+      if(!e.references.filter(r=>r.access!=='legacy').every(r=>ref(r)&&text(r.checked)&&/^\d{4}-\d{2}-\d{2}$/.test(r.checked)&&text(r.author)&&text(r.edition)&&text(r.limitations)
+          &&(r.consultation==='direct'?['text','excerpt','abstract','bibliography'].includes(r.access):r.consultation==='indirect'&&r.access==='indirect'&&text(r.via?.label)&&/^https:\/\//.test(r.via?.url)&&text(r.via?.locator))))return false;
+      if(e.evidence===null)return e.references.every(r=>r.access==='legacy');
+      const d=e.evidence,ids=new Set(e.references.map(r=>r.id)),uses=r=>Array.isArray(r)&&r.length>0&&r.every(id=>ids.has(id));
+      if(!d||!text(d.scope)||!Array.isArray(d.claims)||!d.claims.length||!Array.isArray(d.disputes))return false;
+      return d.claims.every(c=>text(c.id)&&text(c.text)&&text(c.note)&&uses(c.references))&&new Set(d.claims.map(c=>c.id)).size===d.claims.length
+        &&d.disputes.every(d=>text(d.id)&&text(d.question)&&text(d.rationale)&&text(d.limits)&&Array.isArray(d.positions)&&d.positions.length>=2&&d.positions.some(p=>p.id===d.adopted)
+          &&new Set(d.positions.map(p=>p.id)).size===d.positions.length&&d.positions.every(p=>text(p.id)&&text(p.label)&&text(p.statement)&&uses(p.references)))
+        &&new Set(d.disputes.map(d=>d.id)).size===d.disputes.length;
+    };
     return v?.schemaVersion===1&&text(v.version)&&Array.isArray(v.periods)&&v.periods.length===5&&v.kinds&&v.topics&&v.certainties&&v.entries&&v.places&&v.aliases&&v.byYear&&v.byPerson&&v.byPlace
       &&Object.entries(v.entries).length>0&&Object.entries(v.entries).every(([id,e])=>e?.id===id&&text(e.title)&&text(e.text)&&kinds.includes(e.recordKind)&&v.periods.some(p=>p.id===e.period)&&/^events\/#event=/.test(e.url)
       &&e.date&&text(e.date.note)&&['point','span','window','context','undated'].includes(e.date.extent)&&v.certainties[e.date.certainty]&&Array.isArray(e.date.qualifiers)
@@ -29,6 +41,7 @@ window.FastiEventData=(()=>{
       &&v.byGlobalPerson&&Object.entries(v.places).every(([id,p])=>p.id===id&&/^[a-z][a-z0-9-]*$/.test(id)&&text(p.label)&&Array.isArray(p.aliases)&&p.aliases.every(text)&&text(p.note)&&Array.isArray(p.references)&&p.references.length&&p.references.every(ref))
       &&Object.values(v.entries).every(e=>Array.isArray(e.placeRelations)&&e.placeRelations.length===e.places.length&&e.placeRelations.every(p=>e.places.includes(p.place)&&v.places[p.place]&&['setting','subject','mentioned'].includes(p.role)&&text(p.basis)&&p.url==='places/#place='+p.place&&evidence(p,e.id))&&e.people.every(p=>['participant','subject','mentioned'].includes(p.role)&&evidence(p,e.id)&&(!p.globalUrl||/^people\/#person=[a-z0-9-]+$/.test(p.globalUrl))))
       &&[v.byYear,v.byPerson,v.byPlace,v.byGlobalPerson].every(map=>Object.values(map).every(ids=>Array.isArray(ids)&&ids.every(id=>v.entries[id])))
+      &&v.sourceKinds&&v.access&&Object.values(v.entries).every(dossier)
       &&Object.values(v.aliases).every(a=>v.entries[a.target]);
   }
   async function load(){

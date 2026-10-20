@@ -1,0 +1,1045 @@
+{
+  "kingdom:foundation": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维并列瑞鸟与兄弟争执的建城传统。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "不能由此证明前753年绝对年代或施工日。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "I.6–7；检索 Romulus chose the Palatine",
+        "claim": "李维并列瑞鸟与兄弟争执的建城传统。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "kingdom:romulus-end": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维并列罗慕路斯升天与遇害传闻。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "本条保留传统，不裁定其真实死法。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "I.16；检索 lake of Capra",
+        "claim": "李维并列罗慕路斯升天与遇害传闻。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "kingdom:numa-accession": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维记载王位空缺后迎立努马。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "空位长度属于传统；不是独立年度档案。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "I.17–18；检索 Interregnum",
+        "claim": "李维记载王位空缺后迎立努马。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "kingdom:lucretia": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维以卢克蕾提娅事件解释反王政动员。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "这是后世叙事，不是现场证词。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "I.57–59；检索 Lucretia",
+        "claim": "李维以卢克蕾提娅事件解释反王政动员。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "kingdom:republic": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维记驱逐末王并选出两位执政官。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "前509年仍是本项目采用的传统纪年。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "I.60；检索 Two consuls",
+        "claim": "李维记驱逐末王并选出两位执政官。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "republic:rep-bc509-1": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维以官职年任解释新政体的自由。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "该论断不等于本年全部名录都由此独立验证。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "I.60、II.1；检索 consular authority was made annual",
+        "claim": "李维以官职年任解释新政体的自由。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "republic:rep-bc494-1": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维记平民撤离及和解后的保护官职。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "他同时保留撤离地点不同的旧说。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "II.32–33；检索 sacred mount",
+        "claim": "李维记平民撤离及和解后的保护官职。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "republic:rep-bc494-2": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维记保护平民的官职及其神圣保护。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "不以此推断后世完整职权已同时形成。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "II.33；检索 inviolable privileges",
+        "claim": "李维记保护平民的官职及其神圣保护。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "republic:rep-bc451-1": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维记第一届十人委员会公布十表。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "不是保存至今的当时原法全文。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "III.33–34；检索 ten tables",
+        "claim": "李维记第一届十人委员会公布十表。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "republic:rep-bc449-1": {
+    "scope": "核读这一项传统叙事或制度论断；没有将本条全部细节升级为已核实。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "李维记十人委员会辞职和官职恢复。",
+        "references": [
+          "livy-passage"
+        ],
+        "note": "其历史解释不能替代现代制度史研究。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "livy-passage",
+        "source": "livy",
+        "locator": "III.52–55；检索 decemvirs come forth",
+        "claim": "李维记十人委员会辞职和官职恢复。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "empire:emp-bc27-1": {
+    "scope": "只核读称号与公开自我表述；不把宣传文本当作制度运作的全部证据。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "奥古斯都自述交还政权并获Augustus称号。",
+        "references": [
+          "res-gestae"
+        ],
+        "note": "这是当事人的政治表达，不能据此判定实际权力平等。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "res-gestae",
+        "source": "augustus",
+        "locator": "§34；含英译与译者注139–142",
+        "claim": "奥古斯都自述交还政权并获Augustus称号。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "empire:emp-ad14-1": {
+    "scope": "核读死亡与效忠段；未核验本条各军团后续哗变的全部细节。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "奥古斯都死后，提比略获得效忠。",
+        "references": [
+          "annals"
+        ],
+        "note": "作者对死讯与接班过程有所怀疑，不能据传闻确认毒杀。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "annals",
+        "source": "tacitus-i",
+        "locator": "I.5–7；检索 Nola / first to swear allegiance",
+        "claim": "奥古斯都死后，提比略获得效忠。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "empire:emp-ad64-1": {
+    "scope": "核读火灾相关段落；不根据传言作纵火裁定。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "塔西佗不确定起火原因，并记尼禄救济和惩罚基督徒。",
+        "references": [
+          "fire"
+        ],
+        "note": "救济行为与纵火指控不是同一个证据问题。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "fire",
+        "source": "tacitus-xv",
+        "locator": "XV.38–44；检索 A disaster followed / Nero at this time was at Antium",
+        "claim": "塔西佗不确定起火原因，并记尼禄救济和惩罚基督徒。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": [
+      {
+        "id": "fire-cause",
+        "question": "大火是否由尼禄下令？",
+        "positions": [
+          {
+            "id": "reserved",
+            "label": "本条采用：保留疑问",
+            "statement": "不将纵火归于尼禄作为确定事实。",
+            "references": [
+              "fire"
+            ]
+          },
+          {
+            "id": "accusation",
+            "label": "古代指控",
+            "statement": "作者报告尼禄下令的社会传言，但未确认。",
+            "references": [
+              "fire"
+            ]
+          }
+        ],
+        "adopted": "reserved",
+        "rationale": "同一作者明确并列偶然与故意纵火，不能把他转述的指控改写成结论。",
+        "limits": "未在本项解决火灾起因；也未独立核读所有古代平行叙事。"
+      }
+    ]
+  },
+  "empire:emp-ad378-1": {
+    "scope": "核读帝王死讯及作者保留的两种说法。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "瓦伦斯战死，但死法有不同叙述。",
+        "references": [
+          "battle"
+        ],
+        "note": "本次未核验此战全部兵力、伤亡数字或后世影响判断。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "battle",
+        "source": "ammianus",
+        "locator": "XXXI.13.12–17；正文小节13，检索 Others say that Valens",
+        "claim": "瓦伦斯战死，但死法有不同叙述。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": [
+      {
+        "id": "valens-death",
+        "question": "瓦伦斯如何死亡？",
+        "positions": [
+          {
+            "id": "unknown",
+            "label": "本条采用：不确定具体死法",
+            "statement": "确认死亡，保留过程不明。",
+            "references": [
+              "battle"
+            ]
+          },
+          {
+            "id": "battlefield",
+            "label": "战场中箭说",
+            "statement": "作者先记战场中箭死亡而尸体未寻获。",
+            "references": [
+              "battle"
+            ]
+          },
+          {
+            "id": "burned",
+            "label": "农舍焚死说",
+            "statement": "另一说指他受伤后藏入农舍并被焚死。",
+            "references": [
+              "battle"
+            ]
+          }
+        ],
+        "adopted": "unknown",
+        "rationale": "作者自己并列不同传闻，当前证据不足以只留其一。",
+        "limits": "这些不是三个独立目击来源；并列说法不增加独立来源数。"
+      }
+    ]
+  },
+  "divided-empire:divided-431-01": {
+    "scope": "核读VII.34；未逐项核读所有会议文书或433年和解文本。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "苏格拉底记以弗所会议分裂及聂斯托里乌斯被废。",
+        "references": [
+          "ephesus"
+        ],
+        "note": "本条不采用网页作者的神学评价，也不由本段给会议补确日。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "ephesus",
+        "source": "socrates",
+        "locator": "VII.34；网页标题 Synod at Ephesus against Nestorius. His Deposition",
+        "claim": "苏格拉底记以弗所会议分裂及聂斯托里乌斯被废。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "divided-empire:divided-476-02": {
+    "scope": "直接核读DIR两篇署名文章的有关段落；文中古代引文单独记为间接路径。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "署名研究把退位置于9月4日或稍后。",
+        "references": [
+          "deposition"
+        ],
+        "note": "原卷常用9月4日为工作纪年；不能把退位与遣使都精确到同一天。"
+      },
+      {
+        "id": "continuity",
+        "text": "研究区别罗慕路斯退位与尼波斯继续持有帝号。",
+        "references": [
+          "nepos",
+          "malchus-indirect"
+        ],
+        "note": "476年是意大利宫廷节点；不等于东方和一切罗马制度同时消失。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "deposition",
+        "source": "romulus-study",
+        "locator": "Mathisen篇 DEPOSITION，末段 on or soon after 4 September 476",
+        "claim": "署名研究把退位置于9月4日或稍后。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      },
+      {
+        "id": "nepos",
+        "source": "romulus-study",
+        "locator": "Mathisen篇 EPILOGUE；Nathan篇 Romulus’ early life and reign",
+        "claim": "研究区别罗慕路斯退位与尼波斯继续持有帝号。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      },
+      {
+        "id": "malchus-indirect",
+        "source": "romulus-study",
+        "locator": "Mathisen篇 DEPOSITION 引Malchus fr.10，Gordon译pp.127–128",
+        "claim": "经DIR引文可见东方承认与徽号交还的交涉。",
+        "access": "indirect",
+        "consultation": "indirect",
+        "checked": "2026-10-19",
+        "scope": "直接阅读的是Mathisen所引译文，未取得Gordon版本或Malchus原文。",
+        "via": {
+          "label": "Mathisen，DIR：Romulus Augustulus",
+          "url": "https://roman-emperors.sites.luc.edu/auggiero.htm",
+          "locator": "DEPOSITION，Malchus fr.10引文"
+        }
+      }
+    ],
+    "disputes": [
+      {
+        "id": "end-of-empire",
+        "question": "476年究竟终结了什么？",
+        "positions": [
+          {
+            "id": "court",
+            "label": "本条采用：意大利宫廷的终结",
+            "statement": "保留尼波斯与东方帝号的连续性。",
+            "references": [
+              "nepos",
+              "malchus-indirect"
+            ]
+          },
+          {
+            "id": "last",
+            "label": "传统“最后西帝”分期",
+            "statement": "Mathisen记这种分期可追至马尔凯利努斯，但同时质疑其排除尼波斯。",
+            "references": [
+              "nepos"
+            ]
+          }
+        ],
+        "adopted": "court",
+        "rationale": "分期习惯与当时承认关系应分开说明。",
+        "limits": "不把现代合法性措辞转写成所有当事人的一致立场；未核读全部原始版本。"
+      }
+    ]
+  },
+  "byzantine:byz-532-1": {
+    "scope": "核读尼卡暴动段；同条的永久和平并未因本次核读而一并验证。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "普罗柯比记暴动中圣索菲亚被焚及军队镇压。",
+        "references": [
+          "nika"
+        ],
+        "note": "不把文学性的死亡数字作为人口统计。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "nika",
+        "source": "procopius",
+        "locator": "I.24.7–10、40–54；检索 sanctuary of Sophia / Belisarius",
+        "claim": "普罗柯比记暴动中圣索菲亚被焚及军队镇压。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "byzantine:byz-674-1": {
+    "scope": "通行叙事、大学摘要和间接研究分别标示，阅读范围互不冒充。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "674—678是存在争议的传统纪年模型。",
+        "references": [
+          "traditional",
+          "reassessment"
+        ],
+        "note": "年度入口不是持续围城已获证实的宣告。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "traditional",
+        "source": "siege-navigation",
+        "locator": "开头与Siege段",
+        "claim": "通行叙事把围城放在674—678年。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读百科正文，只证明导航所呈现的通行模型；未直接核读其所引Theophanes。"
+      },
+      {
+        "id": "reassessment",
+        "source": "jankowiak",
+        "locator": "大学记录 Abstract；出版页码201–228仅为书目范围",
+        "claim": "Jankowiak摘要将首次围城改定为667—669年。",
+        "access": "abstract",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "仅直接阅读Abstract与书目元数据，没有取得pp.201–228全文。"
+      },
+      {
+        "id": "howard-indirect",
+        "source": "siege-navigation",
+        "locator": "Modern reassessment of events；注64、67列Howard-Johnston 2010，pp.302–304、492–495",
+        "claim": "百科转述Howard-Johnston否定670年代持续围城模型。",
+        "access": "indirect",
+        "consultation": "indirect",
+        "checked": "2026-10-19",
+        "scope": "只读到百科对该研究的转述；页码来自该条脚注，未核读书中相应页。",
+        "via": {
+          "label": "围城条目 Modern reassessment of events",
+          "url": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(674%E2%80%93678)",
+          "locator": "Howard-Johnston段及注64、67"
+        }
+      }
+    ],
+    "disputes": [
+      {
+        "id": "siege-model",
+        "question": "674—678是否是一场连续围城？",
+        "positions": [
+          {
+            "id": "qualified",
+            "label": "本条采用：传统纪年节点",
+            "statement": "保留674与678年度条作为有争议传统的起终入口，不断言连续围困。",
+            "references": [
+              "traditional",
+              "reassessment"
+            ]
+          },
+          {
+            "id": "traditional",
+            "label": "通行持续围城模型",
+            "statement": "百科概述674—678的传统叙事。",
+            "references": [
+              "traditional"
+            ]
+          },
+          {
+            "id": "redated",
+            "label": "Jankowiak重新定年",
+            "statement": "大学摘要主张首次围城在667—669年。",
+            "references": [
+              "reassessment"
+            ]
+          },
+          {
+            "id": "rejected",
+            "label": "Howard-Johnston重估",
+            "statement": "经百科转述，该研究否定670年代持续围城叙事。",
+            "references": [
+              "howard-indirect"
+            ]
+          }
+        ],
+        "adopted": "qualified",
+        "rationale": "资料获取程度不足以裁定所有原始材料；保留原有节点并将模型分歧显式呈现，比把任一说法写成无争议事实更合适。",
+        "limits": "没有直接核读Theophanes、叙利亚编年史、Howard-Johnston全文或Jankowiak全文；此处并读不改写原卷年度。"
+      }
+    ]
+  },
+  "byzantine:byz-678-1": {
+    "scope": "通行叙事、大学摘要和间接研究分别标示，阅读范围互不冒充。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "674—678是存在争议的传统纪年模型。",
+        "references": [
+          "traditional",
+          "reassessment"
+        ],
+        "note": "年度入口不是持续围城已获证实的宣告。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "traditional",
+        "source": "siege-navigation",
+        "locator": "开头与Siege段",
+        "claim": "通行叙事把围城放在674—678年。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读百科正文，只证明导航所呈现的通行模型；未直接核读其所引Theophanes。"
+      },
+      {
+        "id": "reassessment",
+        "source": "jankowiak",
+        "locator": "大学记录 Abstract；出版页码201–228仅为书目范围",
+        "claim": "Jankowiak摘要将首次围城改定为667—669年。",
+        "access": "abstract",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "仅直接阅读Abstract与书目元数据，没有取得pp.201–228全文。"
+      },
+      {
+        "id": "howard-indirect",
+        "source": "siege-navigation",
+        "locator": "Modern reassessment of events；注64、67列Howard-Johnston 2010，pp.302–304、492–495",
+        "claim": "百科转述Howard-Johnston否定670年代持续围城模型。",
+        "access": "indirect",
+        "consultation": "indirect",
+        "checked": "2026-10-19",
+        "scope": "只读到百科对该研究的转述；页码来自该条脚注，未核读书中相应页。",
+        "via": {
+          "label": "围城条目 Modern reassessment of events",
+          "url": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(674%E2%80%93678)",
+          "locator": "Howard-Johnston段及注64、67"
+        }
+      }
+    ],
+    "disputes": [
+      {
+        "id": "siege-model",
+        "question": "674—678是否是一场连续围城？",
+        "positions": [
+          {
+            "id": "qualified",
+            "label": "本条采用：传统纪年节点",
+            "statement": "保留674与678年度条作为有争议传统的起终入口，不断言连续围困。",
+            "references": [
+              "traditional",
+              "reassessment"
+            ]
+          },
+          {
+            "id": "traditional",
+            "label": "通行持续围城模型",
+            "statement": "百科概述674—678的传统叙事。",
+            "references": [
+              "traditional"
+            ]
+          },
+          {
+            "id": "redated",
+            "label": "Jankowiak重新定年",
+            "statement": "大学摘要主张首次围城在667—669年。",
+            "references": [
+              "reassessment"
+            ]
+          },
+          {
+            "id": "rejected",
+            "label": "Howard-Johnston重估",
+            "statement": "经百科转述，该研究否定670年代持续围城叙事。",
+            "references": [
+              "howard-indirect"
+            ]
+          }
+        ],
+        "adopted": "qualified",
+        "rationale": "资料获取程度不足以裁定所有原始材料；保留原有节点并将模型分歧显式呈现，比把任一说法写成无争议事实更合适。",
+        "limits": "没有直接核读Theophanes、叙利亚编年史、Howard-Johnston全文或Jankowiak全文；此处并读不改写原卷年度。"
+      }
+    ]
+  },
+  "byzantine:manzikert-1071": {
+    "scope": "本次重新阅读指定正文与译注；没有把译注引用的另一部史书冒充已读。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "罗曼努斯亲征后被俘。",
+        "references": [
+          "capture"
+        ],
+        "note": "普塞洛斯听取不同报告，且本人参与宫廷政治。"
+      },
+      {
+        "id": "date",
+        "text": "8月26日来自Sewter译注而非普塞洛斯正文。",
+        "references": [
+          "date-note"
+        ],
+        "note": "采用日级工作纪年，明确证据在译注层。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "capture",
+        "source": "psellus",
+        "locator": "卷VII，Romanus IV §§18–23；检索 prisoner",
+        "claim": "罗曼努斯亲征后被俘。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      },
+      {
+        "id": "date-note",
+        "source": "psellus",
+        "locator": "译者注265（位于网页末尾），兼见注268",
+        "claim": "8月26日来自Sewter译注而非普塞洛斯正文。",
+        "access": "excerpt",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读网页所载译者注265；该注转引的Skylitzes未另行核读。"
+      }
+    ],
+    "disputes": []
+  },
+  "byzantine:fourth-crusade-1202-1204": {
+    "scope": "核读指定叙事段；译者关于Robert of Clari的长引文不算另行核读该书。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "远征从集结走向1204年入城，包含不同阶段。",
+        "references": [
+          "conquest"
+        ],
+        "note": "过程范围沿用现有1202—1204，不是全部十字军运动起终。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "conquest",
+        "source": "villehardouin",
+        "locator": "原书页13集结段、页64入城／逃离段；检索 twelve hundred and two / 12th April",
+        "claim": "远征从集结走向1204年入城，包含不同阶段。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "byzantine:constantinople-capture-1204": {
+    "scope": "核读指定叙事段；译者关于Robert of Clari的长引文不算另行核读该书。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "维尔阿杜安把入城置于1204年4月12日。",
+        "references": [
+          "conquest"
+        ],
+        "note": "日期采用网页叙事中的历法表述，不另作现代公历换算。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "conquest",
+        "source": "villehardouin",
+        "locator": "原书页63–64；FLIGHT OF MOURZUPHLES；检索 12th April 1204",
+        "claim": "维尔阿杜安把入城置于1204年4月12日。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "byzantine:latin-coronation-1204": {
+    "scope": "核读指定叙事段；译者关于Robert of Clari的长引文不算另行核读该书。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "鲍德温当选与5月16日加冕分开叙述。",
+        "references": [
+          "conquest"
+        ],
+        "note": "加冕不是4月攻城的同一时间点。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "conquest",
+        "source": "villehardouin",
+        "locator": "原书页68–69；检索 16th May 1204",
+        "claim": "鲍德温当选与5月16日加冕分开叙述。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "byzantine:constantinople-sack-1204": {
+    "scope": "直接阅读节选正文；不沿用网页导言的全部判断。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "霍尼亚提斯记圣索菲亚财物与居民遭劫。",
+        "references": [
+          "sack"
+        ],
+        "note": "节选不提供洗劫全过程可统一确定的终止日。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "sack",
+        "source": "choniates",
+        "locator": "Munro译pp.15–16；正文从 How shall I begin 开始",
+        "claim": "霍尼亚提斯记圣索菲亚财物与居民遭劫。",
+        "access": "excerpt",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": []
+  },
+  "byzantine:byz-1205-1": {
+    "scope": "核读百科及IOS署名工具书指定段。不同日期可能对应流亡统治、称帝或受冠，不先假定是同一事件的互斥日期。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "百科把约1205年称帝与1208年加冕分开。",
+        "references": [
+          "working"
+        ],
+        "note": "保留原卷工作纪年，百科归入导航层。"
+      },
+      {
+        "id": "definition",
+        "text": "署名工具书把统治起点写作1204，而加冕仍为1208。",
+        "references": [
+          "lexicon"
+        ],
+        "note": "这里比较起点口径；不据该工具书其他日期改写原人物资料。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "working",
+        "source": "laskaris-navigation",
+        "locator": "Empire / Coronation段；检索 early 1205 / Easter Sunday",
+        "claim": "百科把约1205年称帝与1208年加冕分开。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读百科指定段；没有重新核读其所引现代专著。"
+      },
+      {
+        "id": "lexicon",
+        "source": "laskaris-study",
+        "locator": "Leben首段；检索 6. April 1208",
+        "claim": "署名工具书把统治起点写作1204，而加冕仍为1208。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": [
+      {
+        "id": "accession-coronation",
+        "question": "1204、1205与1208为何并见？",
+        "positions": [
+          {
+            "id": "separate",
+            "label": "本条采用：区分阶段",
+            "statement": "约1205称帝、1208加冕；1204为首都失守后的政治起点。",
+            "references": [
+              "working",
+              "lexicon"
+            ]
+          },
+          {
+            "id": "rule-start",
+            "label": "1204起算统治",
+            "statement": "IOS工具书从1204起算统治，同时将受冠置于1208。",
+            "references": [
+              "lexicon"
+            ]
+          }
+        ],
+        "adopted": "separate",
+        "rationale": "两个入口都区分统治形成与加冕，故不把“1205/1208”误写成一次加冕日期的任选值。",
+        "limits": "未直接核读Akropolites或各现代专著；本项不据未取得全文的论文提出新的确日。"
+      }
+    ]
+  },
+  "byzantine:byz-1208-1": {
+    "scope": "核读百科及IOS署名工具书指定段。不同日期可能对应流亡统治、称帝或受冠，不先假定是同一事件的互斥日期。",
+    "claims": [
+      {
+        "id": "core",
+        "text": "百科把约1205年称帝与1208年加冕分开。",
+        "references": [
+          "working"
+        ],
+        "note": "保留原卷工作纪年，百科归入导航层。"
+      },
+      {
+        "id": "definition",
+        "text": "署名工具书把统治起点写作1204，而加冕仍为1208。",
+        "references": [
+          "lexicon"
+        ],
+        "note": "这里比较起点口径；不据该工具书其他日期改写原人物资料。"
+      }
+    ],
+    "citations": [
+      {
+        "id": "working",
+        "source": "laskaris-navigation",
+        "locator": "Empire / Coronation段；检索 early 1205 / Easter Sunday",
+        "claim": "百科把约1205年称帝与1208年加冕分开。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读百科指定段；没有重新核读其所引现代专著。"
+      },
+      {
+        "id": "lexicon",
+        "source": "laskaris-study",
+        "locator": "Leben首段；检索 6. April 1208",
+        "claim": "署名工具书把统治起点写作1204，而加冕仍为1208。",
+        "access": "text",
+        "consultation": "direct",
+        "checked": "2026-10-19",
+        "scope": "直接阅读所列电子译文／正文指定段落；未校勘原手稿，未核读页面列出的全部书目。"
+      }
+    ],
+    "disputes": [
+      {
+        "id": "accession-coronation",
+        "question": "1204、1205与1208为何并见？",
+        "positions": [
+          {
+            "id": "separate",
+            "label": "本条采用：区分阶段",
+            "statement": "约1205称帝、1208加冕；1204为首都失守后的政治起点。",
+            "references": [
+              "working",
+              "lexicon"
+            ]
+          },
+          {
+            "id": "rule-start",
+            "label": "1204起算统治",
+            "statement": "IOS工具书从1204起算统治，同时将受冠置于1208。",
+            "references": [
+              "lexicon"
+            ]
+          }
+        ],
+        "adopted": "separate",
+        "rationale": "两个入口都区分统治形成与加冕，故不把“1205/1208”误写成一次加冕日期的任选值。",
+        "limits": "未直接核读Akropolites或各现代专著；本项不据未取得全文的论文提出新的确日。"
+      }
+    ]
+  }
+}

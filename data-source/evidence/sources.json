@@ -1,0 +1,122 @@
+{
+  "livy": {
+    "kind": "ancient",
+    "label": "李维《建城以来史》",
+    "author": "Titus Livius",
+    "edition": "D. Spillan英译，1853；Gutenberg 19725",
+    "url": "https://www.gutenberg.org/files/19725/19725-h/19725-h.htm",
+    "limitations": "晚于王政与早期共和国数百年的叙事；本次核读指定英译段，不是考古证实或手稿校勘。"
+  },
+  "augustus": {
+    "kind": "ancient",
+    "label": "奥古斯都《功业录》",
+    "author": "Augustus",
+    "edition": "F. W. Shipley英译，1924；LacusCurtius电子转录",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6*.html",
+    "limitations": "皇帝对自身权力的公开表述，不能直接作为权力实际平等的证明；本次阅读英译。"
+  },
+  "tacitus-i": {
+    "kind": "ancient",
+    "label": "塔西佗《编年史》卷I",
+    "author": "Tacitus",
+    "edition": "A. J. Church、W. J. Brodribb英译；MIT Internet Classics Archive",
+    "url": "https://classics.mit.edu/Tacitus/annals.1.i.html",
+    "limitations": "元老视角，事后写作；作者转述的宫廷传言不等于已证明的谋杀。网页段落无章号，可按给出的关键词定位。"
+  },
+  "tacitus-xv": {
+    "kind": "ancient",
+    "label": "塔西佗《编年史》卷XV",
+    "author": "Tacitus",
+    "edition": "A. J. Church、W. J. Brodribb英译；MIT Internet Classics Archive",
+    "url": "https://classics.mit.edu/Tacitus/annals.11.xv.html",
+    "limitations": "作者明确保留起火原因的分歧；其对基督徒的敌意和传闻不能作为纵火判决。"
+  },
+  "ammianus": {
+    "kind": "ancient",
+    "label": "阿米阿努斯《罗马史》卷XXXI",
+    "author": "Ammianus Marcellinus",
+    "edition": "J. C. Rolfe英译，Loeb；LacusCurtius",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31*.html",
+    "limitations": "晚四世纪叙事，含不同传闻；不能因作者从军便把每一段当作亲眼目击。"
+  },
+  "socrates": {
+    "kind": "ancient",
+    "label": "苏格拉底《教会史》卷VII",
+    "author": "Socrates Scholasticus",
+    "edition": "A. C. Zenos英译，NPNF第二辑卷II；New Advent电子本",
+    "url": "https://www.newadvent.org/fathers/26017.htm",
+    "limitations": "君士坦丁堡教会史视角；保留其对会议派系的叙述，不把神学评价当作中立裁断。"
+  },
+  "romulus-study": {
+    "kind": "modern",
+    "label": "DIR：Romulus Augustulus — Two Views",
+    "author": "Ralph W. Mathisen；Geoffrey S. Nathan",
+    "edition": "1997，Loyola大学DIR镜像",
+    "url": "https://roman-emperors.sites.luc.edu/auggiero.htm",
+    "limitations": "署名研究分两篇；直接读研究正文，不等于核读其引用的马尔库斯、马尔凯利努斯、PLRE或现代书目全文。"
+  },
+  "procopius": {
+    "kind": "ancient",
+    "label": "普罗柯比《战争史》I.24",
+    "author": "Procopius of Caesarea",
+    "edition": "H. B. Dewing英译，Loeb 1914；LacusCurtius",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/1F*.html",
+    "limitations": "宫廷与军人视角，包含重构演说和死亡数字；本次只使用暴动、火灾与镇压的指定段落。"
+  },
+  "siege-navigation": {
+    "kind": "navigation",
+    "label": "674—678年围城：叙事与现代重估导航",
+    "author": "Wikipedia contributors",
+    "edition": "在线条目，查阅于2026-10-19",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(674%E2%80%93678)",
+    "limitations": "用于确认通行模型与研究分歧的入口；书目列出的古代文本和研究不自动算作已读。"
+  },
+  "jankowiak": {
+    "kind": "modern",
+    "label": "The first Arab siege of Constantinople: The campaign of Yazid b. Mu’awiyah in 667–669",
+    "author": "Marek Jankowiak",
+    "edition": "2017，Byzantion’dan Constantinopolis’e İstanbul Kuşatmaları，pp.201–228；伯明翰大学记录",
+    "url": "https://research.birmingham.ac.uk/en/publications/the-first-arab-siege-of-constantinople-the-campaign-of-yazid-b-mu/",
+    "limitations": "只直接读大学记录的Abstract；未取得本章全文，不能声称独立复核其全部材料或论证。"
+  },
+  "psellus": {
+    "kind": "ancient",
+    "label": "普塞洛斯《编年史》卷VII",
+    "author": "Michael Psellos",
+    "edition": "E. R. A. Sewter英译；Fordham电子本",
+    "url": "https://sourcebooks.web.fordham.edu/basis/psellus-chrono07.asp",
+    "limitations": "作者参与宫廷政治，非曼齐刻尔特战场目击者；译注与中世纪正文是不同证据层。"
+  },
+  "villehardouin": {
+    "kind": "ancient",
+    "label": "维尔阿杜安《君士坦丁堡的征服》",
+    "author": "Geoffrey of Villehardouin",
+    "edition": "Frank T. Marzials英译，1908；Fordham电子本",
+    "url": "https://sourcebooks.web.fordham.edu/basis/villehardouin.asp",
+    "limitations": "远征参与者的回忆与辩护；页面混有译者长注。只用已定位叙事，不接受夸大兵力或神意解释。"
+  },
+  "choniates": {
+    "kind": "ancient",
+    "label": "霍尼亚提斯：1204年洗劫节选",
+    "author": "Niketas Choniates",
+    "edition": "D. C. Munro英译，1912，pp.15–16；Fordham电子本",
+    "url": "https://sourcebooks.web.fordham.edu/source/choniates1.asp",
+    "limitations": "受难者视角的节选而非全书；本次不采用网页导言关于教会共融永久终结的简化。"
+  },
+  "laskaris-study": {
+    "kind": "modern",
+    "label": "BioLex：Theodoros I. Laskaris",
+    "author": "Rainer Walther",
+    "edition": "Biographisches Lexikon zur Geschichte Südosteuropas，Bd.4，1981，pp.298–300；IOS电子本",
+    "url": "https://www.biolex.ios-regensburg.de/BioLexViewview.php?ID=1765",
+    "limitations": "署名工具书正文；将1204作为统治起点而1208作为加冕年。其卒年1222不据此覆盖本项目另采用的1221，详见研究说明。"
+  },
+  "laskaris-navigation": {
+    "kind": "navigation",
+    "label": "Theodore I Laskaris：称帝与加冕导航",
+    "author": "Wikipedia contributors",
+    "edition": "在线条目，查阅于2026-10-19",
+    "url": "https://en.wikipedia.org/wiki/Theodore_I_Laskaris",
+    "limitations": "直接阅读百科的Empire / Coronation段；未据其脚注冒称读过Angold、Macrides等专著。"
+  }
+}

@@ -23,8 +23,8 @@
     "test:people-ui": "node scripts/test-people.cjs",
     "test:republic-people": "python scripts/test_republic_people.py",
     "test:republic-people-ui": "node scripts/test-republic-people.cjs",
-    "test:events": "python scripts/test_events.py && python scripts/test_event_links.py",
-    "test:events-ui": "node scripts/test-events.cjs",
+    "test:events": "python scripts/test_events.py && python scripts/test_event_links.py && python scripts/test_evidence.py",
+    "test:events-ui": "node scripts/test-events.cjs && node scripts/test-evidence.cjs",
     "test:timeline": "python scripts/test_timeline.py && node scripts/test-timeline-engine.cjs",
     "test:timeline-ui": "node scripts/test-timeline.cjs",
     "test:links-ui": "node scripts/test-event-links.cjs"
