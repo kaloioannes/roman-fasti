@@ -1,0 +1,2941 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-20",
+  "method": "保留各卷原有王朝／家族／无明确归组及其出处；分类不是血缘断言。人物按卷内稳定ID引用，跨卷仅使用已人工确认身份表。关系边由编辑逐项核读并注明出处、实际阅读范围、年代精度与争议；不从姓名、共属王朝或任期接近生成。亲生父母、婚姻、收养、政治指定与帝位承接分层；指定不保证继位，承接不等于自愿让位。年代表示该边所述事实或安排的时间；未核定时留空，不推定关系持续至页面末年。专题中的辅助人物只解释关系，不进入皇帝名录。已有王朝目录覆盖原卷分类；三组关系图为已核读网络，并非全体亲属的穷尽谱系。事件按显式人物关联与同时期背景分开；后者不推为皇室行动。",
+  "sources": {
+    "suet-augustus": {
+      "label": "苏埃托尼乌斯《奥古斯都传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1913；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html",
+      "scope": "实际阅读指定电子译文段落：62—65、101；婚姻、子女、收养与遗嘱。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "suet-tiberius": {
+      "label": "苏埃托尼乌斯《提比略传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1913；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Tiberius*.html",
+      "scope": "实际阅读指定电子译文段落：4、7、15、23；父母、婚姻、收养及继承。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "suet-caligula": {
+      "label": "苏埃托尼乌斯《卡利古拉传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1914；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Caligula*.html",
+      "scope": "实际阅读指定电子译文段落：1、7、12—14；日耳曼尼库斯家族与37年继承。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "suet-claudius": {
+      "label": "苏埃托尼乌斯《克劳狄传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1914；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Claudius*.html",
+      "scope": "实际阅读指定电子译文段落：1、10、26—27；父母、即位、婚姻与子女。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "suet-nero": {
+      "label": "苏埃托尼乌斯《尼禄传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1914；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Nero*.html",
+      "scope": "实际阅读指定电子译文段落：5—8；父母、收养、婚姻及即位。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "suet-vespasian": {
+      "label": "苏埃托尼乌斯《韦斯帕芗传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1914；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Vespasian*.html",
+      "scope": "实际阅读指定电子译文段落：3、25；妻子、两子与继承宣示。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "suet-titus": {
+      "label": "苏埃托尼乌斯《提图斯传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1914；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Titus*.html",
+      "scope": "实际阅读指定电子译文段落：4、6、9；婚姻、女儿、父亲的政治伙伴及对弟弟的表态。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "suet-domitian": {
+      "label": "苏埃托尼乌斯《图密善传》",
+      "author": "苏埃托尼乌斯",
+      "edition": "J. C. Rolfe 英译，Loeb Classical Library，1914；LacusCurtius电子转录",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Domitian*.html",
+      "scope": "实际阅读指定电子译文段落：1—3、17.3；婚姻、兄弟继位、其本人的共治主张与提图斯之女的姓名。",
+      "limitations": "帝政后期写成的传记，包含道德品评和传闻；不等同亲见事实，也未校勘拉丁手稿。译者脚注与作者正文分开。"
+    },
+    "anna-2": {
+      "label": "安娜·科穆宁《阿莱克修斯传》卷2",
+      "author": "安娜·科穆宁",
+      "edition": "Elizabeth A. S. Dawes 英译，1928；Fordham Internet Medieval Sourcebook",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://sourcebooks.web.fordham.edu/basis/AnnaComnena-Alexiad02.asp",
+      "scope": "实际阅读：II.1、II.2、II.5：阿莱克修斯的父母、兄弟、玛丽亚收养与继承保证。",
+      "limitations": "作者为皇帝之女，维护其家族与母亲的立场鲜明。收养、共帝及继承保证须按原文语境解释，不据此主张血缘或自动继承。"
+    },
+    "anna-3": {
+      "label": "安娜·科穆宁《阿莱克修斯传》卷3",
+      "author": "安娜·科穆宁",
+      "edition": "Elizabeth A. S. Dawes 英译，1928；Fordham Internet Medieval Sourcebook",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://sourcebooks.web.fordham.edu/basis/AnnaComnena-Alexiad03.asp",
+      "scope": "实际阅读：III.1—4、III.6—8：伊琳娜、杜卡斯家族、共帝承诺与安娜·达拉塞娜。",
+      "limitations": "作者为皇帝之女，维护其家族与母亲的立场鲜明。收养、共帝及继承保证须按原文语境解释，不据此主张血缘或自动继承。"
+    },
+    "anna-6": {
+      "label": "安娜·科穆宁《阿莱克修斯传》卷6",
+      "author": "安娜·科穆宁",
+      "edition": "Elizabeth A. S. Dawes 英译，1928；Fordham Internet Medieval Sourcebook",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://sourcebooks.web.fordham.edu/basis/AnnaComnena-Alexiad06.asp",
+      "scope": "实际阅读：VI.8：安娜与约翰的父母及帝位安排。",
+      "limitations": "作者为皇帝之女，维护其家族与母亲的立场鲜明。收养、共帝及继承保证须按原文语境解释，不据此主张血缘或自动继承。"
+    },
+    "tacitus-1": {
+      "label": "塔西佗《编年史》卷1",
+      "author": "塔西佗",
+      "edition": "Alfred John Church、William Jackson Brodribb 英译；MIT Internet Classics Archive",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://classics.mit.edu/Tacitus/annals.1.i.html",
+      "scope": "实际阅读：I.3、I.5—8：收养、继承期待、14年交接与遗嘱。",
+      "limitations": "作者在事件之后写作，区分作者判断、宫廷传闻与明确政治行动；该电子译文的段落无章节锚点，定位采用通行卷章。"
+    },
+    "tacitus-12": {
+      "label": "塔西佗《编年史》卷12",
+      "author": "塔西佗",
+      "edition": "Alfred John Church、William Jackson Brodribb 英译；MIT Internet Classics Archive",
+      "kind": "primary",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://classics.mit.edu/Tacitus/annals.8.xii.html",
+      "scope": "实际阅读：XII.1—8、XII.25—26、XII.41：49年婚姻、50年收养及51年尼禄的政治优先地位。",
+      "limitations": "作者在事件之后写作，区分作者判断、宫廷传闻与明确政治行动；该电子译文的段落无章节锚点，定位采用通行卷章。"
+    },
+    "dir-john": {
+      "label": "Andrew Stone：John II Comnenus",
+      "author": "Andrew Stone",
+      "edition": "De Imperatoribus Romanis，Loyola University Chicago 镜像电子正文",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://roman-emperors.sites.luc.edu/johncomn.htm",
+      "scope": "实际阅读下列小节：The succession、Final campaigns in Phrygia and Syria 1142–1143；只摘取亲属、政治安排与交接事实。",
+      "limitations": "直接阅读的是Stone的署名研究；其引述的霍尼亚提斯、金纳莫斯和颂辞在此为间接路径，未声称核读这些版本全文。日期与原卷不一致处不改写原卷任期。"
+    },
+    "dir-manuel": {
+      "label": "Andrew Stone：Manuel I Comnenus",
+      "author": "Andrew Stone",
+      "edition": "De Imperatoribus Romanis，Loyola University Chicago 镜像电子正文",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://roman-emperors.sites.luc.edu/mannycom.htm",
+      "scope": "实际阅读下列小节：Manuel as sebastokrator、The securing of the succession 1143、Marriage to Maria of Antioch 1161、Alexius Porphyrogenitus 1169；只摘取亲属、政治安排与交接事实。",
+      "limitations": "直接阅读的是Stone的署名研究；其引述的霍尼亚提斯、金纳莫斯和颂辞在此为间接路径，未声称核读这些版本全文。日期与原卷不一致处不改写原卷任期。"
+    },
+    "dir-andronikos": {
+      "label": "Andrew Stone：Andronicus I Comnenus",
+      "author": "Andrew Stone",
+      "edition": "De Imperatoribus Romanis，Loyola University Chicago 镜像电子正文",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://roman-emperors.sites.luc.edu/andycomn.htm",
+      "scope": "实际阅读下列小节：Introduction、Andronicus and his first wife、Andronicus and Alexius II、Andronicus succeeds to the throne；只摘取亲属、政治安排与交接事实。",
+      "limitations": "直接阅读的是Stone的署名研究；其引述的霍尼亚提斯、金纳莫斯和颂辞在此为间接路径，未声称核读这些版本全文。日期与原卷不一致处不改写原卷任期。"
+    },
+    "dir-alexios-ii": {
+      "label": "Andrew Stone：Alexius II Comnenus",
+      "author": "Andrew Stone",
+      "edition": "De Imperatoribus Romanis，Loyola University Chicago 镜像电子正文",
+      "kind": "research",
+      "access": "excerpt",
+      "checked": "2026-10-20",
+      "url": "https://roman-emperors.sites.luc.edu/alexiicom.htm",
+      "scope": "实际阅读下列小节：Introduction、Alexius as heir-apparent、The regency of Maria of Antioch；只摘取亲属、政治安排与交接事实。",
+      "limitations": "直接阅读的是Stone的署名研究；其引述的霍尼亚提斯、金纳莫斯和颂辞在此为间接路径，未声称核读这些版本全文。日期与原卷不一致处不改写原卷任期。"
+    }
+  },
+  "nodes": [
+    {
+      "id": "livia",
+      "label": "莉薇娅",
+      "native": "Livia Drusilla",
+      "role": "奥古斯都之妻；提比略与老德鲁苏斯之母",
+      "references": [
+        {
+          "source": "suet-tiberius",
+          "locator": "4.3",
+          "supports": "莉薇娅及其两子的父母关系。"
+        },
+        {
+          "source": "suet-augustus",
+          "locator": "62.2",
+          "supports": "莉薇娅与奥古斯都的婚姻。"
+        }
+      ]
+    },
+    {
+      "id": "scribonia",
+      "label": "斯克里博尼娅",
+      "native": "Scribonia",
+      "role": "奥古斯都之妻；大尤利娅之母",
+      "references": [
+        {
+          "source": "suet-augustus",
+          "locator": "62—63",
+          "supports": "斯克里博尼娅的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "julia-elder",
+      "label": "大尤利娅",
+      "native": "Iulia",
+      "role": "奥古斯都与斯克里博尼娅之女",
+      "references": [
+        {
+          "source": "suet-augustus",
+          "locator": "63—64",
+          "supports": "大尤利娅的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "agrippa",
+      "label": "马尔库斯·阿格里帕",
+      "native": "Marcus Vipsanius Agrippa",
+      "role": "将领；大尤利娅之夫；盖乌斯、卢基乌斯与大阿格里皮娜之父",
+      "references": [
+        {
+          "source": "suet-augustus",
+          "locator": "63—64",
+          "supports": "马尔库斯·阿格里帕的身份及本专题中的家族关系。"
+        }
+      ],
+      "profile": {
+        "period": "republic",
+        "person": "p622a2ed1a3",
+        "identityCheck": {
+          "latin": "Marcus Vipsanius Agrippa",
+          "wikiTitle": "Marcus Vipsanius Agrippa"
+        }
+      }
+    },
+    {
+      "id": "gaius-caesar",
+      "label": "盖乌斯·恺撒",
+      "native": "Gaius Caesar",
+      "role": "阿格里帕与大尤利娅之子；奥古斯都养子，未继位",
+      "references": [
+        {
+          "source": "suet-augustus",
+          "locator": "64—65",
+          "supports": "盖乌斯·恺撒的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "lucius-caesar",
+      "label": "卢基乌斯·恺撒",
+      "native": "Lucius Caesar",
+      "role": "阿格里帕与大尤利娅之子；奥古斯都养子，未继位",
+      "references": [
+        {
+          "source": "suet-augustus",
+          "locator": "64—65",
+          "supports": "卢基乌斯·恺撒的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "agrippa-postumus",
+      "label": "阿格里帕·波斯图穆斯",
+      "native": "Agrippa Postumus",
+      "role": "阿格里帕与大尤利娅之子；收养后又被排除",
+      "references": [
+        {
+          "source": "suet-augustus",
+          "locator": "64—65",
+          "supports": "阿格里帕·波斯图穆斯的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "tiberius-nero-father",
+      "label": "老提比略·克劳狄·尼禄",
+      "native": "Tiberius Claudius Nero",
+      "role": "提比略皇帝与老德鲁苏斯之父；与尼禄皇帝为不同人物",
+      "references": [
+        {
+          "source": "suet-tiberius",
+          "locator": "4.3",
+          "supports": "老提比略·克劳狄·尼禄的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "drusus-elder",
+      "label": "老德鲁苏斯",
+      "native": "Nero Claudius Drusus",
+      "role": "莉薇娅之子；日耳曼尼库斯与克劳狄之父",
+      "references": [
+        {
+          "source": "suet-claudius",
+          "locator": "1.1、1.6",
+          "supports": "老德鲁苏斯的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "antonia-minor",
+      "label": "小安东尼娅",
+      "native": "Antonia Minor",
+      "role": "老德鲁苏斯之妻；日耳曼尼库斯与克劳狄之母",
+      "references": [
+        {
+          "source": "suet-claudius",
+          "locator": "1.6",
+          "supports": "小安东尼娅的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "germanicus",
+      "label": "日耳曼尼库斯",
+      "native": "Germanicus Iulius Caesar",
+      "role": "提比略养子；卡利古拉与小阿格里皮娜之父",
+      "references": [
+        {
+          "source": "suet-caligula",
+          "locator": "1.1、7.1",
+          "supports": "日耳曼尼库斯的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "agrippina-elder",
+      "label": "大阿格里皮娜",
+      "native": "Agrippina Maior",
+      "role": "阿格里帕与大尤利娅之女；日耳曼尼库斯之妻",
+      "references": [
+        {
+          "source": "suet-caligula",
+          "locator": "7.1",
+          "supports": "大阿格里皮娜的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "agrippina-younger",
+      "label": "小阿格里皮娜",
+      "native": "Agrippina Minor",
+      "role": "日耳曼尼库斯之女、尼禄之母；克劳狄之妻",
+      "references": [
+        {
+          "source": "suet-nero",
+          "locator": "5",
+          "supports": "小阿格里皮娜为尼禄之母。"
+        },
+        {
+          "source": "suet-claudius",
+          "locator": "26.3",
+          "supports": "小阿格里皮娜与克劳狄的婚姻。"
+        }
+      ]
+    },
+    {
+      "id": "domitius-ahenobarbus",
+      "label": "格奈乌斯·多米提乌斯·阿赫诺巴尔布斯",
+      "native": "Gnaeus Domitius Ahenobarbus",
+      "role": "尼禄生父；与养父克劳狄分开",
+      "references": [
+        {
+          "source": "suet-nero",
+          "locator": "5",
+          "supports": "格奈乌斯·多米提乌斯·阿赫诺巴尔布斯的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "messalina",
+      "label": "梅萨利娜",
+      "native": "Valeria Messalina",
+      "role": "克劳狄之妻；布里坦尼库斯与奥克塔维娅之母",
+      "references": [
+        {
+          "source": "suet-claudius",
+          "locator": "26—27",
+          "supports": "梅萨利娜的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "britannicus",
+      "label": "布里坦尼库斯",
+      "native": "Tiberius Claudius Caesar Britannicus",
+      "role": "克劳狄与梅萨利娜之子；未继位",
+      "references": [
+        {
+          "source": "suet-claudius",
+          "locator": "27",
+          "supports": "布里坦尼库斯的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "claudia-octavia",
+      "label": "克劳狄娅·奥克塔维娅",
+      "native": "Claudia Octavia",
+      "role": "克劳狄与梅萨利娜之女；尼禄之妻",
+      "references": [
+        {
+          "source": "suet-claudius",
+          "locator": "27.1—2",
+          "supports": "克劳狄娅·奥克塔维娅的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "domitilla-elder",
+      "label": "大多米提拉",
+      "native": "Flavia Domitilla Maior",
+      "role": "韦斯帕芗之妻；提图斯与图密善之母",
+      "references": [
+        {
+          "source": "suet-vespasian",
+          "locator": "3.1",
+          "supports": "大多米提拉的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "domitia-longina",
+      "label": "多米提娅·隆吉娜",
+      "native": "Domitia Longina",
+      "role": "图密善之妻；婚姻经历离异与复合",
+      "references": [
+        {
+          "source": "suet-domitian",
+          "locator": "1.3、3.1",
+          "supports": "多米提娅·隆吉娜的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "marcia-furnilla",
+      "label": "玛尔西娅·富尔尼拉",
+      "native": "Marcia Furnilla",
+      "role": "提图斯之妻；生女后离异",
+      "references": [
+        {
+          "source": "suet-titus",
+          "locator": "4.2",
+          "supports": "玛尔西娅·富尔尼拉的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "julia-flavia",
+      "label": "尤利娅（提图斯之女）",
+      "native": "Iulia, daughter of Titus",
+      "role": "《图密善传》17.3记为提图斯之女尤利娅；本条不确定其母",
+      "references": [
+        {
+          "source": "suet-domitian",
+          "locator": "17.3",
+          "supports": "尤利娅（提图斯之女）的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "anna-dalassene",
+      "label": "安娜·达拉塞娜",
+      "native": "Ἄννα Δαλασσηνή",
+      "role": "阿莱克修斯一世之母；参与宫廷决策",
+      "references": [
+        {
+          "source": "anna-2",
+          "locator": "II.5",
+          "supports": "阿莱克修斯之母。"
+        },
+        {
+          "source": "anna-3",
+          "locator": "III.6—8",
+          "supports": "政治角色及委托。"
+        }
+      ]
+    },
+    {
+      "id": "john-komnenos-father",
+      "label": "约翰·科穆宁（阿莱克修斯之父）",
+      "native": "Ἰωάννης Κομνηνός",
+      "role": "阿莱克修斯一世与其兄伊萨克之父；不与约翰二世混同",
+      "references": [
+        {
+          "source": "anna-2",
+          "locator": "II.1",
+          "supports": "约翰·科穆宁（阿莱克修斯之父）的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "isaac-sebastokrator",
+      "label": "伊萨克·科穆宁（至尊者）",
+      "native": "Ἰσαάκιος Κομνηνός",
+      "role": "阿莱克修斯一世的兄长；不是伊萨克一世皇帝",
+      "references": [
+        {
+          "source": "anna-2",
+          "locator": "II.1；III.4",
+          "supports": "伊萨克·科穆宁（至尊者）的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "irene-doukaina",
+      "label": "伊琳娜·杜卡伊娜",
+      "native": "Εἰρήνη Δούκαινα",
+      "role": "阿莱克修斯一世之妻；安娜与约翰二世之母",
+      "references": [
+        {
+          "source": "anna-3",
+          "locator": "III.3",
+          "supports": "伊琳娜的身份与婚姻。"
+        },
+        {
+          "source": "anna-6",
+          "locator": "VI.8",
+          "supports": "安娜与约翰的母亲。"
+        }
+      ]
+    },
+    {
+      "id": "maria-alania",
+      "label": "阿兰的玛丽亚",
+      "native": "Μαρία ἡ Ἀλανή",
+      "role": "米海尔七世前妻；君士坦丁·杜卡斯之母；阿莱克修斯养母",
+      "references": [
+        {
+          "source": "anna-3",
+          "locator": "III.1—4",
+          "supports": "阿兰的玛丽亚的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "anna-komnene",
+      "label": "安娜·科穆宁（史家）",
+      "native": "Ἄννα Κομνηνή",
+      "role": "阿莱克修斯一世与伊琳娜之女；《阿莱克修斯传》作者",
+      "references": [
+        {
+          "source": "anna-6",
+          "locator": "VI.8",
+          "supports": "安娜·科穆宁（史家）的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "irene-hungary",
+      "label": "匈牙利的伊琳娜",
+      "native": "Piroska / Εἰρήνη",
+      "role": "约翰二世之妻；不与伊琳娜·杜卡伊娜混同",
+      "references": [
+        {
+          "source": "dir-john",
+          "locator": "The European theatre 1122–1129",
+          "supports": "匈牙利的伊琳娜的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "isaac-alexios-son",
+      "label": "伊萨克·科穆宁（阿莱克修斯之子）",
+      "native": "Ἰσαάκιος Κομνηνός",
+      "role": "约翰二世之弟；安德罗尼科斯一世之父；与阿莱克修斯之兄分开",
+      "references": [
+        {
+          "source": "dir-john",
+          "locator": "The succession",
+          "supports": "约翰二世之弟伊萨克。"
+        },
+        {
+          "source": "dir-andronikos",
+          "locator": "Introduction",
+          "supports": "安德罗尼科斯一世之父伊萨克。"
+        }
+      ]
+    },
+    {
+      "id": "maria-antioch",
+      "label": "安条克的玛丽亚",
+      "native": "Maria of Antioch",
+      "role": "曼努埃尔一世之妻；阿莱克修斯二世之母",
+      "references": [
+        {
+          "source": "dir-alexios-ii",
+          "locator": "Introduction；The regency of Maria of Antioch",
+          "supports": "安条克的玛丽亚的身份及本专题中的家族关系。"
+        }
+      ]
+    },
+    {
+      "id": "agnes-france",
+      "label": "法兰西的阿涅丝",
+      "native": "Agnes / Ἄννα",
+      "role": "先后与阿莱克修斯二世、安德罗尼科斯一世缔结婚姻；幼年婚姻不能当作自主政治授权",
+      "references": [
+        {
+          "source": "dir-alexios-ii",
+          "locator": "Alexius as heir-apparent",
+          "supports": "阿涅丝与阿莱克修斯二世的婚姻。"
+        },
+        {
+          "source": "dir-andronikos",
+          "locator": "Andronicus succeeds to the throne",
+          "supports": "之后与安德罗尼科斯的婚姻。"
+        }
+      ]
+    }
+  ],
+  "topics": {
+    "empire--julio-claudian": {
+      "sections": [
+        {
+          "title": "皇室由数种关系共同组成",
+          "text": "尤利乌斯—克劳狄不是一条从父到子的直线。婚姻把奥古斯都、阿格里帕和克劳狄家族相接，收养又改写法律上的父子关系。图中分别记录两类亲属联系。",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "62—65",
+              "supports": "尤利乌斯—克劳狄不是一条从父到子的直线。婚姻把奥古斯都、阿格里帕和克劳狄家族相接，收养又改写法律上的父子关系。图中分别记录两类亲属联系。"
+            }
+          ]
+        },
+        {
+          "title": "继承期待会落空",
+          "text": "盖乌斯、卢基乌斯获收养并被引入公共事务，却未继位；之后提比略与阿格里帕·波斯图穆斯获收养，后者又被排除。政治指定线表示当时的安排，不预告结果。",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64—65",
+              "supports": "外孙获收养后先后死亡，波斯图穆斯获收养后又被排除。"
+            },
+            {
+              "source": "suet-tiberius",
+              "locator": "15",
+              "supports": "提比略的收养与继承期待。"
+            }
+          ]
+        },
+        {
+          "title": "即位不是一项私人遗产",
+          "text": "37年的遗嘱涉及两个孙辈，但卡利古拉获得独掌权力；41年克劳狄由军营支持进入帝位；54年尼禄的即位又有不同过程。帝位承接线只记录交接，不表示先帝自愿指定或法定长子继承。",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "14",
+              "supports": "37年的遗嘱与卡利古拉独掌权力。"
+            },
+            {
+              "source": "suet-claudius",
+              "locator": "10",
+              "supports": "41年克劳狄在军营支持下即位。"
+            },
+            {
+              "source": "suet-nero",
+              "locator": "8",
+              "supports": "54年尼禄的即位经过。"
+            }
+          ]
+        },
+        {
+          "title": "保留没有成为皇帝的家属",
+          "text": "大尤利娅、两位阿格里皮娜、莉薇娅及布里坦尼库斯保留各自身份。关系节点不自动新增皇帝，也不依据宫廷传闻推定谋杀责任。",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "26—27",
+              "supports": "大尤利娅、两位阿格里皮娜、莉薇娅及布里坦尼库斯保留各自身份。关系节点不自动新增皇帝，也不依据宫廷传闻推定谋杀责任。"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Julio-Claudian",
+        "Iulii Claudii",
+        "尤利亚 克劳狄"
+      ],
+      "edges": [
+        {
+          "id": "parent-augustus-julia",
+          "from": "global:roman-augustus",
+          "to": "julia-elder",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "63.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-scribonia-julia",
+          "from": "scribonia",
+          "to": "julia-elder",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "63.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-livia-tiberius",
+          "from": "livia",
+          "to": "empire:tiberius",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-tiberius",
+              "locator": "4.3",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-nero-father-tiberius",
+          "from": "tiberius-nero-father",
+          "to": "empire:tiberius",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-tiberius",
+              "locator": "4.3",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-livia-drusus",
+          "from": "livia",
+          "to": "drusus-elder",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "1.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-nero-father-drusus",
+          "from": "tiberius-nero-father",
+          "to": "drusus-elder",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-tiberius",
+              "locator": "4.3",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-drusus-germanicus",
+          "from": "drusus-elder",
+          "to": "germanicus",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "1.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-antonia-germanicus",
+          "from": "antonia-minor",
+          "to": "germanicus",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "1.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-drusus-claudius",
+          "from": "drusus-elder",
+          "to": "empire:claudius",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "1.6",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-antonia-claudius",
+          "from": "antonia-minor",
+          "to": "empire:claudius",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "1.6",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-germanicus-caligula",
+          "from": "germanicus",
+          "to": "empire:caligula",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "7.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-agrippina-caligula",
+          "from": "agrippina-elder",
+          "to": "empire:caligula",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "7.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-germanicus-agrippina",
+          "from": "germanicus",
+          "to": "agrippina-younger",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "7.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-agrippina-daughter",
+          "from": "agrippina-elder",
+          "to": "agrippina-younger",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "7.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-agrippina-nero",
+          "from": "agrippina-younger",
+          "to": "empire:nero",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-nero",
+              "locator": "5",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-domitius-nero",
+          "from": "domitius-ahenobarbus",
+          "to": "empire:nero",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-nero",
+              "locator": "5",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-claudius-britannicus",
+          "from": "empire:claudius",
+          "to": "britannicus",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "27.1—2",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-messalina-britannicus",
+          "from": "messalina",
+          "to": "britannicus",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "27.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-claudius-octavia",
+          "from": "empire:claudius",
+          "to": "claudia-octavia",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "27.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-messalina-octavia",
+          "from": "messalina",
+          "to": "claudia-octavia",
+          "type": "parent",
+          "note": "亲生父母与子女；与收养关系分列。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "27.1",
+              "supports": "亲生父母与子女；与收养关系分列。"
+            }
+          ]
+        },
+        {
+          "id": "parent-agrippa-gaius-caesar",
+          "from": "agrippa",
+          "to": "gaius-caesar",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "parent-julia-elder-gaius-caesar",
+          "from": "julia-elder",
+          "to": "gaius-caesar",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "parent-agrippa-lucius-caesar",
+          "from": "agrippa",
+          "to": "lucius-caesar",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "parent-julia-elder-lucius-caesar",
+          "from": "julia-elder",
+          "to": "lucius-caesar",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "parent-agrippa-agrippina-elder",
+          "from": "agrippa",
+          "to": "agrippina-elder",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "parent-julia-elder-agrippina-elder",
+          "from": "julia-elder",
+          "to": "agrippina-elder",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "parent-agrippa-agrippa-postumus",
+          "from": "agrippa",
+          "to": "agrippa-postumus",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "parent-julia-elder-agrippa-postumus",
+          "from": "julia-elder",
+          "to": "agrippa-postumus",
+          "type": "parent",
+          "note": "阿格里帕与大尤利娅的子女。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "阿格里帕与大尤利娅的子女。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-augustus-scribonia",
+          "from": "global:roman-augustus",
+          "to": "scribonia",
+          "type": "marriage",
+          "note": "两人的婚姻先于奥古斯都与莉薇娅的婚姻。",
+          "date": {
+            "label": "先于莉薇娅婚姻；本条不核定起讫",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "62—63",
+              "supports": "两人的婚姻先于奥古斯都与莉薇娅的婚姻。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-augustus-livia",
+          "from": "global:roman-augustus",
+          "to": "livia",
+          "type": "marriage",
+          "note": "莉薇娅改嫁奥古斯都；提比略与老德鲁苏斯不因此变为他的亲生子。",
+          "date": {
+            "label": "婚后至奥古斯都去世；起讫未在本条核定",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "62—63",
+              "supports": "莉薇娅改嫁奥古斯都；提比略与老德鲁苏斯不因此变为他的亲生子。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-livia-nero-father",
+          "from": "livia",
+          "to": "tiberius-nero-father",
+          "type": "marriage",
+          "note": "莉薇娅早先的婚姻；与之后改嫁分开。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-tiberius",
+              "locator": "4.3",
+              "supports": "莉薇娅早先的婚姻；与之后改嫁分开。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-julia-agrippa",
+          "from": "julia-elder",
+          "to": "agrippa",
+          "type": "marriage",
+          "note": "大尤利娅在马尔凯鲁斯死后嫁阿格里帕。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "63.1",
+              "supports": "大尤利娅在马尔凯鲁斯死后嫁阿格里帕。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-julia-tiberius",
+          "from": "julia-elder",
+          "to": "empire:tiberius",
+          "type": "marriage",
+          "note": "阿格里帕死后，提比略被要求离异并娶大尤利娅。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-tiberius",
+              "locator": "7.2—3",
+              "supports": "阿格里帕死后，提比略被要求离异并娶大尤利娅。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-drusus-antonia",
+          "from": "drusus-elder",
+          "to": "antonia-minor",
+          "type": "marriage",
+          "note": "老德鲁苏斯与小安东尼娅的婚姻。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "1.6",
+              "supports": "老德鲁苏斯与小安东尼娅的婚姻。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-germanicus-agrippina",
+          "from": "germanicus",
+          "to": "agrippina-elder",
+          "type": "marriage",
+          "note": "日耳曼尼库斯与大阿格里皮娜的婚姻。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "7.1",
+              "supports": "日耳曼尼库斯与大阿格里皮娜的婚姻。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-claudius-messalina",
+          "from": "empire:claudius",
+          "to": "messalina",
+          "type": "marriage",
+          "note": "克劳狄与梅萨利娜的婚姻；终结经过另见原文。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "26.2",
+              "supports": "克劳狄与梅萨利娜的婚姻；终结经过另见原文。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-claudius-agrippina",
+          "from": "empire:claudius",
+          "to": "agrippina-younger",
+          "type": "marriage",
+          "note": "叔侄婚姻获得特别许可；不能据此当作通常的罗马婚姻规则。",
+          "date": {
+            "label": "49年缔结；54年克劳狄去世",
+            "start": 49,
+            "end": 54,
+            "precision": "range"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "tacitus-12",
+              "locator": "XII.1—8",
+              "supports": "叔侄婚姻获得特别许可；不能据此当作通常的罗马婚姻规则。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-nero-octavia",
+          "from": "empire:nero",
+          "to": "claudia-octavia",
+          "type": "marriage",
+          "note": "尼禄与克劳狄之女奥克塔维娅的婚姻。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-nero",
+              "locator": "7.2",
+              "supports": "尼禄与克劳狄之女奥克塔维娅的婚姻。"
+            }
+          ]
+        },
+        {
+          "id": "adoption-augustus-adopts-gaius-caesar",
+          "from": "global:roman-augustus",
+          "to": "gaius-caesar",
+          "type": "adoption",
+          "note": "奥古斯都收养自己的外孙；血缘与法律亲子同时存在。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "奥古斯都收养自己的外孙；血缘与法律亲子同时存在。"
+            }
+          ]
+        },
+        {
+          "id": "adoption-augustus-adopts-lucius-caesar",
+          "from": "global:roman-augustus",
+          "to": "lucius-caesar",
+          "type": "adoption",
+          "note": "奥古斯都收养自己的外孙；血缘与法律亲子同时存在。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64.1",
+              "supports": "奥古斯都收养自己的外孙；血缘与法律亲子同时存在。"
+            }
+          ]
+        },
+        {
+          "id": "adoption-augustus-adopts-tiberius",
+          "from": "global:roman-augustus",
+          "to": "empire:tiberius",
+          "type": "adoption",
+          "note": "奥古斯都收养提比略。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-tiberius",
+              "locator": "15.2",
+              "supports": "奥古斯都收养提比略。"
+            }
+          ]
+        },
+        {
+          "id": "adoption-augustus-adopts-postumus",
+          "from": "global:roman-augustus",
+          "to": "agrippa-postumus",
+          "type": "adoption",
+          "note": "奥古斯都同时收养波斯图穆斯，后又排除。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "65.1",
+              "supports": "奥古斯都同时收养波斯图穆斯，后又排除。"
+            }
+          ]
+        },
+        {
+          "id": "adoption-tiberius-adopts-germanicus",
+          "from": "empire:tiberius",
+          "to": "germanicus",
+          "type": "adoption",
+          "note": "提比略在获奥古斯都收养前，先依要求收养侄子日耳曼尼库斯。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-tiberius",
+              "locator": "15.2",
+              "supports": "提比略在获奥古斯都收养前，先依要求收养侄子日耳曼尼库斯。"
+            }
+          ]
+        },
+        {
+          "id": "adoption-claudius-adopts-nero",
+          "from": "empire:claudius",
+          "to": "empire:nero",
+          "type": "adoption",
+          "note": "克劳狄收养尼禄；不改写其生父。",
+          "date": {
+            "label": "50年收养",
+            "start": 50,
+            "end": 50,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "tacitus-12",
+              "locator": "XII.25—26",
+              "supports": "克劳狄收养尼禄；不改写其生父。"
+            }
+          ]
+        },
+        {
+          "id": "designation-augustus-promotes-gaius-caesar",
+          "from": "global:roman-augustus",
+          "to": "gaius-caesar",
+          "type": "designation",
+          "note": "获收养后被引入公共事务，作为继承期待；没有最终继位。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64—65",
+              "supports": "获收养后被引入公共事务，作为继承期待；没有最终继位。"
+            }
+          ]
+        },
+        {
+          "id": "designation-augustus-promotes-lucius-caesar",
+          "from": "global:roman-augustus",
+          "to": "lucius-caesar",
+          "type": "designation",
+          "note": "获收养后被引入公共事务，作为继承期待；没有最终继位。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-augustus",
+              "locator": "64—65",
+              "supports": "获收养后被引入公共事务，作为继承期待；没有最终继位。"
+            }
+          ]
+        },
+        {
+          "id": "designation-augustus-designates-tiberius",
+          "from": "global:roman-augustus",
+          "to": "empire:tiberius",
+          "type": "designation",
+          "note": "收养、共同权力与遗嘱位置构成继承安排；私人财产继承不等于直接继承全部国家权力。",
+          "date": {
+            "label": "奥古斯都晚年；14年交接之前",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "tacitus-1",
+              "locator": "I.3、I.7—8",
+              "supports": "收养、共同权力与遗嘱位置构成继承安排；私人财产继承不等于直接继承全部国家权力。"
+            }
+          ]
+        },
+        {
+          "id": "designation-claudius-promotes-nero",
+          "from": "empire:claudius",
+          "to": "empire:nero",
+          "type": "designation",
+          "note": "尼禄提前着成年服、获政治荣誉，布里坦尼库斯被置后；这是政治优先安排。",
+          "date": {
+            "label": "51年",
+            "start": 51,
+            "end": 51,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "tacitus-12",
+              "locator": "XII.41",
+              "supports": "尼禄提前着成年服、获政治荣誉，布里坦尼库斯被置后；这是政治优先安排。"
+            }
+          ]
+        },
+        {
+          "id": "succession-succession-14",
+          "from": "global:roman-augustus",
+          "to": "empire:tiberius",
+          "type": "succession",
+          "note": "奥古斯都去世后提比略掌权；与收养线分开。",
+          "date": {
+            "label": "14年帝位交接",
+            "start": 14,
+            "end": 14,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "tacitus-1",
+              "locator": "I.5—8",
+              "supports": "奥古斯都去世后提比略掌权；与收养线分开。"
+            }
+          ]
+        },
+        {
+          "id": "succession-succession-37",
+          "from": "empire:tiberius",
+          "to": "empire:caligula",
+          "type": "succession",
+          "note": "卡利古拉承接帝位，遗嘱中的另一孙辈未取得同等权力。",
+          "date": {
+            "label": "37年帝位交接",
+            "start": 37,
+            "end": 37,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-caligula",
+              "locator": "14",
+              "supports": "卡利古拉承接帝位，遗嘱中的另一孙辈未取得同等权力。"
+            }
+          ]
+        },
+        {
+          "id": "succession-succession-41",
+          "from": "empire:caligula",
+          "to": "empire:claudius",
+          "type": "succession",
+          "note": "卡利古拉遇刺后，克劳狄由禁卫军拥立；不表示卡利古拉指定他。",
+          "date": {
+            "label": "41年帝位交接",
+            "start": 41,
+            "end": 41,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "10",
+              "supports": "卡利古拉遇刺后，克劳狄由禁卫军拥立；不表示卡利古拉指定他。"
+            }
+          ]
+        },
+        {
+          "id": "succession-succession-54",
+          "from": "empire:claudius",
+          "to": "empire:nero",
+          "type": "succession",
+          "note": "克劳狄死讯公布后，尼禄获军营与元老院承认。",
+          "date": {
+            "label": "54年帝位交接",
+            "start": 54,
+            "end": 54,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-nero",
+              "locator": "8",
+              "supports": "克劳狄死讯公布后，尼禄获军营与元老院承认。"
+            }
+          ]
+        },
+        {
+          "id": "parent-augustus-drusus-rumour",
+          "from": "global:roman-augustus",
+          "to": "drusus-elder",
+          "type": "parent",
+          "note": "苏埃托尼乌斯记录老德鲁苏斯为奥古斯都亲生子的传闻，不采作确定血缘。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "reported",
+          "references": [
+            {
+              "source": "suet-claudius",
+              "locator": "1.1",
+              "supports": "苏埃托尼乌斯记录老德鲁苏斯为奥古斯都亲生子的传闻，不采作确定血缘。"
+            }
+          ],
+          "dispute": "作者明说这是怀疑与流传诗句；本专题采用老提比略·尼禄为其父的明确记载（《提比略传》4.3）。传闻线与采用线并存但明确标记。"
+        }
+      ],
+      "highlights": [
+        "empire:emp-bc27-1",
+        "empire:emp-ad4-1",
+        "empire:emp-ad14-1",
+        "empire:emp-ad37-1",
+        "empire:emp-ad41-1",
+        "empire:emp-ad49-1",
+        "empire:emp-ad50-1",
+        "empire:emp-ad54-1",
+        "empire:emp-ad68-1"
+      ]
+    },
+    "empire--flavian": {
+      "sections": [
+        {
+          "title": "父子与兄弟两种承接",
+          "text": "韦斯帕芗与多米提拉的两个儿子均成为皇帝。提图斯先在父亲统治时承担公共职责，后来承接帝位；图密善则在兄长之后成为皇帝。亲属关系与实际即位仍分别画线。",
+          "references": [
+            {
+              "source": "suet-vespasian",
+              "locator": "3",
+              "supports": "韦斯帕芗与多米提拉的两个儿子。"
+            },
+            {
+              "source": "suet-titus",
+              "locator": "6",
+              "supports": "提图斯在父亲统治时的政治职责。"
+            },
+            {
+              "source": "suet-domitian",
+              "locator": "2",
+              "supports": "图密善在兄长之后继位。"
+            }
+          ]
+        },
+        {
+          "title": "共同行政不抹平帝号阶段",
+          "text": "提图斯是父亲的政治伙伴，分享部分职权；原卷任期仍按其实际称号记录。图密善自称遗嘱曾给予共同权力，苏埃托尼乌斯只把它记作他的说法。",
+          "references": [
+            {
+              "source": "suet-titus",
+              "locator": "6",
+              "supports": "提图斯与父亲共同承担政治职责。"
+            },
+            {
+              "source": "suet-domitian",
+              "locator": "2.3",
+              "supports": "图密善声称的共同权力是其自述。"
+            }
+          ]
+        },
+        {
+          "title": "69年并非一个家族的全年统治",
+          "text": "本朝成员保留原卷的显式归组。此前的加尔巴、奥托与维特里乌斯不会因为同年在位而被并入家谱。",
+          "references": [
+            {
+              "source": "suet-vespasian",
+              "locator": "1.1",
+              "supports": "本朝成员保留原卷的显式归组。此前的加尔巴、奥托与维特里乌斯不会因为同年在位而被并入家谱。"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Flavian",
+        "Flavii"
+      ],
+      "edges": [
+        {
+          "id": "parent-vespasian-parent-titus",
+          "from": "empire:vespasian",
+          "to": "empire:titus",
+          "type": "parent",
+          "note": "韦斯帕芗与多米提拉的儿子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-vespasian",
+              "locator": "3.1",
+              "supports": "韦斯帕芗与多米提拉的儿子。"
+            }
+          ]
+        },
+        {
+          "id": "parent-vespasian-parent-domitian",
+          "from": "empire:vespasian",
+          "to": "empire:domitian",
+          "type": "parent",
+          "note": "韦斯帕芗与多米提拉的儿子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-vespasian",
+              "locator": "3.1",
+              "supports": "韦斯帕芗与多米提拉的儿子。"
+            }
+          ]
+        },
+        {
+          "id": "parent-domitilla-elder-parent-titus",
+          "from": "domitilla-elder",
+          "to": "empire:titus",
+          "type": "parent",
+          "note": "韦斯帕芗与多米提拉的儿子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-vespasian",
+              "locator": "3.1",
+              "supports": "韦斯帕芗与多米提拉的儿子。"
+            }
+          ]
+        },
+        {
+          "id": "parent-domitilla-elder-parent-domitian",
+          "from": "domitilla-elder",
+          "to": "empire:domitian",
+          "type": "parent",
+          "note": "韦斯帕芗与多米提拉的儿子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-vespasian",
+              "locator": "3.1",
+              "supports": "韦斯帕芗与多米提拉的儿子。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-vespasian-domitilla",
+          "from": "empire:vespasian",
+          "to": "domitilla-elder",
+          "type": "marriage",
+          "note": "多米提拉在韦斯帕芗成为皇帝前已去世。",
+          "date": {
+            "label": "早于69年即位；本条未核定婚姻起讫",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-vespasian",
+              "locator": "3.1",
+              "supports": "多米提拉在韦斯帕芗成为皇帝前已去世。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-titus-furnilla",
+          "from": "empire:titus",
+          "to": "marcia-furnilla",
+          "type": "marriage",
+          "note": "提图斯娶富尔尼拉后离异。Rolfe译文将女儿与此婚姻相接；本专题未对读其母身份的其他研究，暂不画母女线。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-titus",
+              "locator": "4.2",
+              "supports": "提图斯娶富尔尼拉后离异。Rolfe译文将女儿与此婚姻相接；本专题未对读其母身份的其他研究，暂不画母女线。"
+            }
+          ]
+        },
+        {
+          "id": "parent-titus-julia",
+          "from": "empire:titus",
+          "to": "julia-flavia",
+          "type": "parent",
+          "note": "提图斯之女尤利娅在《图密善传》17.3明确记名；本条不以婚姻先后推定其母。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-domitian",
+              "locator": "17.3",
+              "supports": "提图斯之女尤利娅在《图密善传》17.3明确记名；本条不以婚姻先后推定其母。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-domitian-longina",
+          "from": "empire:domitian",
+          "to": "domitia-longina",
+          "type": "marriage",
+          "note": "图密善与隆吉娜的婚姻经历离异与复合；不画成一段无中断的确年区间。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-domitian",
+              "locator": "1.3、3.1",
+              "supports": "图密善与隆吉娜的婚姻经历离异与复合；不画成一段无中断的确年区间。"
+            }
+          ]
+        },
+        {
+          "id": "designation-vespasian-titus-partner",
+          "from": "empire:vespasian",
+          "to": "empire:titus",
+          "type": "designation",
+          "note": "提图斯在父亲统治时承担共同政治职责，不能直接等同已成为奥古斯都。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-titus",
+              "locator": "6",
+              "supports": "提图斯在父亲统治时承担共同政治职责，不能直接等同已成为奥古斯都。"
+            }
+          ]
+        },
+        {
+          "id": "designation-titus-domitian-designation",
+          "from": "empire:titus",
+          "to": "empire:domitian",
+          "type": "designation",
+          "note": "苏埃托尼乌斯记提图斯公开称弟弟为伙伴与继承人；此政治表态不新增图密善在81年以前的奥古斯都任期。",
+          "date": {
+            "label": "提图斯统治期间的表态；本条不补确日",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-titus",
+              "locator": "9.3",
+              "supports": "苏埃托尼乌斯记提图斯公开称弟弟为伙伴与继承人；此政治表态不新增图密善在81年以前的奥古斯都任期。"
+            }
+          ]
+        },
+        {
+          "id": "succession-flavian-succession-79",
+          "from": "empire:vespasian",
+          "to": "empire:titus",
+          "type": "succession",
+          "note": "父亲去世后提图斯承接帝位。",
+          "date": {
+            "label": "79年",
+            "start": 79,
+            "end": 79,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-titus",
+              "locator": "6—7",
+              "supports": "父亲去世后提图斯承接帝位。"
+            }
+          ]
+        },
+        {
+          "id": "succession-flavian-succession-81",
+          "from": "empire:titus",
+          "to": "empire:domitian",
+          "type": "succession",
+          "note": "兄长死后图密善继位；继承线不代表关于兄长死亡的传闻得到证实。",
+          "date": {
+            "label": "81年",
+            "start": 81,
+            "end": 81,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "suet-domitian",
+              "locator": "2.3",
+              "supports": "兄长死后图密善继位；继承线不代表关于兄长死亡的传闻得到证实。"
+            }
+          ]
+        },
+        {
+          "id": "designation-domitian-partner-claim",
+          "from": "empire:vespasian",
+          "to": "empire:domitian",
+          "type": "designation",
+          "note": "图密善声称父亲遗嘱曾授予其共同权力而文本被篡改。",
+          "date": {
+            "label": "韦斯帕芗死后提出的主张；不设确年范围",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "reported",
+          "references": [
+            {
+              "source": "suet-domitian",
+              "locator": "2.3",
+              "supports": "图密善声称父亲遗嘱曾授予其共同权力而文本被篡改。"
+            }
+          ],
+          "dispute": "原文将其作为图密善的自述，没有据此确认他在父亲统治时拥有奥古斯都帝号；原卷任期不变。"
+        }
+      ],
+      "highlights": [
+        "empire:emp-ad69-1",
+        "empire:emp-ad79-1",
+        "empire:emp-ad80-1",
+        "empire:emp-ad81-1",
+        "empire:emp-ad96-1"
+      ]
+    },
+    "byzantine--komnenos": {
+      "sections": [
+        {
+          "title": "科穆宁与杜卡斯之间",
+          "text": "阿莱克修斯的父母、兄弟与妻族参与了1081年前后的政治安排。伊琳娜的婚姻、玛丽亚的收养和对君士坦丁·杜卡斯的共帝保证分别属于不同关系，不能互相替代。",
+          "references": [
+            {
+              "source": "anna-3",
+              "locator": "III.1—4",
+              "supports": "阿莱克修斯的父母、兄弟与妻族参与了1081年前后的政治安排。伊琳娜的婚姻、玛丽亚的收养和对君士坦丁·杜卡斯的共帝保证分别属于不同关系，不能互相替代。"
+            }
+          ]
+        },
+        {
+          "title": "玛丽亚的收养与共帝保证",
+          "text": "安娜记载玛丽亚依仪式收养阿莱克修斯；政变之后又取得保障自己儿子共帝地位的金玺诏书。养母并非生母，共帝保证也没有使君士坦丁成为最终接替阿莱克修斯的主帝。",
+          "references": [
+            {
+              "source": "anna-2",
+              "locator": "II.1—2",
+              "supports": "玛丽亚的收养及对其儿子的保证。"
+            },
+            {
+              "source": "anna-3",
+              "locator": "III.4",
+              "supports": "即位后金玺诏书与共帝地位。"
+            }
+          ]
+        },
+        {
+          "title": "从指定到继位",
+          "text": "约翰二世的长子阿莱克修斯先于父亲去世，父亲临终转而选择曼努埃尔。下一代的阿莱克修斯二世先获共帝加冕，幼年承接主帝地位后却失去实权。指定、共帝与最终主政因此分线表示。",
+          "references": [
+            {
+              "source": "dir-john",
+              "locator": "Final campaigns in Phrygia and Syria 1142–1143",
+              "supports": "长子早逝与曼努埃尔被指定继承。"
+            },
+            {
+              "source": "dir-alexios-ii",
+              "locator": "Introduction；Alexius as heir-apparent",
+              "supports": "阿莱克修斯二世的共帝与幼年继位。"
+            }
+          ]
+        },
+        {
+          "title": "作者身在家族之内",
+          "text": "安娜·科穆宁是本专题的关系人物，也是主要史料作者。她明确维护母亲与家族，并反驳围绕玛丽亚的流言；页面保留查阅范围与立场，不把这些流言变成确定婚姻。",
+          "references": [
+            {
+              "source": "anna-3",
+              "locator": "III.1—3",
+              "supports": "安娜·科穆宁是本专题的关系人物，也是主要史料作者。她明确维护母亲与家族，并反驳围绕玛丽亚的流言；页面保留查阅范围与立场，不把这些流言变成确定婚姻。"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Komnenos",
+        "Komnenoi",
+        "Κομνηνός",
+        "科穆诺斯"
+      ],
+      "edges": [
+        {
+          "id": "parent-john-komnenos-father-alexios-i",
+          "from": "john-komnenos-father",
+          "to": "byzantine:alexios-i",
+          "type": "parent",
+          "note": "阿莱克修斯与其兄伊萨克的亲生父母。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-2",
+              "locator": "II.1、II.5",
+              "supports": "阿莱克修斯与其兄伊萨克的亲生父母。"
+            }
+          ]
+        },
+        {
+          "id": "parent-john-komnenos-father-isaac-sebastokrator",
+          "from": "john-komnenos-father",
+          "to": "isaac-sebastokrator",
+          "type": "parent",
+          "note": "阿莱克修斯与其兄伊萨克的亲生父母。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-2",
+              "locator": "II.1、II.5",
+              "supports": "阿莱克修斯与其兄伊萨克的亲生父母。"
+            }
+          ]
+        },
+        {
+          "id": "parent-anna-dalassene-alexios-i",
+          "from": "anna-dalassene",
+          "to": "byzantine:alexios-i",
+          "type": "parent",
+          "note": "阿莱克修斯与其兄伊萨克的亲生父母。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-2",
+              "locator": "II.1、II.5",
+              "supports": "阿莱克修斯与其兄伊萨克的亲生父母。"
+            }
+          ]
+        },
+        {
+          "id": "parent-anna-dalassene-isaac-sebastokrator",
+          "from": "anna-dalassene",
+          "to": "isaac-sebastokrator",
+          "type": "parent",
+          "note": "阿莱克修斯与其兄伊萨克的亲生父母。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-2",
+              "locator": "II.1、II.5",
+              "supports": "阿莱克修斯与其兄伊萨克的亲生父母。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-alexios-irene",
+          "from": "byzantine:alexios-i",
+          "to": "irene-doukaina",
+          "type": "marriage",
+          "note": "阿莱克修斯与伊琳娜的皇室婚姻；加冕先后不表示没有婚姻。",
+          "date": {
+            "label": "1081年即位时已有婚姻；本条未核定始末",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-3",
+              "locator": "III.1—3",
+              "supports": "阿莱克修斯与伊琳娜的皇室婚姻；加冕先后不表示没有婚姻。"
+            }
+          ]
+        },
+        {
+          "id": "parent-alexios-i-anna-komnene",
+          "from": "byzantine:alexios-i",
+          "to": "anna-komnene",
+          "type": "parent",
+          "note": "安娜所述自己的父母以及后来出生的弟弟约翰。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-6",
+              "locator": "VI.8",
+              "supports": "安娜所述自己的父母以及后来出生的弟弟约翰。"
+            }
+          ]
+        },
+        {
+          "id": "parent-alexios-i-john-ii",
+          "from": "byzantine:alexios-i",
+          "to": "byzantine:john-ii",
+          "type": "parent",
+          "note": "安娜所述自己的父母以及后来出生的弟弟约翰。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-6",
+              "locator": "VI.8",
+              "supports": "安娜所述自己的父母以及后来出生的弟弟约翰。"
+            }
+          ]
+        },
+        {
+          "id": "parent-irene-doukaina-anna-komnene",
+          "from": "irene-doukaina",
+          "to": "anna-komnene",
+          "type": "parent",
+          "note": "安娜所述自己的父母以及后来出生的弟弟约翰。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-6",
+              "locator": "VI.8",
+              "supports": "安娜所述自己的父母以及后来出生的弟弟约翰。"
+            }
+          ]
+        },
+        {
+          "id": "parent-irene-doukaina-john-ii",
+          "from": "irene-doukaina",
+          "to": "byzantine:john-ii",
+          "type": "parent",
+          "note": "安娜所述自己的父母以及后来出生的弟弟约翰。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-6",
+              "locator": "VI.8",
+              "supports": "安娜所述自己的父母以及后来出生的弟弟约翰。"
+            }
+          ]
+        },
+        {
+          "id": "parent-maria-constantine",
+          "from": "maria-alania",
+          "to": "byzantine:constantine-doukas",
+          "type": "parent",
+          "note": "君士坦丁为玛丽亚与前帝米海尔·杜卡斯之子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-3",
+              "locator": "III.1",
+              "supports": "君士坦丁为玛丽亚与前帝米海尔·杜卡斯之子。"
+            }
+          ]
+        },
+        {
+          "id": "parent-michael-constantine",
+          "from": "byzantine:michael-vii",
+          "to": "byzantine:constantine-doukas",
+          "type": "parent",
+          "note": "君士坦丁为米海尔七世之子；保持其杜卡斯原卷归属。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-3",
+              "locator": "III.1",
+              "supports": "君士坦丁为米海尔七世之子；保持其杜卡斯原卷归属。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-maria-michael",
+          "from": "maria-alania",
+          "to": "byzantine:michael-vii",
+          "type": "marriage",
+          "note": "玛丽亚与前帝米海尔的婚姻；此图不补定未核查的婚期。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-3",
+              "locator": "III.1",
+              "supports": "玛丽亚与前帝米海尔的婚姻；此图不补定未核查的婚期。"
+            }
+          ]
+        },
+        {
+          "id": "adoption-maria-adopts-alexios",
+          "from": "maria-alania",
+          "to": "byzantine:alexios-i",
+          "type": "adoption",
+          "note": "玛丽亚按仪式收养阿莱克修斯以加强宫廷保护关系。",
+          "date": {
+            "label": "1081年政变之前；确年未在本条核定",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-2",
+              "locator": "II.1",
+              "supports": "玛丽亚按仪式收养阿莱克修斯以加强宫廷保护关系。"
+            }
+          ]
+        },
+        {
+          "id": "designation-alexios-constantine-guarantee",
+          "from": "byzantine:alexios-i",
+          "to": "byzantine:constantine-doukas",
+          "type": "designation",
+          "note": "金玺诏书保障君士坦丁共帝地位、红靴、冠冕与共同欢呼权；不等于最终继位。",
+          "date": {
+            "label": "1081年即位后的保证",
+            "start": 1081,
+            "end": 1081,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-3",
+              "locator": "III.4",
+              "supports": "金玺诏书保障君士坦丁共帝地位、红靴、冠冕与共同欢呼权；不等于最终继位。"
+            }
+          ]
+        },
+        {
+          "id": "designation-alexios-john-designation",
+          "from": "byzantine:alexios-i",
+          "to": "byzantine:john-ii",
+          "type": "designation",
+          "note": "约翰出生后父母安排其加冕并期望他继承；不把婴儿加冕等同当时独掌权力。",
+          "date": {
+            "label": "约翰出生后的安排；该段未给出确年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "anna-6",
+              "locator": "VI.8",
+              "supports": "约翰出生后父母安排其加冕并期望他继承；不把婴儿加冕等同当时独掌权力。"
+            }
+          ]
+        },
+        {
+          "id": "parent-later-john-ii-manuel-i",
+          "from": "byzantine:john-ii",
+          "to": "byzantine:manuel-i",
+          "type": "parent",
+          "note": "曼努埃尔为约翰二世之子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-manuel",
+              "locator": "Manuel as sebastokrator",
+              "supports": "曼努埃尔为约翰二世之子。"
+            }
+          ]
+        },
+        {
+          "id": "parent-later-john-ii-alexios-john-ii",
+          "from": "byzantine:john-ii",
+          "to": "byzantine:alexios-john-ii",
+          "type": "parent",
+          "note": "约翰二世的长子阿莱克修斯先于父亲去世；共帝任期按原卷保留。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-john",
+              "locator": "Final campaigns in Phrygia and Syria 1142–1143",
+              "supports": "约翰二世的长子阿莱克修斯先于父亲去世；共帝任期按原卷保留。"
+            }
+          ]
+        },
+        {
+          "id": "parent-later-alexios-i-isaac-alexios-son",
+          "from": "byzantine:alexios-i",
+          "to": "isaac-alexios-son",
+          "type": "parent",
+          "note": "约翰二世之弟伊萨克为阿莱克修斯一世之子；与同名伯父分开。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-john",
+              "locator": "The succession",
+              "supports": "约翰二世之弟伊萨克为阿莱克修斯一世之子；与同名伯父分开。"
+            }
+          ]
+        },
+        {
+          "id": "parent-later-isaac-alexios-son-andronikos-i",
+          "from": "isaac-alexios-son",
+          "to": "byzantine:andronikos-i",
+          "type": "parent",
+          "note": "安德罗尼科斯一世为约翰二世之弟伊萨克之子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-andronikos",
+              "locator": "Introduction",
+              "supports": "安德罗尼科斯一世为约翰二世之弟伊萨克之子。"
+            }
+          ]
+        },
+        {
+          "id": "parent-later-manuel-i-alexios-ii",
+          "from": "byzantine:manuel-i",
+          "to": "byzantine:alexios-ii",
+          "type": "parent",
+          "note": "阿莱克修斯二世为曼努埃尔一世之子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-alexios-ii",
+              "locator": "Introduction；Alexius as heir-apparent",
+              "supports": "阿莱克修斯二世为曼努埃尔一世之子。"
+            }
+          ]
+        },
+        {
+          "id": "parent-later-maria-antioch-alexios-ii",
+          "from": "maria-antioch",
+          "to": "byzantine:alexios-ii",
+          "type": "parent",
+          "note": "阿莱克修斯二世为玛丽亚之子；其摄政不能替代本人的亲属身份。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-alexios-ii",
+              "locator": "Introduction；The regency of Maria of Antioch",
+              "supports": "阿莱克修斯二世为玛丽亚之子；其摄政不能替代本人的亲属身份。"
+            }
+          ]
+        },
+        {
+          "id": "parent-later-andronikos-i-john-andronikos",
+          "from": "byzantine:andronikos-i",
+          "to": "byzantine:john-andronikos",
+          "type": "parent",
+          "note": "约翰为安德罗尼科斯一世之子。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-andronikos",
+              "locator": "Andronicus and his first wife",
+              "supports": "约翰为安德罗尼科斯一世之子。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-john-irene-hungary",
+          "from": "byzantine:john-ii",
+          "to": "irene-hungary",
+          "type": "marriage",
+          "note": "约翰二世娶匈牙利公主Piroska，她使用伊琳娜之名；不沿用该研究在其匈牙利王位概述中的错误亲属判断。",
+          "date": {
+            "label": "亲属身份；本条不核定生卒或关系起讫年",
+            "start": null,
+            "end": null,
+            "precision": "unknown"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-john",
+              "locator": "The European theatre 1122–1129",
+              "supports": "约翰二世娶匈牙利公主Piroska，她使用伊琳娜之名；不沿用该研究在其匈牙利王位概述中的错误亲属判断。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-manuel-maria-antioch",
+          "from": "byzantine:manuel-i",
+          "to": "maria-antioch",
+          "type": "marriage",
+          "note": "曼努埃尔与玛丽亚于1161年圣诞节举行婚礼；此边以年精度表示缔结。",
+          "date": {
+            "label": "1161年缔结婚姻",
+            "start": 1161,
+            "end": 1161,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-manuel",
+              "locator": "Marriage to Maria of Antioch 1161",
+              "supports": "曼努埃尔与玛丽亚于1161年圣诞节举行婚礼；此边以年精度表示缔结。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-alexios-agnes",
+          "from": "byzantine:alexios-ii",
+          "to": "agnes-france",
+          "type": "marriage",
+          "note": "阿莱克修斯二世与阿涅丝1180年举行婚礼；不把未成年婚姻读作自主政治选择。",
+          "date": {
+            "label": "1180年缔结婚姻",
+            "start": 1180,
+            "end": 1180,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-alexios-ii",
+              "locator": "Alexius as heir-apparent",
+              "supports": "阿莱克修斯二世与阿涅丝1180年举行婚礼；不把未成年婚姻读作自主政治选择。"
+            }
+          ]
+        },
+        {
+          "id": "marriage-andronikos-agnes",
+          "from": "byzantine:andronikos-i",
+          "to": "agnes-france",
+          "type": "marriage",
+          "note": "安德罗尼科斯在阿莱克修斯二世死后娶其遗孀。",
+          "date": {
+            "label": "1183年婚姻；她尚未成年",
+            "start": 1183,
+            "end": 1183,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-andronikos",
+              "locator": "Andronicus succeeds to the throne",
+              "supports": "安德罗尼科斯在阿莱克修斯二世死后娶其遗孀。"
+            }
+          ]
+        },
+        {
+          "id": "designation-john-designates-manuel",
+          "from": "byzantine:john-ii",
+          "to": "byzantine:manuel-i",
+          "type": "designation",
+          "note": "约翰二世临终选择曼努埃尔，越过仍在世的另一子伊萨克；不按长子次序自动推定。",
+          "date": {
+            "label": "1143年指定",
+            "start": 1143,
+            "end": 1143,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-manuel",
+              "locator": "The securing of the succession 1143",
+              "supports": "约翰二世临终选择曼努埃尔，越过仍在世的另一子伊萨克；不按长子次序自动推定。"
+            }
+          ]
+        },
+        {
+          "id": "designation-manuel-designates-alexios",
+          "from": "byzantine:manuel-i",
+          "to": "byzantine:alexios-ii",
+          "type": "designation",
+          "note": "阿莱克修斯在1171年获加冕为共帝；帝号与当时实际行政职责分开。",
+          "date": {
+            "label": "1171年加冕共帝",
+            "start": 1171,
+            "end": 1171,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-alexios-ii",
+              "locator": "Alexius as heir-apparent",
+              "supports": "阿莱克修斯在1171年获加冕为共帝；帝号与当时实际行政职责分开。"
+            }
+          ]
+        },
+        {
+          "id": "succession-komnenos-succession-1118",
+          "from": "byzantine:alexios-i",
+          "to": "byzantine:john-ii",
+          "type": "succession",
+          "note": "约翰二世在父亲临终时争取印戒、宫殿与支持，承接主帝权力。",
+          "date": {
+            "label": "1118年帝位承接",
+            "start": 1118,
+            "end": 1118,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-john",
+              "locator": "The succession",
+              "supports": "约翰二世在父亲临终时争取印戒、宫殿与支持，承接主帝权力。"
+            }
+          ]
+        },
+        {
+          "id": "succession-komnenos-succession-1143",
+          "from": "byzantine:john-ii",
+          "to": "byzantine:manuel-i",
+          "type": "succession",
+          "note": "曼努埃尔经父亲指定及军队拥立接掌帝位。",
+          "date": {
+            "label": "1143年帝位承接",
+            "start": 1143,
+            "end": 1143,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-manuel",
+              "locator": "The securing of the succession 1143",
+              "supports": "曼努埃尔经父亲指定及军队拥立接掌帝位。"
+            }
+          ]
+        },
+        {
+          "id": "succession-komnenos-succession-1180",
+          "from": "byzantine:manuel-i",
+          "to": "byzantine:alexios-ii",
+          "type": "succession",
+          "note": "曼努埃尔死后未成年阿莱克修斯承接主帝地位，由摄政掌握实际政务。",
+          "date": {
+            "label": "1180年帝位承接",
+            "start": 1180,
+            "end": 1180,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-alexios-ii",
+              "locator": "Introduction；The regency of Maria of Antioch",
+              "supports": "曼努埃尔死后未成年阿莱克修斯承接主帝地位，由摄政掌握实际政务。"
+            }
+          ]
+        },
+        {
+          "id": "succession-komnenos-succession-1183",
+          "from": "byzantine:alexios-ii",
+          "to": "byzantine:andronikos-i",
+          "type": "succession",
+          "note": "安德罗尼科斯先成为共帝，随后除掉阿莱克修斯而独掌帝位；不是先帝自愿指定。",
+          "date": {
+            "label": "1183年帝位承接",
+            "start": 1183,
+            "end": 1183,
+            "precision": "year"
+          },
+          "status": "attested",
+          "references": [
+            {
+              "source": "dir-andronikos",
+              "locator": "Andronicus and Alexius II；Andronicus succeeds to the throne",
+              "supports": "安德罗尼科斯先成为共帝，随后除掉阿莱克修斯而独掌帝位；不是先帝自愿指定。"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        "byzantine:byz-1081-1",
+        "byzantine:byz-1118-1",
+        "byzantine:byz-1119-1",
+        "byzantine:byz-1143-1",
+        "byzantine:byz-1180-1",
+        "byzantine:byz-1182-1",
+        "byzantine:byz-1183-1",
+        "byzantine:byz-1185-1"
+      ]
+    }
+  },
+  "relatedTopics": {
+    "empire--theodosian": [
+      "divided-empire--theodosian"
+    ],
+    "divided-empire--theodosian": [
+      "empire--theodosian"
+    ],
+    "divided-empire--leonid": [
+      "byzantine--leonid"
+    ],
+    "byzantine--leonid": [
+      "divided-empire--leonid"
+    ],
+    "byzantine--komnenos": [
+      "byzantine--doukas"
+    ],
+    "byzantine--doukas": [
+      "byzantine--komnenos"
+    ]
+  }
+}

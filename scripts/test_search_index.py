@@ -8,6 +8,7 @@ from urllib.parse import parse_qs, urlsplit
 import build_search as build
 from build_events import compile_events
 from build_glossary import compile_glossary
+from build_dynasties import compile_dynasties
 
 
 class SearchIndexTests(unittest.TestCase):
@@ -16,6 +17,7 @@ class SearchIndexTests(unittest.TestCase):
         cls.index = build.read('data/search/index.json')
         cls.events = compile_events()
         cls.glossary = compile_glossary()
+        cls.dynasties = compile_dynasties()
 
     def test_committed_index_matches_sources(self):
         self.assertEqual(self.index, build.compile_index())
@@ -44,6 +46,13 @@ class SearchIndexTests(unittest.TestCase):
                 self.assertLessEqual(a, b)
                 self.assertNotIn(0, [a, b])
             url = urlsplit(e['url'])
+            if e['kind'] == 'dynasty':
+                key = parse_qs(url.fragment)['topic'][0]
+                self.assertEqual(url.path, 'dynasties/')
+                self.assertEqual(self.dynasties['topics'][key]['label'], e['title'])
+                scope = next(p for p in self.index['periods'] if p['id'] == pid)
+                self.assertTrue(all(scope['start'] <= a <= b <= scope['end'] for a, b in e['spans']))
+                continue
             if e['kind'] == 'term':
                 self.assertEqual(url.path, 'glossary/')
                 key = parse_qs(url.fragment)['term'][0]
