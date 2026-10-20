@@ -28,9 +28,10 @@ jobs:
           python scripts/build_people.py
           python scripts/build_events.py
           python scripts/build_timeline.py
+          python scripts/build_glossary.py
           python scripts/build_search.py
           git diff --exit-code -- data/republic/records.json data/republic/stories.json data/republic/territories.json data/republic/people.json docs/republic-identity-review.md data/empire/records.json data/kingdom/records.json data/byzantine/records.json data/divided-empire/records.json data/divided-empire/places.json data/divided-empire/territories.json data/people/index.json data/search/index.json
-          git diff --exit-code -- data/events data/timeline
+          git diff --exit-code -- data/events data/timeline data/glossary
       - name: Check evidence-based biography growth
         run: npm run test:biographies
       - name: Validate years, maps, stories and copy

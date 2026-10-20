@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from urllib.parse import urlencode
+from build_glossary import compile_glossary
 from build_people import compile_people
 from build_events import compile_events
 
@@ -83,6 +84,18 @@ def compile_index():
                                 spans=[list(s) for s in sorted({tuple(s) for e in rows for s in e['spans']})],
                                 url='places/#'+urlencode(dict(place=place_id)),
                                 note=f'{period["title"]} · {len(rows)}条明确关联记事；同一地点跨卷共用档案'))
+    glossary = compile_glossary()
+    for eid, entry in glossary['entries'].items():
+        for period in periods:
+            senses = [s for s in entry['senses'] if period['id'] in s['periods']]
+            if not senses:
+                continue
+            entries.append(dict(id=f'{period["id"]}:term:{eid}', period=period['id'], kind='term',
+                                title=entry['label'], names=[entry['native'], *entry['aliases']],
+                                text=' '.join([entry['summary'], entry['caution']] +
+                                              [s[k] for s in senses for k in ['meaning', 'powers', 'limits']]),
+                                spans=[[max(s['range'][0], period['start']), min(s['range'][1], period['end'])] for s in senses],
+                                url=entry['url'], note=' · '.join(s['era'] for s in senses) + '；释义适用范围，非确切创设／废止年'))
     for story in read('data/republic/stories.json'):
         spans = [[-story['start'], -story['chapters'][-1]['year']]]
         add_story = dict(story=story['id'], year=story['start'])
