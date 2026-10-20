@@ -42,3 +42,7 @@ Historical reference URLs, author/edition descriptions and evidence limits are i
 ## Divided Empire additions
 
 The new volume reuses the bundled D3, TopoJSON, Roman font and Natural Earth assets under their existing terms. Cliopatria / Seshat v0.2.0 (CC BY 4.0) supplies separately coloured Eastern and Western Roman Empire stages; source commit, original properties and transformations remain in the source/derived GeoJSON and [DATA_LICENSE.md](DATA_LICENSE.md). No new third-party runtime or image asset is added. Chinese text and historical date decisions are documented in [the research notes](data-source/divided-empire/RESEARCH.md).
+
+## Institutional vocabulary references
+
+The glossary adds no third-party runtime, font or image asset. Its individually credited texts, editions, historical dictionaries and institutional catalogue records are listed in `data-source/glossary/entries.json` and [DATA_LICENSE.md](DATA_LICENSE.md). New Chinese paraphrases and edited institutional explanations use CC BY-SA 4.0; external translations, museum descriptions and photographs retain their respective rights. The Berlin Münzkabinett IKMK 18204181 text is credited under CC BY-SA 4.0. No museum images or complete external books are bundled.

@@ -8,6 +8,7 @@ import shutil
 import sys
 from html import escape
 from string import Template
+from build_glossary import write_glossary
 from build_search import write_index
 from build_events import write_events
 from build_timeline import write_timeline
@@ -69,6 +70,7 @@ def build(destination):
     write_people()
     write_events()
     write_timeline()
+    write_glossary()
     write_index()
     destination.mkdir(parents=True, exist_ok=True)
     pages = sorted(SITE.rglob('*.html'))

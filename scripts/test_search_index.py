@@ -7,6 +7,7 @@ from urllib.parse import parse_qs, urlsplit
 
 import build_search as build
 from build_events import compile_events
+from build_glossary import compile_glossary
 
 
 class SearchIndexTests(unittest.TestCase):
@@ -14,6 +15,7 @@ class SearchIndexTests(unittest.TestCase):
     def setUpClass(cls):
         cls.index = build.read('data/search/index.json')
         cls.events = compile_events()
+        cls.glossary = compile_glossary()
 
     def test_committed_index_matches_sources(self):
         self.assertEqual(self.index, build.compile_index())
@@ -42,6 +44,13 @@ class SearchIndexTests(unittest.TestCase):
                 self.assertLessEqual(a, b)
                 self.assertNotIn(0, [a, b])
             url = urlsplit(e['url'])
+            if e['kind'] == 'term':
+                self.assertEqual(url.path, 'glossary/')
+                key = parse_qs(url.fragment)['term'][0]
+                entry = self.glossary['entries'][key]
+                self.assertEqual(entry['label'], e['title'])
+                self.assertTrue(any(pid in s['periods'] for s in entry['senses']))
+                continue
             if e['kind'] == 'place':
                 self.assertEqual(url.path, 'places/')
                 key = parse_qs(url.fragment)['place'][0]
