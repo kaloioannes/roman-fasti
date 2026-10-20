@@ -9,6 +9,7 @@ import build_search as build
 from build_events import compile_events
 from build_glossary import compile_glossary
 from build_dynasties import compile_dynasties
+from build_power import compile_power
 
 
 class SearchIndexTests(unittest.TestCase):
@@ -18,6 +19,7 @@ class SearchIndexTests(unittest.TestCase):
         cls.events = compile_events()
         cls.glossary = compile_glossary()
         cls.dynasties = compile_dynasties()
+        cls.power = compile_power()
 
     def test_committed_index_matches_sources(self):
         self.assertEqual(self.index, build.compile_index())
@@ -46,6 +48,11 @@ class SearchIndexTests(unittest.TestCase):
                 self.assertLessEqual(a, b)
                 self.assertNotIn(0, [a, b])
             url = urlsplit(e['url'])
+            if e['kind'] == 'power':
+                key = parse_qs(url.fragment)['person'][0]
+                self.assertEqual(url.path, 'power/')
+                self.assertEqual(self.power['people'][key]['label'], e['title'])
+                continue
             if e['kind'] == 'dynasty':
                 key = parse_qs(url.fragment)['topic'][0]
                 self.assertEqual(url.path, 'dynasties/')

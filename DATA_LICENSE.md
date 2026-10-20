@@ -1,5 +1,9 @@
 # Data licensing and attribution
 
+## 实际权力与摄政专题（PR12）
+
+`data-source/power/people.json`、`data/power/`及`docs/power.md`的原创中文重述、角色与行动编订、链接说明使用CC BY-SA 4.0，署名FASTI · 罗马历史纪年。复用原卷身份与PR11王朝节点，不改变原资料许可。古代文献、电子译本与DIR署名研究保留各自版权；本专题提供定位与短篇重述，没有重新许可整篇研究或把链接书目当作已读资料。实际查阅范围、材料局限与作者版本逐条保留，见[研究说明](docs/power.md)与[编辑资料](data-source/power/people.json)。
+
 This repository separates software licensing from historical source licensing.
 
 Dynasty dossiers and edited relationship data in `data-source/dynasties/` and `data/dynasties/` are new Chinese paraphrases and structured editorial work by **FASTI contributors (2026-10-20)**, released under CC BY-SA 4.0. They retain the original volume classifications, titles and cited sources. Each authored relationship credits its source and locator; consultation scopes and source limitations are preserved in JSON exports. Rolfe, Church/Brodribb and Dawes translations retain their hosting edition notices; Andrew Stone's DIR studies retain the author's copyright. No complete external text, photographs or genealogical artwork is redistributed. See [the dynasty research and maintenance notes](docs/dynasties.md).

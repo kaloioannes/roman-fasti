@@ -74,7 +74,7 @@
     const nav=el('nav');if(n.url)nav.append(link('打开人物档案 ↗',n.url));n.profiles.forEach(p=>nav.append(link(period(p.period)+'原档案 ↗',p.url)));
     const focus=el('button','只看此人的直接关系');focus.onclick=()=>go({focus:id,node:'',relation:''});nav.append(focus);box.append(nav);
     if(!n.profiles.length)box.append(el('p','专题辅助人物；没有因关系图收录而列入皇帝名录。','dynasty-meta'));
-    if(n.references.length)box.append(disclosure('人物身份依据',n.references));return box;
+    if(n.references.length)box.append(disclosure('人物身份依据',n.references));window.FastiPower?.mount('node',id,box);return box;
   }
   function relationships(topic,p){
     const section=el('section',null,'dynasty-section');section.id='relationships';section.append(el('h2','关系图与逐边出处'));

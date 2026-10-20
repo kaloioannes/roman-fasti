@@ -79,6 +79,7 @@
     relates.append(ul);if(!ul.children.length)relates.append(el('p','尚未编订明确的人物、地点或事件关联；不会从在位期间或正文提名自动推断。','event-note'));
     const origins=objectSection('年度入口与原卷记录'),years=el('ul',null,'event-year-links');e.origins.forEach(o=>{const li=el('li');li.append(link('原卷原条：'+period(o.period)+' ↗',o.url));years.append(li);});
     e.years.forEach(y=>{const li=el('li');li.append(link(E.when(y.year)+' · '+period(y.period)+' ↗',y.url));years.append(li);});origins.append(years);if(!years.children.length)origins.append(el('p','绝对年代未定；仅保留原卷人物／传统叙事入口。'));
+    window.FastiPower?.mount('event',id,article);
     article.append(window.FastiEvidence.render(e,hide));
     const sources=objectSection('出处与查阅状态');sources.id='event-sources';
     sources.append(el('p','直接查阅表示实际阅读所标示的电子正文、译文、节选或摘要；不等于核读原手稿。材料类别与查阅状态分别说明，链接数量不代表独立性或可信度分数。','event-note'));

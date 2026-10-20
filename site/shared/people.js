@@ -95,6 +95,7 @@ window.FastiPeople = (() => {
   async function mount(period,personId,host) {
     if(!host)return;
     window.FastiDynasties?.mount([{period,person:personId}],host);
+    window.FastiPower?.mount('person',period+':'+personId,host);
     const timeline=el('p',null,'timeline-profile-link');
     timeline.append(link('查看此人的任期时间轴 ↗','timeline/#'+new URLSearchParams({period,person:period+':'+personId})));
     host.append(timeline);

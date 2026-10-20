@@ -99,7 +99,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/jav
    const light=await context.newPage(),requests=[];light.on('request',r=>{if(r.url().includes('.json'))requests.push(r.url());});
    await light.goto(origin+'people/#person=roman-augustus');await light.locator('.identity-profiles').waitFor();await light.locator('.event-related-links a[href*="emp-bc27-1"]').waitFor();
    await light.locator('.dynasty-profile-links a').first().waitFor();
-   assert.equal(requests.length,3);assert.ok(requests.every(u=>u.includes('/data/people/')||/\/data\/(events|dynasties)\/navigation\./.test(u)));await light.close();
+   assert.equal(requests.length,4);assert.ok(requests.every(u=>u.includes('/data/people/')||/\/data\/(events|dynasties|power)\/navigation\./.test(u)));await light.close();
   }
   const restricted=await context.newPage();await restricted.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw Error('blocked');}}));await restricted.goto(`http://127.0.0.1:${server.address().port}/people/`);await restricted.locator('.identity-grid article').first().waitFor();await restricted.locator('#theme-button').click();await restricted.close();
   assert.deepEqual(errors,[]);

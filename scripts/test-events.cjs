@@ -69,7 +69,7 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
    const delayed=await context.newPage();let release,count=0;const gate=new Promise(r=>release=r),requests=[];
    delayed.on('request',r=>{if(r.url().includes('.json'))requests.push(r.url());});
    await delayed.route('**/data/events/index.*.json',async route=>{count++;await gate;await route.continue();});
-   await delayed.goto(base+'#event=byzantine%3Amanzikert-1071');await delayed.evaluate(()=>location.hash='event=byzantine%3Abari-1071');release();await delayed.locator('.event-detail h1').waitFor();assert.match(await delayed.locator('h1').textContent(),/巴里/);assert.equal(count,1);assert.ok(requests.every(r=>r.includes('/data/events/index.')));await delayed.close();
+   await delayed.goto(base+'#event=byzantine%3Amanzikert-1071');await delayed.evaluate(()=>location.hash='event=byzantine%3Abari-1071');release();await delayed.locator('.event-detail h1').waitFor();assert.match(await delayed.locator('h1').textContent(),/巴里/);assert.equal(count,1);assert.ok(requests.every(r=>r.includes('/data/events/index.')||r.includes('/data/power/navigation.')));await delayed.close();
    // Text and order edits still resolve a source anchor by identity, not position.
    const rep=JSON.parse(await fs.readFile(path.join(root,'data/republic/records.json'),'utf8'));
    const record=Object.values(rep.years).find(r=>r.events.length>1),first=record.events[0].id;
