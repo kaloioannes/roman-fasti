@@ -9,7 +9,7 @@
   toggle.type=retry.type='button';retry.hidden=true;status.setAttribute('role','status');
   tools.append(toggle,status,retry);document.querySelector('.site-header')?.after(tools);
   const hidden=n=>!!n.closest('[hidden],[aria-hidden="true"],.is-hidden') || !n.getClientRects().length;
-  const excluded='a,button,summary,script,style,textarea,input,select,svg,dialog,code,pre,.sources,.source-links,.event-citation,.event-reference,.citation,.reference,.bio-sources,.glossary-example-terms,.event-related-links,.identity-links';
+  const excluded='a,button,summary,script,style,textarea,input,select,svg,dialog,code,pre,.sources,.source-links,.event-citation,.event-reference,.citation,.reference,.bio-sources,.glossary-example-terms,.event-related-links,.identity-links,.power-links,.power-identity-links';
   function context(){
     const p=new URLSearchParams(location.hash.slice(1));let year=Number(p.get('year'));
     if(!p.has('year')||!Number.isInteger(year)||!year)year=null;else if(period==='republic')year=-year;
@@ -72,7 +72,12 @@
     const ctx=context();
     if(ctx.key!==lastKey){roots.forEach(root=>root.querySelectorAll('.glossary-example-terms').forEach(n=>n.remove()));lastKey=ctx.key;}
     const ids=ctx.params.has('person')?data.byPerson?.[ctx.key]:ctx.year!==null?data.byYear?.[ctx.key]:null;
-    const root=roots.find(r=>!hidden(r));if(!ids?.length||!root||root.querySelector('.glossary-example-terms')||!root.querySelector('h1'))return;
+    const root=roots.find(r=>!hidden(r));
+    // The Republic initially shows its home main while an annual archive is
+    // loading. Optional navigation can arrive in either order. Move examples
+    // to the current visible main instead of retaining a duplicate in home.
+    roots.filter(r=>r!==root).forEach(r=>r.querySelectorAll('.glossary-example-terms').forEach(n=>n.remove()));
+    if(!ids?.length||!root||root.querySelector('.glossary-example-terms')||!root.querySelector('h1'))return;
     // Never show example notes or future narratives in an original volume.
     const section=el('section',null,'glossary-example-terms');section.append(el('h2','这份档案可对读的制度词条'),el('p','这是词典编订的阅读例子，不等于此人在上述年度拥有这些全部官职。'));
     const nav=el('nav');nav.setAttribute('aria-label','档案关联词条');ids.forEach(id=>{if(data.entries[id])nav.append(link(data.entries[id].label+' ↗',data.entries[id].url));});section.append(nav);root.append(section);

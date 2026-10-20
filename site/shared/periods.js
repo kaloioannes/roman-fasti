@@ -20,6 +20,7 @@ window.FastiPeriods = (() => {
     }
     timeline.href='../timeline/#'+new URLSearchParams({period:id,from:year,to:year});
     timeline.textContent='对读本年任期：先后、共治与争位 ↗';
+    window.FastiPower?.mount('year',id+':'+year,slot.parentElement);
     slot.replaceChildren();
     slot.hidden = true;
     // The Republic reuses its DOM between years; discard stale completions.
