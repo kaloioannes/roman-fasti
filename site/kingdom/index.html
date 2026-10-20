@@ -10,13 +10,14 @@
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
   <script defer src="../shared/assets/d3.min.js"></script>
   <script defer src="../shared/assets/topojson.min.js"></script>
-  <script defer src="../shared/periods.js"></script><script defer src="../shared/search-target.js"></script><script defer src="../shared/people.js"></script><script defer src="app.js"></script>
+  <script defer src="../shared/periods.js"></script><script defer src="../shared/search-target.js"></script><script defer src="../shared/dynasty-data.js"></script><script defer src="../shared/people.js"></script><script defer src="app.js"></script>
 <link rel="stylesheet" href="../shared/glossary.css">
   <script defer src="../shared/glossary-data.js"></script><script defer src="../shared/glossary-inline.js"></script>
+  <link rel="stylesheet" href="../shared/dynasty-links.css">
 </head>
 <body data-glossary-period="kingdom" class="kingdom">
   <a class="skip-link" href="#content">跳至正文</a>
-  <header class="site-header"><a class="brand" href="#" aria-label="王政纪年首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马王政时代国王数据库</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button global-search-link" href="../search/">全站搜索</a><a class="text-button" href="../events/">事件档案</a><a class="text-button" href="../places/">地点档案</a><a href="../" class="text-button">全部时期</a><a href="#people" class="text-button">人物索引</a><a href="#sources" class="text-button">史料与方法</a><button id="theme-button" class="icon-button" aria-label="切换明暗主题">◐</button><a class="text-button" href="../glossary/">制度词典</a></nav></header>
+  <header class="site-header"><a class="brand" href="#" aria-label="王政纪年首页"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马王政时代国王数据库</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button" href="../dynasties/">王朝专题</a><a class="text-button global-search-link" href="../search/">全站搜索</a><a class="text-button" href="../events/">事件档案</a><a class="text-button" href="../places/">地点档案</a><a href="../" class="text-button">全部时期</a><a href="#people" class="text-button">人物索引</a><a href="#sources" class="text-button">史料与方法</a><button id="theme-button" class="icon-button" aria-label="切换明暗主题">◐</button><a class="text-button" href="../glossary/">制度词典</a></nav></header>
   <main id="content" tabindex="-1"><p class="initial-status" role="status">正在翻开王政时代的档案……</p></main>
   <noscript><p class="initial-status">本页面需要 JavaScript。可在<a href="https://github.com/kaloioannes/roman-fasti/tree/main/data-source/kingdom">仓库王政资料目录</a>直接阅读国王、事件与研究说明。</p></noscript>
 <footer class="period-footer" data-period="kingdom"><a href="../">全部时期</a></footer>

@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from urllib.parse import urlencode
 from build_glossary import compile_glossary
+from build_dynasties import compile_dynasties
 from build_people import compile_people
 from build_events import compile_events
 
@@ -96,6 +97,13 @@ def compile_index():
                                               [s[k] for s in senses for k in ['meaning', 'powers', 'limits']]),
                                 spans=[[max(s['range'][0], period['start']), min(s['range'][1], period['end'])] for s in senses],
                                 url=entry['url'], note=' · '.join(s['era'] for s in senses) + '；释义适用范围，非确切创设／废止年'))
+    for tid, topic in compile_dynasties()['topics'].items():
+        scope = next(p for p in periods if p['id'] == topic['period'])
+        entries.append(dict(id=f'{topic["period"]}:dynasty:{tid}', period=topic['period'], kind='dynasty',
+                            title=topic['label'], names=topic.get('aliases', []),
+                            text=topic['note'], spans=[[max(a, scope['start']), min(b, scope['end'])] for a, b in topic['spans']
+                                                       if a <= scope['end'] and b >= scope['start']], url=topic['url'],
+                            note='王朝／家族专题 · '+('有逐边出处的关系图' if topic['curated'] else '原卷分类、成员与任期；关系尚未编订')))
     for story in read('data/republic/stories.json'):
         spans = [[-story['start'], -story['chapters'][-1]['year']]]
         add_story = dict(story=story['id'], year=story['start'])

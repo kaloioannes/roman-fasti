@@ -2,6 +2,8 @@
 
 This repository separates software licensing from historical source licensing.
 
+Dynasty dossiers and edited relationship data in `data-source/dynasties/` and `data/dynasties/` are new Chinese paraphrases and structured editorial work by **FASTI contributors (2026-10-20)**, released under CC BY-SA 4.0. They retain the original volume classifications, titles and cited sources. Each authored relationship credits its source and locator; consultation scopes and source limitations are preserved in JSON exports. Rolfe, Church/Brodribb and Dawes translations retain their hosting edition notices; Andrew Stone's DIR studies retain the author's copyright. No complete external text, photographs or genealogical artwork is redistributed. See [the dynasty research and maintenance notes](docs/dynasties.md).
+
 ## Historical text, magistrate and ruler data — CC BY-SA 4.0
 
 `data/republic/records.json`, `data/republic/stories.json`, the roster/profile snapshots, the name glossary, annual events, biographies and stories in `data-source/republic/` are distributed under the [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).
