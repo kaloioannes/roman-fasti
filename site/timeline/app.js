@@ -158,6 +158,7 @@
     if(!row.isVacancy){
       const all={...s,period:row.period,person:row.period+':'+row.person,q:'',kind:'',side:''};
       for(const key of ['from','to','page','stage','preset'])delete all[key];
+      links.append(a('与另一位人物并排比较 ↗','../compare/#'+new URLSearchParams({a:row.period+':'+row.person})));
       links.append(a('打开人物完整档案 ↗','../'+person(row).url),a('只看此人的全部阶段',href(all)));
     }
     if(row.start){const p=period(row.period),start=Math.max(p.start,row.startYear),end=Math.min(p.end,row.endYear);

@@ -35,8 +35,9 @@ jobs:
           python scripts/build_power.py
           python scripts/build_stories.py
           python scripts/build_search.py
+          python scripts/build_compare.py
           git diff --exit-code -- data/republic/records.json data/republic/stories.json data/republic/territories.json data/republic/people.json docs/republic-identity-review.md data/empire/records.json data/kingdom/records.json data/byzantine/records.json data/divided-empire/records.json data/divided-empire/places.json data/divided-empire/territories.json data/people/index.json data/search/index.json
-          git diff --exit-code -- data/events data/timeline data/glossary data/dynasties data/power data/stories data/places data/map-compare
+          git diff --exit-code -- data/events data/timeline data/glossary data/dynasties data/power data/stories data/places data/map-compare data/compare
       - name: Check evidence-based biography growth
         run: npm run test:biographies
       - name: Validate years, maps, stories and copy

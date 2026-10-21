@@ -28,6 +28,7 @@
     const back=P.link('← 跨卷人物目录','people/');main.append(back);
     if(!p){document.title='人物地址有误 · FASTI';main.append(el('h1','找不到这份跨卷人物档案'),el('p','此全站人物ID尚未收录。请返回目录或使用全站搜索。'));return;}
     document.title=p.zh+' · 跨卷人物档案 · FASTI';main.dataset.globalPerson=id;
+    main.append(P.link('与另一位人物并排比较 ↗','compare/#'+new URLSearchParams({a:'global:'+id})));
     main.append(el('p','一人 · 多卷 · 同一生涯','eyebrow'),el('h1',p.zh),el('p',p.aliases.join(' · '),'identity-names'),profiles(index,p),el('p',p.editorNote,'identity-intro'),
       el('h2','全部已收录任职与称号'),el('p','按原卷逐条保留；同一任期可能在两卷重复收录，不能相加计算时长。仅有年度精度时不补月日，起讫窗口和异说沿用原卷。'),P.appointments(index,p),P.years(index,p),el('h2','跨卷身份依据'));
     p.profiles.forEach(profile=>{const box=el('section',null,'identity-basis');box.append(el('h3',P.profileLabel(index,profile)),el('p',profile.editorNote));main.append(box);});
