@@ -1,0 +1,3330 @@
+{
+  "schemaVersion": 1,
+  "places": {
+    "manzikert": {
+      "id": "manzikert",
+      "label": "曼齐刻尔特",
+      "aliases": [
+        "Manzikert",
+        "Malazgirt",
+        "Malāẕcürd",
+        "Malāẕgird"
+      ],
+      "note": "曼齐刻尔特／Malazgirt聚落参照点。Pleiades条目以乌拉尔图铭文发现地和后世地名为范围，不能用来证明1071年战场的确切位置。",
+      "names": [
+        {
+          "label": "Malāẕcürd",
+          "fromYear": 1500,
+          "toYear": 1599,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Malāẕgird",
+          "fromYear": 1500,
+          "toYear": 1599,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Malazgirt",
+          "fromYear": 2000,
+          "toYear": 2099,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            42.5409,
+            39.1461
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。曼齐刻尔特／Malazgirt聚落参照点。Pleiades条目以乌拉尔图铭文发现地和后世地名为范围，不能用来证明1071年战场的确切位置。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Malazgirt (733857263)",
+          "url": "https://pleiades.stoa.org/places/733857263",
+          "locator": "data/json/7/3/3/8/5/7/2/733857263.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "Carolin Johansson, Rune Rattenborg; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/7/3/3/8/5/7/2/733857263.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "733857263",
+          "url": "https://pleiades.stoa.org/places/733857263",
+          "label": "Malazgirt",
+          "relation": "comparison",
+          "note": "曼齐刻尔特／Malazgirt聚落参照点。Pleiades条目以乌拉尔图铭文发现地和后世地名为范围，不能用来证明1071年战场的确切位置。"
+        }
+      ],
+      "connections": []
+    },
+    "bari": {
+      "id": "bari",
+      "label": "巴里",
+      "aliases": [
+        "Bari",
+        "Barium",
+        "Barion",
+        "Poediculorum oppidum Barium"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Barium",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Bari",
+          "fromYear": 2000,
+          "toYear": 2099,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Barion",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Poediculorum oppidum Barium",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            16.8703,
+            41.1292
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Barium (442500)",
+          "url": "https://pleiades.stoa.org/places/442500",
+          "locator": "data/json/4/4/2/5/442500.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "I.E.M. Edlund Berry, A.M. Small; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/4/2/5/442500.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "442500",
+          "url": "https://pleiades.stoa.org/places/442500",
+          "label": "Barium",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "constantinople": {
+      "id": "constantinople",
+      "label": "君士坦丁堡",
+      "aliases": [
+        "Constantinople",
+        "Konstantinoupolis",
+        "Constantinopolis",
+        "Istanbul",
+        "He Polis",
+        "Ḳusṭanṭiniye, Kustantiniye, Qustantiniye",
+        "Quṣtanṭīnīya",
+        "al-Qustantīnīya, al-Qustantiniya, el-Qustantiniye, al-Qustantiniyah, el-Qustantiniyeh",
+        "Quṣṭanṭīnīya",
+        "Kōnstantinoupolis, Konstantinoupolis",
+        "Konstantinoúpolis",
+        "Qosṭanṭiniye, Qostantiniye",
+        "Konstantinopel",
+        "Ḳosṭanṭıniyye,Qostantiniyye",
+        "Byzantium",
+        "Byzantion",
+        "伊斯坦布尔",
+        "拜占庭"
+      ],
+      "note": "博斯普鲁斯海峡西岸的历史城市。330年君士坦丁堡建都；其前身拜占庭在Pleiades另有条目520985。古城、扩建后的首都和现代伊斯坦布尔范围不同。",
+      "names": [
+        {
+          "label": "Constantinopolis",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Constantinople",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Istanbul",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "He Polis",
+          "fromYear": 850,
+          "toYear": 1450,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ḳusṭanṭiniye, Kustantiniye, Qustantiniye",
+          "fromYear": 1300,
+          "toYear": 1453,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Quṣtanṭīnīya",
+          "fromYear": 632,
+          "toYear": 750,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "al-Qustantīnīya, al-Qustantiniya, el-Qustantiniye, al-Qustantiniyah, el-Qustantiniyeh",
+          "fromYear": 632,
+          "toYear": 1335,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Quṣṭanṭīnīya",
+          "fromYear": 1258,
+          "toYear": 1335,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Kōnstantinoupolis, Konstantinoupolis",
+          "fromYear": -1200,
+          "toYear": 1453,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Konstantinoúpolis",
+          "fromYear": 1300,
+          "toYear": 1453,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Qosṭanṭiniye, Qostantiniye",
+          "fromYear": 1453,
+          "toYear": 1683,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Konstantinoupolis",
+          "fromYear": 500,
+          "toYear": 1204,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Konstantinopel",
+          "fromYear": 1683,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ḳosṭanṭıniyye,Qostantiniyye",
+          "fromYear": 1300,
+          "toYear": 1923,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Istanbul",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "modern",
+          "note": "现代定位名；不作为古代事件当时的称呼。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            28.9656,
+            41.0066
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。博斯普鲁斯海峡西岸的历史城市。330年君士坦丁堡建都；其前身拜占庭在Pleiades另有条目520985。古城、扩建后的首都和现代伊斯坦布尔范围不同。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Constantinopolis (520998)",
+          "url": "https://pleiades.stoa.org/places/520998",
+          "locator": "data/json/5/2/0/9/520998.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "C. Foss; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/5/2/0/9/520998.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "520998",
+          "url": "https://pleiades.stoa.org/places/520998",
+          "label": "Constantinopolis",
+          "relation": "identity",
+          "note": "博斯普鲁斯海峡西岸的历史城市。330年君士坦丁堡建都；其前身拜占庭在Pleiades另有条目520985。古城、扩建后的首都和现代伊斯坦布尔范围不同。"
+        }
+      ],
+      "connections": []
+    },
+    "venice": {
+      "id": "venice",
+      "label": "威尼斯",
+      "aliases": [
+        "Venice",
+        "Venezia"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Venezia",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            12.3362,
+            45.442
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Venice (818739154)",
+          "url": "https://pleiades.stoa.org/places/818739154",
+          "locator": "data/json/8/1/8/7/3/9/1/818739154.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "Jeffrey Becker; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/8/1/8/7/3/9/1/818739154.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "818739154",
+          "url": "https://pleiades.stoa.org/places/818739154",
+          "label": "Venice",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "zara": {
+      "id": "zara",
+      "label": "扎拉",
+      "aliases": [
+        "Zara",
+        "Zadar",
+        "Iader"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Iader",
+          "fromYear": -330,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Zadar",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Zara",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            15.2238,
+            44.1155
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Iader (197312)",
+          "url": "https://pleiades.stoa.org/places/197312",
+          "locator": "data/json/1/9/7/3/197312.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "M. Šašel Kos, P. Kos; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/1/9/7/3/197312.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "197312",
+          "url": "https://pleiades.stoa.org/places/197312",
+          "label": "Iader",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "rome": {
+      "id": "rome",
+      "label": "罗马",
+      "aliases": [
+        "Roma",
+        "Rome",
+        "Roma, Rōma",
+        "Rhome, Rhṓmē, Rome",
+        "Romē",
+        "Rom",
+        "Rūme"
+      ],
+      "note": "罗马古城代表点。卡庇托尔、元老院及城内其他场景共用城市身份，事件关系仍须读具体说明。",
+      "names": [
+        {
+          "label": "Roma, Rōma",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rome",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rhome, Rhṓmē, Rome",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Romē",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rom",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Roma",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rome",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rūme",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            12.4913,
+            41.89
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。罗马古城代表点。卡庇托尔、元老院及城内其他场景共用城市身份，事件关系仍须读具体说明。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Roma (423025)",
+          "url": "https://pleiades.stoa.org/places/423025",
+          "locator": "data/json/4/2/3/0/423025.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "L. Quilici, S. Quilici Gigli; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/2/3/0/423025.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "423025",
+          "url": "https://pleiades.stoa.org/places/423025",
+          "label": "Roma",
+          "relation": "identity",
+          "note": "罗马古城代表点。卡庇托尔、元老院及城内其他场景共用城市身份，事件关系仍须读具体说明。"
+        }
+      ],
+      "connections": []
+    },
+    "veii": {
+      "id": "veii",
+      "label": "维伊",
+      "aliases": [
+        "Veii",
+        "维爱",
+        "Veio",
+        "Beientia, Bēïentía",
+        "Ouioi, Ouioí",
+        "Vei(s)",
+        "Veios"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Veii",
+          "fromYear": -750,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Veio",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Beientia, Bēïentía",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ouioi, Ouioí",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Vei(s)",
+          "fromYear": -750,
+          "toYear": -330,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Veios",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            12.3905,
+            42.0213
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Veii (423116)",
+          "url": "https://pleiades.stoa.org/places/423116",
+          "locator": "data/json/4/2/3/1/423116.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "L. Quilici, S. Quilici Gigli; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/2/3/1/423116.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "423116",
+          "url": "https://pleiades.stoa.org/places/423116",
+          "label": "Veii",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "lavinium": {
+      "id": "lavinium",
+      "label": "拉维尼乌姆",
+      "aliases": [
+        "Lavinium"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Lavinium",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Lavinium",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            12.4807,
+            41.6645
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Lavinium (422960)",
+          "url": "https://pleiades.stoa.org/places/422960",
+          "locator": "data/json/4/2/2/9/422960.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "L. Quilici, S. Quilici Gigli; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/2/2/9/422960.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "422960",
+          "url": "https://pleiades.stoa.org/places/422960",
+          "label": "Lavinium",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "alba-longa": {
+      "id": "alba-longa",
+      "label": "阿尔巴·隆加",
+      "aliases": [
+        "Alba Longa",
+        "阿尔巴",
+        "Castel Gandolfo, Gandolfo (Castel)"
+      ],
+      "note": "阿尔巴山地的传统城市。Pleiades认为可能在今Castel Gandolfo一带；代表点不能确证古城范围，本项目不在事件地图落点。",
+      "names": [
+        {
+          "label": "Castel Gandolfo, Gandolfo (Castel)",
+          "fromYear": 1900,
+          "toYear": 2099,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Alba Longa",
+          "fromYear": -750,
+          "toYear": -550,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Alba Longa",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [],
+      "status": "disputed",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Alba Longa (422824)",
+          "url": "https://pleiades.stoa.org/places/422824",
+          "locator": "data/json/4/2/2/8/422824.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "L. Quilici, S. Quilici Gigli; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/2/2/8/422824.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "422824",
+          "url": "https://pleiades.stoa.org/places/422824",
+          "label": "Alba Longa",
+          "relation": "identity",
+          "note": "阿尔巴山地的传统城市。Pleiades认为可能在今Castel Gandolfo一带；代表点不能确证古城范围，本项目不在事件地图落点。"
+        }
+      ],
+      "connections": []
+    },
+    "ostia": {
+      "id": "ostia",
+      "label": "奥斯蒂亚",
+      "aliases": [
+        "Ostia",
+        "Ostia Antica",
+        "Hostis"
+      ],
+      "note": "台伯河口的古代港城遗址。遗址坐标不证明王政建城传统的年代；古代河口、海岸与现代底图不同。",
+      "names": [
+        {
+          "label": "Ostia",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ostia",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ostia Antica",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Hostis",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            12.2894,
+            41.7536
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。台伯河口的古代港城遗址。遗址坐标不证明王政建城传统的年代；古代河口、海岸与现代底图不同。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Ostia (422995)",
+          "url": "https://pleiades.stoa.org/places/422995",
+          "locator": "data/json/4/2/2/9/422995.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "L. Quilici, S. Quilici Gigli; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/2/2/9/422995.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "422995",
+          "url": "https://pleiades.stoa.org/places/422995",
+          "label": "Ostia",
+          "relation": "identity",
+          "note": "台伯河口的古代港城遗址。遗址坐标不证明王政建城传统的年代；古代河口、海岸与现代底图不同。"
+        }
+      ],
+      "connections": []
+    },
+    "zama": {
+      "id": "zama",
+      "label": "扎马",
+      "aliases": [
+        "Zama",
+        "Zama Regia",
+        "Zama Maior"
+      ],
+      "note": "前202年扎马战役的地点档案。Pleiades的Zama Regia城址可作对照，但城市代表点不足以确定战场，本项目不将其作为战役坐标。",
+      "names": [
+        {
+          "label": "Zama Regia",
+          "fromYear": -330,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Zama Maior",
+          "fromYear": -330,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [],
+      "status": "disputed",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Zama Regia/Zama *Maior (315267)",
+          "url": "https://pleiades.stoa.org/places/315267",
+          "locator": "data/json/3/1/5/2/315267.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "R.B. Hitchner; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/3/1/5/2/315267.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "315267",
+          "url": "https://pleiades.stoa.org/places/315267",
+          "label": "Zama Regia/Zama *Maior",
+          "relation": "comparison",
+          "note": "前202年扎马战役的地点档案。Pleiades的Zama Regia城址可作对照，但城市代表点不足以确定战场，本项目不将其作为战役坐标。"
+        }
+      ],
+      "connections": []
+    },
+    "rubicon": {
+      "id": "rubicon",
+      "label": "卢比孔河",
+      "aliases": [
+        "Rubicon",
+        "卢比孔",
+        "Rubico",
+        "Rubicone",
+        "Flumen Rubicu",
+        "Roubíkon"
+      ],
+      "note": "共和国意大利东北的历史界河。现代河道辨识存在争议；Pleiades代表点不等于恺撒渡河处，事件地图保留为无可靠现场坐标。",
+      "names": [
+        {
+          "label": "Rubico",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rubicon",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rubicone",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Flumen Rubicu",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Roubíkon",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [],
+      "status": "disputed",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Rubico (river) (393484)",
+          "url": "https://pleiades.stoa.org/places/393484",
+          "locator": "data/json/3/9/3/4/393484.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "M. Pearce, R. Peretto, P. Tozzi; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/3/9/3/4/393484.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "393484",
+          "url": "https://pleiades.stoa.org/places/393484",
+          "label": "Rubico (river)",
+          "relation": "identity",
+          "note": "共和国意大利东北的历史界河。现代河道辨识存在争议；Pleiades代表点不等于恺撒渡河处，事件地图保留为无可靠现场坐标。"
+        }
+      ],
+      "connections": []
+    },
+    "actium": {
+      "id": "actium",
+      "label": "亚克兴",
+      "aliases": [
+        "Actium",
+        "Áktion, Aktion"
+      ],
+      "note": "阿克提乌姆的岸上地点代表点，供定位海战背景；不据此确定舰队位置或整场海战的发生范围。",
+      "names": [
+        {
+          "label": "Actium",
+          "fromYear": -750,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Áktion, Aktion",
+          "fromYear": -550,
+          "toYear": -330,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            20.7659,
+            38.9539
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。阿克提乌姆的岸上地点代表点，供定位海战背景；不据此确定舰队位置或整场海战的发生范围。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Actium (530771)",
+          "url": "https://pleiades.stoa.org/places/530771",
+          "locator": "data/json/5/3/0/7/530771.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "W.M. Murray; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/5/3/0/7/530771.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "530771",
+          "url": "https://pleiades.stoa.org/places/530771",
+          "label": "Actium",
+          "relation": "identity",
+          "note": "阿克提乌姆的岸上地点代表点，供定位海战背景；不据此确定舰队位置或整场海战的发生范围。"
+        }
+      ],
+      "connections": []
+    },
+    "nola": {
+      "id": "nola",
+      "label": "诺拉",
+      "aliases": [
+        "Nola",
+        "Nole"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Nola",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nole",
+          "fromYear": -330,
+          "toYear": -30,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            14.5245,
+            40.9268
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Nola (432981)",
+          "url": "https://pleiades.stoa.org/places/432981",
+          "locator": "data/json/4/3/2/9/432981.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "N. Purcell; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/3/2/9/432981.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "432981",
+          "url": "https://pleiades.stoa.org/places/432981",
+          "label": "Nola",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "pompeii": {
+      "id": "pompeii",
+      "label": "庞贝",
+      "aliases": [
+        "Pompeii",
+        "Pompeia",
+        "Pompei",
+        "Colonia Cornelia Veneria Pompeianorum"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Pompeii",
+          "fromYear": -750,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Pompeia",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Pompei",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Colonia Cornelia Veneria Pompeianorum",
+          "fromYear": -100,
+          "toYear": 99,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Pompei",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            14.4854,
+            40.7494
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Pompeii (433032)",
+          "url": "https://pleiades.stoa.org/places/433032",
+          "locator": "data/json/4/3/3/0/433032.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "N. Purcell; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/3/3/0/433032.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "433032",
+          "url": "https://pleiades.stoa.org/places/433032",
+          "label": "Pompeii",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "nicomedia": {
+      "id": "nicomedia",
+      "label": "尼科米底亚",
+      "aliases": [
+        "Nicomedia",
+        "Nikomēdeia, Nikomedeia, Nikomedia",
+        "Nikomedia",
+        "Nikomēdia",
+        "Nikomedeia",
+        "Kocaeli, Kodjaeli, Kodja-Eli, Koja-Eli",
+        "İzmid, Izmid",
+        "İzniḳmid, Iznikmid, Izniqmid, Izniqmid",
+        "İznikmid, Iznikmid",
+        "İznikmit, Iznikmit",
+        "İzmit, Izmit, Ismid",
+        "Olbia",
+        "Niqumūdiya, Niqumudiya, Niqumudiyah, Niqumudiyya, Niqumudiyyah, Niqumudiye, Niqumudiyeh, Niqumudiyye, Niqumudiyyeh",
+        "Ismid",
+        "Ḳocaili",
+        "İznigmīd,İznikmīd",
+        "İzmit",
+        "Izmit",
+        "伊兹米特"
+      ],
+      "note": "今İzmit附近的尼科米底亚。与附近阿斯塔科斯的重建／迁址问题须分别查看两个档案，不把两个位置当成原地改名。",
+      "names": [
+        {
+          "label": "Nicomedia",
+          "fromYear": -330,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nikomēdeia, Nikomedeia, Nikomedia",
+          "fromYear": -1200,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nikomedia",
+          "fromYear": 1683,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nikomēdia",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nikomedeia",
+          "fromYear": 1081,
+          "toYear": 1204,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Kocaeli, Kodjaeli, Kodja-Eli, Koja-Eli",
+          "fromYear": 1918,
+          "toYear": 2000,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İzmid, Izmid",
+          "fromYear": 1513,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İzniḳmid, Iznikmid, Izniqmid, Izniqmid",
+          "fromYear": 1300,
+          "toYear": 1453,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İznikmid, Iznikmid",
+          "fromYear": 1500,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İznikmit, Iznikmit",
+          "fromYear": 1453,
+          "toYear": 1683,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İzmit, Izmit, Ismid",
+          "fromYear": -1750,
+          "toYear": 2000,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Olbia",
+          "fromYear": -330,
+          "toYear": 226,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Niqumūdiya, Niqumudiya, Niqumudiyah, Niqumudiyya, Niqumudiyyah, Niqumudiye, Niqumudiyeh, Niqumudiyye, Niqumudiyyeh",
+          "fromYear": 650,
+          "toYear": 940,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ismid",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ḳocaili",
+          "fromYear": 1500,
+          "toYear": 1599,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İznigmīd,İznikmīd",
+          "fromYear": 1500,
+          "toYear": 1599,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İzmit",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "modern",
+          "note": "现代定位名；不作为古代事件当时的称呼。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            29.9199,
+            40.7652
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。今İzmit附近的尼科米底亚。与附近阿斯塔科斯的重建／迁址问题须分别查看两个档案，不把两个位置当成原地改名。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Nicomedia (511337)",
+          "url": "https://pleiades.stoa.org/places/511337",
+          "locator": "data/json/5/1/1/3/511337.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "C. Foss; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/5/1/1/3/511337.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "511337",
+          "url": "https://pleiades.stoa.org/places/511337",
+          "label": "Nicomedia",
+          "relation": "identity",
+          "note": "今İzmit附近的尼科米底亚。与附近阿斯塔科斯的重建／迁址问题须分别查看两个档案，不把两个位置当成原地改名。"
+        }
+      ],
+      "connections": [
+        {
+          "place": "astacus",
+          "type": "relocation-context",
+          "note": "前264年重建传统及附近旧址分别保留；此连接不合并两处几何。",
+          "references": [
+            0
+          ]
+        }
+      ]
+    },
+    "york": {
+      "id": "york",
+      "label": "约克",
+      "aliases": [
+        "Eboracum",
+        "York",
+        "Eburacum"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Eburacum",
+          "fromYear": -30,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Eboracum",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "York",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            -1.0823,
+            53.9577
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Eburacum (89175)",
+          "url": "https://pleiades.stoa.org/places/89175",
+          "locator": "data/json/8/9/1/89175.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "A.S. Esmonde Cleary; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/8/9/1/89175.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "89175",
+          "url": "https://pleiades.stoa.org/places/89175",
+          "label": "Eburacum",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "milvian-bridge": {
+      "id": "milvian-bridge",
+      "label": "米尔维安桥",
+      "aliases": [
+        "Pons Milvius",
+        "Milvian Bridge",
+        "Pons Mulvius",
+        "Ponte Milvio",
+        "Ad ponte iulii"
+      ],
+      "note": "台伯河上的米尔维安桥代表点。桥址帮助定位312年战役，但不代表完整战线或溺亡位置。",
+      "names": [
+        {
+          "label": "Pons Mulvius",
+          "fromYear": -330,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Pons Milvius",
+          "fromYear": -330,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ponte Milvio",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ad ponte iulii",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            12.4669,
+            41.9356
+          ],
+          "precision": "site",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。台伯河上的米尔维安桥代表点。桥址帮助定位312年战役，但不代表完整战线或溺亡位置。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Pons Mulvius (423008)",
+          "url": "https://pleiades.stoa.org/places/423008",
+          "locator": "data/json/4/2/3/0/423008.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "L. Quilici, S. Quilici Gigli; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/4/2/3/0/423008.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "423008",
+          "url": "https://pleiades.stoa.org/places/423008",
+          "label": "Pons Mulvius",
+          "relation": "identity",
+          "note": "台伯河上的米尔维安桥代表点。桥址帮助定位312年战役，但不代表完整战线或溺亡位置。"
+        }
+      ],
+      "connections": []
+    },
+    "milan": {
+      "id": "milan",
+      "label": "米兰",
+      "aliases": [
+        "Mediolanum",
+        "Milan",
+        "Mediolanium",
+        "Milano",
+        "Milān"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Mediolanium",
+          "fromYear": -550,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Mediolanum",
+          "fromYear": -550,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Milan",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Milano",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Milān",
+          "fromYear": 1500,
+          "toYear": 1599,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            9.1881,
+            45.4637
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Mediolan(i)um (383706)",
+          "url": "https://pleiades.stoa.org/places/383706",
+          "locator": "data/json/3/8/3/7/383706.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "M. Pearce, P. Tozzi; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/3/8/3/7/383706.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "383706",
+          "url": "https://pleiades.stoa.org/places/383706",
+          "label": "Mediolan(i)um",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "adrianople": {
+      "id": "adrianople",
+      "label": "阿德里安堡",
+      "aliases": [
+        "Hadrianopolis",
+        "Adrianople",
+        "Hadrianoupolis",
+        "Edirne",
+        "Adrianopel",
+        "Adrianoupolis",
+        "Uscudama",
+        "Hadrianopoli",
+        "Edrine"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Hadrianoupolis",
+          "fromYear": -30,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Edirne",
+          "fromYear": -1750,
+          "toYear": 2000,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Edirne",
+          "fromYear": -1750,
+          "toYear": 2000,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Adrianopel",
+          "fromYear": 1683,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Adrianoupolis",
+          "fromYear": -30,
+          "toYear": 1307,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Hadrianoupolis",
+          "fromYear": -1200,
+          "toYear": 1450,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Uscudama",
+          "fromYear": -140,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Hadrianopoli",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Edrine",
+          "fromYear": 1300,
+          "toYear": 1923,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Adrianople",
+          "fromYear": 1700,
+          "toYear": 1799,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            26.5629,
+            41.6765
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Hadrianoupolis (501428)",
+          "url": "https://pleiades.stoa.org/places/501428",
+          "locator": "data/json/5/0/1/4/501428.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "E.N. Borza; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/5/0/1/4/501428.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "501428",
+          "url": "https://pleiades.stoa.org/places/501428",
+          "label": "Hadrianoupolis",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "nicaea": {
+      "id": "nicaea",
+      "label": "尼西亚",
+      "aliases": [
+        "Nicaea",
+        "Nikaia",
+        "Helikore",
+        "Nicea",
+        "İznik",
+        "Iznik",
+        "伊兹尼克"
+      ],
+      "note": "比提尼亚的尼西亚，今土耳其İznik。会议城市及1204—1261年尼西亚帝国首都；不同于高卢的Nicaea（今尼斯）。",
+      "names": [
+        {
+          "label": "Helikore",
+          "fromYear": -550,
+          "toYear": -330,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nicaea",
+          "fromYear": -550,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nicea",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "İznik",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "modern",
+          "note": "现代定位名；不作为古代事件当时的称呼。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            29.7147,
+            40.4291
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。比提尼亚的尼西亚，今土耳其İznik。会议城市及1204—1261年尼西亚帝国首都；不同于高卢的Nicaea（今尼斯）。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Helikore/Nicaea (511268)",
+          "url": "https://pleiades.stoa.org/places/511268",
+          "locator": "data/json/5/1/1/2/511268.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "C. Foss; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/5/1/1/2/511268.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "511268",
+          "url": "https://pleiades.stoa.org/places/511268",
+          "label": "Helikore/Nicaea",
+          "relation": "identity",
+          "note": "比提尼亚的尼西亚，今土耳其İznik。会议城市及1204—1261年尼西亚帝国首都；不同于高卢的Nicaea（今尼斯）。"
+        }
+      ],
+      "connections": [
+        {
+          "place": "nicaea-gaul",
+          "type": "different-place",
+          "note": "相同拉丁地名，不同地区及坐标。",
+          "references": [
+            0
+          ]
+        }
+      ]
+    },
+    "ravenna": {
+      "id": "ravenna",
+      "label": "拉文纳",
+      "aliases": [
+        "Ravenna",
+        "Rhaouenna, Rháouenna"
+      ],
+      "note": "意大利北亚得里亚海城市；402—476年的西部宫廷语境见来源说明。港区与城市不缩成一个精确事件现场。",
+      "names": [
+        {
+          "label": "Ravenna",
+          "fromYear": -550,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Rhaouenna, Rháouenna",
+          "fromYear": -30,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            12.1966,
+            44.4157
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。意大利北亚得里亚海城市；402—476年的西部宫廷语境见来源说明。港区与城市不缩成一个精确事件现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Ravenna (393480)",
+          "url": "https://pleiades.stoa.org/places/393480",
+          "locator": "data/json/3/9/3/4/393480.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "M. Pearce, R. Peretto, P. Tozzi; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/3/9/3/4/393480.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "393480",
+          "url": "https://pleiades.stoa.org/places/393480",
+          "label": "Ravenna",
+          "relation": "identity",
+          "note": "意大利北亚得里亚海城市；402—476年的西部宫廷语境见来源说明。港区与城市不缩成一个精确事件现场。"
+        }
+      ],
+      "connections": []
+    },
+    "chalcedon": {
+      "id": "chalcedon",
+      "label": "迦克墩",
+      "aliases": [
+        "Chalcedon",
+        "Chalkedon",
+        "Kadıköy"
+      ],
+      "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+      "names": [
+        {
+          "label": "Kadıköy",
+          "fromYear": 2000,
+          "toYear": 2099,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Chalkedon",
+          "fromYear": -550,
+          "toYear": 1453,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Chalcedon",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            29.0258,
+            40.9834
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Chalcedon (520988)",
+          "url": "https://pleiades.stoa.org/places/520988",
+          "locator": "data/json/5/2/0/9/520988.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "C. Foss; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/5/2/0/9/520988.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "520988",
+          "url": "https://pleiades.stoa.org/places/520988",
+          "label": "Chalcedon",
+          "relation": "identity",
+          "note": "已对照Pleiades所列历史聚落及城市代表点；仅供城市或遗址级定位，不能据此确定每条记事的具体现场。"
+        }
+      ],
+      "connections": []
+    },
+    "dalmatia": {
+      "id": "dalmatia",
+      "label": "达尔马提亚",
+      "aliases": [
+        "Dalmatia"
+      ],
+      "note": "亚得里亚海东岸的历史区域；范围随时期与行政口径变化。尼波斯流亡帝号的地域关联不是一座城市，不用区域中心伪装事件位置。",
+      "names": [],
+      "locations": [],
+      "status": "unlocated",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "J. B. Bury《晚期罗马帝国史》I.12 · 芝诺与意大利",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/BURLAT/12*.html",
+          "locator": "Bury I.XII §4；DIR Romulus Augustulus",
+          "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+          "consultation": "inherited",
+          "checked": null
+        },
+        {
+          "label": "DIR · 罗慕路斯·奥古斯都",
+          "url": "https://roman-emperors.sites.luc.edu/auggiero.htm",
+          "locator": "Bury I.XII §4；DIR Romulus Augustulus",
+          "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+          "consultation": "inherited",
+          "checked": null
+        }
+      ],
+      "external": [],
+      "connections": []
+    },
+    "pelusium": {
+      "id": "pelusium",
+      "label": "佩卢西乌姆",
+      "aliases": [
+        "Pelusium",
+        "Pelousion",
+        "sjnw",
+        "Tall al-Farama",
+        "Tall al-Fāramā",
+        "Tall al-Faramā, Tall al-Farama, Tell el-Farama",
+        "aṭ-Ṭīna, at-Tina, al-Tina, et-Tina, el-Tina, at-Tinah, al-Tinah, et-Tinah, el-Tinah",
+        "aṭ-Ṭina",
+        "Sin",
+        "pr-jmn, Per-Amun",
+        "śnw",
+        "snw, Sena",
+        "al-Faramā, al-Farama, el-Farama",
+        "Peremoun, Paramoun",
+        "Tell el-Farma",
+        "Ṭīne"
+      ],
+      "note": "尼罗河古代最东支河口的佩卢西乌姆，今Tell Farama遗址已在内陆；现代海岸线不能用来复原541年的港口。",
+      "names": [
+        {
+          "label": "Pelousion",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Pelusium",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "sjnw",
+          "fromYear": -1548,
+          "toYear": -1086,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Tall al-Farama",
+          "fromYear": -304,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Tall al-Fāramā",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Tall al-Faramā, Tall al-Farama, Tell el-Farama",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "aṭ-Ṭīna, at-Tina, al-Tina, et-Tina, el-Tina, at-Tinah, al-Tinah, et-Tinah, el-Tinah",
+          "fromYear": 1700,
+          "toYear": 2100,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "aṭ-Ṭina",
+          "fromYear": -2010,
+          "toYear": -1640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Sin",
+          "fromYear": -540,
+          "toYear": -330,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "pr-jmn, Per-Amun",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "śnw",
+          "fromYear": -2670,
+          "toYear": -2168,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "snw, Sena",
+          "fromYear": -2010,
+          "toYear": -1640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "al-Faramā, al-Farama, el-Farama",
+          "fromYear": 632,
+          "toYear": 1516,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Peremoun, Paramoun",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Tell el-Farma",
+          "fromYear": 2000,
+          "toYear": 2099,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Ṭīne",
+          "fromYear": 1500,
+          "toYear": 1599,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            32.5471,
+            31.0426
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。尼罗河古代最东支河口的佩卢西乌姆，今Tell Farama遗址已在内陆；现代海岸线不能用来复原541年的港口。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Pelusium (727192)",
+          "url": "https://pleiades.stoa.org/places/727192",
+          "locator": "data/json/7/2/7/1/727192.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "A. Bernand; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/7/2/7/1/727192.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "727192",
+          "url": "https://pleiades.stoa.org/places/727192",
+          "label": "Pelusium",
+          "relation": "identity",
+          "note": "尼罗河古代最东支河口的佩卢西乌姆，今Tell Farama遗址已在内陆；现代海岸线不能用来复原541年的港口。"
+        }
+      ],
+      "connections": []
+    },
+    "kleidion": {
+      "id": "kleidion",
+      "label": "克莱迪昂",
+      "aliases": [
+        "Kleidion",
+        "克雷迪昂"
+      ],
+      "note": "1014年战役／山口语境的克莱迪昂。尚未核实可靠现场坐标；不借用其他同名Kleidi的桥址或聚落。",
+      "names": [],
+      "locations": [],
+      "status": "unlocated",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Charles Oman《拜占庭帝国》",
+          "url": "https://www.gutenberg.org/cache/epub/37756/pg37756-images.html",
+          "locator": "Oman，第XVIII章；basil-ii人物资料对应事件段",
+          "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+          "consultation": "inherited",
+          "checked": null
+        },
+        {
+          "label": "巴西尔二世：资料与参考书目",
+          "url": "https://en.wikipedia.org/wiki/Basil_II",
+          "locator": "Oman，第XVIII章；basil-ii人物资料对应事件段",
+          "claim": "地点身份依本卷记事中的名称与所述行动关联；本项未重新核读外部文献，也不据此提供坐标、控制权或完整地点史。",
+          "consultation": "inherited",
+          "checked": null
+        }
+      ],
+      "external": [],
+      "connections": []
+    },
+    "antioch": {
+      "id": "antioch",
+      "label": "安条克（奥龙特斯河畔）",
+      "aliases": [
+        "Antiochia",
+        "Antiocheia",
+        "Theoupolis",
+        "Antakya",
+        "安条克",
+        "Iopolis",
+        "Antiocheia epi Daphnē, Antiocheia on Daphne",
+        "Anṭaqya",
+        "Anṭākiya, Antakiya, Antakiyah, Antakiyya, Antakiyyah",
+        "Anṭaḳya, Antaqya",
+        "Anṭākya",
+        "Anṭakya, Antakya",
+        "Hatay",
+        "III Gallica (Vesp.) garrison, III Gallica (Vespasian) garrison",
+        "Antiocheia am Orontes",
+        "Antiocheia am Orontēs, Antiocheia epi Orontou, Antiocheia on the Orontes",
+        "Anṭākiyye",
+        "Antioch"
+      ],
+      "note": "奥龙特斯河畔的安条克，今安塔基亚一带；不同于皮西迪亚等地的同名城。6世纪Theoupolis是此城异名。",
+      "names": [
+        {
+          "label": "Antiochia",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Theoupolis",
+          "fromYear": 300,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Iopolis",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antiocheia epi Daphnē, Antiocheia on Daphne",
+          "fromYear": -330,
+          "toYear": -30,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Anṭaqya",
+          "fromYear": 1453,
+          "toYear": 1683,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antiocheia",
+          "fromYear": -330,
+          "toYear": 1307,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antakya",
+          "fromYear": -1750,
+          "toYear": 2000,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Anṭākiya, Antakiya, Antakiyah, Antakiyya, Antakiyyah",
+          "fromYear": 632,
+          "toYear": 1500,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Anṭaḳya, Antaqya",
+          "fromYear": 1453,
+          "toYear": 1683,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Anṭākya",
+          "fromYear": 1099,
+          "toYear": 1291,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Anṭakya, Antakya",
+          "fromYear": 1453,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antiochia",
+          "fromYear": 1683,
+          "toYear": 1918,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antiochia",
+          "fromYear": -1200,
+          "toYear": 1291,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Hatay",
+          "fromYear": 1918,
+          "toYear": 2000,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "III Gallica (Vesp.) garrison, III Gallica (Vespasian) garrison",
+          "fromYear": -140,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antiocheia am Orontes",
+          "fromYear": -140,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antiocheia am Orontēs, Antiocheia epi Orontou, Antiocheia on the Orontes",
+          "fromYear": -330,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Anṭākiyye",
+          "fromYear": 1300,
+          "toYear": 1923,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antioch",
+          "fromYear": 1700,
+          "toYear": 1799,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Antakya",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "modern",
+          "note": "现代定位名；不作为古代事件当时的称呼。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            36.1768,
+            36.2159
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。奥龙特斯河畔的安条克，今安塔基亚一带；不同于皮西迪亚等地的同名城。6世纪Theoupolis是此城异名。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Antiochia/Theoupolis (658381)",
+          "url": "https://pleiades.stoa.org/places/658381",
+          "locator": "data/json/6/5/8/3/658381.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "T. Sinclair, P.-L. Gatier; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/6/5/8/3/658381.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "658381",
+          "url": "https://pleiades.stoa.org/places/658381",
+          "label": "Antiochia/Theoupolis",
+          "relation": "identity",
+          "note": "奥龙特斯河畔的安条克，今安塔基亚一带；不同于皮西迪亚等地的同名城。6世纪Theoupolis是此城异名。"
+        }
+      ],
+      "connections": []
+    },
+    "nicaea-gaul": {
+      "id": "nicaea-gaul",
+      "label": "尼西亚（高卢／尼斯）",
+      "aliases": [
+        "Nicaea",
+        "Nice",
+        "尼斯",
+        "Nitse"
+      ],
+      "note": "高卢的Nicaea，今法国尼斯。与比提尼亚尼西亚是两个地点；同名不合并事件与坐标。",
+      "names": [
+        {
+          "label": "Nicaea",
+          "fromYear": -750,
+          "toYear": 640,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nitse",
+          "fromYear": 1500,
+          "toYear": 1599,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        },
+        {
+          "label": "Nice",
+          "fromYear": null,
+          "toYear": null,
+          "kind": "modern",
+          "note": "现代定位名；不作为古代事件当时的称呼。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            7.2662,
+            43.7034
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。高卢的Nicaea，今法国尼斯。与比提尼亚尼西亚是两个地点；同名不合并事件与坐标。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Nicaea (157894)",
+          "url": "https://pleiades.stoa.org/places/157894",
+          "locator": "data/json/1/5/7/8/157894.json · title / reprPoint / names / features / details",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "S. Loseby, R. Häussler; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。 本条另核读details中的Nice对应说明。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/1/5/7/8/157894.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "157894",
+          "url": "https://pleiades.stoa.org/places/157894",
+          "label": "Nicaea",
+          "relation": "identity",
+          "note": "高卢的Nicaea，今法国尼斯。与比提尼亚尼西亚是两个地点；同名不合并事件与坐标。"
+        }
+      ],
+      "connections": [
+        {
+          "place": "nicaea",
+          "type": "different-place",
+          "note": "相同拉丁地名，不同地区及坐标。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "catalogPeriods": [
+        "empire"
+      ]
+    },
+    "astacus": {
+      "id": "astacus",
+      "label": "阿斯塔科斯（比提尼亚旧址）",
+      "aliases": [
+        "Astakos",
+        "Astacus"
+      ],
+      "note": "比提尼亚的阿斯塔科斯旧址，与其北侧尼科米底亚分开建档。重建传统见尼科米底亚资料，地点关系不等于全部人口迁移的证明。",
+      "names": [
+        {
+          "label": "Astakos",
+          "fromYear": -550,
+          "toYear": 300,
+          "kind": "attestation",
+          "note": "Pleiades文献／资料标期，不是此名开始或停止使用的确年。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "representative",
+          "coordinates": [
+            29.9288,
+            40.7146
+          ],
+          "precision": "city",
+          "certainty": "approximate",
+          "fromYear": null,
+          "toYear": null,
+          "note": "Pleiades代表点经四位小数舍入，作为城市／遗址地理参照；有效年代未单独考证，不能推作每一年的实况。比提尼亚的阿斯塔科斯旧址，与其北侧尼科米底亚分开建档。重建传统见尼科米底亚资料，地点关系不等于全部人口迁移的证明。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "status": "approximate",
+      "coverage": {
+        "fromYear": -753,
+        "toYear": 1453,
+        "note": "本项目的地点检索窗口；不是建城、废弃、名称或控制权的有效起讫。"
+      },
+      "references": [
+        {
+          "label": "Pleiades · Astakos (511169)",
+          "url": "https://pleiades.stoa.org/places/511169",
+          "locator": "data/json/5/1/1/1/511169.json · title / reprPoint / names / features",
+          "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+          "consultation": "direct",
+          "checked": "2026-10-21",
+          "author": "C. Foss; Pleiades contributors",
+          "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+          "access": "dataset",
+          "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+          "license": "CC BY 3.0",
+          "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/5/1/1/1/511169.json"
+        }
+      ],
+      "external": [
+        {
+          "id": "511169",
+          "url": "https://pleiades.stoa.org/places/511169",
+          "label": "Astakos",
+          "relation": "identity",
+          "note": "比提尼亚的阿斯塔科斯旧址，与其北侧尼科米底亚分开建档。重建传统见尼科米底亚资料，地点关系不等于全部人口迁移的证明。"
+        }
+      ],
+      "connections": [
+        {
+          "place": "nicomedia",
+          "type": "relocation-context",
+          "note": "旧址与新城分别保留；年代与重建语义见尼科米底亚。",
+          "references": [
+            0
+          ]
+        }
+      ],
+      "catalogPeriods": [
+        "empire"
+      ]
+    }
+  }
+}

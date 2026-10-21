@@ -81,7 +81,7 @@ class SearchIndexTests(unittest.TestCase):
                 self.assertEqual(url.path, 'places/')
                 key = parse_qs(url.fragment)['place'][0]
                 self.assertEqual(self.events['places'][key]['label'], e['title'])
-                self.assertTrue(any(self.events['entries'][id]['period'] == pid for id in self.events['byPlace'][key]))
+                self.assertTrue(any(self.events['entries'][id]['period'] == pid for id in self.events['byPlace'][key]) or pid in self.events['places'][key].get('catalogPeriods', []))
                 continue
             if e['kind'] == 'event':
                 self.assertEqual(url.path, 'events/')

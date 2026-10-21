@@ -9,16 +9,27 @@
   const roles={setting:'发生／行动地点',subject:'事件对象地点',mentioned:'仅被提及'};
   function references(refs){
     const list=el('ol',null,'event-citations');
-    refs.forEach(r=>{const li=el('li'),a=el('a',r.label+' ↗');a.href=r.url;a.target='_blank';a.rel='noopener';li.append(a,el('p','定位：'+r.locator),el('p','支持：'+r.claim),el('p',r.consultation==='inherited'?'沿用既有引用 · 本PR未重新核读':`既有资料记录：${r.consultation==='direct'?'直接查阅':'间接引述'} · ${r.checked}`,'event-note'));list.append(li);});return list;
+    refs.forEach(r=>{const li=el('li'),a=el('a',r.label+' ↗');a.href=r.url;a.target='_blank';a.rel='noopener';li.append(a,el('p','定位：'+r.locator),el('p','支持：'+r.claim),el('p',r.consultation==='inherited'?'沿用既有引用 · 未重新核读':`${r.consultation==='direct'?'直接查阅':'间接引述'} · ${r.checked}`,'event-note'));if(r.scope)li.append(el('p','实际范围：'+r.scope));if(r.author)li.append(el('p','署名：'+r.author+' · '+r.license));if(r.snapshot){const source=el('a','核读的官方数据版本 ↗');source.href=r.snapshot;source.target='_blank';source.rel='noopener';li.append(source);}list.append(li);});return list;
+  }
+  function geography(p){
+    const box=el('section',null,'place-place-facts');box.append(el('h2','地点身份、年代与定位'),el('p',window.FastiPlaceMap.statusNames[p.status]+' · '+p.coverage.note));
+    const names=el('details');names.append(el('summary','异名及文献标期（不同于地点存在期）'));const ns=el('ul');for(const n of p.names){const span=n.fromYear===null&&n.toYear===null?'未定起讫':`${n.fromYear===null?'起年未知':E.when(n.fromYear)} — ${n.toYear===null?'止年未知':E.when(n.toYear)}`;ns.append(el('li',n.label+' · '+span+' · '+n.note));}names.append(ns);box.append(names);
+    if(!p.names.length)box.append(el('p','现有别名未进一步核实有效年代。'));
+    const locs=el('ul',null,'place-location-list');for(const l of p.locations){const li=el('li');li.append(el('p',`经度 ${l.coordinates[0]}，纬度 ${l.coordinates[1]} · ${l.precision==='site'?'遗址级':'城市级'}参照 · 约位`),el('p',l.note),el('p',`位置有效年代：${l.fromYear===null?'起年未定':E.when(l.fromYear)} — ${l.toYear===null?'止年未定':E.when(l.toYear)}；未知端点不等于已证明全年连续活动。`));locs.append(li);}box.append(locs);if(!p.locations.length)box.append(el('p','没有采用可用于事件落点的可靠坐标。相关事件仍保留在列表中。'));
+    for(const c of p.connections){const line=el('p',c.type==='different-place'?'同名消歧：':'迁址／相关地点：');line.append(link(index.places[c.place].label+' ↗','places/'+hash({place:c.place})),el('span',' · '+c.note));box.append(line);}
+    for(const x of p.external){const line=el('p',x.relation==='comparison'?'外部对照（不作完全同一认定）：':'外部地点标识：'),a=el('a','Pleiades '+x.id+' · '+x.label+' ↗');a.href=x.url;a.target='_blank';a.rel='noopener';line.append(a);box.append(line);}return box;
   }
   function directory(params){
     document.title='地点档案 · FASTI 罗马历史纪年';
     main.append(el('p','LOCA · 从地点读历史','eyebrow'),el('h1','一处地点，不止一个年份。'),el('p','查找已编订的地点身份、异名、明确关联记事与相关年度。此目录不推断疆域控制；地点角色与原文依据随每条关系保留。','event-intro'));
+    const atlas=el('details',null,'place-map-disclosure'),summary=el('summary','事件地图 · 按年代、主题与人物反查'),atlasHost=el('div');atlas.append(summary,atlasHost);main.append(atlas);let mounted=false;
+    atlas.ontoggle=()=>{if(atlas.open&&!mounted){mounted=true;window.FastiPlaceMap.mount(atlasHost,{source:index,params});}};
+    atlas.open=params.get('map')==='1'||['year','from','to','topic','mapq'].some(k=>params.has(k));
     const form=el('form',null,'event-tools event-query'),label=el('label','查找地点或异名'),input=el('input'),button=el('button','查找');input.id='place-query';input.type='search';input.name='q';input.maxLength=160;input.value=params.get('q')||'';input.placeholder='罗马、Constantinople、Nicaea…';label.htmlFor=input.id;button.type='submit';form.append(label,input,button);main.append(form);
     const status=el('p',null,'event-status'),grid=el('div',null,'event-results');status.setAttribute('role','status');main.append(status,grid);
     const filter=()=>{const terms=input.value.trim().split(/\s+/).map(E.normalize).filter(Boolean),rows=Object.values(index.places).filter(p=>terms.every(t=>E.normalize([p.label,...p.aliases].join(' ')).includes(t)));
       status.textContent=`找到 ${rows.length} / ${Object.keys(index.places).length} 处已编订地点。`;grid.replaceChildren();
-      rows.forEach(p=>{const card=el('article',null,'event-card'),h=el('h2');card.dataset.placeId=p.id;h.append(link(p.label+' ↗','places/'+hash({place:p.id})));card.append(h,el('p',p.aliases.join(' · ')),el('p',`${index.byPlace[p.id].length} 条明确关联记事`),el('p',p.note));grid.append(card);});
+      rows.forEach(p=>{const card=el('article',null,'event-card'),h=el('h2');card.dataset.placeId=p.id;h.append(link(p.label+' ↗','places/'+hash({place:p.id})));card.append(h,el('p',p.aliases.join(' · ')),el('p',`${index.byPlace[p.id].length} 条明确关联记事 · ${window.FastiPlaceMap.statusNames[p.status]}`),el('p',p.note));grid.append(card);});
       if(!rows.length)grid.append(el('p','没有匹配的已编订地点。可尝试其他拼法；目录尚未覆盖所有历史地点。'));
     };
     input.oninput=filter;form.onsubmit=e=>{e.preventDefault();location.hash=input.value.trim()?hash({q:input.value.trim()}):'';};filter();
@@ -29,6 +40,8 @@
     document.title=p.label+' · 地点档案 · FASTI';main.dataset.placeId=id;
     main.append(el('p','LOCA · 地点档案','eyebrow'),el('h1',p.label),el('p',p.aliases.join(' · '),'identity-names'),el('p',p.note,'event-intro'),el('p','这里只汇集已编订关联，不表示此地完整历史；时间范围与角色属于各条记事。未提供经核验坐标的地点仍可阅读。','event-note'));
     const related=index.byPlace[id].map(k=>index.entries[k]).sort((a,b)=>(a.spans[0]?.[0]??Infinity)-(b.spans[0]?.[0]??Infinity)||a.id.localeCompare(b.id));
+    main.append(geography(p));
+    window.FastiPlaceMap.mount(main,{source:index,place:id,params:new URLSearchParams(location.hash.slice(1))});
     main.append(el('h2',`明确关联的事件与记事 · ${related.length}条`),link('在事件目录组合筛选 ↗','events/'+hash({place:id})));
     const list=el('ol',null,'place-events');
     related.forEach(e=>{const edge=e.placeRelations.find(r=>r.place===id),li=el('li');li.dataset.eventId=e.id;

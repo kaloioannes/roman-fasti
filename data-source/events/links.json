@@ -2524,5 +2524,65 @@
         ]
       }
     ]
+  },
+  "empire:emp-ad115-1": {
+    "note": "核对现有年度记事的明确安条克语境，沿用原卷引用；未重新核读外部事件文献。",
+    "people": [],
+    "places": [
+      {
+        "place": "antioch",
+        "role": "setting",
+        "basis": "仅关联所引安条克行动，不将同条记事的其他行动归于此地。",
+        "quote": "图拉真在安条克遭遇严重地震",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "empire:emp-ad362-1": {
+    "note": "核对现有年度记事的明确安条克语境，沿用原卷引用；未重新核读外部事件文献。",
+    "people": [],
+    "places": [
+      {
+        "place": "antioch",
+        "role": "setting",
+        "basis": "仅关联所引安条克行动，不将同条记事的其他行动归于此地。",
+        "quote": "皇帝前往安条克准备波斯战争",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-526-1": {
+    "note": "核对现有年度记事的明确安条克语境，沿用原卷引用；未重新核读外部事件文献。",
+    "people": [],
+    "places": [
+      {
+        "place": "antioch",
+        "role": "setting",
+        "basis": "仅关联所引安条克行动，不将同条记事的其他行动归于此地。",
+        "quote": "大地震重创安条克",
+        "references": [
+          0
+        ]
+      }
+    ]
+  },
+  "byzantine:byz-969-1": {
+    "note": "核对现有年度记事的明确安条克语境，沿用原卷引用；未重新核读外部事件文献。",
+    "people": [],
+    "places": [
+      {
+        "place": "antioch",
+        "role": "setting",
+        "basis": "仅关联所引安条克行动，不将同条记事的其他行动归于此地。",
+        "quote": "帝国军队取得安条克",
+        "references": [
+          0
+        ]
+      }
+    ]
   }
 }

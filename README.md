@@ -30,7 +30,9 @@
 
 **[史料证据卡与异说并读](https://kaloioannes.github.io/roman-fasti/events/#evidence=curated)** 为五卷26条重点记事提供论断级定位、作者与译本、核读日期、实际阅读范围和材料局限；古代文献、现代研究与百科导航分组。7份档案并读采用说、其他说、各自依据及采用理由，包括674—678围城模型与1205／1208称帝、加冕口径。支持证据筛选、卡片直链、键盘往返、复制与带出处JSON下载；摘要、间接引述、旧引用和未编订条目如实标示。范围及维护见[证据说明](docs/evidence.md)。
 
-**[人物—事件—地点互链](https://kaloioannes.github.io/roman-fasti/places/)** 让五卷年度原条直接连接明确人物与地点，人物专页反查关联记事，跨卷总档案汇总本人的明确关系。26处地点档案支持异名检索、相关记事与年度往返、逐项依据和JSON下载；全站搜索新增地点类型。新编订85条重点记事，连同既有明确关系共覆盖129条对象，直接参与、事件主体与仅被提及分别标示，不从在位任期推断行动。范围、证据限制及维护见[互链说明](docs/event-links.md)。
+**[地点档案与事件地图](https://kaloioannes.github.io/roman-fasti/places/#map=1)** 完整编订29份地点身份、异名标期、坐标精度及逐项出处，24处采用地理参照点，位置存疑者保留列表。目录、地点专页与五卷年度页可按年代、主题、人物和分卷查看事件点，点击反查人物与记事；同名、迁址、现代名与古代名称分别呈现。无坐标的事件仍可查找，年度页展开后才加载地图，数据和底图可独立重试。实际核读范围、Pleiades版本与署名、日期语义和维护见[地点说明](docs/places.md)。
+
+**[人物—事件—地点互链](https://kaloioannes.github.io/roman-fasti/places/)** 让五卷年度原条直接连接明确人物与地点，人物专页反查关联记事，跨卷总档案汇总本人的明确关系。原PR08的26处地点档案（现已扩展至29处）支持异名检索、相关记事与年度往返、逐项依据和JSON下载；全站搜索新增地点类型。新编订85条重点记事，连同既有明确关系共覆盖129条对象，直接参与、事件主体与仅被提及分别标示，不从在位任期推断行动。范围、证据限制及维护见[互链说明](docs/event-links.md)。
 
 **[任期时间轴](https://kaloioannes.github.io/roman-fasti/timeline/)** 对读五卷全部已收录官职和帝号阶段，提供69年、238年、四帝共治、1042年等14个入口，也可自选范围、人物、身份与宫廷。分轨显示先后、共治、争位、复位与原卷明确空缺，区分共帝头衔和有依据的实权阶段。年／月／日精度、传统纪年、异说和未定年分别呈现，不补虚构月日；支持缩放、手机等价列表、原人物及年度往返、分享刷新返回。范围和证据边界见[时间轴说明](docs/timeline.md)。
 
@@ -137,6 +139,7 @@ python scripts/build_byzantine.py     # 拜占庭人物、分级精度任期与�
 python scripts/build_republic_people.py # 共和国人物导航与完整身份候选清单
 python scripts/build_people.py        # 人工确认的跨卷身份投影
 python scripts/build_events.py        # 五卷事件、日期与对象关联投影
+python scripts/build_places.py        # 地点档案与全部事件的独立地图投影
 python scripts/build_timeline.py      # 五卷全部官职／称号阶段及有依据的实权提示
 python scripts/build_glossary.py      # 分期制度词典、正文释义与显式例子回链
 python scripts/build_dynasties.py     # 分类专题、逐边有源关系与人物反向入口

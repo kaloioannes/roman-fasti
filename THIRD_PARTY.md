@@ -54,3 +54,7 @@ The dynasty feature adds no third-party library, image or font. Graphs are rende
 ## Institutional vocabulary references
 
 The glossary adds no third-party runtime, font or image asset. Its individually credited texts, editions, historical dictionaries and institutional catalogue records are listed in `data-source/glossary/entries.json` and [DATA_LICENSE.md](DATA_LICENSE.md). New Chinese paraphrases and edited institutional explanations use CC BY-SA 4.0; external translations, museum descriptions and photographs retain their respective rights. The Berlin Münzkabinett IKMK 18204181 text is credited under CC BY-SA 4.0. No museum images or complete external books are bundled.
+
+## Pleiades地点数据
+
+事件地图与地点档案选择性改编Pleiades官方JSON版本[`a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4`](https://github.com/isawnyu/pleiades.datasets/tree/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json)，CC BY 3.0。每项creator、规范条目、固定版本、字段定位、修改及查阅范围保存在`data-source/places/gazetteer.json`和生成／导出资料；Pleiades contributors原署名可在规范条目及版本文件查看。详见[研究与许可](docs/places.md)。

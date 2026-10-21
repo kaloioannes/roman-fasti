@@ -58,3 +58,7 @@ The GIS subset selects Eastern and Western Roman Empire POLITY features intersec
 ## 五卷连续剧本（2026-10-21）
 
 `data-source/stories/`与`data/stories/`中新编中文导读及资料投影由FASTI contributors撰写，CC BY-SA 4.0；共和国原文及原版引用保留原署名。李维、拉克坦提乌斯、普罗柯比、苏格拉底、安娜、维尔阿杜安的电子译本、马尔凯利努斯拉丁文及吉本公版注本用于指定段落核对；DIR署名研究只作来源链接与独立中文简述，不转载全文或图片。所有外部译本、现代文章及机构网页仍归其权利人。直接查阅、沿用和间接路径逐项保存在来源记录，范围见[剧本研究说明](https://github.com/kaloioannes/roman-fasti/blob/main/docs/stories.md)。
+
+## 地点档案与事件地图（PR14）
+
+`data-source/places/gazetteer.json`中的原创中文地点说明及关系编订由FASTI contributors（2026-10-21）以CC BY-SA 4.0发布。27项外部地点身份、名称标期及24处舍入代表点改编自Pleiades官方数据，保留其[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)及逐条creators／contributors署名。修改包括选择、中文重述、代表点四位小数舍入、精度／不确定性说明及本项目事件连接；没有重新许可Pleiades所引图册。每份地点与地图JSON导出保留来源、固定版本文件、定位、实际查阅范围和许可。完整说明见[地点档案](docs/places.md)。Natural Earth底图保持公有领域，原疆域及原卷资料许可保持各自归属。

@@ -80,7 +80,7 @@ def compile_index():
         related = [event_index['entries'][id] for id in event_index['byPlace'][place_id]]
         for period in periods:
             rows = [e for e in related if e['period'] == period['id']]
-            if not rows:
+            if not rows and period['id'] not in place.get('catalogPeriods', []):
                 continue
             entries.append(dict(id=f'{period["id"]}:place:{place_id}',period=period['id'],kind='place',
                                 title=place['label'],names=place['aliases'],text=place['note'],

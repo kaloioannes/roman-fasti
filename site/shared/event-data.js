@@ -16,6 +16,10 @@ window.FastiEventData=(()=>{
       &&(p.evidence.kind==='event-text'?text(p.evidence.quote):p.evidence.kind==='inherited-editorial'&&p.evidence.quote===null)
       &&Array.isArray(p.references)&&p.references.length>0&&p.references.every(ref);
     const kinds=['event','annual-summary','background','tradition'];
+    const range=r=>r&&[r.fromYear,r.toYear].every(y=>y===null||year(y))&&(r.fromYear===null||r.toYear===null||r.fromYear<=r.toYear);
+    const place=p=>['approximate','disputed','unlocated'].includes(p.status)&&range(p.coverage)&&Array.isArray(p.names)&&p.names.every(n=>text(n.label)&&range(n))
+      &&Array.isArray(p.locations)&&p.locations.every(l=>text(l.id)&&Array.isArray(l.coordinates)&&l.coordinates.length===2&&l.coordinates.every(Number.isFinite)&&Math.abs(l.coordinates[0])<=180&&Math.abs(l.coordinates[1])<=90&&range(l)&&['city','site','region'].includes(l.precision)&&text(l.note))
+      &&Array.isArray(p.external)&&p.external.every(x=>/^https:\/\/pleiades.stoa.org\/places\/\d+$/.test(x.url))&&Array.isArray(p.connections)&&p.connections.every(c=>v.places[c.place]&&text(c.note));
     const dossier=e=>{
       if(!Array.isArray(e.references)||!e.references.length||!e.references.every(r=>r&&text(r.id)&&text(r.scope)&&v.sourceKinds?.[r.sourceKind]&&v.access?.[r.access])||new Set(e.references.map(r=>r.id)).size!==e.references.length)return false;
       if(!e.references.filter(r=>r.access!=='legacy').every(r=>ref(r)&&text(r.checked)&&/^\d{4}-\d{2}-\d{2}$/.test(r.checked)&&text(r.author)&&text(r.edition)&&text(r.limitations)
@@ -38,7 +42,7 @@ window.FastiEventData=(()=>{
       &&Array.isArray(e.origins)&&e.origins.every(o=>/^(kingdom|republic|empire|divided-empire|byzantine)\/#(?:year|person)=/.test(o.url))
       &&Array.isArray(e.spans)&&e.spans.every(s=>Array.isArray(s)&&s.length===2&&s.every(year)&&s[0]<=s[1])
       &&Array.isArray(e.references)&&e.references.length&&e.references.every(ref))
-      &&v.byGlobalPerson&&Object.entries(v.places).every(([id,p])=>p.id===id&&/^[a-z][a-z0-9-]*$/.test(id)&&text(p.label)&&Array.isArray(p.aliases)&&p.aliases.every(text)&&text(p.note)&&Array.isArray(p.references)&&p.references.length&&p.references.every(ref))
+      &&v.byGlobalPerson&&Object.entries(v.places).every(([id,p])=>p.id===id&&/^[a-z][a-z0-9-]*$/.test(id)&&text(p.label)&&Array.isArray(p.aliases)&&p.aliases.every(text)&&text(p.note)&&Array.isArray(p.references)&&p.references.length&&p.references.every(ref)&&place(p))
       &&Object.values(v.entries).every(e=>Array.isArray(e.placeRelations)&&e.placeRelations.length===e.places.length&&e.placeRelations.every(p=>e.places.includes(p.place)&&v.places[p.place]&&['setting','subject','mentioned'].includes(p.role)&&text(p.basis)&&p.url==='places/#place='+p.place&&evidence(p,e.id))&&e.people.every(p=>['participant','subject','mentioned'].includes(p.role)&&evidence(p,e.id)&&(!p.globalUrl||/^people\/#person=[a-z0-9-]+$/.test(p.globalUrl))))
       &&[v.byYear,v.byPerson,v.byPlace,v.byGlobalPerson].every(map=>Object.values(map).every(ids=>Array.isArray(ids)&&ids.every(id=>v.entries[id])))
       &&v.sourceKinds&&v.access&&Object.values(v.entries).every(dossier)
