@@ -95,7 +95,10 @@ window.FastiSearchTarget = (() => {
     if(period){localLinks(period);related(period,hash);
       const p=new URLSearchParams(hash.slice(1)),y=Number(p.get('year'));
       if(p.has('year')&&y){const host=period==='republic'?document.querySelector('#detail'):document.querySelector('#content');
-        if(host){host.querySelectorAll('.narrative-links').forEach(n=>n.remove());window.FastiStories?.mount('year',period+':'+(period==='republic'?-y:y),host);}}
+        if(host){host.querySelectorAll('.narrative-links').forEach(n=>n.remove());window.FastiStories?.mount('year',period+':'+(period==='republic'?-y:y),host);
+          host.querySelectorAll('.annual-event-map').forEach(n=>n.remove());
+          const mapHost=host.querySelector('.territory-section')||host;
+          window.FastiPlaceMap?.annual(period,period==='republic'?-y:y,mapHost);}}
     }
     if(!focus)return;
     requestAnimationFrame(()=>{

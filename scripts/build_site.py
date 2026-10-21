@@ -14,6 +14,7 @@ from build_power import write_power
 from build_stories import write_stories
 from build_search import write_index
 from build_events import write_events
+from build_places import write_places
 from build_timeline import write_timeline
 from build_people import write_people
 from build_republic_people import write_index as write_republic_people
@@ -72,6 +73,7 @@ def build(destination):
     write_republic_people()
     write_people()
     write_events()
+    write_places()
     write_timeline()
     write_glossary()
     write_dynasties()

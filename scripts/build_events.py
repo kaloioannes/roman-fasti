@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import urlencode, urlsplit
 from event_links import apply_links
 from event_evidence import apply_evidence
+from event_places import apply_places
 
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = {'event': '独立事件', 'annual-summary': '年度摘要', 'background': '跨年背景', 'tradition': '传统叙事'}
@@ -70,6 +71,7 @@ def compile_events():
     metadata = read('data-source/events/metadata.json')
     additions = read('data-source/events/events.json')
     places = read('data-source/events/places.json')
+    apply_places(places, read, require, check_reference)
     aliases = read('data-source/events/aliases.json')
     entries, seen = {}, set()
     for pid, data in volumes.items():

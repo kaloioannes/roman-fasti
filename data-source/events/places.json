@@ -656,5 +656,46 @@
         "checked": null
       }
     ]
+  },
+  "antioch": {
+    "id": "antioch",
+    "label": "安条克（奥龙特斯河畔）",
+    "aliases": [
+      "Antiochia",
+      "Antiocheia",
+      "Theoupolis",
+      "Antakya",
+      "安条克",
+      "Iopolis",
+      "Antiocheia epi Daphnē, Antiocheia on Daphne",
+      "Anṭaqya",
+      "Anṭākiya, Antakiya, Antakiyah, Antakiyya, Antakiyyah",
+      "Anṭaḳya, Antaqya",
+      "Anṭākya",
+      "Anṭakya, Antakya",
+      "Hatay",
+      "III Gallica (Vesp.) garrison, III Gallica (Vespasian) garrison",
+      "Antiocheia am Orontes",
+      "Antiocheia am Orontēs, Antiocheia epi Orontou, Antiocheia on the Orontes",
+      "Anṭākiyye",
+      "Antioch"
+    ],
+    "note": "奥龙特斯河畔的安条克，今安塔基亚一带；不同于皮西迪亚等地的同名城。6世纪Theoupolis是此城异名。",
+    "references": [
+      {
+        "label": "Pleiades · Antiochia/Theoupolis (658381)",
+        "url": "https://pleiades.stoa.org/places/658381",
+        "locator": "data/json/6/5/8/3/658381.json · title / reprPoint / names / features",
+        "claim": "地点身份、异名和地理参照；不是事件现场或逐年控制权证据。",
+        "consultation": "direct",
+        "checked": "2026-10-21",
+        "author": "T. Sinclair, P.-L. Gatier; Pleiades contributors",
+        "edition": "a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4",
+        "access": "dataset",
+        "scope": "直接核读官方JSON的标题、描述、代表点、地点特征、名称及其标期；未直接取得所引原始图册。",
+        "license": "CC BY 3.0",
+        "snapshot": "https://github.com/isawnyu/pleiades.datasets/blob/a7ae25da9f3e872c214725d2a7f2c65f48cfa2c4/data/json/6/5/8/3/658381.json"
+      }
+    ]
   }
 }

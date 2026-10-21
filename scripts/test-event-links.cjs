@@ -38,7 +38,7 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
    await page.goto(base+'byzantine/#person=romanos-iv');await page.locator('.event-related-links a[href*="manzikert"]').waitFor();assert.equal(await page.locator('.event-related-links a[href*="bari"]').count(),0);
    await page.goto(base+'people/#person=roman-augustus');await page.locator('.event-related-links a[href*="emp-bc27-1"]').waitFor();assert.ok(await page.locator('.event-related-links a[href*="rep-bc27-1"]').count());
    // Place identities, aliases, multiple years and undated traditions.
-   await page.goto(base+'places/#q=Nicaea');await ready();assert.equal(await page.locator('.event-card').count(),1);await page.locator('.event-card h2 a').click();await ready();assert.match(await page.locator('h1').textContent(),/尼西亚/);
+   await page.goto(base+'places/#q=Nicaea');await ready();assert.equal(await page.locator('.event-card').count(),2);await page.locator('[data-place-id="nicaea"] h2 a').click();await ready();assert.match(await page.locator('h1').textContent(),/尼西亚/);
    await page.reload();await ready();assert.match(page.url(),/place=nicaea/);await page.goBack();await ready();assert.equal(await page.locator('#place-query').inputValue(),'Nicaea');
    await page.goto(base+'places/#place=ostia');await ready();assert.match(await page.locator('#content').textContent(),/未确定绝对年代/);assert.equal(await page.locator('.event-year-links li').count(),0);
    await page.goto(base+'places/#place=constantinople');await ready();assert.equal(await page.locator('.place-events>[data-event-id="byzantine:fourth-crusade-1202-1204"]').count(),1);
