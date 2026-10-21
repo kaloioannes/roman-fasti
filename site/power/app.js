@@ -46,6 +46,7 @@
   function detail(id,p){
     const v=index.people[id],back={...p};delete back.person;delete back.action;delete back.section;const a=el('a','← 权力人物目录');a.href=hash(back);main.append(a);
     if(!v){document.title='人物地址有误 · FASTI';main.append(el('h1','找不到这份权力档案'),el('p','此稳定ID尚未收录。请返回目录或使用全站搜索。'));return;}
+    main.append(link('与另一位人物并排比较 ↗','compare/#'+new URLSearchParams({a:'power:'+id})));
     main.dataset.person=id;document.title=v.label+' · 实际权力与摄政 · FASTI';main.append(el('p',v.periods.map(period).join(' · '),'eyebrow'),el('h1',v.label),el('p',v.native,'power-native'),el('p',v.aliases.join(' · '),'power-note'));
     window.FastiStories?.mount('person','power:'+id,main);
     const intro=el('div',null,'power-reading');intro.append(el('p',v.summary,'power-intro'),el('p',v.caution),evidence(v.references,'身份、概述与研究范围'));main.append(intro);

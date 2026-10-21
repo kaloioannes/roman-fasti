@@ -20,6 +20,8 @@
 
 ## 浏览与分享
 
+**[人物并排比较](https://kaloioannes.github.io/roman-fasti/compare/)** 可检索选择五卷与权力专题的1,200个可选人物条目，对照原任期、宫廷与身份、王朝、复位、同年角色、明确关联事件及出处。共享时间坐标与完整文字对照保留原卷精度；日月年时长逐卷给出端点日差或范围，共帝可筛选，跨卷重复不累计。十组专题、分享、JSON、手机明暗与失败恢复均可用。范围及计算口径见[人物比较说明](docs/compare.md)。
+
 **[地图阶段对照](https://kaloioannes.github.io/roman-fasti/map-compare/)** 将五卷已有地图按268个图层组合阶段统一索引，提供12个专题、任意两年与跨卷选择、并排／滑动揭示、同步缩放与统一视野、阶段前后跳转和视野直链。始终分列所选年度、显示适用期、原始源阶段、近似与借用说明；王政仅对读原卷叙事地点。变化专题连接明确事件，区间事件按原类型去重阅读；可导出含来源许可的对照资料。没有逐年插值或精确面积统计。地图、底图与事件分别恢复，手机与键盘有等价列表。范围与维护见[地图对照说明](docs/map-compare.md)。
 
 **[连续历史剧本](https://kaloioannes.github.io/roman-fasti/stories/)** 把五卷组织成可持续阅读的问题链：新编王政、四帝共治、双宫廷、查士丁尼、科穆宁重建与流亡复国六部42章，保留共和国十部59章原版，共16部101章。每章连接人物、年度及具体出处，提供统一目录、前后章节、原档案回链、全站检索、本机进度与可选防剧透；旧共和国URL继续可用。实际查阅、日期语义及研究边界见[剧本说明](docs/stories.md)。
@@ -149,6 +151,7 @@ python scripts/build_dynasties.py     # 分类专题、逐边有源关系与人�
 python scripts/build_power.py         # 实际权力人物、角色阶段、行动证据与反向入口
 python scripts/build_stories.py       # 五卷连续剧本、阅读关联和原共和国适配
 python scripts/build_search.py        # 五卷静态检索索引；发布构建也会自动重建
+python scripts/build_compare.py       # 五卷全量身份、任期与明确事件的并排比较
 python scripts/build_byzantine_map.py # 拜占庭与并立政权GIS（Shapely）
 python scripts/build_map.py           # 共和国地图
 python scripts/build_imperial_map.py  # 古典帝国地图

@@ -100,6 +100,7 @@ window.FastiPeople = (() => {
     const timeline=el('p',null,'timeline-profile-link');
     timeline.append(link('查看此人的任期时间轴 ↗','timeline/#'+new URLSearchParams({period,person:period+':'+personId})));
     host.append(timeline);
+    host.append(link('与另一位人物并排比较 ↗','compare/#'+new URLSearchParams({a:period+':'+personId})));
     const slot=el('section',null,'identity-links');slot.setAttribute('aria-label','跨卷人物关联');
     slot.append(el('p','正在查阅跨卷身份…','identity-status'));host.append(slot);
     async function render(){

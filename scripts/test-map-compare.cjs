@@ -8,7 +8,7 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
  try{
   browser=await chromium.launch({headless:true,args:['--no-proxy-server'],...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
   const context=await browser.newContext({acceptDownloads:true}),page=await context.newPage(),errors=[];context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));page.on('pageerror',e=>errors.push(e.message));
-  const ready=async(p=page)=>{await p.locator('.snapshots').waitFor();await p.waitForFunction(()=>document.querySelector('.map-status')?.textContent.trim()==='');await p.locator('.drawing svg').first().waitFor();};
+  const ready=async(p=page)=>{await p.waitForFunction(()=>document.querySelector('main')?.dataset.renderedHash===location.hash&&document.querySelector('main')?.getAttribute('aria-busy')==='false');await p.locator('.snapshots').waitFor();await p.waitForFunction(()=>document.querySelector('.map-status')?.textContent.trim()==='');await p.locator('.drawing svg').first().waitFor();};
   for(const prefix of ['/','/roman-fasti/']){
    const base=`http://127.0.0.1:${server.address().port}${prefix}`;
    await page.goto(base+'map-compare/');await ready();

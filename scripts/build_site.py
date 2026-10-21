@@ -17,6 +17,7 @@ from build_events import write_events
 from build_places import write_places
 from build_map_compare import write_index as write_map_compare
 from build_timeline import write_timeline
+from build_compare import write_compare
 from build_people import write_people
 from build_republic_people import write_index as write_republic_people
 
@@ -82,6 +83,7 @@ def build(destination):
     write_power()
     write_stories()
     write_index()
+    write_compare()
     destination.mkdir(parents=True, exist_ok=True)
     pages = sorted(SITE.rglob('*.html'))
     page_names = {source.relative_to(SITE).as_posix() for source in pages}

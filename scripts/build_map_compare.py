@@ -100,7 +100,7 @@ def write_index():
     result = build_index()
     target = ROOT / 'data/map-compare/index.json'
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(result, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    target.write_text(json.dumps(result, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
     return result
 
 

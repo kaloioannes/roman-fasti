@@ -129,6 +129,10 @@
           if(entry.kind==='person' && /^people\/#person=[a-z0-9-]+$/.test(entry.globalURL||'')){
             const identity=el('a','本人的跨卷总档案 ↗','identity-search-link');identity.href='../'+entry.globalURL;article.append(identity);
           }
+          if(['person','power'].includes(entry.kind)){
+            const key=entry.kind==='power'?'power:'+new URLSearchParams(entry.url.split('#')[1]).get('person'):entry.period+':'+new URLSearchParams(entry.url.split('#')[1]).get('person');
+            const compare=el('a','与另一位人物并排比较 ↗','compare-search-link');compare.href='../compare/#'+new URLSearchParams({a:key});article.append(compare);
+          }
           section.append(article);
         });
         if(rows.length>count){const more=el('button',`再显示${Math.min(24,rows.length-count)}条${label}（余${rows.length-count}条）`,'more-results');more.onclick=()=>{limits.set(kind,count+24);render().then(()=>{const group=$(`[data-kind="${kind}"]`);const next=group?.querySelectorAll('.search-result h3 a')[count];next?.focus();});};section.append(more);}

@@ -1,0 +1,30 @@
+{
+  "returns": {
+    "byzantine:zeno": [{"stage":"byzantine:zeno:1","kind":"restoration","label":"476年复位；流亡帝号另列","quote":"476年复位时西部宫廷正走向终结"}],
+    "byzantine:justinian-ii": [{"stage":"byzantine:justinian-ii:1","kind":"restoration","label":"705年复位","quote":"705年借保加利亚与外部支持复位"}],
+    "byzantine:isaac-ii": [{"stage":"byzantine:isaac-ii:1","kind":"restoration","label":"1203年复位，与儿子共治","quote":"1203年借第四次十字军复位，与儿子共治"}],
+    "byzantine:theodora": [{"stage":"byzantine:theodora:1","kind":"renewed-rule","label":"1055年再次取得最高统治权","quote":"君士坦丁九世去世后，1055年重新取得最高统治权"}],
+    "byzantine:john-v": [
+      {"stage":"byzantine:john-v:2","kind":"restoration","label":"1379年回到主帝阶段；原卷年表与失位说明对读","quote":"后又多次被儿子与孙子短暂推翻"},
+      {"stage":"byzantine:john-v:3","kind":"restoration","label":"1390年再次回到主帝阶段；同年先后保留日级未知","quote":"其多年皇号不应抹平实际失位期"}
+    ],
+    "empire:maximian": [
+      {"stage":"empire:maximian:1","kind":"renewed-claim","label":"306年恢复帝号，原卷列争位身份","quote":"306年因儿子马克森提乌斯在罗马起事而恢复帝号"},
+      {"stage":"empire:maximian:2","kind":"renewed-claim","label":"310年重新争权，原卷列争位身份","quote":"310年趁君士坦丁离开时在高卢重新争权"}
+    ],
+    "divided-empire:priscus-attalus": [{"stage":"divided-empire:priscus-attalus:1","kind":"renewed-claim","label":"414年再次获拥立","quote":"414年阿陶尔夫又在高卢拥立他"}],
+    "divided-empire:maximus-hispania": [{"stage":"divided-empire:maximus-hispania:1","kind":"renewed-claim","label":"约420年前后第二次称帝，起点未确","quote":"第二次称帝的开始年代不够精确"}]
+  },
+  "presets": [
+    {"id":"augustus-tiberius","title":"奥古斯都与提比略","a":"empire:augustus","b":"empire:tiberius","note":"前1年到公元1年、跨卷执政官与帝号、同年交接。"},
+    {"id":"sisters-1042","title":"1042年的两姐妹","a":"byzantine:zoe","b":"byzantine:theodora","year":1042,"note":"并列女性统治者、共同主政与狄奥多拉再次掌权。"},
+    {"id":"zeno-basiliscus","title":"芝诺与巴西利斯库斯","a":"divided-empire:zeno","b":"byzantine:basiliscus","year":475,"note":"两卷日期分歧、流亡帝号与首都宫廷不能混同。"},
+    {"id":"justinian-returns","title":"两位查士丁尼","a":"byzantine:justinian-i","b":"byzantine:justinian-ii","note":"不同世纪、明确复位与完整任期对照。"},
+    {"id":"tetrarchs","title":"戴克里先与马克西米安","a":"empire:diocletian","b":"empire:maximian","year":306,"note":"共同退位后，恢复帝号与争位分别计读。"},
+    {"id":"purple-and-power","title":"君士坦丁七世与巴西尔二世","a":"byzantine:constantine-vii","b":"byzantine:basil-ii","note":"共帝、名义主帝、实际主政与紫室依据分别阅读。"},
+    {"id":"father-son","title":"约翰五世与安德洛尼卡四世","a":"byzantine:john-v","b":"byzantine:andronikos-iv","year":1379,"note":"分段帝号、失位、复位及恢复共帝身份。"},
+    {"id":"regents","title":"普尔喀丽娅与加拉·普拉西迪娅","a":"power:pulcheria","b":"power:galla-placidia","year":425,"note":"摄政与宫廷影响是权力角色，不进入皇帝任期统计。"},
+    {"id":"royal-tradition","title":"罗慕路斯与努马","a":"kingdom:romulus","b":"kingdom:numa-pompilius","note":"传统王期年数不等于包含两个端点的年度桶数量。"},
+    {"id":"same-name","title":"同名的君士坦丁三世","a":"divided-empire:constantine-iii","b":"byzantine:constantine-iii","note":"相同姓名与本卷ID仍是两位不同人物。"}
+  ]
+}
