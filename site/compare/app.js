@@ -26,7 +26,7 @@
     const pl=el('label',side.toUpperCase()+'分卷'),select=el('select');select.append(new Option('全部五卷与权力人物',''));index.periods.forEach(p=>select.append(new Option(p.title,p.id)));pl.append(select);
     const status=el('p',null,'muted');status.setAttribute('role','status');const list=el('ul',null,'picker-results');list.setAttribute('aria-label',side.toUpperCase()+'检索结果');let count=20;
     const more=button('显示更多'+side.toUpperCase()+'人物',()=>{count+=20;run();});
-    function run(){const rows=E.find(index,q.value,select.value);status.textContent=`找到${rows.length}位独立人物 · 显示前${Math.min(count,rows.length)}位`;list.replaceChildren();
+    function run(){const rows=E.find(index,q.value,select.value);status.textContent=`找到${rows.length}个人物条目 · 显示前${Math.min(count,rows.length)}位`;list.replaceChildren();
       for(const person of rows.slice(0,count)){const li=el('li'),b=button(person.label,()=>go({...s,[side]:person.id,preset:''}));b.dataset.person=person.id;if(person.id===p?.id)b.setAttribute('aria-current','true');
         const stages=person.stages.map(k=>index.stages[k]).filter(x=>x.start);const years=stages.length?E.when(Math.min(...stages.map(x=>x.startYear)))+' — '+E.when(Math.max(...stages.map(x=>x.endYear))):'角色年代见权力档案';
         b.append(el('small',[...new Set(person.profiles.map(x=>period(x.period)))].join(' / ')||'实际权力与摄政'),el('small',years));li.append(b);list.append(li);}
