@@ -1,0 +1,16 @@
+{
+  "presets": [
+    {"id":"latium","title":"拉丁姆：核心领地与示意边线","a":{"period":"republic","year":-509},"b":{"period":"republic","year":-338},"note":"对读早期共和国的编辑示意。史事节点有引用，边线本身不由古代文本提供；不能从虚线推算扩张速度。","events":["republic:rep-bc426-1","republic:rep-bc338-1"]},
+    {"id":"mediterranean","title":"布匿战争前后：意大利与地中海","a":{"period":"republic","year":-264},"b":{"period":"republic","year":-201},"note":"结合战争起点与战后安排阅读两个现有阶段；阶段差异不能归为某一年的单次征服。","events":["republic:rep-bc264-1","republic:rep-bc201-1"]},
+    {"id":"trajan-hadrian","title":"116／117：扩张高峰与东方收缩","a":{"period":"empire","year":116},"b":{"period":"empire","year":117},"note":"两侧均有明确借用：116采用源117—126轮廓，117—126采用源127—153轮廓。对读东方战线的文字解释，不能将多边形差直接视为117年逐日撤军记录。","events":["empire:emp-ad114-1","empire:emp-ad116-1","empire:emp-ad117-1"]},
+    {"id":"courts","title":"395／476：两座宫廷与西部终结","a":{"period":"divided-empire","year":395},"b":{"period":"divided-empire","year":476},"note":"东西部图层分色；476年的西部借用469—475轮廓，仅供退位前参照。帝号、承认与实际控制须读年度档案，不能只看色块。","events":["divided-empire:divided-395-01","divided-empire:divided-476-01"]},
+    {"id":"justinian","title":"527／565：查士丁尼时期的战争","a":{"period":"byzantine","year":527},"b":{"period":"byzantine","year":565},"note":"以北非与意大利战争的既有记事解释前后阶段；边界采样不表示战争期间连续稳定的控制。","events":["byzantine:byz-533-1","byzantine:byz-534-1","byzantine:byz-535-1","byzantine:byz-540-1"]},
+    {"id":"manzikert","title":"1071／1081：战败之后的小亚细亚","a":{"period":"byzantine","year":1071},"b":{"period":"byzantine","year":1081},"note":"曼齐刻尔特、巴里与随后内战分别阅读；十年间的轮廓变化不能全归结为一场战役。","events":["byzantine:manzikert-1071","byzantine:bari-1071","byzantine:byz-1078-1","byzantine:byz-1081-1"]},
+    {"id":"fourth-crusade","title":"1203／1204：首都陷落与并立政权","a":{"period":"byzantine","year":1203},"b":{"period":"byzantine","year":1204},"note":"保留原卷各政权图层；年度交界并不是全部政权在同一天取得图示疆界的证据。","events":["byzantine:byz-1204-1","byzantine:byz-1205-1","byzantine:byz-1208-1"]},
+    {"id":"restoration","title":"1204／1261：流亡与复国","a":{"period":"byzantine","year":1204},"b":{"period":"byzantine","year":1261},"note":"首都恢复与疆域阶段分别对读，尼西亚、拉丁帝国及特拉比松沿原卷标签呈现，不自动并入同一继承线。","events":["byzantine:byz-1204-1","byzantine:byz-1214-1","byzantine:byz-1261-1"]},
+    {"id":"late-proxies","title":"1401／1403：条约与源GIS缺口","a":{"period":"byzantine","year":1401},"b":{"period":"byzantine","year":1403},"note":"1403—1406借用源1407—1414轮廓；即使轮廓相同，也不能推断没有历史变化。图形不能精确复现安卡拉战役及加里波利条约的领土效果。","events":["byzantine:byz-1402-1","byzantine:byz-1403-1"]},
+    {"id":"royal-republic","title":"前509：王期地点与共和国示意","a":{"period":"kingdom","year":-509},"b":{"period":"republic","year":-509},"note":"同一传统交界年，两卷地图对象不同：王政为叙事地点，共和国为核心领地示意；不能把点与面当作可计算的领土增减。","events":["kingdom:republic","republic:rep-bc509-1"]},
+    {"id":"outer-courts","title":"395：共同外缘与东西分层","a":{"period":"empire","year":395},"b":{"period":"divided-empire","year":395},"note":"同年不同制图口径：古典帝国合并罗马世界外缘，双帝国分别显示东西层。展示方式不同不表示395年发生同等规模的领土变更。","events":["divided-empire:divided-395-01"]},
+    {"id":"eastern-continuity","title":"476：双帝国与拜占庭的分卷交界","a":{"period":"divided-empire","year":476},"b":{"period":"byzantine","year":476},"note":"分卷交界不等于新几何诞生；两侧的收录政权和图层范围不同，比较时保留各自源阶段。","events":["divided-empire:divided-476-01","byzantine:byz-476-1"]}
+  ]
+}

@@ -145,3 +145,8 @@ HTML 入口保持稳定，数据、CSS、JS 使用指纹文件。第三方库及
 ## 地点档案与事件地图
 
 `data-source/places/gazetteer.json`维护身份、名称标期、逐项定位及署名；`event_places.py`校验并叠加到原事件地点，保留全部旧身份与引用。`build_places.py`输出独立的全部事件地图投影；`shared/place-map.js`与纯选择引擎在地点页、五卷年度页复用，原年度展开后才请求。无坐标、未定年、同名与迁址不丢失，底图和文字独立恢复，原GIS不变。模型、实际核读范围、版本许可与测试见[地点说明](places.md)。
+
+
+## 地图阶段对照
+
+`build_map_compare.py`只读适配四卷现有疆域及王政年度关联地点，按原图层组合切分显示适用期，输出`data/map-compare/index.json`；不复制或改变几何。`data-source/map-compare/presets.json`维护专题与显式事件入口。`map-compare/`按需载入所选卷几何、独立底图及事件文字，始终显示原源年代、示意／借用状态与逐层许可；同步投影、缩放及滑动对照均可分享。原年度页用带符号历史年份链接此页，共和国原路由保持。构建指纹、全量原年度适配、失败恢复、键盘与Pages回归纳入CI。完整口径见[地图对照](map-compare.md)。
