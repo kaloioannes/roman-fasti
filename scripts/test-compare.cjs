@@ -9,7 +9,7 @@ const root=path.resolve(__dirname,'..'),site=path.join(root,'_site');
   browser=await chromium.launch({headless:true,args:['--no-proxy-server'],...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
   const context=await browser.newContext({acceptDownloads:true}),page=await context.newPage(),errors=[];
   context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));page.on('pageerror',e=>errors.push(e.message));
-  const ready=async(p=page)=>{await p.locator('.person-heading[data-side=b]').waitFor();await p.locator('main[aria-busy=false]').waitFor();};
+  const ready=async(p=page)=>{await p.waitForFunction(()=>document.querySelector('main')?.dataset.renderedHash===location.hash&&document.querySelector('main')?.getAttribute('aria-busy')==='false');await p.locator('.person-heading[data-side=b]').waitFor();};
   for(const prefix of ['/','/roman-fasti/']){
    const base=`http://127.0.0.1:${server.address().port}${prefix}`;let requests=[];const observe=r=>requests.push(r.url());page.on('request',observe);
    await page.goto(base+'compare/');await ready();assert.equal(await page.locator('[data-side=a]').getAttribute('data-person'),'global:roman-augustus');assert.ok(requests.every(u=>!u.includes('territories')&&!u.includes('records.')));

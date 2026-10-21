@@ -105,7 +105,7 @@
     }catch(error){if(rev!==serial)return;main.replaceChildren(el('h1',error.message==='route'?'无法打开这次人物比较':'人物比较资料暂时无法载入'));
       if(error.message==='route')main.append(el('p','人物ID、专题、口径或年份无效，或两侧指向同一位已确认人物。历史纪年没有0年。'),link('恢复示例比较','#preset=augustus-tiberius'));
       else main.append(el('p','请求失败、超时或资料结构有误。各卷原人物档案仍可阅读。'),button('重试人物比较资料',render));
-    }finally{if(rev===serial){main.setAttribute('aria-busy','false');main.focus({preventScroll:true});window.scrollTo(0,0);}}
+    }finally{if(rev===serial){main.dataset.renderedHash=location.hash;main.setAttribute('aria-busy','false');main.focus({preventScroll:true});window.scrollTo(0,0);}}
   }
   document.querySelector('.skip-link').onclick=e=>{e.preventDefault();main.focus();};document.querySelector('#theme-button').onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;try{localStorage.setItem('fasti-theme',t);}catch{}};
   addEventListener('hashchange',render);render();
