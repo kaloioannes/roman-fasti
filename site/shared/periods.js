@@ -20,6 +20,13 @@ window.FastiPeriods = (() => {
     }
     timeline.href='../timeline/#'+new URLSearchParams({period:id,from:year,to:year});
     timeline.textContent='对读本年任期：先后、共治与争位 ↗';
+    let comparison=timeline.nextElementSibling;
+    if(!comparison?.classList.contains('map-compare-year-link')) {
+      comparison=document.createElement('a');comparison.className='map-compare-year-link';
+      timeline.after(comparison);
+    }
+    comparison.href='../map-compare/#'+new URLSearchParams({ap:id,ay:year,bp:id,by:year});
+    comparison.textContent='对照本年地图与其他历史阶段 ↗';
     window.FastiPower?.mount('year',id+':'+year,slot.parentElement);
     slot.replaceChildren();
     slot.hidden = true;

@@ -20,6 +20,8 @@
 
 ## 浏览与分享
 
+**[地图阶段对照](https://kaloioannes.github.io/roman-fasti/map-compare/)** 将五卷已有地图按268个图层组合阶段统一索引，提供12个专题、任意两年与跨卷选择、并排／滑动揭示、同步缩放与统一视野、阶段前后跳转和视野直链。始终分列所选年度、显示适用期、原始源阶段、近似与借用说明；王政仅对读原卷叙事地点。变化专题连接明确事件，区间事件按原类型去重阅读；可导出含来源许可的对照资料。没有逐年插值或精确面积统计。地图、底图与事件分别恢复，手机与键盘有等价列表。范围与维护见[地图对照说明](docs/map-compare.md)。
+
 **[连续历史剧本](https://kaloioannes.github.io/roman-fasti/stories/)** 把五卷组织成可持续阅读的问题链：新编王政、四帝共治、双宫廷、查士丁尼、科穆宁重建与流亡复国六部42章，保留共和国十部59章原版，共16部101章。每章连接人物、年度及具体出处，提供统一目录、前后章节、原档案回链、全站检索、本机进度与可选防剧透；旧共和国URL继续可用。实际查阅、日期语义及研究边界见[剧本说明](docs/stories.md)。
 
 **[实际权力与摄政](https://kaloioannes.github.io/roman-fasti/power/)** 编订20位皇后、摄政者、宫廷官员、元老及军事统帅的23段角色与53项行动，逐项展示作用、限制、定位出处和实际阅读范围。已有身份与王朝节点复用，新增人物独立于皇帝名录；年／范围／未定年、摄政与亲政、同一事项与年度背景分别表达。支持检索筛选、原人物／年度／事件／王朝节点双向入口、稳定行动链接、键盘与手机阅读、规范引用及带出处JSON下载。实际核读、身份边界与维护见[权力专题说明](docs/power.md)。
@@ -140,6 +142,7 @@ python scripts/build_republic_people.py # 共和国人物导航与完整身份�
 python scripts/build_people.py        # 人工确认的跨卷身份投影
 python scripts/build_events.py        # 五卷事件、日期与对象关联投影
 python scripts/build_places.py        # 地点档案与全部事件的独立地图投影
+python scripts/build_map_compare.py   # 五卷既有地图阶段、源年代与专题对照目录
 python scripts/build_timeline.py      # 五卷全部官职／称号阶段及有依据的实权提示
 python scripts/build_glossary.py      # 分期制度词典、正文释义与显式例子回链
 python scripts/build_dynasties.py     # 分类专题、逐边有源关系与人物反向入口
