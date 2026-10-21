@@ -10,7 +10,7 @@
   const go=s=>{const h=hash(s);if(location.hash===h)render();else location.hash=h;};
   const period=id=>index.periods.find(p=>p.id===id)?.title||id;
   const yearURL=(p,y)=>`${p}/#year=${p==='republic'?-y:y}`;
-  const kinds={all:'全部已收录官职／称号',imperial:'帝号（含共帝、争位、区域、流亡）',main:'主线／宫廷皇帝（不代表独掌实权）',junior:'共帝身份',office:'共和国官职'};
+  const kinds={all:'全部已收录官职／称号',imperial:'帝号（含共帝、争位、区域、流亡）',main:'主线／宫廷皇帝（不代表独掌实权）',junior:'原卷独立分段的共帝身份',office:'共和国官职'};
   const precision=p=>p?({day:'日精度',month:'月精度',year:'年精度',circa:'约年',range:'异说／范围'})[p.precision]+(p.flags.includes('traditional')?' · 传统纪年':'')+(p.flags.includes('uncertain')?' · 有不确定性':''):'未定年';
   async function load(){
     if(index)return index;
@@ -54,7 +54,7 @@
       if(d.included)card.append(el('p',d.exact?(d.upper===0?'同日端点；日内时长未知':`端点经过 ${d.upper.toLocaleString('zh-CN')} 日`):`端点允许 ${d.lower.toLocaleString('zh-CN')} — ${d.upper.toLocaleString('zh-CN')} 日`));else card.append(el('p','不计算数值时长'));
       card.append(el('p',`可参与计算${d.included}项；未定年／传统／异说等排除${d.excluded}项。`,'muted'));box.append(card);}
       if(!selected[i].length)box.append(el('p','所选口径没有已收录阶段；权力角色不当作帝号计时。'));pair.append(box);});main.append(pair);
-    const method=el('details');method.append(el('summary','时长如何计算？日、月、年精度与共帝口径'),el('p','逐卷分别计算，确日沿用帝国原卷儒略历口径；仅知月／年的边界使用推算儒略历作为数学界限，不重建早期共和国民用历。这里计算日标签差：终点日减起点日，不额外加一，也不判断交接当天的时刻，不能当作确切在位时数。两端均为确日时给端点日差；仅知月／年时使用该月／年首末日作为数学上的最早与最晚候选，显示下界到上界，不声称首日即位。下界不足一日可为0。'),el('p','同一卷同一人的重叠阶段取区间并集；不同卷保留各自数值，永不相加。年号跨前1／公元1不插入0年。未定年、传统王期、约年或异说不换算天数；排除项意味着结果只覆盖可计算部分。仅有观察年代的权力角色不纳入时长。'),el('p','默认包含共帝、恺撒、争位、区域、流亡与共和国官职；可改选帝号（含共帝但不含恺撒）、主线／宫廷、共帝或共和国官职。身份是来源分类；主线不等于独掌实权，流亡帝号不等于控制首都。'));main.append(method);
+    const method=el('details');method.append(el('summary','时长如何计算？日、月、年精度与共帝口径'),el('p','逐卷分别计算，确日沿用帝国原卷儒略历口径；仅知月／年的边界使用推算儒略历作为数学界限，不重建早期共和国民用历。这里计算日标签差：终点日减起点日，不额外加一，也不判断交接当天的时刻，不能当作确切在位时数。两端均为确日时给端点日差；仅知月／年时使用该月／年首末日作为数学上的最早与最晚候选，显示下界到上界，不声称首日即位。下界不足一日可为0。'),el('p','同一卷同一人的重叠阶段取区间并集；不同卷保留各自数值，永不相加。年号跨前1／公元1不插入0年。未定年、传统王期、约年或异说不换算天数；排除项意味着结果只覆盖可计算部分。仅有观察年代的权力角色不纳入时长。'),el('p','默认包含共帝、恺撒、争位、区域、流亡与共和国官职；可改选帝号（含共帝但不含恺撒）、主线／宫廷、共帝或共和国官职。身份是来源分类；主线不等于独掌实权，流亡帝号不等于控制首都。古典帝国部分共治合在宫廷皇帝阶段中，筛选共帝只选出原卷独立分段的共帝记录，不自动拆分这些年月，须对读原阶段及实权提示。'));main.append(method);
   }
   function chart(people,selected,s){const dated=selected.flat().filter(x=>x.start);if(!dated.length){main.append(el('p','没有可置于时间坐标的阶段；未定年与角色仍见下方列表。'));return;}
     const low=Math.min(...dated.map(x=>x.start.bounds[0])),high=Math.max(...dated.map(x=>x.end.bounds[1])),span=Math.max(1,high-low);const rows=selected.flatMap((ss,i)=>ss.filter(x=>x.start).map(x=>({s:x,i})));const box=el('div',null,'compare-chart');box.tabIndex=0;box.setAttribute('role','region');box.setAttribute('aria-label','共用时间坐标，窄屏可横向滚动；下方有完整文字对照');
