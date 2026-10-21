@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>连续历史剧本 · FASTI</title>
+  <meta name="description" content="在五卷罗马历史中连续读故事：历史问题、章节因果、人物年度互链及逐章史料。支持本机阅读进度与可选防剧透。">
+  <link rel="icon" href="../shared/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../shared/ui.css"><link rel="stylesheet" href="style.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('fasti-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+  <script defer src="../shared/story-data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <a class="reader-skip" href="#content">跳至剧本正文</a>
+  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">F</span><span>FASTI<span class="brand-sub">罗马历史纪年</span></span></a><nav class="header-actions" aria-label="主导航"><a class="text-button" href="../stories/">连续剧本</a><a class="text-button" href="../search/">全站搜索</a><a class="text-button" href="../timeline/">任期时间轴</a><button class="icon-button" id="theme-button" aria-label="切换明暗主题">◐</button></nav></header>
+  <div class="reader-controls"><label><input type="checkbox" id="reader-spoiler"> 防剧透：隐藏故事内容与未读章节标题</label><span id="storage-status" role="status"></span></div>
+  <main id="content" class="reader-main" tabindex="-1" aria-busy="true"><p role="status">正在翻开历史剧本……</p></main>
+  <footer class="home-footer"><a href="../">FASTI · 全部时期</a><a href="../DATA_LICENSE.md">数据许可与署名 ↗</a></footer>
+  <noscript><p>可在<a href="https://github.com/kaloioannes/roman-fasti/blob/main/data-source/stories/stories.json">六部剧本与逐章出处</a>及<a href="https://github.com/kaloioannes/roman-fasti/blob/main/data-source/republic/stories.json">共和国十部剧本</a>阅读源文字。</p></noscript>
+</body></html>

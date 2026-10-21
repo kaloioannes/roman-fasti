@@ -5,6 +5,7 @@ from urllib.parse import urlencode
 from build_glossary import compile_glossary
 from build_dynasties import compile_dynasties
 from build_power import compile_power
+from build_stories import compile_stories
 from build_people import compile_people
 from build_events import compile_events
 
@@ -128,6 +129,19 @@ def compile_index():
                                 title=chapter['title'], names=[story['title']], text=chapter['text'],
                                 spans=[[-chapter['year'], -chapter['year']]], note=f'{story["title"]} · 第{i+1}章',
                                 url='republic/#' + urlencode(dict(story=story['id'], year=chapter['year'], focus='chapter'))))
+    edition = compile_stories()
+    for story in edition['stories'].values():
+        if story.get('legacy'):
+            continue  # Existing Republican search URLs remain unchanged.
+        entries.append(dict(id=f'{story["period"]}:story:{story["id"]}', period=story['period'], kind='story',
+                            title=story['title'], names=[story['subtitle'], story['theme'], *story.get('aliases', [])],
+                            text=story['setup'], spans=[[story['start'], story['end']]],
+                            note=f'{len(story["chapters"])}章 · 连续历史剧本', url=story['url']))
+        for c in story['chapters']:
+            entries.append(dict(id=f'{story["period"]}:chapter:{story["id"]}:{c["id"]}', period=story['period'], kind='chapter',
+                                title=c['title'], names=[story['title'], *[p['label'] for p in c['people']]],
+                                text=' '.join(c['paragraphs']), spans=[[c['year'], c['year']]],
+                                note=c['dateLabel']+' · '+story['title'], url=c['url']))
     assert used_aliases == set(aliases), f'Invalid search alias targets: {set(aliases) - used_aliases}'
     assert len({e['id'] for e in entries}) == len(entries), 'Duplicate search keys'
     return dict(schemaVersion=1, periods=[{k: p[k] for k in ('id', 'title', 'start', 'end')} for p in periods],

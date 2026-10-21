@@ -20,6 +20,8 @@
 
 ## 浏览与分享
 
+**[连续历史剧本](https://kaloioannes.github.io/roman-fasti/stories/)** 把五卷组织成可持续阅读的问题链：新编王政、四帝共治、双宫廷、查士丁尼、科穆宁重建与流亡复国六部42章，保留共和国十部59章原版，共16部101章。每章连接人物、年度及具体出处，提供统一目录、前后章节、原档案回链、全站检索、本机进度与可选防剧透；旧共和国URL继续可用。实际查阅、日期语义及研究边界见[剧本说明](docs/stories.md)。
+
 **[实际权力与摄政](https://kaloioannes.github.io/roman-fasti/power/)** 编订20位皇后、摄政者、宫廷官员、元老及军事统帅的23段角色与53项行动，逐项展示作用、限制、定位出处和实际阅读范围。已有身份与王朝节点复用，新增人物独立于皇帝名录；年／范围／未定年、摄政与亲政、同一事项与年度背景分别表达。支持检索筛选、原人物／年度／事件／王朝节点双向入口、稳定行动链接、键盘与手机阅读、规范引用及带出处JSON下载。实际核读、身份边界与维护见[权力专题说明](docs/power.md)。
 
 **[王朝与家族专题](https://kaloioannes.github.io/roman-fasti/dynasties/)** 汇集55项原卷分类、成员、全部已收录任期与事件；尤利乌斯—克劳狄、弗拉维、科穆宁三组提供98条逐边有出处的关系、31位辅助人物与17项核读来源。血缘、婚姻、收养、政治指定和帝位承接分层，异说与传闻单独标示；支持人物聚焦、年代／状态筛选、手机等价列表、全站搜索、人物双向入口、稳定链接及带出处JSON下载。范围和实际查阅见[王朝专题说明](docs/dynasties.md)。
@@ -139,6 +141,7 @@ python scripts/build_timeline.py      # 五卷全部官职／称号阶段及有�
 python scripts/build_glossary.py      # 分期制度词典、正文释义与显式例子回链
 python scripts/build_dynasties.py     # 分类专题、逐边有源关系与人物反向入口
 python scripts/build_power.py         # 实际权力人物、角色阶段、行动证据与反向入口
+python scripts/build_stories.py       # 五卷连续剧本、阅读关联和原共和国适配
 python scripts/build_search.py        # 五卷静态检索索引；发布构建也会自动重建
 python scripts/build_byzantine_map.py # 拜占庭与并立政权GIS（Shapely）
 python scripts/build_map.py           # 共和国地图

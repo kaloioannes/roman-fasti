@@ -54,3 +54,7 @@ The GIS subset selects Eastern and Western Roman Empire POLITY features intersec
 ## Institutional glossary — CC BY-SA 4.0
 
 `data-source/glossary/entries.json` and `data/glossary/` contain Chinese paraphrases, period-specific explanations and explicitly sourced reading examples by **FASTI contributors (2026-10-20)**, under CC BY-SA 4.0. Source records individually credit Livy / D. Spillan, Polybius / W. R. Paton, Augustus / F. W. Shipley, Tacitus / J. Jackson, Suetonius / J. C. Rolfe, Eutropius / J. S. Watson, Anna Komnene / E. A. S. Dawes, William Smith and colleagues / George Long, the **Münzkabinett, Staatliche Museen zu Berlin** (IKMK 18204181, catalogue text CC BY-SA 4.0), and the **British Museum** (1852,0903.35, institutional description on Google Arts & Culture). Changes include original Chinese synthesis, separated chronological senses, power/limitation distinctions and relative links to existing archives. Full books, museum photographs and modern scholarly articles are not redistributed. Authors, editions, exact locators, actual reading scope and limitations are retained in each downloaded entry; see [the glossary research and maintenance notes](docs/glossary.md).
+
+## 五卷连续剧本（2026-10-21）
+
+`data-source/stories/`与`data/stories/`中新编中文导读及资料投影由FASTI contributors撰写，CC BY-SA 4.0；共和国原文及原版引用保留原署名。李维、拉克坦提乌斯、普罗柯比、苏格拉底、安娜、维尔阿杜安的电子译本、马尔凯利努斯拉丁文及吉本公版注本用于指定段落核对；DIR署名研究只作来源链接与独立中文简述，不转载全文或图片。所有外部译本、现代文章及机构网页仍归其权利人。直接查阅、沿用和间接路径逐项保存在来源记录，范围见[剧本研究说明](https://github.com/kaloioannes/roman-fasti/blob/main/docs/stories.md)。

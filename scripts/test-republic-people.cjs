@@ -96,7 +96,7 @@ const read=name=>fs.readFile(path.join(root,name),'utf8').then(JSON.parse);
    await delayed.waitForFunction(()=>document.querySelector('#loading').hidden);assert.equal(await delayed.locator('#people-view').isVisible(),false);assert.equal(await delayed.locator('#year-number').textContent(),'44');assert.equal(calls,1);await delayed.close();
    const light=await context.newPage(),requests=[];light.on('request',r=>{if(r.url().includes('.json'))requests.push(r.url());});
    await light.goto(base+'#person=pe9d1a9956a');await light.locator('.rp-career-list').waitFor();await light.evaluate(()=>location.hash='person=p6faf564142');await light.locator('#people-view[data-person="p6faf564142"]').waitFor();
-   assert.equal(requests.filter(u=>/\/data\/republic\/records\./.test(u)).length,1);assert.equal(requests.filter(u=>/\/data\/republic\/people\./.test(u)).length,1);assert.ok(requests.every(u=>!u.includes('territories')&&!u.includes('land-50m')&&!u.includes('stories')));await light.close();
+   assert.equal(requests.filter(u=>/\/data\/republic\/records\./.test(u)).length,1);assert.equal(requests.filter(u=>/\/data\/republic\/people\./.test(u)).length,1);assert.ok(requests.every(u=>!u.includes('territories')&&!u.includes('land-50m')&&(!u.includes('stories')||/\/data\/stories\/navigation\./.test(u))));await light.close();
    const textFailure=await context.newPage();let textCalls=0,projectionCalls=0;
    await textFailure.route('**/data/republic/records.*.json',r=>++textCalls===1?r.fulfill({status:503,body:'unavailable'}):r.continue());
    await textFailure.route('**/data/republic/people.*.json',r=>{projectionCalls++;return r.continue();});

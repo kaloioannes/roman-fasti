@@ -10,6 +10,7 @@ from build_events import compile_events
 from build_glossary import compile_glossary
 from build_dynasties import compile_dynasties
 from build_power import compile_power
+from build_stories import compile_stories
 
 
 class SearchIndexTests(unittest.TestCase):
@@ -34,7 +35,7 @@ class SearchIndexTests(unittest.TestCase):
             self.assertEqual({e['id'].split(':', 2)[2] for e in people}, set(data['people']))
             count = sum(e['period'] == pid for e in self.events['entries'].values())
             self.assertEqual(sum(e['kind'] == 'event' for e in projected), count)
-        stories = build.read('data/republic/stories.json')
+        stories = list(compile_stories()['stories'].values())
         counts = Counter(e['kind'] for e in self.index['entries'])
         self.assertEqual(counts['story'], len(stories))
         self.assertEqual(counts['chapter'], sum(len(s['chapters']) for s in stories))
@@ -48,6 +49,15 @@ class SearchIndexTests(unittest.TestCase):
                 self.assertLessEqual(a, b)
                 self.assertNotIn(0, [a, b])
             url = urlsplit(e['url'])
+            if url.path == 'stories/':
+                params = parse_qs(url.fragment)
+                story = compile_stories()['stories'][params['story'][0]]
+                self.assertEqual(story['period'], pid)
+                if e['kind'] == 'chapter':
+                    self.assertEqual(next(c for c in story['chapters'] if c['id'] == params['chapter'][0])['title'], e['title'])
+                else:
+                    self.assertEqual(story['title'], e['title'])
+                continue
             if e['kind'] == 'power':
                 key = parse_qs(url.fragment)['person'][0]
                 self.assertEqual(url.path, 'power/')
@@ -105,7 +115,7 @@ class SearchIndexTests(unittest.TestCase):
 
     def test_projection_is_text_only_and_bounded(self):
         target = build.ROOT / 'data/search/index.json'
-        self.assertLess(target.stat().st_size, 1_600_000)
+        self.assertLess(target.stat().st_size, 1_700_000)
         self.assertNotIn('geometry', target.read_text(encoding='utf-8'))
 
 
